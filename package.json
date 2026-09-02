@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
-    "build:pages": "GITHUB_PAGES=true vinext build",
+    "build:pages": "GITHUB_PAGES=true vinext build && node scripts/normalize-pages-build.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt"

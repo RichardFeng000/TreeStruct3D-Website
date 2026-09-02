@@ -33,10 +33,14 @@ npm run build:pages
 
 ## Deployment
 
-Pushes to `main` build and deploy this repository as a GitHub Pages project
-site. The custom domain configured for the account's portfolio site is inherited
-by project sites, so this repository is served under
-`www.ruiding-feng.com/TreeStruct3D-Website/` without replacing the root pages.
+Pushes to `main` build and deploy the standalone GitHub Pages mirror at
+`richardfeng000.github.io/TreeStruct3D-Website/`. The custom-domain release is
+stored as a reviewed static snapshot in the `Richard_website` portfolio
+repository, so it is served at `www.ruiding-feng.com/TreeStruct3D-Website/`
+without changing the root portfolio page.
+
+To refresh the portfolio snapshot, run `npm run build:pages` and replace
+`Richard_website/public/TreeStruct3D-Website/` with `dist/client/`.
 
 ## License
 
