@@ -1,0 +1,1599 @@
+{
+  "source_sha256": "580a1457eb7f5a3436a1ffc0a5ad3120cc61b09c814b55ca00df073a54339d59",
+  "samples": [
+    {
+      "id": "eye_left-0.63",
+      "params": {
+        "eye_left": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 0,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 5958,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 11916,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 15060,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 18204,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 31458,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 34602,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 37746,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 61080,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "eye_left-1.37",
+      "params": {
+        "eye_left": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 84894,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 90852,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 96810,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 99954,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 103098,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 116352,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 119496,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 122640,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 145974,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "eye_right-0.63",
+      "params": {
+        "eye_right": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 169788,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 175746,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 181704,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 184848,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 187992,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 201246,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 204390,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 207534,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 230868,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "eye_right-1.37",
+      "params": {
+        "eye_right": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 254682,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 260640,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 266598,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 269742,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 272886,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 286140,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 289284,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 292428,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 315762,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "forelimb_left-0.63",
+      "params": {
+        "forelimb_left": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 339576,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 345534,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 351492,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 354636,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 357780,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 371034,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 374178,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 377322,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 400656,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "forelimb_left-1.37",
+      "params": {
+        "forelimb_left": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 424470,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 430428,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 436386,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 439530,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 442674,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 455928,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 459072,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 462216,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 485550,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "forelimb_right-0.63",
+      "params": {
+        "forelimb_right": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 509364,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 515322,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 521280,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 524424,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 527568,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 540822,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 543966,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 547110,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 570444,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "forelimb_right-1.37",
+      "params": {
+        "forelimb_right": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 594258,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 600216,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 606174,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 609318,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 612462,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 625716,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 628860,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 632004,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 655338,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "head-0.63",
+      "params": {
+        "head": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 679152,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 685110,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 691068,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 694212,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 697356,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 710610,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 713754,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 716898,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 740232,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "head-1.37",
+      "params": {
+        "head": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 764046,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 770004,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 775962,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 779106,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 782250,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 795504,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 798648,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 801792,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 825126,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "hindlimb_left-0.63",
+      "params": {
+        "hindlimb_left": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 848940,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 854898,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 860856,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 864000,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 867144,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 880398,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 883542,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 886686,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 910020,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "hindlimb_left-1.37",
+      "params": {
+        "hindlimb_left": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 933834,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 939792,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 945750,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 948894,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 952038,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 965292,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 968436,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 971580,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 994914,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "hindlimb_right-0.63",
+      "params": {
+        "hindlimb_right": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 1018728,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 1024686,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 1030644,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 1033788,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 1036932,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 1050186,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 1053330,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 1056474,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 1079808,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "hindlimb_right-1.37",
+      "params": {
+        "hindlimb_right": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 1103622,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 1109580,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 1115538,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 1118682,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 1121826,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 1135080,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 1138224,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 1141368,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 1164702,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "eye_left": 0.63,
+        "eye_right": 1.37,
+        "forelimb_left": 0.63,
+        "forelimb_right": 1.37,
+        "head": 1.37,
+        "hindlimb_left": 0.63,
+        "hindlimb_right": 1.37,
+        "tail": 0.63,
+        "torso_body": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 1188516,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 1194474,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 1200432,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 1203576,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 1206720,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 1219974,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 1223118,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 1226262,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 1249596,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "eye_left": 1.37,
+        "eye_right": 0.63,
+        "forelimb_left": 1.37,
+        "forelimb_right": 0.63,
+        "head": 0.63,
+        "hindlimb_left": 1.37,
+        "hindlimb_right": 0.63,
+        "tail": 1.37,
+        "torso_body": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 1273410,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 1279368,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 1285326,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 1288470,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 1291614,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 1304868,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 1308012,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 1311156,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 1334490,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "eye_left": 0.63,
+        "eye_right": 0.63,
+        "forelimb_left": 0.63,
+        "forelimb_right": 0.63,
+        "head": 0.63,
+        "hindlimb_left": 0.63,
+        "hindlimb_right": 0.63,
+        "tail": 0.63,
+        "torso_body": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 1358304,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 1364262,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 1370220,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 1373364,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 1376508,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 1389762,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 1392906,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 1396050,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 1419384,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "eye_left": 1.37,
+        "eye_right": 1.37,
+        "forelimb_left": 1.37,
+        "forelimb_right": 1.37,
+        "head": 1.37,
+        "hindlimb_left": 1.37,
+        "hindlimb_right": 1.37,
+        "tail": 1.37,
+        "torso_body": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 1443198,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 1449156,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 1455114,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 1458258,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 1461402,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 1474656,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 1477800,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 1480944,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 1504278,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "tail-0.63",
+      "params": {
+        "tail": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 1528092,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 1534050,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 1540008,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 1543152,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 1546296,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 1559550,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 1562694,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 1565838,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 1589172,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "tail-1.37",
+      "params": {
+        "tail": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 1612986,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 1618944,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 1624902,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 1628046,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 1631190,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 1644444,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 1647588,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 1650732,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 1674066,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "torso_body-0.63",
+      "params": {
+        "torso_body": 0.63
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 1697880,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 1703838,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 1709796,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 1712940,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 1716084,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 1729338,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 1732482,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 1735626,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 1758960,
+            "count": 23814
+          }
+        }
+      ]
+    },
+    {
+      "id": "torso_body-1.37",
+      "params": {
+        "torso_body": 1.37
+      },
+      "parts": [
+        {
+          "id": "eye_left",
+          "positions": {
+            "offset": 1782774,
+            "count": 5958
+          }
+        },
+        {
+          "id": "eye_right",
+          "positions": {
+            "offset": 1788732,
+            "count": 5958
+          }
+        },
+        {
+          "id": "forelimb_left",
+          "positions": {
+            "offset": 1794690,
+            "count": 3144
+          }
+        },
+        {
+          "id": "forelimb_right",
+          "positions": {
+            "offset": 1797834,
+            "count": 3144
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 1800978,
+            "count": 13254
+          }
+        },
+        {
+          "id": "hindlimb_left",
+          "positions": {
+            "offset": 1814232,
+            "count": 3144
+          }
+        },
+        {
+          "id": "hindlimb_right",
+          "positions": {
+            "offset": 1817376,
+            "count": 3144
+          }
+        },
+        {
+          "id": "tail",
+          "positions": {
+            "offset": 1820520,
+            "count": 23334
+          }
+        },
+        {
+          "id": "torso_body",
+          "positions": {
+            "offset": 1843854,
+            "count": 23814
+          }
+        }
+      ]
+    }
+  ]
+}

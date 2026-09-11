@@ -1,0 +1,623 @@
+{
+  "source_sha256": "6689f96b03f258464a9a1265d1fe75a29ee63633893e1fbb750e4240351cbf43",
+  "samples": [
+    {
+      "id": "carapace-0.63",
+      "params": {
+        "carapace": 0.63
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 0,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 7374,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 8928,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 9828,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 10770,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "carapace-1.37",
+      "params": {
+        "carapace": 1.37
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 12258,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 19632,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 21186,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 22086,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 23028,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "dominant_cheliped-0.63",
+      "params": {
+        "dominant_cheliped": 0.63
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 24516,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 31890,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 33444,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 34344,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 35286,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "dominant_cheliped-1.37",
+      "params": {
+        "dominant_cheliped": 1.37
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 36774,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 44148,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 45702,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 46602,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 47544,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "eye_stalk-0.63",
+      "params": {
+        "eye_stalk": 0.63
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 49032,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 56406,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 57960,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 58860,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 59802,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "eye_stalk-1.37",
+      "params": {
+        "eye_stalk": 1.37
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 61290,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 68664,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 70218,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 71118,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 72060,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "carapace": 0.63,
+        "dominant_cheliped": 1.37,
+        "eye_stalk": 0.63,
+        "smaller_cheliped": 0.63,
+        "walking_leg": 1.37
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 73548,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 80922,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 82476,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 83376,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 84318,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "carapace": 1.37,
+        "dominant_cheliped": 0.63,
+        "eye_stalk": 1.37,
+        "smaller_cheliped": 1.37,
+        "walking_leg": 0.63
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 85806,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 93180,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 94734,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 95634,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 96576,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "carapace": 0.63,
+        "dominant_cheliped": 0.63,
+        "eye_stalk": 0.63,
+        "smaller_cheliped": 0.63,
+        "walking_leg": 0.63
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 98064,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 105438,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 106992,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 107892,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 108834,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "carapace": 1.37,
+        "dominant_cheliped": 1.37,
+        "eye_stalk": 1.37,
+        "smaller_cheliped": 1.37,
+        "walking_leg": 1.37
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 110322,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 117696,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 119250,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 120150,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 121092,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "smaller_cheliped-0.63",
+      "params": {
+        "smaller_cheliped": 0.63
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 122580,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 129954,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 131508,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 132408,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 133350,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "smaller_cheliped-1.37",
+      "params": {
+        "smaller_cheliped": 1.37
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 134838,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 142212,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 143766,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 144666,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 145608,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "walking_leg-0.63",
+      "params": {
+        "walking_leg": 0.63
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 147096,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 154470,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 156024,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 156924,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 157866,
+            "count": 1488
+          }
+        }
+      ]
+    },
+    {
+      "id": "walking_leg-1.37",
+      "params": {
+        "walking_leg": 1.37
+      },
+      "parts": [
+        {
+          "id": "carapace",
+          "positions": {
+            "offset": 159354,
+            "count": 7374
+          }
+        },
+        {
+          "id": "dominant_cheliped",
+          "positions": {
+            "offset": 166728,
+            "count": 1554
+          }
+        },
+        {
+          "id": "eye_stalk",
+          "positions": {
+            "offset": 168282,
+            "count": 900
+          }
+        },
+        {
+          "id": "smaller_cheliped",
+          "positions": {
+            "offset": 169182,
+            "count": 942
+          }
+        },
+        {
+          "id": "walking_leg",
+          "positions": {
+            "offset": 170124,
+            "count": 1488
+          }
+        }
+      ]
+    }
+  ]
+}

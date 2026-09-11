@@ -1,0 +1,5434 @@
+{
+  "schema": "treestruct3d-native-scale-dependencies-v1",
+  "research_root_relative_paths": true,
+  "control_domain": {
+    "min": 0.4,
+    "max": 1.6,
+    "UI_step": 0.01,
+    "note": "All semantic PART_PARAMS.scale controls; repeated runtime instances sharing part_id are one native control."
+  },
+  "scope": {
+    "source_audit": "All 20 source files read; literal PART_PARAMS and runtime instance forest extracted. Cross-scale dependencies manually traced through geometry helpers; function reads below are conservative syntax, not proof of influence.",
+    "existing_native_glbs": 100,
+    "native_single_control_scale_samples": [
+      0.63,
+      1.37
+    ],
+    "native_multi_control_patterns": [
+      "alternating .63/1.37",
+      "alternating 1.37/.63",
+      "all .63",
+      "all 1.37"
+    ],
+    "random_multi_control_tests_run": false,
+    "source_executed_by_this_audit": false,
+    "claims_limit": "No interpolated finite sample scheme is certified exact for arbitrary continuous values. Numerical additivity records reuse captured native geometry and skip any mesh with inconsistent count or polygon ordering."
+  },
+  "provenance": {
+    "affine_report": "/tmp/paper-native-affine-audit.json",
+    "additivity_report": "/tmp/paper-native-additivity-audit.json",
+    "capture_directory": "/tmp/treestruct-native-response"
+  },
+  "cases": [
+    {
+      "id": "paper-gpt-5-5-crab",
+      "provider": "GPT-5.5",
+      "case": "Crab_seed0",
+      "source_script": "treestruct3d_results/gpt5.5/Crab_seed0/Crab_seed0.py",
+      "source_sha256": "6689f96b03f258464a9a1265d1fe75a29ee63633893e1fbb750e4240351cbf43",
+      "controls": [
+        {
+          "id": "carapace",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "carapace"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "carapace",
+            "eye_stalk",
+            "walking_leg"
+          ],
+          "possible_world_influence_instance_ids": [
+            "carapace",
+            "dominant_cheliped",
+            "eye_stalk",
+            "smaller_cheliped",
+            "walking_leg"
+          ]
+        },
+        {
+          "id": "dominant_cheliped",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "dominant_cheliped"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "dominant_cheliped"
+          ],
+          "possible_world_influence_instance_ids": [
+            "dominant_cheliped"
+          ]
+        },
+        {
+          "id": "smaller_cheliped",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "smaller_cheliped"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "smaller_cheliped"
+          ],
+          "possible_world_influence_instance_ids": [
+            "smaller_cheliped"
+          ]
+        },
+        {
+          "id": "walking_leg",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "walking_leg"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "walking_leg"
+          ],
+          "possible_world_influence_instance_ids": [
+            "walking_leg"
+          ]
+        },
+        {
+          "id": "eye_stalk",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "eye_stalk"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "eye_stalk"
+          ],
+          "possible_world_influence_instance_ids": [
+            "eye_stalk"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "carapace",
+          "child": "dominant_cheliped"
+        },
+        {
+          "parent": "carapace",
+          "child": "eye_stalk"
+        },
+        {
+          "parent": "carapace",
+          "child": "smaller_cheliped"
+        },
+        {
+          "parent": "carapace",
+          "child": "walking_leg"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "walking_leg",
+          "additional_control_ids": [
+            "carapace"
+          ]
+        },
+        {
+          "part_id": "eye_stalk",
+          "additional_control_ids": [
+            "carapace"
+          ]
+        }
+      ],
+      "sparse_interactions": [
+        {
+          "controls": [
+            "carapace",
+            "walking_leg"
+          ],
+          "kind": "normalized_centerline_frame",
+          "outputs": [
+            "walking_leg"
+          ],
+          "source_lines": [
+            66,
+            92,
+            104,
+            139,
+            291,
+            310
+          ],
+          "formula": "v(C,L) = L * F(C/L) for the joined leg mesh in its authored root coordinates; x/y centerline offsets and radii scale with L, z offsets and individual roots depend on C.",
+          "factorization": "One ratio-conditioned native geometry family over q=C/L in [0.25,4], then multiply by L. This is source homogeneity, not a proof that linear interpolation of finite q samples is exact.",
+          "required_validation": "Native joint C/L tests, including opposite extreme pairs (.4,1.6), (1.6,.4); stable tube frame and material/index correspondence."
+        }
+      ],
+      "candidate_additive_after_anchor_translation": false,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "carapace_dims",
+          "line": 66,
+          "end_line": 68,
+          "literal_PART_PARAMS_reads": [
+            "carapace"
+          ]
+        },
+        {
+          "name": "build_carapace",
+          "line": 193,
+          "end_line": 248,
+          "literal_PART_PARAMS_reads": [
+            "carapace"
+          ]
+        },
+        {
+          "name": "build_dominant",
+          "line": 262,
+          "end_line": 276,
+          "literal_PART_PARAMS_reads": [
+            "dominant_cheliped"
+          ]
+        },
+        {
+          "name": "build_smaller",
+          "line": 278,
+          "end_line": 289,
+          "literal_PART_PARAMS_reads": [
+            "smaller_cheliped"
+          ]
+        },
+        {
+          "name": "build_walking_legs",
+          "line": 291,
+          "end_line": 312,
+          "literal_PART_PARAMS_reads": [
+            "carapace",
+            "walking_leg"
+          ]
+        },
+        {
+          "name": "build_eye_stalks",
+          "line": 314,
+          "end_line": 328,
+          "literal_PART_PARAMS_reads": [
+            "carapace",
+            "eye_stalk"
+          ]
+        }
+      ],
+      "notes": [
+        "carapace controls all eight joined walking-leg roots and both joined eye-stalk roots. walking_leg is one parameter, not eight independent native parameters.",
+        "eye_stalk and carapace contributions are additive translations plus uniform local shape. walking_leg is not additive because its tube frame depends on the carapace/leg scale ratio."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 20,
+        "same_vertex_counts": 20,
+        "same_vertex_counts_and_index_sequence": 20
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "carapace": 0.63,
+            "dominant_cheliped": 1.37,
+            "smaller_cheliped": 0.63,
+            "walking_leg": 1.37,
+            "eye_stalk": 0.63
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 5,
+          "max_absolute_vertex_error": 7.317609078318454e-05,
+          "incompatible_meshes": [],
+          "worst_mesh": "walking_leg"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "carapace": 1.37,
+            "dominant_cheliped": 0.63,
+            "smaller_cheliped": 1.37,
+            "walking_leg": 0.63,
+            "eye_stalk": 1.37
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 5,
+          "max_absolute_vertex_error": 0.00022965925511591185,
+          "incompatible_meshes": [],
+          "worst_mesh": "walking_leg"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "carapace": 0.63,
+            "dominant_cheliped": 0.63,
+            "smaller_cheliped": 0.63,
+            "walking_leg": 0.63,
+            "eye_stalk": 0.63
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 5,
+          "max_absolute_vertex_error": 0.00015872852264882725,
+          "incompatible_meshes": [],
+          "worst_mesh": "walking_leg"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "carapace": 1.37,
+            "dominant_cheliped": 1.37,
+            "smaller_cheliped": 1.37,
+            "walking_leg": 1.37,
+            "eye_stalk": 1.37
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 5,
+          "max_absolute_vertex_error": 0.000106271200160591,
+          "incompatible_meshes": [],
+          "worst_mesh": "walking_leg"
+        }
+      ]
+    },
+    {
+      "id": "paper-gpt-5-5-hollow-tree",
+      "provider": "GPT-5.5",
+      "case": "HollowTree_seed0",
+      "source_script": "treestruct3d_results/gpt5.5/HollowTree_seed0/HollowTree_seed0.py",
+      "source_sha256": "eafd5abaf4cf89b427c49429822c0d806cfe7cfab83cf4bbc670c52c5b522f89",
+      "controls": [
+        {
+          "id": "main_trunk",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "main_trunk"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "main_trunk"
+          ],
+          "possible_world_influence_instance_ids": [
+            "branch_and_twig_network",
+            "main_trunk"
+          ]
+        },
+        {
+          "id": "branch_and_twig_network",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "branch_and_twig_network"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "branch_and_twig_network"
+          ],
+          "possible_world_influence_instance_ids": [
+            "branch_and_twig_network"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "main_trunk",
+          "child": "branch_and_twig_network"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [],
+      "sparse_interactions": [
+        {
+          "controls": [
+            "branch_and_twig_network"
+          ],
+          "kind": "scale_dependent_topology_and_rng",
+          "outputs": [
+            "branch_and_twig_network"
+          ],
+          "source_lines": [
+            43,
+            46,
+            52,
+            175,
+            184,
+            324,
+            330,
+            376,
+            388
+          ],
+          "formula": "bark_mat(phi,z,rng) conditionally consumes rng as scaled z crosses sine thresholds; the same rng subsequently decides grow child_count/twig_count.",
+          "factorization": "Store exact native per-value branch geometry/topology at every supported UI hundredth .40...1.60 (121 states). Combine with independently generated trunk and reapply both native anchors.",
+          "required_validation": "All 121 values with matching source/parameter hash, original native anchors and materials; arbitrary fractional values outside this set are unsupported unless generator logic is ported."
+        }
+      ],
+      "candidate_additive_after_anchor_translation": false,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "build_main_trunk",
+          "line": 206,
+          "end_line": 268,
+          "literal_PART_PARAMS_reads": [
+            "main_trunk"
+          ]
+        },
+        {
+          "name": "build_branch_and_twig_network",
+          "line": 327,
+          "end_line": 439,
+          "literal_PART_PARAMS_reads": [
+            "branch_and_twig_network"
+          ]
+        }
+      ],
+      "notes": [
+        "Branches are a separate native generator from the trunk. Trunk scaling changes its own geometry and the final branch attachment translation.",
+        "Branch material generation consumes the same PRNG used for recursion; scale-dependent material branches change actual branch topology. 121 exact branch states cover only 0.01-quantized UI values from 0.40 through 1.60, not arbitrary real-valued scales."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 8,
+        "same_vertex_counts": 4,
+        "same_vertex_counts_and_index_sequence": 4
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "main_trunk": 0.63,
+            "branch_and_twig_network": 1.37
+          },
+          "compatible_meshes": 1,
+          "mesh_count": 2,
+          "max_absolute_vertex_error": 0.0,
+          "incompatible_meshes": [
+            "branch_and_twig_network"
+          ],
+          "worst_mesh": "main_trunk"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "main_trunk": 1.37,
+            "branch_and_twig_network": 0.63
+          },
+          "compatible_meshes": 1,
+          "mesh_count": 2,
+          "max_absolute_vertex_error": 0.0,
+          "incompatible_meshes": [
+            "branch_and_twig_network"
+          ],
+          "worst_mesh": "main_trunk"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "main_trunk": 0.63,
+            "branch_and_twig_network": 0.63
+          },
+          "compatible_meshes": 1,
+          "mesh_count": 2,
+          "max_absolute_vertex_error": 0.0,
+          "incompatible_meshes": [
+            "branch_and_twig_network"
+          ],
+          "worst_mesh": "main_trunk"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "main_trunk": 1.37,
+            "branch_and_twig_network": 1.37
+          },
+          "compatible_meshes": 1,
+          "mesh_count": 2,
+          "max_absolute_vertex_error": 0.0,
+          "incompatible_meshes": [
+            "branch_and_twig_network"
+          ],
+          "worst_mesh": "main_trunk"
+        }
+      ]
+    },
+    {
+      "id": "paper-gpt-5-5-pan",
+      "provider": "GPT-5.5",
+      "case": "Pan_seed0",
+      "source_script": "treestruct3d_results/gpt5.5/Pan_seed0/Pan_seed0.py",
+      "source_sha256": "373dc95c0438c8ba538bb71f1ef7a8d7075521d5b1b123d5b62dbeece20c13d4",
+      "controls": [
+        {
+          "id": "pan_body",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "pan_body"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "flat_handle_core",
+            "pan_body"
+          ],
+          "possible_world_influence_instance_ids": [
+            "flat_handle_core",
+            "pan_body",
+            "wooden_grip_section"
+          ]
+        },
+        {
+          "id": "flat_handle_core",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "flat_handle_core"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "flat_handle_core"
+          ],
+          "possible_world_influence_instance_ids": [
+            "flat_handle_core",
+            "wooden_grip_section"
+          ]
+        },
+        {
+          "id": "wooden_grip_section",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "wooden_grip_section"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "wooden_grip_section"
+          ],
+          "possible_world_influence_instance_ids": [
+            "wooden_grip_section"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "flat_handle_core",
+          "child": "wooden_grip_section"
+        },
+        {
+          "parent": "pan_body",
+          "child": "flat_handle_core"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "flat_handle_core",
+          "additional_control_ids": [
+            "pan_body"
+          ]
+        }
+      ],
+      "sparse_interactions": [
+        {
+          "controls": [
+            "pan_body",
+            "flat_handle_core"
+          ],
+          "kind": "sqrt_contact_profile_with_clamp_and_bevel",
+          "outputs": [
+            "flat_handle_core"
+          ],
+          "source_lines": [
+            217,
+            294,
+            305,
+            311,
+            329
+          ],
+          "formula": "P=pan scale,H=handle scale; R=max(3.05*P,1.365*H), x=1.30*H*(i/18-.5), y=R-sqrt(max(R*R-x*x,0)); bevel=.035*H.",
+          "factorization": "Handle local geometry H*F(P/H), ratio range [.25,4]; native evaluated bevel output may reorder/split vertices. Grip local geometry remains independent; final placement includes pan and handle anchors.",
+          "required_validation": "Opposite extremes and samples around clamp P/H=1.365/3.05=0.4475409836065574; validate evaluated topology/anchors."
+        }
+      ],
+      "candidate_additive_after_anchor_translation": false,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "build_pan_body",
+          "line": 141,
+          "end_line": 226,
+          "literal_PART_PARAMS_reads": [
+            "pan_body"
+          ]
+        },
+        {
+          "name": "build_flat_handle_core",
+          "line": 294,
+          "end_line": 337,
+          "literal_PART_PARAMS_reads": [
+            "flat_handle_core"
+          ]
+        },
+        {
+          "name": "build_wooden_grip_section",
+          "line": 381,
+          "end_line": 411,
+          "literal_PART_PARAMS_reads": [
+            "wooden_grip_section"
+          ]
+        }
+      ],
+      "notes": [
+        "Handle proximal curvature depends on the pan radius; the grip has independent local geometry and follows the handle distal anchor. Evaluated bevel topology/correspondence must be checked."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 12,
+        "same_vertex_counts": 10,
+        "same_vertex_counts_and_index_sequence": 8
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "pan_body": 0.63,
+            "flat_handle_core": 1.37,
+            "wooden_grip_section": 0.63
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 0.04309272900384889,
+          "incompatible_meshes": [],
+          "worst_mesh": "flat_handle_core"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "pan_body": 1.37,
+            "flat_handle_core": 0.63,
+            "wooden_grip_section": 1.37
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 0.011693084528530547,
+          "incompatible_meshes": [],
+          "worst_mesh": "flat_handle_core"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "pan_body": 0.63,
+            "flat_handle_core": 0.63,
+            "wooden_grip_section": 0.63
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 0.026773987557943094,
+          "incompatible_meshes": [],
+          "worst_mesh": "flat_handle_core"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "pan_body": 1.37,
+            "flat_handle_core": 1.37,
+            "wooden_grip_section": 1.37
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 0.017750795923632653,
+          "incompatible_meshes": [],
+          "worst_mesh": "flat_handle_core"
+        }
+      ]
+    },
+    {
+      "id": "paper-gpt-5-5-bed",
+      "provider": "GPT-5.5",
+      "case": "Bed_seed0",
+      "source_script": "treestruct3d_results/gpt5.5/Bed_seed0/Bed_seed0.py",
+      "source_sha256": "29e159e1ddc8d8d4bffc4b813eeb99399f6d6696a204d827918352842f7a251d",
+      "controls": [
+        {
+          "id": "wooden_bed_frame_base",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "wooden_bed_frame_base"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "decorative_footboard",
+            "decorative_headboard",
+            "folded_comforter",
+            "green_mattress",
+            "light_pink_blanket",
+            "pillow",
+            "tapered_leg",
+            "wooden_bed_frame_base"
+          ],
+          "possible_world_influence_instance_ids": [
+            "decorative_footboard",
+            "decorative_headboard",
+            "folded_comforter",
+            "green_mattress",
+            "light_pink_blanket",
+            "pillow",
+            "tapered_leg",
+            "wooden_bed_frame_base"
+          ]
+        },
+        {
+          "id": "decorative_headboard",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "decorative_headboard"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "decorative_headboard"
+          ],
+          "possible_world_influence_instance_ids": [
+            "decorative_headboard"
+          ]
+        },
+        {
+          "id": "decorative_footboard",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "decorative_footboard"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "decorative_footboard"
+          ],
+          "possible_world_influence_instance_ids": [
+            "decorative_footboard"
+          ]
+        },
+        {
+          "id": "tapered_leg",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "tapered_leg"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "tapered_leg"
+          ],
+          "possible_world_influence_instance_ids": [
+            "tapered_leg"
+          ]
+        },
+        {
+          "id": "green_mattress",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "green_mattress"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "green_mattress",
+            "light_pink_blanket",
+            "pillow"
+          ],
+          "possible_world_influence_instance_ids": [
+            "folded_comforter",
+            "green_mattress",
+            "light_pink_blanket",
+            "pillow"
+          ]
+        },
+        {
+          "id": "light_pink_blanket",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "light_pink_blanket"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "light_pink_blanket"
+          ],
+          "possible_world_influence_instance_ids": [
+            "folded_comforter",
+            "light_pink_blanket"
+          ]
+        },
+        {
+          "id": "folded_comforter",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "folded_comforter"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "folded_comforter"
+          ],
+          "possible_world_influence_instance_ids": [
+            "folded_comforter"
+          ]
+        },
+        {
+          "id": "pillow",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "pillow"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "green_mattress",
+            "pillow"
+          ],
+          "possible_world_influence_instance_ids": [
+            "folded_comforter",
+            "green_mattress",
+            "light_pink_blanket",
+            "pillow"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "green_mattress",
+          "child": "light_pink_blanket"
+        },
+        {
+          "parent": "green_mattress",
+          "child": "pillow"
+        },
+        {
+          "parent": "light_pink_blanket",
+          "child": "folded_comforter"
+        },
+        {
+          "parent": "wooden_bed_frame_base",
+          "child": "decorative_footboard"
+        },
+        {
+          "parent": "wooden_bed_frame_base",
+          "child": "decorative_headboard"
+        },
+        {
+          "parent": "wooden_bed_frame_base",
+          "child": "green_mattress"
+        },
+        {
+          "parent": "wooden_bed_frame_base",
+          "child": "tapered_leg"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "decorative_headboard",
+          "additional_control_ids": [
+            "wooden_bed_frame_base"
+          ]
+        },
+        {
+          "part_id": "decorative_footboard",
+          "additional_control_ids": [
+            "wooden_bed_frame_base"
+          ]
+        },
+        {
+          "part_id": "tapered_leg",
+          "additional_control_ids": [
+            "wooden_bed_frame_base"
+          ]
+        },
+        {
+          "part_id": "green_mattress",
+          "additional_control_ids": [
+            "wooden_bed_frame_base",
+            "pillow"
+          ]
+        },
+        {
+          "part_id": "light_pink_blanket",
+          "additional_control_ids": [
+            "wooden_bed_frame_base",
+            "green_mattress"
+          ]
+        },
+        {
+          "part_id": "folded_comforter",
+          "additional_control_ids": [
+            "wooden_bed_frame_base"
+          ]
+        },
+        {
+          "part_id": "pillow",
+          "additional_control_ids": [
+            "wooden_bed_frame_base",
+            "green_mattress"
+          ]
+        }
+      ],
+      "sparse_interactions": [
+        {
+          "controls": [
+            "wooden_bed_frame_base",
+            "decorative_headboard"
+          ],
+          "kind": "bilinear",
+          "outputs": [
+            "decorative_headboard"
+          ],
+          "source_lines": [
+            156,
+            217,
+            220,
+            221
+          ],
+          "formula": "head width=6.156*f*h, thickness=.34*f*h; remaining detail widths/heights add h-dependent terms."
+        },
+        {
+          "controls": [
+            "wooden_bed_frame_base",
+            "decorative_footboard"
+          ],
+          "kind": "bilinear",
+          "outputs": [
+            "decorative_footboard"
+          ],
+          "source_lines": [
+            250,
+            253,
+            254
+          ],
+          "formula": "foot width=5.928*f*d, thickness=.31*f*d; remaining details add d-dependent terms."
+        },
+        {
+          "controls": [
+            "wooden_bed_frame_base",
+            "green_mattress"
+          ],
+          "kind": "bilinear",
+          "outputs": [
+            "green_mattress",
+            "pillow",
+            "light_pink_blanket",
+            "folded_comforter"
+          ],
+          "source_lines": [
+            347,
+            350,
+            390,
+            506
+          ],
+          "formula": "mattress w=4.68*f*m, l=7.54*f*m, h=.62*m. Downstream positions use these dimensions."
+        },
+        {
+          "controls": [
+            "wooden_bed_frame_base",
+            "green_mattress",
+            "light_pink_blanket"
+          ],
+          "kind": "trilinear",
+          "outputs": [
+            "light_pink_blanket",
+            "folded_comforter"
+          ],
+          "source_lines": [
+            390,
+            393,
+            405,
+            439
+          ],
+          "formula": "blanket w=4.5864*f*m*b, l=5.5796*f*m*b; blanket center y=-.754*f*m; comforter contact local y=-.22*l. Blanket normalized surface profile z depends only on b."
+        },
+        {
+          "controls": [
+            "wooden_bed_frame_base",
+            "folded_comforter"
+          ],
+          "kind": "bilinear",
+          "outputs": [
+            "folded_comforter"
+          ],
+          "source_lines": [
+            450,
+            453
+          ],
+          "formula": "comforter width=4.25*f*c; length=1.34*c, height=.20*c."
+        },
+        {
+          "controls": [
+            "wooden_bed_frame_base",
+            "green_mattress",
+            "pillow"
+          ],
+          "kind": "rational_piecewise_anchor_height",
+          "outputs": [
+            "green_mattress",
+            "pillow"
+          ],
+          "source_lines": [
+            356,
+            361,
+            362,
+            375,
+            378,
+            506
+          ],
+          "formula": "q=f*m; pillow x=+/-1.17*q, y=3.77*q-.58*p. u=abs(1-(1.16/7.54)*p/q); z=.62*m+.055*m*max(0,.75*(1-u*u))-.045*m*max(.5,u)^4. This updates actual mattress anchor patches and whole pillow placement.",
+          "factorization": "Evaluate this explicit source formula for mattress pillow-zone patches and paired pillow placement; products alone do not capture the rational/max anchor-height term."
+        }
+      ],
+      "candidate_additive_after_anchor_translation": false,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "frame_dims",
+          "line": 156,
+          "end_line": 166,
+          "literal_PART_PARAMS_reads": [
+            "wooden_bed_frame_base"
+          ]
+        },
+        {
+          "name": "build_headboard",
+          "line": 217,
+          "end_line": 248,
+          "literal_PART_PARAMS_reads": [
+            "decorative_headboard"
+          ]
+        },
+        {
+          "name": "build_footboard",
+          "line": 250,
+          "end_line": 279,
+          "literal_PART_PARAMS_reads": [
+            "decorative_footboard"
+          ]
+        },
+        {
+          "name": "build_legs",
+          "line": 303,
+          "end_line": 317,
+          "literal_PART_PARAMS_reads": [
+            "tapered_leg"
+          ]
+        },
+        {
+          "name": "mattress_dimensions",
+          "line": 347,
+          "end_line": 350,
+          "literal_PART_PARAMS_reads": [
+            "green_mattress"
+          ]
+        },
+        {
+          "name": "mattress_top_z",
+          "line": 356,
+          "end_line": 363,
+          "literal_PART_PARAMS_reads": [
+            "green_mattress"
+          ]
+        },
+        {
+          "name": "build_mattress",
+          "line": 365,
+          "end_line": 388,
+          "literal_PART_PARAMS_reads": [
+            "green_mattress",
+            "pillow"
+          ]
+        },
+        {
+          "name": "blanket_dims",
+          "line": 390,
+          "end_line": 393,
+          "literal_PART_PARAMS_reads": [
+            "light_pink_blanket"
+          ]
+        },
+        {
+          "name": "build_blanket",
+          "line": 405,
+          "end_line": 448,
+          "literal_PART_PARAMS_reads": [
+            "light_pink_blanket"
+          ]
+        },
+        {
+          "name": "build_comforter",
+          "line": 450,
+          "end_line": 465,
+          "literal_PART_PARAMS_reads": [
+            "folded_comforter"
+          ]
+        },
+        {
+          "name": "build_pillows",
+          "line": 506,
+          "end_line": 520,
+          "literal_PART_PARAMS_reads": [
+            "pillow"
+          ]
+        }
+      ],
+      "notes": [
+        "Part-attachment directions do not express every generator dependency: pillow.scale changes the mattress authored pillow-zone patch geometry.",
+        "Both headboard and footboard width/thickness multiply frame.scale and own scale. Mattress width/depth multiply frame and mattress; blanket width/depth multiply frame, mattress and blanket.",
+        "Joined four-leg and two-pillow meshes must preserve independent component attachment positions."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 32,
+        "same_vertex_counts": 29,
+        "same_vertex_counts_and_index_sequence": 29
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "wooden_bed_frame_base": 0.63,
+            "decorative_headboard": 1.37,
+            "decorative_footboard": 0.63,
+            "tapered_leg": 1.37,
+            "green_mattress": 0.63,
+            "light_pink_blanket": 1.37,
+            "folded_comforter": 0.63,
+            "pillow": 1.37
+          },
+          "compatible_meshes": 8,
+          "mesh_count": 8,
+          "max_absolute_vertex_error": 0.6074489920712313,
+          "incompatible_meshes": [],
+          "worst_mesh": "green_mattress"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "wooden_bed_frame_base": 1.37,
+            "decorative_headboard": 0.63,
+            "decorative_footboard": 1.37,
+            "tapered_leg": 0.63,
+            "green_mattress": 1.37,
+            "light_pink_blanket": 0.63,
+            "folded_comforter": 1.37,
+            "pillow": 0.63
+          },
+          "compatible_meshes": 8,
+          "mesh_count": 8,
+          "max_absolute_vertex_error": 0.7598899395249948,
+          "incompatible_meshes": [],
+          "worst_mesh": "light_pink_blanket"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "wooden_bed_frame_base": 0.63,
+            "decorative_headboard": 0.63,
+            "decorative_footboard": 0.63,
+            "tapered_leg": 0.63,
+            "green_mattress": 0.63,
+            "light_pink_blanket": 0.63,
+            "folded_comforter": 0.63,
+            "pillow": 0.63
+          },
+          "compatible_meshes": 8,
+          "mesh_count": 8,
+          "max_absolute_vertex_error": 1.3815476852759578,
+          "incompatible_meshes": [],
+          "worst_mesh": "light_pink_blanket"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "wooden_bed_frame_base": 1.37,
+            "decorative_headboard": 1.37,
+            "decorative_footboard": 1.37,
+            "tapered_leg": 1.37,
+            "green_mattress": 1.37,
+            "light_pink_blanket": 1.37,
+            "folded_comforter": 1.37,
+            "pillow": 1.37
+          },
+          "compatible_meshes": 8,
+          "mesh_count": 8,
+          "max_absolute_vertex_error": 1.7470729255435402,
+          "incompatible_meshes": [],
+          "worst_mesh": "light_pink_blanket"
+        }
+      ]
+    },
+    {
+      "id": "paper-gpt-5-5-floor-lamp",
+      "provider": "GPT-5.5",
+      "case": "FloorLamp_seed0",
+      "source_script": "treestruct3d_results/gpt5.5/FloorLamp_seed0/FloorLamp_seed0.py",
+      "source_sha256": "befa8ca188817011d6d35ab25d3d9d8a7b571160ec3fad62692cbf90013f5a44",
+      "controls": [
+        {
+          "id": "round_base",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "round_base"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "round_base"
+          ],
+          "possible_world_influence_instance_ids": [
+            "central_pole",
+            "circular_tray",
+            "round_base",
+            "tapered_shade"
+          ]
+        },
+        {
+          "id": "central_pole",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "central_pole"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "central_pole",
+            "circular_tray",
+            "tapered_shade"
+          ],
+          "possible_world_influence_instance_ids": [
+            "central_pole",
+            "circular_tray",
+            "tapered_shade"
+          ]
+        },
+        {
+          "id": "circular_tray",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "circular_tray"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "circular_tray"
+          ],
+          "possible_world_influence_instance_ids": [
+            "circular_tray"
+          ]
+        },
+        {
+          "id": "tapered_shade",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "tapered_shade"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "tapered_shade"
+          ],
+          "possible_world_influence_instance_ids": [
+            "tapered_shade"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "central_pole",
+          "child": "circular_tray"
+        },
+        {
+          "parent": "central_pole",
+          "child": "tapered_shade"
+        },
+        {
+          "parent": "round_base",
+          "child": "central_pole"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "circular_tray",
+          "additional_control_ids": [
+            "central_pole"
+          ]
+        },
+        {
+          "part_id": "tapered_shade",
+          "additional_control_ids": [
+            "central_pole"
+          ]
+        }
+      ],
+      "sparse_interactions": [
+        {
+          "controls": [
+            "central_pole",
+            "circular_tray"
+          ],
+          "kind": "piecewise_homogeneous_clamps",
+          "outputs": [
+            "circular_tray"
+          ],
+          "source_lines": [
+            161,
+            221,
+            228,
+            231,
+            235
+          ],
+          "formula": "P=pole.scale,T=tray.scale,r=.04*P; outer=max(.32*T,.168*P); thick=max(.055*T,.026*P); collar_r=max(.085*T,.074*P); collar_h=max(.18*T,2.2*thick); lip_w=min(.11*outer,max(.026*T,.018*P)).",
+          "clamp_ratio_thresholds_P_over_T": {
+            "outer": 1.9047619047619047,
+            "thick": 2.1153846153846154,
+            "collar_radius": 1.1486486486486487,
+            "collar_height_pole_branch": 3.1468531468531467,
+            "lip_inner_max": 1.4444444444444444
+          },
+          "factorization": "T*F(P/T), ratio [.25,4]. Threshold list is not exhaustive because lip min composes piecewise branches; use the complete formulas."
+        },
+        {
+          "controls": [
+            "central_pole",
+            "tapered_shade"
+          ],
+          "kind": "piecewise_homogeneous_clamps_and_ratio",
+          "outputs": [
+            "tapered_shade"
+          ],
+          "source_lines": [
+            245,
+            251,
+            252,
+            255,
+            272,
+            298,
+            299,
+            301,
+            302
+          ],
+          "formula": "P=pole.scale,S=shade.scale,r=.04*P,h=1.18*S; rb=max(.68*S,.32*P); rt=max(.45*S,.22*P); if rt>=rb:rt=.68*rb; wall=min(max(.028*S,.0088*P),.08*rb); ri=max(rb+(rt-rb)*v-wall+.35*ripple,.128*P); mount_r=max(.062*P,.074*S); mount_h=max(.19*S,.144*P); strut_z=.58*mount_h; r2=max(rb+(rt-rb)*(strut_z/h)-wall-.035*S,2*mount_r).",
+          "clamp_ratio_thresholds_P_over_S": {
+            "bottom_radius": 2.125,
+            "top_radius": 2.0454545454545454,
+            "wall_inner_max": 3.1818181818181817,
+            "mount_radius": 1.1935483870967742,
+            "mount_height": 1.3194444444444444
+          },
+          "factorization": "S*F(P/S), ratio [.25,4]. Native placement follows pole top; source-based formulas or validated ratio response need the strut division term and composed clamps."
+        }
+      ],
+      "candidate_additive_after_anchor_translation": false,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "effective_pole_radius",
+          "line": 161,
+          "end_line": 163,
+          "literal_PART_PARAMS_reads": [
+            "central_pole"
+          ]
+        },
+        {
+          "name": "build_round_base",
+          "line": 165,
+          "end_line": 193,
+          "literal_PART_PARAMS_reads": [
+            "round_base"
+          ]
+        },
+        {
+          "name": "build_central_pole",
+          "line": 195,
+          "end_line": 219,
+          "literal_PART_PARAMS_reads": [
+            "central_pole"
+          ]
+        },
+        {
+          "name": "build_circular_tray",
+          "line": 221,
+          "end_line": 243,
+          "literal_PART_PARAMS_reads": [
+            "circular_tray"
+          ]
+        },
+        {
+          "name": "build_tapered_shade",
+          "line": 245,
+          "end_line": 309,
+          "literal_PART_PARAMS_reads": [
+            "tapered_shade"
+          ]
+        }
+      ],
+      "notes": [
+        "Pole local geometry uses only pole.scale; tray and shade local geometry jointly depend on pole.scale and their own scale. Base controls world height through attachment translation."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 16,
+        "same_vertex_counts": 14,
+        "same_vertex_counts_and_index_sequence": 14
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "round_base": 0.63,
+            "central_pole": 1.37,
+            "circular_tray": 0.63,
+            "tapered_shade": 1.37
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 0.0285886962727265,
+          "incompatible_meshes": [],
+          "worst_mesh": "circular_tray"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "round_base": 1.37,
+            "central_pole": 0.63,
+            "circular_tray": 1.37,
+            "tapered_shade": 0.63
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 0.028758289706439313,
+          "incompatible_meshes": [],
+          "worst_mesh": "tapered_shade"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "round_base": 0.63,
+            "central_pole": 0.63,
+            "circular_tray": 0.63,
+            "tapered_shade": 0.63
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 0.028758289706439313,
+          "incompatible_meshes": [],
+          "worst_mesh": "tapered_shade"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "round_base": 1.37,
+            "central_pole": 1.37,
+            "circular_tray": 1.37,
+            "tapered_shade": 1.37
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 0.016380005524432167,
+          "incompatible_meshes": [],
+          "worst_mesh": "circular_tray"
+        }
+      ]
+    },
+    {
+      "id": "paper-gpt-5-6-sol-lobster",
+      "provider": "GPT-5.6 Sol",
+      "case": "Lobster_seed0",
+      "source_script": "treestruct3d_results/gpt5.6_sol/Lobster_seed0/Lobster_seed0.py",
+      "source_sha256": "b3acc968e12930ceec8c9c7949758a683e0145a4d91d06810e25705afc3f950b",
+      "controls": [
+        {
+          "id": "cephalothorax",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "cephalothorax"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "cephalothorax",
+            "long_antenna",
+            "walking_leg_array"
+          ],
+          "possible_world_influence_instance_ids": [
+            "abdomen_chain",
+            "cephalothorax",
+            "crusher_chela",
+            "cutter_chela",
+            "long_antenna",
+            "tail_fan",
+            "walking_leg_array"
+          ]
+        },
+        {
+          "id": "abdomen_chain",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "abdomen_chain"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "abdomen_chain"
+          ],
+          "possible_world_influence_instance_ids": [
+            "abdomen_chain",
+            "tail_fan"
+          ]
+        },
+        {
+          "id": "tail_fan",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "tail_fan"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "tail_fan"
+          ],
+          "possible_world_influence_instance_ids": [
+            "tail_fan"
+          ]
+        },
+        {
+          "id": "crusher_chela",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "crusher_chela"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "crusher_chela"
+          ],
+          "possible_world_influence_instance_ids": [
+            "crusher_chela"
+          ]
+        },
+        {
+          "id": "cutter_chela",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "cutter_chela"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "cutter_chela"
+          ],
+          "possible_world_influence_instance_ids": [
+            "cutter_chela"
+          ]
+        },
+        {
+          "id": "long_antenna",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "long_antenna"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "long_antenna"
+          ],
+          "possible_world_influence_instance_ids": [
+            "long_antenna"
+          ]
+        },
+        {
+          "id": "walking_leg_array",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "walking_leg_array"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "walking_leg_array"
+          ],
+          "possible_world_influence_instance_ids": [
+            "walking_leg_array"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "abdomen_chain",
+          "child": "tail_fan"
+        },
+        {
+          "parent": "cephalothorax",
+          "child": "abdomen_chain"
+        },
+        {
+          "parent": "cephalothorax",
+          "child": "crusher_chela"
+        },
+        {
+          "parent": "cephalothorax",
+          "child": "cutter_chela"
+        },
+        {
+          "parent": "cephalothorax",
+          "child": "long_antenna"
+        },
+        {
+          "parent": "cephalothorax",
+          "child": "walking_leg_array"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "long_antenna",
+          "additional_control_ids": [
+            "cephalothorax"
+          ]
+        },
+        {
+          "part_id": "walking_leg_array",
+          "additional_control_ids": [
+            "cephalothorax"
+          ]
+        }
+      ],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [],
+      "notes": [
+        "Joined antenna and leg components start at cephalothorax-specific attachment positions; native local shape size uses their own control.",
+        "Source attachment displacements are additive if object/group anchors are associated consistently, but current captures have polygon/vertex ordering instability: numerical additive audit omitted all seven meshes."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 28,
+        "same_vertex_counts": 28,
+        "same_vertex_counts_and_index_sequence": 0
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "cephalothorax": 0.63,
+            "abdomen_chain": 1.37,
+            "tail_fan": 0.63,
+            "crusher_chela": 1.37,
+            "cutter_chela": 0.63,
+            "long_antenna": 1.37,
+            "walking_leg_array": 0.63
+          },
+          "compatible_meshes": 0,
+          "mesh_count": 7,
+          "max_absolute_vertex_error": null,
+          "incompatible_meshes": [
+            "abdomen_chain",
+            "cephalothorax",
+            "crusher_chela",
+            "cutter_chela",
+            "long_antenna",
+            "tail_fan",
+            "walking_leg_array"
+          ],
+          "worst_mesh": null
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "cephalothorax": 1.37,
+            "abdomen_chain": 0.63,
+            "tail_fan": 1.37,
+            "crusher_chela": 0.63,
+            "cutter_chela": 1.37,
+            "long_antenna": 0.63,
+            "walking_leg_array": 1.37
+          },
+          "compatible_meshes": 0,
+          "mesh_count": 7,
+          "max_absolute_vertex_error": null,
+          "incompatible_meshes": [
+            "abdomen_chain",
+            "cephalothorax",
+            "crusher_chela",
+            "cutter_chela",
+            "long_antenna",
+            "tail_fan",
+            "walking_leg_array"
+          ],
+          "worst_mesh": null
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "cephalothorax": 0.63,
+            "abdomen_chain": 0.63,
+            "tail_fan": 0.63,
+            "crusher_chela": 0.63,
+            "cutter_chela": 0.63,
+            "long_antenna": 0.63,
+            "walking_leg_array": 0.63
+          },
+          "compatible_meshes": 0,
+          "mesh_count": 7,
+          "max_absolute_vertex_error": null,
+          "incompatible_meshes": [
+            "abdomen_chain",
+            "cephalothorax",
+            "crusher_chela",
+            "cutter_chela",
+            "long_antenna",
+            "tail_fan",
+            "walking_leg_array"
+          ],
+          "worst_mesh": null
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "cephalothorax": 1.37,
+            "abdomen_chain": 1.37,
+            "tail_fan": 1.37,
+            "crusher_chela": 1.37,
+            "cutter_chela": 1.37,
+            "long_antenna": 1.37,
+            "walking_leg_array": 1.37
+          },
+          "compatible_meshes": 0,
+          "mesh_count": 7,
+          "max_absolute_vertex_error": null,
+          "incompatible_meshes": [
+            "abdomen_chain",
+            "cephalothorax",
+            "crusher_chela",
+            "cutter_chela",
+            "long_antenna",
+            "tail_fan",
+            "walking_leg_array"
+          ],
+          "worst_mesh": null
+        }
+      ],
+      "additional_blocker": "No mesh passed strict polygon-order correspondence across all independent captures; additivity unmeasured."
+    },
+    {
+      "id": "paper-gpt-5-6-sol-toilet",
+      "provider": "GPT-5.6 Sol",
+      "case": "Toilet_seed0",
+      "source_script": "treestruct3d_results/gpt5.6_sol/Toilet_seed0/Toilet_seed0.py",
+      "source_sha256": "2f1a42f4a4241943b8e9d9228c0e296dc2ef5b56db938939f820254f9c68489e",
+      "controls": [
+        {
+          "id": "floor_base",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "floor_base"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "floor_base"
+          ],
+          "possible_world_influence_instance_ids": [
+            "bowl_body",
+            "floor_base",
+            "flush_handle",
+            "seat_ring",
+            "upright_seat_lid",
+            "water_tank"
+          ]
+        },
+        {
+          "id": "bowl_body",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "bowl_body"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "bowl_body"
+          ],
+          "possible_world_influence_instance_ids": [
+            "bowl_body",
+            "flush_handle",
+            "seat_ring",
+            "upright_seat_lid",
+            "water_tank"
+          ]
+        },
+        {
+          "id": "seat_ring",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "seat_ring"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "seat_ring"
+          ],
+          "possible_world_influence_instance_ids": [
+            "seat_ring",
+            "upright_seat_lid"
+          ]
+        },
+        {
+          "id": "upright_seat_lid",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "upright_seat_lid"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "upright_seat_lid"
+          ],
+          "possible_world_influence_instance_ids": [
+            "upright_seat_lid"
+          ]
+        },
+        {
+          "id": "water_tank",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "water_tank"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "water_tank"
+          ],
+          "possible_world_influence_instance_ids": [
+            "flush_handle",
+            "water_tank"
+          ]
+        },
+        {
+          "id": "flush_handle",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "flush_handle"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "flush_handle"
+          ],
+          "possible_world_influence_instance_ids": [
+            "flush_handle"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "bowl_body",
+          "child": "seat_ring"
+        },
+        {
+          "parent": "bowl_body",
+          "child": "water_tank"
+        },
+        {
+          "parent": "floor_base",
+          "child": "bowl_body"
+        },
+        {
+          "parent": "seat_ring",
+          "child": "upright_seat_lid"
+        },
+        {
+          "parent": "water_tank",
+          "child": "flush_handle"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "build_floor_base",
+          "line": 269,
+          "end_line": 290,
+          "literal_PART_PARAMS_reads": [
+            "floor_base"
+          ]
+        },
+        {
+          "name": "build_bowl_body",
+          "line": 293,
+          "end_line": 367,
+          "literal_PART_PARAMS_reads": [
+            "bowl_body"
+          ]
+        },
+        {
+          "name": "build_seat_ring",
+          "line": 370,
+          "end_line": 409,
+          "literal_PART_PARAMS_reads": [
+            "seat_ring"
+          ]
+        },
+        {
+          "name": "build_upright_lid",
+          "line": 412,
+          "end_line": 461,
+          "literal_PART_PARAMS_reads": [
+            "upright_seat_lid"
+          ]
+        },
+        {
+          "name": "build_water_tank",
+          "line": 464,
+          "end_line": 481,
+          "literal_PART_PARAMS_reads": [
+            "water_tank"
+          ]
+        },
+        {
+          "name": "build_flush_handle",
+          "line": 484,
+          "end_line": 507,
+          "literal_PART_PARAMS_reads": [
+            "flush_handle"
+          ]
+        }
+      ],
+      "notes": [
+        "Independent builders with scale-dependent own anchors; six-part attachment forest is sufficient to propagate world translations. Existing four all-control tests are additive within 7.3e-7."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 24,
+        "same_vertex_counts": 24,
+        "same_vertex_counts_and_index_sequence": 24
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "floor_base": 0.63,
+            "bowl_body": 1.37,
+            "seat_ring": 0.63,
+            "upright_seat_lid": 1.37,
+            "water_tank": 0.63,
+            "flush_handle": 1.37
+          },
+          "compatible_meshes": 6,
+          "mesh_count": 6,
+          "max_absolute_vertex_error": 4.915124923727108e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "upright_seat_lid"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "floor_base": 1.37,
+            "bowl_body": 0.63,
+            "seat_ring": 1.37,
+            "upright_seat_lid": 0.63,
+            "water_tank": 1.37,
+            "flush_handle": 0.63
+          },
+          "compatible_meshes": 6,
+          "mesh_count": 6,
+          "max_absolute_vertex_error": 7.208220137624636e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "upright_seat_lid"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "floor_base": 0.63,
+            "bowl_body": 0.63,
+            "seat_ring": 0.63,
+            "upright_seat_lid": 0.63,
+            "water_tank": 0.63,
+            "flush_handle": 0.63
+          },
+          "compatible_meshes": 6,
+          "mesh_count": 6,
+          "max_absolute_vertex_error": 2.980232238769531e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "water_tank"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "floor_base": 1.37,
+            "bowl_body": 1.37,
+            "seat_ring": 1.37,
+            "upright_seat_lid": 1.37,
+            "water_tank": 1.37,
+            "flush_handle": 1.37
+          },
+          "compatible_meshes": 6,
+          "mesh_count": 6,
+          "max_absolute_vertex_error": 4.915124923727108e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "upright_seat_lid"
+        }
+      ]
+    },
+    {
+      "id": "paper-gpt-5-6-sol-spiny-lobster",
+      "provider": "GPT-5.6 Sol",
+      "case": "SpinyLobster_seed0",
+      "source_script": "treestruct3d_results/gpt5.6_sol/SpinyLobster_seed0/SpinyLobster_seed0.py",
+      "source_sha256": "6f7797aba646d2a5bf1cd58e467c22718ada80322d2145e88d58f247da865b0d",
+      "controls": [
+        {
+          "id": "cephalothorax_shell",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "cephalothorax_shell"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "cephalothorax_shell",
+            "long_antenna",
+            "walking_leg_bank"
+          ],
+          "possible_world_influence_instance_ids": [
+            "abdomen_chain",
+            "cephalothorax_shell",
+            "long_antenna",
+            "tail_fan",
+            "walking_leg_bank"
+          ]
+        },
+        {
+          "id": "abdomen_chain",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "abdomen_chain"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "abdomen_chain"
+          ],
+          "possible_world_influence_instance_ids": [
+            "abdomen_chain",
+            "tail_fan"
+          ]
+        },
+        {
+          "id": "tail_fan",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "tail_fan"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "tail_fan"
+          ],
+          "possible_world_influence_instance_ids": [
+            "tail_fan"
+          ]
+        },
+        {
+          "id": "long_antenna",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "long_antenna"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "long_antenna"
+          ],
+          "possible_world_influence_instance_ids": [
+            "long_antenna"
+          ]
+        },
+        {
+          "id": "walking_leg_bank",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "walking_leg_bank"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "walking_leg_bank"
+          ],
+          "possible_world_influence_instance_ids": [
+            "walking_leg_bank"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "abdomen_chain",
+          "child": "tail_fan"
+        },
+        {
+          "parent": "cephalothorax_shell",
+          "child": "abdomen_chain"
+        },
+        {
+          "parent": "cephalothorax_shell",
+          "child": "long_antenna"
+        },
+        {
+          "parent": "cephalothorax_shell",
+          "child": "walking_leg_bank"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "long_antenna",
+          "additional_control_ids": [
+            "cephalothorax_shell"
+          ]
+        },
+        {
+          "part_id": "walking_leg_bank",
+          "additional_control_ids": [
+            "cephalothorax_shell"
+          ]
+        }
+      ],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "build_shell",
+          "line": 346,
+          "end_line": 454,
+          "literal_PART_PARAMS_reads": [
+            "cephalothorax_shell"
+          ]
+        },
+        {
+          "name": "build_abdomen",
+          "line": 457,
+          "end_line": 554,
+          "literal_PART_PARAMS_reads": [
+            "abdomen_chain"
+          ]
+        },
+        {
+          "name": "build_tail_fan",
+          "line": 557,
+          "end_line": 612,
+          "literal_PART_PARAMS_reads": [
+            "tail_fan"
+          ]
+        },
+        {
+          "name": "build_antennae",
+          "line": 615,
+          "end_line": 655,
+          "literal_PART_PARAMS_reads": [
+            "long_antenna"
+          ]
+        },
+        {
+          "name": "build_legs",
+          "line": 658,
+          "end_line": 705,
+          "literal_PART_PARAMS_reads": [
+            "walking_leg_bank"
+          ]
+        }
+      ],
+      "notes": [
+        "Joined long_antenna and walking_leg_bank contain separately positioned components rooted on the shell. Parent moves each component root independently; own parameter scales local offsets. Existing four all-control tests are additive within 2.2e-6."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 20,
+        "same_vertex_counts": 20,
+        "same_vertex_counts_and_index_sequence": 20
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "cephalothorax_shell": 0.63,
+            "abdomen_chain": 1.37,
+            "tail_fan": 0.63,
+            "long_antenna": 1.37,
+            "walking_leg_bank": 0.63
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 5,
+          "max_absolute_vertex_error": 1.6858739404357613e-06,
+          "incompatible_meshes": [],
+          "worst_mesh": "long_antenna"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "cephalothorax_shell": 1.37,
+            "abdomen_chain": 0.63,
+            "tail_fan": 1.37,
+            "long_antenna": 0.63,
+            "walking_leg_bank": 1.37
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 5,
+          "max_absolute_vertex_error": 1.6148349266223986e-06,
+          "incompatible_meshes": [],
+          "worst_mesh": "long_antenna"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "cephalothorax_shell": 0.63,
+            "abdomen_chain": 0.63,
+            "tail_fan": 0.63,
+            "long_antenna": 0.63,
+            "walking_leg_bank": 0.63
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 5,
+          "max_absolute_vertex_error": 2.1050230725300673e-06,
+          "incompatible_meshes": [],
+          "worst_mesh": "long_antenna"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "cephalothorax_shell": 1.37,
+            "abdomen_chain": 1.37,
+            "tail_fan": 1.37,
+            "long_antenna": 1.37,
+            "walking_leg_bank": 1.37
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 5,
+          "max_absolute_vertex_error": 1.9258850123171223e-06,
+          "incompatible_meshes": [],
+          "worst_mesh": "long_antenna"
+        }
+      ]
+    },
+    {
+      "id": "paper-gpt-5-6-sol-monitor",
+      "provider": "GPT-5.6 Sol",
+      "case": "Monitor_seed0",
+      "source_script": "treestruct3d_results/gpt5.6_sol/Monitor_seed0/Monitor_seed0.py",
+      "source_sha256": "e8f83ae4e0ae9b72f5428644feddf13e43a23cf4947fe4c9e8a23842d56bcac9",
+      "controls": [
+        {
+          "id": "base_stand",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "base_stand"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "base_stand"
+          ],
+          "possible_world_influence_instance_ids": [
+            "base_stand",
+            "display_surface",
+            "monitor_body_bezel",
+            "pedestal_arm"
+          ]
+        },
+        {
+          "id": "pedestal_arm",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "pedestal_arm"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "pedestal_arm"
+          ],
+          "possible_world_influence_instance_ids": [
+            "display_surface",
+            "monitor_body_bezel",
+            "pedestal_arm"
+          ]
+        },
+        {
+          "id": "monitor_body_bezel",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "monitor_body_bezel"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "monitor_body_bezel"
+          ],
+          "possible_world_influence_instance_ids": [
+            "display_surface",
+            "monitor_body_bezel"
+          ]
+        },
+        {
+          "id": "display_surface",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "display_surface"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "display_surface"
+          ],
+          "possible_world_influence_instance_ids": [
+            "display_surface"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "base_stand",
+          "child": "pedestal_arm"
+        },
+        {
+          "parent": "monitor_body_bezel",
+          "child": "display_surface"
+        },
+        {
+          "parent": "pedestal_arm",
+          "child": "monitor_body_bezel"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "build_base",
+          "line": 492,
+          "end_line": 526,
+          "literal_PART_PARAMS_reads": [
+            "base_stand"
+          ]
+        },
+        {
+          "name": "build_pedestal",
+          "line": 529,
+          "end_line": 589,
+          "literal_PART_PARAMS_reads": [
+            "pedestal_arm"
+          ]
+        },
+        {
+          "name": "build_monitor_body",
+          "line": 592,
+          "end_line": 760,
+          "literal_PART_PARAMS_reads": [
+            "monitor_body_bezel"
+          ]
+        },
+        {
+          "name": "build_display",
+          "line": 763,
+          "end_line": 795,
+          "literal_PART_PARAMS_reads": [
+            "display_surface"
+          ]
+        }
+      ],
+      "notes": [
+        "Actual runtime direction is base_stand -> pedestal_arm -> monitor_body_bezel -> display_surface; paper parent/child role labels must not reverse this.",
+        "Own-part boolean/bevel evaluation and retained nearest anchors produce numerical/correspondence sensitivity; capture exact anchors and verify residuals."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 16,
+        "same_vertex_counts": 12,
+        "same_vertex_counts_and_index_sequence": 12
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "base_stand": 0.63,
+            "pedestal_arm": 1.37,
+            "monitor_body_bezel": 0.63,
+            "display_surface": 1.37
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 2.7236404226084606e-05,
+          "incompatible_meshes": [],
+          "worst_mesh": "display_surface"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "base_stand": 1.37,
+            "pedestal_arm": 0.63,
+            "monitor_body_bezel": 1.37,
+            "display_surface": 0.63
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 9.681856764854106e-06,
+          "incompatible_meshes": [],
+          "worst_mesh": "display_surface"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "base_stand": 0.63,
+            "pedestal_arm": 0.63,
+            "monitor_body_bezel": 0.63,
+            "display_surface": 0.63
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 1.8352520816462284e-05,
+          "incompatible_meshes": [],
+          "worst_mesh": "display_surface"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "base_stand": 1.37,
+            "pedestal_arm": 1.37,
+            "monitor_body_bezel": 1.37,
+            "display_surface": 1.37
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 1.2072699725943263e-05,
+          "incompatible_meshes": [],
+          "worst_mesh": "display_surface"
+        }
+      ]
+    },
+    {
+      "id": "paper-gpt-5-6-sol-standing-sink",
+      "provider": "GPT-5.6 Sol",
+      "case": "StandingSink_seed0",
+      "source_script": "treestruct3d_results/gpt5.6_sol/StandingSink_seed0/StandingSink_seed0.py",
+      "source_sha256": "42e477957868378ddb734948bf03ab07238d7ef766a374ac63921a67286971fc",
+      "controls": [
+        {
+          "id": "pedestal_support",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "pedestal_support"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "pedestal_support"
+          ],
+          "possible_world_influence_instance_ids": [
+            "basin_body",
+            "faucet_handle",
+            "gooseneck_spout",
+            "pedestal_support"
+          ]
+        },
+        {
+          "id": "basin_body",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "basin_body"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "basin_body",
+            "faucet_handle"
+          ],
+          "possible_world_influence_instance_ids": [
+            "basin_body",
+            "faucet_handle",
+            "gooseneck_spout"
+          ]
+        },
+        {
+          "id": "gooseneck_spout",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "gooseneck_spout"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "gooseneck_spout"
+          ],
+          "possible_world_influence_instance_ids": [
+            "gooseneck_spout"
+          ]
+        },
+        {
+          "id": "faucet_handle",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "faucet_handle"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "faucet_handle"
+          ],
+          "possible_world_influence_instance_ids": [
+            "faucet_handle"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "basin_body",
+          "child": "faucet_handle"
+        },
+        {
+          "parent": "basin_body",
+          "child": "gooseneck_spout"
+        },
+        {
+          "parent": "pedestal_support",
+          "child": "basin_body"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "faucet_handle",
+          "additional_control_ids": [
+            "basin_body"
+          ]
+        }
+      ],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "build_pedestal",
+          "line": 178,
+          "end_line": 216,
+          "literal_PART_PARAMS_reads": [
+            "pedestal_support"
+          ]
+        },
+        {
+          "name": "build_basin",
+          "line": 219,
+          "end_line": 301,
+          "literal_PART_PARAMS_reads": [
+            "basin_body"
+          ]
+        },
+        {
+          "name": "build_spout",
+          "line": 313,
+          "end_line": 413,
+          "literal_PART_PARAMS_reads": [
+            "gooseneck_spout"
+          ]
+        },
+        {
+          "name": "build_handles",
+          "line": 416,
+          "end_line": 470,
+          "literal_PART_PARAMS_reads": [
+            "faucet_handle"
+          ]
+        }
+      ],
+      "notes": [
+        "faucet_handle is a joined two-handle mesh built from two basin mount coordinates. Source formulas are additive in basin mount positions and faucet size; do not use one pivot for both."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 16,
+        "same_vertex_counts": 16,
+        "same_vertex_counts_and_index_sequence": 16
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "pedestal_support": 0.63,
+            "basin_body": 1.37,
+            "gooseneck_spout": 0.63,
+            "faucet_handle": 1.37
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 7.539457464619588e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "gooseneck_spout"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "pedestal_support": 1.37,
+            "basin_body": 0.63,
+            "gooseneck_spout": 1.37,
+            "faucet_handle": 0.63
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 9.610960183499514e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "gooseneck_spout"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "pedestal_support": 0.63,
+            "basin_body": 0.63,
+            "gooseneck_spout": 0.63,
+            "faucet_handle": 0.63
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 7.251217997429632e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "gooseneck_spout"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "pedestal_support": 1.37,
+            "basin_body": 1.37,
+            "gooseneck_spout": 1.37,
+            "faucet_handle": 1.37
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 9.902267292640298e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "faucet_handle"
+        }
+      ]
+    },
+    {
+      "id": "paper-gemini-3-1-pro-dragonfly",
+      "provider": "Gemini 3.1 Pro",
+      "case": "Dragonfly_seed0",
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/Dragonfly_seed0/Dragonfly_seed0.py",
+      "source_sha256": "54f6d11f624fd0a6d3b5e12f0d0fbe4408e7d1e0d0b595dd11420cfa88a6ea50",
+      "controls": [
+        {
+          "id": "thorax",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "thorax"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "thorax"
+          ],
+          "possible_world_influence_instance_ids": [
+            "abdomen",
+            "compound_eye",
+            "compound_eye.001",
+            "forewing",
+            "forewing.001",
+            "head",
+            "hindwing",
+            "hindwing.001",
+            "thorax"
+          ]
+        },
+        {
+          "id": "abdomen",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "abdomen"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "abdomen"
+          ],
+          "possible_world_influence_instance_ids": [
+            "abdomen"
+          ]
+        },
+        {
+          "id": "head",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "head"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "head"
+          ],
+          "possible_world_influence_instance_ids": [
+            "compound_eye",
+            "compound_eye.001",
+            "head"
+          ]
+        },
+        {
+          "id": "compound_eye",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "compound_eye",
+            "compound_eye.001"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "compound_eye"
+          ],
+          "possible_world_influence_instance_ids": [
+            "compound_eye",
+            "compound_eye.001"
+          ]
+        },
+        {
+          "id": "forewing",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "forewing",
+            "forewing.001"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "forewing"
+          ],
+          "possible_world_influence_instance_ids": [
+            "forewing",
+            "forewing.001"
+          ]
+        },
+        {
+          "id": "hindwing",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "hindwing",
+            "hindwing.001"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "hindwing"
+          ],
+          "possible_world_influence_instance_ids": [
+            "hindwing",
+            "hindwing.001"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "head",
+          "child": "compound_eye"
+        },
+        {
+          "parent": "head",
+          "child": "compound_eye.001"
+        },
+        {
+          "parent": "thorax",
+          "child": "abdomen"
+        },
+        {
+          "parent": "thorax",
+          "child": "forewing"
+        },
+        {
+          "parent": "thorax",
+          "child": "forewing.001"
+        },
+        {
+          "parent": "thorax",
+          "child": "head"
+        },
+        {
+          "parent": "thorax",
+          "child": "hindwing"
+        },
+        {
+          "parent": "thorax",
+          "child": "hindwing.001"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": false,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "main",
+          "line": 421,
+          "end_line": 462,
+          "literal_PART_PARAMS_reads": [
+            "abdomen",
+            "compound_eye",
+            "forewing",
+            "head",
+            "hindwing",
+            "thorax"
+          ]
+        }
+      ],
+      "notes": [
+        "compound_eye, forewing and hindwing each generate two runtime instances from one semantic parameter.",
+        "No source join helper. build_thorax assigns seeded random hair to bm.faces traversal order; BMesh sphere face order changes can change actual hair placement even when thorax.scale is untouched. Freeze/sort normalized sphere-face order before hair selection consistently for default and all captures.",
+        "Head and eyes also have pure vertex/polygon reordering; existing four all-control checks cover only five of nine meshes."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 36,
+        "same_vertex_counts": 36,
+        "same_vertex_counts_and_index_sequence": 20
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "thorax": 0.63,
+            "abdomen": 1.37,
+            "head": 0.63,
+            "compound_eye": 1.37,
+            "forewing": 0.63,
+            "hindwing": 1.37
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 9,
+          "max_absolute_vertex_error": 5.057621821307283e-07,
+          "incompatible_meshes": [
+            "compound_eye",
+            "compound_eye.001",
+            "head",
+            "thorax"
+          ],
+          "worst_mesh": "forewing"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "thorax": 1.37,
+            "abdomen": 0.63,
+            "head": 1.37,
+            "compound_eye": 0.63,
+            "forewing": 1.37,
+            "hindwing": 0.63
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 9,
+          "max_absolute_vertex_error": 5.462855929083633e-07,
+          "incompatible_meshes": [
+            "compound_eye",
+            "compound_eye.001",
+            "head",
+            "thorax"
+          ],
+          "worst_mesh": "forewing.001"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "thorax": 0.63,
+            "abdomen": 0.63,
+            "head": 0.63,
+            "compound_eye": 0.63,
+            "forewing": 0.63,
+            "hindwing": 0.63
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 9,
+          "max_absolute_vertex_error": 5.057621821307283e-07,
+          "incompatible_meshes": [
+            "compound_eye",
+            "compound_eye.001",
+            "head",
+            "thorax"
+          ],
+          "worst_mesh": "forewing"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "thorax": 1.37,
+            "abdomen": 1.37,
+            "head": 1.37,
+            "compound_eye": 1.37,
+            "forewing": 1.37,
+            "hindwing": 1.37
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 9,
+          "max_absolute_vertex_error": 9.5367431640625e-07,
+          "incompatible_meshes": [
+            "compound_eye",
+            "compound_eye.001",
+            "head",
+            "thorax"
+          ],
+          "worst_mesh": "abdomen"
+        }
+      ],
+      "additional_blocker": "Non-deterministic sphere face traversal affects seeded hair placement."
+    },
+    {
+      "id": "paper-gemini-3-1-pro-bed-frame",
+      "provider": "Gemini 3.1 Pro",
+      "case": "BedFrame_seed0",
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/BedFrame_seed0/BedFrame_seed0.py",
+      "source_sha256": "1f4148bb79d6d553780b33cea0c6fc6f67daefa6346bc88b554f30806086420b",
+      "controls": [
+        {
+          "id": "bed_frame_base",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "bed_frame_base"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "bed_frame_base",
+            "footboard",
+            "headboard",
+            "slat"
+          ],
+          "possible_world_influence_instance_ids": [
+            "bed_frame_base",
+            "footboard",
+            "headboard",
+            "leg",
+            "leg.001",
+            "leg.002",
+            "leg.003",
+            "slat",
+            "slat.001",
+            "slat.002",
+            "slat.003",
+            "slat.004",
+            "slat.005",
+            "slat.006",
+            "slat.007",
+            "slat.008",
+            "slat.009",
+            "slat.010",
+            "slat.011",
+            "slat.012",
+            "slat.013"
+          ]
+        },
+        {
+          "id": "headboard",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "headboard"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "headboard"
+          ],
+          "possible_world_influence_instance_ids": [
+            "headboard"
+          ]
+        },
+        {
+          "id": "footboard",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "footboard"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "footboard"
+          ],
+          "possible_world_influence_instance_ids": [
+            "footboard"
+          ]
+        },
+        {
+          "id": "slat",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "slat",
+            "slat.001",
+            "slat.002",
+            "slat.003",
+            "slat.004",
+            "slat.005",
+            "slat.006",
+            "slat.007",
+            "slat.008",
+            "slat.009",
+            "slat.010",
+            "slat.011",
+            "slat.012",
+            "slat.013"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "slat"
+          ],
+          "possible_world_influence_instance_ids": [
+            "slat",
+            "slat.001",
+            "slat.002",
+            "slat.003",
+            "slat.004",
+            "slat.005",
+            "slat.006",
+            "slat.007",
+            "slat.008",
+            "slat.009",
+            "slat.010",
+            "slat.011",
+            "slat.012",
+            "slat.013"
+          ]
+        },
+        {
+          "id": "leg",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "leg",
+            "leg.001",
+            "leg.002",
+            "leg.003"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "bed_frame_base",
+            "leg"
+          ],
+          "possible_world_influence_instance_ids": [
+            "bed_frame_base",
+            "footboard",
+            "headboard",
+            "leg",
+            "leg.001",
+            "leg.002",
+            "leg.003",
+            "slat",
+            "slat.001",
+            "slat.002",
+            "slat.003",
+            "slat.004",
+            "slat.005",
+            "slat.006",
+            "slat.007",
+            "slat.008",
+            "slat.009",
+            "slat.010",
+            "slat.011",
+            "slat.012",
+            "slat.013"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "bed_frame_base",
+          "child": "footboard"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "headboard"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "leg"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "leg.001"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "leg.002"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "leg.003"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.001"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.002"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.003"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.004"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.005"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.006"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.007"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.008"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.009"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.010"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.011"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.012"
+        },
+        {
+          "parent": "bed_frame_base",
+          "child": "slat.013"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "bed_frame_base",
+          "additional_control_ids": [
+            "leg"
+          ]
+        },
+        {
+          "part_id": "headboard",
+          "additional_control_ids": [
+            "bed_frame_base"
+          ]
+        },
+        {
+          "part_id": "footboard",
+          "additional_control_ids": [
+            "bed_frame_base"
+          ]
+        },
+        {
+          "part_id": "slat",
+          "additional_control_ids": [
+            "bed_frame_base"
+          ]
+        }
+      ],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "build_bed_frame_base",
+          "line": 114,
+          "end_line": 160,
+          "literal_PART_PARAMS_reads": [
+            "slat"
+          ]
+        },
+        {
+          "name": "main",
+          "line": 250,
+          "end_line": 280,
+          "literal_PART_PARAMS_reads": [
+            "bed_frame_base",
+            "footboard",
+            "headboard",
+            "leg",
+            "slat"
+          ]
+        }
+      ],
+      "notes": [
+        "Source divides true_base_w by child.scale before multiplying all vertices by child.scale; the apparent products cancel. Headboard/footboard width follows frame, while height/thickness follows own scale.",
+        "Frame base height follows leg.scale through true_leg_h / frame.scale then final frame scaling; slat length similarly cancels own scale. Existing four all-control tests are additive within 2.7e-7."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 84,
+        "same_vertex_counts": 84,
+        "same_vertex_counts_and_index_sequence": 84
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "bed_frame_base": 0.63,
+            "headboard": 1.37,
+            "footboard": 0.63,
+            "slat": 1.37,
+            "leg": 0.63
+          },
+          "compatible_meshes": 21,
+          "mesh_count": 21,
+          "max_absolute_vertex_error": 1.341104507446289e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "headboard"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "bed_frame_base": 1.37,
+            "headboard": 0.63,
+            "footboard": 1.37,
+            "slat": 0.63,
+            "leg": 1.37
+          },
+          "compatible_meshes": 21,
+          "mesh_count": 21,
+          "max_absolute_vertex_error": 1.884864366154897e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "footboard"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "bed_frame_base": 0.63,
+            "headboard": 0.63,
+            "footboard": 0.63,
+            "slat": 0.63,
+            "leg": 0.63
+          },
+          "compatible_meshes": 21,
+          "mesh_count": 21,
+          "max_absolute_vertex_error": 1.341104507446289e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "leg"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "bed_frame_base": 1.37,
+            "headboard": 1.37,
+            "footboard": 1.37,
+            "slat": 1.37,
+            "leg": 1.37
+          },
+          "compatible_meshes": 21,
+          "mesh_count": 21,
+          "max_absolute_vertex_error": 2.6656007498500226e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "headboard"
+        }
+      ]
+    },
+    {
+      "id": "paper-gemini-3-1-pro-cabinet-drawer-base",
+      "provider": "Gemini 3.1 Pro",
+      "case": "CabinetDrawerBase_seed0",
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/CabinetDrawerBase_seed0/CabinetDrawerBase_seed0.py",
+      "source_sha256": "aecd66603d8bf18245e1f1a26ed95935f4e7167b542c69c0ed8cf3c61fede1de",
+      "controls": [
+        {
+          "id": "bottom_panel",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "bottom_panel"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "back_panel",
+            "bottom_panel",
+            "front_panel",
+            "side_walls"
+          ],
+          "possible_world_influence_instance_ids": [
+            "back_panel",
+            "bottom_panel",
+            "front_panel",
+            "side_walls"
+          ]
+        },
+        {
+          "id": "back_panel",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "back_panel"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "back_panel",
+            "bottom_panel",
+            "side_walls"
+          ],
+          "possible_world_influence_instance_ids": [
+            "back_panel",
+            "bottom_panel",
+            "front_panel",
+            "side_walls"
+          ]
+        },
+        {
+          "id": "side_walls",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "side_walls"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "side_walls"
+          ],
+          "possible_world_influence_instance_ids": [
+            "side_walls"
+          ]
+        },
+        {
+          "id": "front_panel",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "front_panel"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "bottom_panel",
+            "front_panel",
+            "side_walls"
+          ],
+          "possible_world_influence_instance_ids": [
+            "back_panel",
+            "bottom_panel",
+            "front_panel",
+            "side_walls"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "bottom_panel",
+          "child": "back_panel"
+        },
+        {
+          "parent": "bottom_panel",
+          "child": "front_panel"
+        },
+        {
+          "parent": "bottom_panel",
+          "child": "side_walls"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "bottom_panel",
+          "additional_control_ids": [
+            "back_panel",
+            "front_panel"
+          ]
+        },
+        {
+          "part_id": "back_panel",
+          "additional_control_ids": [
+            "bottom_panel"
+          ]
+        },
+        {
+          "part_id": "front_panel",
+          "additional_control_ids": [
+            "bottom_panel"
+          ]
+        },
+        {
+          "part_id": "side_walls",
+          "additional_control_ids": [
+            "bottom_panel",
+            "back_panel",
+            "front_panel"
+          ]
+        }
+      ],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "generate_drawer",
+          "line": 98,
+          "end_line": 168,
+          "literal_PART_PARAMS_reads": [
+            "back_panel",
+            "bottom_panel",
+            "front_panel",
+            "side_walls"
+          ]
+        }
+      ],
+      "notes": [
+        "back/front width follows bottom_panel, side length = bottom depth - back thickness - front thickness; x offsets mix bottom width and side thickness additively.",
+        "Bottom authored loose anchors depend on back/front thickness. Fixed bevel.width=.002 may clamp at other parameter limits, but all existing .63/1.37 combinations are additive within 8.5e-8."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 16,
+        "same_vertex_counts": 16,
+        "same_vertex_counts_and_index_sequence": 16
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "bottom_panel": 0.63,
+            "back_panel": 1.37,
+            "side_walls": 0.63,
+            "front_panel": 1.37
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 7.487740830422111e-08,
+          "incompatible_meshes": [],
+          "worst_mesh": "side_walls"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "bottom_panel": 1.37,
+            "back_panel": 0.63,
+            "side_walls": 1.37,
+            "front_panel": 0.63
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 6.664001874625056e-08,
+          "incompatible_meshes": [],
+          "worst_mesh": "side_walls"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "bottom_panel": 0.63,
+            "back_panel": 0.63,
+            "side_walls": 0.63,
+            "front_panel": 0.63
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 7.487740830422111e-08,
+          "incompatible_meshes": [],
+          "worst_mesh": "side_walls"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "bottom_panel": 1.37,
+            "back_panel": 1.37,
+            "side_walls": 1.37,
+            "front_panel": 1.37
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 8.429369702178807e-08,
+          "incompatible_meshes": [],
+          "worst_mesh": "side_walls"
+        }
+      ]
+    },
+    {
+      "id": "paper-gemini-3-1-pro-coconut-tree",
+      "provider": "Gemini 3.1 Pro",
+      "case": "CoconutTree_seed0",
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/CoconutTree_seed0/CoconutTree_seed0.py",
+      "source_sha256": "f8dd22386a62bc6ffbf1b2d98ada97d2443218317b2d07e407279a2113254349",
+      "controls": [
+        {
+          "id": "trunk",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "trunk"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "trunk"
+          ],
+          "possible_world_influence_instance_ids": [
+            "crown_base",
+            "fronds",
+            "trunk"
+          ]
+        },
+        {
+          "id": "crown_base",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "crown_base"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "crown_base"
+          ],
+          "possible_world_influence_instance_ids": [
+            "crown_base",
+            "fronds"
+          ]
+        },
+        {
+          "id": "fronds",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "fronds"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "fronds"
+          ],
+          "possible_world_influence_instance_ids": [
+            "fronds"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "crown_base",
+          "child": "fronds"
+        },
+        {
+          "parent": "trunk",
+          "child": "crown_base"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "create_trunk",
+          "line": 53,
+          "end_line": 128,
+          "literal_PART_PARAMS_reads": [
+            "trunk"
+          ]
+        },
+        {
+          "name": "create_crown_base",
+          "line": 130,
+          "end_line": 192,
+          "literal_PART_PARAMS_reads": [
+            "crown_base"
+          ]
+        },
+        {
+          "name": "create_fronds",
+          "line": 194,
+          "end_line": 310,
+          "literal_PART_PARAMS_reads": [
+            "fronds"
+          ]
+        }
+      ],
+      "notes": [
+        "trunk_pitch comes from fixed unscaled tangent parameters, so it is independent of trunk.scale; crown and fronds have independent local shapes."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 12,
+        "same_vertex_counts": 12,
+        "same_vertex_counts_and_index_sequence": 12
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "trunk": 0.63,
+            "crown_base": 1.37,
+            "fronds": 0.63
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 3.844384073399806e-06,
+          "incompatible_meshes": [],
+          "worst_mesh": "fronds"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "trunk": 1.37,
+            "crown_base": 0.63,
+            "fronds": 1.37
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 4.862803948967728e-06,
+          "incompatible_meshes": [],
+          "worst_mesh": "fronds"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "trunk": 0.63,
+            "crown_base": 0.63,
+            "fronds": 0.63
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 2.6973983046972182e-06,
+          "incompatible_meshes": [],
+          "worst_mesh": "fronds"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "trunk": 1.37,
+            "crown_base": 1.37,
+            "fronds": 1.37
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 4.76837158203125e-06,
+          "incompatible_meshes": [],
+          "worst_mesh": "fronds"
+        }
+      ]
+    },
+    {
+      "id": "paper-gemini-3-1-pro-pillar",
+      "provider": "Gemini 3.1 Pro",
+      "case": "Pillar_seed0",
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/Pillar_seed0/Pillar_seed0.py",
+      "source_sha256": "3b41b4b0e363a4f728f587a95808507eb14b25313cace8efab16ca22d0310c9a",
+      "controls": [
+        {
+          "id": "base",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "base"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "base"
+          ],
+          "possible_world_influence_instance_ids": [
+            "base",
+            "capital",
+            "shaft"
+          ]
+        },
+        {
+          "id": "shaft",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "shaft"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "shaft"
+          ],
+          "possible_world_influence_instance_ids": [
+            "capital",
+            "shaft"
+          ]
+        },
+        {
+          "id": "capital",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "capital"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "capital"
+          ],
+          "possible_world_influence_instance_ids": [
+            "capital"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "base",
+          "child": "shaft"
+        },
+        {
+          "parent": "shaft",
+          "child": "capital"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "main",
+          "line": 224,
+          "end_line": 241,
+          "literal_PART_PARAMS_reads": [
+            "base",
+            "capital",
+            "shaft"
+          ]
+        }
+      ],
+      "notes": [
+        "Three independent own-scale meshes with shared attachment translation; four all-control tests show only float-level residuals."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 12,
+        "same_vertex_counts": 12,
+        "same_vertex_counts_and_index_sequence": 12
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "base": 0.63,
+            "shaft": 1.37,
+            "capital": 0.63
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 1.430511474609375e-06,
+          "incompatible_meshes": [],
+          "worst_mesh": "capital"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "base": 1.37,
+            "shaft": 0.63,
+            "capital": 1.37
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 4.76837158203125e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "capital"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "base": 0.63,
+            "shaft": 0.63,
+            "capital": 0.63
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 0.0,
+          "incompatible_meshes": [],
+          "worst_mesh": "base"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "base": 1.37,
+            "shaft": 1.37,
+            "capital": 1.37
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 4.76837158203125e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "capital"
+        }
+      ]
+    },
+    {
+      "id": "paper-gemini-3-5-flash-chameleon",
+      "provider": "Gemini 3.5 Flash",
+      "case": "Chameleon_seed0",
+      "source_script": "treestruct3d_results/gemini_3.5_flash/Chameleon_seed0/Chameleon_seed0.py",
+      "source_sha256": "580a1457eb7f5a3436a1ffc0a5ad3120cc61b09c814b55ca00df073a54339d59",
+      "controls": [
+        {
+          "id": "torso_body",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "torso_body"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "forelimb_left",
+            "forelimb_right",
+            "hindlimb_left",
+            "hindlimb_right",
+            "torso_body"
+          ],
+          "possible_world_influence_instance_ids": [
+            "eye_left",
+            "eye_right",
+            "forelimb_left",
+            "forelimb_right",
+            "head",
+            "hindlimb_left",
+            "hindlimb_right",
+            "tail",
+            "torso_body"
+          ]
+        },
+        {
+          "id": "head",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "head"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "head"
+          ],
+          "possible_world_influence_instance_ids": [
+            "eye_left",
+            "eye_right",
+            "head"
+          ]
+        },
+        {
+          "id": "eye_left",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "eye_left"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "eye_left"
+          ],
+          "possible_world_influence_instance_ids": [
+            "eye_left"
+          ]
+        },
+        {
+          "id": "eye_right",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "eye_right"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "eye_right"
+          ],
+          "possible_world_influence_instance_ids": [
+            "eye_right"
+          ]
+        },
+        {
+          "id": "forelimb_left",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "forelimb_left"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "forelimb_left"
+          ],
+          "possible_world_influence_instance_ids": [
+            "forelimb_left"
+          ]
+        },
+        {
+          "id": "forelimb_right",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "forelimb_right"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "forelimb_right"
+          ],
+          "possible_world_influence_instance_ids": [
+            "forelimb_right"
+          ]
+        },
+        {
+          "id": "hindlimb_left",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "hindlimb_left"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "hindlimb_left"
+          ],
+          "possible_world_influence_instance_ids": [
+            "hindlimb_left"
+          ]
+        },
+        {
+          "id": "hindlimb_right",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "hindlimb_right"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "hindlimb_right"
+          ],
+          "possible_world_influence_instance_ids": [
+            "hindlimb_right"
+          ]
+        },
+        {
+          "id": "tail",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "tail"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "tail"
+          ],
+          "possible_world_influence_instance_ids": [
+            "tail"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "head",
+          "child": "eye_left"
+        },
+        {
+          "parent": "head",
+          "child": "eye_right"
+        },
+        {
+          "parent": "torso_body",
+          "child": "forelimb_left"
+        },
+        {
+          "parent": "torso_body",
+          "child": "forelimb_right"
+        },
+        {
+          "parent": "torso_body",
+          "child": "head"
+        },
+        {
+          "parent": "torso_body",
+          "child": "hindlimb_left"
+        },
+        {
+          "parent": "torso_body",
+          "child": "hindlimb_right"
+        },
+        {
+          "parent": "torso_body",
+          "child": "tail"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "forelimb_left",
+          "additional_control_ids": [
+            "torso_body"
+          ]
+        },
+        {
+          "part_id": "forelimb_right",
+          "additional_control_ids": [
+            "torso_body"
+          ]
+        },
+        {
+          "part_id": "hindlimb_left",
+          "additional_control_ids": [
+            "torso_body"
+          ]
+        },
+        {
+          "part_id": "hindlimb_right",
+          "additional_control_ids": [
+            "torso_body"
+          ]
+        }
+      ],
+      "sparse_interactions": [
+        {
+          "controls": [
+            "torso_body",
+            "forelimb_left"
+          ],
+          "kind": "torso_conditioned_rotation_times_limb_radius",
+          "outputs": [
+            "forelimb_left"
+          ],
+          "source_lines": [
+            305,
+            313,
+            316,
+            324,
+            333,
+            529,
+            535,
+            537
+          ],
+          "formula": "drop_height=world_z(source torso anchor); p1=(sign*.45,+/-.1,-.25*drop),p2=(sign*.6,+/-.05,-.65*drop),p3=(sign*.5,0,-drop). Ring v=p_i+Q_i(drop)*(r_i*L*[cos(theta),sin(theta),0]); r_i in [.38,.32,.28,.22].",
+          "factorization": "Before nearest-child-anchor placement, each vertex is A(T)+L*B(T), with fixed subdivision connectivity preserving this affine-in-L structure. Capture two L values for each T family or reproduce source ring frames; then apply exact native child-anchor selection.",
+          "required_validation": "All four limbs separately and simultaneously; child-anchor nearest-vertex ties, final subdivision topology correspondence, and torso+limb opposite extremes."
+        },
+        {
+          "controls": [
+            "torso_body",
+            "forelimb_right"
+          ],
+          "kind": "torso_conditioned_rotation_times_limb_radius",
+          "outputs": [
+            "forelimb_right"
+          ],
+          "source_lines": [
+            305,
+            313,
+            316,
+            324,
+            333,
+            529,
+            535,
+            537
+          ],
+          "formula": "drop_height=world_z(source torso anchor); p1=(sign*.45,+/-.1,-.25*drop),p2=(sign*.6,+/-.05,-.65*drop),p3=(sign*.5,0,-drop). Ring v=p_i+Q_i(drop)*(r_i*L*[cos(theta),sin(theta),0]); r_i in [.38,.32,.28,.22].",
+          "factorization": "Before nearest-child-anchor placement, each vertex is A(T)+L*B(T), with fixed subdivision connectivity preserving this affine-in-L structure. Capture two L values for each T family or reproduce source ring frames; then apply exact native child-anchor selection.",
+          "required_validation": "All four limbs separately and simultaneously; child-anchor nearest-vertex ties, final subdivision topology correspondence, and torso+limb opposite extremes."
+        },
+        {
+          "controls": [
+            "torso_body",
+            "hindlimb_left"
+          ],
+          "kind": "torso_conditioned_rotation_times_limb_radius",
+          "outputs": [
+            "hindlimb_left"
+          ],
+          "source_lines": [
+            305,
+            313,
+            316,
+            324,
+            333,
+            529,
+            535,
+            537
+          ],
+          "formula": "drop_height=world_z(source torso anchor); p1=(sign*.45,+/-.1,-.25*drop),p2=(sign*.6,+/-.05,-.65*drop),p3=(sign*.5,0,-drop). Ring v=p_i+Q_i(drop)*(r_i*L*[cos(theta),sin(theta),0]); r_i in [.38,.32,.28,.22].",
+          "factorization": "Before nearest-child-anchor placement, each vertex is A(T)+L*B(T), with fixed subdivision connectivity preserving this affine-in-L structure. Capture two L values for each T family or reproduce source ring frames; then apply exact native child-anchor selection.",
+          "required_validation": "All four limbs separately and simultaneously; child-anchor nearest-vertex ties, final subdivision topology correspondence, and torso+limb opposite extremes."
+        },
+        {
+          "controls": [
+            "torso_body",
+            "hindlimb_right"
+          ],
+          "kind": "torso_conditioned_rotation_times_limb_radius",
+          "outputs": [
+            "hindlimb_right"
+          ],
+          "source_lines": [
+            305,
+            313,
+            316,
+            324,
+            333,
+            529,
+            535,
+            537
+          ],
+          "formula": "drop_height=world_z(source torso anchor); p1=(sign*.45,+/-.1,-.25*drop),p2=(sign*.6,+/-.05,-.65*drop),p3=(sign*.5,0,-drop). Ring v=p_i+Q_i(drop)*(r_i*L*[cos(theta),sin(theta),0]); r_i in [.38,.32,.28,.22].",
+          "factorization": "Before nearest-child-anchor placement, each vertex is A(T)+L*B(T), with fixed subdivision connectivity preserving this affine-in-L structure. Capture two L values for each T family or reproduce source ring frames; then apply exact native child-anchor selection.",
+          "required_validation": "All four limbs separately and simultaneously; child-anchor nearest-vertex ties, final subdivision topology correspondence, and torso+limb opposite extremes."
+        }
+      ],
+      "candidate_additive_after_anchor_translation": false,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "build_chameleon",
+          "line": 479,
+          "end_line": 564,
+          "literal_PART_PARAMS_reads": [
+            "eye_left",
+            "eye_right",
+            "head",
+            "tail",
+            "torso_body"
+          ]
+        }
+      ],
+      "notes": [
+        "Each of four limb controls is independent in PART_PARAMS; the paper child preset edits all four together.",
+        "Limb centerline drop_height comes from its torso anchor world z. Ring orientation depends on that centerline, while ring radius depends on limb.scale.",
+        "Nearest-mesh-vertex child anchor selection can vary at ties, and BMesh/subdivision indices reorder. Rebind correspondences before interpreting indexed errors."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 36,
+        "same_vertex_counts": 36,
+        "same_vertex_counts_and_index_sequence": 13
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "torso_body": 0.63,
+            "head": 1.37,
+            "eye_left": 0.63,
+            "eye_right": 1.37,
+            "forelimb_left": 0.63,
+            "forelimb_right": 1.37,
+            "hindlimb_left": 0.63,
+            "hindlimb_right": 1.37,
+            "tail": 0.63
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 9,
+          "max_absolute_vertex_error": 0.16358123230712313,
+          "incompatible_meshes": [
+            "eye_left",
+            "eye_right",
+            "head",
+            "torso_body"
+          ],
+          "worst_mesh": "forelimb_right"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "torso_body": 1.37,
+            "head": 0.63,
+            "eye_left": 1.37,
+            "eye_right": 0.63,
+            "forelimb_left": 1.37,
+            "forelimb_right": 0.63,
+            "hindlimb_left": 1.37,
+            "hindlimb_right": 0.63,
+            "tail": 1.37
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 9,
+          "max_absolute_vertex_error": 0.17883283071417364,
+          "incompatible_meshes": [
+            "eye_left",
+            "eye_right",
+            "head",
+            "torso_body"
+          ],
+          "worst_mesh": "hindlimb_left"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "torso_body": 0.63,
+            "head": 0.63,
+            "eye_left": 0.63,
+            "eye_right": 0.63,
+            "forelimb_left": 0.63,
+            "forelimb_right": 0.63,
+            "hindlimb_left": 0.63,
+            "hindlimb_right": 0.63,
+            "tail": 0.63
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 9,
+          "max_absolute_vertex_error": 0.02813890758984428,
+          "incompatible_meshes": [
+            "eye_left",
+            "eye_right",
+            "head",
+            "torso_body"
+          ],
+          "worst_mesh": "forelimb_left"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "torso_body": 1.37,
+            "head": 1.37,
+            "eye_left": 1.37,
+            "eye_right": 1.37,
+            "forelimb_left": 1.37,
+            "forelimb_right": 1.37,
+            "hindlimb_left": 1.37,
+            "hindlimb_right": 1.37,
+            "tail": 1.37
+          },
+          "compatible_meshes": 5,
+          "mesh_count": 9,
+          "max_absolute_vertex_error": 0.17883283071417364,
+          "incompatible_meshes": [
+            "eye_left",
+            "eye_right",
+            "head",
+            "torso_body"
+          ],
+          "worst_mesh": "hindlimb_left"
+        }
+      ]
+    },
+    {
+      "id": "paper-gemini-3-5-flash-fruit-pineapple",
+      "provider": "Gemini 3.5 Flash",
+      "case": "FruitPineapple_seed0",
+      "source_script": "treestruct3d_results/gemini_3.5_flash/FruitPineapple_seed0/FruitPineapple_seed0.py",
+      "source_sha256": "a10388812756d491243be9c139226ee9119b7d81989a159dded47978977c86ff",
+      "controls": [
+        {
+          "id": "fruit_body",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "fruit_body"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "fruit_body"
+          ],
+          "possible_world_influence_instance_ids": [
+            "bottom_spine",
+            "bottom_spine.001",
+            "bottom_spine.002",
+            "bottom_spine.003",
+            "bottom_spine.004",
+            "bottom_spine.005",
+            "bottom_spine.006",
+            "bottom_spine.007",
+            "bottom_spine.008",
+            "bottom_spine.009",
+            "bottom_spine.010",
+            "bottom_spine.011",
+            "crown_leaf",
+            "crown_leaf.001",
+            "crown_leaf.002",
+            "crown_leaf.003",
+            "crown_leaf.004",
+            "crown_leaf.005",
+            "crown_leaf.006",
+            "crown_leaf.007",
+            "crown_leaf.008",
+            "crown_leaf.009",
+            "crown_leaf.010",
+            "crown_leaf.011",
+            "crown_leaf.012",
+            "crown_leaf.013",
+            "crown_leaf.014",
+            "crown_leaf.015",
+            "crown_leaf.016",
+            "crown_leaf.017",
+            "crown_leaf.018",
+            "crown_leaf.019",
+            "crown_leaf.020",
+            "crown_leaf.021",
+            "crown_leaf.022",
+            "crown_leaf.023",
+            "crown_leaf.024",
+            "crown_leaf.025",
+            "crown_leaf.026",
+            "crown_leaf.027",
+            "crown_leaf.028",
+            "crown_leaf.029",
+            "crown_leaf.030",
+            "crown_leaf.031",
+            "crown_leaf.032",
+            "crown_leaf.033",
+            "crown_leaf.034",
+            "crown_leaf.035",
+            "crown_leaf.036",
+            "crown_leaf.037",
+            "crown_leaf.038",
+            "crown_leaf.039",
+            "crown_leaf.040",
+            "crown_leaf.041",
+            "crown_leaf.042",
+            "crown_leaf.043",
+            "crown_leaf.044",
+            "crown_leaf.045",
+            "crown_leaf.046",
+            "crown_leaf.047",
+            "fruit_body"
+          ]
+        },
+        {
+          "id": "crown_leaf",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "crown_leaf",
+            "crown_leaf.001",
+            "crown_leaf.002",
+            "crown_leaf.003",
+            "crown_leaf.004",
+            "crown_leaf.005",
+            "crown_leaf.006",
+            "crown_leaf.007",
+            "crown_leaf.008",
+            "crown_leaf.009",
+            "crown_leaf.010",
+            "crown_leaf.011",
+            "crown_leaf.012",
+            "crown_leaf.013",
+            "crown_leaf.014",
+            "crown_leaf.015",
+            "crown_leaf.016",
+            "crown_leaf.017",
+            "crown_leaf.018",
+            "crown_leaf.019",
+            "crown_leaf.020",
+            "crown_leaf.021",
+            "crown_leaf.022",
+            "crown_leaf.023",
+            "crown_leaf.024",
+            "crown_leaf.025",
+            "crown_leaf.026",
+            "crown_leaf.027",
+            "crown_leaf.028",
+            "crown_leaf.029",
+            "crown_leaf.030",
+            "crown_leaf.031",
+            "crown_leaf.032",
+            "crown_leaf.033",
+            "crown_leaf.034",
+            "crown_leaf.035",
+            "crown_leaf.036",
+            "crown_leaf.037",
+            "crown_leaf.038",
+            "crown_leaf.039",
+            "crown_leaf.040",
+            "crown_leaf.041",
+            "crown_leaf.042",
+            "crown_leaf.043",
+            "crown_leaf.044",
+            "crown_leaf.045",
+            "crown_leaf.046",
+            "crown_leaf.047"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "crown_leaf"
+          ],
+          "possible_world_influence_instance_ids": [
+            "crown_leaf",
+            "crown_leaf.001",
+            "crown_leaf.002",
+            "crown_leaf.003",
+            "crown_leaf.004",
+            "crown_leaf.005",
+            "crown_leaf.006",
+            "crown_leaf.007",
+            "crown_leaf.008",
+            "crown_leaf.009",
+            "crown_leaf.010",
+            "crown_leaf.011",
+            "crown_leaf.012",
+            "crown_leaf.013",
+            "crown_leaf.014",
+            "crown_leaf.015",
+            "crown_leaf.016",
+            "crown_leaf.017",
+            "crown_leaf.018",
+            "crown_leaf.019",
+            "crown_leaf.020",
+            "crown_leaf.021",
+            "crown_leaf.022",
+            "crown_leaf.023",
+            "crown_leaf.024",
+            "crown_leaf.025",
+            "crown_leaf.026",
+            "crown_leaf.027",
+            "crown_leaf.028",
+            "crown_leaf.029",
+            "crown_leaf.030",
+            "crown_leaf.031",
+            "crown_leaf.032",
+            "crown_leaf.033",
+            "crown_leaf.034",
+            "crown_leaf.035",
+            "crown_leaf.036",
+            "crown_leaf.037",
+            "crown_leaf.038",
+            "crown_leaf.039",
+            "crown_leaf.040",
+            "crown_leaf.041",
+            "crown_leaf.042",
+            "crown_leaf.043",
+            "crown_leaf.044",
+            "crown_leaf.045",
+            "crown_leaf.046",
+            "crown_leaf.047"
+          ]
+        },
+        {
+          "id": "bottom_spine",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "bottom_spine",
+            "bottom_spine.001",
+            "bottom_spine.002",
+            "bottom_spine.003",
+            "bottom_spine.004",
+            "bottom_spine.005",
+            "bottom_spine.006",
+            "bottom_spine.007",
+            "bottom_spine.008",
+            "bottom_spine.009",
+            "bottom_spine.010",
+            "bottom_spine.011"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "bottom_spine"
+          ],
+          "possible_world_influence_instance_ids": [
+            "bottom_spine",
+            "bottom_spine.001",
+            "bottom_spine.002",
+            "bottom_spine.003",
+            "bottom_spine.004",
+            "bottom_spine.005",
+            "bottom_spine.006",
+            "bottom_spine.007",
+            "bottom_spine.008",
+            "bottom_spine.009",
+            "bottom_spine.010",
+            "bottom_spine.011"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.001"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.002"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.003"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.004"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.005"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.006"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.007"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.008"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.009"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.010"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "bottom_spine.011"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.001"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.002"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.003"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.004"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.005"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.006"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.007"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.008"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.009"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.010"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.011"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.012"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.013"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.014"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.015"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.016"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.017"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.018"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.019"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.020"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.021"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.022"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.023"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.024"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.025"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.026"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.027"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.028"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.029"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.030"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.031"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.032"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.033"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.034"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.035"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.036"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.037"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.038"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.039"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.040"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.041"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.042"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.043"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.044"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.045"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.046"
+        },
+        {
+          "parent": "fruit_body",
+          "child": "crown_leaf.047"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "main",
+          "line": 347,
+          "end_line": 410,
+          "literal_PART_PARAMS_reads": [
+            "bottom_spine",
+            "crown_leaf",
+            "fruit_body"
+          ]
+        }
+      ],
+      "notes": [
+        "One crown_leaf control generates 48 runtime instances; bottom_spine generates 12. Body scale moves roots but does not multiply leaf/spine geometry size. Source orientations depend on normalized directions/angles and fixed random sequence."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 244,
+        "same_vertex_counts": 244,
+        "same_vertex_counts_and_index_sequence": 244
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "fruit_body": 0.63,
+            "crown_leaf": 1.37,
+            "bottom_spine": 0.63
+          },
+          "compatible_meshes": 61,
+          "mesh_count": 61,
+          "max_absolute_vertex_error": 2.9200193199910854e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "crown_leaf.041"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "fruit_body": 1.37,
+            "crown_leaf": 0.63,
+            "bottom_spine": 1.37
+          },
+          "compatible_meshes": 61,
+          "mesh_count": 61,
+          "max_absolute_vertex_error": 2.9200193199910854e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "crown_leaf.041"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "fruit_body": 0.63,
+            "crown_leaf": 0.63,
+            "bottom_spine": 0.63
+          },
+          "compatible_meshes": 61,
+          "mesh_count": 61,
+          "max_absolute_vertex_error": 2.4586915969848633e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "crown_leaf.043"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "fruit_body": 1.37,
+            "crown_leaf": 1.37,
+            "bottom_spine": 1.37
+          },
+          "compatible_meshes": 61,
+          "mesh_count": 61,
+          "max_absolute_vertex_error": 5.339525004377638e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "crown_leaf.038"
+        }
+      ]
+    },
+    {
+      "id": "paper-gemini-3-5-flash-columnar-cactus",
+      "provider": "Gemini 3.5 Flash",
+      "case": "ColumnarCactus_seed0",
+      "source_script": "treestruct3d_results/gemini_3.5_flash/ColumnarCactus_seed0/ColumnarCactus_seed0.py",
+      "source_sha256": "54af46266070c28e9f9a5872e413cea2c2a918a684d8d3ae4e5190bc69a77666",
+      "controls": [
+        {
+          "id": "main_stem",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "main_stem"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "main_stem",
+            "stem_spine_clusters"
+          ],
+          "possible_world_influence_instance_ids": [
+            "arm_spine_clusters",
+            "main_stem",
+            "side_arm",
+            "stem_spine_clusters"
+          ]
+        },
+        {
+          "id": "side_arm",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "side_arm"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "arm_spine_clusters",
+            "side_arm"
+          ],
+          "possible_world_influence_instance_ids": [
+            "arm_spine_clusters",
+            "side_arm"
+          ]
+        },
+        {
+          "id": "stem_spine_clusters",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "stem_spine_clusters"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "stem_spine_clusters"
+          ],
+          "possible_world_influence_instance_ids": [
+            "stem_spine_clusters"
+          ]
+        },
+        {
+          "id": "arm_spine_clusters",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "arm_spine_clusters"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "arm_spine_clusters"
+          ],
+          "possible_world_influence_instance_ids": [
+            "arm_spine_clusters"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "main_stem",
+          "child": "side_arm"
+        },
+        {
+          "parent": "main_stem",
+          "child": "stem_spine_clusters"
+        },
+        {
+          "parent": "side_arm",
+          "child": "arm_spine_clusters"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "stem_spine_clusters",
+          "additional_control_ids": [
+            "main_stem"
+          ]
+        },
+        {
+          "part_id": "arm_spine_clusters",
+          "additional_control_ids": [
+            "side_arm"
+          ]
+        }
+      ],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "main",
+          "line": 339,
+          "end_line": 405,
+          "literal_PART_PARAMS_reads": [
+            "arm_spine_clusters",
+            "main_stem",
+            "side_arm",
+            "stem_spine_clusters"
+          ]
+        }
+      ],
+      "notes": [
+        "Each spine cluster is one joined mesh containing many needles. Parent supplies individual roots, cluster control supplies needle size; normal directions are scale invariant analytically.",
+        "Stem/arm scale and their associated spine size are additive in the source formulas; random sequence is fixed and consumes no scale-dependent conditional counts in these builders."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 16,
+        "same_vertex_counts": 16,
+        "same_vertex_counts_and_index_sequence": 16
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "main_stem": 0.63,
+            "side_arm": 1.37,
+            "stem_spine_clusters": 0.63,
+            "arm_spine_clusters": 1.37
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 4.777675730550706e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "stem_spine_clusters"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "main_stem": 1.37,
+            "side_arm": 0.63,
+            "stem_spine_clusters": 1.37,
+            "arm_spine_clusters": 0.63
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 4.805480091749757e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "stem_spine_clusters"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "main_stem": 0.63,
+            "side_arm": 0.63,
+            "stem_spine_clusters": 0.63,
+            "arm_spine_clusters": 0.63
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 4.777675730550706e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "stem_spine_clusters"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "main_stem": 1.37,
+            "side_arm": 1.37,
+            "stem_spine_clusters": 1.37,
+            "arm_spine_clusters": 1.37
+          },
+          "compatible_meshes": 4,
+          "mesh_count": 4,
+          "max_absolute_vertex_error": 4.805480091749757e-07,
+          "incompatible_meshes": [],
+          "worst_mesh": "stem_spine_clusters"
+        }
+      ]
+    },
+    {
+      "id": "paper-gemini-3-5-flash-veratrum-monocot",
+      "provider": "Gemini 3.5 Flash",
+      "case": "VeratrumMonocot_seed0",
+      "source_script": "treestruct3d_results/gemini_3.5_flash/VeratrumMonocot_seed0/VeratrumMonocot_seed0.py",
+      "source_sha256": "58c49a41626a5533cb43d30060fe4e587117021ba59a2801a29d323bf8e0532c",
+      "controls": [
+        {
+          "id": "leafy_base",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "leafy_base"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "leafy_base"
+          ],
+          "possible_world_influence_instance_ids": [
+            "floret",
+            "floret.001",
+            "floret.002",
+            "floret.003",
+            "floret.004",
+            "floret.005",
+            "floret.006",
+            "floret.007",
+            "floret.008",
+            "floret.009",
+            "floret.010",
+            "floret.011",
+            "floret.012",
+            "floret.013",
+            "floret.014",
+            "floret.015",
+            "floret.016",
+            "floret.017",
+            "floret.018",
+            "floret.019",
+            "floret.020",
+            "floret.021",
+            "floret.022",
+            "floret.023",
+            "floret.024",
+            "floret.025",
+            "floret.026",
+            "floret.027",
+            "floret.028",
+            "floret.029",
+            "floret.030",
+            "floret.031",
+            "floret.032",
+            "floret.033",
+            "floret.034",
+            "floret.035",
+            "floret.036",
+            "floret.037",
+            "floret.038",
+            "floret.039",
+            "floret.040",
+            "floret.041",
+            "floret.042",
+            "floret.043",
+            "floret.044",
+            "floret.045",
+            "floret.046",
+            "floret.047",
+            "flower_stalk",
+            "leafy_base"
+          ]
+        },
+        {
+          "id": "flower_stalk",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "flower_stalk"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "flower_stalk"
+          ],
+          "possible_world_influence_instance_ids": [
+            "floret",
+            "floret.001",
+            "floret.002",
+            "floret.003",
+            "floret.004",
+            "floret.005",
+            "floret.006",
+            "floret.007",
+            "floret.008",
+            "floret.009",
+            "floret.010",
+            "floret.011",
+            "floret.012",
+            "floret.013",
+            "floret.014",
+            "floret.015",
+            "floret.016",
+            "floret.017",
+            "floret.018",
+            "floret.019",
+            "floret.020",
+            "floret.021",
+            "floret.022",
+            "floret.023",
+            "floret.024",
+            "floret.025",
+            "floret.026",
+            "floret.027",
+            "floret.028",
+            "floret.029",
+            "floret.030",
+            "floret.031",
+            "floret.032",
+            "floret.033",
+            "floret.034",
+            "floret.035",
+            "floret.036",
+            "floret.037",
+            "floret.038",
+            "floret.039",
+            "floret.040",
+            "floret.041",
+            "floret.042",
+            "floret.043",
+            "floret.044",
+            "floret.045",
+            "floret.046",
+            "floret.047",
+            "flower_stalk"
+          ]
+        },
+        {
+          "id": "floret",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "floret",
+            "floret.001",
+            "floret.002",
+            "floret.003",
+            "floret.004",
+            "floret.005",
+            "floret.006",
+            "floret.007",
+            "floret.008",
+            "floret.009",
+            "floret.010",
+            "floret.011",
+            "floret.012",
+            "floret.013",
+            "floret.014",
+            "floret.015",
+            "floret.016",
+            "floret.017",
+            "floret.018",
+            "floret.019",
+            "floret.020",
+            "floret.021",
+            "floret.022",
+            "floret.023",
+            "floret.024",
+            "floret.025",
+            "floret.026",
+            "floret.027",
+            "floret.028",
+            "floret.029",
+            "floret.030",
+            "floret.031",
+            "floret.032",
+            "floret.033",
+            "floret.034",
+            "floret.035",
+            "floret.036",
+            "floret.037",
+            "floret.038",
+            "floret.039",
+            "floret.040",
+            "floret.041",
+            "floret.042",
+            "floret.043",
+            "floret.044",
+            "floret.045",
+            "floret.046",
+            "floret.047"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "floret"
+          ],
+          "possible_world_influence_instance_ids": [
+            "floret",
+            "floret.001",
+            "floret.002",
+            "floret.003",
+            "floret.004",
+            "floret.005",
+            "floret.006",
+            "floret.007",
+            "floret.008",
+            "floret.009",
+            "floret.010",
+            "floret.011",
+            "floret.012",
+            "floret.013",
+            "floret.014",
+            "floret.015",
+            "floret.016",
+            "floret.017",
+            "floret.018",
+            "floret.019",
+            "floret.020",
+            "floret.021",
+            "floret.022",
+            "floret.023",
+            "floret.024",
+            "floret.025",
+            "floret.026",
+            "floret.027",
+            "floret.028",
+            "floret.029",
+            "floret.030",
+            "floret.031",
+            "floret.032",
+            "floret.033",
+            "floret.034",
+            "floret.035",
+            "floret.036",
+            "floret.037",
+            "floret.038",
+            "floret.039",
+            "floret.040",
+            "floret.041",
+            "floret.042",
+            "floret.043",
+            "floret.044",
+            "floret.045",
+            "floret.046",
+            "floret.047"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "flower_stalk",
+          "child": "floret"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.001"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.002"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.003"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.004"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.005"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.006"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.007"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.008"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.009"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.010"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.011"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.012"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.013"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.014"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.015"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.016"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.017"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.018"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.019"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.020"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.021"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.022"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.023"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.024"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.025"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.026"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.027"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.028"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.029"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.030"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.031"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.032"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.033"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.034"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.035"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.036"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.037"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.038"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.039"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.040"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.041"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.042"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.043"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.044"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.045"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.046"
+        },
+        {
+          "parent": "flower_stalk",
+          "child": "floret.047"
+        },
+        {
+          "parent": "leafy_base",
+          "child": "flower_stalk"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [],
+      "notes": [
+        "floret controls 48 repeated instances. Stalk tangents and normals use finite differences of scaled paths: scale cancels analytically, but float arithmetic yields rotation noise that multiplies floret size.",
+        "Existing all-control maximum residual is 3.45e-5 native units; do not silently claim exact equality or enlarge tolerance to hide it. Capture source-computed orientations when validating."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 200,
+        "same_vertex_counts": 200,
+        "same_vertex_counts_and_index_sequence": 200
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "leafy_base": 0.63,
+            "flower_stalk": 1.37,
+            "floret": 0.63
+          },
+          "compatible_meshes": 50,
+          "mesh_count": 50,
+          "max_absolute_vertex_error": 3.445107143351643e-05,
+          "incompatible_meshes": [],
+          "worst_mesh": "floret.043"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "leafy_base": 1.37,
+            "flower_stalk": 0.63,
+            "floret": 1.37
+          },
+          "compatible_meshes": 50,
+          "mesh_count": 50,
+          "max_absolute_vertex_error": 3.063016325548601e-05,
+          "incompatible_meshes": [],
+          "worst_mesh": "floret.043"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "leafy_base": 0.63,
+            "flower_stalk": 0.63,
+            "floret": 0.63
+          },
+          "compatible_meshes": 50,
+          "mesh_count": 50,
+          "max_absolute_vertex_error": 3.0863524495327316e-05,
+          "incompatible_meshes": [],
+          "worst_mesh": "floret.043"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "leafy_base": 1.37,
+            "flower_stalk": 1.37,
+            "floret": 1.37
+          },
+          "compatible_meshes": 50,
+          "mesh_count": 50,
+          "max_absolute_vertex_error": 3.422253560292889e-05,
+          "incompatible_meshes": [],
+          "worst_mesh": "floret.043"
+        }
+      ]
+    },
+    {
+      "id": "paper-gemini-3-5-flash-coffee-table",
+      "provider": "Gemini 3.5 Flash",
+      "case": "CoffeeTable_seed0",
+      "source_script": "treestruct3d_results/gemini_3.5_flash/CoffeeTable_seed0/CoffeeTable_seed0.py",
+      "source_sha256": "6f171efb975e13e01b2937e5fb0b403b770464f451a47168d7b404aafcb292a6",
+      "controls": [
+        {
+          "id": "table_top",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "table_top"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "table_top"
+          ],
+          "possible_world_influence_instance_ids": [
+            "bottom_shelf",
+            "pedestal_legs",
+            "table_top"
+          ]
+        },
+        {
+          "id": "bottom_shelf",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "bottom_shelf"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "bottom_shelf",
+            "pedestal_legs",
+            "table_top"
+          ],
+          "possible_world_influence_instance_ids": [
+            "bottom_shelf",
+            "pedestal_legs",
+            "table_top"
+          ]
+        },
+        {
+          "id": "pedestal_legs",
+          "default_scale": 1.0,
+          "runtime_instance_ids": [
+            "pedestal_legs"
+          ],
+          "direct_local_geometry_or_authored_anchor_part_ids": [
+            "pedestal_legs"
+          ],
+          "possible_world_influence_instance_ids": [
+            "pedestal_legs"
+          ]
+        }
+      ],
+      "runtime_parent_edges": [
+        {
+          "parent": "bottom_shelf",
+          "child": "pedestal_legs"
+        },
+        {
+          "parent": "table_top",
+          "child": "bottom_shelf"
+        }
+      ],
+      "cross_scale_local_geometry_or_authored_anchor_dependencies": [
+        {
+          "part_id": "table_top",
+          "additional_control_ids": [
+            "bottom_shelf"
+          ]
+        },
+        {
+          "part_id": "pedestal_legs",
+          "additional_control_ids": [
+            "bottom_shelf"
+          ]
+        }
+      ],
+      "sparse_interactions": [],
+      "candidate_additive_after_anchor_translation": true,
+      "candidate_status": "Source inference plus limited measured captures; not a general exactness certificate.",
+      "source_function_literal_reads": [
+        {
+          "name": "build_table_top",
+          "line": 199,
+          "end_line": 221,
+          "literal_PART_PARAMS_reads": [
+            "bottom_shelf",
+            "table_top"
+          ]
+        },
+        {
+          "name": "build_bottom_shelf",
+          "line": 223,
+          "end_line": 246,
+          "literal_PART_PARAMS_reads": [
+            "bottom_shelf",
+            "table_top"
+          ]
+        },
+        {
+          "name": "build_pedestal_legs",
+          "line": 248,
+          "end_line": 325,
+          "literal_PART_PARAMS_reads": [
+            "bottom_shelf",
+            "pedestal_legs"
+          ]
+        }
+      ],
+      "notes": [
+        "build_bottom_shelf reads table_top width/depth/radius constants but does not read table_top.scale; do not infer a false scale dependency from a PART_PARAMS key read alone.",
+        "table_top has a loose authored anchor using shelf clearance. Pedestal leg height follows shelf.scale while radius/spacing follows pedestal_legs.scale. Runtime attachment path is top -> shelf -> legs. Existing all-control tests are additive within 6e-8."
+      ],
+      "existing_glb_correspondence": {
+        "state_mesh_comparisons": 12,
+        "same_vertex_counts": 12,
+        "same_vertex_counts_and_index_sequence": 10
+      },
+      "native_additive_composition_checks": [
+        {
+          "id": "multi-0",
+          "params": {
+            "table_top": 0.63,
+            "bottom_shelf": 1.37,
+            "pedestal_legs": 0.63
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 5.960464477539063e-08,
+          "incompatible_meshes": [],
+          "worst_mesh": "pedestal_legs"
+        },
+        {
+          "id": "multi-1",
+          "params": {
+            "table_top": 1.37,
+            "bottom_shelf": 0.63,
+            "pedestal_legs": 1.37
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 2.9802322387695312e-08,
+          "incompatible_meshes": [],
+          "worst_mesh": "bottom_shelf"
+        },
+        {
+          "id": "multi-2",
+          "params": {
+            "table_top": 0.63,
+            "bottom_shelf": 0.63,
+            "pedestal_legs": 0.63
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 4.470348358154297e-08,
+          "incompatible_meshes": [],
+          "worst_mesh": "pedestal_legs"
+        },
+        {
+          "id": "multi-3",
+          "params": {
+            "table_top": 1.37,
+            "bottom_shelf": 1.37,
+            "pedestal_legs": 1.37
+          },
+          "compatible_meshes": 3,
+          "mesh_count": 3,
+          "max_absolute_vertex_error": 2.9802322387695312e-08,
+          "incompatible_meshes": [],
+          "worst_mesh": "pedestal_legs"
+        }
+      ]
+    }
+  ],
+  "control_count": 91
+}

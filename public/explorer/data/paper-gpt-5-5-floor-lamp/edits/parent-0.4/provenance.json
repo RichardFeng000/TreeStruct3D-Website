@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · GPT-5.5",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.5/FloorLamp_seed0/FloorLamp_seed0.py",
+  "source_sha256": "befa8ca188817011d6d35ab25d3d9d8a7b571160ec3fad62692cbf90013f5a44",
+  "source_size": 15606,
+  "glb_sha256": "1218b9e04a92f4d1601b923f96de9d2ed57faf92bbcbfdbb96e894149a4dee7c",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|round_base|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-0.4",
+    "side": "parent",
+    "part_ids": [
+      "round_base"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|round_base|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "round_base"
+    ],
+    "paper_child_ids": [
+      "central_pole"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "round_base",
+        "part_id": "round_base",
+        "before": [
+          1.7200000286102295,
+          1.7200000286102295,
+          0.1599999964237213
+        ],
+        "after": [
+          0.6880000233650208,
+          0.6880000233650208,
+          0.06400000303983688
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "round_base",
+        "child": "central_pole",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "round_base",
+        "runtime_child_part_id": "central_pole"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    3.3527612686157227e-08,
+    0.0
+  ],
+  "mesh_bbox_max_error_before_translation": 1.862645149230957e-07,
+  "mesh_bbox_max_error_after_translation": 1.5273690223693848e-07
+}

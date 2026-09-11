@@ -1,0 +1,1391 @@
+{
+  "method": "TreeStruct3D · Gemini 3.5 Flash",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemini_3.5_flash/FruitPineapple_seed0/FruitPineapple_seed0.py",
+  "source_sha256": "a10388812756d491243be9c139226ee9119b7d81989a159dded47978977c86ff",
+  "source_size": 14429,
+  "glb_sha256": "5190f22a2d30dd6026129fd0853d05c65f97c9705c3d43ad3ef51bc058adac9c",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {},
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "default",
+    "side": "default",
+    "part_ids": [],
+    "parameter": "scale",
+    "scale": 1.0,
+    "params": {},
+    "paper_parent_ids": [
+      "fruit_body"
+    ],
+    "paper_child_ids": [
+      "crown_leaf"
+    ],
+    "geometry_changed": false,
+    "attachment_observed": true,
+    "attachment_paths": [
+      [
+        "fruit_body",
+        "crown_leaf"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.001"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.002"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.003"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.004"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.005"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.006"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.007"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.008"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.009"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.010"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.011"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.012"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.013"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.014"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.015"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.016"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.017"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.018"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.019"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.020"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.021"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.022"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.023"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.024"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.025"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.026"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.027"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.028"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.029"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.030"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.031"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.032"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.033"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.034"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.035"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.036"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.037"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.038"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.039"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.040"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.041"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.042"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.043"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.044"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.045"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.046"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.047"
+      ]
+    ],
+    "dimensions": [],
+    "selected_attachment_checks": [
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.014",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.011",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.008",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.013",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.010",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.012",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.015",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.007",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.006",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.003",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.009",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.004",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.002",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.001",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.005",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.022",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.017",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.023",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.019",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.024",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.020",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.016",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.026",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.025",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.018",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.028",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.021",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.027",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.029",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.031",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.040",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.035",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.044",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.036",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.041",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.038",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.033",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.039",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.047",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.042",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.037",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.034",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.030",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.032",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.046",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.043",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.045",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    -0.015194949662025605,
+    6.493093957768653e-09,
+    0.0832728223015847
+  ],
+  "mesh_bbox_max_error_before_translation": 0.08327310487275319,
+  "mesh_bbox_max_error_after_translation": 3.868728977261121e-07,
+  "same_execution_export": true,
+  "final_scene_adapter_sha256": "5ef143984231a0dd21797536aa9e727625b993f52c2a512f08c4f151f8730683",
+  "final_scene_adapter": {
+    "same_execution_export": true,
+    "geometry_observation": "final_evaluated_polygon_vertices",
+    "anchor_observation": "final_evaluated_surface_after_all_source_modifiers",
+    "probe_rules_and_tolerances_changed": false
+  },
+  "material_export": {
+    "strategy": "cycles_emission_base_color_bake",
+    "resolution": 512,
+    "lighting_baked": false,
+    "procedural_normal_baked": false,
+    "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+    "objects": [
+      {
+        "name": "fruit_body",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Fruit_Valley",
+          "Material_Fruit_Tip"
+        ],
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "crown_leaf",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.001",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.002",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.003",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.004",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.005",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.006",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.007",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.008",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.009",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.010",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.011",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.012",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.013",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.014",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.015",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.016",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.017",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.018",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.019",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.020",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.021",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.022",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.023",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.024",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.025",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.026",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.027",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.028",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.029",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.030",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.031",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.032",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.033",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.034",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.035",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.036",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.037",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.038",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.039",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.040",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.041",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.042",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.043",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.044",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.045",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.046",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "crown_leaf.047",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Crown_Leaf"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.001",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.002",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.003",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.004",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.005",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.006",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.007",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.008",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.009",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.010",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "bottom_spine.011",
+        "mode": "baked_base_color",
+        "materials": [
+          "Material_Spine"
+        ],
+        "width": 256,
+        "height": 256
+      }
+    ],
+    "fallbacks": [],
+    "preserved_geometry_objects": [],
+    "source_sha256": "a10388812756d491243be9c139226ee9119b7d81989a159dded47978977c86ff",
+    "helper_sha256": "b877cf74388900d9c1ea8cb83f84010a4bc520057da01e6021aee226094f0cee",
+    "blender_version": "5.0.0",
+    "material_count": 62,
+    "image_count": 51,
+    "geometry_unchanged": true,
+    "geometry_comparison_tolerance": 7.4934844970703125e-06,
+    "original_glb_sha256": "6a363940c57826820c025e31272456691db983afe887596961cb6f4868cbe53b"
+  }
+}

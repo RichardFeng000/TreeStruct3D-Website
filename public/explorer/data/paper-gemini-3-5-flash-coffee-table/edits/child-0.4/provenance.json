@@ -1,0 +1,104 @@
+{
+  "method": "TreeStruct3D · Gemini 3.5 Flash",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemini_3.5_flash/CoffeeTable_seed0/CoffeeTable_seed0.py",
+  "source_sha256": "6f171efb975e13e01b2937e5fb0b403b770464f451a47168d7b404aafcb292a6",
+  "source_size": 14412,
+  "glb_sha256": "dba0e4d8664f3b2a8388d93ddfbda9a1204d8b58b3f92eba06c49cfd3de087c6",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|pedestal_legs|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "child-0.4",
+    "side": "child",
+    "part_ids": [
+      "pedestal_legs"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|pedestal_legs|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "table_top"
+    ],
+    "paper_child_ids": [
+      "pedestal_legs"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "attachment_paths": [
+      [
+        "table_top",
+        "bottom_shelf",
+        "pedestal_legs"
+      ]
+    ],
+    "dimensions": [
+      {
+        "id": "pedestal_legs",
+        "part_id": "pedestal_legs",
+        "before": [
+          1.159999966621399,
+          0.36000001430511475,
+          0.28999999165534973
+        ],
+        "after": [
+          0.46399998664855957,
+          0.14399999380111694,
+          0.2840000092983246
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "bottom_shelf",
+        "child": "pedestal_legs",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "bottom_shelf",
+        "runtime_child_part_id": "pedestal_legs"
+      },
+      {
+        "parent": "table_top",
+        "child": "bottom_shelf",
+        "relation": "BROKEN_ATTACHMENT",
+        "contact": false,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "table_top",
+        "runtime_child_part_id": "bottom_shelf"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    0.3499999950096632,
+    0.0
+  ],
+  "mesh_bbox_max_error_before_translation": 0.34999999799765646,
+  "mesh_bbox_max_error_after_translation": 2.987993241720943e-09,
+  "same_execution_export": true,
+  "final_scene_adapter_sha256": "5ef143984231a0dd21797536aa9e727625b993f52c2a512f08c4f151f8730683",
+  "final_scene_adapter": {
+    "same_execution_export": true,
+    "geometry_observation": "final_evaluated_polygon_vertices",
+    "anchor_observation": "final_evaluated_surface_after_all_source_modifiers",
+    "probe_rules_and_tolerances_changed": false
+  }
+}

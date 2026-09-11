@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "crown_base",
+      "part_id": "crown_base",
+      "positions": {
+        "offset": 0,
+        "count": 1230
+      }
+    },
+    {
+      "id": "fronds",
+      "part_id": "fronds",
+      "positions": {
+        "offset": 1230,
+        "count": 13539
+      }
+    },
+    {
+      "id": "trunk",
+      "part_id": "trunk",
+      "positions": {
+        "offset": 14769,
+        "count": 4398
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "crown_base",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "crown_base",
+              "delta": {
+                "offset": 19167,
+                "count": 1230
+              }
+            },
+            {
+              "id": "fronds",
+              "delta": {
+                "offset": 20397,
+                "count": 13539
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 33936,
+            "count": 12
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "crown_base",
+              "delta": {
+                "offset": 33948,
+                "count": 1230
+              }
+            },
+            {
+              "id": "fronds",
+              "delta": {
+                "offset": 35178,
+                "count": 13539
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 48717,
+            "count": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "fronds",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "fronds",
+              "delta": {
+                "offset": 48729,
+                "count": 13539
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "fronds",
+              "delta": {
+                "offset": 62268,
+                "count": 13539
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "trunk",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "crown_base",
+              "delta": {
+                "offset": 75807,
+                "count": 1230
+              }
+            },
+            {
+              "id": "fronds",
+              "delta": {
+                "offset": 77037,
+                "count": 13539
+              }
+            },
+            {
+              "id": "trunk",
+              "delta": {
+                "offset": 90576,
+                "count": 4398
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 94974,
+            "count": 12
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "crown_base",
+              "delta": {
+                "offset": 94986,
+                "count": 1230
+              }
+            },
+            {
+              "id": "fronds",
+              "delta": {
+                "offset": 96216,
+                "count": 13539
+              }
+            },
+            {
+              "id": "trunk",
+              "delta": {
+                "offset": 109755,
+                "count": 4398
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 114153,
+            "count": 12
+          }
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "trunk",
+      "child": "crown_base",
+      "parent_world": [
+        0.0,
+        7.199999809265137,
+        12.0
+      ],
+      "child_world": [
+        0.0,
+        7.199999809265137,
+        12.0
+      ]
+    },
+    {
+      "parent": "crown_base",
+      "child": "fronds",
+      "parent_world": [
+        0.0,
+        8.18332290649414,
+        12.819436073303223
+      ],
+      "child_world": [
+        0.0,
+        8.183321952819824,
+        12.819437026977539
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 16.361345291137695,
+    "linear_tolerance": 0.00016361345291137698,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "crown_base": 2.1324806311895372e-06,
+      "fronds": 2.1851424207852688e-06,
+      "trunk": 3.814697265625e-06
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "crown_base": 1.37,
+          "fronds": 0.63,
+          "trunk": 0.63
+        },
+        "max_position_error": 3.844384073399806e-06,
+        "relative_error": 2.3496748005692166e-07
+      },
+      {
+        "params": {
+          "crown_base": 0.63,
+          "fronds": 1.37,
+          "trunk": 1.37
+        },
+        "max_position_error": 4.862803948967728e-06,
+        "relative_error": 2.97212965220025e-07
+      },
+      {
+        "params": {
+          "crown_base": 0.63,
+          "fronds": 0.63,
+          "trunk": 0.63
+        },
+        "max_position_error": 2.6973983046972182e-06,
+        "relative_error": 1.6486409012823012e-07
+      },
+      {
+        "params": {
+          "crown_base": 1.37,
+          "fronds": 1.37,
+          "trunk": 1.37
+        },
+        "max_position_error": 4.76837158203125e-06,
+        "relative_error": 2.914412902595541e-07
+      }
+    ]
+  },
+  "binary_sha256": "99c2663f1a26be679acfe64d077f03376b75ff02fdc289f563dfe52eb142d267",
+  "source_sha256": "f8dd22386a62bc6ffbf1b2d98ada97d2443218317b2d07e407279a2113254349"
+}

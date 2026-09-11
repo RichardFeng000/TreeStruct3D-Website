@@ -1,0 +1,138 @@
+{
+  "method": "TreeStruct3D \u00b7 Gemini 3.1 Pro",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemeni_3.1_pro/Dragonfly_seed0/Dragonfly_seed0.py",
+  "source_sha256": "54f6d11f624fd0a6d3b5e12f0d0fbe4408e7d1e0d0b595dd11420cfa88a6ea50",
+  "source_size": 16857,
+  "glb_sha256": "813764fd6c1b0d7ab95b56d6cdd8dd2ccc2d0c0e8148512a273dfb4c6f6d4953",
+  "native_part_params": true,
+  "runtime_snapshot": "geometry_and_direction_only",
+  "execution": "same_execution_native_capture_and_material_export",
+  "parameter_mode": "native_rebuild",
+  "params": {},
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Geometry correspondence verified against the exact exported execution. Archived runtime attachment pass/fail flags are not reused.",
+  "edit": {
+    "id": "default",
+    "side": "default",
+    "part_ids": [],
+    "parameter": "scale",
+    "scale": 1.0,
+    "params": {},
+    "paper_parent_ids": [
+      "thorax"
+    ],
+    "paper_child_ids": [
+      "abdomen"
+    ],
+    "geometry_changed": false,
+    "attachment_observed": true,
+    "attachment_paths": [
+      [
+        "thorax",
+        "abdomen"
+      ]
+    ],
+    "dimensions": [],
+    "selected_attachment_checks": [
+      {
+        "parent": "thorax",
+        "child": "abdomen",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "thorax",
+        "runtime_child_part_id": "abdomen"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    1.655684577094184e-09,
+    0.662212330641018,
+    -2.672707711242967
+  ],
+  "mesh_bbox_max_error_before_translation": 2.6727077960968018,
+  "mesh_bbox_max_error_after_translation": 1.8046961890326605e-07,
+  "same_execution_export": true,
+  "final_scene_adapter_sha256": "5ef143984231a0dd21797536aa9e727625b993f52c2a512f08c4f151f8730683",
+  "final_scene_adapter": {
+    "same_execution_export": true,
+    "geometry_observation": "final_evaluated_polygon_vertices",
+    "anchor_observation": "final_evaluated_surface_after_all_source_modifiers",
+    "probe_rules_and_tolerances_changed": false
+  },
+  "material_export": {
+    "strategy": "cycles_emission_base_color_bake",
+    "resolution": 512,
+    "lighting_baked": false,
+    "procedural_normal_baked": false,
+    "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+    "objects": [
+      {
+        "name": "thorax",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "abdomen",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "head",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "compound_eye",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "compound_eye.001",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "forewing",
+        "mode": "baked_base_color",
+        "materials": [
+          "mat_wing"
+        ],
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "forewing.001",
+        "mode": "baked_base_color",
+        "materials": [
+          "mat_wing"
+        ],
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "hindwing",
+        "mode": "baked_base_color",
+        "materials": [
+          "mat_wing"
+        ],
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "hindwing.001",
+        "mode": "baked_base_color",
+        "materials": [
+          "mat_wing"
+        ],
+        "width": 512,
+        "height": 512
+      }
+    ],
+    "fallbacks": []
+  },
+  "native_stabilization": "BMesh primitive ordering is canonicalized before seeded face sampling; geometry and parameter formulas are unchanged. This fixes allocator-dependent hair selection. Evaluated sphere vertices are mapped one-to-one by normalized local coordinates.",
+  "validation_status": "not_run"
+}

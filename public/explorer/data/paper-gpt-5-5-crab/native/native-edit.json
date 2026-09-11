@@ -1,0 +1,7675 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "carapace",
+      "part_id": "carapace",
+      "positions": {
+        "offset": 0,
+        "count": 7374
+      }
+    },
+    {
+      "id": "dominant_cheliped",
+      "part_id": "dominant_cheliped",
+      "positions": {
+        "offset": 7374,
+        "count": 1554
+      }
+    },
+    {
+      "id": "eye_stalk",
+      "part_id": "eye_stalk",
+      "positions": {
+        "offset": 8928,
+        "count": 900
+      }
+    },
+    {
+      "id": "smaller_cheliped",
+      "part_id": "smaller_cheliped",
+      "positions": {
+        "offset": 9828,
+        "count": 942
+      }
+    },
+    {
+      "id": "walking_leg",
+      "part_id": "walking_leg",
+      "positions": {
+        "offset": 10770,
+        "count": 1488
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "carapace",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 12258,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 19632,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 21186,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 22086,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 23028,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 24516,
+            "count": 72
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 24588,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 31962,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 33516,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 34416,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 35358,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 36846,
+            "count": 72
+          }
+        }
+      ]
+    },
+    {
+      "id": "dominant_cheliped",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 36918,
+                "count": 1554
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 38472,
+                "count": 1554
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eye_stalk",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 40026,
+                "count": 900
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 40926,
+                "count": 900
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smaller_cheliped",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 41826,
+                "count": 942
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 42768,
+                "count": 942
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walking_leg",
+      "interpolation": "sampled_native",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 43710,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.41,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 45198,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.42,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 46686,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.43,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 48174,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.44,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 49662,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.45,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 51150,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.46,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 52638,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.47,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 54126,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.48,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 55614,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.49,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 57102,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.5,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 58590,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.51,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 60078,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.52,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 61566,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.53,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 63054,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.54,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 64542,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.55,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 66030,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.56,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 67518,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.57,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 69006,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.58,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 70494,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.59,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 71982,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.6,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 73470,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.61,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 74958,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.62,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 76446,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.63,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 77934,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.64,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 79422,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.65,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 80910,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.66,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 82398,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.67,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 83886,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.68,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 85374,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.69,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 86862,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.7,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 88350,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.71,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 89838,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.72,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 91326,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.73,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 92814,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.74,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 94302,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.75,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 95790,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.76,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 97278,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.77,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 98766,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.78,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 100254,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.79,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 101742,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.8,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 103230,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.81,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 104718,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.82,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 106206,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.83,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 107694,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.84,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 109182,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.85,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 110670,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.86,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 112158,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.87,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 113646,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.88,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 115134,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.89,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 116622,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.9,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 118110,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.91,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 119598,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.92,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 121086,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.93,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 122574,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.94,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 124062,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.95,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 125550,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.96,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 127038,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.97,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 128526,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.98,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 130014,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.99,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 131502,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.01,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 132990,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.02,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 134478,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.03,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 135966,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.04,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 137454,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.05,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 138942,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.06,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 140430,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.07,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 141918,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.08,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 143406,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.09,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 144894,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.1,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 146382,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.11,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 147870,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.12,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 149358,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.13,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 150846,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.14,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 152334,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.15,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 153822,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.16,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 155310,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.17,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 156798,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.18,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 158286,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.19,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 159774,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.2,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 161262,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.21,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 162750,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.22,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 164238,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.23,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 165726,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.24,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 167214,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.25,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 168702,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.26,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 170190,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.27,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 171678,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.28,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 173166,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.29,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 174654,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.3,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 176142,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.31,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 177630,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.32,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 179118,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.33,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 180606,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.34,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 182094,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.35,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 183582,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.36,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 185070,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.37,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 186558,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.38,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 188046,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.39,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 189534,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.4,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 191022,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.41,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 192510,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.42,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 193998,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.43,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 195486,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.44,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 196974,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.45,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 198462,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.46,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 199950,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.47,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 201438,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.48,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 202926,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.49,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 204414,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.5,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 205902,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.51,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 207390,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.52,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 208878,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.53,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 210366,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.54,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 211854,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.55,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 213342,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.56,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 214830,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.57,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 216318,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.58,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 217806,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.59,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 219294,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 220782,
+                "count": 1488
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "carapace",
+      "child": "dominant_cheliped",
+      "parent_world": [
+        1.2450400590896606,
+        0.6119999885559082,
+        -0.009999999776482582
+      ],
+      "child_world": [
+        1.2450400590896606,
+        0.6119999885559082,
+        -0.009999999776482582
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "smaller_cheliped",
+      "parent_world": [
+        -1.2332143783569336,
+        0.6222000122070312,
+        -0.012000000104308128
+      ],
+      "child_world": [
+        -1.2332143783569336,
+        0.6222000122070312,
+        -0.012000000104308128
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "walking_leg",
+      "parent_world": [
+        1.4395564794540405,
+        0.38760000467300415,
+        -0.017999999225139618
+      ],
+      "child_world": [
+        1.4395564794540405,
+        0.38760000467300415,
+        -0.017999999225139618
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "walking_leg",
+      "parent_world": [
+        1.5450539588928223,
+        0.12240000069141388,
+        -0.017999999225139618
+      ],
+      "child_world": [
+        1.5450539588928223,
+        0.12240000069141388,
+        -0.017999999225139618
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "walking_leg",
+      "parent_world": [
+        1.5362502336502075,
+        -0.1632000058889389,
+        -0.017999999225139618
+      ],
+      "child_world": [
+        1.5362502336502075,
+        -0.1632000058889389,
+        -0.017999999225139618
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "walking_leg",
+      "parent_world": [
+        1.405072569847107,
+        -0.43860000371932983,
+        -0.017999999225139618
+      ],
+      "child_world": [
+        1.405072569847107,
+        -0.43860000371932983,
+        -0.017999999225139618
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "walking_leg",
+      "parent_world": [
+        -1.4395564794540405,
+        0.38760000467300415,
+        -0.017999999225139618
+      ],
+      "child_world": [
+        -1.4395564794540405,
+        0.38760000467300415,
+        -0.017999999225139618
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "walking_leg",
+      "parent_world": [
+        -1.5450539588928223,
+        0.12240000069141388,
+        -0.017999999225139618
+      ],
+      "child_world": [
+        -1.5450539588928223,
+        0.12240000069141388,
+        -0.017999999225139618
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "walking_leg",
+      "parent_world": [
+        -1.5362502336502075,
+        -0.1632000058889389,
+        -0.017999999225139618
+      ],
+      "child_world": [
+        -1.5362502336502075,
+        -0.1632000058889389,
+        -0.017999999225139618
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "walking_leg",
+      "parent_world": [
+        -1.405072569847107,
+        -0.43860000371932983,
+        -0.017999999225139618
+      ],
+      "child_world": [
+        -1.405072569847107,
+        -0.43860000371932983,
+        -0.017999999225139618
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "eye_stalk",
+      "parent_world": [
+        0.16500000655651093,
+        0.8924999833106995,
+        0.16438117623329163
+      ],
+      "child_world": [
+        0.16500000655651093,
+        0.8924999833106995,
+        0.16438117623329163
+      ]
+    },
+    {
+      "parent": "carapace",
+      "child": "eye_stalk",
+      "parent_world": [
+        -0.16500000655651093,
+        0.8924999833106995,
+        0.1639137715101242
+      ],
+      "child_world": [
+        -0.16500000655651093,
+        0.8924999833106995,
+        0.1639137715101242
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 5.816630840301514,
+    "linear_tolerance": 5.816630840301514e-05,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "carapace": 4.046419417136349e-05,
+      "dominant_cheliped": 5.331722263690608e-07,
+      "eye_stalk": 2.4073563054116676e-07,
+      "smaller_cheliped": 2.666641876203357e-07,
+      "walking_leg": 0.00014993287913966924
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "carapace": 0.63,
+          "dominant_cheliped": 1.37,
+          "eye_stalk": 0.63,
+          "smaller_cheliped": 0.63,
+          "walking_leg": 1.37
+        },
+        "max_position_error": 6.222994328265908e-07,
+        "relative_error": 1.0698623480020144e-07
+      },
+      {
+        "params": {
+          "carapace": 1.37,
+          "dominant_cheliped": 0.63,
+          "eye_stalk": 1.37,
+          "smaller_cheliped": 1.37,
+          "walking_leg": 0.63
+        },
+        "max_position_error": 4.753315114370614e-06,
+        "relative_error": 8.171938781874317e-07
+      },
+      {
+        "params": {
+          "carapace": 0.63,
+          "dominant_cheliped": 0.63,
+          "eye_stalk": 0.63,
+          "smaller_cheliped": 0.63,
+          "walking_leg": 0.63
+        },
+        "max_position_error": 1.0374257047811288e-06,
+        "relative_error": 1.7835508789609766e-07
+      },
+      {
+        "params": {
+          "carapace": 1.37,
+          "dominant_cheliped": 1.37,
+          "eye_stalk": 1.37,
+          "smaller_cheliped": 1.37,
+          "walking_leg": 1.37
+        },
+        "max_position_error": 1.0436084812134877e-06,
+        "relative_error": 1.7941803595006738e-07
+      }
+    ]
+  },
+  "interactions": [
+    {
+      "ids": [
+        "carapace",
+        "walking_leg"
+      ],
+      "knots": [
+        [
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6
+        ],
+        [
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0,
+          1.1,
+          1.2,
+          1.3,
+          1.4,
+          1.5,
+          1.6
+        ]
+      ],
+      "samples": [
+        {
+          "scales": [
+            0.4,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 222270,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 223758,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 225246,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 226734,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 228222,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 229710,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            1.0
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            0.4,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 231198,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 232686,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 234174,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 235662,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 237150,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.4,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 238638,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 240126,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 247500,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 249054,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 250542,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 257916,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 259470,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 260958,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 268332,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 269886,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 271374,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 278748,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 280302,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 281790,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 289164,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 290718,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 292206,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 299580,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 301134,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            1.0
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 302622,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 309996,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 311550,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 313038,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 320412,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 321966,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 323454,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 330828,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 332382,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 333870,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 341244,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 342798,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 344286,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 351660,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 353214,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 354702,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 362076,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 363630,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.5,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 365118,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 372492,
+                "count": 1554
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 374046,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 375534,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 382908,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 384462,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 385362,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 386850,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 394224,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 395778,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 396678,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 398166,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 405540,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 407094,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 407994,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 409482,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 416856,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 418410,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 419310,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 420798,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 428172,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 429726,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 430626,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 432114,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 439488,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 441042,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 441942,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            1.0
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 443430,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 450804,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 452358,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 453258,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 454746,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 462120,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 463674,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 464574,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 466062,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 473436,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 474990,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 475890,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 477378,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 484752,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 486306,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 487206,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 488694,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 496068,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 497622,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 498522,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 500010,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 507384,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 508938,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 509838,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.6,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 511326,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 518700,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 520254,
+                "count": 900
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 521154,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 522642,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 530016,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 531570,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 532512,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 534000,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 541374,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 542928,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 543870,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 545358,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 552732,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 554286,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 555228,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 556716,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 564090,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 565644,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 566586,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 568074,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 575448,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 577002,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 577944,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 579432,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 586806,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 588360,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 589302,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            1.0
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 590790,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 598164,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 599718,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 600660,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 602148,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 609522,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 611076,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 612018,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 613506,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 620880,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 622434,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 623376,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 624864,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 632238,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 633792,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 634734,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 636222,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 643596,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 645150,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 646092,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 647580,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 654954,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 656508,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 657450,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.7,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 658938,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 666312,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 667866,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 668808,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 670296,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 677670,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 679224,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 680166,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 681654,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 689028,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 690582,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 691524,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 693012,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 700386,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 701940,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 702882,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 704370,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 711744,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 713298,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 714240,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 715728,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 723102,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 724656,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 725598,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 727086,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 734460,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 736014,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 736956,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            1.0
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 738444,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 745818,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 747372,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 748314,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 749802,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 757176,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 758730,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 759672,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 761160,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 768534,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 770088,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 771030,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 772518,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 779892,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 781446,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 782388,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 783876,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 791250,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 792804,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 793746,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 795234,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 802608,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 804162,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 805104,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.8,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 806592,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 813966,
+                "count": 1554
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 815520,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 816462,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 817950,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 825324,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 826878,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 827778,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 828720,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 830208,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 837582,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 839136,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 840036,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 840978,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 842466,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 849840,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 851394,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 852294,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 853236,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 854724,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 862098,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 863652,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 864552,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 865494,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 866982,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 874356,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 875910,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 876810,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 877752,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 879240,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 886614,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 888168,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 889068,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 890010,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            1.0
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 891498,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 898872,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 900426,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 901326,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 902268,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 903756,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 911130,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 912684,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 913584,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 914526,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 916014,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 923388,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 924942,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 925842,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 926784,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 928272,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 935646,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 937200,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 938100,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 939042,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 940530,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 947904,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 949458,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 950358,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 951300,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 952788,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 960162,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 961716,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 962616,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 963558,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            0.9,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 965046,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 972420,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 973974,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 974874,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 975816,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.0,
+            0.4
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            0.5
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            0.6
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            0.7
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            0.8
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            0.9
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            1.0
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            1.1
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            1.2
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            1.3
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            1.4
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            1.5
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.0,
+            1.6
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.1,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 977304,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 984678,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 986232,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 987132,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 988074,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 989562,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 996936,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 998490,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 999390,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1000332,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1001820,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1009194,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1010748,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1011648,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1012590,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1014078,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1021452,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1023006,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1023906,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1024848,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1026336,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1033710,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1035264,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1036164,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1037106,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1038594,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1045968,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1047522,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1048422,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1049364,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            1.0
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1050852,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1058226,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1059780,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1060680,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1061622,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1063110,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1070484,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1072038,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1072938,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1073880,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1075368,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1082742,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1084296,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1085196,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1086138,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1087626,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1095000,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1096554,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1097454,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1098396,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1099884,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1107258,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1108812,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1109712,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1110654,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1112142,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1119516,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1121070,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1121970,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1122912,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.1,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1124400,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1131774,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1133328,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1134228,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1135170,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1136658,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1144032,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1145586,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1146486,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1147428,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1148916,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1156290,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1157844,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1158744,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1159686,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1161174,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1168548,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1170102,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1171002,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1171944,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1173432,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1180806,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1182360,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1183260,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1184202,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1185690,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1193064,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1194618,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1195518,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1196460,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1197948,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1205322,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1206876,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1207776,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1208718,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            1.0
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1210206,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1217580,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1219134,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1220034,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1220976,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1222464,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1229838,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1231392,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1232292,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1233234,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1234722,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1242096,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1243650,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1244550,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1245492,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1246980,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1254354,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1255908,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1256808,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1257750,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1259238,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1266612,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1268166,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1269066,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1270008,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1271496,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1278870,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1280424,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1281324,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1282266,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.2,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1283754,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1291128,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1292682,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1293582,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1294524,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1296012,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1303386,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1304940,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1305840,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1306782,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1308270,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1315644,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1317198,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1318098,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1319040,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1320528,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1327902,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1329456,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1330356,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1331298,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1332786,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1340160,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1341714,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1342614,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1343556,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1345044,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1352418,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1353972,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1354872,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1355814,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1357302,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1364676,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1366230,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1367130,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1368072,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            1.0
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1369560,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1376934,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1378488,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1379388,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1380330,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1381818,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1389192,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1390746,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1391646,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1392588,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1394076,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1401450,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1403004,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1403904,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1404846,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1406334,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1413708,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1415262,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1416162,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1417104,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1418592,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1425966,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1427520,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1428420,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1429362,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1430850,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1438224,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1439778,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1440678,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1441620,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.3,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1443108,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1450482,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1452036,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1452936,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1453878,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.4,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1455366,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1462740,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1464294,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1465194,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1466136,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1467624,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1467696,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1475070,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1476624,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1477524,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1478466,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1479954,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1480026,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1487400,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1488954,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1489854,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1490796,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1492284,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1492356,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1499730,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1501284,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1502184,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1503126,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1504614,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1504686,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1512060,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1513614,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1514514,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1515456,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1516944,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1517016,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1524390,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1525944,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1526844,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1527786,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1529274,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            1.0
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1529346,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1536720,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1538274,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1539174,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1540116,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1541604,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1541676,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1549050,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1550604,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1551504,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1552446,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1553934,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1554006,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1561380,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1562934,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1563834,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1564776,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1566264,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1566336,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1573710,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1575264,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1576164,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1577106,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1578594,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1578666,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1586040,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1587594,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1588494,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1589436,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1590924,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1590996,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1598370,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1599924,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1600824,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1601766,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1603254,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.4,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1603326,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1610700,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1612254,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1613154,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1614096,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1615584,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1615656,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1623030,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1624584,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1625484,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1626426,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1627914,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1627986,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1635360,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1636914,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1637814,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1638756,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1640244,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1640316,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1647690,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1649244,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1650144,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1651086,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1652574,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1652646,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1660020,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1661574,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1662474,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1663416,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1664904,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1664976,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1672350,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1673904,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1674804,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1675746,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1677234,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1677306,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1684680,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1686234,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1687134,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1688076,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1689564,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            1.0
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1689636,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1697010,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1698564,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1699464,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1700406,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1701894,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1701966,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1709340,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1710894,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1711794,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1712736,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1714224,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1714296,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1721670,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1723224,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1724124,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1725066,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1726554,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1726626,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1734000,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1735554,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1736454,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1737396,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1738884,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1738956,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1746330,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1747884,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1748784,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1749726,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1751214,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1751286,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1758660,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1760214,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1761114,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1762056,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1763544,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.5,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "carapace",
+              "delta": {
+                "offset": 1763616,
+                "count": 7374
+              }
+            },
+            {
+              "id": "dominant_cheliped",
+              "delta": {
+                "offset": 1770990,
+                "count": 1554
+              }
+            },
+            {
+              "id": "eye_stalk",
+              "delta": {
+                "offset": 1772544,
+                "count": 900
+              }
+            },
+            {
+              "id": "smaller_cheliped",
+              "delta": {
+                "offset": 1773444,
+                "count": 942
+              }
+            },
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1774386,
+                "count": 1488
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1775874,
+            "count": 72
+          }
+        },
+        {
+          "scales": [
+            1.6,
+            0.4
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1775946,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            0.5
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1777434,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            0.6
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1778922,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            0.7
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1780410,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            0.8
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1781898,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            0.9
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1783386,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            1.0
+          ],
+          "parts": []
+        },
+        {
+          "scales": [
+            1.6,
+            1.1
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1784874,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            1.2
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1786362,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            1.3
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1787850,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            1.4
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1789338,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            1.5
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1790826,
+                "count": 1488
+              }
+            }
+          ]
+        },
+        {
+          "scales": [
+            1.6,
+            1.6
+          ],
+          "parts": [
+            {
+              "id": "walking_leg",
+              "delta": {
+                "offset": 1792314,
+                "count": 1488
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "binary_sha256": "beeb497e86916e91a36a0331a84f6e3bc477563b0d110d26569863d6a3cb3343",
+  "source_sha256": "6689f96b03f258464a9a1265d1fe75a29ee63633893e1fbb750e4240351cbf43"
+}

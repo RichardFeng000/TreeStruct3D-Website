@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · Gemini 3.1 Pro",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemeni_3.1_pro/Pillar_seed0/Pillar_seed0.py",
+  "source_sha256": "3b41b4b0e363a4f728f587a95808507eb14b25313cace8efab16ca22d0310c9a",
+  "source_size": 8683,
+  "glb_sha256": "932c400aa25eebeb508293cf5d42aa206c38e64337b226d25d7ecc2bc31419d1",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|shaft|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-0.4",
+    "side": "parent",
+    "part_ids": [
+      "shaft"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|shaft|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "shaft"
+    ],
+    "paper_child_ids": [
+      "capital"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "shaft",
+        "part_id": "shaft",
+        "before": [
+          1.2000000476837158,
+          1.2000000476837158,
+          6.000000178813934
+        ],
+        "after": [
+          0.47999998927116394,
+          0.47999998927116394,
+          2.400000035762787
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "shaft",
+        "child": "capital",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "shaft",
+        "runtime_child_part_id": "capital"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    6.953875223795573e-08,
+    0.0
+  ],
+  "mesh_bbox_max_error_before_translation": 2.980232238769531e-07,
+  "mesh_bbox_max_error_after_translation": 2.2848447163899738e-07
+}

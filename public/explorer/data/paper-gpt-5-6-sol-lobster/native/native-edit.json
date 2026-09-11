@@ -1,0 +1,2573 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "abdomen_chain",
+      "part_id": "abdomen_chain",
+      "positions": {
+        "offset": 0,
+        "count": 15582
+      }
+    },
+    {
+      "id": "cephalothorax",
+      "part_id": "cephalothorax",
+      "positions": {
+        "offset": 15582,
+        "count": 7290
+      }
+    },
+    {
+      "id": "crusher_chela",
+      "part_id": "crusher_chela",
+      "positions": {
+        "offset": 22872,
+        "count": 7890
+      }
+    },
+    {
+      "id": "cutter_chela",
+      "part_id": "cutter_chela",
+      "positions": {
+        "offset": 30762,
+        "count": 7422
+      }
+    },
+    {
+      "id": "long_antenna",
+      "part_id": "long_antenna",
+      "positions": {
+        "offset": 38184,
+        "count": 2472
+      }
+    },
+    {
+      "id": "tail_fan",
+      "part_id": "tail_fan",
+      "positions": {
+        "offset": 40656,
+        "count": 5256
+      }
+    },
+    {
+      "id": "walking_leg_array",
+      "part_id": "walking_leg_array",
+      "positions": {
+        "offset": 45912,
+        "count": 12624
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "abdomen_chain",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "abdomen_chain",
+              "delta": {
+                "offset": 58536,
+                "count": 15582
+              }
+            },
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 74118,
+                "count": 5256
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 79374,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "abdomen_chain",
+              "delta": {
+                "offset": 79458,
+                "count": 15582
+              }
+            },
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 95040,
+                "count": 5256
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 100296,
+            "count": 84
+          }
+        }
+      ]
+    },
+    {
+      "id": "cephalothorax",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "abdomen_chain",
+              "delta": {
+                "offset": 100380,
+                "count": 15582
+              }
+            },
+            {
+              "id": "cephalothorax",
+              "delta": {
+                "offset": 115962,
+                "count": 7290
+              }
+            },
+            {
+              "id": "crusher_chela",
+              "delta": {
+                "offset": 123252,
+                "count": 7890
+              }
+            },
+            {
+              "id": "cutter_chela",
+              "delta": {
+                "offset": 131142,
+                "count": 7422
+              }
+            },
+            {
+              "id": "long_antenna",
+              "delta": {
+                "offset": 138564,
+                "count": 2472
+              }
+            },
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 141036,
+                "count": 5256
+              }
+            },
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 146292,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 158916,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "abdomen_chain",
+              "delta": {
+                "offset": 159000,
+                "count": 15582
+              }
+            },
+            {
+              "id": "cephalothorax",
+              "delta": {
+                "offset": 174582,
+                "count": 7290
+              }
+            },
+            {
+              "id": "crusher_chela",
+              "delta": {
+                "offset": 181872,
+                "count": 7890
+              }
+            },
+            {
+              "id": "cutter_chela",
+              "delta": {
+                "offset": 189762,
+                "count": 7422
+              }
+            },
+            {
+              "id": "long_antenna",
+              "delta": {
+                "offset": 197184,
+                "count": 2472
+              }
+            },
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 199656,
+                "count": 5256
+              }
+            },
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 204912,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 217536,
+            "count": 84
+          }
+        }
+      ]
+    },
+    {
+      "id": "crusher_chela",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "crusher_chela",
+              "delta": {
+                "offset": 217620,
+                "count": 7890
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "crusher_chela",
+              "delta": {
+                "offset": 225510,
+                "count": 7890
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cutter_chela",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "cutter_chela",
+              "delta": {
+                "offset": 233400,
+                "count": 7422
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "cutter_chela",
+              "delta": {
+                "offset": 240822,
+                "count": 7422
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "long_antenna",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "long_antenna",
+              "delta": {
+                "offset": 248244,
+                "count": 2472
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "long_antenna",
+              "delta": {
+                "offset": 250716,
+                "count": 2472
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tail_fan",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 253188,
+                "count": 5256
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 258444,
+                "count": 5256
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walking_leg_array",
+      "interpolation": "sampled_native",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 263700,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 276324,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.41,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 276408,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 289032,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.42,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 289116,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 301740,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.43,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 301824,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 314448,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.44,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 314532,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 327156,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.45,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 327240,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 339864,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.46,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 339948,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 352572,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.47,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 352656,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 365280,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.48,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 365364,
+                "count": 12624
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.49,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 377988,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 390612,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.5,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 390696,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 403320,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.51,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 403404,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 416028,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.52,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 416112,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 428736,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.53,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 428820,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 441444,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.54,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 441528,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 454152,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.55,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 454236,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 466860,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.56,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 466944,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 479568,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.57,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 479652,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 492276,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.58,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 492360,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 504984,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.59,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 505068,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 517692,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.6,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 517776,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 530400,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.61,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 530484,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 543108,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.62,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 543192,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 555816,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.63,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 555900,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 568524,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.64,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 568608,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 581232,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.65,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 581316,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 593940,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.66,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 594024,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 606648,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.67,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 606732,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 619356,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.68,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 619440,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 632064,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.69,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 632148,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 644772,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.7,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 644856,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 657480,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.71,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 657564,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 670188,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.72,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 670272,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 682896,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.73,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 682980,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 695604,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.74,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 695688,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 708312,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.75,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 708396,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 721020,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.76,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 721104,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 733728,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.77,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 733812,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 746436,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.78,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 746520,
+                "count": 12624
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.79,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 759144,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 771768,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.8,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 771852,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 784476,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.81,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 784560,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 797184,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.82,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 797268,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 809892,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.83,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 809976,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 822600,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.84,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 822684,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 835308,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.85,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 835392,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 848016,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.86,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 848100,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 860724,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.87,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 860808,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 873432,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.88,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 873516,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 886140,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.89,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 886224,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 898848,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.9,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 898932,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 911556,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.91,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 911640,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 924264,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.92,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 924348,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 936972,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.93,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 937056,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 949680,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.94,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 949764,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 962388,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.95,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 962472,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 975096,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.96,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 975180,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 987804,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.97,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 987888,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1000512,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.98,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1000596,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1013220,
+            "count": 84
+          }
+        },
+        {
+          "scale": 0.99,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1013304,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1025928,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.01,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1026012,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1038636,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.02,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1038720,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1051344,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.03,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1051428,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1064052,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.04,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1064136,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1076760,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.05,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1076844,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1089468,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.06,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1089552,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1102176,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.07,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1102260,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1114884,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.08,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1114968,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1127592,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.09,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1127676,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1140300,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.1,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1140384,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1153008,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.11,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1153092,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1165716,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.12,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1165800,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1178424,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.13,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1178508,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1191132,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.14,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1191216,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1203840,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.15,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1203924,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1216548,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.16,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1216632,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1229256,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.17,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1229340,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1241964,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.18,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1242048,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1254672,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.19,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1254756,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1267380,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.2,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1267464,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1280088,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.21,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1280172,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1292796,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.22,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1292880,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1305504,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.23,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1305588,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1318212,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.24,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1318296,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1330920,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.25,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1331004,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1343628,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.26,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1343712,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1356336,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.27,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1356420,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1369044,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.28,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1369128,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1381752,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.29,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1381836,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1394460,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.3,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1394544,
+                "count": 12624
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.31,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1407168,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1419792,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.32,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1419876,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1432500,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.33,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1432584,
+                "count": 12624
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.34,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1445208,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1457832,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.35,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1457916,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1470540,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.36,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1470624,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1483248,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.37,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1483332,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1495956,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.38,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1496040,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1508664,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.39,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1508748,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1521372,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.4,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1521456,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1534080,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.41,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1534164,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1546788,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.42,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1546872,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1559496,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.43,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1559580,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1572204,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.44,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1572288,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1584912,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.45,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1584996,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1597620,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.46,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1597704,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1610328,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.47,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1610412,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1623036,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.48,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1623120,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1635744,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.49,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1635828,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1648452,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.5,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1648536,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1661160,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.51,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1661244,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1673868,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.52,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1673952,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1686576,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.53,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1686660,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1699284,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.54,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1699368,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1711992,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.55,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1712076,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1724700,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.56,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1724784,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1737408,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.57,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1737492,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1750116,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.58,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1750200,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1762824,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.59,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1762908,
+                "count": 12624
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 1775532,
+            "count": 84
+          }
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "walking_leg_array",
+              "delta": {
+                "offset": 1775616,
+                "count": 12624
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "cephalothorax",
+      "child": "abdomen_chain",
+      "parent_world": [
+        -4.1127204752910984e-08,
+        -1.2499995231628418,
+        0.7599999904632568
+      ],
+      "child_world": [
+        -4.1127204752910984e-08,
+        -1.2499995231628418,
+        0.7599999904632568
+      ]
+    },
+    {
+      "parent": "abdomen_chain",
+      "child": "tail_fan",
+      "parent_world": [
+        -5.990266771505048e-08,
+        -6.244998931884766,
+        0.5174285769462585
+      ],
+      "child_world": [
+        -5.990266771505048e-08,
+        -6.244998931884766,
+        0.5174285769462585
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "crusher_chela",
+      "parent_world": [
+        -0.7705368995666504,
+        0.9677070379257202,
+        0.6800000071525574
+      ],
+      "child_world": [
+        -0.7705368995666504,
+        0.9677069783210754,
+        0.6800000071525574
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "cutter_chela",
+      "parent_world": [
+        0.7705370187759399,
+        0.9677072763442993,
+        0.6800000071525574
+      ],
+      "child_world": [
+        0.7705370187759399,
+        0.9677072763442993,
+        0.6800000071525574
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "long_antenna",
+      "parent_world": [
+        -0.3438815474510193,
+        1.26674222946167,
+        1.2442641258239746
+      ],
+      "child_world": [
+        -0.3438815474510193,
+        1.26674222946167,
+        1.2442641258239746
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "long_antenna",
+      "parent_world": [
+        0.34388160705566406,
+        1.26674222946167,
+        1.2442641258239746
+      ],
+      "child_world": [
+        0.34388160705566406,
+        1.26674222946167,
+        1.2442641258239746
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "walking_leg_array",
+      "parent_world": [
+        -0.7731233239173889,
+        0.7135720252990723,
+        0.3759440779685974
+      ],
+      "child_world": [
+        -0.7731233835220337,
+        0.7135719656944275,
+        0.3759440779685974
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "walking_leg_array",
+      "parent_world": [
+        0.7731233239173889,
+        0.7135720252990723,
+        0.3759440779685974
+      ],
+      "child_world": [
+        0.7731233239173889,
+        0.7135719656944275,
+        0.3759440779685974
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "walking_leg_array",
+      "parent_world": [
+        -0.7457732558250427,
+        0.20162628591060638,
+        0.38221222162246704
+      ],
+      "child_world": [
+        -0.7457733154296875,
+        0.2016262710094452,
+        0.38221222162246704
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "walking_leg_array",
+      "parent_world": [
+        0.7457731366157532,
+        0.20162640511989594,
+        0.38221222162246704
+      ],
+      "child_world": [
+        0.7457731366157532,
+        0.20162636041641235,
+        0.38221222162246704
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "walking_leg_array",
+      "parent_world": [
+        -0.7235168218612671,
+        -0.1550692319869995,
+        0.3759440779685974
+      ],
+      "child_world": [
+        -0.7235168814659119,
+        -0.1550692915916443,
+        0.3759440779685974
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "walking_leg_array",
+      "parent_world": [
+        0.7235168218612671,
+        -0.1550692319869995,
+        0.3759440779685974
+      ],
+      "child_world": [
+        0.7235167622566223,
+        -0.1550692915916443,
+        0.3759440779685974
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "walking_leg_array",
+      "parent_world": [
+        -0.6891980767250061,
+        -0.5406354069709778,
+        0.38221222162246704
+      ],
+      "child_world": [
+        -0.6891981363296509,
+        -0.5406354069709778,
+        0.38221222162246704
+      ]
+    },
+    {
+      "parent": "cephalothorax",
+      "child": "walking_leg_array",
+      "parent_world": [
+        0.6891980767250061,
+        -0.5406351685523987,
+        0.38221222162246704
+      ],
+      "child_world": [
+        0.6891980767250061,
+        -0.5406351685523987,
+        0.38221222162246704
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 12.261116027832031,
+    "linear_tolerance": 0.00012261116027832033,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "abdomen_chain": 9.565802656652522e-07,
+      "cephalothorax": 9.555352562529151e-07,
+      "crusher_chela": 9.62942522164667e-07,
+      "cutter_chela": 9.62942522164667e-07,
+      "long_antenna": 9.610960205463925e-07,
+      "tail_fan": 9.559997806718457e-07,
+      "walking_leg_array": 0.02325749397277832
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "abdomen_chain": 1.37,
+          "cephalothorax": 0.63,
+          "crusher_chela": 1.37,
+          "cutter_chela": 0.63,
+          "long_antenna": 1.37,
+          "tail_fan": 0.63,
+          "walking_leg_array": 0.63
+        },
+        "max_position_error": 1.1625094597469043e-06,
+        "relative_error": 9.481269544371609e-08
+      },
+      {
+        "params": {
+          "abdomen_chain": 0.63,
+          "cephalothorax": 1.37,
+          "crusher_chela": 0.63,
+          "cutter_chela": 1.37,
+          "long_antenna": 0.63,
+          "tail_fan": 1.37,
+          "walking_leg_array": 1.37
+        },
+        "max_position_error": 1.3420065536166666e-06,
+        "relative_error": 1.094522350633e-07
+      },
+      {
+        "params": {
+          "abdomen_chain": 0.63,
+          "cephalothorax": 0.63,
+          "crusher_chela": 0.63,
+          "cutter_chela": 0.63,
+          "long_antenna": 0.63,
+          "tail_fan": 0.63,
+          "walking_leg_array": 0.63
+        },
+        "max_position_error": 1.073479666475973e-06,
+        "relative_error": 8.755154620829258e-08
+      },
+      {
+        "params": {
+          "abdomen_chain": 1.37,
+          "cephalothorax": 1.37,
+          "crusher_chela": 1.37,
+          "cutter_chela": 1.37,
+          "long_antenna": 1.37,
+          "tail_fan": 1.37,
+          "walking_leg_array": 1.37
+        },
+        "max_position_error": 2.41510314341271e-06,
+        "relative_error": 1.9697253805694067e-07
+      }
+    ]
+  },
+  "binary_sha256": "4b65f41d893f8a13d7b01cf9a2f1c97ad60937c06fcb35b73a94e7b590901890",
+  "source_sha256": "b3acc968e12930ceec8c9c7949758a683e0145a4d91d06810e25705afc3f950b",
+  "replay_adapter": {
+    "stable_primitives": false,
+    "canonical_meshes": [],
+    "stable_nearest": true,
+    "nearest_tie_tolerance": "max(1e-12, minimum_squared_distance * 1e-5); lowest original vertex index"
+  },
+  "baseline": {
+    "glb": "model.glb",
+    "snapshot": "snapshot.json",
+    "mesh_map": "mesh-map.json",
+    "provenance": "provenance.json"
+  }
+}

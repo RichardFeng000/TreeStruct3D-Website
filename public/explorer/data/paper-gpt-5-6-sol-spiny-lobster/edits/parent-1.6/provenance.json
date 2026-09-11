@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · GPT-5.6 Sol",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.6_sol/SpinyLobster_seed0/SpinyLobster_seed0.py",
+  "source_sha256": "6f7797aba646d2a5bf1cd58e467c22718ada80322d2145e88d58f247da865b0d",
+  "source_size": 23079,
+  "glb_sha256": "c49874bf03dd697c94c34737d31924095852b16d89bd5bad58b892f9ca0ee66d",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|cephalothorax_shell|scale": 1.6
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-1.6",
+    "side": "parent",
+    "part_ids": [
+      "cephalothorax_shell"
+    ],
+    "parameter": "scale",
+    "scale": 1.6,
+    "params": {
+      "part_param|cephalothorax_shell|scale": 1.6
+    },
+    "paper_parent_ids": [
+      "cephalothorax_shell"
+    ],
+    "paper_child_ids": [
+      "long_antenna"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "cephalothorax_shell",
+        "part_id": "cephalothorax_shell",
+        "before": [
+          3.1600000858306885,
+          2.069999933242798,
+          1.600000023841858
+        ],
+        "after": [
+          5.056000232696533,
+          3.3119999170303345,
+          2.559999942779541
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "cephalothorax_shell",
+        "child": "long_antenna",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "cephalothorax_shell",
+        "runtime_child_part_id": "long_antenna"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    2.1355419354513288,
+    -1.4829613842070102
+  ],
+  "mesh_bbox_max_error_before_translation": 2.135542022064328,
+  "mesh_bbox_max_error_after_translation": 2.063810824459722e-07
+}

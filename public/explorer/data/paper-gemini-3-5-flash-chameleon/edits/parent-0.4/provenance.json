@@ -1,0 +1,142 @@
+{
+  "method": "TreeStruct3D · Gemini 3.5 Flash",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemini_3.5_flash/Chameleon_seed0/Chameleon_seed0.py",
+  "source_sha256": "580a1457eb7f5a3436a1ffc0a5ad3120cc61b09c814b55ca00df073a54339d59",
+  "source_size": 20225,
+  "glb_sha256": "5dd85127f036837c044ea42b20f26b1f16f158755b3262a1db25bddb151db22f",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|torso_body|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-0.4",
+    "side": "parent",
+    "part_ids": [
+      "torso_body"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|torso_body|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "torso_body"
+    ],
+    "paper_child_ids": [
+      "forelimb_left",
+      "forelimb_right",
+      "hindlimb_left",
+      "hindlimb_right"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "attachment_paths": [
+      [
+        "torso_body",
+        "forelimb_left"
+      ],
+      [
+        "torso_body",
+        "forelimb_right"
+      ],
+      [
+        "torso_body",
+        "hindlimb_left"
+      ],
+      [
+        "torso_body",
+        "hindlimb_right"
+      ]
+    ],
+    "dimensions": [
+      {
+        "id": "torso_body",
+        "part_id": "torso_body",
+        "before": [
+          1.283400058746338,
+          3.097990036010742,
+          1.231866329908371
+        ],
+        "after": [
+          0.5133599936962128,
+          1.2391958832740784,
+          0.4927464872598648
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "torso_body",
+        "child": "hindlimb_left",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "torso_body",
+        "runtime_child_part_id": "hindlimb_left"
+      },
+      {
+        "parent": "torso_body",
+        "child": "forelimb_right",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "torso_body",
+        "runtime_child_part_id": "forelimb_right"
+      },
+      {
+        "parent": "torso_body",
+        "child": "forelimb_left",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "torso_body",
+        "runtime_child_part_id": "forelimb_left"
+      },
+      {
+        "parent": "torso_body",
+        "child": "hindlimb_right",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "torso_body",
+        "runtime_child_part_id": "hindlimb_right"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    1.034801195349328e-10,
+    0.8051826855963927,
+    -0.2336240585686432
+  ],
+  "mesh_bbox_max_error_before_translation": 0.8051827301497638,
+  "mesh_bbox_max_error_after_translation": 1.0172112119288812e-07,
+  "same_execution_export": true,
+  "final_scene_adapter_sha256": "5ef143984231a0dd21797536aa9e727625b993f52c2a512f08c4f151f8730683",
+  "final_scene_adapter": {
+    "same_execution_export": true,
+    "geometry_observation": "final_evaluated_polygon_vertices",
+    "anchor_observation": "final_evaluated_surface_after_all_source_modifiers",
+    "probe_rules_and_tolerances_changed": false
+  }
+}

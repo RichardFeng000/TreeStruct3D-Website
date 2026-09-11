@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · GPT-5.6 Sol",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.6_sol/Toilet_seed0/Toilet_seed0.py",
+  "source_sha256": "2f1a42f4a4241943b8e9d9228c0e296dc2ef5b56db938939f820254f9c68489e",
+  "source_size": 17002,
+  "glb_sha256": "b240364ff27b378f3fb692ed69240953f460133c075996f80e3f5b1c7be58f4d",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|water_tank|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "child-0.4",
+    "side": "child",
+    "part_ids": [
+      "water_tank"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|water_tank|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "bowl_body"
+    ],
+    "paper_child_ids": [
+      "water_tank"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "water_tank",
+        "part_id": "water_tank",
+        "before": [
+          1.2799999713897705,
+          0.5800000429153442,
+          0.9599999189376831
+        ],
+        "after": [
+          0.5119999647140503,
+          0.23199999332427979,
+          0.38399994373321533
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "bowl_body",
+        "child": "water_tank",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "bowl_body",
+        "runtime_child_part_id": "water_tank"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    1.241763432820638e-09,
+    1.241763432820638e-09,
+    0.11500007162491481
+  ],
+  "mesh_bbox_max_error_before_translation": 0.11500037461519241,
+  "mesh_bbox_max_error_after_translation": 3.0299027760360975e-07
+}

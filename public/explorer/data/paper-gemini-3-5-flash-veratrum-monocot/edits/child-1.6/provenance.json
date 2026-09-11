@@ -1,0 +1,1299 @@
+{
+  "method": "TreeStruct3D · Gemini 3.5 Flash",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemini_3.5_flash/VeratrumMonocot_seed0/VeratrumMonocot_seed0.py",
+  "source_sha256": "58c49a41626a5533cb43d30060fe4e587117021ba59a2801a29d323bf8e0532c",
+  "source_size": 13517,
+  "glb_sha256": "332552d77f5f24ff71f413f330767732d54c6814039818dfc1dfdc3977542a5b",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|floret|scale": 1.6
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "child-1.6",
+    "side": "child",
+    "part_ids": [
+      "floret"
+    ],
+    "parameter": "scale",
+    "scale": 1.6,
+    "params": {
+      "part_param|floret|scale": 1.6
+    },
+    "paper_parent_ids": [
+      "flower_stalk"
+    ],
+    "paper_child_ids": [
+      "floret"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "floret.042",
+        "part_id": "floret",
+        "before": [
+          0.34147387742996216,
+          0.2945319414138794,
+          0.33580636978149414
+        ],
+        "after": [
+          0.5463581532239914,
+          0.4712510108947754,
+          0.5372908115386963
+        ]
+      },
+      {
+        "id": "floret.011",
+        "part_id": "floret",
+        "before": [
+          0.29148464277386665,
+          0.32698774337768555,
+          0.34642863273620605
+        ],
+        "after": [
+          0.4663754142820835,
+          0.5231803357601166,
+          0.554286003112793
+        ]
+      },
+      {
+        "id": "floret.002",
+        "part_id": "floret",
+        "before": [
+          0.29715266823768616,
+          0.31561213731765747,
+          0.3518526554107666
+        ],
+        "after": [
+          0.4754442870616913,
+          0.5049793720245361,
+          0.5629642009735107
+        ]
+      },
+      {
+        "id": "floret.019",
+        "part_id": "floret",
+        "before": [
+          0.2918604351580143,
+          0.33419859409332275,
+          0.3347036838531494
+        ],
+        "after": [
+          0.46697668731212616,
+          0.5347177982330322,
+          0.5355257987976074
+        ]
+      },
+      {
+        "id": "floret.006",
+        "part_id": "floret",
+        "before": [
+          0.29982995986938477,
+          0.3388117551803589,
+          0.31940722465515137
+        ],
+        "after": [
+          0.47972794622182846,
+          0.5420987755060196,
+          0.5110511779785156
+        ]
+      },
+      {
+        "id": "floret.047",
+        "part_id": "floret",
+        "before": [
+          0.34434717893600464,
+          0.27837932109832764,
+          0.3383479118347168
+        ],
+        "after": [
+          0.5509554147720337,
+          0.4454066753387451,
+          0.5413565635681152
+        ]
+      },
+      {
+        "id": "floret.027",
+        "part_id": "floret",
+        "before": [
+          0.29517947137355804,
+          0.34731876850128174,
+          0.3146953582763672
+        ],
+        "after": [
+          0.4722871445119381,
+          0.5557100772857666,
+          0.5035123825073242
+        ]
+      },
+      {
+        "id": "floret.015",
+        "part_id": "floret",
+        "before": [
+          0.29242438077926636,
+          0.32971566915512085,
+          0.3345510959625244
+        ],
+        "after": [
+          0.4678790271282196,
+          0.5275449752807617,
+          0.5352816581726074
+        ]
+      },
+      {
+        "id": "floret.028",
+        "part_id": "floret",
+        "before": [
+          0.2995528504252434,
+          0.33471620082855225,
+          0.3212394714355469
+        ],
+        "after": [
+          0.4792845770716667,
+          0.5355458855628967,
+          0.5139832496643066
+        ]
+      },
+      {
+        "id": "floret.032",
+        "part_id": "floret",
+        "before": [
+          0.2805232033133507,
+          0.3318225145339966,
+          0.34581971168518066
+        ],
+        "after": [
+          0.4488371592015028,
+          0.5309158563613892,
+          0.553311824798584
+        ]
+      },
+      {
+        "id": "floret.036",
+        "part_id": "floret",
+        "before": [
+          0.29207491874694824,
+          0.3358091115951538,
+          0.3274660110473633
+        ],
+        "after": [
+          0.46731993556022644,
+          0.5372945070266724,
+          0.5239453315734863
+        ]
+      },
+      {
+        "id": "floret.026",
+        "part_id": "floret",
+        "before": [
+          0.3511680141091347,
+          0.2817695140838623,
+          0.3243882656097412
+        ],
+        "after": [
+          0.5618687868118286,
+          0.4508312940597534,
+          0.5190212726593018
+        ]
+      },
+      {
+        "id": "floret.045",
+        "part_id": "floret",
+        "before": [
+          0.29889580328017473,
+          0.3019120693206787,
+          0.3531832695007324
+        ],
+        "after": [
+          0.47823326475918293,
+          0.48305952548980713,
+          0.5650925636291504
+        ]
+      },
+      {
+        "id": "floret.031",
+        "part_id": "floret",
+        "before": [
+          0.3014099672436714,
+          0.2994927167892456,
+          0.35260534286499023
+        ],
+        "after": [
+          0.4822559133172035,
+          0.47918832302093506,
+          0.5641689300537109
+        ]
+      },
+      {
+        "id": "floret.034",
+        "part_id": "floret",
+        "before": [
+          0.3559116721153259,
+          0.2730494737625122,
+          0.32692790031433105
+        ],
+        "after": [
+          0.5694586485624313,
+          0.4368792772293091,
+          0.5230848789215088
+        ]
+      },
+      {
+        "id": "floret.021",
+        "part_id": "floret",
+        "before": [
+          0.35223913192749023,
+          0.27374476194381714,
+          0.32926511764526367
+        ],
+        "after": [
+          0.5635825395584106,
+          0.4379916787147522,
+          0.5268239974975586
+        ]
+      },
+      {
+        "id": "floret.040",
+        "part_id": "floret",
+        "before": [
+          0.29572287341579795,
+          0.31919658184051514,
+          0.3329195976257324
+        ],
+        "after": [
+          0.47315655276179314,
+          0.5107145309448242,
+          0.5326714515686035
+        ]
+      },
+      {
+        "id": "floret.017",
+        "part_id": "floret",
+        "before": [
+          0.35587887465953827,
+          0.29178354144096375,
+          0.3015124797821045
+        ],
+        "after": [
+          0.5694061070680618,
+          0.46685364842414856,
+          0.4824197292327881
+        ]
+      },
+      {
+        "id": "floret.005",
+        "part_id": "floret",
+        "before": [
+          0.3375367894768715,
+          0.29250937700271606,
+          0.31700170040130615
+        ],
+        "after": [
+          0.5400587990880013,
+          0.4680149555206299,
+          0.5072027444839478
+        ]
+      },
+      {
+        "id": "floret.044",
+        "part_id": "floret",
+        "before": [
+          0.3013360798358917,
+          0.28853678703308105,
+          0.3569788932800293
+        ],
+        "after": [
+          0.48213769495487213,
+          0.4616588354110718,
+          0.5711665153503418
+        ]
+      },
+      {
+        "id": "floret.023",
+        "part_id": "floret",
+        "before": [
+          0.29482032358646393,
+          0.30315232276916504,
+          0.3470792770385742
+        ],
+        "after": [
+          0.47171252965927124,
+          0.48504358530044556,
+          0.5553267002105713
+        ]
+      },
+      {
+        "id": "floret.007",
+        "part_id": "floret",
+        "before": [
+          0.2925528287887573,
+          0.3266632854938507,
+          0.3239462375640869
+        ],
+        "after": [
+          0.46808454394340515,
+          0.5226612985134125,
+          0.5183141231536865
+        ]
+      },
+      {
+        "id": "floret.013",
+        "part_id": "floret",
+        "before": [
+          0.3570653088390827,
+          0.2677881717681885,
+          0.32262349128723145
+        ],
+        "after": [
+          0.5713045001029968,
+          0.42846089601516724,
+          0.5161974430084229
+        ]
+      },
+      {
+        "id": "floret.003",
+        "part_id": "floret",
+        "before": [
+          0.3047078847885132,
+          0.3049774765968323,
+          0.33178985118865967
+        ],
+        "after": [
+          0.4875326305627823,
+          0.487964004278183,
+          0.5308640003204346
+        ]
+      },
+      {
+        "id": "floret.030",
+        "part_id": "floret",
+        "before": [
+          0.34648334980010986,
+          0.28876376152038574,
+          0.30782365798950195
+        ],
+        "after": [
+          0.5543733239173889,
+          0.46202200651168823,
+          0.49251770973205566
+        ]
+      },
+      {
+        "id": "floret.008",
+        "part_id": "floret",
+        "before": [
+          0.2914111614227295,
+          0.29543536901474,
+          0.35695743560791016
+        ],
+        "after": [
+          0.46625781804323196,
+          0.4726964831352234,
+          0.5711318254470825
+        ]
+      },
+      {
+        "id": "floret.037",
+        "part_id": "floret",
+        "before": [
+          0.30133017897605896,
+          0.28472959995269775,
+          0.35794711112976074
+        ],
+        "after": [
+          0.48212829418480396,
+          0.4555673599243164,
+          0.5727155208587646
+        ]
+      },
+      {
+        "id": "floret.009",
+        "part_id": "floret",
+        "before": [
+          0.3353220522403717,
+          0.3032415062189102,
+          0.3014199733734131
+        ],
+        "after": [
+          0.5365152359008789,
+          0.4851864129304886,
+          0.4822719097137451
+        ]
+      },
+      {
+        "id": "floret.004",
+        "part_id": "floret",
+        "before": [
+          0.3422434628009796,
+          0.3073944225907326,
+          0.2890360355377197
+        ],
+        "after": [
+          0.5475894846022129,
+          0.49183107912540436,
+          0.46245741844177246
+        ]
+      },
+      {
+        "id": "floret.018",
+        "part_id": "floret",
+        "before": [
+          0.2881346642971039,
+          0.29287493228912354,
+          0.35982322692871094
+        ],
+        "after": [
+          0.4610154554247856,
+          0.4685998558998108,
+          0.5757169723510742
+        ]
+      },
+      {
+        "id": "floret.016",
+        "part_id": "floret",
+        "before": [
+          0.289482943713665,
+          0.2912130355834961,
+          0.35987305641174316
+        ],
+        "after": [
+          0.46317269653081894,
+          0.46594101190567017,
+          0.5757968425750732
+        ]
+      },
+      {
+        "id": "floret.029",
+        "part_id": "floret",
+        "before": [
+          0.30040352046489716,
+          0.30412566661834717,
+          0.33153510093688965
+        ],
+        "after": [
+          0.4806456044316292,
+          0.4866011142730713,
+          0.5304558277130127
+        ]
+      },
+      {
+        "id": "floret.039",
+        "part_id": "floret",
+        "before": [
+          0.284427035599947,
+          0.2982386350631714,
+          0.3566286563873291
+        ],
+        "after": [
+          0.45508328452706337,
+          0.47718167304992676,
+          0.5706064701080322
+        ]
+      },
+      {
+        "id": "floret.025",
+        "part_id": "floret",
+        "before": [
+          0.33559761568903923,
+          0.29233503341674805,
+          0.3081319332122803
+        ],
+        "after": [
+          0.5369561612606049,
+          0.4677361249923706,
+          0.4930109977722168
+        ]
+      },
+      {
+        "id": "floret.010",
+        "part_id": "floret",
+        "before": [
+          0.3016717880964279,
+          0.27799683809280396,
+          0.3581700325012207
+        ],
+        "after": [
+          0.48267483711242676,
+          0.44479501247406006,
+          0.5730721950531006
+        ]
+      },
+      {
+        "id": "floret.041",
+        "part_id": "floret",
+        "before": [
+          0.30470293015241623,
+          0.31690287590026855,
+          0.3109879493713379
+        ],
+        "after": [
+          0.48752471804618835,
+          0.5070446729660034,
+          0.49758100509643555
+        ]
+      },
+      {
+        "id": "floret.043",
+        "part_id": "floret",
+        "before": [
+          0.3263823986053467,
+          0.30157792568206787,
+          0.3041691780090332
+        ],
+        "after": [
+          0.5222117900848389,
+          0.4825246334075928,
+          0.48667001724243164
+        ]
+      },
+      {
+        "id": "floret.024",
+        "part_id": "floret",
+        "before": [
+          0.2955823577940464,
+          0.28230857849121094,
+          0.3584728240966797
+        ],
+        "after": [
+          0.47293175756931305,
+          0.45169365406036377,
+          0.5735564231872559
+        ]
+      },
+      {
+        "id": "floret.046",
+        "part_id": "floret",
+        "before": [
+          0.30290498957037926,
+          0.31979191303253174,
+          0.3069486618041992
+        ],
+        "after": [
+          0.4846479222178459,
+          0.5116671323776245,
+          0.4911174774169922
+        ]
+      },
+      {
+        "id": "floret.033",
+        "part_id": "floret",
+        "before": [
+          0.2921051010489464,
+          0.3224843740463257,
+          0.30729150772094727
+        ],
+        "after": [
+          0.46736816316843033,
+          0.5159751176834106,
+          0.4916660785675049
+        ]
+      },
+      {
+        "id": "floret.038",
+        "part_id": "floret",
+        "before": [
+          0.3280775919556618,
+          0.29683661460876465,
+          0.2937183380126953
+        ],
+        "after": [
+          0.5249241068959236,
+          0.47493863105773926,
+          0.46994924545288086
+        ]
+      },
+      {
+        "id": "floret.035",
+        "part_id": "floret",
+        "before": [
+          0.29551636427640915,
+          0.3159869909286499,
+          0.30533647537231445
+        ],
+        "after": [
+          0.47282613441348076,
+          0.5055791735649109,
+          0.4885382652282715
+        ]
+      },
+      {
+        "id": "floret.020",
+        "part_id": "floret",
+        "before": [
+          0.30104315280914307,
+          0.3062378168106079,
+          0.30466389656066895
+        ],
+        "after": [
+          0.481669083237648,
+          0.48998045921325684,
+          0.48746180534362793
+        ]
+      },
+      {
+        "id": "floret",
+        "part_id": "floret",
+        "before": [
+          0.3598356172442436,
+          0.24645286798477173,
+          0.3165464401245117
+        ],
+        "after": [
+          0.575736939907074,
+          0.3943246006965637,
+          0.5064743757247925
+        ]
+      },
+      {
+        "id": "floret.022",
+        "part_id": "floret",
+        "before": [
+          0.31048836559057236,
+          0.2964809536933899,
+          0.30249953269958496
+        ],
+        "after": [
+          0.4967813640832901,
+          0.4743695557117462,
+          0.48399949073791504
+        ]
+      },
+      {
+        "id": "floret.001",
+        "part_id": "floret",
+        "before": [
+          0.2984861433506012,
+          0.2974708005785942,
+          0.2995826005935669
+        ],
+        "after": [
+          0.4775777906179428,
+          0.47595325112342834,
+          0.4793320894241333
+        ]
+      },
+      {
+        "id": "floret.012",
+        "part_id": "floret",
+        "before": [
+          0.29363251477479935,
+          0.29349780082702637,
+          0.2909095287322998
+        ],
+        "after": [
+          0.46981199085712433,
+          0.4695965349674225,
+          0.4654552936553955
+        ]
+      },
+      {
+        "id": "floret.014",
+        "part_id": "floret",
+        "before": [
+          0.28695806860923767,
+          0.2883719801902771,
+          0.2918992042541504
+        ],
+        "after": [
+          0.4591329097747803,
+          0.4613950848579407,
+          0.4670388698577881
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "flower_stalk",
+        "child": "floret.009",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.020",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.030",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.031",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.024",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 3.725290298461914e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.032",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 3.725290298461914e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.045",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 5.587935447692871e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.043",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 6.51925802230835e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.025",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 7.450580596923828e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.004",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 3.0719530773294423e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.039",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.1944189326376765e-07,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.047",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.1944189326376765e-07,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.041",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.2013700229374393e-07,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.003",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.2737006692050962e-07,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.023",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.037",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.028",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.011",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 5.960464477539063e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.001",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.035",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.862645149230957e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.026",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 2.385349660155493e-07,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.005",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.010",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 5.960464477539063e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.013",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 7.450580596923828e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.016",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 6.664001874625056e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.006",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 2.2351741790771484e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.017",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.007",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.002",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 3.332000937312528e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.014",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.029",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.2128666487410446e-07,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.019",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 2.384476811558792e-07,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.012",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.033",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.008",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 6.006850114687196e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.034",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 7.450580596923828e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.022",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.021",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 7.450580596923828e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.036",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 2.6656007498500226e-07,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.015",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 2.9802322387695312e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.044",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 2.60770320892334e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.046",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.018",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.042",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.862645149230957e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.038",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 3.725290298461914e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.027",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      },
+      {
+        "parent": "flower_stalk",
+        "child": "floret.040",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 3.725290298461914e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "flower_stalk",
+        "runtime_child_part_id": "floret"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    -0.12395906669183121,
+    -0.058061652567383375,
+    0.3274420506059295
+  ],
+  "mesh_bbox_max_error_before_translation": 0.3274421231321749,
+  "mesh_bbox_max_error_after_translation": 3.5876775440063513e-07
+}

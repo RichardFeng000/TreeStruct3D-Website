@@ -1,0 +1,1202 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "CabinetDrawerBase_seed0/CabinetDrawerBase_seed0",
+    "label": "CabinetDrawerBase_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|bottom_panel|scale",
+        "label": "bottom_panel · scale",
+        "group": "Native Part Parameters · bottom_panel",
+        "value": 0.4,
+        "node_id": "bottom_panel",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|bottom_panel|bottom_panel",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|bottom_panel|width",
+        "label": "bottom_panel · width",
+        "group": "Native Part Parameters · bottom_panel",
+        "value": 0.8,
+        "node_id": "bottom_panel",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.40000000000000013,
+        "max": 2.0,
+        "step": 0.008
+      },
+      {
+        "id": "part_param|bottom_panel|depth",
+        "label": "bottom_panel · depth",
+        "group": "Native Part Parameters · bottom_panel",
+        "value": 0.6,
+        "node_id": "bottom_panel",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.29999999999999993,
+        "max": 1.5,
+        "step": 0.006
+      },
+      {
+        "id": "part_param|bottom_panel|thickness",
+        "label": "bottom_panel · thickness",
+        "group": "Native Part Parameters · bottom_panel",
+        "value": 0.02,
+        "node_id": "bottom_panel",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.08,
+        "max": 0.12000000000000001,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|back_panel|scale",
+        "label": "back_panel · scale",
+        "group": "Native Part Parameters · back_panel",
+        "value": 1.0,
+        "node_id": "back_panel",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|back_panel|back_panel",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|back_panel|height",
+        "label": "back_panel · height",
+        "group": "Native Part Parameters · back_panel",
+        "value": 0.3,
+        "node_id": "back_panel",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.14999999999999997,
+        "max": 0.75,
+        "step": 0.003
+      },
+      {
+        "id": "part_param|back_panel|thickness",
+        "label": "back_panel · thickness",
+        "group": "Native Part Parameters · back_panel",
+        "value": 0.02,
+        "node_id": "back_panel",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.08,
+        "max": 0.12000000000000001,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|side_walls|scale",
+        "label": "side_walls · scale",
+        "group": "Native Part Parameters · side_walls",
+        "value": 1.0,
+        "node_id": "side_walls",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|side_walls|side_walls",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|side_walls|height",
+        "label": "side_walls · height",
+        "group": "Native Part Parameters · side_walls",
+        "value": 0.15,
+        "node_id": "side_walls",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.07499999999999998,
+        "max": 0.375,
+        "step": 0.0015
+      },
+      {
+        "id": "part_param|side_walls|thickness",
+        "label": "side_walls · thickness",
+        "group": "Native Part Parameters · side_walls",
+        "value": 0.02,
+        "node_id": "side_walls",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.08,
+        "max": 0.12000000000000001,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|front_panel|scale",
+        "label": "front_panel · scale",
+        "group": "Native Part Parameters · front_panel",
+        "value": 1.0,
+        "node_id": "front_panel",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|front_panel|front_panel",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|front_panel|height",
+        "label": "front_panel · height",
+        "group": "Native Part Parameters · front_panel",
+        "value": 0.15,
+        "node_id": "front_panel",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.07499999999999998,
+        "max": 0.375,
+        "step": 0.0015
+      },
+      {
+        "id": "part_param|front_panel|thickness",
+        "label": "front_panel · thickness",
+        "group": "Native Part Parameters · front_panel",
+        "value": 0.02,
+        "node_id": "front_panel",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.08,
+        "max": 0.12000000000000001,
+        "step": 0.001
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gemeni_3.1_pro/CabinetDrawerBase_seed0/CabinetDrawerBase_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:CabinetDrawerBase_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:CabinetDrawerBase_seed0.py",
+            "label": "CabinetDrawerBase_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 170,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 12,
+            "end_line": 14,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_wood_material",
+            "label": "create_wood_material",
+            "kind": "function",
+            "line": 16,
+            "end_line": 53,
+            "parameters": [
+              "name",
+              "grain_dir"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_mesh",
+            "label": "build_mesh",
+            "kind": "function",
+            "line": 55,
+            "end_line": 73,
+            "parameters": [
+              "name",
+              "bm",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_box",
+            "label": "make_box",
+            "kind": "function",
+            "line": 75,
+            "end_line": 80,
+            "parameters": [
+              "bm",
+              "size",
+              "offset"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 82,
+            "end_line": 83,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 85,
+            "end_line": 96,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "generate_drawer",
+            "label": "generate_drawer",
+            "kind": "function",
+            "line": 98,
+            "end_line": 168,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:CabinetDrawerBase_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "clear_scene",
+            "relation": "SECTION_MEMBER",
+            "line": 12,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_wood_material",
+            "relation": "SECTION_MEMBER",
+            "line": 16,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_mesh",
+            "relation": "SECTION_MEMBER",
+            "line": 55,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_box",
+            "relation": "SECTION_MEMBER",
+            "line": 75,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 82,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 85,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "generate_drawer",
+            "relation": "SECTION_MEMBER",
+            "line": 98,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:CabinetDrawerBase_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:CabinetDrawerBase_seed0.py",
+            "label": "CabinetDrawerBase_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 170,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 85,
+            "end_line": 96,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_mesh",
+            "label": "build_mesh",
+            "kind": "function",
+            "line": 55,
+            "end_line": 73,
+            "parameters": [
+              "name",
+              "bm",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 12,
+            "end_line": 14,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_wood_material",
+            "label": "create_wood_material",
+            "kind": "function",
+            "line": 16,
+            "end_line": 53,
+            "parameters": [
+              "name",
+              "grain_dir"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "generate_drawer",
+            "label": "generate_drawer",
+            "kind": "function",
+            "line": 98,
+            "end_line": 168,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 82,
+            "end_line": 83,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_box",
+            "label": "make_box",
+            "kind": "function",
+            "line": 75,
+            "end_line": 80,
+            "parameters": [
+              "bm",
+              "size",
+              "offset"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 88,
+            "evidence": "AST call at L88"
+          },
+          {
+            "parent": "generate_drawer",
+            "child": "clear_scene",
+            "relation": "CALL",
+            "line": 99,
+            "evidence": "AST call at L99"
+          },
+          {
+            "parent": "generate_drawer",
+            "child": "create_wood_material",
+            "relation": "CALL",
+            "line": 101,
+            "evidence": "AST call at L101"
+          },
+          {
+            "parent": "generate_drawer",
+            "child": "make_box",
+            "relation": "CALL",
+            "line": 136,
+            "evidence": "AST call at L136"
+          },
+          {
+            "parent": "generate_drawer",
+            "child": "build_mesh",
+            "relation": "CALL",
+            "line": 140,
+            "evidence": "AST call at L140"
+          },
+          {
+            "parent": "generate_drawer",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "CALL",
+            "line": 160,
+            "evidence": "AST call at L160"
+          },
+          {
+            "parent": "module:CabinetDrawerBase_seed0.py",
+            "child": "generate_drawer",
+            "relation": "ENTRYPOINT",
+            "line": 170,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "obj_bot"
+        ],
+        "nodes": [
+          {
+            "id": "obj_back",
+            "label": "obj_back",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L160: obj_bot -> obj_back [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_mesh",
+            "runtime_variable": "obj_back",
+            "group": "Blender parts"
+          },
+          {
+            "id": "obj_bot",
+            "label": "obj_bot",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L160: obj_bot -> obj_back [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L163: obj_bot -> obj_front [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L166: obj_bot -> obj_sides [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_mesh",
+            "runtime_variable": "obj_bot",
+            "group": "Blender parts"
+          },
+          {
+            "id": "obj_front",
+            "label": "obj_front",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L163: obj_bot -> obj_front [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_mesh",
+            "runtime_variable": "obj_front",
+            "group": "Blender parts"
+          },
+          {
+            "id": "obj_sides",
+            "label": "obj_sides",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L166: obj_bot -> obj_sides [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_mesh",
+            "runtime_variable": "obj_sides",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "obj_bot",
+            "child": "obj_back",
+            "relation": "DIRECTED_CODE",
+            "line": 160,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "obj_bot",
+            "child": "obj_front",
+            "relation": "DIRECTED_CODE",
+            "line": 163,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "obj_bot",
+            "child": "obj_sides",
+            "relation": "DIRECTED_CODE",
+            "line": 166,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "bottom_panel"
+    ],
+    "nodes": [
+      {
+        "id": "back_panel",
+        "label": "back_panel",
+        "part_id": "back_panel",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.10999999940395355,
+          0.15800000727176666
+        ],
+        "center": [
+          0.0,
+          0.10999999940395355,
+          0.15800001472234726
+        ],
+        "dimensions": [
+          0.3199999928474426,
+          0.019999995827674866,
+          0.30000002682209015
+        ],
+        "bbox_min": [
+          -0.1599999964237213,
+          0.10000000149011612,
+          0.008000001311302185
+        ],
+        "bbox_max": [
+          0.1599999964237213,
+          0.11999999731779099,
+          0.30800002813339233
+        ]
+      },
+      {
+        "id": "front_panel",
+        "label": "front_panel",
+        "part_id": "front_panel",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          -0.10999999940395355,
+          0.08300000429153442
+        ],
+        "center": [
+          0.0,
+          -0.10999999940395355,
+          0.08300000429153442
+        ],
+        "dimensions": [
+          0.3199999928474426,
+          0.019999995827674866,
+          0.15000000596046448
+        ],
+        "bbox_min": [
+          -0.1599999964237213,
+          -0.11999999731779099,
+          0.008000001311302185
+        ],
+        "bbox_max": [
+          0.1599999964237213,
+          -0.10000000149011612,
+          0.15800000727176666
+        ]
+      },
+      {
+        "id": "bottom_panel",
+        "label": "bottom_panel",
+        "part_id": "bottom_panel",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.004000000189989805
+        ],
+        "dimensions": [
+          0.3199999928474426,
+          0.23999999463558197,
+          0.00800000037997961
+        ],
+        "bbox_min": [
+          -0.1599999964237213,
+          -0.11999999731779099,
+          0.0
+        ],
+        "bbox_max": [
+          0.1599999964237213,
+          0.11999999731779099,
+          0.00800000037997961
+        ]
+      },
+      {
+        "id": "side_walls",
+        "label": "side_walls",
+        "part_id": "side_walls",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.08300000429153442
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.08300000429153442
+        ],
+        "dimensions": [
+          0.320000022649765,
+          0.20000000298023224,
+          0.15000000596046448
+        ],
+        "bbox_min": [
+          -0.1600000113248825,
+          -0.10000000149011612,
+          0.008000001311302185
+        ],
+        "bbox_max": [
+          0.1600000113248825,
+          0.10000000149011612,
+          0.15800000727176666
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "bottom_panel",
+        "child": "back_panel",
+        "relation": "DIRECTED",
+        "line": 93,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.10999999940395355,
+          0.008000001311302185
+        ],
+        "anchor_b": [
+          0.0,
+          0.10999999940395355,
+          0.00800000037997961
+        ],
+        "anchor_gap": 9.313225746154785e-10,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.15820239355365592,
+        "parent_anchor_vertex_gap": 0.15820239355365592,
+        "aabb_gap": 9.313225746154785e-10,
+        "declared_directions": [
+          {
+            "parent": "bottom_panel",
+            "child": "back_panel",
+            "source": "parent_assignment",
+            "line": 93
+          },
+          {
+            "parent": "bottom_panel",
+            "child": "back_panel",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 160,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.10999999940395355,
+              0.008000001311302185
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.10999999940395355,
+              0.00800000037997961
+            ],
+            "authored_anchor_gap": 9.313225746154785e-10,
+            "child_anchor_vertex_gap": 0.15820239355365592,
+            "parent_anchor_vertex_gap": 0.15820239355365592,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bottom_panel",
+            "child": "back_panel",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bottom_panel",
+        "child": "front_panel",
+        "relation": "DIRECTED",
+        "line": 93,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          -0.10999999940395355,
+          0.00800000037997961
+        ],
+        "anchor_b": [
+          0.0,
+          -0.10999999940395355,
+          0.008000001311302185
+        ],
+        "anchor_gap": 9.313225746154785e-10,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.15820239355365592,
+        "parent_anchor_vertex_gap": 0.15820239355365592,
+        "aabb_gap": 9.313225746154785e-10,
+        "declared_directions": [
+          {
+            "parent": "bottom_panel",
+            "child": "front_panel",
+            "source": "parent_assignment",
+            "line": 93
+          },
+          {
+            "parent": "bottom_panel",
+            "child": "front_panel",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 163,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              -0.10999999940395355,
+              0.008000001311302185
+            ],
+            "parent_anchor_world": [
+              0.0,
+              -0.10999999940395355,
+              0.00800000037997961
+            ],
+            "authored_anchor_gap": 9.313225746154785e-10,
+            "child_anchor_vertex_gap": 0.15820239355365592,
+            "parent_anchor_vertex_gap": 0.15820239355365592,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bottom_panel",
+            "child": "front_panel",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bottom_panel",
+        "child": "side_walls",
+        "relation": "DIRECTED",
+        "line": 93,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.0,
+          0.00800000037997961
+        ],
+        "anchor_b": [
+          0.0,
+          0.0,
+          0.008000001311302185
+        ],
+        "anchor_gap": 9.313225746154785e-10,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.17090348632067653,
+        "parent_anchor_vertex_gap": 0.197200398472903,
+        "aabb_gap": 9.313225746154785e-10,
+        "declared_directions": [
+          {
+            "parent": "bottom_panel",
+            "child": "side_walls",
+            "source": "parent_assignment",
+            "line": 93
+          },
+          {
+            "parent": "bottom_panel",
+            "child": "side_walls",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 166,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.0,
+              0.008000001311302185
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.0,
+              0.00800000037997961
+            ],
+            "authored_anchor_gap": 9.313225746154785e-10,
+            "child_anchor_vertex_gap": 0.17090348632067653,
+            "parent_anchor_vertex_gap": 0.197200398472903,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bottom_panel",
+            "child": "side_walls",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "front_panel",
+        "child": "side_walls",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.15799999237060547,
+          -0.10000000149011612,
+          0.156000018119812
+        ],
+        "anchor_b": [
+          0.15800000727176666,
+          -0.10000000149011612,
+          0.156000018119812
+        ],
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 0.008000000566244126,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "back_panel",
+        "child": "side_walls",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.15799999237060547,
+          0.10000000149011612,
+          0.01000000536441803
+        ],
+        "anchor_b": [
+          -0.15800000727176666,
+          0.10000000149011612,
+          0.009999997913837433
+        ],
+        "anchor_gap": 1.666000468656264e-08,
+        "anchor_tolerance": 0.008000000566244126,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 4,
+      "edges": 5,
+      "relations": {
+        "DIRECTED": 3,
+        "UNDIRECTED_CONTACT": 2
+      },
+      "directed_edges": 3,
+      "runtime_directed_edges": 3,
+      "shared_anchor_edges": 0,
+      "estimated_anchor_edges": 2,
+      "geometric_anchor_candidates": 5,
+      "unverified_anchor_candidates": 5,
+      "misaligned_anchor_edges": 0
+    },
+    "source_bounds": {
+      "min": [
+        -0.1600000113248825,
+        -0.11999999731779099,
+        0.0
+      ],
+      "max": [
+        0.1600000113248825,
+        0.11999999731779099,
+        0.30800002813339233
+      ]
+    },
+    "scene_extent": 0.320000022649765,
+    "contact_threshold": 0.008000000566244126,
+    "shared_anchor_tolerance": 0.008000000566244126,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "back_panel",
+        "bottom_panel",
+        "front_panel",
+        "side_walls"
+      ],
+      "scale_overrides": {
+        "bottom_panel": 0.4
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · Gemini 3.1 Pro",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gemeni_3.1_pro/CabinetDrawerBase_seed0/CabinetDrawerBase_seed0.py",
+    "source_sha256": "aecd66603d8bf18245e1f1a26ed95935f4e7167b542c69c0ed8cf3c61fede1de",
+    "source_size": 5996,
+    "glb_sha256": "f3b7731bbefe24806f3f9c7b6af5f37664e640e357036d4361b7a05c32475b26",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|bottom_panel|scale": 0.4
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "parent-0.4",
+      "side": "parent",
+      "part_ids": [
+        "bottom_panel"
+      ],
+      "parameter": "scale",
+      "scale": 0.4,
+      "params": {
+        "part_param|bottom_panel|scale": 0.4
+      },
+      "paper_parent_ids": [
+        "bottom_panel"
+      ],
+      "paper_child_ids": [
+        "front_panel"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "dimensions": [
+        {
+          "id": "bottom_panel",
+          "part_id": "bottom_panel",
+          "before": [
+            0.800000011920929,
+            0.6000000238418579,
+            0.019999999552965164
+          ],
+          "after": [
+            0.3199999928474426,
+            0.23999999463558197,
+            0.00800000037997961
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "bottom_panel",
+          "child": "front_panel",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 9.313225746154785e-10,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "bottom_panel",
+          "runtime_child_part_id": "front_panel"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.0,
+      -1.862645149230957e-09,
+      0.0
+    ],
+    "mesh_bbox_max_error_before_translation": 1.4901161193847656e-08,
+    "mesh_bbox_max_error_after_translation": 1.30385160446167e-08
+  }
+}

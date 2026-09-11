@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "description": "Curated static snapshots from the TreeStruct3D Visual Validation Toolkit. Runtime results describe these saved examples only; browser controls do not rerun Blender.",
+  "version": 2,
+  "description": "Twenty paper cases in four model collections, with native Blender parameter response data and case-specific geometry rules for continuous browser editing. Archived paper states retain their own saved Blender checks.",
   "coordinate_system": {
     "glb": "right-handed Y-up",
     "runtime": "Blender Z-up",
@@ -8,68 +8,3106 @@
   },
   "models": [
     {
-      "id": "method-monitor",
-      "title": "Monitor",
-      "source": "treestruct3d",
-      "source_label": "TreeStruct3D \u00b7 GPT-5.6-sol",
-      "model": "Monitor_seed0/Monitor_seed0",
-      "label": "Monitor_seed0",
-      "directory": "method-monitor",
-      "glb": "method-monitor/model.glb",
-      "provenance": "method-monitor/provenance.json",
-      "mesh_map": "method-monitor/mesh-map.json",
-      "bytes": 166508,
-      "parts": 4,
-      "shared_anchors": 3,
-      "snapshot": "method-monitor/snapshot.json"
+      "id": "paper-gpt-5-5-crab",
+      "title": "Crab",
+      "label": "Crab_seed0",
+      "model": "Crab_seed0/Crab_seed0",
+      "provider": "GPT-5.5",
+      "source": "gpt-5-5",
+      "source_label": "GPT-5.5",
+      "directory": "paper-gpt-5-5-crab",
+      "glb": "paper-gpt-5-5-crab/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-5-crab/edits/default/snapshot.json",
+      "mesh_map": "paper-gpt-5-5-crab/edits/default/mesh-map.json",
+      "provenance": "paper-gpt-5-5-crab/edits/default/provenance.json",
+      "bytes": 178096,
+      "parts": 5,
+      "shared_anchors": 0,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gpt5_5_all172/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "matching_edge_found",
+        "checked_parent_id": "carapace",
+        "checked_child_id": "walking_leg",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "scope": "The matching semantic attachment at default and independent parent/child edits of 0.8 and 1.2; not the displayed 0.4/1.6 stress edits."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "carapace"
+          ],
+          "label": "carapace"
+        },
+        "child": {
+          "ids": [
+            "walking_leg"
+          ],
+          "label": "walking leg"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gpt-5-5-crab/edits/default/model.glb",
+            "snapshot": "paper-gpt-5-5-crab/edits/default/snapshot.json",
+            "provenance": "paper-gpt-5-5-crab/edits/default/provenance.json",
+            "mesh_map": "paper-gpt-5-5-crab/edits/default/mesh-map.json",
+            "bytes": 178096
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-5-crab/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gpt-5-5-crab/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-5-crab/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-5-crab/edits/parent-0.4/mesh-map.json",
+            "bytes": 178100
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-5-crab/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gpt-5-5-crab/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-5-crab/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-5-crab/edits/parent-1.6/mesh-map.json",
+            "bytes": 178092
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-5-crab/edits/child-0.4/model.glb",
+            "snapshot": "paper-gpt-5-5-crab/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-5-crab/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-5-crab/edits/child-0.4/mesh-map.json",
+            "bytes": 178100
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-5-crab/edits/child-1.6/model.glb",
+            "snapshot": "paper-gpt-5-5-crab/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-5-crab/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-5-crab/edits/child-1.6/mesh-map.json",
+            "bytes": 178100
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-crab/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-crab/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-crab/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-crab/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-crab/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gpt-5-5-crab/native/native-edit.json",
+        "buffer": "paper-gpt-5-5-crab/native/native-edit.bin"
+      },
+      "comparison": {
+        "label": "3DCodeBench",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-crab/baseline/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-crab/baseline/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-crab/baseline/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-crab/baseline/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-crab/baseline/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ],
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "note": "Original paper renders: 3DCodeBench uses object-group scaling; TreeStruct3D rebuilds its parameters. The 3D view is rebuilt separately."
+      }
     },
     {
-      "id": "method-floorlamp",
-      "title": "Floor lamp",
-      "source": "treestruct3d",
-      "source_label": "TreeStruct3D \u00b7 GPT-5.5",
-      "model": "FloorLamp_seed0/FloorLamp_seed0",
+      "id": "paper-gpt-5-6-sol-lobster",
+      "title": "Lobster",
+      "label": "Lobster_seed0",
+      "model": "Lobster_seed0/Lobster_seed0",
+      "provider": "GPT-5.6 Sol",
+      "source": "gpt-5-6-sol",
+      "source_label": "GPT-5.6 Sol",
+      "directory": "paper-gpt-5-6-sol-lobster",
+      "glb": "paper-gpt-5-6-sol-lobster/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-lobster/edits/default/snapshot.json",
+      "mesh_map": "paper-gpt-5-6-sol-lobster/edits/default/mesh-map.json",
+      "provenance": "paper-gpt-5-6-sol-lobster/edits/default/provenance.json",
+      "bytes": 3021624,
+      "parts": 7,
+      "shared_anchors": 5,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gpt5_6_sol_all172_v2/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "matching_edge_found",
+        "checked_parent_id": "cephalothorax",
+        "checked_child_id": "crusher_chela",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "scope": "The matching semantic attachment at default and independent parent/child edits of 0.8 and 1.2; not the displayed 0.4/1.6 stress edits."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "cephalothorax"
+          ],
+          "label": "cephalothorax"
+        },
+        "child": {
+          "ids": [
+            "crusher_chela"
+          ],
+          "label": "crusher claw"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gpt-5-6-sol-lobster/edits/default/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-lobster/edits/default/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-lobster/edits/default/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-lobster/edits/default/mesh-map.json",
+            "bytes": 3021624
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-6-sol-lobster/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-lobster/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-lobster/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-lobster/edits/parent-0.4/mesh-map.json",
+            "bytes": 988264
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-6-sol-lobster/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-lobster/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-lobster/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-lobster/edits/parent-1.6/mesh-map.json",
+            "bytes": 988244
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-6-sol-lobster/edits/child-0.4/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-lobster/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-lobster/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-lobster/edits/child-0.4/mesh-map.json",
+            "bytes": 988256
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-6-sol-lobster/edits/child-1.6/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-lobster/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-lobster/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-lobster/edits/child-1.6/mesh-map.json",
+            "bytes": 988244
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gpt-5-6-sol-lobster/native/native-edit.json",
+        "buffer": "paper-gpt-5-6-sol-lobster/native/native-edit.bin",
+        "baseline": {
+          "glb": "paper-gpt-5-6-sol-lobster/native/model.glb",
+          "snapshot": "paper-gpt-5-6-sol-lobster/native/snapshot.json",
+          "mesh_map": "paper-gpt-5-6-sol-lobster/native/mesh-map.json",
+          "provenance": "paper-gpt-5-6-sol-lobster/native/provenance.json"
+        }
+      },
+      "comparison": {
+        "label": "3DCodeBench",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/baseline/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/baseline/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/baseline/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/baseline/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/baseline/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ],
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "note": "Original paper renders: 3DCodeBench uses object-group scaling; TreeStruct3D rebuilds its parameters. The 3D view is rebuilt separately."
+      }
+    },
+    {
+      "id": "paper-gemini-3-1-pro-dragonfly",
+      "title": "Dragonfly",
+      "label": "Dragonfly_seed0",
+      "model": "Dragonfly_seed0/Dragonfly_seed0",
+      "provider": "Gemini 3.1 Pro",
+      "source": "gemini-3-1-pro",
+      "source_label": "Gemini 3.1 Pro",
+      "directory": "paper-gemini-3-1-pro-dragonfly",
+      "glb": "paper-gemini-3-1-pro-dragonfly/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-dragonfly/edits/default/snapshot.json",
+      "mesh_map": "paper-gemini-3-1-pro-dragonfly/edits/default/mesh-map.json",
+      "provenance": "paper-gemini-3-1-pro-dragonfly/edits/default/provenance.json",
+      "bytes": 1321912,
+      "parts": 9,
+      "shared_anchors": 0,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gemini3_1_pro_all172_v2/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "matching_edge_found",
+        "checked_parent_id": "thorax",
+        "checked_child_id": "abdomen",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "scope": "The matching semantic attachment at default and independent parent/child edits of 0.8 and 1.2; not the displayed 0.4/1.6 stress edits."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "thorax"
+          ],
+          "label": "thorax"
+        },
+        "child": {
+          "ids": [
+            "abdomen"
+          ],
+          "label": "abdomen"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gemini-3-1-pro-dragonfly/edits/default/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-dragonfly/edits/default/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-dragonfly/edits/default/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-dragonfly/edits/default/mesh-map.json",
+            "bytes": 1321912
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-1-pro-dragonfly/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-dragonfly/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-dragonfly/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-dragonfly/edits/parent-0.4/mesh-map.json",
+            "bytes": 487824
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-1-pro-dragonfly/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-dragonfly/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-dragonfly/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-dragonfly/edits/parent-1.6/mesh-map.json",
+            "bytes": 487808
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-1-pro-dragonfly/edits/child-0.4/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-dragonfly/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-dragonfly/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-dragonfly/edits/child-0.4/mesh-map.json",
+            "bytes": 487824
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-1-pro-dragonfly/edits/child-1.6/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-dragonfly/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-dragonfly/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-dragonfly/edits/child-1.6/mesh-map.json",
+            "bytes": 487816
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gemini-3-1-pro-dragonfly/native/native-edit.json",
+        "buffer": "paper-gemini-3-1-pro-dragonfly/native/native-edit.bin",
+        "baseline": {
+          "glb": "paper-gemini-3-1-pro-dragonfly/native/model.glb",
+          "snapshot": "paper-gemini-3-1-pro-dragonfly/native/snapshot.json",
+          "mesh_map": "paper-gemini-3-1-pro-dragonfly/native/mesh-map.json",
+          "provenance": "paper-gemini-3-1-pro-dragonfly/native/provenance.json"
+        }
+      },
+      "comparison": {
+        "label": "3DCodeBench",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/baseline/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/baseline/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/baseline/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/baseline/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/baseline/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ],
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "note": "Original paper renders: 3DCodeBench uses object-group scaling; TreeStruct3D rebuilds its parameters. The 3D view is rebuilt separately."
+      }
+    },
+    {
+      "id": "paper-gemini-3-5-flash-chameleon",
+      "title": "Chameleon",
+      "label": "Chameleon_seed0",
+      "model": "Chameleon_seed0/Chameleon_seed0",
+      "provider": "Gemini 3.5 Flash",
+      "source": "gemini-3-5-flash",
+      "source_label": "Gemini 3.5 Flash",
+      "directory": "paper-gemini-3-5-flash-chameleon",
+      "glb": "paper-gemini-3-5-flash-chameleon/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-chameleon/edits/default/snapshot.json",
+      "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/default/mesh-map.json",
+      "provenance": "paper-gemini-3-5-flash-chameleon/edits/default/provenance.json",
+      "bytes": 2774820,
+      "parts": 9,
+      "shared_anchors": 0,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gemini3_5_flash_all172_v2/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "not_mapped_for_displayed_group",
+        "checks": null,
+        "scope": "The main-figure Chameleon uses a grouped four-limb edit override. No exact body-to-legs row was found in this per_edge.csv; do not infer validation for that grouped display edit."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "torso_body"
+          ],
+          "label": "body"
+        },
+        "child": {
+          "ids": [
+            "forelimb_left",
+            "forelimb_right",
+            "hindlimb_left",
+            "hindlimb_right"
+          ],
+          "label": "legs"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gemini-3-5-flash-chameleon/edits/default/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-chameleon/edits/default/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-chameleon/edits/default/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/default/mesh-map.json",
+            "bytes": 2774820
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-5-flash-chameleon/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-chameleon/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-chameleon/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/parent-0.4/mesh-map.json",
+            "bytes": 1023264
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-5-flash-chameleon/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-chameleon/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-chameleon/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/parent-1.6/mesh-map.json",
+            "bytes": 963472
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-5-flash-chameleon/edits/child-0.4/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-chameleon/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-chameleon/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/child-0.4/mesh-map.json",
+            "bytes": 963484
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-5-flash-chameleon/edits/child-1.6/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-chameleon/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-chameleon/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/child-1.6/mesh-map.json",
+            "bytes": 999300
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gemini-3-5-flash-chameleon/native/native-edit.json",
+        "buffer": "paper-gemini-3-5-flash-chameleon/native/native-edit.bin"
+      },
+      "comparison": {
+        "label": "3DCodeBench",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/baseline/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/baseline/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/baseline/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/baseline/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/baseline/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ],
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "note": "Original paper renders: 3DCodeBench uses object-group scaling; TreeStruct3D rebuilds its parameters. The 3D view is rebuilt separately."
+      }
+    },
+    {
+      "id": "paper-gpt-5-5-hollow-tree",
+      "title": "Hollow Tree",
+      "label": "HollowTree_seed0",
+      "model": "HollowTree_seed0/HollowTree_seed0",
+      "provider": "GPT-5.5",
+      "source": "gpt-5-5",
+      "source_label": "GPT-5.5",
+      "directory": "paper-gpt-5-5-hollow-tree",
+      "glb": "paper-gpt-5-5-hollow-tree/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-5-hollow-tree/edits/default/snapshot.json",
+      "mesh_map": "paper-gpt-5-5-hollow-tree/edits/default/mesh-map.json",
+      "provenance": "paper-gpt-5-5-hollow-tree/edits/default/provenance.json",
+      "bytes": 973192,
+      "parts": 2,
+      "shared_anchors": 1,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "main_trunk"
+          ],
+          "label": "trunk"
+        },
+        "child": {
+          "ids": [
+            "branch_and_twig_network"
+          ],
+          "label": "primary branch"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gpt-5-5-hollow-tree/edits/default/model.glb",
+            "snapshot": "paper-gpt-5-5-hollow-tree/edits/default/snapshot.json",
+            "provenance": "paper-gpt-5-5-hollow-tree/edits/default/provenance.json",
+            "mesh_map": "paper-gpt-5-5-hollow-tree/edits/default/mesh-map.json",
+            "bytes": 973192
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-5-hollow-tree/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gpt-5-5-hollow-tree/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-5-hollow-tree/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-5-hollow-tree/edits/parent-0.4/mesh-map.json",
+            "bytes": 968940
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-5-hollow-tree/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gpt-5-5-hollow-tree/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-5-hollow-tree/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-5-hollow-tree/edits/parent-1.6/mesh-map.json",
+            "bytes": 977512
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-5-hollow-tree/edits/child-0.4/model.glb",
+            "snapshot": "paper-gpt-5-5-hollow-tree/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-5-hollow-tree/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-5-hollow-tree/edits/child-0.4/mesh-map.json",
+            "bytes": 1217800
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-5-hollow-tree/edits/child-1.6/model.glb",
+            "snapshot": "paper-gpt-5-5-hollow-tree/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-5-hollow-tree/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-5-hollow-tree/edits/child-1.6/mesh-map.json",
+            "bytes": 1067504
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-hollow-tree/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-hollow-tree/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-hollow-tree/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-hollow-tree/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-hollow-tree/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gpt-5-5-hollow-tree/native/native-edit.json",
+        "buffer": "paper-gpt-5-5-hollow-tree/native/native-edit.bin.gz"
+      }
+    },
+    {
+      "id": "paper-gpt-5-5-pan",
+      "title": "Pan",
+      "label": "Pan_seed0",
+      "model": "Pan_seed0/Pan_seed0",
+      "provider": "GPT-5.5",
+      "source": "gpt-5-5",
+      "source_label": "GPT-5.5",
+      "directory": "paper-gpt-5-5-pan",
+      "glb": "paper-gpt-5-5-pan/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-5-pan/edits/default/snapshot.json",
+      "mesh_map": "paper-gpt-5-5-pan/edits/default/mesh-map.json",
+      "provenance": "paper-gpt-5-5-pan/edits/default/provenance.json",
+      "bytes": 542236,
+      "parts": 3,
+      "shared_anchors": 2,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "pan_body"
+          ],
+          "label": "pan body"
+        },
+        "child": {
+          "ids": [
+            "flat_handle_core"
+          ],
+          "label": "handle"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gpt-5-5-pan/edits/default/model.glb",
+            "snapshot": "paper-gpt-5-5-pan/edits/default/snapshot.json",
+            "provenance": "paper-gpt-5-5-pan/edits/default/provenance.json",
+            "mesh_map": "paper-gpt-5-5-pan/edits/default/mesh-map.json",
+            "bytes": 542236
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-5-pan/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gpt-5-5-pan/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-5-pan/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-5-pan/edits/parent-0.4/mesh-map.json",
+            "bytes": 271492
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-5-pan/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gpt-5-5-pan/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-5-pan/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-5-pan/edits/parent-1.6/mesh-map.json",
+            "bytes": 271480
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-5-pan/edits/child-0.4/model.glb",
+            "snapshot": "paper-gpt-5-5-pan/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-5-pan/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-5-pan/edits/child-0.4/mesh-map.json",
+            "bytes": 271008
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-5-pan/edits/child-1.6/model.glb",
+            "snapshot": "paper-gpt-5-5-pan/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-5-pan/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-5-pan/edits/child-1.6/mesh-map.json",
+            "bytes": 271004
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-pan/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-pan/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-pan/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-pan/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-pan/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gpt-5-5-pan/native/native-edit.json",
+        "buffer": "paper-gpt-5-5-pan/native/native-edit.bin.gz"
+      }
+    },
+    {
+      "id": "paper-gpt-5-5-bed",
+      "title": "Bed",
+      "label": "Bed_seed0",
+      "model": "Bed_seed0/Bed_seed0",
+      "provider": "GPT-5.5",
+      "source": "gpt-5-5",
+      "source_label": "GPT-5.5",
+      "directory": "paper-gpt-5-5-bed",
+      "glb": "paper-gpt-5-5-bed/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-5-bed/edits/default/snapshot.json",
+      "mesh_map": "paper-gpt-5-5-bed/edits/default/mesh-map.json",
+      "provenance": "paper-gpt-5-5-bed/edits/default/provenance.json",
+      "bytes": 203764,
+      "parts": 8,
+      "shared_anchors": 1,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "wooden_bed_frame_base"
+          ],
+          "label": "bed frame"
+        },
+        "child": {
+          "ids": [
+            "decorative_headboard"
+          ],
+          "label": "headboard"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gpt-5-5-bed/edits/default/model.glb",
+            "snapshot": "paper-gpt-5-5-bed/edits/default/snapshot.json",
+            "provenance": "paper-gpt-5-5-bed/edits/default/provenance.json",
+            "mesh_map": "paper-gpt-5-5-bed/edits/default/mesh-map.json",
+            "bytes": 203764
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-5-bed/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gpt-5-5-bed/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-5-bed/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-5-bed/edits/parent-0.4/mesh-map.json",
+            "bytes": 203804
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-5-bed/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gpt-5-5-bed/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-5-bed/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-5-bed/edits/parent-1.6/mesh-map.json",
+            "bytes": 204472
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-5-bed/edits/child-0.4/model.glb",
+            "snapshot": "paper-gpt-5-5-bed/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-5-bed/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-5-bed/edits/child-0.4/mesh-map.json",
+            "bytes": 204060
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-5-bed/edits/child-1.6/model.glb",
+            "snapshot": "paper-gpt-5-5-bed/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-5-bed/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-5-bed/edits/child-1.6/mesh-map.json",
+            "bytes": 204048
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-bed/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-bed/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-bed/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-bed/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-bed/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gpt-5-5-bed/native/native-edit.json",
+        "buffer": "paper-gpt-5-5-bed/native/native-edit.bin.gz"
+      }
+    },
+    {
+      "id": "paper-gpt-5-5-floor-lamp",
+      "title": "Floor Lamp",
       "label": "FloorLamp_seed0",
-      "directory": "method-floorlamp",
-      "glb": "method-floorlamp/model.glb",
-      "provenance": "method-floorlamp/provenance.json",
-      "mesh_map": "method-floorlamp/mesh-map.json",
-      "bytes": 655560,
+      "model": "FloorLamp_seed0/FloorLamp_seed0",
+      "provider": "GPT-5.5",
+      "source": "gpt-5-5",
+      "source_label": "GPT-5.5",
+      "directory": "paper-gpt-5-5-floor-lamp",
+      "glb": "paper-gpt-5-5-floor-lamp/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-5-floor-lamp/edits/default/snapshot.json",
+      "mesh_map": "paper-gpt-5-5-floor-lamp/edits/default/mesh-map.json",
+      "provenance": "paper-gpt-5-5-floor-lamp/edits/default/provenance.json",
+      "bytes": 435920,
+      "parts": 4,
+      "shared_anchors": 2,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "round_base"
+          ],
+          "label": "base"
+        },
+        "child": {
+          "ids": [
+            "central_pole"
+          ],
+          "label": "pole"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gpt-5-5-floor-lamp/edits/default/model.glb",
+            "snapshot": "paper-gpt-5-5-floor-lamp/edits/default/snapshot.json",
+            "provenance": "paper-gpt-5-5-floor-lamp/edits/default/provenance.json",
+            "mesh_map": "paper-gpt-5-5-floor-lamp/edits/default/mesh-map.json",
+            "bytes": 435920
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-5-floor-lamp/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gpt-5-5-floor-lamp/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-5-floor-lamp/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-5-floor-lamp/edits/parent-0.4/mesh-map.json",
+            "bytes": 435924
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-5-floor-lamp/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gpt-5-5-floor-lamp/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-5-floor-lamp/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-5-floor-lamp/edits/parent-1.6/mesh-map.json",
+            "bytes": 435924
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-5-floor-lamp/edits/child-0.4/model.glb",
+            "snapshot": "paper-gpt-5-5-floor-lamp/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-5-floor-lamp/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-5-floor-lamp/edits/child-0.4/mesh-map.json",
+            "bytes": 435732
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-5-floor-lamp/edits/child-1.6/model.glb",
+            "snapshot": "paper-gpt-5-5-floor-lamp/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-5-floor-lamp/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-5-floor-lamp/edits/child-1.6/mesh-map.json",
+            "bytes": 435728
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-floor-lamp/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-floor-lamp/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-floor-lamp/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-floor-lamp/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-floor-lamp/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gpt-5-5-floor-lamp/native/native-edit.json",
+        "buffer": "paper-gpt-5-5-floor-lamp/native/native-edit.bin.gz"
+      }
+    },
+    {
+      "id": "paper-gpt-5-6-sol-toilet",
+      "title": "Toilet",
+      "label": "Toilet_seed0",
+      "model": "Toilet_seed0/Toilet_seed0",
+      "provider": "GPT-5.6 Sol",
+      "source": "gpt-5-6-sol",
+      "source_label": "GPT-5.6 Sol",
+      "directory": "paper-gpt-5-6-sol-toilet",
+      "glb": "paper-gpt-5-6-sol-toilet/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-toilet/edits/default/snapshot.json",
+      "mesh_map": "paper-gpt-5-6-sol-toilet/edits/default/mesh-map.json",
+      "provenance": "paper-gpt-5-6-sol-toilet/edits/default/provenance.json",
+      "bytes": 239756,
+      "parts": 6,
+      "shared_anchors": 5,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "bowl_body"
+          ],
+          "label": "toilet bowl"
+        },
+        "child": {
+          "ids": [
+            "water_tank"
+          ],
+          "label": "water tank"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gpt-5-6-sol-toilet/edits/default/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-toilet/edits/default/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-toilet/edits/default/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-toilet/edits/default/mesh-map.json",
+            "bytes": 239756
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-6-sol-toilet/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-toilet/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-toilet/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-toilet/edits/parent-0.4/mesh-map.json",
+            "bytes": 239780
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-6-sol-toilet/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-toilet/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-toilet/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-toilet/edits/parent-1.6/mesh-map.json",
+            "bytes": 239756
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-6-sol-toilet/edits/child-0.4/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-toilet/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-toilet/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-toilet/edits/child-0.4/mesh-map.json",
+            "bytes": 239740
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-6-sol-toilet/edits/child-1.6/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-toilet/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-toilet/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-toilet/edits/child-1.6/mesh-map.json",
+            "bytes": 239756
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-toilet/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-toilet/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-toilet/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-toilet/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-toilet/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gpt-5-6-sol-toilet/native/native-edit.json",
+        "buffer": "paper-gpt-5-6-sol-toilet/native/native-edit.bin"
+      }
+    },
+    {
+      "id": "paper-gpt-5-6-sol-spiny-lobster",
+      "title": "Spiny Lobster",
+      "label": "SpinyLobster_seed0",
+      "model": "SpinyLobster_seed0/SpinyLobster_seed0",
+      "provider": "GPT-5.6 Sol",
+      "source": "gpt-5-6-sol",
+      "source_label": "GPT-5.6 Sol",
+      "directory": "paper-gpt-5-6-sol-spiny-lobster",
+      "glb": "paper-gpt-5-6-sol-spiny-lobster/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-spiny-lobster/edits/default/snapshot.json",
+      "mesh_map": "paper-gpt-5-6-sol-spiny-lobster/edits/default/mesh-map.json",
+      "provenance": "paper-gpt-5-6-sol-spiny-lobster/edits/default/provenance.json",
+      "bytes": 1428876,
       "parts": 5,
       "shared_anchors": 4,
-      "snapshot": "method-floorlamp/snapshot.json"
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "cephalothorax_shell"
+          ],
+          "label": "cephalothorax"
+        },
+        "child": {
+          "ids": [
+            "long_antenna"
+          ],
+          "label": "antenna"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gpt-5-6-sol-spiny-lobster/edits/default/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-spiny-lobster/edits/default/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-spiny-lobster/edits/default/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-spiny-lobster/edits/default/mesh-map.json",
+            "bytes": 1428876
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-6-sol-spiny-lobster/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-spiny-lobster/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-spiny-lobster/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-spiny-lobster/edits/parent-0.4/mesh-map.json",
+            "bytes": 256232
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-6-sol-spiny-lobster/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-spiny-lobster/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-spiny-lobster/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-spiny-lobster/edits/parent-1.6/mesh-map.json",
+            "bytes": 256220
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-6-sol-spiny-lobster/edits/child-0.4/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-spiny-lobster/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-spiny-lobster/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-spiny-lobster/edits/child-0.4/mesh-map.json",
+            "bytes": 256212
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-6-sol-spiny-lobster/edits/child-1.6/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-spiny-lobster/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-spiny-lobster/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-spiny-lobster/edits/child-1.6/mesh-map.json",
+            "bytes": 256216
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-spiny-lobster/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-spiny-lobster/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-spiny-lobster/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-spiny-lobster/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-spiny-lobster/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gpt-5-6-sol-spiny-lobster/native/native-edit.json",
+        "buffer": "paper-gpt-5-6-sol-spiny-lobster/native/native-edit.bin"
+      }
     },
     {
-      "id": "method-chameleon",
-      "title": "Chameleon",
-      "source": "treestruct3d",
-      "source_label": "TreeStruct3D \u00b7 Gemini 3.1 Pro",
-      "model": "Chameleon_seed0/Chameleon_seed0",
-      "label": "Chameleon_seed0",
-      "directory": "method-chameleon",
-      "glb": "method-chameleon/model.glb",
-      "provenance": "method-chameleon/provenance.json",
-      "mesh_map": "method-chameleon/mesh-map.json",
-      "bytes": 198800,
-      "parts": 13,
-      "shared_anchors": 0,
-      "snapshot": "method-chameleon/snapshot.json"
+      "id": "paper-gpt-5-6-sol-monitor",
+      "title": "Monitor",
+      "label": "Monitor_seed0",
+      "model": "Monitor_seed0/Monitor_seed0",
+      "provider": "GPT-5.6 Sol",
+      "source": "gpt-5-6-sol",
+      "source_label": "GPT-5.6 Sol",
+      "directory": "paper-gpt-5-6-sol-monitor",
+      "glb": "paper-gpt-5-6-sol-monitor/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-monitor/edits/default/snapshot.json",
+      "mesh_map": "paper-gpt-5-6-sol-monitor/edits/default/mesh-map.json",
+      "provenance": "paper-gpt-5-6-sol-monitor/edits/default/provenance.json",
+      "bytes": 238244,
+      "parts": 4,
+      "shared_anchors": 3,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "pedestal_arm"
+          ],
+          "label": "pedestal arm"
+        },
+        "child": {
+          "ids": [
+            "base_stand"
+          ],
+          "label": "base stand"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gpt-5-6-sol-monitor/edits/default/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-monitor/edits/default/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-monitor/edits/default/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-monitor/edits/default/mesh-map.json",
+            "bytes": 238244
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-6-sol-monitor/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-monitor/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-monitor/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-monitor/edits/parent-0.4/mesh-map.json",
+            "bytes": 167540
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-6-sol-monitor/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-monitor/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-monitor/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-monitor/edits/parent-1.6/mesh-map.json",
+            "bytes": 167800
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-6-sol-monitor/edits/child-0.4/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-monitor/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-monitor/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-monitor/edits/child-0.4/mesh-map.json",
+            "bytes": 166336
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-6-sol-monitor/edits/child-1.6/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-monitor/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-monitor/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-monitor/edits/child-1.6/mesh-map.json",
+            "bytes": 166292
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-monitor/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-monitor/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-monitor/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-monitor/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-monitor/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gpt-5-6-sol-monitor/native/native-edit.json",
+        "buffer": "paper-gpt-5-6-sol-monitor/native/native-edit.bin"
+      }
     },
     {
-      "id": "baseline-fish",
-      "title": "Fish",
-      "source": "stage1",
-      "source_label": "Stage 1 baseline",
-      "model": "Fish_seed0/Fish_seed0",
-      "label": "Fish_seed0",
-      "directory": "baseline-fish",
-      "glb": "baseline-fish/model.glb",
-      "provenance": "baseline-fish/provenance.json",
-      "mesh_map": "baseline-fish/mesh-map.json",
-      "bytes": 183016,
-      "parts": 10,
+      "id": "paper-gpt-5-6-sol-standing-sink",
+      "title": "Standing Sink",
+      "label": "StandingSink_seed0",
+      "model": "StandingSink_seed0/StandingSink_seed0",
+      "provider": "GPT-5.6 Sol",
+      "source": "gpt-5-6-sol",
+      "source_label": "GPT-5.6 Sol",
+      "directory": "paper-gpt-5-6-sol-standing-sink",
+      "glb": "paper-gpt-5-6-sol-standing-sink/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/default/snapshot.json",
+      "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/default/mesh-map.json",
+      "provenance": "paper-gpt-5-6-sol-standing-sink/edits/default/provenance.json",
+      "bytes": 946984,
+      "parts": 4,
+      "shared_anchors": 3,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "basin_body"
+          ],
+          "label": "basin"
+        },
+        "child": {
+          "ids": [
+            "faucet_handle"
+          ],
+          "label": "faucet"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gpt-5-6-sol-standing-sink/edits/default/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/default/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-standing-sink/edits/default/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/default/mesh-map.json",
+            "bytes": 946984
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-6-sol-standing-sink/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-standing-sink/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/parent-0.4/mesh-map.json",
+            "bytes": 154556
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-6-sol-standing-sink/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-standing-sink/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/parent-1.6/mesh-map.json",
+            "bytes": 154596
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gpt-5-6-sol-standing-sink/edits/child-0.4/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-standing-sink/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/child-0.4/mesh-map.json",
+            "bytes": 154596
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gpt-5-6-sol-standing-sink/edits/child-1.6/model.glb",
+            "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gpt-5-6-sol-standing-sink/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/child-1.6/mesh-map.json",
+            "bytes": 154592
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-standing-sink/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-standing-sink/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-standing-sink/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-standing-sink/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-standing-sink/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gpt-5-6-sol-standing-sink/native/native-edit.json",
+        "buffer": "paper-gpt-5-6-sol-standing-sink/native/native-edit.bin"
+      }
+    },
+    {
+      "id": "paper-gemini-3-1-pro-bed-frame",
+      "title": "Bed Frame",
+      "label": "BedFrame_seed0",
+      "model": "BedFrame_seed0/BedFrame_seed0",
+      "provider": "Gemini 3.1 Pro",
+      "source": "gemini-3-1-pro",
+      "source_label": "Gemini 3.1 Pro",
+      "directory": "paper-gemini-3-1-pro-bed-frame",
+      "glb": "paper-gemini-3-1-pro-bed-frame/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-bed-frame/edits/default/snapshot.json",
+      "mesh_map": "paper-gemini-3-1-pro-bed-frame/edits/default/mesh-map.json",
+      "provenance": "paper-gemini-3-1-pro-bed-frame/edits/default/provenance.json",
+      "bytes": 106484,
+      "parts": 21,
       "shared_anchors": 0,
-      "snapshot": "baseline-fish/snapshot.json"
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "bed_frame_base"
+          ],
+          "label": "bed frame"
+        },
+        "child": {
+          "ids": [
+            "headboard"
+          ],
+          "label": "headboard posts"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gemini-3-1-pro-bed-frame/edits/default/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-bed-frame/edits/default/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-bed-frame/edits/default/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-bed-frame/edits/default/mesh-map.json",
+            "bytes": 106484
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-1-pro-bed-frame/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-bed-frame/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-bed-frame/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-bed-frame/edits/parent-0.4/mesh-map.json",
+            "bytes": 56292
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-1-pro-bed-frame/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-bed-frame/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-bed-frame/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-bed-frame/edits/parent-1.6/mesh-map.json",
+            "bytes": 56252
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-1-pro-bed-frame/edits/child-0.4/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-bed-frame/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-bed-frame/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-bed-frame/edits/child-0.4/mesh-map.json",
+            "bytes": 56088
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-1-pro-bed-frame/edits/child-1.6/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-bed-frame/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-bed-frame/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-bed-frame/edits/child-1.6/mesh-map.json",
+            "bytes": 56088
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-bed-frame/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-bed-frame/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-bed-frame/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-bed-frame/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-bed-frame/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gemini-3-1-pro-bed-frame/native/native-edit.json",
+        "buffer": "paper-gemini-3-1-pro-bed-frame/native/native-edit.bin"
+      }
+    },
+    {
+      "id": "paper-gemini-3-1-pro-cabinet-drawer-base",
+      "title": "Cabinet Drawer Base",
+      "label": "CabinetDrawerBase_seed0",
+      "model": "CabinetDrawerBase_seed0/CabinetDrawerBase_seed0",
+      "provider": "Gemini 3.1 Pro",
+      "source": "gemini-3-1-pro",
+      "source_label": "Gemini 3.1 Pro",
+      "directory": "paper-gemini-3-1-pro-cabinet-drawer-base",
+      "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/snapshot.json",
+      "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/mesh-map.json",
+      "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/provenance.json",
+      "bytes": 182320,
+      "parts": 4,
+      "shared_anchors": 0,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "bottom_panel"
+          ],
+          "label": "bottom panel"
+        },
+        "child": {
+          "ids": [
+            "front_panel"
+          ],
+          "label": "front panel"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/mesh-map.json",
+            "bytes": 182320
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-0.4/mesh-map.json",
+            "bytes": 18096
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-1.6/mesh-map.json",
+            "bytes": 18096
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-0.4/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-0.4/mesh-map.json",
+            "bytes": 18116
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-1.6/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-1.6/mesh-map.json",
+            "bytes": 18112
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-cabinet-drawer-base/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-cabinet-drawer-base/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-cabinet-drawer-base/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-cabinet-drawer-base/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-cabinet-drawer-base/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gemini-3-1-pro-cabinet-drawer-base/native/native-edit.json",
+        "buffer": "paper-gemini-3-1-pro-cabinet-drawer-base/native/native-edit.bin"
+      }
+    },
+    {
+      "id": "paper-gemini-3-1-pro-coconut-tree",
+      "title": "Coconut Tree",
+      "label": "CoconutTree_seed0",
+      "model": "CoconutTree_seed0/CoconutTree_seed0",
+      "provider": "Gemini 3.1 Pro",
+      "source": "gemini-3-1-pro",
+      "source_label": "Gemini 3.1 Pro",
+      "directory": "paper-gemini-3-1-pro-coconut-tree",
+      "glb": "paper-gemini-3-1-pro-coconut-tree/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-coconut-tree/edits/default/snapshot.json",
+      "mesh_map": "paper-gemini-3-1-pro-coconut-tree/edits/default/mesh-map.json",
+      "provenance": "paper-gemini-3-1-pro-coconut-tree/edits/default/provenance.json",
+      "bytes": 875192,
+      "parts": 3,
+      "shared_anchors": 1,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "trunk"
+          ],
+          "label": "trunk"
+        },
+        "child": {
+          "ids": [
+            "crown_base"
+          ],
+          "label": "crown base"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gemini-3-1-pro-coconut-tree/edits/default/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-coconut-tree/edits/default/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-coconut-tree/edits/default/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-coconut-tree/edits/default/mesh-map.json",
+            "bytes": 875192
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-1-pro-coconut-tree/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-coconut-tree/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-coconut-tree/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-coconut-tree/edits/parent-0.4/mesh-map.json",
+            "bytes": 438400
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-1-pro-coconut-tree/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-coconut-tree/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-coconut-tree/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-coconut-tree/edits/parent-1.6/mesh-map.json",
+            "bytes": 438400
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-1-pro-coconut-tree/edits/child-0.4/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-coconut-tree/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-coconut-tree/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-coconut-tree/edits/child-0.4/mesh-map.json",
+            "bytes": 438384
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-1-pro-coconut-tree/edits/child-1.6/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-coconut-tree/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-coconut-tree/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-coconut-tree/edits/child-1.6/mesh-map.json",
+            "bytes": 438384
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-coconut-tree/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-coconut-tree/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-coconut-tree/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-coconut-tree/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-coconut-tree/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gemini-3-1-pro-coconut-tree/native/native-edit.json",
+        "buffer": "paper-gemini-3-1-pro-coconut-tree/native/native-edit.bin"
+      }
+    },
+    {
+      "id": "paper-gemini-3-1-pro-pillar",
+      "title": "Pillar",
+      "label": "Pillar_seed0",
+      "model": "Pillar_seed0/Pillar_seed0",
+      "provider": "Gemini 3.1 Pro",
+      "source": "gemini-3-1-pro",
+      "source_label": "Gemini 3.1 Pro",
+      "directory": "paper-gemini-3-1-pro-pillar",
+      "glb": "paper-gemini-3-1-pro-pillar/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-pillar/edits/default/snapshot.json",
+      "mesh_map": "paper-gemini-3-1-pro-pillar/edits/default/mesh-map.json",
+      "provenance": "paper-gemini-3-1-pro-pillar/edits/default/provenance.json",
+      "bytes": 261116,
+      "parts": 3,
+      "shared_anchors": 1,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "shaft"
+          ],
+          "label": "shaft"
+        },
+        "child": {
+          "ids": [
+            "capital"
+          ],
+          "label": "capital"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gemini-3-1-pro-pillar/edits/default/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-pillar/edits/default/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-pillar/edits/default/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-pillar/edits/default/mesh-map.json",
+            "bytes": 261116
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-1-pro-pillar/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-pillar/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-pillar/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-pillar/edits/parent-0.4/mesh-map.json",
+            "bytes": 26524
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-1-pro-pillar/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-pillar/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-pillar/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-pillar/edits/parent-1.6/mesh-map.json",
+            "bytes": 26516
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-1-pro-pillar/edits/child-0.4/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-pillar/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-pillar/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-pillar/edits/child-0.4/mesh-map.json",
+            "bytes": 26572
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-1-pro-pillar/edits/child-1.6/model.glb",
+            "snapshot": "paper-gemini-3-1-pro-pillar/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-1-pro-pillar/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-1-pro-pillar/edits/child-1.6/mesh-map.json",
+            "bytes": 26564
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-pillar/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-pillar/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-pillar/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-pillar/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-pillar/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gemini-3-1-pro-pillar/native/native-edit.json",
+        "buffer": "paper-gemini-3-1-pro-pillar/native/native-edit.bin"
+      }
+    },
+    {
+      "id": "paper-gemini-3-5-flash-fruit-pineapple",
+      "title": "Fruit Pineapple",
+      "label": "FruitPineapple_seed0",
+      "model": "FruitPineapple_seed0/FruitPineapple_seed0",
+      "provider": "Gemini 3.5 Flash",
+      "source": "gemini-3-5-flash",
+      "source_label": "Gemini 3.5 Flash",
+      "directory": "paper-gemini-3-5-flash-fruit-pineapple",
+      "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/snapshot.json",
+      "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/mesh-map.json",
+      "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/provenance.json",
+      "bytes": 1101904,
+      "parts": 61,
+      "shared_anchors": 60,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "fruit_body"
+          ],
+          "label": "pineapple body"
+        },
+        "child": {
+          "ids": [
+            "crown_leaf"
+          ],
+          "label": "leaf crown"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/mesh-map.json",
+            "bytes": 1101904
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-0.4/mesh-map.json",
+            "bytes": 361408
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-1.6/mesh-map.json",
+            "bytes": 361284
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-0.4/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-0.4/mesh-map.json",
+            "bytes": 361292
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-1.6/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-1.6/mesh-map.json",
+            "bytes": 361272
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-fruit-pineapple/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-fruit-pineapple/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-fruit-pineapple/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-fruit-pineapple/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-fruit-pineapple/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gemini-3-5-flash-fruit-pineapple/native/native-edit.json",
+        "buffer": "paper-gemini-3-5-flash-fruit-pineapple/native/native-edit.bin"
+      }
+    },
+    {
+      "id": "paper-gemini-3-5-flash-columnar-cactus",
+      "title": "Columnar Cactus",
+      "label": "ColumnarCactus_seed0",
+      "model": "ColumnarCactus_seed0/ColumnarCactus_seed0",
+      "provider": "Gemini 3.5 Flash",
+      "source": "gemini-3-5-flash",
+      "source_label": "Gemini 3.5 Flash",
+      "directory": "paper-gemini-3-5-flash-columnar-cactus",
+      "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/default/snapshot.json",
+      "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/default/mesh-map.json",
+      "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/default/provenance.json",
+      "bytes": 1262880,
+      "parts": 4,
+      "shared_anchors": 0,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "main_stem"
+          ],
+          "label": "main stem"
+        },
+        "child": {
+          "ids": [
+            "side_arm"
+          ],
+          "label": "side arm"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/default/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/default/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/default/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/default/mesh-map.json",
+            "bytes": 1262880
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-0.4/mesh-map.json",
+            "bytes": 1262880
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-1.6/mesh-map.json",
+            "bytes": 1262876
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/child-0.4/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/child-0.4/mesh-map.json",
+            "bytes": 1262876
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/child-1.6/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/child-1.6/mesh-map.json",
+            "bytes": 1262872
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-columnar-cactus/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-columnar-cactus/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-columnar-cactus/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-columnar-cactus/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-columnar-cactus/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gemini-3-5-flash-columnar-cactus/native/native-edit.json",
+        "buffer": "paper-gemini-3-5-flash-columnar-cactus/native/native-edit.bin"
+      }
+    },
+    {
+      "id": "paper-gemini-3-5-flash-veratrum-monocot",
+      "title": "Veratrum Monocot",
+      "label": "VeratrumMonocot_seed0",
+      "model": "VeratrumMonocot_seed0/VeratrumMonocot_seed0",
+      "provider": "Gemini 3.5 Flash",
+      "source": "gemini-3-5-flash",
+      "source_label": "Gemini 3.5 Flash",
+      "directory": "paper-gemini-3-5-flash-veratrum-monocot",
+      "glb": "paper-gemini-3-5-flash-veratrum-monocot/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-veratrum-monocot/edits/default/snapshot.json",
+      "mesh_map": "paper-gemini-3-5-flash-veratrum-monocot/edits/default/mesh-map.json",
+      "provenance": "paper-gemini-3-5-flash-veratrum-monocot/edits/default/provenance.json",
+      "bytes": 312192,
+      "parts": 50,
+      "shared_anchors": 0,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "flower_stalk"
+          ],
+          "label": "flower stalk"
+        },
+        "child": {
+          "ids": [
+            "floret"
+          ],
+          "label": "clustered florets"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gemini-3-5-flash-veratrum-monocot/edits/default/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-veratrum-monocot/edits/default/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-veratrum-monocot/edits/default/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-veratrum-monocot/edits/default/mesh-map.json",
+            "bytes": 312192
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-5-flash-veratrum-monocot/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-veratrum-monocot/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-veratrum-monocot/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-veratrum-monocot/edits/parent-0.4/mesh-map.json",
+            "bytes": 312216
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-5-flash-veratrum-monocot/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-veratrum-monocot/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-veratrum-monocot/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-veratrum-monocot/edits/parent-1.6/mesh-map.json",
+            "bytes": 312144
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-5-flash-veratrum-monocot/edits/child-0.4/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-veratrum-monocot/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-veratrum-monocot/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-veratrum-monocot/edits/child-0.4/mesh-map.json",
+            "bytes": 312192
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-5-flash-veratrum-monocot/edits/child-1.6/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-veratrum-monocot/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-veratrum-monocot/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-veratrum-monocot/edits/child-1.6/mesh-map.json",
+            "bytes": 312172
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-veratrum-monocot/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-veratrum-monocot/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-veratrum-monocot/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-veratrum-monocot/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-veratrum-monocot/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gemini-3-5-flash-veratrum-monocot/native/native-edit.json",
+        "buffer": "paper-gemini-3-5-flash-veratrum-monocot/native/native-edit.bin.gz"
+      }
+    },
+    {
+      "id": "paper-gemini-3-5-flash-coffee-table",
+      "title": "Coffee Table",
+      "label": "CoffeeTable_seed0",
+      "model": "CoffeeTable_seed0/CoffeeTable_seed0",
+      "provider": "Gemini 3.5 Flash",
+      "source": "gemini-3-5-flash",
+      "source_label": "Gemini 3.5 Flash",
+      "directory": "paper-gemini-3-5-flash-coffee-table",
+      "glb": "paper-gemini-3-5-flash-coffee-table/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-coffee-table/edits/default/snapshot.json",
+      "mesh_map": "paper-gemini-3-5-flash-coffee-table/edits/default/mesh-map.json",
+      "provenance": "paper-gemini-3-5-flash-coffee-table/edits/default/provenance.json",
+      "bytes": 224532,
+      "parts": 3,
+      "shared_anchors": 0,
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "edit_demo": {
+        "parent": {
+          "ids": [
+            "table_top"
+          ],
+          "label": "table top"
+        },
+        "child": {
+          "ids": [
+            "pedestal_legs"
+          ],
+          "label": "pedestal legs"
+        },
+        "scales": [
+          0.4,
+          1,
+          1.6
+        ],
+        "mode": "precomputed_native_rebuild",
+        "variants": [
+          {
+            "id": "default",
+            "side": "default",
+            "scale": 1.0,
+            "glb": "paper-gemini-3-5-flash-coffee-table/edits/default/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-coffee-table/edits/default/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-coffee-table/edits/default/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-coffee-table/edits/default/mesh-map.json",
+            "bytes": 224532
+          },
+          {
+            "id": "parent-0.4",
+            "side": "parent",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-5-flash-coffee-table/edits/parent-0.4/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-coffee-table/edits/parent-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-coffee-table/edits/parent-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-coffee-table/edits/parent-0.4/mesh-map.json",
+            "bytes": 102340
+          },
+          {
+            "id": "parent-1.6",
+            "side": "parent",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-5-flash-coffee-table/edits/parent-1.6/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-coffee-table/edits/parent-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-coffee-table/edits/parent-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-coffee-table/edits/parent-1.6/mesh-map.json",
+            "bytes": 102336
+          },
+          {
+            "id": "child-0.4",
+            "side": "child",
+            "scale": 0.4,
+            "glb": "paper-gemini-3-5-flash-coffee-table/edits/child-0.4/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-coffee-table/edits/child-0.4/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-coffee-table/edits/child-0.4/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-coffee-table/edits/child-0.4/mesh-map.json",
+            "bytes": 102340
+          },
+          {
+            "id": "child-1.6",
+            "side": "child",
+            "scale": 1.6,
+            "glb": "paper-gemini-3-5-flash-coffee-table/edits/child-1.6/model.glb",
+            "snapshot": "paper-gemini-3-5-flash-coffee-table/edits/child-1.6/snapshot.json",
+            "provenance": "paper-gemini-3-5-flash-coffee-table/edits/child-1.6/provenance.json",
+            "mesh_map": "paper-gemini-3-5-flash-coffee-table/edits/child-1.6/mesh-map.json",
+            "bytes": 102332
+          }
+        ]
+      },
+      "paper_renders": {
+        "label": "TreeStruct3D",
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-coffee-table/tree/default.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-coffee-table/tree/parent-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-coffee-table/tree/parent-1.6.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-coffee-table/tree/child-0.4.png",
+            "width": 420,
+            "height": 420
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-coffee-table/tree/child-1.6.png",
+            "width": 420,
+            "height": 420
+          }
+        ]
+      },
+      "native_edit": {
+        "response": "paper-gemini-3-5-flash-coffee-table/native/native-edit.json",
+        "buffer": "paper-gemini-3-5-flash-coffee-table/native/native-edit.bin"
+      }
     }
   ]
 }

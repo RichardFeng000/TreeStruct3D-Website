@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · Gemini 3.1 Pro",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemeni_3.1_pro/CoconutTree_seed0/CoconutTree_seed0.py",
+  "source_sha256": "f8dd22386a62bc6ffbf1b2d98ada97d2443218317b2d07e407279a2113254349",
+  "source_size": 11490,
+  "glb_sha256": "b26e81c27bebdf4c3131b1840f8cf6c84b6ae408fb4636d3f812ea57786caca8",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|crown_base|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "child-0.4",
+    "side": "child",
+    "part_ids": [
+      "crown_base"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|crown_base|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "trunk"
+    ],
+    "paper_child_ids": [
+      "crown_base"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "crown_base",
+        "part_id": "crown_base",
+        "before": [
+          1.4936883449554443,
+          1.5937070846557617,
+          1.4945402145385742
+        ],
+        "after": [
+          0.5974753499031067,
+          0.6374831199645996,
+          0.5978155136108398
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "trunk",
+        "child": "crown_base",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "trunk",
+        "runtime_child_part_id": "crown_base"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    -0.4302198886871338,
+    1.0477596094441803e-07,
+    7.266869988057576
+  ],
+  "mesh_bbox_max_error_before_translation": 7.266871026300985,
+  "mesh_bbox_max_error_after_translation": 1.1794032213074956e-06
+}

@@ -1,0 +1,95 @@
+{
+  "id": "paper-gemini-3-5-flash-chameleon",
+  "title": "Chameleon",
+  "provider": "Gemini 3.5 Flash",
+  "group": "main",
+  "label": "Chameleon_seed0",
+  "model": "Chameleon_seed0/Chameleon_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · Gemini 3.5 Flash",
+  "parent": {
+    "ids": [
+      "torso_body"
+    ],
+    "label": "body"
+  },
+  "child": {
+    "ids": [
+      "forelimb_left",
+      "forelimb_right",
+      "hindlimb_left",
+      "hindlimb_right"
+    ],
+    "label": "legs"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gemini-3-5-flash-chameleon/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-chameleon/edits/default/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-chameleon/edits/default/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/default/mesh-map.json",
+      "bytes": 2774820
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gemini-3-5-flash-chameleon/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-chameleon/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-chameleon/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/parent-0.4/mesh-map.json",
+      "bytes": 1023264
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gemini-3-5-flash-chameleon/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-chameleon/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-chameleon/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/parent-1.6/mesh-map.json",
+      "bytes": 963472
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gemini-3-5-flash-chameleon/edits/child-0.4/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-chameleon/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-chameleon/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/child-0.4/mesh-map.json",
+      "bytes": 963484
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gemini-3-5-flash-chameleon/edits/child-1.6/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-chameleon/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-chameleon/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/child-1.6/mesh-map.json",
+      "bytes": 999300
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gemini-3-5-flash-chameleon/edits/default/model.glb",
+    "snapshot": "paper-gemini-3-5-flash-chameleon/edits/default/snapshot.json",
+    "provenance": "paper-gemini-3-5-flash-chameleon/edits/default/provenance.json",
+    "mesh_map": "paper-gemini-3-5-flash-chameleon/edits/default/mesh-map.json",
+    "bytes": 2774820,
+    "parts": 9,
+    "shared_anchors": 0
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "method": "TreeStruct3D · Gemini 3.1 Pro",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemeni_3.1_pro/BedFrame_seed0/BedFrame_seed0.py",
+  "source_sha256": "1f4148bb79d6d553780b33cea0c6fc6f67daefa6346bc88b554f30806086420b",
+  "source_size": 9811,
+  "glb_sha256": "c2f93d0ffe670d177a4ccba4cebac5ebccabaccc20837d239c875f5abe89864b",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {},
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "default",
+    "side": "default",
+    "part_ids": [],
+    "parameter": "scale",
+    "scale": 1.0,
+    "params": {},
+    "paper_parent_ids": [
+      "bed_frame_base"
+    ],
+    "paper_child_ids": [
+      "headboard"
+    ],
+    "geometry_changed": false,
+    "attachment_observed": true,
+    "dimensions": [],
+    "selected_attachment_checks": [
+      {
+        "parent": "bed_frame_base",
+        "child": "headboard",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "bed_frame_base",
+        "runtime_child_part_id": "headboard"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    -2.306132089524042e-09,
+    0.004999994832490172
+  ],
+  "mesh_bbox_max_error_before_translation": 0.0050000399351119995,
+  "mesh_bbox_max_error_after_translation": 6.191077686491467e-08,
+  "material_export": {
+    "strategy": "cycles_emission_base_color_bake",
+    "resolution": 512,
+    "lighting_baked": false,
+    "procedural_normal_baked": false,
+    "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+    "objects": [
+      {
+        "name": "bed_frame_base",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "headboard",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "footboard",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "leg",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "leg.001",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "leg.002",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "leg.003",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.001",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.002",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.003",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.004",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.005",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.006",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.007",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.008",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.009",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.010",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.011",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.012",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "slat.013",
+        "mode": "native_gltf_material"
+      }
+    ],
+    "fallbacks": [],
+    "preserved_geometry_objects": [
+      "bed_frame_base",
+      "footboard",
+      "headboard",
+      "leg",
+      "leg.001",
+      "leg.002",
+      "leg.003",
+      "slat",
+      "slat.001",
+      "slat.002",
+      "slat.003",
+      "slat.004",
+      "slat.005",
+      "slat.006",
+      "slat.007",
+      "slat.008",
+      "slat.009",
+      "slat.010",
+      "slat.011",
+      "slat.012",
+      "slat.013"
+    ],
+    "source_sha256": "1f4148bb79d6d553780b33cea0c6fc6f67daefa6346bc88b554f30806086420b",
+    "helper_sha256": "a40d5f0f21485ec0c8727a0e749f5d5daeda99e05300804d1970132094e69707",
+    "blender_version": "5.0.0",
+    "material_count": 2,
+    "image_count": 0,
+    "geometry_unchanged": true,
+    "original_glb_sha256": "8b4fe94db2fa9dda3042f72c969273939c5a90e2b2a4c46040c7356821d148cb"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · GPT-5.6 Sol",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.6_sol/StandingSink_seed0/StandingSink_seed0.py",
+  "source_sha256": "42e477957868378ddb734948bf03ab07238d7ef766a374ac63921a67286971fc",
+  "source_size": 16794,
+  "glb_sha256": "88a3d01aeda9acb13b751a9041066b8f69d2c06d95b4ac6fe4f36e40134fa07a",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|basin_body|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-0.4",
+    "side": "parent",
+    "part_ids": [
+      "basin_body"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|basin_body|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "basin_body"
+    ],
+    "paper_child_ids": [
+      "faucet_handle"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "basin_body",
+        "part_id": "basin_body",
+        "before": [
+          5.421421051025391,
+          4.180287837982178,
+          0.7200000286102295
+        ],
+        "after": [
+          2.1685681343078613,
+          1.6721152067184448,
+          0.28800010681152344
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "basin_body",
+        "child": "faucet_handle",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "basin_body",
+        "runtime_child_part_id": "faucet_handle"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    1.4901161193847656e-08,
+    0.0
+  ],
+  "mesh_bbox_max_error_before_translation": 2.384185791015625e-07,
+  "mesh_bbox_max_error_after_translation": 2.2351741790771484e-07
+}

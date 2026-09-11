@@ -1,0 +1,449 @@
+{
+  "source_sha256": "42e477957868378ddb734948bf03ab07238d7ef766a374ac63921a67286971fc",
+  "samples": [
+    {
+      "id": "basin_body-0.63",
+      "params": {
+        "basin_body": 0.63
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 0,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 4038,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 5778,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 8724,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "basin_body-1.37",
+      "params": {
+        "basin_body": 1.37
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 12462,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 16500,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 18240,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 21186,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "faucet_handle-0.63",
+      "params": {
+        "faucet_handle": 0.63
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 24924,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 28962,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 30702,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 33648,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "faucet_handle-1.37",
+      "params": {
+        "faucet_handle": 1.37
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 37386,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 41424,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 43164,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 46110,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "gooseneck_spout-0.63",
+      "params": {
+        "gooseneck_spout": 0.63
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 49848,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 53886,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 55626,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 58572,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "gooseneck_spout-1.37",
+      "params": {
+        "gooseneck_spout": 1.37
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 62310,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 66348,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 68088,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 71034,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "basin_body": 1.37,
+        "faucet_handle": 1.37,
+        "gooseneck_spout": 0.63,
+        "pedestal_support": 0.63
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 74772,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 78810,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 80550,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 83496,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "basin_body": 0.63,
+        "faucet_handle": 0.63,
+        "gooseneck_spout": 1.37,
+        "pedestal_support": 1.37
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 87234,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 91272,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 93012,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 95958,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "basin_body": 0.63,
+        "faucet_handle": 0.63,
+        "gooseneck_spout": 0.63,
+        "pedestal_support": 0.63
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 99696,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 103734,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 105474,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 108420,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "basin_body": 1.37,
+        "faucet_handle": 1.37,
+        "gooseneck_spout": 1.37,
+        "pedestal_support": 1.37
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 112158,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 116196,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 117936,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 120882,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "pedestal_support-0.63",
+      "params": {
+        "pedestal_support": 0.63
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 124620,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 128658,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 130398,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 133344,
+            "count": 3738
+          }
+        }
+      ]
+    },
+    {
+      "id": "pedestal_support-1.37",
+      "params": {
+        "pedestal_support": 1.37
+      },
+      "parts": [
+        {
+          "id": "basin_body",
+          "positions": {
+            "offset": 137082,
+            "count": 4038
+          }
+        },
+        {
+          "id": "faucet_handle",
+          "positions": {
+            "offset": 141120,
+            "count": 1740
+          }
+        },
+        {
+          "id": "gooseneck_spout",
+          "positions": {
+            "offset": 142860,
+            "count": 2946
+          }
+        },
+        {
+          "id": "pedestal_support",
+          "positions": {
+            "offset": 145806,
+            "count": 3738
+          }
+        }
+      ]
+    }
+  ]
+}

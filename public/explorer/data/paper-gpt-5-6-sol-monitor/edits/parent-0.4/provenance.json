@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · GPT-5.6 Sol",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.6_sol/Monitor_seed0/Monitor_seed0.py",
+  "source_sha256": "e8f83ae4e0ae9b72f5428644feddf13e43a23cf4947fe4c9e8a23842d56bcac9",
+  "source_size": 23887,
+  "glb_sha256": "4801c6da9d39a290d8a90aa4d41129e5a59ecf2878fbc301e07f4ab694f9c029",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|pedestal_arm|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-0.4",
+    "side": "parent",
+    "part_ids": [
+      "pedestal_arm"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|pedestal_arm|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "pedestal_arm"
+    ],
+    "paper_child_ids": [
+      "base_stand"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "pedestal_arm",
+        "part_id": "pedestal_arm",
+        "before": [
+          0.8600000143051147,
+          0.3479999899864197,
+          3.1500000953674316
+        ],
+        "after": [
+          0.3440000116825104,
+          0.13920000195503235,
+          1.2599999904632568
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "base_stand",
+        "child": "pedestal_arm",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "base_stand",
+        "runtime_child_part_id": "pedestal_arm"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "mesh_bbox_max_error_before_translation": 1.1920928955078125e-07,
+  "mesh_bbox_max_error_after_translation": 1.1920928955078125e-07
+}

@@ -1,0 +1,110 @@
+{
+  "method": "TreeStruct3D · Gemini 3.1 Pro",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemeni_3.1_pro/CabinetDrawerBase_seed0/CabinetDrawerBase_seed0.py",
+  "source_sha256": "aecd66603d8bf18245e1f1a26ed95935f4e7167b542c69c0ed8cf3c61fede1de",
+  "source_size": 5996,
+  "glb_sha256": "6e5c52647ade09939c5907dc7c21783bf5aa24d7c40d13e9e08bd57347f27e92",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {},
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "default",
+    "side": "default",
+    "part_ids": [],
+    "parameter": "scale",
+    "scale": 1.0,
+    "params": {},
+    "paper_parent_ids": [
+      "bottom_panel"
+    ],
+    "paper_child_ids": [
+      "front_panel"
+    ],
+    "geometry_changed": false,
+    "attachment_observed": true,
+    "dimensions": [],
+    "selected_attachment_checks": [
+      {
+        "parent": "bottom_panel",
+        "child": "front_panel",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 3.725290298461914e-09,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "bottom_panel",
+        "runtime_child_part_id": "front_panel"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    1.862645149230957e-09,
+    0.0
+  ],
+  "mesh_bbox_max_error_before_translation": 1.4901161193847656e-08,
+  "mesh_bbox_max_error_after_translation": 1.30385160446167e-08,
+  "material_export": {
+    "strategy": "cycles_emission_base_color_bake",
+    "resolution": 512,
+    "lighting_baked": false,
+    "procedural_normal_baked": false,
+    "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+    "objects": [
+      {
+        "name": "bottom_panel",
+        "mode": "baked_base_color",
+        "materials": [
+          "DarkWood_X"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "back_panel",
+        "mode": "baked_base_color",
+        "materials": [
+          "DarkWood_X"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "front_panel",
+        "mode": "baked_base_color",
+        "materials": [
+          "DarkWood_X"
+        ],
+        "width": 256,
+        "height": 256
+      },
+      {
+        "name": "side_walls",
+        "mode": "baked_base_color",
+        "materials": [
+          "DarkWood_Y"
+        ],
+        "width": 256,
+        "height": 256
+      }
+    ],
+    "fallbacks": [],
+    "preserved_geometry_objects": [],
+    "source_sha256": "aecd66603d8bf18245e1f1a26ed95935f4e7167b542c69c0ed8cf3c61fede1de",
+    "helper_sha256": "a40d5f0f21485ec0c8727a0e749f5d5daeda99e05300804d1970132094e69707",
+    "blender_version": "5.0.0",
+    "material_count": 4,
+    "image_count": 4,
+    "geometry_unchanged": true,
+    "original_glb_sha256": "23b454a8dc912784214af936244753c7a6c47369111a6c890ebfb50f78b058fa"
+  }
+}

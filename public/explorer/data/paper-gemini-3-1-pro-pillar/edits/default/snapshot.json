@@ -1,0 +1,1122 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "Pillar_seed0/Pillar_seed0",
+    "label": "Pillar_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|base|scale",
+        "label": "base · scale",
+        "group": "Native Part Parameters · base",
+        "value": 1.0,
+        "node_id": "base",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|base|base",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|base|width",
+        "label": "base · width",
+        "group": "Native Part Parameters · base",
+        "value": 2.4,
+        "node_id": "base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -1.1999999999999997,
+        "max": 6.0,
+        "step": 0.024
+      },
+      {
+        "id": "part_param|base|height",
+        "label": "base · height",
+        "group": "Native Part Parameters · base",
+        "value": 0.8,
+        "node_id": "base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.40000000000000013,
+        "max": 2.0,
+        "step": 0.008
+      },
+      {
+        "id": "part_param|base|steps",
+        "label": "base · steps",
+        "group": "Native Part Parameters · base",
+        "value": 3,
+        "node_id": "base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 7.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|shaft|scale",
+        "label": "shaft · scale",
+        "group": "Native Part Parameters · shaft",
+        "value": 1.0,
+        "node_id": "shaft",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|shaft|shaft",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|shaft|radius",
+        "label": "shaft · radius",
+        "group": "Native Part Parameters · shaft",
+        "value": 0.6,
+        "node_id": "shaft",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.29999999999999993,
+        "max": 1.5,
+        "step": 0.006
+      },
+      {
+        "id": "part_param|shaft|height",
+        "label": "shaft · height",
+        "group": "Native Part Parameters · shaft",
+        "value": 6.0,
+        "node_id": "shaft",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -3.0,
+        "max": 15.0,
+        "step": 0.06
+      },
+      {
+        "id": "part_param|shaft|flutes",
+        "label": "shaft · flutes",
+        "group": "Native Part Parameters · shaft",
+        "value": 24,
+        "node_id": "shaft",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 48.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|shaft|flute_depth",
+        "label": "shaft · flute_depth",
+        "group": "Native Part Parameters · shaft",
+        "value": 0.05,
+        "node_id": "shaft",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.05,
+        "max": 0.15000000000000002,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|capital|scale",
+        "label": "capital · scale",
+        "group": "Native Part Parameters · capital",
+        "value": 1.0,
+        "node_id": "capital",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|capital|capital",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|capital|base_radius",
+        "label": "capital · base_radius",
+        "group": "Native Part Parameters · capital",
+        "value": 0.6,
+        "node_id": "capital",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.29999999999999993,
+        "max": 1.5,
+        "step": 0.006
+      },
+      {
+        "id": "part_param|capital|top_width",
+        "label": "capital · top_width",
+        "group": "Native Part Parameters · capital",
+        "value": 2.0,
+        "node_id": "capital",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -1.0,
+        "max": 5.0,
+        "step": 0.02
+      },
+      {
+        "id": "part_param|capital|height",
+        "label": "capital · height",
+        "group": "Native Part Parameters · capital",
+        "value": 1.0,
+        "node_id": "capital",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.5,
+        "max": 2.5,
+        "step": 0.01
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gemeni_3.1_pro/Pillar_seed0/Pillar_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:Pillar_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Pillar_seed0.py",
+            "label": "Pillar_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 243,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 12,
+            "end_line": 13,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 15,
+            "end_line": 26,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 28,
+            "end_line": 34,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_weathered_stone_material",
+            "label": "create_weathered_stone_material",
+            "kind": "function",
+            "line": 36,
+            "end_line": 77,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_base",
+            "label": "build_base",
+            "kind": "function",
+            "line": 79,
+            "end_line": 97,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_shaft",
+            "label": "build_shaft",
+            "kind": "function",
+            "line": 99,
+            "end_line": 140,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_capital",
+            "label": "build_capital",
+            "kind": "function",
+            "line": 142,
+            "end_line": 206,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_capital.square_map",
+            "label": "square_map",
+            "kind": "nested_function",
+            "line": 182,
+            "end_line": 186,
+            "parameters": [
+              "angle",
+              "radius"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_object_from_bmesh",
+            "label": "create_object_from_bmesh",
+            "kind": "function",
+            "line": 208,
+            "end_line": 222,
+            "parameters": [
+              "name",
+              "bm",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "main",
+            "label": "main",
+            "kind": "function",
+            "line": 224,
+            "end_line": 241,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:Pillar_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 12,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 15,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "clear_scene",
+            "relation": "SECTION_MEMBER",
+            "line": 28,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_weathered_stone_material",
+            "relation": "SECTION_MEMBER",
+            "line": 36,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_base",
+            "relation": "SECTION_MEMBER",
+            "line": 79,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_shaft",
+            "relation": "SECTION_MEMBER",
+            "line": 99,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_capital",
+            "relation": "SECTION_MEMBER",
+            "line": 142,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "build_capital",
+            "child": "build_capital.square_map",
+            "relation": "CONTAINS",
+            "line": 182,
+            "evidence": "AST lexical scope"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_object_from_bmesh",
+            "relation": "SECTION_MEMBER",
+            "line": 208,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "main",
+            "relation": "SECTION_MEMBER",
+            "line": 224,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:Pillar_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Pillar_seed0.py",
+            "label": "Pillar_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 243,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 15,
+            "end_line": 26,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_base",
+            "label": "build_base",
+            "kind": "function",
+            "line": 79,
+            "end_line": 97,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_capital",
+            "label": "build_capital",
+            "kind": "function",
+            "line": 142,
+            "end_line": 206,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_capital.square_map",
+            "label": "square_map",
+            "kind": "nested_function",
+            "line": 182,
+            "end_line": 186,
+            "parameters": [
+              "angle",
+              "radius"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_shaft",
+            "label": "build_shaft",
+            "kind": "function",
+            "line": 99,
+            "end_line": 140,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 28,
+            "end_line": 34,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_object_from_bmesh",
+            "label": "create_object_from_bmesh",
+            "kind": "function",
+            "line": 208,
+            "end_line": 222,
+            "parameters": [
+              "name",
+              "bm",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_weathered_stone_material",
+            "label": "create_weathered_stone_material",
+            "kind": "function",
+            "line": 36,
+            "end_line": 77,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 12,
+            "end_line": 13,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "main",
+            "label": "main",
+            "kind": "function",
+            "line": 224,
+            "end_line": 241,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 18,
+            "evidence": "AST call at L18"
+          },
+          {
+            "parent": "build_capital",
+            "child": "build_capital.square_map",
+            "relation": "CALL",
+            "line": 190,
+            "evidence": "AST call at L190"
+          },
+          {
+            "parent": "main",
+            "child": "clear_scene",
+            "relation": "CALL",
+            "line": 225,
+            "evidence": "AST call at L225"
+          },
+          {
+            "parent": "main",
+            "child": "create_weathered_stone_material",
+            "relation": "CALL",
+            "line": 227,
+            "evidence": "AST call at L227"
+          },
+          {
+            "parent": "main",
+            "child": "build_base",
+            "relation": "CALL",
+            "line": 229,
+            "evidence": "AST call at L229"
+          },
+          {
+            "parent": "main",
+            "child": "create_object_from_bmesh",
+            "relation": "CALL",
+            "line": 230,
+            "evidence": "AST call at L230"
+          },
+          {
+            "parent": "main",
+            "child": "build_shaft",
+            "relation": "CALL",
+            "line": 232,
+            "evidence": "AST call at L232"
+          },
+          {
+            "parent": "main",
+            "child": "build_capital",
+            "relation": "CALL",
+            "line": 235,
+            "evidence": "AST call at L235"
+          },
+          {
+            "parent": "main",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "CALL",
+            "line": 238,
+            "evidence": "AST call at L238"
+          },
+          {
+            "parent": "module:Pillar_seed0.py",
+            "child": "main",
+            "relation": "ENTRYPOINT",
+            "line": 243,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "obj_base"
+        ],
+        "nodes": [
+          {
+            "id": "obj_base",
+            "label": "obj_base",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L238: obj_base -> obj_shaft [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_object_from_bmesh",
+            "runtime_variable": "obj_base",
+            "group": "Blender parts"
+          },
+          {
+            "id": "obj_capital",
+            "label": "obj_capital",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L239: obj_shaft -> obj_capital [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_object_from_bmesh",
+            "runtime_variable": "obj_capital",
+            "group": "Blender parts"
+          },
+          {
+            "id": "obj_shaft",
+            "label": "obj_shaft",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L238: obj_base -> obj_shaft [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L239: obj_shaft -> obj_capital [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_object_from_bmesh",
+            "runtime_variable": "obj_shaft",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "obj_base",
+            "child": "obj_shaft",
+            "relation": "DIRECTED_CODE",
+            "line": 238,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "obj_shaft",
+            "child": "obj_capital",
+            "relation": "DIRECTED_CODE",
+            "line": 239,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "base"
+    ],
+    "nodes": [
+      {
+        "id": "base",
+        "label": "base",
+        "part_id": "base",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.4000000059604645
+        ],
+        "dimensions": [
+          2.4000000953674316,
+          2.4000000953674316,
+          0.800000011920929
+        ],
+        "bbox_min": [
+          -1.2000000476837158,
+          -1.2000000476837158,
+          0.0
+        ],
+        "bbox_max": [
+          1.2000000476837158,
+          1.2000000476837158,
+          0.800000011920929
+        ]
+      },
+      {
+        "id": "shaft",
+        "label": "shaft",
+        "part_id": "shaft",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.800000011920929
+        ],
+        "center": [
+          0.0,
+          0.0,
+          3.800000101327896
+        ],
+        "dimensions": [
+          1.2000000476837158,
+          1.2000000476837158,
+          6.000000178813934
+        ],
+        "bbox_min": [
+          -0.6000000238418579,
+          -0.6000000238418579,
+          0.800000011920929
+        ],
+        "bbox_max": [
+          0.6000000238418579,
+          0.6000000238418579,
+          6.800000190734863
+        ]
+      },
+      {
+        "id": "capital",
+        "label": "capital",
+        "part_id": "capital",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          6.800000190734863
+        ],
+        "center": [
+          0.0,
+          0.0,
+          7.300000190734863
+        ],
+        "dimensions": [
+          2.0,
+          2.0,
+          1.0
+        ],
+        "bbox_min": [
+          -1.0,
+          -1.0,
+          6.800000190734863
+        ],
+        "bbox_max": [
+          1.0,
+          1.0,
+          7.800000190734863
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "base",
+        "child": "shaft",
+        "relation": "DIRECTED",
+        "line": 23,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.0,
+          0.800000011920929
+        ],
+        "anchor_b": [
+          0.0,
+          0.0,
+          0.800000011920929
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 1.1313708899379815,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "base",
+            "child": "shaft",
+            "source": "parent_assignment",
+            "line": 23
+          },
+          {
+            "parent": "base",
+            "child": "shaft",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 238,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.0,
+              0.800000011920929
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.0,
+              0.800000011920929
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 1.1313708899379815,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "base",
+            "child": "shaft",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "shaft",
+        "child": "capital",
+        "relation": "DIRECTED",
+        "line": 23,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.0,
+          6.800000190734863
+        ],
+        "anchor_b": [
+          0.0,
+          0.0,
+          6.800000190734863
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "shaft",
+            "child": "capital",
+            "source": "parent_assignment",
+            "line": 23
+          },
+          {
+            "parent": "shaft",
+            "child": "capital",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 239,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.0,
+              6.800000190734863
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.0,
+              6.800000190734863
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "shaft",
+            "child": "capital",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "nodes": 3,
+      "edges": 2,
+      "relations": {
+        "DIRECTED": 2
+      },
+      "directed_edges": 2,
+      "runtime_directed_edges": 2,
+      "shared_anchor_edges": 1,
+      "estimated_anchor_edges": 0,
+      "geometric_anchor_candidates": 2,
+      "unverified_anchor_candidates": 1,
+      "misaligned_anchor_edges": 0
+    },
+    "source_bounds": {
+      "min": [
+        -1.2000000476837158,
+        -1.2000000476837158,
+        0.0
+      ],
+      "max": [
+        1.2000000476837158,
+        1.2000000476837158,
+        7.800000190734863
+      ]
+    },
+    "scene_extent": 7.800000190734863,
+    "contact_threshold": 0.1950000047683716,
+    "shared_anchor_tolerance": 0.1950000047683716,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "base",
+        "capital",
+        "shaft"
+      ],
+      "scale_overrides": {}
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · Gemini 3.1 Pro",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gemeni_3.1_pro/Pillar_seed0/Pillar_seed0.py",
+    "source_sha256": "3b41b4b0e363a4f728f587a95808507eb14b25313cace8efab16ca22d0310c9a",
+    "source_size": 8683,
+    "glb_sha256": "4e28fea66f0243bfcb15e51f6cf0c86e94b05eece8989686003f6e553d4457c0",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {},
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "default",
+      "side": "default",
+      "part_ids": [],
+      "parameter": "scale",
+      "scale": 1.0,
+      "params": {},
+      "paper_parent_ids": [
+        "shaft"
+      ],
+      "paper_child_ids": [
+        "capital"
+      ],
+      "geometry_changed": false,
+      "attachment_observed": true,
+      "dimensions": [],
+      "selected_attachment_checks": [
+        {
+          "parent": "shaft",
+          "child": "capital",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": true,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": true,
+          "runtime_parent_part_id": "shaft",
+          "runtime_child_part_id": "capital"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.0,
+      -8.940696716308594e-08,
+      0.0
+    ],
+    "mesh_bbox_max_error_before_translation": 1.7881393432617188e-07,
+    "mesh_bbox_max_error_after_translation": 8.940696716308594e-08,
+    "material_export": {
+      "strategy": "cycles_emission_base_color_bake",
+      "resolution": 512,
+      "lighting_baked": false,
+      "procedural_normal_baked": false,
+      "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+      "objects": [
+        {
+          "name": "base",
+          "mode": "baked_base_color",
+          "materials": [
+            "WeatheredStone"
+          ],
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "shaft",
+          "mode": "baked_base_color",
+          "materials": [
+            "WeatheredStone"
+          ],
+          "width": 256,
+          "height": 256
+        },
+        {
+          "name": "capital",
+          "mode": "baked_base_color",
+          "materials": [
+            "WeatheredStone"
+          ],
+          "width": 256,
+          "height": 256
+        }
+      ],
+      "fallbacks": [],
+      "preserved_geometry_objects": [],
+      "source_sha256": "3b41b4b0e363a4f728f587a95808507eb14b25313cace8efab16ca22d0310c9a",
+      "helper_sha256": "a40d5f0f21485ec0c8727a0e749f5d5daeda99e05300804d1970132094e69707",
+      "blender_version": "5.0.0",
+      "material_count": 3,
+      "image_count": 3,
+      "geometry_unchanged": true,
+      "original_glb_sha256": "55798ba050c02e78995535cd1335eceae61e6f3bec2568565b22ee2b204e2378"
+    }
+  }
+}

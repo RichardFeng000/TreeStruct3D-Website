@@ -1,0 +1,1276 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "CoffeeTable_seed0/CoffeeTable_seed0",
+    "label": "CoffeeTable_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|table_top|scale",
+        "label": "table_top · scale",
+        "group": "Native Part Parameters · table_top",
+        "value": 1.6,
+        "node_id": "table_top",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|table_top|table_top",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|table_top|width",
+        "label": "table_top · width",
+        "group": "Native Part Parameters · table_top",
+        "value": 1.6,
+        "node_id": "table_top",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.8000000000000003,
+        "max": 4.0,
+        "step": 0.016
+      },
+      {
+        "id": "part_param|table_top|depth",
+        "label": "table_top · depth",
+        "group": "Native Part Parameters · table_top",
+        "value": 0.8,
+        "node_id": "table_top",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.40000000000000013,
+        "max": 2.0,
+        "step": 0.008
+      },
+      {
+        "id": "part_param|table_top|thickness",
+        "label": "table_top · thickness",
+        "group": "Native Part Parameters · table_top",
+        "value": 0.04,
+        "node_id": "table_top",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.060000000000000005,
+        "max": 0.14,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|table_top|corner_radius",
+        "label": "table_top · corner_radius",
+        "group": "Native Part Parameters · table_top",
+        "value": 0.15,
+        "node_id": "table_top",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.07499999999999998,
+        "max": 0.375,
+        "step": 0.0015
+      },
+      {
+        "id": "part_param|table_top|bevel_width",
+        "label": "table_top · bevel_width",
+        "group": "Native Part Parameters · table_top",
+        "value": 0.008,
+        "node_id": "table_top",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.092,
+        "max": 0.10800000000000001,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|bottom_shelf|scale",
+        "label": "bottom_shelf · scale",
+        "group": "Native Part Parameters · bottom_shelf",
+        "value": 1.0,
+        "node_id": "bottom_shelf",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|bottom_shelf|bottom_shelf",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|bottom_shelf|thickness",
+        "label": "bottom_shelf · thickness",
+        "group": "Native Part Parameters · bottom_shelf",
+        "value": 0.03,
+        "node_id": "bottom_shelf",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.07,
+        "max": 0.13,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|bottom_shelf|clearance",
+        "label": "bottom_shelf · clearance",
+        "group": "Native Part Parameters · bottom_shelf",
+        "value": 0.28,
+        "node_id": "bottom_shelf",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.14,
+        "max": 0.7000000000000001,
+        "step": 0.0028000000000000004
+      },
+      {
+        "id": "part_param|bottom_shelf|bevel_width",
+        "label": "bottom_shelf · bevel_width",
+        "group": "Native Part Parameters · bottom_shelf",
+        "value": 0.006,
+        "node_id": "bottom_shelf",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.094,
+        "max": 0.10600000000000001,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|pedestal_legs|scale",
+        "label": "pedestal_legs · scale",
+        "group": "Native Part Parameters · pedestal_legs",
+        "value": 1.0,
+        "node_id": "pedestal_legs",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|pedestal_legs|pedestal_legs",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|pedestal_legs|shaft_radius",
+        "label": "pedestal_legs · shaft_radius",
+        "group": "Native Part Parameters · pedestal_legs",
+        "value": 0.07,
+        "node_id": "pedestal_legs",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.035,
+        "max": 0.17500000000000002,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|pedestal_legs|base_radius",
+        "label": "pedestal_legs · base_radius",
+        "group": "Native Part Parameters · pedestal_legs",
+        "value": 0.18,
+        "node_id": "pedestal_legs",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.09000000000000002,
+        "max": 0.45,
+        "step": 0.0018
+      },
+      {
+        "id": "part_param|pedestal_legs|base_height",
+        "label": "pedestal_legs · base_height",
+        "group": "Native Part Parameters · pedestal_legs",
+        "value": 0.08,
+        "node_id": "pedestal_legs",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.039999999999999994,
+        "max": 0.2,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|pedestal_legs|leg_spacing",
+        "label": "pedestal_legs · leg_spacing",
+        "group": "Native Part Parameters · pedestal_legs",
+        "value": 0.8,
+        "node_id": "pedestal_legs",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.40000000000000013,
+        "max": 2.0,
+        "step": 0.008
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gemini_3.5_flash/CoffeeTable_seed0/CoffeeTable_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:CoffeeTable_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:CoffeeTable_seed0.py",
+            "label": "CoffeeTable_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 429,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "link_nodes",
+            "label": "link_nodes",
+            "kind": "function",
+            "line": 43,
+            "end_line": 60,
+            "parameters": [
+              "links",
+              "from_node",
+              "to_node",
+              "from_socket_names",
+              "to_socket_names"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_wood_material",
+            "label": "create_wood_material",
+            "kind": "function",
+            "line": 62,
+            "end_line": 119,
+            "parameters": [
+              "name",
+              "base_color",
+              "grain_color"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_metal_material",
+            "label": "create_metal_material",
+            "kind": "function",
+            "line": 121,
+            "end_line": 139,
+            "parameters": [
+              "name",
+              "color",
+              "roughness",
+              "metallic"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_rounded_box",
+            "label": "build_rounded_box",
+            "kind": "function",
+            "line": 141,
+            "end_line": 197,
+            "parameters": [
+              "width",
+              "depth",
+              "thickness",
+              "corner_radius"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_table_top",
+            "label": "build_table_top",
+            "kind": "function",
+            "line": 199,
+            "end_line": 221,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_bottom_shelf",
+            "label": "build_bottom_shelf",
+            "kind": "function",
+            "line": 223,
+            "end_line": 246,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_pedestal_legs",
+            "label": "build_pedestal_legs",
+            "kind": "function",
+            "line": 248,
+            "end_line": 325,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "apply_shading_and_modifiers",
+            "label": "apply_shading_and_modifiers",
+            "kind": "function",
+            "line": 327,
+            "end_line": 346,
+            "parameters": [
+              "obj",
+              "bevel_width"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 348,
+            "end_line": 349,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 351,
+            "end_line": 362,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "find_vertex_closest",
+            "label": "find_vertex_closest",
+            "kind": "function",
+            "line": 364,
+            "end_line": 375,
+            "parameters": [
+              "obj",
+              "target_local_co"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:CoffeeTable_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "link_nodes",
+            "relation": "SECTION_MEMBER",
+            "line": 43,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_wood_material",
+            "relation": "SECTION_MEMBER",
+            "line": 62,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_metal_material",
+            "relation": "SECTION_MEMBER",
+            "line": 121,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_rounded_box",
+            "relation": "SECTION_MEMBER",
+            "line": 141,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_table_top",
+            "relation": "SECTION_MEMBER",
+            "line": 199,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_bottom_shelf",
+            "relation": "SECTION_MEMBER",
+            "line": 223,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_pedestal_legs",
+            "relation": "SECTION_MEMBER",
+            "line": 248,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "apply_shading_and_modifiers",
+            "relation": "SECTION_MEMBER",
+            "line": 327,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 348,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 351,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "find_vertex_closest",
+            "relation": "SECTION_MEMBER",
+            "line": 364,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:CoffeeTable_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:CoffeeTable_seed0.py",
+            "label": "CoffeeTable_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 429,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "apply_shading_and_modifiers",
+            "label": "apply_shading_and_modifiers",
+            "kind": "function",
+            "line": 327,
+            "end_line": 346,
+            "parameters": [
+              "obj",
+              "bevel_width"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 351,
+            "end_line": 362,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_bottom_shelf",
+            "label": "build_bottom_shelf",
+            "kind": "function",
+            "line": 223,
+            "end_line": 246,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_pedestal_legs",
+            "label": "build_pedestal_legs",
+            "kind": "function",
+            "line": 248,
+            "end_line": 325,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_rounded_box",
+            "label": "build_rounded_box",
+            "kind": "function",
+            "line": 141,
+            "end_line": 197,
+            "parameters": [
+              "width",
+              "depth",
+              "thickness",
+              "corner_radius"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_table_top",
+            "label": "build_table_top",
+            "kind": "function",
+            "line": 199,
+            "end_line": 221,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_metal_material",
+            "label": "create_metal_material",
+            "kind": "function",
+            "line": 121,
+            "end_line": 139,
+            "parameters": [
+              "name",
+              "color",
+              "roughness",
+              "metallic"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_wood_material",
+            "label": "create_wood_material",
+            "kind": "function",
+            "line": 62,
+            "end_line": 119,
+            "parameters": [
+              "name",
+              "base_color",
+              "grain_color"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "find_vertex_closest",
+            "label": "find_vertex_closest",
+            "kind": "function",
+            "line": 364,
+            "end_line": 375,
+            "parameters": [
+              "obj",
+              "target_local_co"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "link_nodes",
+            "label": "link_nodes",
+            "kind": "function",
+            "line": 43,
+            "end_line": 60,
+            "parameters": [
+              "links",
+              "from_node",
+              "to_node",
+              "from_socket_names",
+              "to_socket_names"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 348,
+            "end_line": 349,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 354,
+            "evidence": "AST call at L354"
+          },
+          {
+            "parent": "build_bottom_shelf",
+            "child": "build_rounded_box",
+            "relation": "CALL",
+            "line": 239,
+            "evidence": "AST call at L239"
+          },
+          {
+            "parent": "build_table_top",
+            "child": "build_rounded_box",
+            "relation": "CALL",
+            "line": 214,
+            "evidence": "AST call at L214"
+          },
+          {
+            "parent": "create_wood_material",
+            "child": "link_nodes",
+            "relation": "CALL",
+            "line": 106,
+            "evidence": "AST call at L106"
+          },
+          {
+            "parent": "module:CoffeeTable_seed0.py",
+            "child": "build_table_top",
+            "relation": "ENTRYPOINT",
+            "line": 378,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:CoffeeTable_seed0.py",
+            "child": "build_bottom_shelf",
+            "relation": "ENTRYPOINT",
+            "line": 379,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:CoffeeTable_seed0.py",
+            "child": "build_pedestal_legs",
+            "relation": "ENTRYPOINT",
+            "line": 380,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:CoffeeTable_seed0.py",
+            "child": "create_wood_material",
+            "relation": "ENTRYPOINT",
+            "line": 383,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:CoffeeTable_seed0.py",
+            "child": "create_metal_material",
+            "relation": "ENTRYPOINT",
+            "line": 384,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:CoffeeTable_seed0.py",
+            "child": "apply_shading_and_modifiers",
+            "relation": "ENTRYPOINT",
+            "line": 393,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:CoffeeTable_seed0.py",
+            "child": "find_vertex_closest",
+            "relation": "ENTRYPOINT",
+            "line": 410,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:CoffeeTable_seed0.py",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "ENTRYPOINT",
+            "line": 415,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "table_top"
+        ],
+        "nodes": [
+          {
+            "id": "bottom_shelf",
+            "label": "bottom_shelf",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L423: bottom_shelf -> pedestal_legs [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L415: table_top -> bottom_shelf [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_bottom_shelf",
+            "runtime_variable": "bottom_shelf",
+            "group": "Blender parts"
+          },
+          {
+            "id": "pedestal_legs",
+            "label": "pedestal_legs",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L423: bottom_shelf -> pedestal_legs [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_pedestal_legs",
+            "runtime_variable": "pedestal_legs",
+            "group": "Blender parts"
+          },
+          {
+            "id": "table_top",
+            "label": "table_top",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L415: table_top -> bottom_shelf [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_table_top",
+            "runtime_variable": "table_top",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "bottom_shelf",
+            "child": "pedestal_legs",
+            "relation": "DIRECTED_CODE",
+            "line": 423,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "table_top",
+            "child": "bottom_shelf",
+            "relation": "DIRECTED_CODE",
+            "line": 415,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "table_top"
+    ],
+    "nodes": [
+      {
+        "id": "pedestal_legs",
+        "label": "pedestal_legs",
+        "part_id": "pedestal_legs",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          -0.3440000116825104
+        ],
+        "center": [
+          0.0,
+          0.0,
+          -0.20400001108646393
+        ],
+        "dimensions": [
+          1.159999966621399,
+          0.36000001430511475,
+          0.28999999165534973
+        ],
+        "bbox_min": [
+          -0.5799999833106995,
+          -0.18000000715255737,
+          -0.3490000069141388
+        ],
+        "bbox_max": [
+          0.5799999833106995,
+          0.18000000715255737,
+          -0.05900001525878906
+        ]
+      },
+      {
+        "id": "bottom_shelf",
+        "label": "bottom_shelf",
+        "part_id": "bottom_shelf",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          -0.3440000116825104
+        ],
+        "center": [
+          0.0,
+          0.0,
+          -0.3590000122785568
+        ],
+        "dimensions": [
+          1.600000023841858,
+          0.800000011920929,
+          0.030000001192092896
+        ],
+        "bbox_min": [
+          -0.800000011920929,
+          -0.4000000059604645,
+          -0.37400001287460327
+        ],
+        "bbox_max": [
+          0.800000011920929,
+          0.4000000059604645,
+          -0.3440000116825104
+        ]
+      },
+      {
+        "id": "table_top",
+        "label": "table_top",
+        "part_id": "table_top",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          -0.03200000151991844
+        ],
+        "dimensions": [
+          2.559999942779541,
+          1.2799999713897705,
+          0.06400000303983688
+        ],
+        "bbox_min": [
+          -1.2799999713897705,
+          -0.6399999856948853,
+          -0.06400000303983688
+        ],
+        "bbox_max": [
+          1.2799999713897705,
+          0.6399999856948853,
+          0.0
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "bottom_shelf",
+        "child": "pedestal_legs",
+        "relation": "DIRECTED",
+        "line": 359,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.0,
+          -0.3440000116825104
+        ],
+        "anchor_b": [
+          0.0,
+          0.0,
+          -0.3440000116825104
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.22005681014186834,
+        "parent_anchor_vertex_gap": 0.7599637574883981,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bottom_shelf",
+            "child": "pedestal_legs",
+            "source": "parent_assignment",
+            "line": 359
+          },
+          {
+            "parent": "bottom_shelf",
+            "child": "pedestal_legs",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 423,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "child_anchor_world": [
+              0.0,
+              0.0,
+              -0.3440000116825104
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.0,
+              -0.3440000116825104
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.22005681014186834,
+            "parent_anchor_vertex_gap": 0.7599637574883981,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bottom_shelf",
+            "child": "pedestal_legs",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "table_top",
+        "child": "bottom_shelf",
+        "relation": "BROKEN_ATTACHMENT",
+        "line": 359,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": false,
+        "parent_child_known": true,
+        "direction_source": "declared_parent",
+        "contact": false,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.0,
+          -0.3440000116825104
+        ],
+        "anchor_b": [
+          0.0,
+          0.0,
+          -0.3440000116825104
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.7599637574883981,
+        "parent_anchor_vertex_gap": 1.246083663134273,
+        "aabb_gap": 0.2800000086426735,
+        "declared_directions": [
+          {
+            "parent": "table_top",
+            "child": "bottom_shelf",
+            "source": "parent_assignment",
+            "line": 359
+          },
+          {
+            "parent": "table_top",
+            "child": "bottom_shelf",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 415,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.0,
+              0.0,
+              -0.3440000116825104
+            ],
+            "child_anchor_world": [
+              0.0,
+              0.0,
+              -0.3440000116825104
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.0,
+              -0.3440000116825104
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.7599637574883981,
+            "parent_anchor_vertex_gap": 1.246083663134273,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "table_top",
+            "child": "bottom_shelf",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "pedestal_legs",
+        "child": "table_top",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.5496645569801331,
+          0.10000263899564743,
+          -0.3490000069141388
+        ],
+        "anchor_b": [
+          1.0399760007858276,
+          0.6390256285667419,
+          -0.05609834939241409
+        ],
+        "anchor_gap": 0.7853295335029484,
+        "anchor_tolerance": 0.06399999856948853,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 3,
+      "edges": 3,
+      "relations": {
+        "DIRECTED": 1,
+        "BROKEN_ATTACHMENT": 1,
+        "UNDIRECTED_CONTACT": 1
+      },
+      "directed_edges": 2,
+      "runtime_directed_edges": 1,
+      "shared_anchor_edges": 0,
+      "estimated_anchor_edges": 1,
+      "geometric_anchor_candidates": 2,
+      "unverified_anchor_candidates": 2,
+      "misaligned_anchor_edges": 1
+    },
+    "source_bounds": {
+      "min": [
+        -1.2799999713897705,
+        -0.6399999856948853,
+        -0.37400001287460327
+      ],
+      "max": [
+        1.2799999713897705,
+        0.6399999856948853,
+        0.0
+      ]
+    },
+    "scene_extent": 2.559999942779541,
+    "contact_threshold": 0.06399999856948853,
+    "shared_anchor_tolerance": 0.06399999856948853,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "bottom_shelf",
+        "pedestal_legs",
+        "table_top"
+      ],
+      "scale_overrides": {
+        "table_top": 1.6
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · Gemini 3.5 Flash",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gemini_3.5_flash/CoffeeTable_seed0/CoffeeTable_seed0.py",
+    "source_sha256": "6f171efb975e13e01b2937e5fb0b403b770464f451a47168d7b404aafcb292a6",
+    "source_size": 14412,
+    "glb_sha256": "8436604d37ba2c5ca256f7eebfec2557afb9a828a2f0c80f96671890a0e3a14b",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|table_top|scale": 1.6
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "parent-1.6",
+      "side": "parent",
+      "part_ids": [
+        "table_top"
+      ],
+      "parameter": "scale",
+      "scale": 1.6,
+      "params": {
+        "part_param|table_top|scale": 1.6
+      },
+      "paper_parent_ids": [
+        "table_top"
+      ],
+      "paper_child_ids": [
+        "pedestal_legs"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "attachment_paths": [
+        [
+          "table_top",
+          "bottom_shelf",
+          "pedestal_legs"
+        ]
+      ],
+      "dimensions": [
+        {
+          "id": "table_top",
+          "part_id": "table_top",
+          "before": [
+            1.600000023841858,
+            0.800000011920929,
+            0.03999999910593033
+          ],
+          "after": [
+            2.559999942779541,
+            1.2799999713897705,
+            0.06400000303983688
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "bottom_shelf",
+          "child": "pedestal_legs",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "bottom_shelf",
+          "runtime_child_part_id": "pedestal_legs"
+        },
+        {
+          "parent": "table_top",
+          "child": "bottom_shelf",
+          "relation": "BROKEN_ATTACHMENT",
+          "contact": false,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "table_top",
+          "runtime_child_part_id": "bottom_shelf"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.0,
+      0.374000012408942,
+      0.0
+    ],
+    "mesh_bbox_max_error_before_translation": 0.3740000147372484,
+    "mesh_bbox_max_error_after_translation": 4.190951585769653e-09,
+    "same_execution_export": true,
+    "final_scene_adapter_sha256": "5ef143984231a0dd21797536aa9e727625b993f52c2a512f08c4f151f8730683",
+    "final_scene_adapter": {
+      "same_execution_export": true,
+      "geometry_observation": "final_evaluated_polygon_vertices",
+      "anchor_observation": "final_evaluated_surface_after_all_source_modifiers",
+      "probe_rules_and_tolerances_changed": false
+    }
+  }
+}

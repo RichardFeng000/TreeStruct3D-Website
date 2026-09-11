@@ -1,0 +1,303 @@
+{
+  "source_sha256": "f8dd22386a62bc6ffbf1b2d98ada97d2443218317b2d07e407279a2113254349",
+  "samples": [
+    {
+      "id": "crown_base-0.63",
+      "params": {
+        "crown_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "crown_base",
+          "positions": {
+            "offset": 0,
+            "count": 1230
+          }
+        },
+        {
+          "id": "fronds",
+          "positions": {
+            "offset": 1230,
+            "count": 13539
+          }
+        },
+        {
+          "id": "trunk",
+          "positions": {
+            "offset": 14769,
+            "count": 4398
+          }
+        }
+      ]
+    },
+    {
+      "id": "crown_base-1.37",
+      "params": {
+        "crown_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "crown_base",
+          "positions": {
+            "offset": 19167,
+            "count": 1230
+          }
+        },
+        {
+          "id": "fronds",
+          "positions": {
+            "offset": 20397,
+            "count": 13539
+          }
+        },
+        {
+          "id": "trunk",
+          "positions": {
+            "offset": 33936,
+            "count": 4398
+          }
+        }
+      ]
+    },
+    {
+      "id": "fronds-0.63",
+      "params": {
+        "fronds": 0.63
+      },
+      "parts": [
+        {
+          "id": "crown_base",
+          "positions": {
+            "offset": 38334,
+            "count": 1230
+          }
+        },
+        {
+          "id": "fronds",
+          "positions": {
+            "offset": 39564,
+            "count": 13539
+          }
+        },
+        {
+          "id": "trunk",
+          "positions": {
+            "offset": 53103,
+            "count": 4398
+          }
+        }
+      ]
+    },
+    {
+      "id": "fronds-1.37",
+      "params": {
+        "fronds": 1.37
+      },
+      "parts": [
+        {
+          "id": "crown_base",
+          "positions": {
+            "offset": 57501,
+            "count": 1230
+          }
+        },
+        {
+          "id": "fronds",
+          "positions": {
+            "offset": 58731,
+            "count": 13539
+          }
+        },
+        {
+          "id": "trunk",
+          "positions": {
+            "offset": 72270,
+            "count": 4398
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "crown_base": 1.37,
+        "fronds": 0.63,
+        "trunk": 0.63
+      },
+      "parts": [
+        {
+          "id": "crown_base",
+          "positions": {
+            "offset": 76668,
+            "count": 1230
+          }
+        },
+        {
+          "id": "fronds",
+          "positions": {
+            "offset": 77898,
+            "count": 13539
+          }
+        },
+        {
+          "id": "trunk",
+          "positions": {
+            "offset": 91437,
+            "count": 4398
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "crown_base": 0.63,
+        "fronds": 1.37,
+        "trunk": 1.37
+      },
+      "parts": [
+        {
+          "id": "crown_base",
+          "positions": {
+            "offset": 95835,
+            "count": 1230
+          }
+        },
+        {
+          "id": "fronds",
+          "positions": {
+            "offset": 97065,
+            "count": 13539
+          }
+        },
+        {
+          "id": "trunk",
+          "positions": {
+            "offset": 110604,
+            "count": 4398
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "crown_base": 0.63,
+        "fronds": 0.63,
+        "trunk": 0.63
+      },
+      "parts": [
+        {
+          "id": "crown_base",
+          "positions": {
+            "offset": 115002,
+            "count": 1230
+          }
+        },
+        {
+          "id": "fronds",
+          "positions": {
+            "offset": 116232,
+            "count": 13539
+          }
+        },
+        {
+          "id": "trunk",
+          "positions": {
+            "offset": 129771,
+            "count": 4398
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "crown_base": 1.37,
+        "fronds": 1.37,
+        "trunk": 1.37
+      },
+      "parts": [
+        {
+          "id": "crown_base",
+          "positions": {
+            "offset": 134169,
+            "count": 1230
+          }
+        },
+        {
+          "id": "fronds",
+          "positions": {
+            "offset": 135399,
+            "count": 13539
+          }
+        },
+        {
+          "id": "trunk",
+          "positions": {
+            "offset": 148938,
+            "count": 4398
+          }
+        }
+      ]
+    },
+    {
+      "id": "trunk-0.63",
+      "params": {
+        "trunk": 0.63
+      },
+      "parts": [
+        {
+          "id": "crown_base",
+          "positions": {
+            "offset": 153336,
+            "count": 1230
+          }
+        },
+        {
+          "id": "fronds",
+          "positions": {
+            "offset": 154566,
+            "count": 13539
+          }
+        },
+        {
+          "id": "trunk",
+          "positions": {
+            "offset": 168105,
+            "count": 4398
+          }
+        }
+      ]
+    },
+    {
+      "id": "trunk-1.37",
+      "params": {
+        "trunk": 1.37
+      },
+      "parts": [
+        {
+          "id": "crown_base",
+          "positions": {
+            "offset": 172503,
+            "count": 1230
+          }
+        },
+        {
+          "id": "fronds",
+          "positions": {
+            "offset": 173733,
+            "count": 13539
+          }
+        },
+        {
+          "id": "trunk",
+          "positions": {
+            "offset": 187272,
+            "count": 4398
+          }
+        }
+      ]
+    }
+  ]
+}

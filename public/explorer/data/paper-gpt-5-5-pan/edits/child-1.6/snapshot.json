@@ -1,0 +1,1502 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "Pan_seed0/Pan_seed0",
+    "label": "Pan_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|pan_body|scale",
+        "label": "pan_body · scale",
+        "group": "Native Part Parameters · pan_body",
+        "value": 1.0,
+        "node_id": "pan_body",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|pan_body|pan_body",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|pan_body|segments",
+        "label": "pan_body · segments",
+        "group": "Native Part Parameters · pan_body",
+        "value": 128,
+        "node_id": "pan_body",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 256.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|pan_body|anchor_ring_radius",
+        "label": "pan_body · anchor_ring_radius",
+        "group": "Native Part Parameters · pan_body",
+        "value": 3.05,
+        "node_id": "pan_body",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -1.5249999999999995,
+        "max": 7.624999999999999,
+        "step": 0.0305
+      },
+      {
+        "id": "part_param|pan_body|anchor_height",
+        "label": "pan_body · anchor_height",
+        "group": "Native Part Parameters · pan_body",
+        "value": 0.165,
+        "node_id": "pan_body",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.08249999999999999,
+        "max": 0.4125,
+        "step": 0.00165
+      },
+      {
+        "id": "part_param|flat_handle_core|scale",
+        "label": "flat_handle_core · scale",
+        "group": "Native Part Parameters · flat_handle_core",
+        "value": 1.6,
+        "node_id": "flat_handle_core",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|flat_handle_core|flat_handle_core",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|flat_handle_core|length",
+        "label": "flat_handle_core · length",
+        "group": "Native Part Parameters · flat_handle_core",
+        "value": 3.05,
+        "node_id": "flat_handle_core",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -1.5249999999999995,
+        "max": 7.624999999999999,
+        "step": 0.0305
+      },
+      {
+        "id": "part_param|flat_handle_core|shaft_width",
+        "label": "flat_handle_core · shaft_width",
+        "group": "Native Part Parameters · flat_handle_core",
+        "value": 0.68,
+        "node_id": "flat_handle_core",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.33999999999999997,
+        "max": 1.7000000000000002,
+        "step": 0.0068000000000000005
+      },
+      {
+        "id": "part_param|flat_handle_core|root_width",
+        "label": "flat_handle_core · root_width",
+        "group": "Native Part Parameters · flat_handle_core",
+        "value": 1.3,
+        "node_id": "flat_handle_core",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.6500000000000001,
+        "max": 3.25,
+        "step": 0.013000000000000001
+      },
+      {
+        "id": "part_param|flat_handle_core|transition_length",
+        "label": "flat_handle_core · transition_length",
+        "group": "Native Part Parameters · flat_handle_core",
+        "value": 0.78,
+        "node_id": "flat_handle_core",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.3899999999999999,
+        "max": 1.95,
+        "step": 0.0078000000000000005
+      },
+      {
+        "id": "part_param|flat_handle_core|thickness",
+        "label": "flat_handle_core · thickness",
+        "group": "Native Part Parameters · flat_handle_core",
+        "value": 0.16,
+        "node_id": "flat_handle_core",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.07999999999999999,
+        "max": 0.4,
+        "step": 0.0016
+      },
+      {
+        "id": "part_param|flat_handle_core|root_curve_samples",
+        "label": "flat_handle_core · root_curve_samples",
+        "group": "Native Part Parameters · flat_handle_core",
+        "value": 19,
+        "node_id": "flat_handle_core",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 38.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|wooden_grip_section|scale",
+        "label": "wooden_grip_section · scale",
+        "group": "Native Part Parameters · wooden_grip_section",
+        "value": 1.0,
+        "node_id": "wooden_grip_section",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|wooden_grip_section|wooden_grip_section",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|wooden_grip_section|length",
+        "label": "wooden_grip_section · length",
+        "group": "Native Part Parameters · wooden_grip_section",
+        "value": 2.28,
+        "node_id": "wooden_grip_section",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -1.1400000000000001,
+        "max": 5.699999999999999,
+        "step": 0.022799999999999997
+      },
+      {
+        "id": "part_param|wooden_grip_section|width",
+        "label": "wooden_grip_section · width",
+        "group": "Native Part Parameters · wooden_grip_section",
+        "value": 0.98,
+        "node_id": "wooden_grip_section",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.49,
+        "max": 2.45,
+        "step": 0.0098
+      },
+      {
+        "id": "part_param|wooden_grip_section|thickness",
+        "label": "wooden_grip_section · thickness",
+        "group": "Native Part Parameters · wooden_grip_section",
+        "value": 0.24,
+        "node_id": "wooden_grip_section",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.12,
+        "max": 0.6,
+        "step": 0.0024
+      },
+      {
+        "id": "part_param|wooden_grip_section|corner_radius",
+        "label": "wooden_grip_section · corner_radius",
+        "group": "Native Part Parameters · wooden_grip_section",
+        "value": 0.19,
+        "node_id": "wooden_grip_section",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.09500000000000003,
+        "max": 0.47500000000000003,
+        "step": 0.0019
+      },
+      {
+        "id": "part_param|wooden_grip_section|hole_width",
+        "label": "wooden_grip_section · hole_width",
+        "group": "Native Part Parameters · wooden_grip_section",
+        "value": 0.25,
+        "node_id": "wooden_grip_section",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.125,
+        "max": 0.625,
+        "step": 0.0025
+      },
+      {
+        "id": "part_param|wooden_grip_section|hole_length",
+        "label": "wooden_grip_section · hole_length",
+        "group": "Native Part Parameters · wooden_grip_section",
+        "value": 0.42,
+        "node_id": "wooden_grip_section",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.21000000000000002,
+        "max": 1.05,
+        "step": 0.0042
+      },
+      {
+        "id": "part_param|wooden_grip_section|hole_center_from_distal",
+        "label": "wooden_grip_section · hole_center_from_distal",
+        "group": "Native Part Parameters · wooden_grip_section",
+        "value": 0.42,
+        "node_id": "wooden_grip_section",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.21000000000000002,
+        "max": 1.05,
+        "step": 0.0042
+      },
+      {
+        "id": "part_param|wooden_grip_section|corner_segments",
+        "label": "wooden_grip_section · corner_segments",
+        "group": "Native Part Parameters · wooden_grip_section",
+        "value": 9,
+        "node_id": "wooden_grip_section",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 18.0,
+        "step": 1.0
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gpt5.5/Pan_seed0/Pan_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:Pan_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Pan_seed0.py",
+            "label": "Pan_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 474,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 36,
+            "end_line": 47,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_principled_material",
+            "label": "create_principled_material",
+            "kind": "function",
+            "line": 50,
+            "end_line": 75,
+            "parameters": [
+              "name",
+              "color",
+              "roughness",
+              "metallic",
+              "use_wood_nodes"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "polygon_area",
+            "label": "polygon_area",
+            "kind": "function",
+            "line": 78,
+            "end_line": 85,
+            "parameters": [
+              "loop"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "orient_loop",
+            "label": "orient_loop",
+            "kind": "function",
+            "line": 88,
+            "end_line": 93,
+            "parameters": [
+              "loop",
+              "ccw"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_bevel_and_normals",
+            "label": "add_bevel_and_normals",
+            "kind": "function",
+            "line": 96,
+            "end_line": 112,
+            "parameters": [
+              "obj",
+              "width",
+              "segments"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_mesh_object",
+            "label": "make_mesh_object",
+            "kind": "function",
+            "line": 115,
+            "end_line": 130,
+            "parameters": [
+              "name",
+              "verts",
+              "faces",
+              "materials",
+              "material_indices",
+              "smooth"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mesh_has_vertex_at",
+            "label": "mesh_has_vertex_at",
+            "kind": "function",
+            "line": 133,
+            "end_line": 138,
+            "parameters": [
+              "obj",
+              "local_anchor",
+              "tolerance"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_pan_body",
+            "label": "build_pan_body",
+            "kind": "function",
+            "line": 141,
+            "end_line": 226,
+            "parameters": [
+              "interior_mat",
+              "exterior_mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "plate_mesh_from_2d_loops",
+            "label": "plate_mesh_from_2d_loops",
+            "kind": "function",
+            "line": 229,
+            "end_line": 291,
+            "parameters": [
+              "name",
+              "outer_loop",
+              "height",
+              "material",
+              "holes"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "plate_mesh_from_2d_loops.tri_z",
+            "label": "tri_z",
+            "kind": "nested_function",
+            "line": 260,
+            "end_line": 264,
+            "parameters": [
+              "tri"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_flat_handle_core",
+            "label": "build_flat_handle_core",
+            "kind": "function",
+            "line": 294,
+            "end_line": 337,
+            "parameters": [
+              "exterior_mat",
+              "pan_contact_radius"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "rounded_rectangle_loop",
+            "label": "rounded_rectangle_loop",
+            "kind": "function",
+            "line": 340,
+            "end_line": 378,
+            "parameters": [
+              "width",
+              "length",
+              "radius",
+              "corner_segments"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "rounded_rectangle_loop.add_point",
+            "label": "add_point",
+            "kind": "nested_function",
+            "line": 347,
+            "end_line": 349,
+            "parameters": [
+              "pt"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_wooden_grip_section",
+            "label": "build_wooden_grip_section",
+            "kind": "function",
+            "line": 381,
+            "end_line": 411,
+            "parameters": [
+              "wood_mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 414,
+            "end_line": 415,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 418,
+            "end_line": 429,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:Pan_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "clear_scene",
+            "relation": "SECTION_MEMBER",
+            "line": 36,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_principled_material",
+            "relation": "SECTION_MEMBER",
+            "line": 50,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "polygon_area",
+            "relation": "SECTION_MEMBER",
+            "line": 78,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "orient_loop",
+            "relation": "SECTION_MEMBER",
+            "line": 88,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_bevel_and_normals",
+            "relation": "SECTION_MEMBER",
+            "line": 96,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_mesh_object",
+            "relation": "SECTION_MEMBER",
+            "line": 115,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "mesh_has_vertex_at",
+            "relation": "SECTION_MEMBER",
+            "line": 133,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_pan_body",
+            "relation": "SECTION_MEMBER",
+            "line": 141,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "plate_mesh_from_2d_loops",
+            "relation": "SECTION_MEMBER",
+            "line": 229,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "plate_mesh_from_2d_loops",
+            "child": "plate_mesh_from_2d_loops.tri_z",
+            "relation": "CONTAINS",
+            "line": 260,
+            "evidence": "AST lexical scope"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_flat_handle_core",
+            "relation": "SECTION_MEMBER",
+            "line": 294,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "rounded_rectangle_loop",
+            "relation": "SECTION_MEMBER",
+            "line": 340,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "rounded_rectangle_loop",
+            "child": "rounded_rectangle_loop.add_point",
+            "relation": "CONTAINS",
+            "line": 347,
+            "evidence": "AST lexical scope"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_wooden_grip_section",
+            "relation": "SECTION_MEMBER",
+            "line": 381,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 414,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 418,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:Pan_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Pan_seed0.py",
+            "label": "Pan_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 474,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "add_bevel_and_normals",
+            "label": "add_bevel_and_normals",
+            "kind": "function",
+            "line": 96,
+            "end_line": 112,
+            "parameters": [
+              "obj",
+              "width",
+              "segments"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 418,
+            "end_line": 429,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_flat_handle_core",
+            "label": "build_flat_handle_core",
+            "kind": "function",
+            "line": 294,
+            "end_line": 337,
+            "parameters": [
+              "exterior_mat",
+              "pan_contact_radius"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_pan_body",
+            "label": "build_pan_body",
+            "kind": "function",
+            "line": 141,
+            "end_line": 226,
+            "parameters": [
+              "interior_mat",
+              "exterior_mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_wooden_grip_section",
+            "label": "build_wooden_grip_section",
+            "kind": "function",
+            "line": 381,
+            "end_line": 411,
+            "parameters": [
+              "wood_mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 36,
+            "end_line": 47,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_principled_material",
+            "label": "create_principled_material",
+            "kind": "function",
+            "line": 50,
+            "end_line": 75,
+            "parameters": [
+              "name",
+              "color",
+              "roughness",
+              "metallic",
+              "use_wood_nodes"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 414,
+            "end_line": 415,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_mesh_object",
+            "label": "make_mesh_object",
+            "kind": "function",
+            "line": 115,
+            "end_line": 130,
+            "parameters": [
+              "name",
+              "verts",
+              "faces",
+              "materials",
+              "material_indices",
+              "smooth"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mesh_has_vertex_at",
+            "label": "mesh_has_vertex_at",
+            "kind": "function",
+            "line": 133,
+            "end_line": 138,
+            "parameters": [
+              "obj",
+              "local_anchor",
+              "tolerance"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "orient_loop",
+            "label": "orient_loop",
+            "kind": "function",
+            "line": 88,
+            "end_line": 93,
+            "parameters": [
+              "loop",
+              "ccw"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "plate_mesh_from_2d_loops",
+            "label": "plate_mesh_from_2d_loops",
+            "kind": "function",
+            "line": 229,
+            "end_line": 291,
+            "parameters": [
+              "name",
+              "outer_loop",
+              "height",
+              "material",
+              "holes"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "plate_mesh_from_2d_loops.tri_z",
+            "label": "tri_z",
+            "kind": "nested_function",
+            "line": 260,
+            "end_line": 264,
+            "parameters": [
+              "tri"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "polygon_area",
+            "label": "polygon_area",
+            "kind": "function",
+            "line": 78,
+            "end_line": 85,
+            "parameters": [
+              "loop"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "rounded_rectangle_loop",
+            "label": "rounded_rectangle_loop",
+            "kind": "function",
+            "line": 340,
+            "end_line": 378,
+            "parameters": [
+              "width",
+              "length",
+              "radius",
+              "corner_segments"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "rounded_rectangle_loop.add_point",
+            "label": "add_point",
+            "kind": "nested_function",
+            "line": 347,
+            "end_line": 349,
+            "parameters": [
+              "pt"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "mesh_has_vertex_at",
+            "relation": "CALL",
+            "line": 419,
+            "evidence": "AST call at L419"
+          },
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 421,
+            "evidence": "AST call at L421"
+          },
+          {
+            "parent": "build_flat_handle_core",
+            "child": "plate_mesh_from_2d_loops",
+            "relation": "CALL",
+            "line": 328,
+            "evidence": "AST call at L328"
+          },
+          {
+            "parent": "build_flat_handle_core",
+            "child": "add_bevel_and_normals",
+            "relation": "CALL",
+            "line": 329,
+            "evidence": "AST call at L329"
+          },
+          {
+            "parent": "build_flat_handle_core",
+            "child": "mesh_has_vertex_at",
+            "relation": "CALL",
+            "line": 335,
+            "evidence": "AST call at L335"
+          },
+          {
+            "parent": "build_pan_body",
+            "child": "make_mesh_object",
+            "relation": "CALL",
+            "line": 207,
+            "evidence": "AST call at L207"
+          },
+          {
+            "parent": "build_pan_body",
+            "child": "mesh_has_vertex_at",
+            "relation": "CALL",
+            "line": 225,
+            "evidence": "AST call at L225"
+          },
+          {
+            "parent": "build_wooden_grip_section",
+            "child": "rounded_rectangle_loop",
+            "relation": "CALL",
+            "line": 393,
+            "evidence": "AST call at L393"
+          },
+          {
+            "parent": "build_wooden_grip_section",
+            "child": "plate_mesh_from_2d_loops",
+            "relation": "CALL",
+            "line": 404,
+            "evidence": "AST call at L404"
+          },
+          {
+            "parent": "build_wooden_grip_section",
+            "child": "add_bevel_and_normals",
+            "relation": "CALL",
+            "line": 405,
+            "evidence": "AST call at L405"
+          },
+          {
+            "parent": "build_wooden_grip_section",
+            "child": "mesh_has_vertex_at",
+            "relation": "CALL",
+            "line": 410,
+            "evidence": "AST call at L410"
+          },
+          {
+            "parent": "orient_loop",
+            "child": "polygon_area",
+            "relation": "CALL",
+            "line": 90,
+            "evidence": "AST call at L90"
+          },
+          {
+            "parent": "plate_mesh_from_2d_loops",
+            "child": "orient_loop",
+            "relation": "CALL",
+            "line": 231,
+            "evidence": "AST call at L231"
+          },
+          {
+            "parent": "plate_mesh_from_2d_loops",
+            "child": "plate_mesh_from_2d_loops.tri_z",
+            "relation": "CALL",
+            "line": 268,
+            "evidence": "AST call at L268"
+          },
+          {
+            "parent": "plate_mesh_from_2d_loops",
+            "child": "make_mesh_object",
+            "relation": "CALL",
+            "line": 290,
+            "evidence": "AST call at L290"
+          },
+          {
+            "parent": "rounded_rectangle_loop",
+            "child": "rounded_rectangle_loop.add_point",
+            "relation": "CALL",
+            "line": 351,
+            "evidence": "AST call at L351"
+          },
+          {
+            "parent": "module:Pan_seed0.py",
+            "child": "clear_scene",
+            "relation": "ENTRYPOINT",
+            "line": 432,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Pan_seed0.py",
+            "child": "create_principled_material",
+            "relation": "ENTRYPOINT",
+            "line": 434,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Pan_seed0.py",
+            "child": "build_pan_body",
+            "relation": "ENTRYPOINT",
+            "line": 454,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Pan_seed0.py",
+            "child": "build_flat_handle_core",
+            "relation": "ENTRYPOINT",
+            "line": 455,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Pan_seed0.py",
+            "child": "build_wooden_grip_section",
+            "relation": "ENTRYPOINT",
+            "line": 456,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Pan_seed0.py",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "ENTRYPOINT",
+            "line": 458,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "pan_body_obj"
+        ],
+        "nodes": [
+          {
+            "id": "flat_handle_obj",
+            "label": "flat_handle_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L465: flat_handle_obj -> wooden_grip_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L458: pan_body_obj -> flat_handle_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_flat_handle_core",
+            "runtime_variable": "flat_handle_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "pan_body_obj",
+            "label": "pan_body_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L458: pan_body_obj -> flat_handle_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_pan_body",
+            "runtime_variable": "pan_body_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "wooden_grip_obj",
+            "label": "wooden_grip_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L465: flat_handle_obj -> wooden_grip_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_wooden_grip_section",
+            "runtime_variable": "wooden_grip_obj",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "flat_handle_obj",
+            "child": "wooden_grip_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 465,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "pan_body_obj",
+            "child": "flat_handle_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 458,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "pan_body"
+    ],
+    "nodes": [
+      {
+        "id": "pan_body",
+        "label": "pan_body",
+        "part_id": "pan_body",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.08250001072883606
+        ],
+        "dimensions": [
+          6.449999809265137,
+          6.449999809265137,
+          0.9050000309944153
+        ],
+        "bbox_min": [
+          -3.2249999046325684,
+          -3.2249999046325684,
+          -0.3700000047683716
+        ],
+        "bbox_max": [
+          3.2249999046325684,
+          3.2249999046325684,
+          0.5350000262260437
+        ]
+      },
+      {
+        "id": "flat_handle_core",
+        "label": "flat_handle_core",
+        "part_id": "flat_handle_core",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -5.602759251315469e-16,
+          -3.049999952316284,
+          0.16500000655651093
+        ],
+        "center": [
+          0.0,
+          -5.405263185501099,
+          0.16500000655651093
+        ],
+        "dimensions": [
+          2.059946298599243,
+          5.049474239349365,
+          0.25600001215934753
+        ],
+        "bbox_min": [
+          -1.0299731492996216,
+          -7.930000305175781,
+          0.03700000047683716
+        ],
+        "bbox_max": [
+          1.0299731492996216,
+          -2.880526065826416,
+          0.2930000126361847
+        ]
+      },
+      {
+        "id": "wooden_grip_section",
+        "label": "wooden_grip_section",
+        "part_id": "wooden_grip_section",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -5.602759251315469e-16,
+          -7.930000305175781,
+          0.16500000655651093
+        ],
+        "center": [
+          0.0,
+          -9.070000171661377,
+          0.16500001400709152
+        ],
+        "dimensions": [
+          0.9800000190734863,
+          2.2799997329711914,
+          0.24000002443790436
+        ],
+        "bbox_min": [
+          -0.49000000953674316,
+          -10.210000038146973,
+          0.04500000178813934
+        ],
+        "bbox_max": [
+          0.49000000953674316,
+          -7.930000305175781,
+          0.2850000262260437
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "flat_handle_core",
+        "child": "wooden_grip_section",
+        "relation": "DIRECTED",
+        "line": 426,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -5.602759251315469e-16,
+          -7.930000305175781,
+          0.16500000655651093
+        ],
+        "anchor_b": [
+          -5.602759251315469e-16,
+          -7.930000305175781,
+          0.16500000655651093
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "flat_handle_core",
+            "child": "wooden_grip_section",
+            "source": "parent_assignment",
+            "line": 426
+          },
+          {
+            "parent": "flat_handle_core",
+            "child": "wooden_grip_section",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 465,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -5.602759251315469e-16,
+              -7.930000305175781,
+              0.16500000655651093
+            ],
+            "parent_anchor_world": [
+              -5.602759251315469e-16,
+              -7.930000305175781,
+              0.16500000655651093
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "flat_handle_core",
+            "child": "wooden_grip_section",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "pan_body",
+        "child": "flat_handle_core",
+        "relation": "DIRECTED",
+        "line": 426,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -5.602759251315469e-16,
+          -3.049999952316284,
+          0.16500000655651093
+        ],
+        "anchor_b": [
+          -5.602759251315469e-16,
+          -3.049999952316284,
+          0.16500000655651093
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "pan_body",
+            "child": "flat_handle_core",
+            "source": "parent_assignment",
+            "line": 426
+          },
+          {
+            "parent": "pan_body",
+            "child": "flat_handle_core",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 458,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -5.602759251315469e-16,
+              -3.049999952316284,
+              0.16500000655651093
+            ],
+            "parent_anchor_world": [
+              -5.602759251315469e-16,
+              -3.049999952316284,
+              0.16500000655651093
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "pan_body",
+            "child": "flat_handle_core",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "nodes": 3,
+      "edges": 2,
+      "relations": {
+        "DIRECTED": 2
+      },
+      "directed_edges": 2,
+      "runtime_directed_edges": 2,
+      "shared_anchor_edges": 2,
+      "estimated_anchor_edges": 0,
+      "geometric_anchor_candidates": 2,
+      "unverified_anchor_candidates": 0,
+      "misaligned_anchor_edges": 0
+    },
+    "source_bounds": {
+      "min": [
+        -3.2249999046325684,
+        -10.210000038146973,
+        -0.3700000047683716
+      ],
+      "max": [
+        3.2249999046325684,
+        3.2249999046325684,
+        0.5350000262260437
+      ]
+    },
+    "scene_extent": 13.434999942779541,
+    "contact_threshold": 0.33587499856948855,
+    "shared_anchor_tolerance": 0.33587499856948855,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "flat_handle_core",
+        "pan_body",
+        "wooden_grip_section"
+      ],
+      "scale_overrides": {
+        "flat_handle_core": 1.6
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · GPT-5.5",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gpt5.5/Pan_seed0/Pan_seed0.py",
+    "source_sha256": "373dc95c0438c8ba538bb71f1ef7a8d7075521d5b1b123d5b62dbeece20c13d4",
+    "source_size": 15345,
+    "glb_sha256": "9470bdb54c9967da1ea9ffe2e3625eadc5024dc257132189cb3d5fb227d4a103",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|flat_handle_core|scale": 1.6
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "child-1.6",
+      "side": "child",
+      "part_ids": [
+        "flat_handle_core"
+      ],
+      "parameter": "scale",
+      "scale": 1.6,
+      "params": {
+        "part_param|flat_handle_core|scale": 1.6
+      },
+      "paper_parent_ids": [
+        "pan_body"
+      ],
+      "paper_child_ids": [
+        "flat_handle_core"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "dimensions": [
+        {
+          "id": "flat_handle_core",
+          "part_id": "flat_handle_core",
+          "before": [
+            1.2853715419769287,
+            3.1142547130584717,
+            0.1599999964237213
+          ],
+          "after": [
+            2.059946298599243,
+            5.049474239349365,
+            0.25600001215934753
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "pan_body",
+          "child": "flat_handle_core",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": true,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": true,
+          "runtime_parent_part_id": "pan_body",
+          "runtime_child_part_id": "flat_handle_core"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.0,
+      0.3700000122189522,
+      -3.4925001561641693
+    ],
+    "mesh_bbox_max_error_before_translation": 3.4925003051757812,
+    "mesh_bbox_max_error_after_translation": 1.4901161193847656e-07
+  }
+}

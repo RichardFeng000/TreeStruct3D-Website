@@ -1,0 +1,2309 @@
+{
+  "schema_version": 1,
+  "source_manifest": "docs/paper-demo-cases.json",
+  "source_manifest_sha256": "7dcb2d6816d920af4c42379019ed56c6f534cbb2274ddc672b180b64fd85a931",
+  "path_base": "Image URLs are relative to public/explorer. Source paths are relative to the research repository.",
+  "copy_mode": "Unmodified source PNG bytes; no resampling, recompression, or image edits.",
+  "edit_roles": "Parent and child are paper edit roles, which may differ from Blender object parenting. Repeated part IDs may represent multiple instances.",
+  "validation_scope": "Historical 0.8/1.2 checks do not certify the displayed 0.4/1.6 stress states; retain each case's recorded scope.",
+  "case_count": 20,
+  "tree_render_count": 100,
+  "baseline_render_count": 20,
+  "total_render_bytes": 9570142,
+  "dimensions": {
+    "420x420": 120
+  },
+  "cases": [
+    {
+      "id": "paper-gpt-5-5-crab",
+      "provider": "GPT-5.5",
+      "provider_slug": "gpt-5-5",
+      "label": "Crab",
+      "case": "Crab_seed0",
+      "group": "main",
+      "source_figure": "figures/figure-1-controlled-editing.png",
+      "parent_label": "carapace",
+      "child_label": "walking leg",
+      "parent_ids": [
+        "carapace"
+      ],
+      "child_ids": [
+        "walking_leg"
+      ],
+      "source_script": "treestruct3d_results/gpt5.5/Crab_seed0/Crab_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gpt5_5_all172/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "matching_edge_found",
+        "checked_parent_id": "carapace",
+        "checked_child_id": "walking_leg",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "scope": "The matching semantic attachment at default and independent parent/child edits of 0.8 and 1.2; not the displayed 0.4/1.6 stress edits."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-crab/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 92999,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_5/Crab_seed0/default.png",
+            "sha256": "57fa2143ebd3f923ff9470ebc273fec91804fa77f031e1e58157ab69a71129e1"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-crab/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 75705,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_5/Crab_seed0/parent_0p4.png",
+            "sha256": "0760b2410dd67495ec890645b30f9341eff06266ebf2a479e2f79a2593816e42"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-crab/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 115592,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_5/Crab_seed0/parent_1p6.png",
+            "sha256": "54530f16e26757b907a9568825da175732b5972c79eb97e66a1be87356f35454"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-crab/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 83712,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_5/Crab_seed0/child_0p4.png",
+            "sha256": "000ca2e7fc76eb2690f5958761af499903d1f878b66c03c08e27b36635105298"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-crab/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 104716,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_5/Crab_seed0/child_1p6.png",
+            "sha256": "29ab38eb29881a8bec2e24aae197b02c97c79b19942202d422a7732ddea46c35"
+          }
+        ]
+      },
+      "baseline": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-crab/baseline/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 107175,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_5/Crab_seed0/default.png",
+            "sha256": "47b3979fcaf09bdca8ea470f99d5299718db191e9c558e8af49bdf6de0a485f5"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-crab/baseline/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 94030,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_5/Crab_seed0/parent_0p4.png",
+            "sha256": "ff4b284c5800bee9c791c02be0bacf4f896848756dc4039d56d13cda93eea262"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-crab/baseline/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 118074,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_5/Crab_seed0/parent_1p6.png",
+            "sha256": "376bb2f44e9fe4d6da5ca9badc8f08784cf0cc4a1062fcac9e0b5fcd30f838e5"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-crab/baseline/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 98422,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_5/Crab_seed0/child_0p4.png",
+            "sha256": "dc20537c0ba39ba7133f5a7b67dd0779b4f43af05df8dee35ac579868870d204"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-crab/baseline/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 114459,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_5/Crab_seed0/child_1p6.png",
+            "sha256": "329b26e3af9c0c1253093d95e67cc1db38bde544540c60e38be47ead61ee4774"
+          }
+        ],
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "note": "These Figure 1 baseline renders use named object-group edits after program execution, with the recorded compatibility changes. They are not PART_PARAMS-based regeneration or the quantitative baseline literal-edit protocol.",
+        "source_script": "3dcodebench_results/gpt5.5/Crab_seed0/Crab_seed0.py"
+      }
+    },
+    {
+      "id": "paper-gpt-5-6-sol-lobster",
+      "provider": "GPT-5.6 Sol",
+      "provider_slug": "gpt-5-6-sol",
+      "label": "Lobster",
+      "case": "Lobster_seed0",
+      "group": "main",
+      "source_figure": "figures/figure-1-controlled-editing.png",
+      "parent_label": "cephalothorax",
+      "child_label": "crusher claw",
+      "parent_ids": [
+        "cephalothorax"
+      ],
+      "child_ids": [
+        "crusher_chela"
+      ],
+      "source_script": "treestruct3d_results/gpt5.6_sol/Lobster_seed0/Lobster_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gpt5_6_sol_all172_v2/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "matching_edge_found",
+        "checked_parent_id": "cephalothorax",
+        "checked_child_id": "crusher_chela",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "scope": "The matching semantic attachment at default and independent parent/child edits of 0.8 and 1.2; not the displayed 0.4/1.6 stress edits."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 88073,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_6_sol/Lobster_seed0/default.png",
+            "sha256": "aa0d6c23ee0ec57a16ce7db86f253d5f6b7774ce362dd387b74d004aca696222"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 79621,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_6_sol/Lobster_seed0/parent_0p4.png",
+            "sha256": "d30e52b5f056dcf8a8918e5e2d4b775269ead1959ddef67caaa0eb647045a63b"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 98305,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_6_sol/Lobster_seed0/parent_1p6.png",
+            "sha256": "982e0808d7e4fc3dbd5fdb502d4ab9ac0b401de0db9538ef05075016cd2f079d"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 82805,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_6_sol/Lobster_seed0/child_0p4.png",
+            "sha256": "f229d93b1aed7ea3bfc6cda3e530b3a19527a90ce192212afd977a476e2ad82a"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 96697,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_6_sol/Lobster_seed0/child_1p6.png",
+            "sha256": "9233a1c4111a27608d1535ceab796336dd95971f66f3ff8528d813ce20bf4ae3"
+          }
+        ]
+      },
+      "baseline": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/baseline/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 94612,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_6_sol/Lobster_seed0/default.png",
+            "sha256": "36dcc76da1ac9fb2c8e034374fe4709bcc8d908aa01ad87b7ac53f1897f2fa48"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/baseline/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 92972,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_6_sol/Lobster_seed0/parent_0p4.png",
+            "sha256": "33fce2e72ae060f5c76c80a34ffe5c13e5cd8a140061c705b3f00282286e99c5"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/baseline/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 91198,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_6_sol/Lobster_seed0/parent_1p6.png",
+            "sha256": "cb3aea35a09824afb4063c8fac3fc1ff0e9e48f7078c4510502b21ee1827e9d3"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/baseline/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 90620,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_6_sol/Lobster_seed0/child_0p4.png",
+            "sha256": "a2790d997076a24cac38c5283e6cec1960dfd99b9632af8558737d580e7c8cd1"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-lobster/baseline/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 98036,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_6_sol/Lobster_seed0/child_1p6.png",
+            "sha256": "633836a8eaebbd113ae2dfb245b6e551c3ee33b09ac6da42ae5bdb9862e88cde"
+          }
+        ],
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "note": "These Figure 1 baseline renders use named object-group edits after program execution, with the recorded compatibility changes. They are not PART_PARAMS-based regeneration or the quantitative baseline literal-edit protocol.",
+        "source_script": "3dcodebench_results/gpt5.6_sol/Lobster_seed0/Lobster_seed0.py"
+      }
+    },
+    {
+      "id": "paper-gemini-3-1-pro-dragonfly",
+      "provider": "Gemini 3.1 Pro",
+      "provider_slug": "gemini-3-1-pro",
+      "label": "Dragonfly",
+      "case": "Dragonfly_seed0",
+      "group": "main",
+      "source_figure": "figures/figure-1-controlled-editing.png",
+      "parent_label": "thorax",
+      "child_label": "abdomen",
+      "parent_ids": [
+        "thorax"
+      ],
+      "child_ids": [
+        "abdomen"
+      ],
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/Dragonfly_seed0/Dragonfly_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gemini3_1_pro_all172_v2/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "matching_edge_found",
+        "checked_parent_id": "thorax",
+        "checked_child_id": "abdomen",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "scope": "The matching semantic attachment at default and independent parent/child edits of 0.8 and 1.2; not the displayed 0.4/1.6 stress edits."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 90243,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_1_pro/Dragonfly_seed0/default.png",
+            "sha256": "760481f2fa8e14ec68d3432d2dbc819f3e27fb7ca22939a0cf8d3c37fdc4f7be"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 85243,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_1_pro/Dragonfly_seed0/parent_0p4.png",
+            "sha256": "4c5db4d59329af7f00c0aa7d82971620ea787f2c8e217f7d98794584bf9b9aaa"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 94783,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_1_pro/Dragonfly_seed0/parent_1p6.png",
+            "sha256": "c689c5d13d0629f98734cb751763dfc09fb772fbacc0d539a53ea41f51fcfa27"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 84473,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_1_pro/Dragonfly_seed0/child_0p4.png",
+            "sha256": "fe4cdb1294f6fc9f5bdb7bba511b807fbaa2de75c956845d00edeb543f5d064f"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 98141,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_1_pro/Dragonfly_seed0/child_1p6.png",
+            "sha256": "bff7d25545b39fc25d62d59b1103f88b3c6ff217c6777205173d61f8db598617"
+          }
+        ]
+      },
+      "baseline": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/baseline/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 63492,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_1_pro/Dragonfly_seed0/default.png",
+            "sha256": "0a69fcab95309756b2b4cccbad315b86e5e8b25f8ba0082ca1d922634f6777b2"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/baseline/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 63482,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_1_pro/Dragonfly_seed0/parent_0p4.png",
+            "sha256": "751e6b6feeba96a22ec0ad00af5beffba44ddeeb47433e0ad8332eec529376fb"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/baseline/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 63864,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_1_pro/Dragonfly_seed0/parent_1p6.png",
+            "sha256": "0b33a514a4eecc4c0d30a6bf94d05ec730e89c0a26c00f14ab8382d196842b54"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/baseline/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 61284,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_1_pro/Dragonfly_seed0/child_0p4.png",
+            "sha256": "2a6c6b78689d6a948406e7be86c4b1a2a46511c9900405088618c6ca3a7c50ce"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-dragonfly/baseline/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 65787,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_1_pro/Dragonfly_seed0/child_1p6.png",
+            "sha256": "dd63e75ea673768157b85bf09b134df42137ee58c7988e39c15cbb4edc032692"
+          }
+        ],
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "note": "These Figure 1 baseline renders use named object-group edits after program execution, with the recorded compatibility changes. They are not PART_PARAMS-based regeneration or the quantitative baseline literal-edit protocol.",
+        "source_script": "3dcodebench_results/gemeni_3.1_pro/Dragonfly_seed0/Dragonfly_seed0.py"
+      }
+    },
+    {
+      "id": "paper-gemini-3-5-flash-chameleon",
+      "provider": "Gemini 3.5 Flash",
+      "provider_slug": "gemini-3-5-flash",
+      "label": "Chameleon",
+      "case": "Chameleon_seed0",
+      "group": "main",
+      "source_figure": "figures/figure-1-controlled-editing.png",
+      "parent_label": "body",
+      "child_label": "legs",
+      "parent_ids": [
+        "torso_body"
+      ],
+      "child_ids": [
+        "forelimb_left",
+        "forelimb_right",
+        "hindlimb_left",
+        "hindlimb_right"
+      ],
+      "source_script": "treestruct3d_results/gemini_3.5_flash/Chameleon_seed0/Chameleon_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gemini3_5_flash_all172_v2/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "not_mapped_for_displayed_group",
+        "checks": null,
+        "scope": "The main-figure Chameleon uses a grouped four-limb edit override. No exact body-to-legs row was found in this per_edge.csv; do not infer validation for that grouped display edit."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 84004,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_5_flash/Chameleon_seed0/default.png",
+            "sha256": "bf1185f2ffd33cce9f812fd481d6f0b9126f3fc48225647cac8890b381b1a531"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 70169,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_5_flash/Chameleon_seed0/parent_0p4.png",
+            "sha256": "5878919f9ce755750d03b9424a07fd8dc83c8b11ec66021a500152d228590690"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 101326,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_5_flash/Chameleon_seed0/parent_1p6.png",
+            "sha256": "351863a735f3fbdb9f699f4553a9dbfcedfdd02fad0770c9b3a4fd48bf1eff40"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 80166,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_5_flash/Chameleon_seed0/child_0p4.png",
+            "sha256": "53148d60b9f458a387e8c0b347695d38b164147b471835327593ff2b4fec3f8e"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 89092,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_5_flash/Chameleon_seed0/child_1p6.png",
+            "sha256": "105edbb3bf6cfe784366905682a9065b1b6f917d629158d2e3eb57d5a908e191"
+          }
+        ]
+      },
+      "baseline": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/baseline/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 70821,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_5_flash/Chameleon_seed0/default.png",
+            "sha256": "cf8c656451404731ce869d93d8e1db0ff7f92626ce47b309b0edc26548ef27ab"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/baseline/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 59124,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_5_flash/Chameleon_seed0/parent_0p4.png",
+            "sha256": "8f6df16442ec1ea30535af4d49ad3e8b7d19b6d15a9e84ec1efc8f4e9dde5bf8"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/baseline/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 91196,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_5_flash/Chameleon_seed0/parent_1p6.png",
+            "sha256": "741b7564d99fbe779b2947e008e6a9357a9b4cbdae333f5f885e2e99c45e7930"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/baseline/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 68674,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_5_flash/Chameleon_seed0/child_0p4.png",
+            "sha256": "d719d82ea4eaba14c3f84417b9f43034a651b7d1fdbe0ccdda338fd979a6a090"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-chameleon/baseline/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 73782,
+            "source_image": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_5_flash/Chameleon_seed0/child_1p6.png",
+            "sha256": "1dc96d405053476286da9379481ff8d5698be228d7adb4e342779170de7d362a"
+          }
+        ],
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "note": "These Figure 1 baseline renders use named object-group edits after program execution, with the recorded compatibility changes. They are not PART_PARAMS-based regeneration or the quantitative baseline literal-edit protocol.",
+        "source_script": "3dcodebench_results/gemeni_3.5_flash/Chameleon_seed0/Chameleon_seed0.py"
+      }
+    },
+    {
+      "id": "paper-gpt-5-5-hollow-tree",
+      "provider": "GPT-5.5",
+      "provider_slug": "gpt-5-5",
+      "label": "Hollow Tree",
+      "case": "HollowTree_seed0",
+      "group": "appendix-6a",
+      "source_figure": "figures/appendix-figure-6a-gpt-5-5.png",
+      "parent_label": "trunk",
+      "child_label": "primary branch",
+      "parent_ids": [
+        "main_trunk"
+      ],
+      "child_ids": [
+        "branch_and_twig_network"
+      ],
+      "source_script": "treestruct3d_results/gpt5.5/HollowTree_seed0/HollowTree_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-hollow-tree/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 66641,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/HollowTree_seed0/default.png",
+            "sha256": "87a61df12803bf226d905fb059f80ec4de236788150ec3309e2ea350c8bab24e"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-hollow-tree/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 59936,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/HollowTree_seed0/parent_0p4.png",
+            "sha256": "50be933683b0c2e714229962d278a6fd0b7fb430bea4e31c39c4cf657c2c9f01"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-hollow-tree/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 75070,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/HollowTree_seed0/parent_1p6.png",
+            "sha256": "ef949afa18c551167a21a4348f818316a6468e98aafe247c50774d30d14e0262"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-hollow-tree/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 53128,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/HollowTree_seed0/child_0p4.png",
+            "sha256": "bf451e5aa8af0af866b904b8262530b3cde3d62a7284bf929bd0ed7ab6ea4102"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-hollow-tree/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 76502,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/HollowTree_seed0/child_1p6.png",
+            "sha256": "143863ad60a6ad056103a024f7273e4ad8b465f0b772246e34902f69019cb75c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gpt-5-5-pan",
+      "provider": "GPT-5.5",
+      "provider_slug": "gpt-5-5",
+      "label": "Pan",
+      "case": "Pan_seed0",
+      "group": "appendix-6a",
+      "source_figure": "figures/appendix-figure-6a-gpt-5-5.png",
+      "parent_label": "pan body",
+      "child_label": "handle",
+      "parent_ids": [
+        "pan_body"
+      ],
+      "child_ids": [
+        "flat_handle_core"
+      ],
+      "source_script": "treestruct3d_results/gpt5.5/Pan_seed0/Pan_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-pan/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 54493,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Pan_seed0/default.png",
+            "sha256": "3ff7bd6bc01bf946f3131c3a2d3401d66e8a9cc6aca7640ab7ea8a4c7be06d8f"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-pan/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 46052,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Pan_seed0/parent_0p4.png",
+            "sha256": "d89ae871a36c71b6fd1fe8bf299be2c224c88034dafecc70cca6e1379f1b3f11"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-pan/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 64606,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Pan_seed0/parent_1p6.png",
+            "sha256": "b400109cf8e0008b7c3f1164b46882002a7ff00fa47b0cf60635c817c968dc6e"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-pan/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 53428,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Pan_seed0/child_0p4.png",
+            "sha256": "c8fb043611aabf02b4b08e36fd46937be4d2ec69b39b941624bae2f96fca8a48"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-pan/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 55605,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Pan_seed0/child_1p6.png",
+            "sha256": "f825fc4c67ad7d033f0fb026378bebbd6e66570fa2a2b3401a10d26d43d2426d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gpt-5-5-bed",
+      "provider": "GPT-5.5",
+      "provider_slug": "gpt-5-5",
+      "label": "Bed",
+      "case": "Bed_seed0",
+      "group": "appendix-6a",
+      "source_figure": "figures/appendix-figure-6a-gpt-5-5.png",
+      "parent_label": "bed frame",
+      "child_label": "headboard",
+      "parent_ids": [
+        "wooden_bed_frame_base"
+      ],
+      "child_ids": [
+        "decorative_headboard"
+      ],
+      "source_script": "treestruct3d_results/gpt5.5/Bed_seed0/Bed_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-bed/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 83830,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Bed_seed0/default.png",
+            "sha256": "6b8228984f319fd5fb344e72361cb878246dcfc7e08b18820050f3b289f8d1ad"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-bed/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 58370,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Bed_seed0/parent_0p4.png",
+            "sha256": "5716236318b30b62057c6b9ea62745910f76050b6f6131147d879a737280119e"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-bed/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 114830,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Bed_seed0/parent_1p6.png",
+            "sha256": "f595d24bf12e1524ad1e1212d990c7e7c54731f0746f9eb789321df9970c701f"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-bed/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 74143,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Bed_seed0/child_0p4.png",
+            "sha256": "99e2365a88c3c4ea9e243abe40b76eb32d170274d9b83cbf29919d114b0d98c3"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-bed/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 97697,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Bed_seed0/child_1p6.png",
+            "sha256": "b0dd2430b444d1d6d2beaffcde1a26a2832511458610f3abfdcb11f0285aef6b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gpt-5-5-floor-lamp",
+      "provider": "GPT-5.5",
+      "provider_slug": "gpt-5-5",
+      "label": "Floor Lamp",
+      "case": "FloorLamp_seed0",
+      "group": "appendix-6a",
+      "source_figure": "figures/appendix-figure-6a-gpt-5-5.png",
+      "parent_label": "base",
+      "child_label": "pole",
+      "parent_ids": [
+        "round_base"
+      ],
+      "child_ids": [
+        "central_pole"
+      ],
+      "source_script": "treestruct3d_results/gpt5.5/FloorLamp_seed0/FloorLamp_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-5-floor-lamp/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 64650,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/FloorLamp_seed0/default.png",
+            "sha256": "2dfbdbbd711e94c82d2a8e786a7b58f27a825908fbc699e71576abad04187c1a"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-5-floor-lamp/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 60229,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/FloorLamp_seed0/parent_0p4.png",
+            "sha256": "057a83d7e1a444037ca570f8cda39f8e616984e75fe2f2c2293295c82fcf5d65"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-5-floor-lamp/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 70365,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/FloorLamp_seed0/parent_1p6.png",
+            "sha256": "3e73f03c6adf4923a47a5029546c8bba0b756ffbccadb914fad1b9132ed51760"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-5-floor-lamp/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 58188,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/FloorLamp_seed0/child_0p4.png",
+            "sha256": "4b7509031bde42119fc98be47af514abe60d9d85a8aab95b03bbf504ff48622e"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-5-floor-lamp/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 70878,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/FloorLamp_seed0/child_1p6.png",
+            "sha256": "16bfad11d28ca03337a19d1c977e0e0966e4038bc51d6627bdd8750002f4c622"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gpt-5-6-sol-toilet",
+      "provider": "GPT-5.6 Sol",
+      "provider_slug": "gpt-5-6-sol",
+      "label": "Toilet",
+      "case": "Toilet_seed0",
+      "group": "appendix-6b",
+      "source_figure": "figures/appendix-figure-6b-gpt-5-6-sol.png",
+      "parent_label": "toilet bowl",
+      "child_label": "water tank",
+      "parent_ids": [
+        "bowl_body"
+      ],
+      "child_ids": [
+        "water_tank"
+      ],
+      "source_script": "treestruct3d_results/gpt5.6_sol/Toilet_seed0/Toilet_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-toilet/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 75206,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Toilet_seed0/default.png",
+            "sha256": "bd2efccab7c6b2d6e79ce2f517c24127128ba35aeeb6a28440954d6385467f97"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-toilet/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 67173,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Toilet_seed0/parent_0p4.png",
+            "sha256": "5552102f33781d31dc9d4d056e1f173495eccf0432360bcc0f2d032551d8557f"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-toilet/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 88561,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Toilet_seed0/parent_1p6.png",
+            "sha256": "401f241b925cc26cf3efcbd5e35e5d566ecda2f2f5543f96f544804459213c39"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-toilet/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 70580,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Toilet_seed0/child_0p4.png",
+            "sha256": "c0dbd28a2d482eb9d354fad35acd5f785196736ed545ca7cea16f9d30ec36b02"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-toilet/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 83848,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Toilet_seed0/child_1p6.png",
+            "sha256": "f56fdd5954c5f30da81f89e0940cd4c46437f6a00a5d24c969fc73b8d41cd5eb"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gpt-5-6-sol-spiny-lobster",
+      "provider": "GPT-5.6 Sol",
+      "provider_slug": "gpt-5-6-sol",
+      "label": "Spiny Lobster",
+      "case": "SpinyLobster_seed0",
+      "group": "appendix-6b",
+      "source_figure": "figures/appendix-figure-6b-gpt-5-6-sol.png",
+      "parent_label": "cephalothorax",
+      "child_label": "antenna",
+      "parent_ids": [
+        "cephalothorax_shell"
+      ],
+      "child_ids": [
+        "long_antenna"
+      ],
+      "source_script": "treestruct3d_results/gpt5.6_sol/SpinyLobster_seed0/SpinyLobster_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-spiny-lobster/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 70130,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/SpinyLobster_seed0/default.png",
+            "sha256": "15d31373cef7fd27533445ebda85d2e8e88932f3c62c3a2c3e90b2c76447ec63"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-spiny-lobster/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 64888,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/SpinyLobster_seed0/parent_0p4.png",
+            "sha256": "0d9748d96879a3d731707dcfdb29b427022f684978c232a056268f6f1f29ba0c"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-spiny-lobster/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 76008,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/SpinyLobster_seed0/parent_1p6.png",
+            "sha256": "b5047186884993a27f3a14082df11cb9a893b8613b462dafd697b5a5112a9d0d"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-spiny-lobster/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 61104,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/SpinyLobster_seed0/child_0p4.png",
+            "sha256": "ade87d8c11c279252b74522b8cbec6f91f4e33c09caa07735f56b3eecb2cac94"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-spiny-lobster/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 81056,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/SpinyLobster_seed0/child_1p6.png",
+            "sha256": "af50d33d532f0df2fa7444cacb011d874a9f3a92b91da449f5c65451d858871b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gpt-5-6-sol-monitor",
+      "provider": "GPT-5.6 Sol",
+      "provider_slug": "gpt-5-6-sol",
+      "label": "Monitor",
+      "case": "Monitor_seed0",
+      "group": "appendix-6b",
+      "source_figure": "figures/appendix-figure-6b-gpt-5-6-sol.png",
+      "parent_label": "pedestal arm",
+      "child_label": "base stand",
+      "parent_ids": [
+        "pedestal_arm"
+      ],
+      "child_ids": [
+        "base_stand"
+      ],
+      "source_script": "treestruct3d_results/gpt5.6_sol/Monitor_seed0/Monitor_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-monitor/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 76766,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Monitor_seed0/default.png",
+            "sha256": "5f49c19d0c38d2f8937bf04cfbcc64959b29fbe6eea3936ed850a844acdd1f54"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-monitor/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 69850,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Monitor_seed0/parent_0p4.png",
+            "sha256": "5b1e49410f5d95a1d5ced131dd5b34d77223c233c8c379ebfeb5962875a38b32"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-monitor/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 82044,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Monitor_seed0/parent_1p6.png",
+            "sha256": "823255fb83a150185855463a59922e0da56ca8a3b0e7bc6c52850657a754c96d"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-monitor/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 69262,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Monitor_seed0/child_0p4.png",
+            "sha256": "1dc1fa9f485d8c83e3b5bcd361f4c7734ef0da71de4cb0599aeef697dfc06b71"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-monitor/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 87697,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Monitor_seed0/child_1p6.png",
+            "sha256": "ddbd044e21fe035df3849904d8a3ba2b3ef573650473aefbf3858ca0e7da40cb"
+          }
+        ]
+      },
+      "runtime_mapping_note": "The paper edits pedestal_arm as parent and base_stand as child; a separate native export audit found Blender object parenting runs in the opposite direction. Preserve these as paper edit roles and read runtime parent links from the actual scene."
+    },
+    {
+      "id": "paper-gpt-5-6-sol-standing-sink",
+      "provider": "GPT-5.6 Sol",
+      "provider_slug": "gpt-5-6-sol",
+      "label": "Standing Sink",
+      "case": "StandingSink_seed0",
+      "group": "appendix-6b",
+      "source_figure": "figures/appendix-figure-6b-gpt-5-6-sol.png",
+      "parent_label": "basin",
+      "child_label": "faucet",
+      "parent_ids": [
+        "basin_body"
+      ],
+      "child_ids": [
+        "faucet_handle"
+      ],
+      "source_script": "treestruct3d_results/gpt5.6_sol/StandingSink_seed0/StandingSink_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gpt-5-6-sol-standing-sink/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 85288,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/StandingSink_seed0/default.png",
+            "sha256": "91eb56047d6ff19e5a732571ec7a75985a7137fc9f73e99953a747a7732b4190"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-standing-sink/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 65971,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/StandingSink_seed0/parent_0p4.png",
+            "sha256": "f83e9af31a79ba7a21cab88537f346ba98d0c8118ae9b22989da7e07556513f9"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-standing-sink/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 114597,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/StandingSink_seed0/parent_1p6.png",
+            "sha256": "1a7263b063a2947af62280490c62e50aa8b7d21aca54c6feaa5ff06b6b6e4665"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gpt-5-6-sol-standing-sink/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 84286,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/StandingSink_seed0/child_0p4.png",
+            "sha256": "8e7c8b498efb1eb2b30ed96520fa5be4c0d8e3fe48c124b5ba792f55654607b4"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gpt-5-6-sol-standing-sink/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 86867,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/StandingSink_seed0/child_1p6.png",
+            "sha256": "edb318b7473c12f28458fd8d6cec58b9813b2f33069eaed9567c7d40b5a4bd2c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gemini-3-1-pro-bed-frame",
+      "provider": "Gemini 3.1 Pro",
+      "provider_slug": "gemini-3-1-pro",
+      "label": "Bed Frame",
+      "case": "BedFrame_seed0",
+      "group": "appendix-6c",
+      "source_figure": "figures/appendix-figure-6c-gemini-3-1-pro.png",
+      "parent_label": "bed frame",
+      "child_label": "headboard posts",
+      "parent_ids": [
+        "bed_frame_base"
+      ],
+      "child_ids": [
+        "headboard"
+      ],
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/BedFrame_seed0/BedFrame_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-bed-frame/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 80357,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/BedFrame_seed0/default.png",
+            "sha256": "15554378173af83c032ab691462cb3395bf40b81c57ae18566725672f7385a05"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-bed-frame/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 57977,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/BedFrame_seed0/parent_0p4.png",
+            "sha256": "ca1f23d92e9cfafdd9e1d28299dc80a23ec35c87822a01a4aab5421a81667d28"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-bed-frame/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 106363,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/BedFrame_seed0/parent_1p6.png",
+            "sha256": "1e0cbd05ac159930dd098946fb814306ebeb12d547e9cce9bdc00d499d121e82"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-bed-frame/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 78399,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/BedFrame_seed0/child_0p4.png",
+            "sha256": "daa9d987010a942482b473493f5dbb45c3cbb85ebc3ffa24beb25b4fbe730469"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-bed-frame/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 86683,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/BedFrame_seed0/child_1p6.png",
+            "sha256": "e97736758b1a7fa25d1f89ac94b26c513300b1f8d03c5369689f1f070334e76e"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gemini-3-1-pro-cabinet-drawer-base",
+      "provider": "Gemini 3.1 Pro",
+      "provider_slug": "gemini-3-1-pro",
+      "label": "Cabinet Drawer Base",
+      "case": "CabinetDrawerBase_seed0",
+      "group": "appendix-6c",
+      "source_figure": "figures/appendix-figure-6c-gemini-3-1-pro.png",
+      "parent_label": "bottom panel",
+      "child_label": "front panel",
+      "parent_ids": [
+        "bottom_panel"
+      ],
+      "child_ids": [
+        "front_panel"
+      ],
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/CabinetDrawerBase_seed0/CabinetDrawerBase_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-cabinet-drawer-base/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 102031,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CabinetDrawerBase_seed0/default.png",
+            "sha256": "f76c71bdc04770ee258c28f8a8ee9dd16368905f3cf577d9d37e16d0981188f4"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-cabinet-drawer-base/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 64049,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CabinetDrawerBase_seed0/parent_0p4.png",
+            "sha256": "5c90851f0132e4fcaa47e7d91614b6719bdb1a78a5f7ba2835f7253a5a438ba8"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-cabinet-drawer-base/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 145186,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CabinetDrawerBase_seed0/parent_1p6.png",
+            "sha256": "93fdd48fdc9c4f8f79fb38fa14b59ab04e5bd62076bdd351eabc3793a795fbe1"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-cabinet-drawer-base/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 102043,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CabinetDrawerBase_seed0/child_0p4.png",
+            "sha256": "5cb5252ea18f3d7214fc669db02cc02a8271dab12708415e901e351f10ada36d"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-cabinet-drawer-base/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 101938,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CabinetDrawerBase_seed0/child_1p6.png",
+            "sha256": "ccfc2d541241bd1632d6720f06982582d1ff25891edebef88a16e385a4b4a00a"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gemini-3-1-pro-coconut-tree",
+      "provider": "Gemini 3.1 Pro",
+      "provider_slug": "gemini-3-1-pro",
+      "label": "Coconut Tree",
+      "case": "CoconutTree_seed0",
+      "group": "appendix-6c",
+      "source_figure": "figures/appendix-figure-6c-gemini-3-1-pro.png",
+      "parent_label": "trunk",
+      "child_label": "crown base",
+      "parent_ids": [
+        "trunk"
+      ],
+      "child_ids": [
+        "crown_base"
+      ],
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/CoconutTree_seed0/CoconutTree_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-coconut-tree/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 71061,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CoconutTree_seed0/default.png",
+            "sha256": "e67731b2e1c3582d388c8c315aa4d46683136aac7637b0ff378087451477fd65"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-coconut-tree/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 63278,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CoconutTree_seed0/parent_0p4.png",
+            "sha256": "dcbf9aef729659152d7b742fc0ae8e6c849492dc406aa4eb52adcc97743a2b2a"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-coconut-tree/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 79061,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CoconutTree_seed0/parent_1p6.png",
+            "sha256": "a311608193db76be145b34a05c7ba60e32afaeba6a5e5fed02cf9fc71dae63e7"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-coconut-tree/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 70578,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CoconutTree_seed0/child_0p4.png",
+            "sha256": "73872f5c07c8d46fb34331e89bddc4fee9eebf53f44c722e83dac45f41533d27"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-coconut-tree/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 71447,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CoconutTree_seed0/child_1p6.png",
+            "sha256": "559380f96381e157bdf3c97aeb8fd0c3fe7e43aed0789e3a44953b6b6cb340a9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gemini-3-1-pro-pillar",
+      "provider": "Gemini 3.1 Pro",
+      "provider_slug": "gemini-3-1-pro",
+      "label": "Pillar",
+      "case": "Pillar_seed0",
+      "group": "appendix-6c",
+      "source_figure": "figures/appendix-figure-6c-gemini-3-1-pro.png",
+      "parent_label": "shaft",
+      "child_label": "capital",
+      "parent_ids": [
+        "shaft"
+      ],
+      "child_ids": [
+        "capital"
+      ],
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/Pillar_seed0/Pillar_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-1-pro-pillar/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 72810,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/Pillar_seed0/default.png",
+            "sha256": "2b9f1bdf9ea2caa9f1742f0e798bd71c2a489a5b60e48b834892eb5b77ba26ba"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-pillar/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 60838,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/Pillar_seed0/parent_0p4.png",
+            "sha256": "f119eed733d8740ded53fff7c66d513dc2f1a1480a6211d2438b7f077f6a5c14"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-pillar/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 88743,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/Pillar_seed0/parent_1p6.png",
+            "sha256": "f8e9cbcbdf7e3797d8c0d868a3087eafe5c637b7191f8f39e1de76cdb16cb4b0"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-1-pro-pillar/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 67596,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/Pillar_seed0/child_0p4.png",
+            "sha256": "b9c75bf32910ac2cb165993cb2b56b630f26ba443267d2fbdd0c5134722a71b9"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-1-pro-pillar/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 80099,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/Pillar_seed0/child_1p6.png",
+            "sha256": "6c1dfdd107b6ec85dae72dd0864ee7db7984c1f2bda1b650b06a379619d7a0e6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gemini-3-5-flash-fruit-pineapple",
+      "provider": "Gemini 3.5 Flash",
+      "provider_slug": "gemini-3-5-flash",
+      "label": "Fruit Pineapple",
+      "case": "FruitPineapple_seed0",
+      "group": "appendix-6d",
+      "source_figure": "figures/appendix-figure-6d-gemini-3-5-flash.png",
+      "parent_label": "pineapple body",
+      "child_label": "leaf crown",
+      "parent_ids": [
+        "fruit_body"
+      ],
+      "child_ids": [
+        "crown_leaf"
+      ],
+      "source_script": "treestruct3d_results/gemini_3.5_flash/FruitPineapple_seed0/FruitPineapple_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-fruit-pineapple/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 84586,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/FruitPineapple_seed0/default.png",
+            "sha256": "eeaa862ee06f6c4af339f9997786fd045637b3152264fb1e3ec1b20522e119c0"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-fruit-pineapple/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 67500,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/FruitPineapple_seed0/parent_0p4.png",
+            "sha256": "6c366359d1df466b0195ccc2f0419b8db5d6de6839df5dbd428567b87c3a303a"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-fruit-pineapple/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 108304,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/FruitPineapple_seed0/parent_1p6.png",
+            "sha256": "cad7b16d25ec3143f0bf1f513b862792bd8505a32d901b9fe056c57f63ceaf68"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-fruit-pineapple/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 67897,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/FruitPineapple_seed0/child_0p4.png",
+            "sha256": "d975a6c3911ac949d9d414c4bc599f58ab817dc9ca23684a111ae92639ca2434"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-fruit-pineapple/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 103794,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/FruitPineapple_seed0/child_1p6.png",
+            "sha256": "acef362eab506de001bb1d40609878ba4921493e2806a1581a9a8de96ea3b217"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gemini-3-5-flash-columnar-cactus",
+      "provider": "Gemini 3.5 Flash",
+      "provider_slug": "gemini-3-5-flash",
+      "label": "Columnar Cactus",
+      "case": "ColumnarCactus_seed0",
+      "group": "appendix-6d",
+      "source_figure": "figures/appendix-figure-6d-gemini-3-5-flash.png",
+      "parent_label": "main stem",
+      "child_label": "side arm",
+      "parent_ids": [
+        "main_stem"
+      ],
+      "child_ids": [
+        "side_arm"
+      ],
+      "source_script": "treestruct3d_results/gemini_3.5_flash/ColumnarCactus_seed0/ColumnarCactus_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-columnar-cactus/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 75783,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/ColumnarCactus_seed0/default.png",
+            "sha256": "5270344c7837477f923c602bc534e82dac41eaa30a17f4a717ddbbec42e3a1bc"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-columnar-cactus/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 57160,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/ColumnarCactus_seed0/parent_0p4.png",
+            "sha256": "8f60b8fb59ac4881a59a170c934e0560c243a20aef7ec985afa1232bc8c12456"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-columnar-cactus/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 96372,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/ColumnarCactus_seed0/parent_1p6.png",
+            "sha256": "5436b99ee448738233b2e470243448fed00822be3ed9e1c47f3ae6ad29eb338a"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-columnar-cactus/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 71865,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/ColumnarCactus_seed0/child_0p4.png",
+            "sha256": "261b2fd9e85ee7a7b8377e6cd2984b1ae978c4b4924ffcd72cc73cd2bc97e2c9"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-columnar-cactus/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 81170,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/ColumnarCactus_seed0/child_1p6.png",
+            "sha256": "e6e416e3085f8f6441d2103ec0e7c5b952d5972042c56e2d2c2f065139b579f0"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gemini-3-5-flash-veratrum-monocot",
+      "provider": "Gemini 3.5 Flash",
+      "provider_slug": "gemini-3-5-flash",
+      "label": "Veratrum Monocot",
+      "case": "VeratrumMonocot_seed0",
+      "group": "appendix-6d",
+      "source_figure": "figures/appendix-figure-6d-gemini-3-5-flash.png",
+      "parent_label": "flower stalk",
+      "child_label": "clustered florets",
+      "parent_ids": [
+        "flower_stalk"
+      ],
+      "child_ids": [
+        "floret"
+      ],
+      "source_script": "treestruct3d_results/gemini_3.5_flash/VeratrumMonocot_seed0/VeratrumMonocot_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-veratrum-monocot/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 69239,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/VeratrumMonocot_seed0/default.png",
+            "sha256": "2287da8fa573e7a5c4e358518d59ad29d36d3b25a9d41316d55a4732f414ea49"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-veratrum-monocot/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 56980,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/VeratrumMonocot_seed0/parent_0p4.png",
+            "sha256": "ac6c1839768f748ec597fe7b44419e4bfefe16b36eef95ecf3ca02cb857839c4"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-veratrum-monocot/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 82205,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/VeratrumMonocot_seed0/parent_1p6.png",
+            "sha256": "694a80168f09534b5a6307f9d29b11d5421871e248bc5fd8ba3a8275df6229a1"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-veratrum-monocot/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 64920,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/VeratrumMonocot_seed0/child_0p4.png",
+            "sha256": "fe1d90057b07240e4c90cceaceeb94b68ca3f7c0ebf104ae84f68739041a239e"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-veratrum-monocot/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 71887,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/VeratrumMonocot_seed0/child_1p6.png",
+            "sha256": "3ef30fd22b97f89cd7eb99b179603d970ccbdef2660fcb83c7330ead7bef957d"
+          }
+        ]
+      }
+    },
+    {
+      "id": "paper-gemini-3-5-flash-coffee-table",
+      "provider": "Gemini 3.5 Flash",
+      "provider_slug": "gemini-3-5-flash",
+      "label": "Coffee Table",
+      "case": "CoffeeTable_seed0",
+      "group": "appendix-6d",
+      "source_figure": "figures/appendix-figure-6d-gemini-3-5-flash.png",
+      "parent_label": "table top",
+      "child_label": "pedestal legs",
+      "parent_ids": [
+        "table_top"
+      ],
+      "child_ids": [
+        "pedestal_legs"
+      ],
+      "source_script": "treestruct3d_results/gemini_3.5_flash/CoffeeTable_seed0/CoffeeTable_seed0.py",
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "tree": {
+        "states": [
+          {
+            "id": "default",
+            "image": "paper-demos/paper-gemini-3-5-flash-coffee-table/tree/default.png",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 70531,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/CoffeeTable_seed0/default.png",
+            "sha256": "ed9901bc677917caeb857688720cd82f85c49f2295c1055205e0dd41e70cd319"
+          },
+          {
+            "id": "parent-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-coffee-table/tree/parent-0.4.png",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 66346,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/CoffeeTable_seed0/parent_0p4.png",
+            "sha256": "9beb8471e4b4350312628dc0889b55c0afeb25333ec46fa467da37a3d3577b99"
+          },
+          {
+            "id": "parent-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-coffee-table/tree/parent-1.6.png",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "width": 420,
+            "height": 420,
+            "bytes": 83824,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/CoffeeTable_seed0/parent_1p6.png",
+            "sha256": "1dfd12f7f7ebf10d6d091a37116ffcc756e5e92d11c1b803e4e9fe5bb33a6205"
+          },
+          {
+            "id": "child-0.4",
+            "image": "paper-demos/paper-gemini-3-5-flash-coffee-table/tree/child-0.4.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "width": 420,
+            "height": 420,
+            "bytes": 69236,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/CoffeeTable_seed0/child_0p4.png",
+            "sha256": "2b1832b7496ef570ab6ff230a3968b2e192a9064114cad7a0fa9b7175a5bab03"
+          },
+          {
+            "id": "child-1.6",
+            "image": "paper-demos/paper-gemini-3-5-flash-coffee-table/tree/child-1.6.png",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "width": 420,
+            "height": 420,
+            "bytes": 73214,
+            "source_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/CoffeeTable_seed0/child_1p6.png",
+            "sha256": "957dc980a5c3ed7b2227a932937969d70acae57107998b012c562de8462bcb75"
+          }
+        ]
+      }
+    }
+  ]
+}

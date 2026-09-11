@@ -1,0 +1,92 @@
+{
+  "id": "paper-gpt-5-6-sol-toilet",
+  "title": "Toilet",
+  "provider": "GPT-5.6 Sol",
+  "group": "appendix-6b",
+  "label": "Toilet_seed0",
+  "model": "Toilet_seed0/Toilet_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · GPT-5.6 Sol",
+  "parent": {
+    "ids": [
+      "bowl_body"
+    ],
+    "label": "toilet bowl"
+  },
+  "child": {
+    "ids": [
+      "water_tank"
+    ],
+    "label": "water tank"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gpt-5-6-sol-toilet/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-toilet/edits/default/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-toilet/edits/default/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-toilet/edits/default/mesh-map.json",
+      "bytes": 239756
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-6-sol-toilet/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-toilet/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-toilet/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-toilet/edits/parent-0.4/mesh-map.json",
+      "bytes": 239780
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-6-sol-toilet/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-toilet/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-toilet/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-toilet/edits/parent-1.6/mesh-map.json",
+      "bytes": 239756
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-6-sol-toilet/edits/child-0.4/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-toilet/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-toilet/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-toilet/edits/child-0.4/mesh-map.json",
+      "bytes": 239740
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-6-sol-toilet/edits/child-1.6/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-toilet/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-toilet/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-toilet/edits/child-1.6/mesh-map.json",
+      "bytes": 239756
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gpt-5-6-sol-toilet/edits/default/model.glb",
+    "snapshot": "paper-gpt-5-6-sol-toilet/edits/default/snapshot.json",
+    "provenance": "paper-gpt-5-6-sol-toilet/edits/default/provenance.json",
+    "mesh_map": "paper-gpt-5-6-sol-toilet/edits/default/mesh-map.json",
+    "bytes": 239756,
+    "parts": 6,
+    "shared_anchors": 5
+  }
+}

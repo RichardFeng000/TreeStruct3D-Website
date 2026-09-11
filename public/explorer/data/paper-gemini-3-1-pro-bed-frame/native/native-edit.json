@@ -1,0 +1,1447 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "bed_frame_base",
+      "part_id": "bed_frame_base",
+      "positions": {
+        "offset": 0,
+        "count": 204
+      }
+    },
+    {
+      "id": "footboard",
+      "part_id": "footboard",
+      "positions": {
+        "offset": 204,
+        "count": 195
+      }
+    },
+    {
+      "id": "headboard",
+      "part_id": "headboard",
+      "positions": {
+        "offset": 399,
+        "count": 195
+      }
+    },
+    {
+      "id": "leg",
+      "part_id": "leg",
+      "positions": {
+        "offset": 594,
+        "count": 195
+      }
+    },
+    {
+      "id": "leg.001",
+      "part_id": "leg",
+      "positions": {
+        "offset": 789,
+        "count": 195
+      }
+    },
+    {
+      "id": "leg.002",
+      "part_id": "leg",
+      "positions": {
+        "offset": 984,
+        "count": 195
+      }
+    },
+    {
+      "id": "leg.003",
+      "part_id": "leg",
+      "positions": {
+        "offset": 1179,
+        "count": 195
+      }
+    },
+    {
+      "id": "slat",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1374,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.001",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1401,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.002",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1428,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.003",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1455,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.004",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1482,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.005",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1509,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.006",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1536,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.007",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1563,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.008",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1590,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.009",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1617,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.010",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1644,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.011",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1671,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.012",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1698,
+        "count": 27
+      }
+    },
+    {
+      "id": "slat.013",
+      "part_id": "slat",
+      "positions": {
+        "offset": 1725,
+        "count": 27
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "bed_frame_base",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "bed_frame_base",
+              "delta": {
+                "offset": 1752,
+                "count": 204
+              }
+            },
+            {
+              "id": "footboard",
+              "delta": {
+                "offset": 1956,
+                "count": 195
+              }
+            },
+            {
+              "id": "headboard",
+              "delta": {
+                "offset": 2151,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg",
+              "delta": {
+                "offset": 2346,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.001",
+              "delta": {
+                "offset": 2541,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.002",
+              "delta": {
+                "offset": 2736,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.003",
+              "delta": {
+                "offset": 2931,
+                "count": 195
+              }
+            },
+            {
+              "id": "slat",
+              "delta": {
+                "offset": 3126,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.001",
+              "delta": {
+                "offset": 3153,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.002",
+              "delta": {
+                "offset": 3180,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.003",
+              "delta": {
+                "offset": 3207,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.004",
+              "delta": {
+                "offset": 3234,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.005",
+              "delta": {
+                "offset": 3261,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.006",
+              "delta": {
+                "offset": 3288,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.007",
+              "delta": {
+                "offset": 3315,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.008",
+              "delta": {
+                "offset": 3342,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.009",
+              "delta": {
+                "offset": 3369,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.010",
+              "delta": {
+                "offset": 3396,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.011",
+              "delta": {
+                "offset": 3423,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.012",
+              "delta": {
+                "offset": 3450,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.013",
+              "delta": {
+                "offset": 3477,
+                "count": 27
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 3504,
+            "count": 120
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "bed_frame_base",
+              "delta": {
+                "offset": 3624,
+                "count": 204
+              }
+            },
+            {
+              "id": "footboard",
+              "delta": {
+                "offset": 3828,
+                "count": 195
+              }
+            },
+            {
+              "id": "headboard",
+              "delta": {
+                "offset": 4023,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg",
+              "delta": {
+                "offset": 4218,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.001",
+              "delta": {
+                "offset": 4413,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.002",
+              "delta": {
+                "offset": 4608,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.003",
+              "delta": {
+                "offset": 4803,
+                "count": 195
+              }
+            },
+            {
+              "id": "slat",
+              "delta": {
+                "offset": 4998,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.001",
+              "delta": {
+                "offset": 5025,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.002",
+              "delta": {
+                "offset": 5052,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.003",
+              "delta": {
+                "offset": 5079,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.004",
+              "delta": {
+                "offset": 5106,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.005",
+              "delta": {
+                "offset": 5133,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.006",
+              "delta": {
+                "offset": 5160,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.007",
+              "delta": {
+                "offset": 5187,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.008",
+              "delta": {
+                "offset": 5214,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.009",
+              "delta": {
+                "offset": 5241,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.010",
+              "delta": {
+                "offset": 5268,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.011",
+              "delta": {
+                "offset": 5295,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.012",
+              "delta": {
+                "offset": 5322,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.013",
+              "delta": {
+                "offset": 5349,
+                "count": 27
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 5376,
+            "count": 120
+          }
+        }
+      ]
+    },
+    {
+      "id": "footboard",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "footboard",
+              "delta": {
+                "offset": 5496,
+                "count": 195
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "footboard",
+              "delta": {
+                "offset": 5691,
+                "count": 195
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "headboard",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "headboard",
+              "delta": {
+                "offset": 5886,
+                "count": 195
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "headboard",
+              "delta": {
+                "offset": 6081,
+                "count": 195
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "leg",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "bed_frame_base",
+              "delta": {
+                "offset": 6276,
+                "count": 204
+              }
+            },
+            {
+              "id": "footboard",
+              "delta": {
+                "offset": 6480,
+                "count": 195
+              }
+            },
+            {
+              "id": "headboard",
+              "delta": {
+                "offset": 6675,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg",
+              "delta": {
+                "offset": 6870,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.001",
+              "delta": {
+                "offset": 7065,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.002",
+              "delta": {
+                "offset": 7260,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.003",
+              "delta": {
+                "offset": 7455,
+                "count": 195
+              }
+            },
+            {
+              "id": "slat",
+              "delta": {
+                "offset": 7650,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.001",
+              "delta": {
+                "offset": 7677,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.002",
+              "delta": {
+                "offset": 7704,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.003",
+              "delta": {
+                "offset": 7731,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.004",
+              "delta": {
+                "offset": 7758,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.005",
+              "delta": {
+                "offset": 7785,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.006",
+              "delta": {
+                "offset": 7812,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.007",
+              "delta": {
+                "offset": 7839,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.008",
+              "delta": {
+                "offset": 7866,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.009",
+              "delta": {
+                "offset": 7893,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.010",
+              "delta": {
+                "offset": 7920,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.011",
+              "delta": {
+                "offset": 7947,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.012",
+              "delta": {
+                "offset": 7974,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.013",
+              "delta": {
+                "offset": 8001,
+                "count": 27
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 8028,
+            "count": 120
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "bed_frame_base",
+              "delta": {
+                "offset": 8148,
+                "count": 204
+              }
+            },
+            {
+              "id": "footboard",
+              "delta": {
+                "offset": 8352,
+                "count": 195
+              }
+            },
+            {
+              "id": "headboard",
+              "delta": {
+                "offset": 8547,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg",
+              "delta": {
+                "offset": 8742,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.001",
+              "delta": {
+                "offset": 8937,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.002",
+              "delta": {
+                "offset": 9132,
+                "count": 195
+              }
+            },
+            {
+              "id": "leg.003",
+              "delta": {
+                "offset": 9327,
+                "count": 195
+              }
+            },
+            {
+              "id": "slat",
+              "delta": {
+                "offset": 9522,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.001",
+              "delta": {
+                "offset": 9549,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.002",
+              "delta": {
+                "offset": 9576,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.003",
+              "delta": {
+                "offset": 9603,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.004",
+              "delta": {
+                "offset": 9630,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.005",
+              "delta": {
+                "offset": 9657,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.006",
+              "delta": {
+                "offset": 9684,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.007",
+              "delta": {
+                "offset": 9711,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.008",
+              "delta": {
+                "offset": 9738,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.009",
+              "delta": {
+                "offset": 9765,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.010",
+              "delta": {
+                "offset": 9792,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.011",
+              "delta": {
+                "offset": 9819,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.012",
+              "delta": {
+                "offset": 9846,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.013",
+              "delta": {
+                "offset": 9873,
+                "count": 27
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 9900,
+            "count": 120
+          }
+        }
+      ]
+    },
+    {
+      "id": "slat",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "slat",
+              "delta": {
+                "offset": 10020,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.001",
+              "delta": {
+                "offset": 10047,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.002",
+              "delta": {
+                "offset": 10074,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.003",
+              "delta": {
+                "offset": 10101,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.004",
+              "delta": {
+                "offset": 10128,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.005",
+              "delta": {
+                "offset": 10155,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.006",
+              "delta": {
+                "offset": 10182,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.007",
+              "delta": {
+                "offset": 10209,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.008",
+              "delta": {
+                "offset": 10236,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.009",
+              "delta": {
+                "offset": 10263,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.010",
+              "delta": {
+                "offset": 10290,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.011",
+              "delta": {
+                "offset": 10317,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.012",
+              "delta": {
+                "offset": 10344,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.013",
+              "delta": {
+                "offset": 10371,
+                "count": 27
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "slat",
+              "delta": {
+                "offset": 10398,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.001",
+              "delta": {
+                "offset": 10425,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.002",
+              "delta": {
+                "offset": 10452,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.003",
+              "delta": {
+                "offset": 10479,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.004",
+              "delta": {
+                "offset": 10506,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.005",
+              "delta": {
+                "offset": 10533,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.006",
+              "delta": {
+                "offset": 10560,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.007",
+              "delta": {
+                "offset": 10587,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.008",
+              "delta": {
+                "offset": 10614,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.009",
+              "delta": {
+                "offset": 10641,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.010",
+              "delta": {
+                "offset": 10668,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.011",
+              "delta": {
+                "offset": 10695,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.012",
+              "delta": {
+                "offset": 10722,
+                "count": 27
+              }
+            },
+            {
+              "id": "slat.013",
+              "delta": {
+                "offset": 10749,
+                "count": 27
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "bed_frame_base",
+      "child": "headboard",
+      "parent_world": [
+        0.0,
+        -1.0499999523162842,
+        0.30000001192092896
+      ],
+      "child_world": [
+        0.0,
+        -1.0499999523162842,
+        0.30000001192092896
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "footboard",
+      "parent_world": [
+        0.0,
+        1.0499999523162842,
+        0.30000001192092896
+      ],
+      "child_world": [
+        0.0,
+        1.0499999523162842,
+        0.30000001192092896
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "leg",
+      "parent_world": [
+        -0.75,
+        -1.0,
+        0.30000001192092896
+      ],
+      "child_world": [
+        -0.75,
+        -1.0,
+        0.30000001192092896
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "leg.001",
+      "parent_world": [
+        0.75,
+        -1.0,
+        0.30000001192092896
+      ],
+      "child_world": [
+        0.75,
+        -1.0,
+        0.30000001192092896
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "leg.002",
+      "parent_world": [
+        -0.75,
+        1.0,
+        0.30000001192092896
+      ],
+      "child_world": [
+        -0.75,
+        1.0,
+        0.30000001192092896
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "leg.003",
+      "parent_world": [
+        0.75,
+        1.0,
+        0.30000001192092896
+      ],
+      "child_world": [
+        0.75,
+        1.0,
+        0.30000001192092896
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat",
+      "parent_world": [
+        -0.7599999904632568,
+        -0.9285714030265808,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        -0.9285714030265808,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.001",
+      "parent_world": [
+        -0.7599999904632568,
+        -0.7857142686843872,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        -0.7857142686843872,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.002",
+      "parent_world": [
+        -0.7599999904632568,
+        -0.6428571343421936,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        -0.6428571343421936,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.003",
+      "parent_world": [
+        -0.7599999904632568,
+        -0.5,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        -0.5,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.004",
+      "parent_world": [
+        -0.7599999904632568,
+        -0.3571428656578064,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        -0.3571428656578064,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.005",
+      "parent_world": [
+        -0.7599999904632568,
+        -0.2142857164144516,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        -0.2142857164144516,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.006",
+      "parent_world": [
+        -0.7599999904632568,
+        -0.0714285746216774,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        -0.0714285746216774,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.007",
+      "parent_world": [
+        -0.7599999904632568,
+        0.0714285746216774,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        0.0714285746216774,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.008",
+      "parent_world": [
+        -0.7599999904632568,
+        0.2142857164144516,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        0.2142857164144516,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.009",
+      "parent_world": [
+        -0.7599999904632568,
+        0.3571428656578064,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        0.3571428656578064,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.010",
+      "parent_world": [
+        -0.7599999904632568,
+        0.5,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        0.5,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.011",
+      "parent_world": [
+        -0.7599999904632568,
+        0.6428571343421936,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        0.6428571343421936,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.012",
+      "parent_world": [
+        -0.7599999904632568,
+        0.7857142686843872,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        0.7857142686843872,
+        0.4000000059604645
+      ]
+    },
+    {
+      "parent": "bed_frame_base",
+      "child": "slat.013",
+      "parent_world": [
+        -0.7599999904632568,
+        0.9285714030265808,
+        0.4000000059604645
+      ],
+      "child_world": [
+        -0.7599999904632568,
+        0.9285714030265808,
+        0.4000000059604645
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 2.25,
+    "linear_tolerance": 2.25e-05,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "bed_frame_base": 1.6858739115832577e-07,
+      "footboard": 1.7881393432617188e-07,
+      "headboard": 1.6924465739975858e-07,
+      "leg": 1.2013700256829907e-07,
+      "slat": 1.365714012990793e-07
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "bed_frame_base": 0.63,
+          "footboard": 0.63,
+          "headboard": 1.37,
+          "leg": 0.63,
+          "slat": 1.37
+        },
+        "max_position_error": 1.341104507446289e-07,
+        "relative_error": 5.960464477539063e-08
+      },
+      {
+        "params": {
+          "bed_frame_base": 1.37,
+          "footboard": 1.37,
+          "headboard": 0.63,
+          "leg": 1.37,
+          "slat": 0.63
+        },
+        "max_position_error": 1.884864366154897e-07,
+        "relative_error": 8.37717496068843e-08
+      },
+      {
+        "params": {
+          "bed_frame_base": 0.63,
+          "footboard": 0.63,
+          "headboard": 0.63,
+          "leg": 0.63,
+          "slat": 0.63
+        },
+        "max_position_error": 1.341104507446289e-07,
+        "relative_error": 5.960464477539063e-08
+      },
+      {
+        "params": {
+          "bed_frame_base": 1.37,
+          "footboard": 1.37,
+          "headboard": 1.37,
+          "leg": 1.37,
+          "slat": 1.37
+        },
+        "max_position_error": 2.6656007498500226e-07,
+        "relative_error": 1.1847114443777878e-07
+      }
+    ]
+  },
+  "binary_sha256": "e20769b8d0959a43e3e876e22f828e89832b04ae24393218063b59595cd7f847",
+  "source_sha256": "1f4148bb79d6d553780b33cea0c6fc6f67daefa6346bc88b554f30806086420b"
+}

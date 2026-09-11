@@ -1,0 +1,2496 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin.gz",
+  "compression": "gzip",
+  "binary_sha256": "50420c827e7d6ebe51b17841586f59823f91eb7fd6f33c25cee3a10a32937b1b",
+  "parts": [
+    {
+      "id": "branch_and_twig_network",
+      "part_id": "branch_and_twig_network",
+      "positions": {
+        "offset": 0,
+        "count": 49287
+      }
+    },
+    {
+      "id": "main_trunk",
+      "part_id": "main_trunk",
+      "positions": {
+        "offset": 49287,
+        "count": 4926
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "branch_and_twig_network",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": []
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": []
+        }
+      ]
+    },
+    {
+      "id": "main_trunk",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "main_trunk",
+              "delta": {
+                "offset": 54213,
+                "count": 4926
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "main_trunk",
+              "delta": {
+                "offset": 59139,
+                "count": 4926
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "main_trunk",
+      "child": "branch_and_twig_network",
+      "parent_world": [
+        -0.13445685803890228,
+        0.06935559958219528,
+        3.3499999046325684
+      ],
+      "child_world": [
+        -0.13445685803890228,
+        0.06935559958219528,
+        3.3499999046325684
+      ]
+    }
+  ],
+  "replacements": [
+    {
+      "id": "branch_and_twig_network",
+      "control": "branch_and_twig_network",
+      "material_names": [
+        "dark_dead_bark_brown",
+        "weathered_brown",
+        "russet_exposed_wood",
+        "dry_ashy_brown",
+        "blackened_crevice_brown"
+      ],
+      "samples": [
+        {
+          "scale": 0.4,
+          "positions": {
+            "offset": 64065,
+            "count": 65091
+          },
+          "normals": {
+            "offset": 129156,
+            "count": 65091
+          },
+          "triangles": {
+            "offset": 194247,
+            "count": 123006
+          },
+          "materials": {
+            "offset": 317253,
+            "count": 41002
+          }
+        },
+        {
+          "scale": 0.41,
+          "positions": {
+            "offset": 358255,
+            "count": 67200
+          },
+          "normals": {
+            "offset": 425455,
+            "count": 67200
+          },
+          "triangles": {
+            "offset": 492655,
+            "count": 127008
+          },
+          "materials": {
+            "offset": 619663,
+            "count": 42336
+          }
+        },
+        {
+          "scale": 0.42,
+          "positions": {
+            "offset": 661999,
+            "count": 63543
+          },
+          "normals": {
+            "offset": 725542,
+            "count": 63543
+          },
+          "triangles": {
+            "offset": 789085,
+            "count": 120078
+          },
+          "materials": {
+            "offset": 909163,
+            "count": 40026
+          }
+        },
+        {
+          "scale": 0.43,
+          "positions": {
+            "offset": 949189,
+            "count": 40956
+          },
+          "normals": {
+            "offset": 990145,
+            "count": 40956
+          },
+          "triangles": {
+            "offset": 1031101,
+            "count": 77472
+          },
+          "materials": {
+            "offset": 1108573,
+            "count": 25824
+          }
+        },
+        {
+          "scale": 0.44,
+          "positions": {
+            "offset": 1134397,
+            "count": 56271
+          },
+          "normals": {
+            "offset": 1190668,
+            "count": 56271
+          },
+          "triangles": {
+            "offset": 1246939,
+            "count": 106362
+          },
+          "materials": {
+            "offset": 1353301,
+            "count": 35454
+          }
+        },
+        {
+          "scale": 0.45,
+          "positions": {
+            "offset": 1388755,
+            "count": 54279
+          },
+          "normals": {
+            "offset": 1443034,
+            "count": 54279
+          },
+          "triangles": {
+            "offset": 1497313,
+            "count": 102606
+          },
+          "materials": {
+            "offset": 1599919,
+            "count": 34202
+          }
+        },
+        {
+          "scale": 0.46,
+          "positions": {
+            "offset": 1634121,
+            "count": 54672
+          },
+          "normals": {
+            "offset": 1688793,
+            "count": 54672
+          },
+          "triangles": {
+            "offset": 1743465,
+            "count": 103332
+          },
+          "materials": {
+            "offset": 1846797,
+            "count": 34444
+          }
+        },
+        {
+          "scale": 0.47,
+          "positions": {
+            "offset": 1881241,
+            "count": 48756
+          },
+          "normals": {
+            "offset": 1929997,
+            "count": 48756
+          },
+          "triangles": {
+            "offset": 1978753,
+            "count": 92184
+          },
+          "materials": {
+            "offset": 2070937,
+            "count": 30728
+          }
+        },
+        {
+          "scale": 0.48,
+          "positions": {
+            "offset": 2101665,
+            "count": 58725
+          },
+          "normals": {
+            "offset": 2160390,
+            "count": 58725
+          },
+          "triangles": {
+            "offset": 2219115,
+            "count": 111006
+          },
+          "materials": {
+            "offset": 2330121,
+            "count": 37002
+          }
+        },
+        {
+          "scale": 0.49,
+          "positions": {
+            "offset": 2367123,
+            "count": 56721
+          },
+          "normals": {
+            "offset": 2423844,
+            "count": 56721
+          },
+          "triangles": {
+            "offset": 2480565,
+            "count": 107226
+          },
+          "materials": {
+            "offset": 2587791,
+            "count": 35742
+          }
+        },
+        {
+          "scale": 0.5,
+          "positions": {
+            "offset": 2623533,
+            "count": 51210
+          },
+          "normals": {
+            "offset": 2674743,
+            "count": 51210
+          },
+          "triangles": {
+            "offset": 2725953,
+            "count": 96780
+          },
+          "materials": {
+            "offset": 2822733,
+            "count": 32260
+          }
+        },
+        {
+          "scale": 0.51,
+          "positions": {
+            "offset": 2854993,
+            "count": 48609
+          },
+          "normals": {
+            "offset": 2903602,
+            "count": 48609
+          },
+          "triangles": {
+            "offset": 2952211,
+            "count": 91890
+          },
+          "materials": {
+            "offset": 3044101,
+            "count": 30630
+          }
+        },
+        {
+          "scale": 0.52,
+          "positions": {
+            "offset": 3074731,
+            "count": 44262
+          },
+          "normals": {
+            "offset": 3118993,
+            "count": 44262
+          },
+          "triangles": {
+            "offset": 3163255,
+            "count": 83688
+          },
+          "materials": {
+            "offset": 3246943,
+            "count": 27896
+          }
+        },
+        {
+          "scale": 0.53,
+          "positions": {
+            "offset": 3274839,
+            "count": 52473
+          },
+          "normals": {
+            "offset": 3327312,
+            "count": 52473
+          },
+          "triangles": {
+            "offset": 3379785,
+            "count": 99186
+          },
+          "materials": {
+            "offset": 3478971,
+            "count": 33062
+          }
+        },
+        {
+          "scale": 0.54,
+          "positions": {
+            "offset": 3512033,
+            "count": 59397
+          },
+          "normals": {
+            "offset": 3571430,
+            "count": 59397
+          },
+          "triangles": {
+            "offset": 3630827,
+            "count": 112266
+          },
+          "materials": {
+            "offset": 3743093,
+            "count": 37422
+          }
+        },
+        {
+          "scale": 0.55,
+          "positions": {
+            "offset": 3780515,
+            "count": 41094
+          },
+          "normals": {
+            "offset": 3821609,
+            "count": 41094
+          },
+          "triangles": {
+            "offset": 3862703,
+            "count": 77712
+          },
+          "materials": {
+            "offset": 3940415,
+            "count": 25904
+          }
+        },
+        {
+          "scale": 0.56,
+          "positions": {
+            "offset": 3966319,
+            "count": 50562
+          },
+          "normals": {
+            "offset": 4016881,
+            "count": 50562
+          },
+          "triangles": {
+            "offset": 4067443,
+            "count": 95592
+          },
+          "materials": {
+            "offset": 4163035,
+            "count": 31864
+          }
+        },
+        {
+          "scale": 0.57,
+          "positions": {
+            "offset": 4194899,
+            "count": 51402
+          },
+          "normals": {
+            "offset": 4246301,
+            "count": 51402
+          },
+          "triangles": {
+            "offset": 4297703,
+            "count": 97188
+          },
+          "materials": {
+            "offset": 4394891,
+            "count": 32396
+          }
+        },
+        {
+          "scale": 0.58,
+          "positions": {
+            "offset": 4427287,
+            "count": 47190
+          },
+          "normals": {
+            "offset": 4474477,
+            "count": 47190
+          },
+          "triangles": {
+            "offset": 4521667,
+            "count": 89232
+          },
+          "materials": {
+            "offset": 4610899,
+            "count": 29744
+          }
+        },
+        {
+          "scale": 0.59,
+          "positions": {
+            "offset": 4640643,
+            "count": 51807
+          },
+          "normals": {
+            "offset": 4692450,
+            "count": 51807
+          },
+          "triangles": {
+            "offset": 4744257,
+            "count": 97938
+          },
+          "materials": {
+            "offset": 4842195,
+            "count": 32646
+          }
+        },
+        {
+          "scale": 0.6,
+          "positions": {
+            "offset": 4874841,
+            "count": 54426
+          },
+          "normals": {
+            "offset": 4929267,
+            "count": 54426
+          },
+          "triangles": {
+            "offset": 4983693,
+            "count": 102888
+          },
+          "materials": {
+            "offset": 5086581,
+            "count": 34296
+          }
+        },
+        {
+          "scale": 0.61,
+          "positions": {
+            "offset": 5120877,
+            "count": 61281
+          },
+          "normals": {
+            "offset": 5182158,
+            "count": 61281
+          },
+          "triangles": {
+            "offset": 5243439,
+            "count": 115818
+          },
+          "materials": {
+            "offset": 5359257,
+            "count": 38606
+          }
+        },
+        {
+          "scale": 0.62,
+          "positions": {
+            "offset": 5397863,
+            "count": 46203
+          },
+          "normals": {
+            "offset": 5444066,
+            "count": 46203
+          },
+          "triangles": {
+            "offset": 5490269,
+            "count": 87342
+          },
+          "materials": {
+            "offset": 5577611,
+            "count": 29114
+          }
+        },
+        {
+          "scale": 0.63,
+          "positions": {
+            "offset": 5606725,
+            "count": 50037
+          },
+          "normals": {
+            "offset": 5656762,
+            "count": 50037
+          },
+          "triangles": {
+            "offset": 5706799,
+            "count": 94590
+          },
+          "materials": {
+            "offset": 5801389,
+            "count": 31530
+          }
+        },
+        {
+          "scale": 0.64,
+          "positions": {
+            "offset": 5832919,
+            "count": 51645
+          },
+          "normals": {
+            "offset": 5884564,
+            "count": 51645
+          },
+          "triangles": {
+            "offset": 5936209,
+            "count": 97638
+          },
+          "materials": {
+            "offset": 6033847,
+            "count": 32546
+          }
+        },
+        {
+          "scale": 0.65,
+          "positions": {
+            "offset": 6066393,
+            "count": 58161
+          },
+          "normals": {
+            "offset": 6124554,
+            "count": 58161
+          },
+          "triangles": {
+            "offset": 6182715,
+            "count": 109914
+          },
+          "materials": {
+            "offset": 6292629,
+            "count": 36638
+          }
+        },
+        {
+          "scale": 0.66,
+          "positions": {
+            "offset": 6329267,
+            "count": 56118
+          },
+          "normals": {
+            "offset": 6385385,
+            "count": 56118
+          },
+          "triangles": {
+            "offset": 6441503,
+            "count": 106068
+          },
+          "materials": {
+            "offset": 6547571,
+            "count": 35356
+          }
+        },
+        {
+          "scale": 0.67,
+          "positions": {
+            "offset": 6582927,
+            "count": 57663
+          },
+          "normals": {
+            "offset": 6640590,
+            "count": 57663
+          },
+          "triangles": {
+            "offset": 6698253,
+            "count": 108990
+          },
+          "materials": {
+            "offset": 6807243,
+            "count": 36330
+          }
+        },
+        {
+          "scale": 0.68,
+          "positions": {
+            "offset": 6843573,
+            "count": 57801
+          },
+          "normals": {
+            "offset": 6901374,
+            "count": 57801
+          },
+          "triangles": {
+            "offset": 6959175,
+            "count": 109254
+          },
+          "materials": {
+            "offset": 7068429,
+            "count": 36418
+          }
+        },
+        {
+          "scale": 0.69,
+          "positions": {
+            "offset": 7104847,
+            "count": 59304
+          },
+          "normals": {
+            "offset": 7164151,
+            "count": 59304
+          },
+          "triangles": {
+            "offset": 7223455,
+            "count": 112104
+          },
+          "materials": {
+            "offset": 7335559,
+            "count": 37368
+          }
+        },
+        {
+          "scale": 0.7,
+          "positions": {
+            "offset": 7372927,
+            "count": 50868
+          },
+          "normals": {
+            "offset": 7423795,
+            "count": 50868
+          },
+          "triangles": {
+            "offset": 7474663,
+            "count": 96180
+          },
+          "materials": {
+            "offset": 7570843,
+            "count": 32060
+          }
+        },
+        {
+          "scale": 0.71,
+          "positions": {
+            "offset": 7602903,
+            "count": 48231
+          },
+          "normals": {
+            "offset": 7651134,
+            "count": 48231
+          },
+          "triangles": {
+            "offset": 7699365,
+            "count": 91170
+          },
+          "materials": {
+            "offset": 7790535,
+            "count": 30390
+          }
+        },
+        {
+          "scale": 0.72,
+          "positions": {
+            "offset": 7820925,
+            "count": 46950
+          },
+          "normals": {
+            "offset": 7867875,
+            "count": 46950
+          },
+          "triangles": {
+            "offset": 7914825,
+            "count": 88776
+          },
+          "materials": {
+            "offset": 8003601,
+            "count": 29592
+          }
+        },
+        {
+          "scale": 0.73,
+          "positions": {
+            "offset": 8033193,
+            "count": 63564
+          },
+          "normals": {
+            "offset": 8096757,
+            "count": 63564
+          },
+          "triangles": {
+            "offset": 8160321,
+            "count": 120108
+          },
+          "materials": {
+            "offset": 8280429,
+            "count": 40036
+          }
+        },
+        {
+          "scale": 0.74,
+          "positions": {
+            "offset": 8320465,
+            "count": 49296
+          },
+          "normals": {
+            "offset": 8369761,
+            "count": 49296
+          },
+          "triangles": {
+            "offset": 8419057,
+            "count": 93180
+          },
+          "materials": {
+            "offset": 8512237,
+            "count": 31060
+          }
+        },
+        {
+          "scale": 0.75,
+          "positions": {
+            "offset": 8543297,
+            "count": 58395
+          },
+          "normals": {
+            "offset": 8601692,
+            "count": 58395
+          },
+          "triangles": {
+            "offset": 8660087,
+            "count": 110382
+          },
+          "materials": {
+            "offset": 8770469,
+            "count": 36794
+          }
+        },
+        {
+          "scale": 0.76,
+          "positions": {
+            "offset": 8807263,
+            "count": 53640
+          },
+          "normals": {
+            "offset": 8860903,
+            "count": 53640
+          },
+          "triangles": {
+            "offset": 8914543,
+            "count": 101400
+          },
+          "materials": {
+            "offset": 9015943,
+            "count": 33800
+          }
+        },
+        {
+          "scale": 0.77,
+          "positions": {
+            "offset": 9049743,
+            "count": 52791
+          },
+          "normals": {
+            "offset": 9102534,
+            "count": 52791
+          },
+          "triangles": {
+            "offset": 9155325,
+            "count": 99774
+          },
+          "materials": {
+            "offset": 9255099,
+            "count": 33258
+          }
+        },
+        {
+          "scale": 0.78,
+          "positions": {
+            "offset": 9288357,
+            "count": 43044
+          },
+          "normals": {
+            "offset": 9331401,
+            "count": 43044
+          },
+          "triangles": {
+            "offset": 9374445,
+            "count": 81408
+          },
+          "materials": {
+            "offset": 9455853,
+            "count": 27136
+          }
+        },
+        {
+          "scale": 0.79,
+          "positions": {
+            "offset": 9482989,
+            "count": 52134
+          },
+          "normals": {
+            "offset": 9535123,
+            "count": 52134
+          },
+          "triangles": {
+            "offset": 9587257,
+            "count": 98556
+          },
+          "materials": {
+            "offset": 9685813,
+            "count": 32852
+          }
+        },
+        {
+          "scale": 0.8,
+          "positions": {
+            "offset": 9718665,
+            "count": 56232
+          },
+          "normals": {
+            "offset": 9774897,
+            "count": 56232
+          },
+          "triangles": {
+            "offset": 9831129,
+            "count": 106296
+          },
+          "materials": {
+            "offset": 9937425,
+            "count": 35432
+          }
+        },
+        {
+          "scale": 0.81,
+          "positions": {
+            "offset": 9972857,
+            "count": 59958
+          },
+          "normals": {
+            "offset": 10032815,
+            "count": 59958
+          },
+          "triangles": {
+            "offset": 10092773,
+            "count": 113328
+          },
+          "materials": {
+            "offset": 10206101,
+            "count": 37776
+          }
+        },
+        {
+          "scale": 0.82,
+          "positions": {
+            "offset": 10243877,
+            "count": 53301
+          },
+          "normals": {
+            "offset": 10297178,
+            "count": 53301
+          },
+          "triangles": {
+            "offset": 10350479,
+            "count": 100758
+          },
+          "materials": {
+            "offset": 10451237,
+            "count": 33586
+          }
+        },
+        {
+          "scale": 0.83,
+          "positions": {
+            "offset": 10484823,
+            "count": 56553
+          },
+          "normals": {
+            "offset": 10541376,
+            "count": 56553
+          },
+          "triangles": {
+            "offset": 10597929,
+            "count": 106890
+          },
+          "materials": {
+            "offset": 10704819,
+            "count": 35630
+          }
+        },
+        {
+          "scale": 0.84,
+          "positions": {
+            "offset": 10740449,
+            "count": 55725
+          },
+          "normals": {
+            "offset": 10796174,
+            "count": 55725
+          },
+          "triangles": {
+            "offset": 10851899,
+            "count": 105342
+          },
+          "materials": {
+            "offset": 10957241,
+            "count": 35114
+          }
+        },
+        {
+          "scale": 0.85,
+          "positions": {
+            "offset": 10992355,
+            "count": 46038
+          },
+          "normals": {
+            "offset": 11038393,
+            "count": 46038
+          },
+          "triangles": {
+            "offset": 11084431,
+            "count": 87072
+          },
+          "materials": {
+            "offset": 11171503,
+            "count": 29024
+          }
+        },
+        {
+          "scale": 0.86,
+          "positions": {
+            "offset": 11200527,
+            "count": 51336
+          },
+          "normals": {
+            "offset": 11251863,
+            "count": 51336
+          },
+          "triangles": {
+            "offset": 11303199,
+            "count": 97056
+          },
+          "materials": {
+            "offset": 11400255,
+            "count": 32352
+          }
+        },
+        {
+          "scale": 0.87,
+          "positions": {
+            "offset": 11432607,
+            "count": 48705
+          },
+          "normals": {
+            "offset": 11481312,
+            "count": 48705
+          },
+          "triangles": {
+            "offset": 11530017,
+            "count": 92082
+          },
+          "materials": {
+            "offset": 11622099,
+            "count": 30694
+          }
+        },
+        {
+          "scale": 0.88,
+          "positions": {
+            "offset": 11652793,
+            "count": 49452
+          },
+          "normals": {
+            "offset": 11702245,
+            "count": 49452
+          },
+          "triangles": {
+            "offset": 11751697,
+            "count": 93480
+          },
+          "materials": {
+            "offset": 11845177,
+            "count": 31160
+          }
+        },
+        {
+          "scale": 0.89,
+          "positions": {
+            "offset": 11876337,
+            "count": 57873
+          },
+          "normals": {
+            "offset": 11934210,
+            "count": 57873
+          },
+          "triangles": {
+            "offset": 11992083,
+            "count": 109398
+          },
+          "materials": {
+            "offset": 12101481,
+            "count": 36466
+          }
+        },
+        {
+          "scale": 0.9,
+          "positions": {
+            "offset": 12137947,
+            "count": 51753
+          },
+          "normals": {
+            "offset": 12189700,
+            "count": 51753
+          },
+          "triangles": {
+            "offset": 12241453,
+            "count": 97818
+          },
+          "materials": {
+            "offset": 12339271,
+            "count": 32606
+          }
+        },
+        {
+          "scale": 0.91,
+          "positions": {
+            "offset": 12371877,
+            "count": 60828
+          },
+          "normals": {
+            "offset": 12432705,
+            "count": 60828
+          },
+          "triangles": {
+            "offset": 12493533,
+            "count": 114960
+          },
+          "materials": {
+            "offset": 12608493,
+            "count": 38320
+          }
+        },
+        {
+          "scale": 0.92,
+          "positions": {
+            "offset": 12646813,
+            "count": 48627
+          },
+          "normals": {
+            "offset": 12695440,
+            "count": 48627
+          },
+          "triangles": {
+            "offset": 12744067,
+            "count": 91938
+          },
+          "materials": {
+            "offset": 12836005,
+            "count": 30646
+          }
+        },
+        {
+          "scale": 0.93,
+          "positions": {
+            "offset": 12866651,
+            "count": 59127
+          },
+          "normals": {
+            "offset": 12925778,
+            "count": 59127
+          },
+          "triangles": {
+            "offset": 12984905,
+            "count": 111762
+          },
+          "materials": {
+            "offset": 13096667,
+            "count": 37254
+          }
+        },
+        {
+          "scale": 0.94,
+          "positions": {
+            "offset": 13133921,
+            "count": 48591
+          },
+          "normals": {
+            "offset": 13182512,
+            "count": 48591
+          },
+          "triangles": {
+            "offset": 13231103,
+            "count": 91854
+          },
+          "materials": {
+            "offset": 13322957,
+            "count": 30618
+          }
+        },
+        {
+          "scale": 0.95,
+          "positions": {
+            "offset": 13353575,
+            "count": 51960
+          },
+          "normals": {
+            "offset": 13405535,
+            "count": 51960
+          },
+          "triangles": {
+            "offset": 13457495,
+            "count": 98244
+          },
+          "materials": {
+            "offset": 13555739,
+            "count": 32748
+          }
+        },
+        {
+          "scale": 0.96,
+          "positions": {
+            "offset": 13588487,
+            "count": 45537
+          },
+          "normals": {
+            "offset": 13634024,
+            "count": 45537
+          },
+          "triangles": {
+            "offset": 13679561,
+            "count": 86082
+          },
+          "materials": {
+            "offset": 13765643,
+            "count": 28694
+          }
+        },
+        {
+          "scale": 0.97,
+          "positions": {
+            "offset": 13794337,
+            "count": 52881
+          },
+          "normals": {
+            "offset": 13847218,
+            "count": 52881
+          },
+          "triangles": {
+            "offset": 13900099,
+            "count": 99978
+          },
+          "materials": {
+            "offset": 14000077,
+            "count": 33326
+          }
+        },
+        {
+          "scale": 0.98,
+          "positions": {
+            "offset": 14033403,
+            "count": 54912
+          },
+          "normals": {
+            "offset": 14088315,
+            "count": 54912
+          },
+          "triangles": {
+            "offset": 14143227,
+            "count": 103788
+          },
+          "materials": {
+            "offset": 14247015,
+            "count": 34596
+          }
+        },
+        {
+          "scale": 0.99,
+          "positions": {
+            "offset": 14281611,
+            "count": 49380
+          },
+          "normals": {
+            "offset": 14330991,
+            "count": 49380
+          },
+          "triangles": {
+            "offset": 14380371,
+            "count": 93336
+          },
+          "materials": {
+            "offset": 14473707,
+            "count": 31112
+          }
+        },
+        {
+          "scale": 1.0,
+          "positions": {
+            "offset": 14504819,
+            "count": 49287
+          },
+          "normals": {
+            "offset": 14554106,
+            "count": 49287
+          },
+          "triangles": {
+            "offset": 14603393,
+            "count": 93174
+          },
+          "materials": {
+            "offset": 14696567,
+            "count": 31058
+          }
+        },
+        {
+          "scale": 1.01,
+          "positions": {
+            "offset": 14727625,
+            "count": 53013
+          },
+          "normals": {
+            "offset": 14780638,
+            "count": 53013
+          },
+          "triangles": {
+            "offset": 14833651,
+            "count": 100206
+          },
+          "materials": {
+            "offset": 14933857,
+            "count": 33402
+          }
+        },
+        {
+          "scale": 1.02,
+          "positions": {
+            "offset": 14967259,
+            "count": 49593
+          },
+          "normals": {
+            "offset": 15016852,
+            "count": 49593
+          },
+          "triangles": {
+            "offset": 15066445,
+            "count": 93762
+          },
+          "materials": {
+            "offset": 15160207,
+            "count": 31254
+          }
+        },
+        {
+          "scale": 1.03,
+          "positions": {
+            "offset": 15191461,
+            "count": 46416
+          },
+          "normals": {
+            "offset": 15237877,
+            "count": 46416
+          },
+          "triangles": {
+            "offset": 15284293,
+            "count": 87744
+          },
+          "materials": {
+            "offset": 15372037,
+            "count": 29248
+          }
+        },
+        {
+          "scale": 1.04,
+          "positions": {
+            "offset": 15401285,
+            "count": 45747
+          },
+          "normals": {
+            "offset": 15447032,
+            "count": 45747
+          },
+          "triangles": {
+            "offset": 15492779,
+            "count": 86490
+          },
+          "materials": {
+            "offset": 15579269,
+            "count": 28830
+          }
+        },
+        {
+          "scale": 1.05,
+          "positions": {
+            "offset": 15608099,
+            "count": 55602
+          },
+          "normals": {
+            "offset": 15663701,
+            "count": 55602
+          },
+          "triangles": {
+            "offset": 15719303,
+            "count": 105096
+          },
+          "materials": {
+            "offset": 15824399,
+            "count": 35032
+          }
+        },
+        {
+          "scale": 1.06,
+          "positions": {
+            "offset": 15859431,
+            "count": 48246
+          },
+          "normals": {
+            "offset": 15907677,
+            "count": 48246
+          },
+          "triangles": {
+            "offset": 15955923,
+            "count": 91212
+          },
+          "materials": {
+            "offset": 16047135,
+            "count": 30404
+          }
+        },
+        {
+          "scale": 1.07,
+          "positions": {
+            "offset": 16077539,
+            "count": 48762
+          },
+          "normals": {
+            "offset": 16126301,
+            "count": 48762
+          },
+          "triangles": {
+            "offset": 16175063,
+            "count": 92196
+          },
+          "materials": {
+            "offset": 16267259,
+            "count": 30732
+          }
+        },
+        {
+          "scale": 1.08,
+          "positions": {
+            "offset": 16297991,
+            "count": 51219
+          },
+          "normals": {
+            "offset": 16349210,
+            "count": 51219
+          },
+          "triangles": {
+            "offset": 16400429,
+            "count": 96834
+          },
+          "materials": {
+            "offset": 16497263,
+            "count": 32278
+          }
+        },
+        {
+          "scale": 1.09,
+          "positions": {
+            "offset": 16529541,
+            "count": 45756
+          },
+          "normals": {
+            "offset": 16575297,
+            "count": 45756
+          },
+          "triangles": {
+            "offset": 16621053,
+            "count": 86520
+          },
+          "materials": {
+            "offset": 16707573,
+            "count": 28840
+          }
+        },
+        {
+          "scale": 1.1,
+          "positions": {
+            "offset": 16736413,
+            "count": 52983
+          },
+          "normals": {
+            "offset": 16789396,
+            "count": 52983
+          },
+          "triangles": {
+            "offset": 16842379,
+            "count": 100146
+          },
+          "materials": {
+            "offset": 16942525,
+            "count": 33382
+          }
+        },
+        {
+          "scale": 1.11,
+          "positions": {
+            "offset": 16975907,
+            "count": 53442
+          },
+          "normals": {
+            "offset": 17029349,
+            "count": 53442
+          },
+          "triangles": {
+            "offset": 17082791,
+            "count": 101052
+          },
+          "materials": {
+            "offset": 17183843,
+            "count": 33684
+          }
+        },
+        {
+          "scale": 1.12,
+          "positions": {
+            "offset": 17217527,
+            "count": 47715
+          },
+          "normals": {
+            "offset": 17265242,
+            "count": 47715
+          },
+          "triangles": {
+            "offset": 17312957,
+            "count": 90210
+          },
+          "materials": {
+            "offset": 17403167,
+            "count": 30070
+          }
+        },
+        {
+          "scale": 1.13,
+          "positions": {
+            "offset": 17433237,
+            "count": 54264
+          },
+          "normals": {
+            "offset": 17487501,
+            "count": 54264
+          },
+          "triangles": {
+            "offset": 17541765,
+            "count": 102600
+          },
+          "materials": {
+            "offset": 17644365,
+            "count": 34200
+          }
+        },
+        {
+          "scale": 1.14,
+          "positions": {
+            "offset": 17678565,
+            "count": 53571
+          },
+          "normals": {
+            "offset": 17732136,
+            "count": 53571
+          },
+          "triangles": {
+            "offset": 17785707,
+            "count": 101274
+          },
+          "materials": {
+            "offset": 17886981,
+            "count": 33758
+          }
+        },
+        {
+          "scale": 1.15,
+          "positions": {
+            "offset": 17920739,
+            "count": 58095
+          },
+          "normals": {
+            "offset": 17978834,
+            "count": 58095
+          },
+          "triangles": {
+            "offset": 18036929,
+            "count": 109830
+          },
+          "materials": {
+            "offset": 18146759,
+            "count": 36610
+          }
+        },
+        {
+          "scale": 1.16,
+          "positions": {
+            "offset": 18183369,
+            "count": 57633
+          },
+          "normals": {
+            "offset": 18241002,
+            "count": 57633
+          },
+          "triangles": {
+            "offset": 18298635,
+            "count": 108954
+          },
+          "materials": {
+            "offset": 18407589,
+            "count": 36318
+          }
+        },
+        {
+          "scale": 1.17,
+          "positions": {
+            "offset": 18443907,
+            "count": 64002
+          },
+          "normals": {
+            "offset": 18507909,
+            "count": 64002
+          },
+          "triangles": {
+            "offset": 18571911,
+            "count": 120960
+          },
+          "materials": {
+            "offset": 18692871,
+            "count": 40320
+          }
+        },
+        {
+          "scale": 1.18,
+          "positions": {
+            "offset": 18733191,
+            "count": 59172
+          },
+          "normals": {
+            "offset": 18792363,
+            "count": 59172
+          },
+          "triangles": {
+            "offset": 18851535,
+            "count": 111828
+          },
+          "materials": {
+            "offset": 18963363,
+            "count": 37276
+          }
+        },
+        {
+          "scale": 1.19,
+          "positions": {
+            "offset": 19000639,
+            "count": 48261
+          },
+          "normals": {
+            "offset": 19048900,
+            "count": 48261
+          },
+          "triangles": {
+            "offset": 19097161,
+            "count": 91266
+          },
+          "materials": {
+            "offset": 19188427,
+            "count": 30422
+          }
+        },
+        {
+          "scale": 1.2,
+          "positions": {
+            "offset": 19218849,
+            "count": 63786
+          },
+          "normals": {
+            "offset": 19282635,
+            "count": 63786
+          },
+          "triangles": {
+            "offset": 19346421,
+            "count": 120540
+          },
+          "materials": {
+            "offset": 19466961,
+            "count": 40180
+          }
+        },
+        {
+          "scale": 1.21,
+          "positions": {
+            "offset": 19507141,
+            "count": 51480
+          },
+          "normals": {
+            "offset": 19558621,
+            "count": 51480
+          },
+          "triangles": {
+            "offset": 19610101,
+            "count": 97332
+          },
+          "materials": {
+            "offset": 19707433,
+            "count": 32444
+          }
+        },
+        {
+          "scale": 1.22,
+          "positions": {
+            "offset": 19739877,
+            "count": 50985
+          },
+          "normals": {
+            "offset": 19790862,
+            "count": 50985
+          },
+          "triangles": {
+            "offset": 19841847,
+            "count": 96402
+          },
+          "materials": {
+            "offset": 19938249,
+            "count": 32134
+          }
+        },
+        {
+          "scale": 1.23,
+          "positions": {
+            "offset": 19970383,
+            "count": 50925
+          },
+          "normals": {
+            "offset": 20021308,
+            "count": 50925
+          },
+          "triangles": {
+            "offset": 20072233,
+            "count": 96282
+          },
+          "materials": {
+            "offset": 20168515,
+            "count": 32094
+          }
+        },
+        {
+          "scale": 1.24,
+          "positions": {
+            "offset": 20200609,
+            "count": 60570
+          },
+          "normals": {
+            "offset": 20261179,
+            "count": 60570
+          },
+          "triangles": {
+            "offset": 20321749,
+            "count": 114480
+          },
+          "materials": {
+            "offset": 20436229,
+            "count": 38160
+          }
+        },
+        {
+          "scale": 1.25,
+          "positions": {
+            "offset": 20474389,
+            "count": 49377
+          },
+          "normals": {
+            "offset": 20523766,
+            "count": 49377
+          },
+          "triangles": {
+            "offset": 20573143,
+            "count": 93342
+          },
+          "materials": {
+            "offset": 20666485,
+            "count": 31114
+          }
+        },
+        {
+          "scale": 1.26,
+          "positions": {
+            "offset": 20697599,
+            "count": 55332
+          },
+          "normals": {
+            "offset": 20752931,
+            "count": 55332
+          },
+          "triangles": {
+            "offset": 20808263,
+            "count": 104580
+          },
+          "materials": {
+            "offset": 20912843,
+            "count": 34860
+          }
+        },
+        {
+          "scale": 1.27,
+          "positions": {
+            "offset": 20947703,
+            "count": 57507
+          },
+          "normals": {
+            "offset": 21005210,
+            "count": 57507
+          },
+          "triangles": {
+            "offset": 21062717,
+            "count": 108690
+          },
+          "materials": {
+            "offset": 21171407,
+            "count": 36230
+          }
+        },
+        {
+          "scale": 1.28,
+          "positions": {
+            "offset": 21207637,
+            "count": 46881
+          },
+          "normals": {
+            "offset": 21254518,
+            "count": 46881
+          },
+          "triangles": {
+            "offset": 21301399,
+            "count": 88626
+          },
+          "materials": {
+            "offset": 21390025,
+            "count": 29542
+          }
+        },
+        {
+          "scale": 1.29,
+          "positions": {
+            "offset": 21419567,
+            "count": 56988
+          },
+          "normals": {
+            "offset": 21476555,
+            "count": 56988
+          },
+          "triangles": {
+            "offset": 21533543,
+            "count": 107688
+          },
+          "materials": {
+            "offset": 21641231,
+            "count": 35896
+          }
+        },
+        {
+          "scale": 1.3,
+          "positions": {
+            "offset": 21677127,
+            "count": 51177
+          },
+          "normals": {
+            "offset": 21728304,
+            "count": 51177
+          },
+          "triangles": {
+            "offset": 21779481,
+            "count": 96750
+          },
+          "materials": {
+            "offset": 21876231,
+            "count": 32250
+          }
+        },
+        {
+          "scale": 1.31,
+          "positions": {
+            "offset": 21908481,
+            "count": 60879
+          },
+          "normals": {
+            "offset": 21969360,
+            "count": 60879
+          },
+          "triangles": {
+            "offset": 22030239,
+            "count": 115074
+          },
+          "materials": {
+            "offset": 22145313,
+            "count": 38358
+          }
+        },
+        {
+          "scale": 1.32,
+          "positions": {
+            "offset": 22183671,
+            "count": 55116
+          },
+          "normals": {
+            "offset": 22238787,
+            "count": 55116
+          },
+          "triangles": {
+            "offset": 22293903,
+            "count": 104196
+          },
+          "materials": {
+            "offset": 22398099,
+            "count": 34732
+          }
+        },
+        {
+          "scale": 1.33,
+          "positions": {
+            "offset": 22432831,
+            "count": 50127
+          },
+          "normals": {
+            "offset": 22482958,
+            "count": 50127
+          },
+          "triangles": {
+            "offset": 22533085,
+            "count": 94770
+          },
+          "materials": {
+            "offset": 22627855,
+            "count": 31590
+          }
+        },
+        {
+          "scale": 1.34,
+          "positions": {
+            "offset": 22659445,
+            "count": 53511
+          },
+          "normals": {
+            "offset": 22712956,
+            "count": 53511
+          },
+          "triangles": {
+            "offset": 22766467,
+            "count": 101142
+          },
+          "materials": {
+            "offset": 22867609,
+            "count": 33714
+          }
+        },
+        {
+          "scale": 1.35,
+          "positions": {
+            "offset": 22901323,
+            "count": 58977
+          },
+          "normals": {
+            "offset": 22960300,
+            "count": 58977
+          },
+          "triangles": {
+            "offset": 23019277,
+            "count": 111462
+          },
+          "materials": {
+            "offset": 23130739,
+            "count": 37154
+          }
+        },
+        {
+          "scale": 1.36,
+          "positions": {
+            "offset": 23167893,
+            "count": 59472
+          },
+          "normals": {
+            "offset": 23227365,
+            "count": 59472
+          },
+          "triangles": {
+            "offset": 23286837,
+            "count": 112404
+          },
+          "materials": {
+            "offset": 23399241,
+            "count": 37468
+          }
+        },
+        {
+          "scale": 1.37,
+          "positions": {
+            "offset": 23436709,
+            "count": 42645
+          },
+          "normals": {
+            "offset": 23479354,
+            "count": 42645
+          },
+          "triangles": {
+            "offset": 23521999,
+            "count": 80658
+          },
+          "materials": {
+            "offset": 23602657,
+            "count": 26886
+          }
+        },
+        {
+          "scale": 1.38,
+          "positions": {
+            "offset": 23629543,
+            "count": 51459
+          },
+          "normals": {
+            "offset": 23681002,
+            "count": 51459
+          },
+          "triangles": {
+            "offset": 23732461,
+            "count": 97302
+          },
+          "materials": {
+            "offset": 23829763,
+            "count": 32434
+          }
+        },
+        {
+          "scale": 1.39,
+          "positions": {
+            "offset": 23862197,
+            "count": 61923
+          },
+          "normals": {
+            "offset": 23924120,
+            "count": 61923
+          },
+          "triangles": {
+            "offset": 23986043,
+            "count": 117042
+          },
+          "materials": {
+            "offset": 24103085,
+            "count": 39014
+          }
+        },
+        {
+          "scale": 1.4,
+          "positions": {
+            "offset": 24142099,
+            "count": 51585
+          },
+          "normals": {
+            "offset": 24193684,
+            "count": 51585
+          },
+          "triangles": {
+            "offset": 24245269,
+            "count": 97542
+          },
+          "materials": {
+            "offset": 24342811,
+            "count": 32514
+          }
+        },
+        {
+          "scale": 1.41,
+          "positions": {
+            "offset": 24375325,
+            "count": 51060
+          },
+          "normals": {
+            "offset": 24426385,
+            "count": 51060
+          },
+          "triangles": {
+            "offset": 24477445,
+            "count": 96540
+          },
+          "materials": {
+            "offset": 24573985,
+            "count": 32180
+          }
+        },
+        {
+          "scale": 1.42,
+          "positions": {
+            "offset": 24606165,
+            "count": 53160
+          },
+          "normals": {
+            "offset": 24659325,
+            "count": 53160
+          },
+          "triangles": {
+            "offset": 24712485,
+            "count": 100476
+          },
+          "materials": {
+            "offset": 24812961,
+            "count": 33492
+          }
+        },
+        {
+          "scale": 1.43,
+          "positions": {
+            "offset": 24846453,
+            "count": 64161
+          },
+          "normals": {
+            "offset": 24910614,
+            "count": 64161
+          },
+          "triangles": {
+            "offset": 24974775,
+            "count": 121266
+          },
+          "materials": {
+            "offset": 25096041,
+            "count": 40422
+          }
+        },
+        {
+          "scale": 1.44,
+          "positions": {
+            "offset": 25136463,
+            "count": 66033
+          },
+          "normals": {
+            "offset": 25202496,
+            "count": 66033
+          },
+          "triangles": {
+            "offset": 25268529,
+            "count": 124794
+          },
+          "materials": {
+            "offset": 25393323,
+            "count": 41598
+          }
+        },
+        {
+          "scale": 1.45,
+          "positions": {
+            "offset": 25434921,
+            "count": 57063
+          },
+          "normals": {
+            "offset": 25491984,
+            "count": 57063
+          },
+          "triangles": {
+            "offset": 25549047,
+            "count": 107862
+          },
+          "materials": {
+            "offset": 25656909,
+            "count": 35954
+          }
+        },
+        {
+          "scale": 1.46,
+          "positions": {
+            "offset": 25692863,
+            "count": 54354
+          },
+          "normals": {
+            "offset": 25747217,
+            "count": 54354
+          },
+          "triangles": {
+            "offset": 25801571,
+            "count": 102768
+          },
+          "materials": {
+            "offset": 25904339,
+            "count": 34256
+          }
+        },
+        {
+          "scale": 1.47,
+          "positions": {
+            "offset": 25938595,
+            "count": 54651
+          },
+          "normals": {
+            "offset": 25993246,
+            "count": 54651
+          },
+          "triangles": {
+            "offset": 26047897,
+            "count": 103314
+          },
+          "materials": {
+            "offset": 26151211,
+            "count": 34438
+          }
+        },
+        {
+          "scale": 1.48,
+          "positions": {
+            "offset": 26185649,
+            "count": 57357
+          },
+          "normals": {
+            "offset": 26243006,
+            "count": 57357
+          },
+          "triangles": {
+            "offset": 26300363,
+            "count": 108414
+          },
+          "materials": {
+            "offset": 26408777,
+            "count": 36138
+          }
+        },
+        {
+          "scale": 1.49,
+          "positions": {
+            "offset": 26444915,
+            "count": 46101
+          },
+          "normals": {
+            "offset": 26491016,
+            "count": 46101
+          },
+          "triangles": {
+            "offset": 26537117,
+            "count": 87162
+          },
+          "materials": {
+            "offset": 26624279,
+            "count": 29054
+          }
+        },
+        {
+          "scale": 1.5,
+          "positions": {
+            "offset": 26653333,
+            "count": 56016
+          },
+          "normals": {
+            "offset": 26709349,
+            "count": 56016
+          },
+          "triangles": {
+            "offset": 26765365,
+            "count": 105900
+          },
+          "materials": {
+            "offset": 26871265,
+            "count": 35300
+          }
+        },
+        {
+          "scale": 1.51,
+          "positions": {
+            "offset": 26906565,
+            "count": 54354
+          },
+          "normals": {
+            "offset": 26960919,
+            "count": 54354
+          },
+          "triangles": {
+            "offset": 27015273,
+            "count": 102756
+          },
+          "materials": {
+            "offset": 27118029,
+            "count": 34252
+          }
+        },
+        {
+          "scale": 1.52,
+          "positions": {
+            "offset": 27152281,
+            "count": 53253
+          },
+          "normals": {
+            "offset": 27205534,
+            "count": 53253
+          },
+          "triangles": {
+            "offset": 27258787,
+            "count": 100662
+          },
+          "materials": {
+            "offset": 27359449,
+            "count": 33554
+          }
+        },
+        {
+          "scale": 1.53,
+          "positions": {
+            "offset": 27393003,
+            "count": 54300
+          },
+          "normals": {
+            "offset": 27447303,
+            "count": 54300
+          },
+          "triangles": {
+            "offset": 27501603,
+            "count": 102624
+          },
+          "materials": {
+            "offset": 27604227,
+            "count": 34208
+          }
+        },
+        {
+          "scale": 1.54,
+          "positions": {
+            "offset": 27638435,
+            "count": 47031
+          },
+          "normals": {
+            "offset": 27685466,
+            "count": 47031
+          },
+          "triangles": {
+            "offset": 27732497,
+            "count": 88914
+          },
+          "materials": {
+            "offset": 27821411,
+            "count": 29638
+          }
+        },
+        {
+          "scale": 1.55,
+          "positions": {
+            "offset": 27851049,
+            "count": 51657
+          },
+          "normals": {
+            "offset": 27902706,
+            "count": 51657
+          },
+          "triangles": {
+            "offset": 27954363,
+            "count": 97674
+          },
+          "materials": {
+            "offset": 28052037,
+            "count": 32558
+          }
+        },
+        {
+          "scale": 1.56,
+          "positions": {
+            "offset": 28084595,
+            "count": 56388
+          },
+          "normals": {
+            "offset": 28140983,
+            "count": 56388
+          },
+          "triangles": {
+            "offset": 28197371,
+            "count": 106572
+          },
+          "materials": {
+            "offset": 28303943,
+            "count": 35524
+          }
+        },
+        {
+          "scale": 1.57,
+          "positions": {
+            "offset": 28339467,
+            "count": 50268
+          },
+          "normals": {
+            "offset": 28389735,
+            "count": 50268
+          },
+          "triangles": {
+            "offset": 28440003,
+            "count": 95040
+          },
+          "materials": {
+            "offset": 28535043,
+            "count": 31680
+          }
+        },
+        {
+          "scale": 1.58,
+          "positions": {
+            "offset": 28566723,
+            "count": 55482
+          },
+          "normals": {
+            "offset": 28622205,
+            "count": 55482
+          },
+          "triangles": {
+            "offset": 28677687,
+            "count": 104844
+          },
+          "materials": {
+            "offset": 28782531,
+            "count": 34948
+          }
+        },
+        {
+          "scale": 1.59,
+          "positions": {
+            "offset": 28817479,
+            "count": 57306
+          },
+          "normals": {
+            "offset": 28874785,
+            "count": 57306
+          },
+          "triangles": {
+            "offset": 28932091,
+            "count": 108348
+          },
+          "materials": {
+            "offset": 29040439,
+            "count": 36116
+          }
+        },
+        {
+          "scale": 1.6,
+          "positions": {
+            "offset": 29076555,
+            "count": 54897
+          },
+          "normals": {
+            "offset": 29131452,
+            "count": 54897
+          },
+          "triangles": {
+            "offset": 29186349,
+            "count": 103770
+          },
+          "materials": {
+            "offset": 29290119,
+            "count": 34590
+          }
+        }
+      ],
+      "translation_controls": [
+        {
+          "id": "main_trunk",
+          "samples": [
+            {
+              "scale": 0.4,
+              "delta": [
+                0.08067413815029337,
+                -0.04161334630394201,
+                -2.009999870898422
+              ]
+            },
+            {
+              "scale": 1,
+              "delta": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "scale": 1.6,
+              "delta": [
+                -0.08067413522203243,
+                0.04161339268198088,
+                2.010000228373914
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "validation": {
+    "source_sha256": "eafd5abaf4cf89b427c49429822c0d806cfe7cfab83cf4bbc670c52c5b522f89",
+    "native_multi_checks": [
+      {
+        "params": {
+          "branch_and_twig_network": 0.63
+        },
+        "max_position_error": 0.0
+      },
+      {
+        "params": {
+          "branch_and_twig_network": 1.37
+        },
+        "max_position_error": 0.0
+      },
+      {
+        "params": {
+          "main_trunk": 0.63
+        },
+        "max_position_error": 3.845909071354845e-07
+      },
+      {
+        "params": {
+          "main_trunk": 1.37
+        },
+        "max_position_error": 3.3687519653858174e-07
+      },
+      {
+        "params": {
+          "branch_and_twig_network": 1.37,
+          "main_trunk": 0.63
+        },
+        "max_position_error": 3.845909071354845e-07
+      },
+      {
+        "params": {
+          "branch_and_twig_network": 0.63,
+          "main_trunk": 1.37
+        },
+        "max_position_error": 5.793220218492043e-07
+      },
+      {
+        "params": {
+          "branch_and_twig_network": 0.63,
+          "main_trunk": 0.63
+        },
+        "max_position_error": 3.8459090713199715e-07
+      },
+      {
+        "params": {
+          "branch_and_twig_network": 1.37,
+          "main_trunk": 1.37
+        },
+        "max_position_error": 3.572132174799573e-07
+      }
+    ]
+  },
+  "source_sha256": "eafd5abaf4cf89b427c49429822c0d806cfe7cfab83cf4bbc670c52c5b522f89"
+}

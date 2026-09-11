@@ -1,0 +1,1652 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "StandingSink_seed0/StandingSink_seed0",
+    "label": "StandingSink_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|pedestal_support|scale",
+        "label": "pedestal_support · scale",
+        "group": "Native Part Parameters · pedestal_support",
+        "value": 1.0,
+        "node_id": "pedestal_support",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|pedestal_support|pedestal_support",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|basin_body|scale",
+        "label": "basin_body · scale",
+        "group": "Native Part Parameters · basin_body",
+        "value": 1.0,
+        "node_id": "basin_body",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|basin_body|basin_body",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|gooseneck_spout|scale",
+        "label": "gooseneck_spout · scale",
+        "group": "Native Part Parameters · gooseneck_spout",
+        "value": 1.0,
+        "node_id": "gooseneck_spout",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|gooseneck_spout|gooseneck_spout",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|faucet_handle|scale",
+        "label": "faucet_handle · scale",
+        "group": "Native Part Parameters · faucet_handle",
+        "value": 0.4,
+        "node_id": "faucet_handle",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|faucet_handle|faucet_handle",
+        "visibility_value": true,
+        "is_leaf": false
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gpt5.6_sol/StandingSink_seed0/StandingSink_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:StandingSink_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:StandingSink_seed0.py",
+            "label": "StandingSink_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 516,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "set_input",
+            "label": "set_input",
+            "kind": "function",
+            "line": 20,
+            "end_line": 23,
+            "parameters": [
+              "node",
+              "name",
+              "value"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_marble_material",
+            "label": "make_marble_material",
+            "kind": "function",
+            "line": 26,
+            "end_line": 81,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_chrome_material",
+            "label": "make_chrome_material",
+            "kind": "function",
+            "line": 84,
+            "end_line": 93,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_dark_material",
+            "label": "make_dark_material",
+            "kind": "function",
+            "line": 96,
+            "end_line": 103,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "signed_power",
+            "label": "signed_power",
+            "kind": "function",
+            "line": 111,
+            "end_line": 114,
+            "parameters": [
+              "v",
+              "power"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "superellipse_point",
+            "label": "superellipse_point",
+            "kind": "function",
+            "line": 117,
+            "end_line": 122,
+            "parameters": [
+              "theta",
+              "half_x",
+              "half_y",
+              "exponent",
+              "center_y"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_superellipse_ring",
+            "label": "add_superellipse_ring",
+            "kind": "function",
+            "line": 125,
+            "end_line": 132,
+            "parameters": [
+              "verts",
+              "count",
+              "half_x",
+              "half_y",
+              "z",
+              "exponent",
+              "center_y"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "connect_rings_outward",
+            "label": "connect_rings_outward",
+            "kind": "function",
+            "line": 135,
+            "end_line": 139,
+            "parameters": [
+              "faces",
+              "lower",
+              "upper"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "connect_top_annulus",
+            "label": "connect_top_annulus",
+            "kind": "function",
+            "line": 142,
+            "end_line": 146,
+            "parameters": [
+              "faces",
+              "outer",
+              "inner"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "connect_bottom_annulus",
+            "label": "connect_bottom_annulus",
+            "kind": "function",
+            "line": 149,
+            "end_line": 153,
+            "parameters": [
+              "faces",
+              "outer",
+              "inner"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_mesh_object",
+            "label": "make_mesh_object",
+            "kind": "function",
+            "line": 156,
+            "end_line": 167,
+            "parameters": [
+              "name",
+              "part_id",
+              "verts",
+              "faces",
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_bevel",
+            "label": "add_bevel",
+            "kind": "function",
+            "line": 170,
+            "end_line": 175,
+            "parameters": [
+              "obj",
+              "width",
+              "segments",
+              "angle"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_pedestal",
+            "label": "build_pedestal",
+            "kind": "function",
+            "line": 178,
+            "end_line": 216,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_basin",
+            "label": "build_basin",
+            "kind": "function",
+            "line": 219,
+            "end_line": 301,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_horizontal_ring",
+            "label": "add_horizontal_ring",
+            "kind": "function",
+            "line": 304,
+            "end_line": 310,
+            "parameters": [
+              "verts",
+              "count",
+              "radius",
+              "z"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_spout",
+            "label": "build_spout",
+            "kind": "function",
+            "line": 313,
+            "end_line": 413,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_handles",
+            "label": "build_handles",
+            "kind": "function",
+            "line": 416,
+            "end_line": 470,
+            "parameters": [
+              "parent_mounts"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 473,
+            "end_line": 474,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 477,
+            "end_line": 488,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:StandingSink_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "set_input",
+            "relation": "SECTION_MEMBER",
+            "line": 20,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_marble_material",
+            "relation": "SECTION_MEMBER",
+            "line": 26,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_chrome_material",
+            "relation": "SECTION_MEMBER",
+            "line": 84,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_dark_material",
+            "relation": "SECTION_MEMBER",
+            "line": 96,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "signed_power",
+            "relation": "SECTION_MEMBER",
+            "line": 111,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "superellipse_point",
+            "relation": "SECTION_MEMBER",
+            "line": 117,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_superellipse_ring",
+            "relation": "SECTION_MEMBER",
+            "line": 125,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "connect_rings_outward",
+            "relation": "SECTION_MEMBER",
+            "line": 135,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "connect_top_annulus",
+            "relation": "SECTION_MEMBER",
+            "line": 142,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "connect_bottom_annulus",
+            "relation": "SECTION_MEMBER",
+            "line": 149,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_mesh_object",
+            "relation": "SECTION_MEMBER",
+            "line": 156,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_bevel",
+            "relation": "SECTION_MEMBER",
+            "line": 170,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_pedestal",
+            "relation": "SECTION_MEMBER",
+            "line": 178,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_basin",
+            "relation": "SECTION_MEMBER",
+            "line": 219,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_horizontal_ring",
+            "relation": "SECTION_MEMBER",
+            "line": 304,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_spout",
+            "relation": "SECTION_MEMBER",
+            "line": 313,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_handles",
+            "relation": "SECTION_MEMBER",
+            "line": 416,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 473,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 477,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:StandingSink_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:StandingSink_seed0.py",
+            "label": "StandingSink_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 516,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "add_bevel",
+            "label": "add_bevel",
+            "kind": "function",
+            "line": 170,
+            "end_line": 175,
+            "parameters": [
+              "obj",
+              "width",
+              "segments",
+              "angle"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_horizontal_ring",
+            "label": "add_horizontal_ring",
+            "kind": "function",
+            "line": 304,
+            "end_line": 310,
+            "parameters": [
+              "verts",
+              "count",
+              "radius",
+              "z"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_superellipse_ring",
+            "label": "add_superellipse_ring",
+            "kind": "function",
+            "line": 125,
+            "end_line": 132,
+            "parameters": [
+              "verts",
+              "count",
+              "half_x",
+              "half_y",
+              "z",
+              "exponent",
+              "center_y"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 477,
+            "end_line": 488,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_basin",
+            "label": "build_basin",
+            "kind": "function",
+            "line": 219,
+            "end_line": 301,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_handles",
+            "label": "build_handles",
+            "kind": "function",
+            "line": 416,
+            "end_line": 470,
+            "parameters": [
+              "parent_mounts"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_pedestal",
+            "label": "build_pedestal",
+            "kind": "function",
+            "line": 178,
+            "end_line": 216,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_spout",
+            "label": "build_spout",
+            "kind": "function",
+            "line": 313,
+            "end_line": 413,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "connect_bottom_annulus",
+            "label": "connect_bottom_annulus",
+            "kind": "function",
+            "line": 149,
+            "end_line": 153,
+            "parameters": [
+              "faces",
+              "outer",
+              "inner"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "connect_rings_outward",
+            "label": "connect_rings_outward",
+            "kind": "function",
+            "line": 135,
+            "end_line": 139,
+            "parameters": [
+              "faces",
+              "lower",
+              "upper"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "connect_top_annulus",
+            "label": "connect_top_annulus",
+            "kind": "function",
+            "line": 142,
+            "end_line": 146,
+            "parameters": [
+              "faces",
+              "outer",
+              "inner"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 473,
+            "end_line": 474,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_chrome_material",
+            "label": "make_chrome_material",
+            "kind": "function",
+            "line": 84,
+            "end_line": 93,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_dark_material",
+            "label": "make_dark_material",
+            "kind": "function",
+            "line": 96,
+            "end_line": 103,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_marble_material",
+            "label": "make_marble_material",
+            "kind": "function",
+            "line": 26,
+            "end_line": 81,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_mesh_object",
+            "label": "make_mesh_object",
+            "kind": "function",
+            "line": 156,
+            "end_line": 167,
+            "parameters": [
+              "name",
+              "part_id",
+              "verts",
+              "faces",
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "set_input",
+            "label": "set_input",
+            "kind": "function",
+            "line": 20,
+            "end_line": 23,
+            "parameters": [
+              "node",
+              "name",
+              "value"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "signed_power",
+            "label": "signed_power",
+            "kind": "function",
+            "line": 111,
+            "end_line": 114,
+            "parameters": [
+              "v",
+              "power"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "superellipse_point",
+            "label": "superellipse_point",
+            "kind": "function",
+            "line": 117,
+            "end_line": 122,
+            "parameters": [
+              "theta",
+              "half_x",
+              "half_y",
+              "exponent",
+              "center_y"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "add_superellipse_ring",
+            "child": "superellipse_point",
+            "relation": "CALL",
+            "line": 129,
+            "evidence": "AST call at L129"
+          },
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 480,
+            "evidence": "AST call at L480"
+          },
+          {
+            "parent": "build_basin",
+            "child": "add_superellipse_ring",
+            "relation": "CALL",
+            "line": 225,
+            "evidence": "AST call at L225"
+          },
+          {
+            "parent": "build_basin",
+            "child": "superellipse_point",
+            "relation": "CALL",
+            "line": 242,
+            "evidence": "AST call at L242"
+          },
+          {
+            "parent": "build_basin",
+            "child": "connect_rings_outward",
+            "relation": "CALL",
+            "line": 259,
+            "evidence": "AST call at L259"
+          },
+          {
+            "parent": "build_basin",
+            "child": "connect_top_annulus",
+            "relation": "CALL",
+            "line": 260,
+            "evidence": "AST call at L260"
+          },
+          {
+            "parent": "build_basin",
+            "child": "connect_bottom_annulus",
+            "relation": "CALL",
+            "line": 283,
+            "evidence": "AST call at L283"
+          },
+          {
+            "parent": "build_basin",
+            "child": "make_mesh_object",
+            "relation": "CALL",
+            "line": 290,
+            "evidence": "AST call at L290"
+          },
+          {
+            "parent": "build_basin",
+            "child": "add_bevel",
+            "relation": "CALL",
+            "line": 291,
+            "evidence": "AST call at L291"
+          },
+          {
+            "parent": "build_handles",
+            "child": "connect_rings_outward",
+            "relation": "CALL",
+            "line": 459,
+            "evidence": "AST call at L459"
+          },
+          {
+            "parent": "build_handles",
+            "child": "make_mesh_object",
+            "relation": "CALL",
+            "line": 467,
+            "evidence": "AST call at L467"
+          },
+          {
+            "parent": "build_pedestal",
+            "child": "add_superellipse_ring",
+            "relation": "CALL",
+            "line": 196,
+            "evidence": "AST call at L196"
+          },
+          {
+            "parent": "build_pedestal",
+            "child": "connect_rings_outward",
+            "relation": "CALL",
+            "line": 200,
+            "evidence": "AST call at L200"
+          },
+          {
+            "parent": "build_pedestal",
+            "child": "make_mesh_object",
+            "relation": "CALL",
+            "line": 212,
+            "evidence": "AST call at L212"
+          },
+          {
+            "parent": "build_pedestal",
+            "child": "add_bevel",
+            "relation": "CALL",
+            "line": 215,
+            "evidence": "AST call at L215"
+          },
+          {
+            "parent": "build_spout",
+            "child": "add_horizontal_ring",
+            "relation": "CALL",
+            "line": 329,
+            "evidence": "AST call at L329"
+          },
+          {
+            "parent": "build_spout",
+            "child": "connect_rings_outward",
+            "relation": "CALL",
+            "line": 336,
+            "evidence": "AST call at L336"
+          },
+          {
+            "parent": "build_spout",
+            "child": "connect_top_annulus",
+            "relation": "CALL",
+            "line": 385,
+            "evidence": "AST call at L385"
+          },
+          {
+            "parent": "build_spout",
+            "child": "make_mesh_object",
+            "relation": "CALL",
+            "line": 408,
+            "evidence": "AST call at L408"
+          },
+          {
+            "parent": "make_chrome_material",
+            "child": "set_input",
+            "relation": "CALL",
+            "line": 88,
+            "evidence": "AST call at L88"
+          },
+          {
+            "parent": "make_dark_material",
+            "child": "set_input",
+            "relation": "CALL",
+            "line": 100,
+            "evidence": "AST call at L100"
+          },
+          {
+            "parent": "make_marble_material",
+            "child": "set_input",
+            "relation": "CALL",
+            "line": 42,
+            "evidence": "AST call at L42"
+          },
+          {
+            "parent": "superellipse_point",
+            "child": "signed_power",
+            "relation": "CALL",
+            "line": 120,
+            "evidence": "AST call at L120"
+          },
+          {
+            "parent": "module:StandingSink_seed0.py",
+            "child": "make_marble_material",
+            "relation": "ENTRYPOINT",
+            "line": 106,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:StandingSink_seed0.py",
+            "child": "make_chrome_material",
+            "relation": "ENTRYPOINT",
+            "line": 107,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:StandingSink_seed0.py",
+            "child": "make_dark_material",
+            "relation": "ENTRYPOINT",
+            "line": 108,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:StandingSink_seed0.py",
+            "child": "build_pedestal",
+            "relation": "ENTRYPOINT",
+            "line": 491,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:StandingSink_seed0.py",
+            "child": "build_basin",
+            "relation": "ENTRYPOINT",
+            "line": 492,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:StandingSink_seed0.py",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "ENTRYPOINT",
+            "line": 494,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:StandingSink_seed0.py",
+            "child": "build_spout",
+            "relation": "ENTRYPOINT",
+            "line": 498,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:StandingSink_seed0.py",
+            "child": "build_handles",
+            "relation": "ENTRYPOINT",
+            "line": 503,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "pedestal"
+        ],
+        "nodes": [
+          {
+            "id": "basin",
+            "label": "basin",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L507: basin -> handles [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L499: basin -> spout [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L494: pedestal -> basin [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_basin",
+            "runtime_variable": "basin",
+            "group": "Blender parts"
+          },
+          {
+            "id": "handles",
+            "label": "handles",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L507: basin -> handles [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_handles",
+            "runtime_variable": "handles",
+            "group": "Blender parts"
+          },
+          {
+            "id": "pedestal",
+            "label": "pedestal",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L494: pedestal -> basin [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_pedestal",
+            "runtime_variable": "pedestal",
+            "group": "Blender parts"
+          },
+          {
+            "id": "spout",
+            "label": "spout",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L499: basin -> spout [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_spout",
+            "runtime_variable": "spout",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "basin",
+            "child": "handles",
+            "relation": "DIRECTED_CODE",
+            "line": 507,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "basin",
+            "child": "spout",
+            "relation": "DIRECTED_CODE",
+            "line": 499,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "pedestal",
+            "child": "basin",
+            "relation": "DIRECTED_CODE",
+            "line": 494,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "pedestal_support"
+    ],
+    "nodes": [
+      {
+        "id": "basin_body",
+        "label": "basin_body",
+        "part_id": "basin_body",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          2.9600000381469727
+        ],
+        "center": [
+          0.0,
+          -7.510185241699219e-05,
+          3.3200000524520874
+        ],
+        "dimensions": [
+          5.421421051025391,
+          4.180287837982178,
+          0.7200000286102295
+        ],
+        "bbox_min": [
+          -2.7107105255126953,
+          -2.090219020843506,
+          2.9600000381469727
+        ],
+        "bbox_max": [
+          2.7107105255126953,
+          2.090068817138672,
+          3.680000066757202
+        ]
+      },
+      {
+        "id": "pedestal_support",
+        "label": "pedestal_support",
+        "part_id": "pedestal_support",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          1.4800000190734863
+        ],
+        "dimensions": [
+          2.200000047683716,
+          1.840000033378601,
+          2.9600000381469727
+        ],
+        "bbox_min": [
+          -1.100000023841858,
+          -0.9200000166893005,
+          0.0
+        ],
+        "bbox_max": [
+          1.100000023841858,
+          0.9200000166893005,
+          2.9600000381469727
+        ]
+      },
+      {
+        "id": "gooseneck_spout",
+        "label": "gooseneck_spout",
+        "part_id": "gooseneck_spout",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          1.5800000429153442,
+          3.680000066757202
+        ],
+        "center": [
+          0.0,
+          1.155500054359436,
+          4.322500109672546
+        ],
+        "dimensions": [
+          0.4359999895095825,
+          1.2850000858306885,
+          1.2850000858306885
+        ],
+        "bbox_min": [
+          -0.21799999475479126,
+          0.5130000114440918,
+          3.680000066757202
+        ],
+        "bbox_max": [
+          0.21799999475479126,
+          1.7980000972747803,
+          4.965000152587891
+        ]
+      },
+      {
+        "id": "faucet_handle",
+        "label": "faucet_handle",
+        "part_id": "faucet_handle",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          3.680000066757202
+        ],
+        "center": [
+          0.0,
+          1.5559653043746948,
+          3.7990000247955322
+        ],
+        "dimensions": [
+          2.9219536781311035,
+          0.19887995719909668,
+          0.23799991607666016
+        ],
+        "bbox_min": [
+          -1.4609768390655518,
+          1.4565253257751465,
+          3.680000066757202
+        ],
+        "bbox_max": [
+          1.4609768390655518,
+          1.6554052829742432,
+          3.9179999828338623
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "basin_body",
+        "child": "gooseneck_spout",
+        "relation": "DIRECTED",
+        "line": 485,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          1.5800000429153442,
+          3.680000066757202
+        ],
+        "anchor_b": [
+          0.0,
+          1.5800000429153442,
+          3.680000066757202
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "basin_body",
+            "child": "gooseneck_spout",
+            "source": "parent_assignment",
+            "line": 485
+          },
+          {
+            "parent": "basin_body",
+            "child": "gooseneck_spout",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 499,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              1.5800000429153442,
+              3.680000066757202
+            ],
+            "parent_anchor_world": [
+              0.0,
+              1.5800000429153442,
+              3.680000066757202
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "basin_body",
+            "child": "gooseneck_spout",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "basin_body",
+        "child": "faucet_handle",
+        "relation": "DIRECTED",
+        "line": 485,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          1.3615368604660034,
+          1.5559653043746948,
+          3.680000066757202
+        ],
+        "anchor_b": [
+          1.3615368604660034,
+          1.5559653043746948,
+          3.680000066757202
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 2,
+        "authored_anchor_valid_count": 2,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "basin_body",
+            "child": "faucet_handle",
+            "source": "parent_assignment",
+            "line": 485
+          },
+          {
+            "parent": "basin_body",
+            "child": "faucet_handle",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 504,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              1.3615368604660034,
+              1.5559653043746948,
+              3.680000066757202
+            ],
+            "parent_anchor_world": [
+              1.3615368604660034,
+              1.5559653043746948,
+              3.680000066757202
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "basin_body",
+            "child": "faucet_handle",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 507,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -1.3615368604660034,
+              1.5559653043746948,
+              3.680000066757202
+            ],
+            "parent_anchor_world": [
+              -1.3615368604660034,
+              1.5559653043746948,
+              3.680000066757202
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "basin_body",
+            "child": "faucet_handle",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "pedestal_support",
+        "child": "basin_body",
+        "relation": "DIRECTED",
+        "line": 485,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.0,
+          2.9600000381469727
+        ],
+        "anchor_b": [
+          0.0,
+          0.0,
+          2.9600000381469727
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "pedestal_support",
+            "child": "basin_body",
+            "source": "parent_assignment",
+            "line": 485
+          },
+          {
+            "parent": "pedestal_support",
+            "child": "basin_body",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 494,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.0,
+              2.9600000381469727
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.0,
+              2.9600000381469727
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "pedestal_support",
+            "child": "basin_body",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "faucet_handle",
+        "child": "gooseneck_spout",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -1.267293930053711,
+          1.5372191667556763,
+          3.866000175476074
+        ],
+        "anchor_b": [
+          -0.21799999475479126,
+          1.5800000429153442,
+          3.7250001430511475
+        ],
+        "anchor_gap": 1.0595890595716402,
+        "anchor_tolerance": 0.13553552627563478,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 4,
+      "edges": 4,
+      "relations": {
+        "DIRECTED": 3,
+        "UNDIRECTED_CONTACT": 1
+      },
+      "directed_edges": 3,
+      "runtime_directed_edges": 3,
+      "shared_anchor_edges": 3,
+      "estimated_anchor_edges": 1,
+      "geometric_anchor_candidates": 3,
+      "unverified_anchor_candidates": 0,
+      "misaligned_anchor_edges": 1
+    },
+    "source_bounds": {
+      "min": [
+        -2.7107105255126953,
+        -2.090219020843506,
+        0.0
+      ],
+      "max": [
+        2.7107105255126953,
+        2.090068817138672,
+        4.965000152587891
+      ]
+    },
+    "scene_extent": 5.421421051025391,
+    "contact_threshold": 0.13553552627563478,
+    "shared_anchor_tolerance": 0.13553552627563478,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "basin_body",
+        "faucet_handle",
+        "gooseneck_spout",
+        "pedestal_support"
+      ],
+      "scale_overrides": {
+        "faucet_handle": 0.4
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · GPT-5.6 Sol",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gpt5.6_sol/StandingSink_seed0/StandingSink_seed0.py",
+    "source_sha256": "42e477957868378ddb734948bf03ab07238d7ef766a374ac63921a67286971fc",
+    "source_size": 16794,
+    "glb_sha256": "ecfef749f25c01e3570facf204f552ab5108271da2e7c67d48523eb02872e02d",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|faucet_handle|scale": 0.4
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "child-0.4",
+      "side": "child",
+      "part_ids": [
+        "faucet_handle"
+      ],
+      "parameter": "scale",
+      "scale": 0.4,
+      "params": {
+        "part_param|faucet_handle|scale": 0.4
+      },
+      "paper_parent_ids": [
+        "basin_body"
+      ],
+      "paper_child_ids": [
+        "faucet_handle"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "dimensions": [
+        {
+          "id": "faucet_handle",
+          "part_id": "faucet_handle",
+          "before": [
+            3.220273733139038,
+            0.49720001220703125,
+            0.5950000286102295
+          ],
+          "after": [
+            2.9219536781311035,
+            0.19887995719909668,
+            0.23799991607666016
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "basin_body",
+          "child": "faucet_handle",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": true,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": true,
+          "runtime_parent_part_id": "basin_body",
+          "runtime_child_part_id": "faucet_handle"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.0,
+      1.1175870895385742e-08,
+      -7.509440183639526e-05
+    ],
+    "mesh_bbox_max_error_before_translation": 7.510185241699219e-05,
+    "mesh_bbox_max_error_after_translation": 7.82310962677002e-08
+  }
+}

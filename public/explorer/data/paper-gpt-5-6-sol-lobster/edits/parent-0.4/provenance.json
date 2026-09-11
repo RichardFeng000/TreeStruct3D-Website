@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · GPT-5.6 Sol",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.6_sol/Lobster_seed0/Lobster_seed0.py",
+  "source_sha256": "b3acc968e12930ceec8c9c7949758a683e0145a4d91d06810e25705afc3f950b",
+  "source_size": 23118,
+  "glb_sha256": "fdc1d8fcab166af815c2000b44153e7dcedf531f22e25e5dfbace3b255c8722e",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|cephalothorax|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-0.4",
+    "side": "parent",
+    "part_ids": [
+      "cephalothorax"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|cephalothorax|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "cephalothorax"
+    ],
+    "paper_child_ids": [
+      "crusher_chela"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "cephalothorax",
+        "part_id": "cephalothorax",
+        "before": [
+          1.9599998593330383,
+          3.0299994945526123,
+          1.4100000262260437
+        ],
+        "after": [
+          0.7839999198913574,
+          1.2119998335838318,
+          0.5639999806880951
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "cephalothorax",
+        "child": "crusher_chela",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "cephalothorax",
+        "runtime_child_part_id": "crusher_chela"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.14199382492474147,
+    0.5707475620188883,
+    -1.7409531367676598
+  ],
+  "mesh_bbox_max_error_before_translation": 1.7409533262252808,
+  "mesh_bbox_max_error_after_translation": 1.8945762092492657e-07
+}

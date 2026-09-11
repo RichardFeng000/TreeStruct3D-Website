@@ -1,0 +1,1457 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "HollowTree_seed0/HollowTree_seed0",
+    "label": "HollowTree_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|main_trunk|scale",
+        "label": "main_trunk · scale",
+        "group": "Native Part Parameters · main_trunk",
+        "value": 1.0,
+        "node_id": "main_trunk",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|main_trunk|main_trunk",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|main_trunk|height",
+        "label": "main_trunk · height",
+        "group": "Native Part Parameters · main_trunk",
+        "value": 3.35,
+        "node_id": "main_trunk",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -1.6750000000000003,
+        "max": 8.375,
+        "step": 0.0335
+      },
+      {
+        "id": "part_param|main_trunk|ring_count",
+        "label": "main_trunk · ring_count",
+        "group": "Native Part Parameters · main_trunk",
+        "value": 36,
+        "node_id": "main_trunk",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 72.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|main_trunk|radial_segments",
+        "label": "main_trunk · radial_segments",
+        "group": "Native Part Parameters · main_trunk",
+        "value": 40,
+        "node_id": "main_trunk",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 80.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|branch_and_twig_network|scale",
+        "label": "branch_and_twig_network · scale",
+        "group": "Native Part Parameters · branch_and_twig_network",
+        "value": 0.4,
+        "node_id": "branch_and_twig_network",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|branch_and_twig_network|branch_and_twig_network",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|branch_and_twig_network|primary_branches",
+        "label": "branch_and_twig_network · primary_branches",
+        "group": "Native Part Parameters · branch_and_twig_network",
+        "value": 9,
+        "node_id": "branch_and_twig_network",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 18.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|branch_and_twig_network|seed",
+        "label": "branch_and_twig_network · seed",
+        "group": "Native Part Parameters · branch_and_twig_network",
+        "value": 47,
+        "node_id": "branch_and_twig_network",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 94.0,
+        "step": 1.0
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gpt5.5/HollowTree_seed0/HollowTree_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:HollowTree_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:HollowTree_seed0.py",
+            "label": "HollowTree_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 469,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 11,
+            "end_line": 21,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_material",
+            "label": "make_material",
+            "kind": "function",
+            "line": 23,
+            "end_line": 32,
+            "parameters": [
+              "name",
+              "color",
+              "roughness"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_bark_materials",
+            "label": "create_bark_materials",
+            "kind": "function",
+            "line": 34,
+            "end_line": 41,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "bark_mat",
+            "label": "bark_mat",
+            "kind": "function",
+            "line": 43,
+            "end_line": 54,
+            "parameters": [
+              "phi",
+              "zval",
+              "rng",
+              "dark_bias"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_mesh_object",
+            "label": "make_mesh_object",
+            "kind": "function",
+            "line": 56,
+            "end_line": 70,
+            "parameters": [
+              "name",
+              "verts",
+              "faces",
+              "face_mats",
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "frame_from_direction",
+            "label": "frame_from_direction",
+            "kind": "function",
+            "line": 72,
+            "end_line": 88,
+            "parameters": [
+              "direction"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_oriented_ellipsoid",
+            "label": "add_oriented_ellipsoid",
+            "kind": "function",
+            "line": 90,
+            "end_line": 126,
+            "parameters": [
+              "verts",
+              "faces",
+              "face_mats",
+              "center",
+              "ax",
+              "ay",
+              "az",
+              "rings",
+              "segs",
+              "mat_index",
+              "rough",
+              "seed"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_tube",
+            "label": "add_tube",
+            "kind": "function",
+            "line": 128,
+            "end_line": 189,
+            "parameters": [
+              "verts",
+              "faces",
+              "face_mats",
+              "points",
+              "radii",
+              "segs",
+              "rng",
+              "rough",
+              "dark_bias",
+              "cap_start",
+              "cap_end"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "trunk_center",
+            "label": "trunk_center",
+            "kind": "function",
+            "line": 191,
+            "end_line": 194,
+            "parameters": [
+              "t",
+              "s",
+              "h"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "trunk_radius_base",
+            "label": "trunk_radius_base",
+            "kind": "function",
+            "line": 196,
+            "end_line": 197,
+            "parameters": [
+              "t",
+              "s"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "trunk_surface_radius",
+            "label": "trunk_surface_radius",
+            "kind": "function",
+            "line": 199,
+            "end_line": 204,
+            "parameters": [
+              "t",
+              "phi",
+              "s"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_main_trunk",
+            "label": "build_main_trunk",
+            "kind": "function",
+            "line": 206,
+            "end_line": 268,
+            "parameters": [
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "interpolate_polyline",
+            "label": "interpolate_polyline",
+            "kind": "function",
+            "line": 270,
+            "end_line": 277,
+            "parameters": [
+              "points",
+              "radii",
+              "u"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "curved_points",
+            "label": "curved_points",
+            "kind": "function",
+            "line": 279,
+            "end_line": 297,
+            "parameters": [
+              "start",
+              "direction",
+              "length",
+              "s",
+              "rng",
+              "bend_strength",
+              "count"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "child_direction",
+            "label": "child_direction",
+            "kind": "function",
+            "line": 299,
+            "end_line": 314,
+            "parameters": [
+              "parent_dir",
+              "start",
+              "rng",
+              "lift"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_joint_knob",
+            "label": "add_joint_knob",
+            "kind": "function",
+            "line": 316,
+            "end_line": 325,
+            "parameters": [
+              "verts",
+              "faces",
+              "face_mats",
+              "position",
+              "direction",
+              "radius",
+              "s",
+              "rng",
+              "seed"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_branch_and_twig_network",
+            "label": "build_branch_and_twig_network",
+            "kind": "function",
+            "line": 327,
+            "end_line": 439,
+            "parameters": [
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_branch_and_twig_network.grow",
+            "label": "grow",
+            "kind": "nested_function",
+            "line": 349,
+            "end_line": 399,
+            "parameters": [
+              "start",
+              "direction",
+              "length",
+              "radius",
+              "depth"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 441,
+            "end_line": 442,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 444,
+            "end_line": 453,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:HollowTree_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "clear_scene",
+            "relation": "SECTION_MEMBER",
+            "line": 11,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_material",
+            "relation": "SECTION_MEMBER",
+            "line": 23,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_bark_materials",
+            "relation": "SECTION_MEMBER",
+            "line": 34,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "bark_mat",
+            "relation": "SECTION_MEMBER",
+            "line": 43,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_mesh_object",
+            "relation": "SECTION_MEMBER",
+            "line": 56,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "frame_from_direction",
+            "relation": "SECTION_MEMBER",
+            "line": 72,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_oriented_ellipsoid",
+            "relation": "SECTION_MEMBER",
+            "line": 90,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_tube",
+            "relation": "SECTION_MEMBER",
+            "line": 128,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "trunk_center",
+            "relation": "SECTION_MEMBER",
+            "line": 191,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "trunk_radius_base",
+            "relation": "SECTION_MEMBER",
+            "line": 196,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "trunk_surface_radius",
+            "relation": "SECTION_MEMBER",
+            "line": 199,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_main_trunk",
+            "relation": "SECTION_MEMBER",
+            "line": 206,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "interpolate_polyline",
+            "relation": "SECTION_MEMBER",
+            "line": 270,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "curved_points",
+            "relation": "SECTION_MEMBER",
+            "line": 279,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "child_direction",
+            "relation": "SECTION_MEMBER",
+            "line": 299,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_joint_knob",
+            "relation": "SECTION_MEMBER",
+            "line": 316,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_branch_and_twig_network",
+            "relation": "SECTION_MEMBER",
+            "line": 327,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "build_branch_and_twig_network",
+            "child": "build_branch_and_twig_network.grow",
+            "relation": "CONTAINS",
+            "line": 349,
+            "evidence": "AST lexical scope"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 441,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 444,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:HollowTree_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:HollowTree_seed0.py",
+            "label": "HollowTree_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 469,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "add_joint_knob",
+            "label": "add_joint_knob",
+            "kind": "function",
+            "line": 316,
+            "end_line": 325,
+            "parameters": [
+              "verts",
+              "faces",
+              "face_mats",
+              "position",
+              "direction",
+              "radius",
+              "s",
+              "rng",
+              "seed"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_oriented_ellipsoid",
+            "label": "add_oriented_ellipsoid",
+            "kind": "function",
+            "line": 90,
+            "end_line": 126,
+            "parameters": [
+              "verts",
+              "faces",
+              "face_mats",
+              "center",
+              "ax",
+              "ay",
+              "az",
+              "rings",
+              "segs",
+              "mat_index",
+              "rough",
+              "seed"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_tube",
+            "label": "add_tube",
+            "kind": "function",
+            "line": 128,
+            "end_line": 189,
+            "parameters": [
+              "verts",
+              "faces",
+              "face_mats",
+              "points",
+              "radii",
+              "segs",
+              "rng",
+              "rough",
+              "dark_bias",
+              "cap_start",
+              "cap_end"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 444,
+            "end_line": 453,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "bark_mat",
+            "label": "bark_mat",
+            "kind": "function",
+            "line": 43,
+            "end_line": 54,
+            "parameters": [
+              "phi",
+              "zval",
+              "rng",
+              "dark_bias"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_branch_and_twig_network",
+            "label": "build_branch_and_twig_network",
+            "kind": "function",
+            "line": 327,
+            "end_line": 439,
+            "parameters": [
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_branch_and_twig_network.grow",
+            "label": "grow",
+            "kind": "nested_function",
+            "line": 349,
+            "end_line": 399,
+            "parameters": [
+              "start",
+              "direction",
+              "length",
+              "radius",
+              "depth"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_main_trunk",
+            "label": "build_main_trunk",
+            "kind": "function",
+            "line": 206,
+            "end_line": 268,
+            "parameters": [
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "child_direction",
+            "label": "child_direction",
+            "kind": "function",
+            "line": 299,
+            "end_line": 314,
+            "parameters": [
+              "parent_dir",
+              "start",
+              "rng",
+              "lift"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 11,
+            "end_line": 21,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_bark_materials",
+            "label": "create_bark_materials",
+            "kind": "function",
+            "line": 34,
+            "end_line": 41,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "curved_points",
+            "label": "curved_points",
+            "kind": "function",
+            "line": 279,
+            "end_line": 297,
+            "parameters": [
+              "start",
+              "direction",
+              "length",
+              "s",
+              "rng",
+              "bend_strength",
+              "count"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "frame_from_direction",
+            "label": "frame_from_direction",
+            "kind": "function",
+            "line": 72,
+            "end_line": 88,
+            "parameters": [
+              "direction"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "interpolate_polyline",
+            "label": "interpolate_polyline",
+            "kind": "function",
+            "line": 270,
+            "end_line": 277,
+            "parameters": [
+              "points",
+              "radii",
+              "u"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 441,
+            "end_line": 442,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_material",
+            "label": "make_material",
+            "kind": "function",
+            "line": 23,
+            "end_line": 32,
+            "parameters": [
+              "name",
+              "color",
+              "roughness"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_mesh_object",
+            "label": "make_mesh_object",
+            "kind": "function",
+            "line": 56,
+            "end_line": 70,
+            "parameters": [
+              "name",
+              "verts",
+              "faces",
+              "face_mats",
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "trunk_center",
+            "label": "trunk_center",
+            "kind": "function",
+            "line": 191,
+            "end_line": 194,
+            "parameters": [
+              "t",
+              "s",
+              "h"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "trunk_radius_base",
+            "label": "trunk_radius_base",
+            "kind": "function",
+            "line": 196,
+            "end_line": 197,
+            "parameters": [
+              "t",
+              "s"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "trunk_surface_radius",
+            "label": "trunk_surface_radius",
+            "kind": "function",
+            "line": 199,
+            "end_line": 204,
+            "parameters": [
+              "t",
+              "phi",
+              "s"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "add_joint_knob",
+            "child": "frame_from_direction",
+            "relation": "CALL",
+            "line": 317,
+            "evidence": "AST call at L317"
+          },
+          {
+            "parent": "add_joint_knob",
+            "child": "add_oriented_ellipsoid",
+            "relation": "CALL",
+            "line": 319,
+            "evidence": "AST call at L319"
+          },
+          {
+            "parent": "add_joint_knob",
+            "child": "bark_mat",
+            "relation": "CALL",
+            "line": 324,
+            "evidence": "AST call at L324"
+          },
+          {
+            "parent": "add_tube",
+            "child": "frame_from_direction",
+            "relation": "CALL",
+            "line": 145,
+            "evidence": "AST call at L145"
+          },
+          {
+            "parent": "add_tube",
+            "child": "bark_mat",
+            "relation": "CALL",
+            "line": 173,
+            "evidence": "AST call at L173"
+          },
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 445,
+            "evidence": "AST call at L445"
+          },
+          {
+            "parent": "build_branch_and_twig_network",
+            "child": "add_tube",
+            "relation": "CALL",
+            "line": 344,
+            "evidence": "AST call at L344"
+          },
+          {
+            "parent": "build_branch_and_twig_network",
+            "child": "interpolate_polyline",
+            "relation": "CALL",
+            "line": 411,
+            "evidence": "AST call at L411"
+          },
+          {
+            "parent": "build_branch_and_twig_network",
+            "child": "add_joint_knob",
+            "relation": "CALL",
+            "line": 423,
+            "evidence": "AST call at L423"
+          },
+          {
+            "parent": "build_branch_and_twig_network",
+            "child": "build_branch_and_twig_network.grow",
+            "relation": "CALL",
+            "line": 426,
+            "evidence": "AST call at L426"
+          },
+          {
+            "parent": "build_branch_and_twig_network",
+            "child": "make_mesh_object",
+            "relation": "CALL",
+            "line": 438,
+            "evidence": "AST call at L438"
+          },
+          {
+            "parent": "build_branch_and_twig_network.grow",
+            "child": "curved_points",
+            "relation": "CALL",
+            "line": 358,
+            "evidence": "AST call at L358"
+          },
+          {
+            "parent": "build_branch_and_twig_network.grow",
+            "child": "add_tube",
+            "relation": "CALL",
+            "line": 369,
+            "evidence": "AST call at L369"
+          },
+          {
+            "parent": "build_branch_and_twig_network.grow",
+            "child": "add_joint_knob",
+            "relation": "CALL",
+            "line": 373,
+            "evidence": "AST call at L373"
+          },
+          {
+            "parent": "build_branch_and_twig_network.grow",
+            "child": "child_direction",
+            "relation": "CALL",
+            "line": 382,
+            "evidence": "AST call at L382"
+          },
+          {
+            "parent": "build_branch_and_twig_network.grow",
+            "child": "build_branch_and_twig_network.grow",
+            "relation": "CALL",
+            "line": 386,
+            "evidence": "AST call at L386"
+          },
+          {
+            "parent": "build_main_trunk",
+            "child": "trunk_center",
+            "relation": "CALL",
+            "line": 220,
+            "evidence": "AST call at L220"
+          },
+          {
+            "parent": "build_main_trunk",
+            "child": "trunk_surface_radius",
+            "relation": "CALL",
+            "line": 225,
+            "evidence": "AST call at L225"
+          },
+          {
+            "parent": "build_main_trunk",
+            "child": "bark_mat",
+            "relation": "CALL",
+            "line": 245,
+            "evidence": "AST call at L245"
+          },
+          {
+            "parent": "build_main_trunk",
+            "child": "add_oriented_ellipsoid",
+            "relation": "CALL",
+            "line": 262,
+            "evidence": "AST call at L262"
+          },
+          {
+            "parent": "build_main_trunk",
+            "child": "make_mesh_object",
+            "relation": "CALL",
+            "line": 267,
+            "evidence": "AST call at L267"
+          },
+          {
+            "parent": "child_direction",
+            "child": "frame_from_direction",
+            "relation": "CALL",
+            "line": 308,
+            "evidence": "AST call at L308"
+          },
+          {
+            "parent": "create_bark_materials",
+            "child": "make_material",
+            "relation": "CALL",
+            "line": 36,
+            "evidence": "AST call at L36"
+          },
+          {
+            "parent": "curved_points",
+            "child": "frame_from_direction",
+            "relation": "CALL",
+            "line": 285,
+            "evidence": "AST call at L285"
+          },
+          {
+            "parent": "trunk_surface_radius",
+            "child": "trunk_radius_base",
+            "relation": "CALL",
+            "line": 200,
+            "evidence": "AST call at L200"
+          },
+          {
+            "parent": "module:HollowTree_seed0.py",
+            "child": "clear_scene",
+            "relation": "ENTRYPOINT",
+            "line": 455,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:HollowTree_seed0.py",
+            "child": "create_bark_materials",
+            "relation": "ENTRYPOINT",
+            "line": 456,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:HollowTree_seed0.py",
+            "child": "build_main_trunk",
+            "relation": "ENTRYPOINT",
+            "line": 457,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:HollowTree_seed0.py",
+            "child": "build_branch_and_twig_network",
+            "relation": "ENTRYPOINT",
+            "line": 458,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:HollowTree_seed0.py",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "ENTRYPOINT",
+            "line": 459,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "main_trunk_obj"
+        ],
+        "nodes": [
+          {
+            "id": "branch_obj",
+            "label": "branch_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L459: main_trunk_obj -> branch_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_branch_and_twig_network",
+            "runtime_variable": "branch_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "main_trunk_obj",
+            "label": "main_trunk_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L459: main_trunk_obj -> branch_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_main_trunk",
+            "runtime_variable": "main_trunk_obj",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "main_trunk_obj",
+            "child": "branch_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 459,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "main_trunk"
+    ],
+    "nodes": [
+      {
+        "id": "main_trunk",
+        "label": "main_trunk",
+        "part_id": "main_trunk",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          -0.0016634762287139893,
+          0.018919378519058228,
+          1.6749999523162842
+        ],
+        "dimensions": [
+          1.3117223381996155,
+          1.2095816731452942,
+          3.3499999046325684
+        ],
+        "bbox_min": [
+          -0.6575246453285217,
+          -0.5858714580535889,
+          0.0
+        ],
+        "bbox_max": [
+          0.6541976928710938,
+          0.6237102150917053,
+          3.3499999046325684
+        ]
+      },
+      {
+        "id": "branch_and_twig_network",
+        "label": "branch_and_twig_network",
+        "part_id": "branch_and_twig_network",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.13445685803890228,
+          0.06935559958219528,
+          3.373999834060669
+        ],
+        "center": [
+          -0.10519325733184814,
+          -0.0730580985546112,
+          3.8417725563049316
+        ],
+        "dimensions": [
+          2.5912787914276123,
+          1.9683893322944641,
+          1.00714111328125
+        ],
+        "bbox_min": [
+          -1.4008326530456543,
+          -1.0572527647018433,
+          3.3382019996643066
+        ],
+        "bbox_max": [
+          1.190446138381958,
+          0.9111365675926208,
+          4.345343112945557
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "main_trunk",
+        "child": "branch_and_twig_network",
+        "relation": "DIRECTED",
+        "line": 450,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.13445685803890228,
+          0.06935559958219528,
+          3.3499999046325684
+        ],
+        "anchor_b": [
+          -0.13445685803890228,
+          0.06935559958219528,
+          3.3499999046325684
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "main_trunk",
+            "child": "branch_and_twig_network",
+            "source": "parent_assignment",
+            "line": 450
+          },
+          {
+            "parent": "main_trunk",
+            "child": "branch_and_twig_network",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 459,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.13445685803890228,
+              0.06935559958219528,
+              3.3499999046325684
+            ],
+            "parent_anchor_world": [
+              -0.13445685803890228,
+              0.06935559958219528,
+              3.3499999046325684
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "main_trunk",
+            "child": "branch_and_twig_network",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "nodes": 2,
+      "edges": 1,
+      "relations": {
+        "DIRECTED": 1
+      },
+      "directed_edges": 1,
+      "runtime_directed_edges": 1,
+      "shared_anchor_edges": 1,
+      "estimated_anchor_edges": 0,
+      "geometric_anchor_candidates": 1,
+      "unverified_anchor_candidates": 0,
+      "misaligned_anchor_edges": 0
+    },
+    "source_bounds": {
+      "min": [
+        -1.4008326530456543,
+        -1.0572527647018433,
+        0.0
+      ],
+      "max": [
+        1.190446138381958,
+        0.9111365675926208,
+        4.345343112945557
+      ]
+    },
+    "scene_extent": 4.345343112945557,
+    "contact_threshold": 0.10863357782363892,
+    "shared_anchor_tolerance": 0.10863357782363892,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "branch_and_twig_network",
+        "main_trunk"
+      ],
+      "scale_overrides": {
+        "branch_and_twig_network": 0.4
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · GPT-5.5",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gpt5.5/HollowTree_seed0/HollowTree_seed0.py",
+    "source_sha256": "eafd5abaf4cf89b427c49429822c0d806cfe7cfab83cf4bbc670c52c5b522f89",
+    "source_size": 19416,
+    "glb_sha256": "09a8e42a1dc3c6ba6a6adb45cbd41442f50b79351f62a74d09e93f6afabdde66",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|branch_and_twig_network|scale": 0.4
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "child-0.4",
+      "side": "child",
+      "part_ids": [
+        "branch_and_twig_network"
+      ],
+      "parameter": "scale",
+      "scale": 0.4,
+      "params": {
+        "part_param|branch_and_twig_network|scale": 0.4
+      },
+      "paper_parent_ids": [
+        "main_trunk"
+      ],
+      "paper_child_ids": [
+        "branch_and_twig_network"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "dimensions": [
+        {
+          "id": "branch_and_twig_network",
+          "part_id": "branch_and_twig_network",
+          "before": [
+            6.223292827606201,
+            6.210488796234131,
+            2.3651418685913086
+          ],
+          "after": [
+            2.5912787914276123,
+            1.9683893322944641,
+            1.00714111328125
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "main_trunk",
+          "child": "branch_and_twig_network",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": true,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": true,
+          "runtime_parent_part_id": "main_trunk",
+          "runtime_child_part_id": "branch_and_twig_network"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.10519326478242874,
+      1.210719347000122e-08,
+      -0.0730580985546112
+    ],
+    "mesh_bbox_max_error_before_translation": 0.10519327223300934,
+    "mesh_bbox_max_error_after_translation": 4.7497451305389404e-08
+  }
+}

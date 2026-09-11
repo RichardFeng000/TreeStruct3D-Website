@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · Gemini 3.5 Flash",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemini_3.5_flash/ColumnarCactus_seed0/ColumnarCactus_seed0.py",
+  "source_sha256": "54af46266070c28e9f9a5872e413cea2c2a918a684d8d3ae4e5190bc69a77666",
+  "source_size": 15149,
+  "glb_sha256": "2b57332a21a9d6414bd8239022545d8b554f20356728d9a3888f6a5aed5026cc",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|side_arm|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "child-0.4",
+    "side": "child",
+    "part_ids": [
+      "side_arm"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|side_arm|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "main_stem"
+    ],
+    "paper_child_ids": [
+      "side_arm"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "side_arm",
+        "part_id": "side_arm",
+        "before": [
+          0.5326000154018402,
+          0.3052000105381012,
+          1.18259996175766
+        ],
+        "after": [
+          0.21303997933864594,
+          0.122079998254776,
+          0.4730399250984192
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "main_stem",
+        "child": "side_arm",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "main_stem",
+        "runtime_child_part_id": "side_arm"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.08021391951479018,
+    9.313225746154785e-09,
+    -5.294382572174072e-05
+  ],
+  "mesh_bbox_max_error_before_translation": 0.08021393418312073,
+  "mesh_bbox_max_error_after_translation": 5.029141902923584e-08
+}

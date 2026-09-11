@@ -1,0 +1,97 @@
+{
+  "method": "TreeStruct3D · GPT-5.6 Sol",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.6_sol/Toilet_seed0/Toilet_seed0.py",
+  "source_sha256": "2f1a42f4a4241943b8e9d9228c0e296dc2ef5b56db938939f820254f9c68489e",
+  "source_size": 17002,
+  "glb_sha256": "578c6fbd867d634579f8e27f1a416795d54e72849c415dc8c44d14050c72bc62",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {},
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "default",
+    "side": "default",
+    "part_ids": [],
+    "parameter": "scale",
+    "scale": 1.0,
+    "params": {},
+    "paper_parent_ids": [
+      "bowl_body"
+    ],
+    "paper_child_ids": [
+      "water_tank"
+    ],
+    "geometry_changed": false,
+    "attachment_observed": true,
+    "dimensions": [],
+    "selected_attachment_checks": [
+      {
+        "parent": "bowl_body",
+        "child": "water_tank",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "bowl_body",
+        "runtime_child_part_id": "water_tank"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.07987961297233899,
+    1.241763432820638e-09,
+    0.11500017096598943
+  ],
+  "mesh_bbox_max_error_before_translation": 0.11500097066164017,
+  "mesh_bbox_max_error_after_translation": 7.996956507411168e-07,
+  "material_export": {
+    "strategy": "cycles_emission_base_color_bake",
+    "resolution": 512,
+    "lighting_baked": false,
+    "procedural_normal_baked": false,
+    "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+    "objects": [
+      {
+        "name": "floor_base",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "bowl_body",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "seat_ring",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "upright_seat_lid",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "water_tank",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "flush_handle",
+        "mode": "native_gltf_material"
+      }
+    ],
+    "fallbacks": [],
+    "source_sha256": "2f1a42f4a4241943b8e9d9228c0e296dc2ef5b56db938939f820254f9c68489e",
+    "helper_sha256": "3c2b87e3641e99a7975abfbc75326626e6ee4e9d8b7408e5979f93517c748137",
+    "blender_version": "5.0.0",
+    "material_count": 1,
+    "image_count": 0,
+    "geometry_unchanged": true,
+    "original_glb_sha256": "578c6fbd867d634579f8e27f1a416795d54e72849c415dc8c44d14050c72bc62"
+  }
+}

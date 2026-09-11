@@ -1,0 +1,303 @@
+{
+  "source_sha256": "3b41b4b0e363a4f728f587a95808507eb14b25313cace8efab16ca22d0310c9a",
+  "samples": [
+    {
+      "id": "base-0.63",
+      "params": {
+        "base": 0.63
+      },
+      "parts": [
+        {
+          "id": "base",
+          "positions": {
+            "offset": 0,
+            "count": 75
+          }
+        },
+        {
+          "id": "capital",
+          "positions": {
+            "offset": 75,
+            "count": 678
+          }
+        },
+        {
+          "id": "shaft",
+          "positions": {
+            "offset": 753,
+            "count": 582
+          }
+        }
+      ]
+    },
+    {
+      "id": "base-1.37",
+      "params": {
+        "base": 1.37
+      },
+      "parts": [
+        {
+          "id": "base",
+          "positions": {
+            "offset": 1335,
+            "count": 75
+          }
+        },
+        {
+          "id": "capital",
+          "positions": {
+            "offset": 1410,
+            "count": 678
+          }
+        },
+        {
+          "id": "shaft",
+          "positions": {
+            "offset": 2088,
+            "count": 582
+          }
+        }
+      ]
+    },
+    {
+      "id": "capital-0.63",
+      "params": {
+        "capital": 0.63
+      },
+      "parts": [
+        {
+          "id": "base",
+          "positions": {
+            "offset": 2670,
+            "count": 75
+          }
+        },
+        {
+          "id": "capital",
+          "positions": {
+            "offset": 2745,
+            "count": 678
+          }
+        },
+        {
+          "id": "shaft",
+          "positions": {
+            "offset": 3423,
+            "count": 582
+          }
+        }
+      ]
+    },
+    {
+      "id": "capital-1.37",
+      "params": {
+        "capital": 1.37
+      },
+      "parts": [
+        {
+          "id": "base",
+          "positions": {
+            "offset": 4005,
+            "count": 75
+          }
+        },
+        {
+          "id": "capital",
+          "positions": {
+            "offset": 4080,
+            "count": 678
+          }
+        },
+        {
+          "id": "shaft",
+          "positions": {
+            "offset": 4758,
+            "count": 582
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "base": 0.63,
+        "capital": 0.63,
+        "shaft": 1.37
+      },
+      "parts": [
+        {
+          "id": "base",
+          "positions": {
+            "offset": 5340,
+            "count": 75
+          }
+        },
+        {
+          "id": "capital",
+          "positions": {
+            "offset": 5415,
+            "count": 678
+          }
+        },
+        {
+          "id": "shaft",
+          "positions": {
+            "offset": 6093,
+            "count": 582
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "base": 1.37,
+        "capital": 1.37,
+        "shaft": 0.63
+      },
+      "parts": [
+        {
+          "id": "base",
+          "positions": {
+            "offset": 6675,
+            "count": 75
+          }
+        },
+        {
+          "id": "capital",
+          "positions": {
+            "offset": 6750,
+            "count": 678
+          }
+        },
+        {
+          "id": "shaft",
+          "positions": {
+            "offset": 7428,
+            "count": 582
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "base": 0.63,
+        "capital": 0.63,
+        "shaft": 0.63
+      },
+      "parts": [
+        {
+          "id": "base",
+          "positions": {
+            "offset": 8010,
+            "count": 75
+          }
+        },
+        {
+          "id": "capital",
+          "positions": {
+            "offset": 8085,
+            "count": 678
+          }
+        },
+        {
+          "id": "shaft",
+          "positions": {
+            "offset": 8763,
+            "count": 582
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "base": 1.37,
+        "capital": 1.37,
+        "shaft": 1.37
+      },
+      "parts": [
+        {
+          "id": "base",
+          "positions": {
+            "offset": 9345,
+            "count": 75
+          }
+        },
+        {
+          "id": "capital",
+          "positions": {
+            "offset": 9420,
+            "count": 678
+          }
+        },
+        {
+          "id": "shaft",
+          "positions": {
+            "offset": 10098,
+            "count": 582
+          }
+        }
+      ]
+    },
+    {
+      "id": "shaft-0.63",
+      "params": {
+        "shaft": 0.63
+      },
+      "parts": [
+        {
+          "id": "base",
+          "positions": {
+            "offset": 10680,
+            "count": 75
+          }
+        },
+        {
+          "id": "capital",
+          "positions": {
+            "offset": 10755,
+            "count": 678
+          }
+        },
+        {
+          "id": "shaft",
+          "positions": {
+            "offset": 11433,
+            "count": 582
+          }
+        }
+      ]
+    },
+    {
+      "id": "shaft-1.37",
+      "params": {
+        "shaft": 1.37
+      },
+      "parts": [
+        {
+          "id": "base",
+          "positions": {
+            "offset": 12015,
+            "count": 75
+          }
+        },
+        {
+          "id": "capital",
+          "positions": {
+            "offset": 12090,
+            "count": 678
+          }
+        },
+        {
+          "id": "shaft",
+          "positions": {
+            "offset": 12768,
+            "count": 582
+          }
+        }
+      ]
+    }
+  ]
+}

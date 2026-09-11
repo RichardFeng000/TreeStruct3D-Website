@@ -1,0 +1,2127 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "Toilet_seed0/Toilet_seed0",
+    "label": "Toilet_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|floor_base|scale",
+        "label": "floor_base · scale",
+        "group": "Native Part Parameters · floor_base",
+        "value": 1.0,
+        "node_id": "floor_base",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|floor_base|floor_base",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|bowl_body|scale",
+        "label": "bowl_body · scale",
+        "group": "Native Part Parameters · bowl_body",
+        "value": 1.0,
+        "node_id": "bowl_body",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|bowl_body|bowl_body",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|seat_ring|scale",
+        "label": "seat_ring · scale",
+        "group": "Native Part Parameters · seat_ring",
+        "value": 1.0,
+        "node_id": "seat_ring",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|seat_ring|seat_ring",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|upright_seat_lid|scale",
+        "label": "upright_seat_lid · scale",
+        "group": "Native Part Parameters · upright_seat_lid",
+        "value": 1.0,
+        "node_id": "upright_seat_lid",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|upright_seat_lid|upright_seat_lid",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|water_tank|scale",
+        "label": "water_tank · scale",
+        "group": "Native Part Parameters · water_tank",
+        "value": 1.6,
+        "node_id": "water_tank",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|water_tank|water_tank",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|flush_handle|scale",
+        "label": "flush_handle · scale",
+        "group": "Native Part Parameters · flush_handle",
+        "value": 1.0,
+        "node_id": "flush_handle",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|flush_handle|flush_handle",
+        "visibility_value": true,
+        "is_leaf": false
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gpt5.6_sol/Toilet_seed0/Toilet_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:Toilet_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Toilet_seed0.py",
+            "label": "Toilet_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 594,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "MeshBuilder",
+            "label": "MeshBuilder",
+            "kind": "class",
+            "line": 42,
+            "end_line": 57,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "MeshBuilder.__init__",
+            "label": "__init__",
+            "kind": "method",
+            "line": 43,
+            "end_line": 46,
+            "parameters": [
+              "self",
+              "scale"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "MeshBuilder.vertex",
+            "label": "vertex",
+            "kind": "method",
+            "line": 48,
+            "end_line": 51,
+            "parameters": [
+              "self",
+              "co"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "MeshBuilder.face",
+            "label": "face",
+            "kind": "method",
+            "line": 53,
+            "end_line": 54,
+            "parameters": [
+              "self",
+              "indices"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "MeshBuilder.ring",
+            "label": "ring",
+            "kind": "method",
+            "line": 56,
+            "end_line": 57,
+            "parameters": [
+              "self",
+              "coordinates"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_object",
+            "label": "create_object",
+            "kind": "function",
+            "line": 60,
+            "end_line": 71,
+            "parameters": [
+              "name",
+              "builder"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "superellipse_xy",
+            "label": "superellipse_xy",
+            "kind": "function",
+            "line": 74,
+            "end_line": 81,
+            "parameters": [
+              "rx",
+              "ry",
+              "exponent",
+              "angle"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "oval_ring",
+            "label": "oval_ring",
+            "kind": "function",
+            "line": 84,
+            "end_line": 90,
+            "parameters": [
+              "builder",
+              "cx",
+              "cy",
+              "z",
+              "rx",
+              "ry",
+              "segments",
+              "exponent"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "connect_rings",
+            "label": "connect_rings",
+            "kind": "function",
+            "line": 93,
+            "end_line": 100,
+            "parameters": [
+              "builder",
+              "ring_a",
+              "ring_b",
+              "reverse"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "cap_ring",
+            "label": "cap_ring",
+            "kind": "function",
+            "line": 103,
+            "end_line": 111,
+            "parameters": [
+              "builder",
+              "ring",
+              "center",
+              "top"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_rounded_box",
+            "label": "add_rounded_box",
+            "kind": "function",
+            "line": 114,
+            "end_line": 184,
+            "parameters": [
+              "builder",
+              "center",
+              "half_size",
+              "radius",
+              "segments",
+              "exponent",
+              "extra_z"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_swept_tube",
+            "label": "add_swept_tube",
+            "kind": "function",
+            "line": 187,
+            "end_line": 246,
+            "parameters": [
+              "builder",
+              "points",
+              "radii",
+              "segments"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "rounded_rectangle_outline",
+            "label": "rounded_rectangle_outline",
+            "kind": "function",
+            "line": 249,
+            "end_line": 266,
+            "parameters": [
+              "width",
+              "height",
+              "radius",
+              "corner_steps"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_floor_base",
+            "label": "build_floor_base",
+            "kind": "function",
+            "line": 269,
+            "end_line": 290,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_bowl_body",
+            "label": "build_bowl_body",
+            "kind": "function",
+            "line": 293,
+            "end_line": 367,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_seat_ring",
+            "label": "build_seat_ring",
+            "kind": "function",
+            "line": 370,
+            "end_line": 409,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_upright_lid",
+            "label": "build_upright_lid",
+            "kind": "function",
+            "line": 412,
+            "end_line": 461,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_water_tank",
+            "label": "build_water_tank",
+            "kind": "function",
+            "line": 464,
+            "end_line": 481,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_flush_handle",
+            "label": "build_flush_handle",
+            "kind": "function",
+            "line": 484,
+            "end_line": 507,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "anchor_coordinate",
+            "label": "anchor_coordinate",
+            "kind": "function",
+            "line": 518,
+            "end_line": 519,
+            "parameters": [
+              "obj",
+              "vertex_index"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 522,
+            "end_line": 523,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 526,
+            "end_line": 550,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:Toilet_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "MeshBuilder",
+            "relation": "SECTION_MEMBER",
+            "line": 42,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "MeshBuilder",
+            "child": "MeshBuilder.__init__",
+            "relation": "CONTAINS",
+            "line": 43,
+            "evidence": "AST lexical scope"
+          },
+          {
+            "parent": "MeshBuilder",
+            "child": "MeshBuilder.vertex",
+            "relation": "CONTAINS",
+            "line": 48,
+            "evidence": "AST lexical scope"
+          },
+          {
+            "parent": "MeshBuilder",
+            "child": "MeshBuilder.face",
+            "relation": "CONTAINS",
+            "line": 53,
+            "evidence": "AST lexical scope"
+          },
+          {
+            "parent": "MeshBuilder",
+            "child": "MeshBuilder.ring",
+            "relation": "CONTAINS",
+            "line": 56,
+            "evidence": "AST lexical scope"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_object",
+            "relation": "SECTION_MEMBER",
+            "line": 60,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "superellipse_xy",
+            "relation": "SECTION_MEMBER",
+            "line": 74,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "oval_ring",
+            "relation": "SECTION_MEMBER",
+            "line": 84,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "connect_rings",
+            "relation": "SECTION_MEMBER",
+            "line": 93,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "cap_ring",
+            "relation": "SECTION_MEMBER",
+            "line": 103,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_rounded_box",
+            "relation": "SECTION_MEMBER",
+            "line": 114,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_swept_tube",
+            "relation": "SECTION_MEMBER",
+            "line": 187,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "rounded_rectangle_outline",
+            "relation": "SECTION_MEMBER",
+            "line": 249,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_floor_base",
+            "relation": "SECTION_MEMBER",
+            "line": 269,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_bowl_body",
+            "relation": "SECTION_MEMBER",
+            "line": 293,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_seat_ring",
+            "relation": "SECTION_MEMBER",
+            "line": 370,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_upright_lid",
+            "relation": "SECTION_MEMBER",
+            "line": 412,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_water_tank",
+            "relation": "SECTION_MEMBER",
+            "line": 464,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_flush_handle",
+            "relation": "SECTION_MEMBER",
+            "line": 484,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "anchor_coordinate",
+            "relation": "SECTION_MEMBER",
+            "line": 518,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 522,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 526,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:Toilet_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Toilet_seed0.py",
+            "label": "Toilet_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 594,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "MeshBuilder.face",
+            "label": "face",
+            "kind": "method",
+            "line": 53,
+            "end_line": 54,
+            "parameters": [
+              "self",
+              "indices"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "MeshBuilder.ring",
+            "label": "ring",
+            "kind": "method",
+            "line": 56,
+            "end_line": 57,
+            "parameters": [
+              "self",
+              "coordinates"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "MeshBuilder.vertex",
+            "label": "vertex",
+            "kind": "method",
+            "line": 48,
+            "end_line": 51,
+            "parameters": [
+              "self",
+              "co"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_rounded_box",
+            "label": "add_rounded_box",
+            "kind": "function",
+            "line": 114,
+            "end_line": 184,
+            "parameters": [
+              "builder",
+              "center",
+              "half_size",
+              "radius",
+              "segments",
+              "exponent",
+              "extra_z"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_swept_tube",
+            "label": "add_swept_tube",
+            "kind": "function",
+            "line": 187,
+            "end_line": 246,
+            "parameters": [
+              "builder",
+              "points",
+              "radii",
+              "segments"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "anchor_coordinate",
+            "label": "anchor_coordinate",
+            "kind": "function",
+            "line": 518,
+            "end_line": 519,
+            "parameters": [
+              "obj",
+              "vertex_index"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 526,
+            "end_line": 550,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_bowl_body",
+            "label": "build_bowl_body",
+            "kind": "function",
+            "line": 293,
+            "end_line": 367,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_floor_base",
+            "label": "build_floor_base",
+            "kind": "function",
+            "line": 269,
+            "end_line": 290,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_flush_handle",
+            "label": "build_flush_handle",
+            "kind": "function",
+            "line": 484,
+            "end_line": 507,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_seat_ring",
+            "label": "build_seat_ring",
+            "kind": "function",
+            "line": 370,
+            "end_line": 409,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_upright_lid",
+            "label": "build_upright_lid",
+            "kind": "function",
+            "line": 412,
+            "end_line": 461,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_water_tank",
+            "label": "build_water_tank",
+            "kind": "function",
+            "line": 464,
+            "end_line": 481,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "cap_ring",
+            "label": "cap_ring",
+            "kind": "function",
+            "line": 103,
+            "end_line": 111,
+            "parameters": [
+              "builder",
+              "ring",
+              "center",
+              "top"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "connect_rings",
+            "label": "connect_rings",
+            "kind": "function",
+            "line": 93,
+            "end_line": 100,
+            "parameters": [
+              "builder",
+              "ring_a",
+              "ring_b",
+              "reverse"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_object",
+            "label": "create_object",
+            "kind": "function",
+            "line": 60,
+            "end_line": 71,
+            "parameters": [
+              "name",
+              "builder"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 522,
+            "end_line": 523,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "oval_ring",
+            "label": "oval_ring",
+            "kind": "function",
+            "line": 84,
+            "end_line": 90,
+            "parameters": [
+              "builder",
+              "cx",
+              "cy",
+              "z",
+              "rx",
+              "ry",
+              "segments",
+              "exponent"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "rounded_rectangle_outline",
+            "label": "rounded_rectangle_outline",
+            "kind": "function",
+            "line": 249,
+            "end_line": 266,
+            "parameters": [
+              "width",
+              "height",
+              "radius",
+              "corner_steps"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "superellipse_xy",
+            "label": "superellipse_xy",
+            "kind": "function",
+            "line": 74,
+            "end_line": 81,
+            "parameters": [
+              "rx",
+              "ry",
+              "exponent",
+              "angle"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "MeshBuilder.ring",
+            "child": "MeshBuilder.vertex",
+            "relation": "CALL",
+            "line": 57,
+            "evidence": "AST call at L57"
+          },
+          {
+            "parent": "add_rounded_box",
+            "child": "oval_ring",
+            "relation": "CALL",
+            "line": 164,
+            "evidence": "AST call at L164"
+          },
+          {
+            "parent": "add_rounded_box",
+            "child": "connect_rings",
+            "relation": "CALL",
+            "line": 171,
+            "evidence": "AST call at L171"
+          },
+          {
+            "parent": "add_rounded_box",
+            "child": "cap_ring",
+            "relation": "CALL",
+            "line": 173,
+            "evidence": "AST call at L173"
+          },
+          {
+            "parent": "add_swept_tube",
+            "child": "MeshBuilder.vertex",
+            "relation": "CALL",
+            "line": 230,
+            "evidence": "AST call at L230"
+          },
+          {
+            "parent": "add_swept_tube",
+            "child": "connect_rings",
+            "relation": "CALL",
+            "line": 234,
+            "evidence": "AST call at L234"
+          },
+          {
+            "parent": "add_swept_tube",
+            "child": "MeshBuilder.face",
+            "relation": "CALL",
+            "line": 239,
+            "evidence": "AST call at L239"
+          },
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 532,
+            "evidence": "AST call at L532"
+          },
+          {
+            "parent": "build_bowl_body",
+            "child": "oval_ring",
+            "relation": "CALL",
+            "line": 306,
+            "evidence": "AST call at L306"
+          },
+          {
+            "parent": "build_bowl_body",
+            "child": "connect_rings",
+            "relation": "CALL",
+            "line": 310,
+            "evidence": "AST call at L310"
+          },
+          {
+            "parent": "build_bowl_body",
+            "child": "cap_ring",
+            "relation": "CALL",
+            "line": 312,
+            "evidence": "AST call at L312"
+          },
+          {
+            "parent": "build_bowl_body",
+            "child": "MeshBuilder.face",
+            "relation": "CALL",
+            "line": 330,
+            "evidence": "AST call at L330"
+          },
+          {
+            "parent": "build_bowl_body",
+            "child": "add_rounded_box",
+            "relation": "CALL",
+            "line": 345,
+            "evidence": "AST call at L345"
+          },
+          {
+            "parent": "build_bowl_body",
+            "child": "create_object",
+            "relation": "CALL",
+            "line": 363,
+            "evidence": "AST call at L363"
+          },
+          {
+            "parent": "build_floor_base",
+            "child": "oval_ring",
+            "relation": "CALL",
+            "line": 281,
+            "evidence": "AST call at L281"
+          },
+          {
+            "parent": "build_floor_base",
+            "child": "connect_rings",
+            "relation": "CALL",
+            "line": 285,
+            "evidence": "AST call at L285"
+          },
+          {
+            "parent": "build_floor_base",
+            "child": "cap_ring",
+            "relation": "CALL",
+            "line": 286,
+            "evidence": "AST call at L286"
+          },
+          {
+            "parent": "build_floor_base",
+            "child": "create_object",
+            "relation": "CALL",
+            "line": 290,
+            "evidence": "AST call at L290"
+          },
+          {
+            "parent": "build_flush_handle",
+            "child": "add_swept_tube",
+            "relation": "CALL",
+            "line": 504,
+            "evidence": "AST call at L504"
+          },
+          {
+            "parent": "build_flush_handle",
+            "child": "create_object",
+            "relation": "CALL",
+            "line": 505,
+            "evidence": "AST call at L505"
+          },
+          {
+            "parent": "build_seat_ring",
+            "child": "oval_ring",
+            "relation": "CALL",
+            "line": 391,
+            "evidence": "AST call at L391"
+          },
+          {
+            "parent": "build_seat_ring",
+            "child": "connect_rings",
+            "relation": "CALL",
+            "line": 395,
+            "evidence": "AST call at L395"
+          },
+          {
+            "parent": "build_seat_ring",
+            "child": "add_rounded_box",
+            "relation": "CALL",
+            "line": 397,
+            "evidence": "AST call at L397"
+          },
+          {
+            "parent": "build_seat_ring",
+            "child": "create_object",
+            "relation": "CALL",
+            "line": 406,
+            "evidence": "AST call at L406"
+          },
+          {
+            "parent": "build_upright_lid",
+            "child": "rounded_rectangle_outline",
+            "relation": "CALL",
+            "line": 420,
+            "evidence": "AST call at L420"
+          },
+          {
+            "parent": "build_upright_lid",
+            "child": "MeshBuilder.vertex",
+            "relation": "CALL",
+            "line": 426,
+            "evidence": "AST call at L426"
+          },
+          {
+            "parent": "build_upright_lid",
+            "child": "MeshBuilder.face",
+            "relation": "CALL",
+            "line": 446,
+            "evidence": "AST call at L446"
+          },
+          {
+            "parent": "build_upright_lid",
+            "child": "add_rounded_box",
+            "relation": "CALL",
+            "line": 450,
+            "evidence": "AST call at L450"
+          },
+          {
+            "parent": "build_upright_lid",
+            "child": "create_object",
+            "relation": "CALL",
+            "line": 459,
+            "evidence": "AST call at L459"
+          },
+          {
+            "parent": "build_water_tank",
+            "child": "add_rounded_box",
+            "relation": "CALL",
+            "line": 467,
+            "evidence": "AST call at L467"
+          },
+          {
+            "parent": "build_water_tank",
+            "child": "create_object",
+            "relation": "CALL",
+            "line": 478,
+            "evidence": "AST call at L478"
+          },
+          {
+            "parent": "cap_ring",
+            "child": "MeshBuilder.vertex",
+            "relation": "CALL",
+            "line": 104,
+            "evidence": "AST call at L104"
+          },
+          {
+            "parent": "cap_ring",
+            "child": "MeshBuilder.face",
+            "relation": "CALL",
+            "line": 108,
+            "evidence": "AST call at L108"
+          },
+          {
+            "parent": "connect_rings",
+            "child": "MeshBuilder.face",
+            "relation": "CALL",
+            "line": 98,
+            "evidence": "AST call at L98"
+          },
+          {
+            "parent": "oval_ring",
+            "child": "superellipse_xy",
+            "relation": "CALL",
+            "line": 88,
+            "evidence": "AST call at L88"
+          },
+          {
+            "parent": "oval_ring",
+            "child": "MeshBuilder.ring",
+            "relation": "CALL",
+            "line": 90,
+            "evidence": "AST call at L90"
+          },
+          {
+            "parent": "module:Toilet_seed0.py",
+            "child": "build_floor_base",
+            "relation": "ENTRYPOINT",
+            "line": 510,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Toilet_seed0.py",
+            "child": "build_bowl_body",
+            "relation": "ENTRYPOINT",
+            "line": 511,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Toilet_seed0.py",
+            "child": "build_seat_ring",
+            "relation": "ENTRYPOINT",
+            "line": 512,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Toilet_seed0.py",
+            "child": "build_upright_lid",
+            "relation": "ENTRYPOINT",
+            "line": 513,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Toilet_seed0.py",
+            "child": "build_water_tank",
+            "relation": "ENTRYPOINT",
+            "line": 514,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Toilet_seed0.py",
+            "child": "build_flush_handle",
+            "relation": "ENTRYPOINT",
+            "line": 515,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Toilet_seed0.py",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "ENTRYPOINT",
+            "line": 553,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Toilet_seed0.py",
+            "child": "anchor_coordinate",
+            "relation": "ENTRYPOINT",
+            "line": 556,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "floor_base"
+        ],
+        "nodes": [
+          {
+            "id": "bowl_body",
+            "label": "bowl_body",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L560: bowl_body -> seat_ring [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L574: bowl_body -> water_tank [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L553: floor_base -> bowl_body [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_bowl_body",
+            "runtime_variable": "bowl_body",
+            "group": "Blender parts"
+          },
+          {
+            "id": "floor_base",
+            "label": "floor_base",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L553: floor_base -> bowl_body [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_floor_base",
+            "runtime_variable": "floor_base",
+            "group": "Blender parts"
+          },
+          {
+            "id": "flush_handle",
+            "label": "flush_handle",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L581: water_tank -> flush_handle [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_flush_handle",
+            "runtime_variable": "flush_handle",
+            "group": "Blender parts"
+          },
+          {
+            "id": "seat_ring",
+            "label": "seat_ring",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L560: bowl_body -> seat_ring [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L567: seat_ring -> upright_seat_lid [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_seat_ring",
+            "runtime_variable": "seat_ring",
+            "group": "Blender parts"
+          },
+          {
+            "id": "upright_seat_lid",
+            "label": "upright_seat_lid",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L567: seat_ring -> upright_seat_lid [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_upright_lid",
+            "runtime_variable": "upright_seat_lid",
+            "group": "Blender parts"
+          },
+          {
+            "id": "water_tank",
+            "label": "water_tank",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L574: bowl_body -> water_tank [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L581: water_tank -> flush_handle [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_water_tank",
+            "runtime_variable": "water_tank",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "bowl_body",
+            "child": "seat_ring",
+            "relation": "DIRECTED_CODE",
+            "line": 560,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "bowl_body",
+            "child": "water_tank",
+            "relation": "DIRECTED_CODE",
+            "line": 574,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "floor_base",
+            "child": "bowl_body",
+            "relation": "DIRECTED_CODE",
+            "line": 553,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "seat_ring",
+            "child": "upright_seat_lid",
+            "relation": "DIRECTED_CODE",
+            "line": 567,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "water_tank",
+            "child": "flush_handle",
+            "relation": "DIRECTED_CODE",
+            "line": 581,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "floor_base"
+    ],
+    "nodes": [
+      {
+        "id": "bowl_body",
+        "label": "bowl_body",
+        "part_id": "bowl_body",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.7200000286102295
+        ],
+        "center": [
+          0.0,
+          0.11500000953674316,
+          1.0400000214576721
+        ],
+        "dimensions": [
+          1.2799999713897705,
+          2.309999942779541,
+          0.6399999856948853
+        ],
+        "bbox_min": [
+          -0.6399999856948853,
+          -1.0399999618530273,
+          0.7200000286102295
+        ],
+        "bbox_max": [
+          0.6399999856948853,
+          1.2699999809265137,
+          1.3600000143051147
+        ]
+      },
+      {
+        "id": "floor_base",
+        "label": "floor_base",
+        "part_id": "floor_base",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.18000000715255737,
+          0.36000001430511475
+        ],
+        "dimensions": [
+          0.9800000190734863,
+          1.4800000190734863,
+          0.7200000286102295
+        ],
+        "bbox_min": [
+          -0.49000000953674316,
+          -0.5600000023841858,
+          0.0
+        ],
+        "bbox_max": [
+          0.49000000953674316,
+          0.9200000166893005,
+          0.7200000286102295
+        ]
+      },
+      {
+        "id": "water_tank",
+        "label": "water_tank",
+        "part_id": "water_tank",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.9200000166893005,
+          1.3600000143051147
+        ],
+        "center": [
+          0.0,
+          0.9200000464916229,
+          2.12799996137619
+        ],
+        "dimensions": [
+          2.047999858856201,
+          0.9280000329017639,
+          1.5359998941421509
+        ],
+        "bbox_min": [
+          -1.0239999294281006,
+          0.45600003004074097,
+          1.3600000143051147
+        ],
+        "bbox_max": [
+          1.0239999294281006,
+          1.3840000629425049,
+          2.8959999084472656
+        ]
+      },
+      {
+        "id": "upright_seat_lid",
+        "label": "upright_seat_lid",
+        "part_id": "upright_seat_lid",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.46000000834465027,
+          1.4350000619888306
+        ],
+        "center": [
+          0.0,
+          0.5002499967813492,
+          1.8850000500679016
+        ],
+        "dimensions": [
+          1.0800000429153442,
+          0.19049999117851257,
+          0.8999999761581421
+        ],
+        "bbox_min": [
+          -0.5400000214576721,
+          0.4050000011920929,
+          1.4350000619888306
+        ],
+        "bbox_max": [
+          0.5400000214576721,
+          0.5954999923706055,
+          2.3350000381469727
+        ]
+      },
+      {
+        "id": "seat_ring",
+        "label": "seat_ring",
+        "part_id": "seat_ring",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          -0.17999997735023499,
+          1.3600000143051147
+        ],
+        "center": [
+          0.0,
+          -0.1799999475479126,
+          1.3975000381469727
+        ],
+        "dimensions": [
+          1.2400000095367432,
+          1.559999942779541,
+          0.07500004768371582
+        ],
+        "bbox_min": [
+          -0.6200000047683716,
+          -0.9599999189376831,
+          1.3600000143051147
+        ],
+        "bbox_max": [
+          0.6200000047683716,
+          0.6000000238418579,
+          1.4350000619888306
+        ]
+      },
+      {
+        "id": "flush_handle",
+        "label": "flush_handle",
+        "part_id": "flush_handle",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -1.0239999294281006,
+          0.9200015068054199,
+          1.840000033378601
+        ],
+        "center": [
+          -1.1038795113563538,
+          0.8670015037059784,
+          1.840000033378601
+        ],
+        "dimensions": [
+          0.15975916385650635,
+          0.23400002717971802,
+          0.12800002098083496
+        ],
+        "bbox_min": [
+          -1.183759093284607,
+          0.7500014901161194,
+          1.7760000228881836
+        ],
+        "bbox_max": [
+          -1.0239999294281006,
+          0.9840015172958374,
+          1.9040000438690186
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "floor_base",
+        "child": "bowl_body",
+        "relation": "DIRECTED",
+        "line": 543,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.07999999821186066,
+          0.7200000286102295
+        ],
+        "anchor_b": [
+          0.0,
+          0.07999999821186066,
+          0.7200000286102295
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "floor_base",
+            "child": "bowl_body",
+            "source": "parent_assignment",
+            "line": 543
+          },
+          {
+            "parent": "floor_base",
+            "child": "bowl_body",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 553,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.07999999821186066,
+              0.7200000286102295
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.07999999821186066,
+              0.7200000286102295
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "floor_base",
+            "child": "bowl_body",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "water_tank",
+        "child": "flush_handle",
+        "relation": "DIRECTED",
+        "line": 543,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -1.0239999294281006,
+          0.9200015068054199,
+          1.840000033378601
+        ],
+        "anchor_b": [
+          -1.0239999294281006,
+          0.9200015068054199,
+          1.840000033378601
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "water_tank",
+            "child": "flush_handle",
+            "source": "parent_assignment",
+            "line": 543
+          },
+          {
+            "parent": "water_tank",
+            "child": "flush_handle",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 581,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -1.0239999294281006,
+              0.9200015068054199,
+              1.840000033378601
+            ],
+            "parent_anchor_world": [
+              -1.0239999294281006,
+              0.9200015068054199,
+              1.840000033378601
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "water_tank",
+            "child": "flush_handle",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "seat_ring",
+        "child": "upright_seat_lid",
+        "relation": "DIRECTED",
+        "line": 543,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.46000000834465027,
+          1.4350000619888306
+        ],
+        "anchor_b": [
+          0.0,
+          0.46000000834465027,
+          1.4350000619888306
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "seat_ring",
+            "child": "upright_seat_lid",
+            "source": "parent_assignment",
+            "line": 543
+          },
+          {
+            "parent": "seat_ring",
+            "child": "upright_seat_lid",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 567,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.46000000834465027,
+              1.4350000619888306
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.46000000834465027,
+              1.4350000619888306
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "seat_ring",
+            "child": "upright_seat_lid",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bowl_body",
+        "child": "seat_ring",
+        "relation": "DIRECTED",
+        "line": 543,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.46000000834465027,
+          1.3600000143051147
+        ],
+        "anchor_b": [
+          0.0,
+          0.46000000834465027,
+          1.3600000143051147
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bowl_body",
+            "child": "seat_ring",
+            "source": "parent_assignment",
+            "line": 543
+          },
+          {
+            "parent": "bowl_body",
+            "child": "seat_ring",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 560,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.46000000834465027,
+              1.3600000143051147
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.46000000834465027,
+              1.3600000143051147
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "bowl_body",
+            "child": "seat_ring",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bowl_body",
+        "child": "water_tank",
+        "relation": "DIRECTED",
+        "line": 543,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.9200000166893005,
+          1.3600000143051147
+        ],
+        "anchor_b": [
+          0.0,
+          0.9200000166893005,
+          1.3600000143051147
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bowl_body",
+            "child": "water_tank",
+            "source": "parent_assignment",
+            "line": 543
+          },
+          {
+            "parent": "bowl_body",
+            "child": "water_tank",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 574,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.9200000166893005,
+              1.3600000143051147
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.9200000166893005,
+              1.3600000143051147
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "bowl_body",
+            "child": "water_tank",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "upright_seat_lid",
+        "child": "water_tank",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.0,
+          0.46000000834465027,
+          1.505000114440918
+        ],
+        "anchor_b": [
+          -3.838205884676427e-06,
+          0.45600003004074097,
+          1.5040000677108765
+        ],
+        "anchor_gap": 0.004123097697828206,
+        "anchor_tolerance": 0.07239999771118165,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "seat_ring",
+        "child": "water_tank",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          1.867819854339814e-08,
+          0.6000000238418579,
+          1.374000072479248
+        ],
+        "anchor_b": [
+          -3.298458295830642e-06,
+          0.6000000238418579,
+          1.3600000143051147
+        ],
+        "anchor_gap": 0.014000058567110037,
+        "anchor_tolerance": 0.07239999771118165,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 6,
+      "edges": 7,
+      "relations": {
+        "DIRECTED": 5,
+        "UNDIRECTED_CONTACT": 2
+      },
+      "directed_edges": 5,
+      "runtime_directed_edges": 5,
+      "shared_anchor_edges": 5,
+      "estimated_anchor_edges": 2,
+      "geometric_anchor_candidates": 7,
+      "unverified_anchor_candidates": 2,
+      "misaligned_anchor_edges": 0
+    },
+    "source_bounds": {
+      "min": [
+        -1.183759093284607,
+        -1.0399999618530273,
+        0.0
+      ],
+      "max": [
+        1.0239999294281006,
+        1.3840000629425049,
+        2.8959999084472656
+      ]
+    },
+    "scene_extent": 2.8959999084472656,
+    "contact_threshold": 0.07239999771118165,
+    "shared_anchor_tolerance": 0.07239999771118165,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "bowl_body",
+        "floor_base",
+        "flush_handle",
+        "seat_ring",
+        "upright_seat_lid",
+        "water_tank"
+      ],
+      "scale_overrides": {
+        "water_tank": 1.6
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · GPT-5.6 Sol",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gpt5.6_sol/Toilet_seed0/Toilet_seed0.py",
+    "source_sha256": "2f1a42f4a4241943b8e9d9228c0e296dc2ef5b56db938939f820254f9c68489e",
+    "source_size": 17002,
+    "glb_sha256": "df1a2a80354cd3b8ab502fa1cbbd840bcd090f3a73e0c7ead5f07923eaa38b32",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|water_tank|scale": 1.6
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "child-1.6",
+      "side": "child",
+      "part_ids": [
+        "water_tank"
+      ],
+      "parameter": "scale",
+      "scale": 1.6,
+      "params": {
+        "part_param|water_tank|scale": 1.6
+      },
+      "paper_parent_ids": [
+        "bowl_body"
+      ],
+      "paper_child_ids": [
+        "water_tank"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "dimensions": [
+        {
+          "id": "water_tank",
+          "part_id": "water_tank",
+          "before": [
+            1.2799999713897705,
+            0.5800000429153442,
+            0.9599999189376831
+          ],
+          "after": [
+            2.047999858856201,
+            0.9280000329017639,
+            1.5359998941421509
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "bowl_body",
+          "child": "water_tank",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": true,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": true,
+          "runtime_parent_part_id": "bowl_body",
+          "runtime_child_part_id": "water_tank"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.07987957820296288,
+      6.20881716410319e-09,
+      0.17200030634800592
+    ],
+    "mesh_bbox_max_error_before_translation": 0.17200154811143875,
+    "mesh_bbox_max_error_after_translation": 1.2417634328298899e-06
+  }
+}

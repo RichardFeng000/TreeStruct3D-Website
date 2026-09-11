@@ -1,0 +1,3538 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "BedFrame_seed0/BedFrame_seed0",
+    "label": "BedFrame_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|bed_frame_base|scale",
+        "label": "bed_frame_base · scale",
+        "group": "Native Part Parameters · bed_frame_base",
+        "value": 1.0,
+        "node_id": "bed_frame_base",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|bed_frame_base|bed_frame_base",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|bed_frame_base|width",
+        "label": "bed_frame_base · width",
+        "group": "Native Part Parameters · bed_frame_base",
+        "value": 1.6,
+        "node_id": "bed_frame_base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.8000000000000003,
+        "max": 4.0,
+        "step": 0.016
+      },
+      {
+        "id": "part_param|bed_frame_base|length",
+        "label": "bed_frame_base · length",
+        "group": "Native Part Parameters · bed_frame_base",
+        "value": 2.1,
+        "node_id": "bed_frame_base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -1.0500000000000003,
+        "max": 5.25,
+        "step": 0.021
+      },
+      {
+        "id": "part_param|bed_frame_base|height",
+        "label": "bed_frame_base · height",
+        "group": "Native Part Parameters · bed_frame_base",
+        "value": 0.2,
+        "node_id": "bed_frame_base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.10000000000000003,
+        "max": 0.5,
+        "step": 0.002
+      },
+      {
+        "id": "part_param|bed_frame_base|thickness",
+        "label": "bed_frame_base · thickness",
+        "group": "Native Part Parameters · bed_frame_base",
+        "value": 0.05,
+        "node_id": "bed_frame_base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.05,
+        "max": 0.15000000000000002,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|bed_frame_base|ledge_width",
+        "label": "bed_frame_base · ledge_width",
+        "group": "Native Part Parameters · bed_frame_base",
+        "value": 0.03,
+        "node_id": "bed_frame_base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.07,
+        "max": 0.13,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|headboard|scale",
+        "label": "headboard · scale",
+        "group": "Native Part Parameters · headboard",
+        "value": 1.6,
+        "node_id": "headboard",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|headboard|headboard",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|headboard|height",
+        "label": "headboard · height",
+        "group": "Native Part Parameters · headboard",
+        "value": 1.2,
+        "node_id": "headboard",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.5999999999999999,
+        "max": 3.0,
+        "step": 0.012
+      },
+      {
+        "id": "part_param|headboard|thickness",
+        "label": "headboard · thickness",
+        "group": "Native Part Parameters · headboard",
+        "value": 0.05,
+        "node_id": "headboard",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.05,
+        "max": 0.15000000000000002,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|footboard|scale",
+        "label": "footboard · scale",
+        "group": "Native Part Parameters · footboard",
+        "value": 1.0,
+        "node_id": "footboard",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|footboard|footboard",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|footboard|height",
+        "label": "footboard · height",
+        "group": "Native Part Parameters · footboard",
+        "value": 0.6,
+        "node_id": "footboard",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.29999999999999993,
+        "max": 1.5,
+        "step": 0.006
+      },
+      {
+        "id": "part_param|footboard|thickness",
+        "label": "footboard · thickness",
+        "group": "Native Part Parameters · footboard",
+        "value": 0.05,
+        "node_id": "footboard",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.05,
+        "max": 0.15000000000000002,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|slat|scale",
+        "label": "slat · scale",
+        "group": "Native Part Parameters · slat",
+        "value": 1.0,
+        "node_id": "slat",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|slat|slat",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|slat|count",
+        "label": "slat · count",
+        "group": "Native Part Parameters · slat",
+        "value": 14,
+        "node_id": "slat",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 28.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|slat|thickness",
+        "label": "slat · thickness",
+        "group": "Native Part Parameters · slat",
+        "value": 0.02,
+        "node_id": "slat",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.08,
+        "max": 0.12000000000000001,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|slat|width",
+        "label": "slat · width",
+        "group": "Native Part Parameters · slat",
+        "value": 0.08,
+        "node_id": "slat",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.039999999999999994,
+        "max": 0.2,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|leg|scale",
+        "label": "leg · scale",
+        "group": "Native Part Parameters · leg",
+        "value": 1.0,
+        "node_id": "leg",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|leg|leg",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|leg|height",
+        "label": "leg · height",
+        "group": "Native Part Parameters · leg",
+        "value": 0.3,
+        "node_id": "leg",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.14999999999999997,
+        "max": 0.75,
+        "step": 0.003
+      },
+      {
+        "id": "part_param|leg|top_radius",
+        "label": "leg · top_radius",
+        "group": "Native Part Parameters · leg",
+        "value": 0.04,
+        "node_id": "leg",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.060000000000000005,
+        "max": 0.14,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|leg|bottom_radius",
+        "label": "leg · bottom_radius",
+        "group": "Native Part Parameters · leg",
+        "value": 0.02,
+        "node_id": "leg",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.08,
+        "max": 0.12000000000000001,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|leg|accent_height",
+        "label": "leg · accent_height",
+        "group": "Native Part Parameters · leg",
+        "value": 0.08,
+        "node_id": "leg",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.039999999999999994,
+        "max": 0.2,
+        "step": 0.001
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gemeni_3.1_pro/BedFrame_seed0/BedFrame_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:BedFrame_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:BedFrame_seed0.py",
+            "label": "BedFrame_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 282,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 14,
+            "end_line": 15,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_material",
+            "label": "create_material",
+            "kind": "function",
+            "line": 17,
+            "end_line": 35,
+            "parameters": [
+              "name",
+              "is_metal"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 37,
+            "end_line": 38,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 40,
+            "end_line": 51,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_cube",
+            "label": "add_cube",
+            "kind": "function",
+            "line": 53,
+            "end_line": 75,
+            "parameters": [
+              "bm",
+              "min_c",
+              "max_c",
+              "mat_idx"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_cylinder",
+            "label": "add_cylinder",
+            "kind": "function",
+            "line": 77,
+            "end_line": 100,
+            "parameters": [
+              "bm",
+              "r1",
+              "r2",
+              "z1",
+              "z2",
+              "mat_idx"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_object",
+            "label": "create_object",
+            "kind": "function",
+            "line": 102,
+            "end_line": 112,
+            "parameters": [
+              "name",
+              "bm",
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_bed_frame_base",
+            "label": "build_bed_frame_base",
+            "kind": "function",
+            "line": 114,
+            "end_line": 160,
+            "parameters": [
+              "params",
+              "true_leg_h"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_headboard",
+            "label": "build_headboard",
+            "kind": "function",
+            "line": 162,
+            "end_line": 187,
+            "parameters": [
+              "params",
+              "true_w"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_footboard",
+            "label": "build_footboard",
+            "kind": "function",
+            "line": 189,
+            "end_line": 213,
+            "parameters": [
+              "params",
+              "true_w"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_slat",
+            "label": "build_slat",
+            "kind": "function",
+            "line": 215,
+            "end_line": 229,
+            "parameters": [
+              "params",
+              "true_inner_w"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_leg",
+            "label": "build_leg",
+            "kind": "function",
+            "line": 231,
+            "end_line": 248,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "main",
+            "label": "main",
+            "kind": "function",
+            "line": 250,
+            "end_line": 280,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:BedFrame_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "clear_scene",
+            "relation": "SECTION_MEMBER",
+            "line": 14,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_material",
+            "relation": "SECTION_MEMBER",
+            "line": 17,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 37,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 40,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_cube",
+            "relation": "SECTION_MEMBER",
+            "line": 53,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_cylinder",
+            "relation": "SECTION_MEMBER",
+            "line": 77,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_object",
+            "relation": "SECTION_MEMBER",
+            "line": 102,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_bed_frame_base",
+            "relation": "SECTION_MEMBER",
+            "line": 114,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_headboard",
+            "relation": "SECTION_MEMBER",
+            "line": 162,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_footboard",
+            "relation": "SECTION_MEMBER",
+            "line": 189,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_slat",
+            "relation": "SECTION_MEMBER",
+            "line": 215,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_leg",
+            "relation": "SECTION_MEMBER",
+            "line": 231,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "main",
+            "relation": "SECTION_MEMBER",
+            "line": 250,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:BedFrame_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:BedFrame_seed0.py",
+            "label": "BedFrame_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 282,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "add_cube",
+            "label": "add_cube",
+            "kind": "function",
+            "line": 53,
+            "end_line": 75,
+            "parameters": [
+              "bm",
+              "min_c",
+              "max_c",
+              "mat_idx"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_cylinder",
+            "label": "add_cylinder",
+            "kind": "function",
+            "line": 77,
+            "end_line": 100,
+            "parameters": [
+              "bm",
+              "r1",
+              "r2",
+              "z1",
+              "z2",
+              "mat_idx"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 40,
+            "end_line": 51,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_bed_frame_base",
+            "label": "build_bed_frame_base",
+            "kind": "function",
+            "line": 114,
+            "end_line": 160,
+            "parameters": [
+              "params",
+              "true_leg_h"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_footboard",
+            "label": "build_footboard",
+            "kind": "function",
+            "line": 189,
+            "end_line": 213,
+            "parameters": [
+              "params",
+              "true_w"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_headboard",
+            "label": "build_headboard",
+            "kind": "function",
+            "line": 162,
+            "end_line": 187,
+            "parameters": [
+              "params",
+              "true_w"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_leg",
+            "label": "build_leg",
+            "kind": "function",
+            "line": 231,
+            "end_line": 248,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_slat",
+            "label": "build_slat",
+            "kind": "function",
+            "line": 215,
+            "end_line": 229,
+            "parameters": [
+              "params",
+              "true_inner_w"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 14,
+            "end_line": 15,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_material",
+            "label": "create_material",
+            "kind": "function",
+            "line": 17,
+            "end_line": 35,
+            "parameters": [
+              "name",
+              "is_metal"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_object",
+            "label": "create_object",
+            "kind": "function",
+            "line": 102,
+            "end_line": 112,
+            "parameters": [
+              "name",
+              "bm",
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 37,
+            "end_line": 38,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "main",
+            "label": "main",
+            "kind": "function",
+            "line": 250,
+            "end_line": 280,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 42,
+            "evidence": "AST call at L42"
+          },
+          {
+            "parent": "build_bed_frame_base",
+            "child": "add_cube",
+            "relation": "CALL",
+            "line": 126,
+            "evidence": "AST call at L126"
+          },
+          {
+            "parent": "build_footboard",
+            "child": "add_cube",
+            "relation": "CALL",
+            "line": 196,
+            "evidence": "AST call at L196"
+          },
+          {
+            "parent": "build_headboard",
+            "child": "add_cube",
+            "relation": "CALL",
+            "line": 169,
+            "evidence": "AST call at L169"
+          },
+          {
+            "parent": "build_leg",
+            "child": "add_cylinder",
+            "relation": "CALL",
+            "line": 240,
+            "evidence": "AST call at L240"
+          },
+          {
+            "parent": "build_slat",
+            "child": "add_cube",
+            "relation": "CALL",
+            "line": 222,
+            "evidence": "AST call at L222"
+          },
+          {
+            "parent": "main",
+            "child": "clear_scene",
+            "relation": "CALL",
+            "line": 251,
+            "evidence": "AST call at L251"
+          },
+          {
+            "parent": "main",
+            "child": "create_material",
+            "relation": "CALL",
+            "line": 253,
+            "evidence": "AST call at L253"
+          },
+          {
+            "parent": "main",
+            "child": "build_bed_frame_base",
+            "relation": "CALL",
+            "line": 258,
+            "evidence": "AST call at L258"
+          },
+          {
+            "parent": "main",
+            "child": "create_object",
+            "relation": "CALL",
+            "line": 259,
+            "evidence": "AST call at L259"
+          },
+          {
+            "parent": "main",
+            "child": "build_headboard",
+            "relation": "CALL",
+            "line": 263,
+            "evidence": "AST call at L263"
+          },
+          {
+            "parent": "main",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "CALL",
+            "line": 265,
+            "evidence": "AST call at L265"
+          },
+          {
+            "parent": "main",
+            "child": "build_footboard",
+            "relation": "CALL",
+            "line": 267,
+            "evidence": "AST call at L267"
+          },
+          {
+            "parent": "main",
+            "child": "build_leg",
+            "relation": "CALL",
+            "line": 272,
+            "evidence": "AST call at L272"
+          },
+          {
+            "parent": "main",
+            "child": "build_slat",
+            "relation": "CALL",
+            "line": 278,
+            "evidence": "AST call at L278"
+          },
+          {
+            "parent": "module:BedFrame_seed0.py",
+            "child": "main",
+            "relation": "ENTRYPOINT",
+            "line": 282,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "base_obj"
+        ],
+        "nodes": [
+          {
+            "id": "base_obj",
+            "label": "base_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L269: base_obj -> fb_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L265: base_obj -> hb_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L274: base_obj -> leg_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L280: base_obj -> slat_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_object",
+            "runtime_variable": "base_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "fb_obj",
+            "label": "fb_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L269: base_obj -> fb_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_object",
+            "runtime_variable": "fb_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "hb_obj",
+            "label": "hb_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L265: base_obj -> hb_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_object",
+            "runtime_variable": "hb_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "leg_obj",
+            "label": "leg_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L274: base_obj -> leg_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_object",
+            "runtime_variable": "leg_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "slat_obj",
+            "label": "slat_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L280: base_obj -> slat_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_object",
+            "runtime_variable": "slat_obj",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "base_obj",
+            "child": "fb_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 269,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "base_obj",
+            "child": "hb_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 265,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "base_obj",
+            "child": "leg_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 274,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "base_obj",
+            "child": "slat_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 280,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "bed_frame_base"
+    ],
+    "nodes": [
+      {
+        "id": "bed_frame_base",
+        "label": "bed_frame_base",
+        "part_id": "bed_frame_base",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.4000000059604645
+        ],
+        "dimensions": [
+          1.600000023841858,
+          2.0999999046325684,
+          0.19999998807907104
+        ],
+        "bbox_min": [
+          -0.800000011920929,
+          -1.0499999523162842,
+          0.30000001192092896
+        ],
+        "bbox_max": [
+          0.800000011920929,
+          1.0499999523162842,
+          0.5
+        ]
+      },
+      {
+        "id": "headboard",
+        "label": "headboard",
+        "part_id": "headboard",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          -1.0499999523162842,
+          0.30000001192092896
+        ],
+        "center": [
+          0.0,
+          -1.081999957561493,
+          1.2999999821186066
+        ],
+        "dimensions": [
+          1.6639999151229858,
+          0.15999996662139893,
+          1.9999999403953552
+        ],
+        "bbox_min": [
+          -0.8319999575614929,
+          -1.1619999408721924,
+          0.30000001192092896
+        ],
+        "bbox_max": [
+          0.8319999575614929,
+          -1.0019999742507935,
+          2.299999952316284
+        ]
+      },
+      {
+        "id": "footboard",
+        "label": "footboard",
+        "part_id": "footboard",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          1.0499999523162842,
+          0.30000001192092896
+        ],
+        "center": [
+          0.0,
+          1.0799999833106995,
+          0.625
+        ],
+        "dimensions": [
+          1.6399999856948853,
+          0.10000002384185791,
+          0.6499999761581421
+        ],
+        "bbox_min": [
+          -0.8199999928474426,
+          1.0299999713897705,
+          0.30000001192092896
+        ],
+        "bbox_max": [
+          0.8199999928474426,
+          1.1299999952316284,
+          0.949999988079071
+        ]
+      },
+      {
+        "id": "leg",
+        "label": "leg",
+        "part_id": "leg",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.75,
+          -1.0,
+          0.0
+        ],
+        "center": [
+          -0.75,
+          -0.9999999701976776,
+          0.15000000596046448
+        ],
+        "dimensions": [
+          0.08000004291534424,
+          0.07999998331069946,
+          0.30000001192092896
+        ],
+        "bbox_min": [
+          -0.7900000214576721,
+          -1.0399999618530273,
+          0.0
+        ],
+        "bbox_max": [
+          -0.7099999785423279,
+          -0.9599999785423279,
+          0.30000001192092896
+        ]
+      },
+      {
+        "id": "leg.001",
+        "label": "leg.001",
+        "part_id": "leg",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.75,
+          -1.0,
+          0.0
+        ],
+        "center": [
+          0.75,
+          -0.9999999701976776,
+          0.15000000596046448
+        ],
+        "dimensions": [
+          0.08000004291534424,
+          0.07999998331069946,
+          0.30000001192092896
+        ],
+        "bbox_min": [
+          0.7099999785423279,
+          -1.0399999618530273,
+          0.0
+        ],
+        "bbox_max": [
+          0.7900000214576721,
+          -0.9599999785423279,
+          0.30000001192092896
+        ]
+      },
+      {
+        "id": "leg.002",
+        "label": "leg.002",
+        "part_id": "leg",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.75,
+          1.0,
+          0.0
+        ],
+        "center": [
+          -0.75,
+          0.9999999701976776,
+          0.15000000596046448
+        ],
+        "dimensions": [
+          0.08000004291534424,
+          0.07999998331069946,
+          0.30000001192092896
+        ],
+        "bbox_min": [
+          -0.7900000214576721,
+          0.9599999785423279,
+          0.0
+        ],
+        "bbox_max": [
+          -0.7099999785423279,
+          1.0399999618530273,
+          0.30000001192092896
+        ]
+      },
+      {
+        "id": "leg.003",
+        "label": "leg.003",
+        "part_id": "leg",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.75,
+          1.0,
+          0.0
+        ],
+        "center": [
+          0.75,
+          0.9999999701976776,
+          0.15000000596046448
+        ],
+        "dimensions": [
+          0.08000004291534424,
+          0.07999998331069946,
+          0.30000001192092896
+        ],
+        "bbox_min": [
+          0.7099999785423279,
+          0.9599999785423279,
+          0.0
+        ],
+        "bbox_max": [
+          0.7900000214576721,
+          1.0399999618530273,
+          0.30000001192092896
+        ]
+      },
+      {
+        "id": "slat",
+        "label": "slat",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          -0.9285714030265808,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          -0.9285714030265808,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.08000004291534424,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          -0.9685714244842529,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          -0.8885713815689087,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.001",
+        "label": "slat.001",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          -0.7857142686843872,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          -0.7857142686843872,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.08000004291534424,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          -0.8257142901420593,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          -0.7457142472267151,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.002",
+        "label": "slat.002",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          -0.6428571343421936,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          -0.6428571343421936,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.08000004291534424,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          -0.6828571557998657,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          -0.6028571128845215,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.011",
+        "label": "slat.011",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          0.6428571343421936,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          0.6428571343421936,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.08000004291534424,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          0.6028571128845215,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          0.6828571557998657,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.012",
+        "label": "slat.012",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          0.7857142686843872,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          0.7857142686843872,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.08000004291534424,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          0.7457142472267151,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          0.8257142901420593,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.013",
+        "label": "slat.013",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          0.9285714030265808,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          0.9285714030265808,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.08000004291534424,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          0.8885713815689087,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          0.9685714244842529,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.003",
+        "label": "slat.003",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          -0.5,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          -0.5000000149011612,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.08000001311302185,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          -0.5400000214576721,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          -0.46000000834465027,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.005",
+        "label": "slat.005",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          -0.2142857164144516,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          -0.2142857164144516,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.08000001311302185,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          -0.2542857229709625,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          -0.17428570985794067,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.008",
+        "label": "slat.008",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          0.2142857164144516,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          0.2142857164144516,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.08000001311302185,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          0.17428570985794067,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          0.2542857229709625,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.010",
+        "label": "slat.010",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          0.5,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          0.5000000149011612,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.08000001311302185,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          0.46000000834465027,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          0.5400000214576721,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.006",
+        "label": "slat.006",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          -0.0714285746216774,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          -0.0714285746216774,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.07999999821186066,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          -0.11142857372760773,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          -0.03142857551574707,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.007",
+        "label": "slat.007",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          0.0714285746216774,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          0.0714285746216774,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.07999999821186066,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          0.03142857551574707,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          0.11142857372760773,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.004",
+        "label": "slat.004",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          -0.3571428656578064,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          -0.3571428656578064,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.07999998331069946,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          -0.39714285731315613,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          -0.31714287400245667,
+          0.42000001668930054
+        ]
+      },
+      {
+        "id": "slat.009",
+        "label": "slat.009",
+        "part_id": "slat",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7599999904632568,
+          0.3571428656578064,
+          0.4000000059604645
+        ],
+        "center": [
+          0.0,
+          0.3571428656578064,
+          0.4100000113248825
+        ],
+        "dimensions": [
+          1.5199999809265137,
+          0.07999998331069946,
+          0.02000001072883606
+        ],
+        "bbox_min": [
+          -0.7599999904632568,
+          0.31714287400245667,
+          0.4000000059604645
+        ],
+        "bbox_max": [
+          0.7599999904632568,
+          0.39714285731315613,
+          0.42000001668930054
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "bed_frame_base",
+        "child": "footboard",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          1.0499999523162842,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          0.0,
+          1.0499999523162842,
+          0.30000001192092896
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.2273763598817694,
+        "parent_anchor_vertex_gap": 0.722841620351111,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "footboard",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "footboard",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 269,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              1.0499999523162842,
+              0.30000001192092896
+            ],
+            "parent_anchor_world": [
+              0.0,
+              1.0499999523162842,
+              0.30000001192092896
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.2273763598817694,
+            "parent_anchor_vertex_gap": 0.722841620351111,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "footboard",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "headboard",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          -1.0499999523162842,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          0.0,
+          -1.0499999523162842,
+          0.30000001192092896
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.43081321858158395,
+        "parent_anchor_vertex_gap": 0.722841620351111,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "headboard",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "headboard",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 265,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              -1.0499999523162842,
+              0.30000001192092896
+            ],
+            "parent_anchor_world": [
+              0.0,
+              -1.0499999523162842,
+              0.30000001192092896
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.43081321858158395,
+            "parent_anchor_vertex_gap": 0.722841620351111,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "headboard",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "leg",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.75,
+          -1.0,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          -0.75,
+          -1.0,
+          0.30000001192092896
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.03999996165975953,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "leg",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 274,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.75,
+              -1.0,
+              0.30000001192092896
+            ],
+            "parent_anchor_world": [
+              -0.75,
+              -1.0,
+              0.30000001192092896
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.03999996165975953,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "leg",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "leg.001",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.75,
+          -1.0,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          0.75,
+          -1.0,
+          0.30000001192092896
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.03999996165975953,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "leg.001",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "leg.001",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 274,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.75,
+              -1.0,
+              0.30000001192092896
+            ],
+            "parent_anchor_world": [
+              0.75,
+              -1.0,
+              0.30000001192092896
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.03999996165975953,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "leg.001",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "leg.002",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.75,
+          1.0,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          -0.75,
+          1.0,
+          0.30000001192092896
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.03999996165975953,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "leg.002",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "leg.002",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 274,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.75,
+              1.0,
+              0.30000001192092896
+            ],
+            "parent_anchor_world": [
+              -0.75,
+              1.0,
+              0.30000001192092896
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.03999996165975953,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "leg.002",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "leg.003",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.75,
+          1.0,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          0.75,
+          1.0,
+          0.30000001192092896
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.03999996165975953,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "leg.003",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "leg.003",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 274,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.75,
+              1.0,
+              0.30000001192092896
+            ],
+            "parent_anchor_world": [
+              0.75,
+              1.0,
+              0.30000001192092896
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.03999996165975953,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "leg.003",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          -0.9285714030265808,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          -0.9285714030265808,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.04000002132262466,
+        "parent_anchor_vertex_gap": 0.07212519840790396,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              -0.9285714030265808,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              -0.9285714030265808,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.04000002132262466,
+            "parent_anchor_vertex_gap": 0.07212519840790396,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.001",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          -0.7857142686843872,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          -0.7857142686843872,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.04000002132262466,
+        "parent_anchor_vertex_gap": 0.21451893870233524,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.001",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.001",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              -0.7857142686843872,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              -0.7857142686843872,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.04000002132262466,
+            "parent_anchor_vertex_gap": 0.21451893870233524,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.001",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.002",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          -0.6428571343421936,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          -0.6428571343421936,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.04000002132262466,
+        "parent_anchor_vertex_gap": 0.3572828277430093,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.002",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.002",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              -0.6428571343421936,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              -0.6428571343421936,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.04000002132262466,
+            "parent_anchor_vertex_gap": 0.3572828277430093,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.002",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.003",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          -0.5,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          -0.5,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.03999999221879913,
+        "parent_anchor_vertex_gap": 0.5000999898103368,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.003",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.003",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              -0.5,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              -0.5,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.03999999221879913,
+            "parent_anchor_vertex_gap": 0.5000999898103368,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.003",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.004",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          -0.3571428656578064,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          -0.3571428656578064,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.03999999221879913,
+        "parent_anchor_vertex_gap": 0.6429349015914659,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.004",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.004",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              -0.3571428656578064,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              -0.3571428656578064,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.03999999221879913,
+            "parent_anchor_vertex_gap": 0.6429349015914659,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.004",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.005",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          -0.2142857164144516,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          -0.2142857164144516,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.040000006770714545,
+        "parent_anchor_vertex_gap": 0.7857778837740524,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.005",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.005",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              -0.2142857164144516,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              -0.2142857164144516,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.040000006770714545,
+            "parent_anchor_vertex_gap": 0.7857778837740524,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.005",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.006",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          -0.0714285746216774,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          -0.0714285746216774,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0399999994947575,
+        "parent_anchor_vertex_gap": 0.92862524424277,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.006",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.006",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              -0.0714285746216774,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              -0.0714285746216774,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0399999994947575,
+            "parent_anchor_vertex_gap": 0.92862524424277,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.006",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.007",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          0.0714285746216774,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          0.0714285746216774,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0399999994947575,
+        "parent_anchor_vertex_gap": 0.92862524424277,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.007",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.007",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              0.0714285746216774,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              0.0714285746216774,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0399999994947575,
+            "parent_anchor_vertex_gap": 0.92862524424277,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.007",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.008",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          0.2142857164144516,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          0.2142857164144516,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.040000006770714545,
+        "parent_anchor_vertex_gap": 0.7857778837740524,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.008",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.008",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              0.2142857164144516,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              0.2142857164144516,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.040000006770714545,
+            "parent_anchor_vertex_gap": 0.7857778837740524,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.008",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.009",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          0.3571428656578064,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          0.3571428656578064,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.03999999221879913,
+        "parent_anchor_vertex_gap": 0.6429349015914659,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.009",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.009",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              0.3571428656578064,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              0.3571428656578064,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.03999999221879913,
+            "parent_anchor_vertex_gap": 0.6429349015914659,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.009",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.010",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          0.5,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          0.5,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.03999999221879913,
+        "parent_anchor_vertex_gap": 0.5000999898103368,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.010",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.010",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              0.5,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              0.5,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.03999999221879913,
+            "parent_anchor_vertex_gap": 0.5000999898103368,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.010",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.011",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          0.6428571343421936,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          0.6428571343421936,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.04000002132262466,
+        "parent_anchor_vertex_gap": 0.3572828277430093,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.011",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.011",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              0.6428571343421936,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              0.6428571343421936,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.04000002132262466,
+            "parent_anchor_vertex_gap": 0.3572828277430093,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.011",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.012",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          0.7857142686843872,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          0.7857142686843872,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.04000002132262466,
+        "parent_anchor_vertex_gap": 0.21451893870233524,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.012",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.012",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              0.7857142686843872,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              0.7857142686843872,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.04000002132262466,
+            "parent_anchor_vertex_gap": 0.21451893870233524,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.012",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "bed_frame_base",
+        "child": "slat.013",
+        "relation": "DIRECTED",
+        "line": 47,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7599999904632568,
+          0.9285714030265808,
+          0.4000000059604645
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          0.9285714030265808,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.04000002132262466,
+        "parent_anchor_vertex_gap": 0.07212519840790396,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.013",
+            "source": "parent_assignment",
+            "line": 47
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.013",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 280,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7599999904632568,
+              0.9285714030265808,
+              0.4000000059604645
+            ],
+            "parent_anchor_world": [
+              -0.7599999904632568,
+              0.9285714030265808,
+              0.4000000059604645
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.04000002132262466,
+            "parent_anchor_vertex_gap": 0.07212519840790396,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "bed_frame_base",
+            "child": "slat.013",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "footboard",
+        "child": "leg.002",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.800000011920929,
+          1.0499999523162842,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          -0.7782842516899109,
+          1.0282843112945557,
+          0.30000001192092896
+        ],
+        "anchor_gap": 0.030710638342366706,
+        "anchor_tolerance": 0.057499998807907106,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "footboard",
+        "child": "leg.003",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.800000011920929,
+          1.0499999523162842,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          0.7782842516899109,
+          1.0282843112945557,
+          0.30000001192092896
+        ],
+        "anchor_gap": 0.030710638342366706,
+        "anchor_tolerance": 0.057499998807907106,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "headboard",
+        "child": "leg",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.800000011920929,
+          -1.0499999523162842,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          -0.7782842516899109,
+          -1.0282843112945557,
+          0.30000001192092896
+        ],
+        "anchor_gap": 0.030710638342366706,
+        "anchor_tolerance": 0.057499998807907106,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "headboard",
+        "child": "leg.001",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.800000011920929,
+          -1.0499999523162842,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          0.7782842516899109,
+          -1.0282843112945557,
+          0.30000001192092896
+        ],
+        "anchor_gap": 0.030710638342366706,
+        "anchor_tolerance": 0.057499998807907106,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "headboard",
+        "child": "slat",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.800000011920929,
+          -1.0499999523162842,
+          0.30000001192092896
+        ],
+        "anchor_b": [
+          -0.7599999904632568,
+          -0.9685714244842529,
+          0.4000000059604645
+        ],
+        "anchor_gap": 0.1350207601423324,
+        "anchor_tolerance": 0.057499998807907106,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.03342854976654053,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 21,
+      "edges": 25,
+      "relations": {
+        "DIRECTED": 20,
+        "UNDIRECTED_CONTACT": 5
+      },
+      "directed_edges": 20,
+      "runtime_directed_edges": 20,
+      "shared_anchor_edges": 0,
+      "estimated_anchor_edges": 5,
+      "geometric_anchor_candidates": 24,
+      "unverified_anchor_candidates": 24,
+      "misaligned_anchor_edges": 1
+    },
+    "source_bounds": {
+      "min": [
+        -0.8319999575614929,
+        -1.1619999408721924,
+        0.0
+      ],
+      "max": [
+        0.8319999575614929,
+        1.1299999952316284,
+        2.299999952316284
+      ]
+    },
+    "scene_extent": 2.299999952316284,
+    "contact_threshold": 0.057499998807907106,
+    "shared_anchor_tolerance": 0.057499998807907106,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "bed_frame_base",
+        "footboard",
+        "headboard",
+        "leg",
+        "slat"
+      ],
+      "scale_overrides": {
+        "headboard": 1.6
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · Gemini 3.1 Pro",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gemeni_3.1_pro/BedFrame_seed0/BedFrame_seed0.py",
+    "source_sha256": "1f4148bb79d6d553780b33cea0c6fc6f67daefa6346bc88b554f30806086420b",
+    "source_size": 9811,
+    "glb_sha256": "a67f4b3380978c0c2d81066acecc7775ca88c82b3fad240b18af7a468a831deb",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|headboard|scale": 1.6
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "child-1.6",
+      "side": "child",
+      "part_ids": [
+        "headboard"
+      ],
+      "parameter": "scale",
+      "scale": 1.6,
+      "params": {
+        "part_param|headboard|scale": 1.6
+      },
+      "paper_parent_ids": [
+        "bed_frame_base"
+      ],
+      "paper_child_ids": [
+        "headboard"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "dimensions": [
+        {
+          "id": "headboard",
+          "part_id": "headboard",
+          "before": [
+            1.6399999856948853,
+            0.10000002384185791,
+            1.2499999403953552
+          ],
+          "after": [
+            1.6639999151229858,
+            0.15999996662139893,
+            1.9999999403953552
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "bed_frame_base",
+          "child": "headboard",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "bed_frame_base",
+          "runtime_child_part_id": "headboard"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.0,
+      -2.306132089524042e-09,
+      -0.01599997148982116
+    ],
+    "mesh_bbox_max_error_before_translation": 0.016000010073184967,
+    "mesh_bbox_max_error_after_translation": 6.191077686491467e-08
+  }
+}

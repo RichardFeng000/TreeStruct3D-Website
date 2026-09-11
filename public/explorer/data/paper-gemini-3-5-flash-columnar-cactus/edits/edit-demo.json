@@ -1,0 +1,92 @@
+{
+  "id": "paper-gemini-3-5-flash-columnar-cactus",
+  "title": "Columnar Cactus",
+  "provider": "Gemini 3.5 Flash",
+  "group": "appendix-6d",
+  "label": "ColumnarCactus_seed0",
+  "model": "ColumnarCactus_seed0/ColumnarCactus_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · Gemini 3.5 Flash",
+  "parent": {
+    "ids": [
+      "main_stem"
+    ],
+    "label": "main stem"
+  },
+  "child": {
+    "ids": [
+      "side_arm"
+    ],
+    "label": "side arm"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/default/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/default/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/default/mesh-map.json",
+      "bytes": 1262880
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-0.4/mesh-map.json",
+      "bytes": 1262880
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/parent-1.6/mesh-map.json",
+      "bytes": 1262876
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/child-0.4/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/child-0.4/mesh-map.json",
+      "bytes": 1262876
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/child-1.6/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/child-1.6/mesh-map.json",
+      "bytes": 1262872
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gemini-3-5-flash-columnar-cactus/edits/default/model.glb",
+    "snapshot": "paper-gemini-3-5-flash-columnar-cactus/edits/default/snapshot.json",
+    "provenance": "paper-gemini-3-5-flash-columnar-cactus/edits/default/provenance.json",
+    "mesh_map": "paper-gemini-3-5-flash-columnar-cactus/edits/default/mesh-map.json",
+    "bytes": 1262880,
+    "parts": 4,
+    "shared_anchors": 0
+  }
+}

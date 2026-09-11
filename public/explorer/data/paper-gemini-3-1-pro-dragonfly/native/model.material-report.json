@@ -1,0 +1,66 @@
+{
+  "strategy": "cycles_emission_base_color_bake",
+  "resolution": 512,
+  "lighting_baked": false,
+  "procedural_normal_baked": false,
+  "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+  "objects": [
+    {
+      "name": "thorax",
+      "mode": "native_gltf_material"
+    },
+    {
+      "name": "abdomen",
+      "mode": "native_gltf_material"
+    },
+    {
+      "name": "head",
+      "mode": "native_gltf_material"
+    },
+    {
+      "name": "compound_eye",
+      "mode": "native_gltf_material"
+    },
+    {
+      "name": "compound_eye.001",
+      "mode": "native_gltf_material"
+    },
+    {
+      "name": "forewing",
+      "mode": "baked_base_color",
+      "materials": [
+        "mat_wing"
+      ],
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "forewing.001",
+      "mode": "baked_base_color",
+      "materials": [
+        "mat_wing"
+      ],
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "hindwing",
+      "mode": "baked_base_color",
+      "materials": [
+        "mat_wing"
+      ],
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "hindwing.001",
+      "mode": "baked_base_color",
+      "materials": [
+        "mat_wing"
+      ],
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "fallbacks": []
+}

@@ -1,0 +1,92 @@
+{
+  "id": "paper-gpt-5-5-bed",
+  "title": "Bed",
+  "provider": "GPT-5.5",
+  "group": "appendix-6a",
+  "label": "Bed_seed0",
+  "model": "Bed_seed0/Bed_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · GPT-5.5",
+  "parent": {
+    "ids": [
+      "wooden_bed_frame_base"
+    ],
+    "label": "bed frame"
+  },
+  "child": {
+    "ids": [
+      "decorative_headboard"
+    ],
+    "label": "headboard"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gpt-5-5-bed/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-5-bed/edits/default/snapshot.json",
+      "provenance": "paper-gpt-5-5-bed/edits/default/provenance.json",
+      "mesh_map": "paper-gpt-5-5-bed/edits/default/mesh-map.json",
+      "bytes": 203764
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-5-bed/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gpt-5-5-bed/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-5-bed/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-5-bed/edits/parent-0.4/mesh-map.json",
+      "bytes": 203804
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-5-bed/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gpt-5-5-bed/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-5-bed/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-5-bed/edits/parent-1.6/mesh-map.json",
+      "bytes": 204472
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-5-bed/edits/child-0.4/model.glb",
+      "snapshot": "paper-gpt-5-5-bed/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-5-bed/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-5-bed/edits/child-0.4/mesh-map.json",
+      "bytes": 204060
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-5-bed/edits/child-1.6/model.glb",
+      "snapshot": "paper-gpt-5-5-bed/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-5-bed/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-5-bed/edits/child-1.6/mesh-map.json",
+      "bytes": 204048
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gpt-5-5-bed/edits/default/model.glb",
+    "snapshot": "paper-gpt-5-5-bed/edits/default/snapshot.json",
+    "provenance": "paper-gpt-5-5-bed/edits/default/provenance.json",
+    "mesh_map": "paper-gpt-5-5-bed/edits/default/mesh-map.json",
+    "bytes": 203764,
+    "parts": 8,
+    "shared_anchors": 1
+  }
+}

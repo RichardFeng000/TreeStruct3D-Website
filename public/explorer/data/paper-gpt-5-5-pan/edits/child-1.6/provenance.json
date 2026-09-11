@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · GPT-5.5",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.5/Pan_seed0/Pan_seed0.py",
+  "source_sha256": "373dc95c0438c8ba538bb71f1ef7a8d7075521d5b1b123d5b62dbeece20c13d4",
+  "source_size": 15345,
+  "glb_sha256": "9470bdb54c9967da1ea9ffe2e3625eadc5024dc257132189cb3d5fb227d4a103",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|flat_handle_core|scale": 1.6
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "child-1.6",
+    "side": "child",
+    "part_ids": [
+      "flat_handle_core"
+    ],
+    "parameter": "scale",
+    "scale": 1.6,
+    "params": {
+      "part_param|flat_handle_core|scale": 1.6
+    },
+    "paper_parent_ids": [
+      "pan_body"
+    ],
+    "paper_child_ids": [
+      "flat_handle_core"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "flat_handle_core",
+        "part_id": "flat_handle_core",
+        "before": [
+          1.2853715419769287,
+          3.1142547130584717,
+          0.1599999964237213
+        ],
+        "after": [
+          2.059946298599243,
+          5.049474239349365,
+          0.25600001215934753
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "pan_body",
+        "child": "flat_handle_core",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "pan_body",
+        "runtime_child_part_id": "flat_handle_core"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    0.3700000122189522,
+    -3.4925001561641693
+  ],
+  "mesh_bbox_max_error_before_translation": 3.4925003051757812,
+  "mesh_bbox_max_error_after_translation": 1.4901161193847656e-07
+}

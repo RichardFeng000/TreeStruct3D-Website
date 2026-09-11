@@ -1,0 +1,92 @@
+{
+  "id": "paper-gpt-5-5-crab",
+  "title": "Crab",
+  "provider": "GPT-5.5",
+  "group": "main",
+  "label": "Crab_seed0",
+  "model": "Crab_seed0/Crab_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · GPT-5.5",
+  "parent": {
+    "ids": [
+      "carapace"
+    ],
+    "label": "carapace"
+  },
+  "child": {
+    "ids": [
+      "walking_leg"
+    ],
+    "label": "walking leg"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gpt-5-5-crab/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-5-crab/edits/default/snapshot.json",
+      "provenance": "paper-gpt-5-5-crab/edits/default/provenance.json",
+      "mesh_map": "paper-gpt-5-5-crab/edits/default/mesh-map.json",
+      "bytes": 178096
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-5-crab/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gpt-5-5-crab/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-5-crab/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-5-crab/edits/parent-0.4/mesh-map.json",
+      "bytes": 178100
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-5-crab/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gpt-5-5-crab/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-5-crab/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-5-crab/edits/parent-1.6/mesh-map.json",
+      "bytes": 178092
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-5-crab/edits/child-0.4/model.glb",
+      "snapshot": "paper-gpt-5-5-crab/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-5-crab/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-5-crab/edits/child-0.4/mesh-map.json",
+      "bytes": 178100
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-5-crab/edits/child-1.6/model.glb",
+      "snapshot": "paper-gpt-5-5-crab/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-5-crab/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-5-crab/edits/child-1.6/mesh-map.json",
+      "bytes": 178100
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gpt-5-5-crab/edits/default/model.glb",
+    "snapshot": "paper-gpt-5-5-crab/edits/default/snapshot.json",
+    "provenance": "paper-gpt-5-5-crab/edits/default/provenance.json",
+    "mesh_map": "paper-gpt-5-5-crab/edits/default/mesh-map.json",
+    "bytes": 178096,
+    "parts": 5,
+    "shared_anchors": 0
+  }
+}

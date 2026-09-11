@@ -1,0 +1,2137 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "Lobster_seed0/Lobster_seed0",
+    "label": "Lobster_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "source_override:global:y_cursor",
+        "label": "y_cursor",
+        "group": "Code Parameters",
+        "value": -0.48,
+        "type": "number",
+        "min": -1.2,
+        "max": 0.24,
+        "step": 0.0048
+      },
+      {
+        "id": "part_param|cephalothorax|scale",
+        "label": "cephalothorax · scale",
+        "group": "Native Part Parameters · cephalothorax",
+        "value": 1.0,
+        "node_id": "cephalothorax",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|cephalothorax|cephalothorax",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|abdomen_chain|scale",
+        "label": "abdomen_chain · scale",
+        "group": "Native Part Parameters · abdomen_chain",
+        "value": 1.0,
+        "node_id": "abdomen_chain",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|abdomen_chain|abdomen_chain",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|abdomen_chain|segments",
+        "label": "abdomen_chain · segments",
+        "group": "Native Part Parameters · abdomen_chain",
+        "value": 7,
+        "node_id": "abdomen_chain",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 14.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|tail_fan|scale",
+        "label": "tail_fan · scale",
+        "group": "Native Part Parameters · tail_fan",
+        "value": 1.0,
+        "node_id": "tail_fan",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|tail_fan|tail_fan",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|tail_fan|lobes",
+        "label": "tail_fan · lobes",
+        "group": "Native Part Parameters · tail_fan",
+        "value": 5,
+        "node_id": "tail_fan",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 10.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|crusher_chela|scale",
+        "label": "crusher_chela · scale",
+        "group": "Native Part Parameters · crusher_chela",
+        "value": 0.4,
+        "node_id": "crusher_chela",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|crusher_chela|crusher_chela",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|cutter_chela|scale",
+        "label": "cutter_chela · scale",
+        "group": "Native Part Parameters · cutter_chela",
+        "value": 1.0,
+        "node_id": "cutter_chela",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|cutter_chela|cutter_chela",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|long_antenna|scale",
+        "label": "long_antenna · scale",
+        "group": "Native Part Parameters · long_antenna",
+        "value": 1.0,
+        "node_id": "long_antenna",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|long_antenna|long_antenna",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|walking_leg_array|scale",
+        "label": "walking_leg_array · scale",
+        "group": "Native Part Parameters · walking_leg_array",
+        "value": 1.0,
+        "node_id": "walking_leg_array",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|walking_leg_array|walking_leg_array",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|walking_leg_array|pairs",
+        "label": "walking_leg_array · pairs",
+        "group": "Native Part Parameters · walking_leg_array",
+        "value": 4,
+        "node_id": "walking_leg_array",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 8.0,
+        "step": 1.0
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gpt5.6_sol/Lobster_seed0/Lobster_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:Lobster_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Lobster_seed0.py",
+            "label": "Lobster_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 742,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "scaled",
+            "label": "scaled",
+            "kind": "function",
+            "line": 23,
+            "end_line": 24,
+            "parameters": [
+              "point",
+              "scale"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_material",
+            "label": "make_material",
+            "kind": "function",
+            "line": 26,
+            "end_line": 70,
+            "parameters": [
+              "name",
+              "dark",
+              "light",
+              "roughness",
+              "bump_strength",
+              "noise_scale"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "assign_material",
+            "label": "assign_material",
+            "kind": "function",
+            "line": 113,
+            "end_line": 114,
+            "parameters": [
+              "obj",
+              "material"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "apply_transform",
+            "label": "apply_transform",
+            "kind": "function",
+            "line": 116,
+            "end_line": 120,
+            "parameters": [
+              "obj"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "ellipsoid",
+            "label": "ellipsoid",
+            "kind": "function",
+            "line": 122,
+            "end_line": 133,
+            "parameters": [
+              "location",
+              "radii",
+              "material",
+              "rotation",
+              "segments",
+              "rings"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "torus_y",
+            "label": "torus_y",
+            "kind": "function",
+            "line": 135,
+            "end_line": 148,
+            "parameters": [
+              "location",
+              "major_radius",
+              "minor_radius",
+              "material",
+              "scale_xyz"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "tube_curve",
+            "label": "tube_curve",
+            "kind": "function",
+            "line": 150,
+            "end_line": 173,
+            "parameters": [
+              "points",
+              "base_radius",
+              "radii",
+              "material",
+              "resolution",
+              "bevel_resolution"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "merge_parts",
+            "label": "merge_parts",
+            "kind": "function",
+            "line": 175,
+            "end_line": 187,
+            "parameters": [
+              "name",
+              "parts"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "retained_surface_anchor",
+            "label": "retained_surface_anchor",
+            "kind": "function",
+            "line": 189,
+            "end_line": 192,
+            "parameters": [
+              "obj",
+              "target_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "nearest_anchor_in_objects",
+            "label": "nearest_anchor_in_objects",
+            "kind": "function",
+            "line": 194,
+            "end_line": 207,
+            "parameters": [
+              "objects",
+              "target"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "translate_object_geometry",
+            "label": "translate_object_geometry",
+            "kind": "function",
+            "line": 209,
+            "end_line": 212,
+            "parameters": [
+              "obj",
+              "delta"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "translate_object_group",
+            "label": "translate_object_group",
+            "kind": "function",
+            "line": 214,
+            "end_line": 216,
+            "parameters": [
+              "objects",
+              "delta"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 218,
+            "end_line": 219,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 221,
+            "end_line": 232,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "scaled",
+            "relation": "SECTION_MEMBER",
+            "line": 23,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_material",
+            "relation": "SECTION_MEMBER",
+            "line": 26,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "assign_material",
+            "relation": "SECTION_MEMBER",
+            "line": 113,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "apply_transform",
+            "relation": "SECTION_MEMBER",
+            "line": 116,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "ellipsoid",
+            "relation": "SECTION_MEMBER",
+            "line": 122,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "torus_y",
+            "relation": "SECTION_MEMBER",
+            "line": 135,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "tube_curve",
+            "relation": "SECTION_MEMBER",
+            "line": 150,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "merge_parts",
+            "relation": "SECTION_MEMBER",
+            "line": 175,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "retained_surface_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 189,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "nearest_anchor_in_objects",
+            "relation": "SECTION_MEMBER",
+            "line": 194,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "translate_object_geometry",
+            "relation": "SECTION_MEMBER",
+            "line": 209,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "translate_object_group",
+            "relation": "SECTION_MEMBER",
+            "line": 214,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 218,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 221,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:Lobster_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Lobster_seed0.py",
+            "label": "Lobster_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 742,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "apply_transform",
+            "label": "apply_transform",
+            "kind": "function",
+            "line": 116,
+            "end_line": 120,
+            "parameters": [
+              "obj"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "assign_material",
+            "label": "assign_material",
+            "kind": "function",
+            "line": 113,
+            "end_line": 114,
+            "parameters": [
+              "obj",
+              "material"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 221,
+            "end_line": 232,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "ellipsoid",
+            "label": "ellipsoid",
+            "kind": "function",
+            "line": 122,
+            "end_line": 133,
+            "parameters": [
+              "location",
+              "radii",
+              "material",
+              "rotation",
+              "segments",
+              "rings"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 218,
+            "end_line": 219,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_material",
+            "label": "make_material",
+            "kind": "function",
+            "line": 26,
+            "end_line": 70,
+            "parameters": [
+              "name",
+              "dark",
+              "light",
+              "roughness",
+              "bump_strength",
+              "noise_scale"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "merge_parts",
+            "label": "merge_parts",
+            "kind": "function",
+            "line": 175,
+            "end_line": 187,
+            "parameters": [
+              "name",
+              "parts"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "nearest_anchor_in_objects",
+            "label": "nearest_anchor_in_objects",
+            "kind": "function",
+            "line": 194,
+            "end_line": 207,
+            "parameters": [
+              "objects",
+              "target"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "retained_surface_anchor",
+            "label": "retained_surface_anchor",
+            "kind": "function",
+            "line": 189,
+            "end_line": 192,
+            "parameters": [
+              "obj",
+              "target_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "scaled",
+            "label": "scaled",
+            "kind": "function",
+            "line": 23,
+            "end_line": 24,
+            "parameters": [
+              "point",
+              "scale"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "torus_y",
+            "label": "torus_y",
+            "kind": "function",
+            "line": 135,
+            "end_line": 148,
+            "parameters": [
+              "location",
+              "major_radius",
+              "minor_radius",
+              "material",
+              "scale_xyz"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "translate_object_geometry",
+            "label": "translate_object_geometry",
+            "kind": "function",
+            "line": 209,
+            "end_line": 212,
+            "parameters": [
+              "obj",
+              "delta"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "translate_object_group",
+            "label": "translate_object_group",
+            "kind": "function",
+            "line": 214,
+            "end_line": 216,
+            "parameters": [
+              "objects",
+              "delta"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "tube_curve",
+            "label": "tube_curve",
+            "kind": "function",
+            "line": 150,
+            "end_line": 173,
+            "parameters": [
+              "points",
+              "base_radius",
+              "radii",
+              "material",
+              "resolution",
+              "bevel_resolution"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 224,
+            "evidence": "AST call at L224"
+          },
+          {
+            "parent": "ellipsoid",
+            "child": "assign_material",
+            "relation": "CALL",
+            "line": 131,
+            "evidence": "AST call at L131"
+          },
+          {
+            "parent": "ellipsoid",
+            "child": "apply_transform",
+            "relation": "CALL",
+            "line": 132,
+            "evidence": "AST call at L132"
+          },
+          {
+            "parent": "torus_y",
+            "child": "assign_material",
+            "relation": "CALL",
+            "line": 146,
+            "evidence": "AST call at L146"
+          },
+          {
+            "parent": "torus_y",
+            "child": "apply_transform",
+            "relation": "CALL",
+            "line": 147,
+            "evidence": "AST call at L147"
+          },
+          {
+            "parent": "translate_object_group",
+            "child": "translate_object_geometry",
+            "relation": "CALL",
+            "line": 216,
+            "evidence": "AST call at L216"
+          },
+          {
+            "parent": "tube_curve",
+            "child": "assign_material",
+            "relation": "CALL",
+            "line": 168,
+            "evidence": "AST call at L168"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "make_material",
+            "relation": "ENTRYPOINT",
+            "line": 72,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "ellipsoid",
+            "relation": "ENTRYPOINT",
+            "line": 236,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "scaled",
+            "relation": "ENTRYPOINT",
+            "line": 237,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "torus_y",
+            "relation": "ENTRYPOINT",
+            "line": 256,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "merge_parts",
+            "relation": "ENTRYPOINT",
+            "line": 268,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "retained_surface_anchor",
+            "relation": "ENTRYPOINT",
+            "line": 270,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "tube_curve",
+            "relation": "ENTRYPOINT",
+            "line": 405,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "nearest_anchor_in_objects",
+            "relation": "ENTRYPOINT",
+            "line": 599,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "translate_object_group",
+            "relation": "ENTRYPOINT",
+            "line": 606,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "ENTRYPOINT",
+            "line": 687,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Lobster_seed0.py",
+            "child": "local_anchor_world",
+            "relation": "ENTRYPOINT",
+            "line": 730,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "cephalothorax"
+        ],
+        "nodes": [
+          {
+            "id": "abdomen_chain",
+            "label": "abdomen_chain",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L693: abdomen_chain -> tail_fan [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L687: cephalothorax -> abdomen_chain [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          },
+          {
+            "id": "cephalothorax",
+            "label": "cephalothorax",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L687: cephalothorax -> abdomen_chain [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L699: cephalothorax -> crusher_chela [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L705: cephalothorax -> cutter_chela [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L713: cephalothorax -> long_antenna [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L721: cephalothorax -> walking_leg_array [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          },
+          {
+            "id": "crusher_chela",
+            "label": "crusher_chela",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L699: cephalothorax -> crusher_chela [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          },
+          {
+            "id": "cutter_chela",
+            "label": "cutter_chela",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L705: cephalothorax -> cutter_chela [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          },
+          {
+            "id": "long_antenna",
+            "label": "long_antenna",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L713: cephalothorax -> long_antenna [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          },
+          {
+            "id": "tail_fan",
+            "label": "tail_fan",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L693: abdomen_chain -> tail_fan [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          },
+          {
+            "id": "walking_leg_array",
+            "label": "walking_leg_array",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L721: cephalothorax -> walking_leg_array [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "abdomen_chain",
+            "child": "tail_fan",
+            "relation": "DIRECTED_CODE",
+            "line": 693,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "abdomen_chain",
+            "relation": "DIRECTED_CODE",
+            "line": 687,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "crusher_chela",
+            "relation": "DIRECTED_CODE",
+            "line": 699,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "cutter_chela",
+            "relation": "DIRECTED_CODE",
+            "line": 705,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "long_antenna",
+            "relation": "DIRECTED_CODE",
+            "line": 713,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "relation": "DIRECTED_CODE",
+            "line": 721,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "cephalothorax"
+    ],
+    "nodes": [
+      {
+        "id": "walking_leg_array",
+        "label": "walking_leg_array",
+        "part_id": "walking_leg_array",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7703977823257446,
+          0.7426437139511108,
+          0.3898170590400696
+        ],
+        "center": [
+          5.960464477539063e-08,
+          0.12442246079444885,
+          0.06575213372707367
+        ],
+        "dimensions": [
+          3.3706003427505493,
+          1.723093569278717,
+          0.8218664824962616
+        ],
+        "bbox_min": [
+          -1.6853001117706299,
+          -0.7371243238449097,
+          -0.34518110752105713
+        ],
+        "bbox_max": [
+          1.6853002309799194,
+          0.9859692454338074,
+          0.47668537497520447
+        ]
+      },
+      {
+        "id": "tail_fan",
+        "label": "tail_fan",
+        "part_id": "tail_fan",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -5.990266771505048e-08,
+          -6.344998836517334,
+          0.5174285769462585
+        ],
+        "center": [
+          -2.9802322387695312e-08,
+          -7.1005988121032715,
+          0.5174285769462585
+        ],
+        "dimensions": [
+          1.7424220442771912,
+          1.7111997604370117,
+          0.3400000333786011
+        ],
+        "bbox_min": [
+          -0.871211051940918,
+          -7.956198692321777,
+          0.347428560256958
+        ],
+        "bbox_max": [
+          0.8712109923362732,
+          -6.244998931884766,
+          0.6874285936355591
+        ]
+      },
+      {
+        "id": "long_antenna",
+        "label": "long_antenna",
+        "part_id": "long_antenna",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.3438815474510193,
+          1.2574615478515625,
+          1.2659449577331543
+        ],
+        "center": [
+          1.1920928955078125e-07,
+          1.7278591990470886,
+          3.0071118474006653
+        ],
+        "dimensions": [
+          2.6967809200286865,
+          1.1364332437515259,
+          3.5597556829452515
+        ],
+        "bbox_min": [
+          -1.3483903408050537,
+          1.1596425771713257,
+          1.2272340059280396
+        ],
+        "bbox_max": [
+          1.3483905792236328,
+          2.2960758209228516,
+          4.786989688873291
+        ]
+      },
+      {
+        "id": "abdomen_chain",
+        "label": "abdomen_chain",
+        "part_id": "abdomen_chain",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -4.1127204752910984e-08,
+          -1.2699995040893555,
+          0.7599999904632568
+        ],
+        "center": [
+          2.9802322387695312e-08,
+          -3.7474992275238037,
+          0.7599999606609344
+        ],
+        "dimensions": [
+          1.5199995636940002,
+          4.994999408721924,
+          1.275600016117096
+        ],
+        "bbox_min": [
+          -0.7599997520446777,
+          -6.244998931884766,
+          0.12219995260238647
+        ],
+        "bbox_max": [
+          0.7599998116493225,
+          -1.2499995231628418,
+          1.3977999687194824
+        ]
+      },
+      {
+        "id": "cephalothorax",
+        "label": "cephalothorax",
+        "part_id": "cephalothorax",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          2.9802322387695312e-08,
+          0.10500025749206543,
+          0.7600000202655792
+        ],
+        "dimensions": [
+          1.9599998593330383,
+          3.0299994945526123,
+          1.4100000262260437
+        ],
+        "bbox_min": [
+          -0.9799998998641968,
+          -1.4099994897842407,
+          0.05500000715255737
+        ],
+        "bbox_max": [
+          0.9799999594688416,
+          1.6200000047683716,
+          1.465000033378601
+        ]
+      },
+      {
+        "id": "cutter_chela",
+        "label": "cutter_chela",
+        "part_id": "cutter_chela",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.7705370187759399,
+          1.0577071905136108,
+          0.6800000071525574
+        ],
+        "center": [
+          1.1724556684494019,
+          2.535218298435211,
+          0.6650000065565109
+        ],
+        "dimensions": [
+          1.1438372135162354,
+          3.1350220441818237,
+          0.6300000250339508
+        ],
+        "bbox_min": [
+          0.6005370616912842,
+          0.9677072763442993,
+          0.3499999940395355
+        ],
+        "bbox_max": [
+          1.7443742752075195,
+          4.102729320526123,
+          0.9800000190734863
+        ]
+      },
+      {
+        "id": "crusher_chela",
+        "label": "crusher_chela",
+        "part_id": "crusher_chela",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.7705368995666504,
+          1.0077069997787476,
+          0.6800000071525574
+        ],
+        "center": [
+          -0.9821018874645233,
+          1.6341341137886047,
+          0.6839999854564667
+        ],
+        "dimensions": [
+          0.5831299424171448,
+          1.3369144201278687,
+          0.34400004148483276
+        ],
+        "bbox_min": [
+          -1.2736668586730957,
+          0.9656769037246704,
+          0.5119999647140503
+        ],
+        "bbox_max": [
+          -0.6905369162559509,
+          2.302591323852539,
+          0.8560000061988831
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "cephalothorax",
+        "child": "walking_leg_array",
+        "relation": "DIRECTED",
+        "line": 229,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7731233239173889,
+          0.7135720252990723,
+          0.3759440779685974
+        ],
+        "anchor_b": [
+          -0.7731233239173889,
+          0.7135720252990723,
+          0.3759440779685974
+        ],
+        "anchor_gap": 1.4901161193847656e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 8,
+        "authored_anchor_valid_count": 8,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "source": "parent_assignment",
+            "line": 229
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 721,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7731233239173889,
+              0.7135720252990723,
+              0.3759440779685974
+            ],
+            "parent_anchor_world": [
+              -0.7731233239173889,
+              0.7135720252990723,
+              0.3759440779685974
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 721,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.7731233239173889,
+              0.7135720252990723,
+              0.3759440779685974
+            ],
+            "parent_anchor_world": [
+              0.7731233239173889,
+              0.7135720252990723,
+              0.3759440779685974
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 721,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7457732558250427,
+              0.20162630081176758,
+              0.38221222162246704
+            ],
+            "parent_anchor_world": [
+              -0.7457732558250427,
+              0.20162628591060638,
+              0.38221222162246704
+            ],
+            "authored_anchor_gap": 1.4901161193847656e-08,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 721,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.7457731366157532,
+              0.20162642002105713,
+              0.38221222162246704
+            ],
+            "parent_anchor_world": [
+              0.7457731366157532,
+              0.20162640511989594,
+              0.38221222162246704
+            ],
+            "authored_anchor_gap": 1.4901161193847656e-08,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 721,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7235168218612671,
+              -0.1550692319869995,
+              0.3759440779685974
+            ],
+            "parent_anchor_world": [
+              -0.7235168218612671,
+              -0.1550692319869995,
+              0.3759440779685974
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 721,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.7235168218612671,
+              -0.1550692319869995,
+              0.3759440779685974
+            ],
+            "parent_anchor_world": [
+              0.7235168218612671,
+              -0.1550692319869995,
+              0.3759440779685974
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 721,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.6891980767250061,
+              -0.5406354069709778,
+              0.38221222162246704
+            ],
+            "parent_anchor_world": [
+              -0.6891980767250061,
+              -0.5406354069709778,
+              0.38221222162246704
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 721,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.6891980767250061,
+              -0.5406351685523987,
+              0.38221222162246704
+            ],
+            "parent_anchor_world": [
+              0.6891980767250061,
+              -0.5406351685523987,
+              0.38221222162246704
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "walking_leg_array",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "cephalothorax",
+        "child": "long_antenna",
+        "relation": "DIRECTED",
+        "line": 229,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.3438815474510193,
+          1.26674222946167,
+          1.2442641258239746
+        ],
+        "anchor_b": [
+          -0.3438815474510193,
+          1.26674222946167,
+          1.2442641258239746
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 2,
+        "authored_anchor_valid_count": 2,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "cephalothorax",
+            "child": "long_antenna",
+            "source": "parent_assignment",
+            "line": 229
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "long_antenna",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 713,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.3438815474510193,
+              1.26674222946167,
+              1.2442641258239746
+            ],
+            "parent_anchor_world": [
+              -0.3438815474510193,
+              1.26674222946167,
+              1.2442641258239746
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "long_antenna",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 713,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.34388160705566406,
+              1.26674222946167,
+              1.2442641258239746
+            ],
+            "parent_anchor_world": [
+              0.34388160705566406,
+              1.26674222946167,
+              1.2442641258239746
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "long_antenna",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "cephalothorax",
+        "child": "cutter_chela",
+        "relation": "DIRECTED",
+        "line": 229,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.7705370187759399,
+          0.9677072763442993,
+          0.6800000071525574
+        ],
+        "anchor_b": [
+          0.7705370187759399,
+          0.9677072763442993,
+          0.6800000071525574
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "cephalothorax",
+            "child": "cutter_chela",
+            "source": "parent_assignment",
+            "line": 229
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "cutter_chela",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 705,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.7705370187759399,
+              0.9677072763442993,
+              0.6800000071525574
+            ],
+            "parent_anchor_world": [
+              0.7705370187759399,
+              0.9677072763442993,
+              0.6800000071525574
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "cutter_chela",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "abdomen_chain",
+        "child": "tail_fan",
+        "relation": "DIRECTED",
+        "line": 229,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -5.990266771505048e-08,
+          -6.244998931884766,
+          0.5174285769462585
+        ],
+        "anchor_b": [
+          -5.990266771505048e-08,
+          -6.244998931884766,
+          0.5174285769462585
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "abdomen_chain",
+            "child": "tail_fan",
+            "source": "parent_assignment",
+            "line": 229
+          },
+          {
+            "parent": "abdomen_chain",
+            "child": "tail_fan",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 693,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -5.990266771505048e-08,
+              -6.244998931884766,
+              0.5174285769462585
+            ],
+            "parent_anchor_world": [
+              -5.990266771505048e-08,
+              -6.244998931884766,
+              0.5174285769462585
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "abdomen_chain",
+            "child": "tail_fan",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "cephalothorax",
+        "child": "abdomen_chain",
+        "relation": "DIRECTED",
+        "line": 229,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -4.1127204752910984e-08,
+          -1.2499995231628418,
+          0.7599999904632568
+        ],
+        "anchor_b": [
+          -4.1127204752910984e-08,
+          -1.2499995231628418,
+          0.7599999904632568
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.15999996887519652,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "cephalothorax",
+            "child": "abdomen_chain",
+            "source": "parent_assignment",
+            "line": 229
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "abdomen_chain",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 687,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -4.1127204752910984e-08,
+              -1.2499995231628418,
+              0.7599999904632568
+            ],
+            "parent_anchor_world": [
+              -4.1127204752910984e-08,
+              -1.2499995231628418,
+              0.7599999904632568
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.15999996887519652,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "abdomen_chain",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "cephalothorax",
+        "child": "crusher_chela",
+        "relation": "DIRECTED",
+        "line": 229,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.7705368995666504,
+          0.9677070379257202,
+          0.6800000071525574
+        ],
+        "anchor_b": [
+          -0.7705368995666504,
+          0.9677070379257202,
+          0.6800000071525574
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "cephalothorax",
+            "child": "crusher_chela",
+            "source": "parent_assignment",
+            "line": 229
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "crusher_chela",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 699,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.7705368995666504,
+              0.9677070379257202,
+              0.6800000071525574
+            ],
+            "parent_anchor_world": [
+              -0.7705368995666504,
+              0.9677070379257202,
+              0.6800000071525574
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "cephalothorax",
+            "child": "crusher_chela",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "cutter_chela",
+        "child": "walking_leg_array",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.7881287336349487,
+          0.9984117746353149,
+          0.548852801322937
+        ],
+        "anchor_b": [
+          0.8557463884353638,
+          0.8418211340904236,
+          0.39248308539390564
+        ],
+        "anchor_gap": 0.23139633533548762,
+        "anchor_tolerance": 0.3014732003211975,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "crusher_chela",
+        "child": "walking_leg_array",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.850479245185852,
+          1.0212346315383911,
+          0.6172022819519043
+        ],
+        "anchor_b": [
+          -0.9250492453575134,
+          0.899964451789856,
+          0.33715102076530457
+        ],
+        "anchor_gap": 0.31415895708072483,
+        "anchor_tolerance": 0.3014732003211975,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.035314589738845825,
+        "declared_directions": []
+      },
+      {
+        "parent": "cutter_chela",
+        "child": "long_antenna",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.6005370616912842,
+          1.1327072381973267,
+          0.6800000071525574
+        ],
+        "anchor_b": [
+          0.3956940770149231,
+          1.2471137046813965,
+          1.2420202493667603
+        ],
+        "anchor_gap": 0.6090289324843293,
+        "anchor_tolerance": 0.3014732003211975,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.24723398685455322,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 7,
+      "edges": 9,
+      "relations": {
+        "DIRECTED": 6,
+        "UNDIRECTED_CONTACT": 3
+      },
+      "directed_edges": 6,
+      "runtime_directed_edges": 6,
+      "shared_anchor_edges": 5,
+      "estimated_anchor_edges": 3,
+      "geometric_anchor_candidates": 7,
+      "unverified_anchor_candidates": 2,
+      "misaligned_anchor_edges": 2
+    },
+    "source_bounds": {
+      "min": [
+        -1.6853001117706299,
+        -7.956198692321777,
+        -0.34518110752105713
+      ],
+      "max": [
+        1.7443742752075195,
+        4.102729320526123,
+        4.786989688873291
+      ]
+    },
+    "scene_extent": 12.0589280128479,
+    "contact_threshold": 0.3014732003211975,
+    "shared_anchor_tolerance": 0.3014732003211975,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "abdomen_chain",
+        "cephalothorax",
+        "crusher_chela",
+        "cutter_chela",
+        "long_antenna",
+        "tail_fan",
+        "walking_leg_array"
+      ],
+      "scale_overrides": {
+        "crusher_chela": 0.4
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · GPT-5.6 Sol",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gpt5.6_sol/Lobster_seed0/Lobster_seed0.py",
+    "source_sha256": "b3acc968e12930ceec8c9c7949758a683e0145a4d91d06810e25705afc3f950b",
+    "source_size": 23118,
+    "glb_sha256": "8259f5d19470ff29d1f2af0255e4e408e3764ae2f91ce4c8fd80ae10d69adbae",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|crusher_chela|scale": 0.4
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "child-0.4",
+      "side": "child",
+      "part_ids": [
+        "crusher_chela"
+      ],
+      "parameter": "scale",
+      "scale": 0.4,
+      "params": {
+        "part_param|crusher_chela|scale": 0.4
+      },
+      "paper_parent_ids": [
+        "cephalothorax"
+      ],
+      "paper_child_ids": [
+        "crusher_chela"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "dimensions": [
+        {
+          "id": "crusher_chela",
+          "part_id": "crusher_chela",
+          "before": [
+            1.4578248858451843,
+            3.342285692691803,
+            0.8600000143051147
+          ],
+          "after": [
+            0.5831299424171448,
+            1.3369144201278687,
+            0.34400004148483276
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "cephalothorax",
+          "child": "crusher_chela",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": true,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": true,
+          "runtime_parent_part_id": "cephalothorax",
+          "runtime_child_part_id": "crusher_chela"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      -0.02953707958970751,
+      0.34518109501472544,
+      -1.9267345648258924
+    ],
+    "mesh_bbox_max_error_before_translation": 1.9267347157001495,
+    "mesh_bbox_max_error_after_translation": 2.6635825634002686e-07
+  }
+}

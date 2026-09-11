@@ -1,0 +1,92 @@
+{
+  "id": "paper-gpt-5-5-hollow-tree",
+  "title": "Hollow Tree",
+  "provider": "GPT-5.5",
+  "group": "appendix-6a",
+  "label": "HollowTree_seed0",
+  "model": "HollowTree_seed0/HollowTree_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · GPT-5.5",
+  "parent": {
+    "ids": [
+      "main_trunk"
+    ],
+    "label": "trunk"
+  },
+  "child": {
+    "ids": [
+      "branch_and_twig_network"
+    ],
+    "label": "primary branch"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gpt-5-5-hollow-tree/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-5-hollow-tree/edits/default/snapshot.json",
+      "provenance": "paper-gpt-5-5-hollow-tree/edits/default/provenance.json",
+      "mesh_map": "paper-gpt-5-5-hollow-tree/edits/default/mesh-map.json",
+      "bytes": 973192
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-5-hollow-tree/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gpt-5-5-hollow-tree/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-5-hollow-tree/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-5-hollow-tree/edits/parent-0.4/mesh-map.json",
+      "bytes": 968940
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-5-hollow-tree/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gpt-5-5-hollow-tree/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-5-hollow-tree/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-5-hollow-tree/edits/parent-1.6/mesh-map.json",
+      "bytes": 977512
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-5-hollow-tree/edits/child-0.4/model.glb",
+      "snapshot": "paper-gpt-5-5-hollow-tree/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-5-hollow-tree/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-5-hollow-tree/edits/child-0.4/mesh-map.json",
+      "bytes": 1217800
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-5-hollow-tree/edits/child-1.6/model.glb",
+      "snapshot": "paper-gpt-5-5-hollow-tree/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-5-hollow-tree/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-5-hollow-tree/edits/child-1.6/mesh-map.json",
+      "bytes": 1067504
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gpt-5-5-hollow-tree/edits/default/model.glb",
+    "snapshot": "paper-gpt-5-5-hollow-tree/edits/default/snapshot.json",
+    "provenance": "paper-gpt-5-5-hollow-tree/edits/default/provenance.json",
+    "mesh_map": "paper-gpt-5-5-hollow-tree/edits/default/mesh-map.json",
+    "bytes": 973192,
+    "parts": 2,
+    "shared_anchors": 1
+  }
+}

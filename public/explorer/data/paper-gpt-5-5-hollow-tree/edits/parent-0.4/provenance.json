@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · GPT-5.5",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.5/HollowTree_seed0/HollowTree_seed0.py",
+  "source_sha256": "eafd5abaf4cf89b427c49429822c0d806cfe7cfab83cf4bbc670c52c5b522f89",
+  "source_size": 19416,
+  "glb_sha256": "0f0b971aed76f41cb4bd9d7676716eecd109b5edc8f6dd38f8eaf4790955cd29",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|main_trunk|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-0.4",
+    "side": "parent",
+    "part_ids": [
+      "main_trunk"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|main_trunk|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "main_trunk"
+    ],
+    "paper_child_ids": [
+      "branch_and_twig_network"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "main_trunk",
+        "part_id": "main_trunk",
+        "before": [
+          1.3117223381996155,
+          1.2095816731452942,
+          3.3499999046325684
+        ],
+        "after": [
+          0.5246889293193817,
+          0.4838326573371887,
+          1.340000033378601
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "main_trunk",
+        "child": "branch_and_twig_network",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "main_trunk",
+        "runtime_child_part_id": "branch_and_twig_network"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    -0.07354166358709335,
+    -3.3527612686157227e-08,
+    0.39760275185108185
+  ],
+  "mesh_bbox_max_error_before_translation": 0.39760279655456543,
+  "mesh_bbox_max_error_after_translation": 8.568167686462402e-08
+}

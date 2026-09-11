@@ -1,0 +1,532 @@
+{
+  "mapping_source": "docs/paper-demo-cases.json",
+  "cases": [
+    {
+      "id": "paper-gpt-5-5-crab",
+      "label": "Crab_seed0",
+      "title": "Crab",
+      "provider": "GPT-5.5",
+      "group": "main",
+      "source": "treestruct3d_results/gpt5.5/Crab_seed0/Crab_seed0.py",
+      "source_label": "TreeStruct3D · GPT-5.5",
+      "parent": {
+        "ids": [
+          "carapace"
+        ],
+        "label": "carapace"
+      },
+      "child": {
+        "ids": [
+          "walking_leg"
+        ],
+        "label": "walking leg"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gpt-5-5-hollow-tree",
+      "label": "HollowTree_seed0",
+      "title": "Hollow Tree",
+      "provider": "GPT-5.5",
+      "group": "appendix-6a",
+      "source": "treestruct3d_results/gpt5.5/HollowTree_seed0/HollowTree_seed0.py",
+      "source_label": "TreeStruct3D · GPT-5.5",
+      "parent": {
+        "ids": [
+          "main_trunk"
+        ],
+        "label": "trunk"
+      },
+      "child": {
+        "ids": [
+          "branch_and_twig_network"
+        ],
+        "label": "primary branch"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gpt-5-5-pan",
+      "label": "Pan_seed0",
+      "title": "Pan",
+      "provider": "GPT-5.5",
+      "group": "appendix-6a",
+      "source": "treestruct3d_results/gpt5.5/Pan_seed0/Pan_seed0.py",
+      "source_label": "TreeStruct3D · GPT-5.5",
+      "parent": {
+        "ids": [
+          "pan_body"
+        ],
+        "label": "pan body"
+      },
+      "child": {
+        "ids": [
+          "flat_handle_core"
+        ],
+        "label": "handle"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gpt-5-5-bed",
+      "label": "Bed_seed0",
+      "title": "Bed",
+      "provider": "GPT-5.5",
+      "group": "appendix-6a",
+      "source": "treestruct3d_results/gpt5.5/Bed_seed0/Bed_seed0.py",
+      "source_label": "TreeStruct3D · GPT-5.5",
+      "parent": {
+        "ids": [
+          "wooden_bed_frame_base"
+        ],
+        "label": "bed frame"
+      },
+      "child": {
+        "ids": [
+          "decorative_headboard"
+        ],
+        "label": "headboard"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gpt-5-5-floor-lamp",
+      "label": "FloorLamp_seed0",
+      "title": "Floor Lamp",
+      "provider": "GPT-5.5",
+      "group": "appendix-6a",
+      "source": "treestruct3d_results/gpt5.5/FloorLamp_seed0/FloorLamp_seed0.py",
+      "source_label": "TreeStruct3D · GPT-5.5",
+      "parent": {
+        "ids": [
+          "round_base"
+        ],
+        "label": "base"
+      },
+      "child": {
+        "ids": [
+          "central_pole"
+        ],
+        "label": "pole"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gpt-5-6-sol-lobster",
+      "label": "Lobster_seed0",
+      "title": "Lobster",
+      "provider": "GPT-5.6 Sol",
+      "group": "main",
+      "source": "treestruct3d_results/gpt5.6_sol/Lobster_seed0/Lobster_seed0.py",
+      "source_label": "TreeStruct3D · GPT-5.6 Sol",
+      "parent": {
+        "ids": [
+          "cephalothorax"
+        ],
+        "label": "cephalothorax"
+      },
+      "child": {
+        "ids": [
+          "crusher_chela"
+        ],
+        "label": "crusher claw"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gpt-5-6-sol-toilet",
+      "label": "Toilet_seed0",
+      "title": "Toilet",
+      "provider": "GPT-5.6 Sol",
+      "group": "appendix-6b",
+      "source": "treestruct3d_results/gpt5.6_sol/Toilet_seed0/Toilet_seed0.py",
+      "source_label": "TreeStruct3D · GPT-5.6 Sol",
+      "parent": {
+        "ids": [
+          "bowl_body"
+        ],
+        "label": "toilet bowl"
+      },
+      "child": {
+        "ids": [
+          "water_tank"
+        ],
+        "label": "water tank"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gpt-5-6-sol-spiny-lobster",
+      "label": "SpinyLobster_seed0",
+      "title": "Spiny Lobster",
+      "provider": "GPT-5.6 Sol",
+      "group": "appendix-6b",
+      "source": "treestruct3d_results/gpt5.6_sol/SpinyLobster_seed0/SpinyLobster_seed0.py",
+      "source_label": "TreeStruct3D · GPT-5.6 Sol",
+      "parent": {
+        "ids": [
+          "cephalothorax_shell"
+        ],
+        "label": "cephalothorax"
+      },
+      "child": {
+        "ids": [
+          "long_antenna"
+        ],
+        "label": "antenna"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gpt-5-6-sol-monitor",
+      "label": "Monitor_seed0",
+      "title": "Monitor",
+      "provider": "GPT-5.6 Sol",
+      "group": "appendix-6b",
+      "source": "treestruct3d_results/gpt5.6_sol/Monitor_seed0/Monitor_seed0.py",
+      "source_label": "TreeStruct3D · GPT-5.6 Sol",
+      "parent": {
+        "ids": [
+          "pedestal_arm"
+        ],
+        "label": "pedestal arm"
+      },
+      "child": {
+        "ids": [
+          "base_stand"
+        ],
+        "label": "base stand"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gpt-5-6-sol-standing-sink",
+      "label": "StandingSink_seed0",
+      "title": "Standing Sink",
+      "provider": "GPT-5.6 Sol",
+      "group": "appendix-6b",
+      "source": "treestruct3d_results/gpt5.6_sol/StandingSink_seed0/StandingSink_seed0.py",
+      "source_label": "TreeStruct3D · GPT-5.6 Sol",
+      "parent": {
+        "ids": [
+          "basin_body"
+        ],
+        "label": "basin"
+      },
+      "child": {
+        "ids": [
+          "faucet_handle"
+        ],
+        "label": "faucet"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gemini-3-1-pro-dragonfly",
+      "label": "Dragonfly_seed0",
+      "title": "Dragonfly",
+      "provider": "Gemini 3.1 Pro",
+      "group": "main",
+      "source": "treestruct3d_results/gemeni_3.1_pro/Dragonfly_seed0/Dragonfly_seed0.py",
+      "source_label": "TreeStruct3D · Gemini 3.1 Pro",
+      "parent": {
+        "ids": [
+          "thorax"
+        ],
+        "label": "thorax"
+      },
+      "child": {
+        "ids": [
+          "abdomen"
+        ],
+        "label": "abdomen"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ],
+      "final_scene_probe": true
+    },
+    {
+      "id": "paper-gemini-3-1-pro-bed-frame",
+      "label": "BedFrame_seed0",
+      "title": "Bed Frame",
+      "provider": "Gemini 3.1 Pro",
+      "group": "appendix-6c",
+      "source": "treestruct3d_results/gemeni_3.1_pro/BedFrame_seed0/BedFrame_seed0.py",
+      "source_label": "TreeStruct3D · Gemini 3.1 Pro",
+      "parent": {
+        "ids": [
+          "bed_frame_base"
+        ],
+        "label": "bed frame"
+      },
+      "child": {
+        "ids": [
+          "headboard"
+        ],
+        "label": "headboard posts"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gemini-3-1-pro-cabinet-drawer-base",
+      "label": "CabinetDrawerBase_seed0",
+      "title": "Cabinet Drawer Base",
+      "provider": "Gemini 3.1 Pro",
+      "group": "appendix-6c",
+      "source": "treestruct3d_results/gemeni_3.1_pro/CabinetDrawerBase_seed0/CabinetDrawerBase_seed0.py",
+      "source_label": "TreeStruct3D · Gemini 3.1 Pro",
+      "parent": {
+        "ids": [
+          "bottom_panel"
+        ],
+        "label": "bottom panel"
+      },
+      "child": {
+        "ids": [
+          "front_panel"
+        ],
+        "label": "front panel"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gemini-3-1-pro-coconut-tree",
+      "label": "CoconutTree_seed0",
+      "title": "Coconut Tree",
+      "provider": "Gemini 3.1 Pro",
+      "group": "appendix-6c",
+      "source": "treestruct3d_results/gemeni_3.1_pro/CoconutTree_seed0/CoconutTree_seed0.py",
+      "source_label": "TreeStruct3D · Gemini 3.1 Pro",
+      "parent": {
+        "ids": [
+          "trunk"
+        ],
+        "label": "trunk"
+      },
+      "child": {
+        "ids": [
+          "crown_base"
+        ],
+        "label": "crown base"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gemini-3-1-pro-pillar",
+      "label": "Pillar_seed0",
+      "title": "Pillar",
+      "provider": "Gemini 3.1 Pro",
+      "group": "appendix-6c",
+      "source": "treestruct3d_results/gemeni_3.1_pro/Pillar_seed0/Pillar_seed0.py",
+      "source_label": "TreeStruct3D · Gemini 3.1 Pro",
+      "parent": {
+        "ids": [
+          "shaft"
+        ],
+        "label": "shaft"
+      },
+      "child": {
+        "ids": [
+          "capital"
+        ],
+        "label": "capital"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gemini-3-5-flash-chameleon",
+      "label": "Chameleon_seed0",
+      "title": "Chameleon",
+      "provider": "Gemini 3.5 Flash",
+      "group": "main",
+      "source": "treestruct3d_results/gemini_3.5_flash/Chameleon_seed0/Chameleon_seed0.py",
+      "source_label": "TreeStruct3D · Gemini 3.5 Flash",
+      "parent": {
+        "ids": [
+          "torso_body"
+        ],
+        "label": "body"
+      },
+      "child": {
+        "ids": [
+          "forelimb_left",
+          "forelimb_right",
+          "hindlimb_left",
+          "hindlimb_right"
+        ],
+        "label": "legs"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ],
+      "final_scene_probe": true
+    },
+    {
+      "id": "paper-gemini-3-5-flash-fruit-pineapple",
+      "label": "FruitPineapple_seed0",
+      "title": "Fruit Pineapple",
+      "provider": "Gemini 3.5 Flash",
+      "group": "appendix-6d",
+      "source": "treestruct3d_results/gemini_3.5_flash/FruitPineapple_seed0/FruitPineapple_seed0.py",
+      "source_label": "TreeStruct3D · Gemini 3.5 Flash",
+      "parent": {
+        "ids": [
+          "fruit_body"
+        ],
+        "label": "pineapple body"
+      },
+      "child": {
+        "ids": [
+          "crown_leaf"
+        ],
+        "label": "leaf crown"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ],
+      "final_scene_probe": true
+    },
+    {
+      "id": "paper-gemini-3-5-flash-columnar-cactus",
+      "label": "ColumnarCactus_seed0",
+      "title": "Columnar Cactus",
+      "provider": "Gemini 3.5 Flash",
+      "group": "appendix-6d",
+      "source": "treestruct3d_results/gemini_3.5_flash/ColumnarCactus_seed0/ColumnarCactus_seed0.py",
+      "source_label": "TreeStruct3D · Gemini 3.5 Flash",
+      "parent": {
+        "ids": [
+          "main_stem"
+        ],
+        "label": "main stem"
+      },
+      "child": {
+        "ids": [
+          "side_arm"
+        ],
+        "label": "side arm"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gemini-3-5-flash-veratrum-monocot",
+      "label": "VeratrumMonocot_seed0",
+      "title": "Veratrum Monocot",
+      "provider": "Gemini 3.5 Flash",
+      "group": "appendix-6d",
+      "source": "treestruct3d_results/gemini_3.5_flash/VeratrumMonocot_seed0/VeratrumMonocot_seed0.py",
+      "source_label": "TreeStruct3D · Gemini 3.5 Flash",
+      "parent": {
+        "ids": [
+          "flower_stalk"
+        ],
+        "label": "flower stalk"
+      },
+      "child": {
+        "ids": [
+          "floret"
+        ],
+        "label": "clustered florets"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ]
+    },
+    {
+      "id": "paper-gemini-3-5-flash-coffee-table",
+      "label": "CoffeeTable_seed0",
+      "title": "Coffee Table",
+      "provider": "Gemini 3.5 Flash",
+      "group": "appendix-6d",
+      "source": "treestruct3d_results/gemini_3.5_flash/CoffeeTable_seed0/CoffeeTable_seed0.py",
+      "source_label": "TreeStruct3D · Gemini 3.5 Flash",
+      "parent": {
+        "ids": [
+          "table_top"
+        ],
+        "label": "table top"
+      },
+      "child": {
+        "ids": [
+          "pedestal_legs"
+        ],
+        "label": "pedestal legs"
+      },
+      "scales": [
+        0.4,
+        1,
+        1.6
+      ],
+      "final_scene_probe": true
+    }
+  ]
+}

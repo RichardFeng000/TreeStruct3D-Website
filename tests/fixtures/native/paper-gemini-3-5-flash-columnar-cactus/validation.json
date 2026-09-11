@@ -1,0 +1,449 @@
+{
+  "source_sha256": "54af46266070c28e9f9a5872e413cea2c2a918a684d8d3ae4e5190bc69a77666",
+  "samples": [
+    {
+      "id": "arm_spine_clusters-0.63",
+      "params": {
+        "arm_spine_clusters": 0.63
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 0,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 38643,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 47049,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 51858,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "arm_spine_clusters-1.37",
+      "params": {
+        "arm_spine_clusters": 1.37
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 119061,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 157704,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 166110,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 170919,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "main_stem-0.63",
+      "params": {
+        "main_stem": 0.63
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 238122,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 276765,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 285171,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 289980,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "main_stem-1.37",
+      "params": {
+        "main_stem": 1.37
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 357183,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 395826,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 404232,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 409041,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "arm_spine_clusters": 1.37,
+        "main_stem": 0.63,
+        "side_arm": 1.37,
+        "stem_spine_clusters": 0.63
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 476244,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 514887,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 523293,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 528102,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "arm_spine_clusters": 0.63,
+        "main_stem": 1.37,
+        "side_arm": 0.63,
+        "stem_spine_clusters": 1.37
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 595305,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 633948,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 642354,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 647163,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "arm_spine_clusters": 0.63,
+        "main_stem": 0.63,
+        "side_arm": 0.63,
+        "stem_spine_clusters": 0.63
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 714366,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 753009,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 761415,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 766224,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "arm_spine_clusters": 1.37,
+        "main_stem": 1.37,
+        "side_arm": 1.37,
+        "stem_spine_clusters": 1.37
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 833427,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 872070,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 880476,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 885285,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "side_arm-0.63",
+      "params": {
+        "side_arm": 0.63
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 952488,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 991131,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 999537,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 1004346,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "side_arm-1.37",
+      "params": {
+        "side_arm": 1.37
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 1071549,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 1110192,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 1118598,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 1123407,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "stem_spine_clusters-0.63",
+      "params": {
+        "stem_spine_clusters": 0.63
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 1190610,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 1229253,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 1237659,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 1242468,
+            "count": 67203
+          }
+        }
+      ]
+    },
+    {
+      "id": "stem_spine_clusters-1.37",
+      "params": {
+        "stem_spine_clusters": 1.37
+      },
+      "parts": [
+        {
+          "id": "arm_spine_clusters",
+          "positions": {
+            "offset": 1309671,
+            "count": 38643
+          }
+        },
+        {
+          "id": "main_stem",
+          "positions": {
+            "offset": 1348314,
+            "count": 8406
+          }
+        },
+        {
+          "id": "side_arm",
+          "positions": {
+            "offset": 1356720,
+            "count": 4809
+          }
+        },
+        {
+          "id": "stem_spine_clusters",
+          "positions": {
+            "offset": 1361529,
+            "count": 67203
+          }
+        }
+      ]
+    }
+  ]
+}

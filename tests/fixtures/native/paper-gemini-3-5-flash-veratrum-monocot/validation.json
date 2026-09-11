@@ -1,0 +1,3593 @@
+{
+  "source_sha256": "58c49a41626a5533cb43d30060fe4e587117021ba59a2801a29d323bf8e0532c",
+  "samples": [
+    {
+      "id": "floret-0.63",
+      "params": {
+        "floret": 0.63
+      },
+      "parts": [
+        {
+          "id": "floret",
+          "positions": {
+            "offset": 0,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.001",
+          "positions": {
+            "offset": 114,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.002",
+          "positions": {
+            "offset": 228,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.003",
+          "positions": {
+            "offset": 342,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.004",
+          "positions": {
+            "offset": 456,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.005",
+          "positions": {
+            "offset": 570,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.006",
+          "positions": {
+            "offset": 684,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.007",
+          "positions": {
+            "offset": 798,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.008",
+          "positions": {
+            "offset": 912,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.009",
+          "positions": {
+            "offset": 1026,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.010",
+          "positions": {
+            "offset": 1140,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.011",
+          "positions": {
+            "offset": 1254,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.012",
+          "positions": {
+            "offset": 1368,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.013",
+          "positions": {
+            "offset": 1482,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.014",
+          "positions": {
+            "offset": 1596,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.015",
+          "positions": {
+            "offset": 1710,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.016",
+          "positions": {
+            "offset": 1824,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.017",
+          "positions": {
+            "offset": 1938,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.018",
+          "positions": {
+            "offset": 2052,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.019",
+          "positions": {
+            "offset": 2166,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.020",
+          "positions": {
+            "offset": 2280,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.021",
+          "positions": {
+            "offset": 2394,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.022",
+          "positions": {
+            "offset": 2508,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.023",
+          "positions": {
+            "offset": 2622,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.024",
+          "positions": {
+            "offset": 2736,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.025",
+          "positions": {
+            "offset": 2850,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.026",
+          "positions": {
+            "offset": 2964,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.027",
+          "positions": {
+            "offset": 3078,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.028",
+          "positions": {
+            "offset": 3192,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.029",
+          "positions": {
+            "offset": 3306,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.030",
+          "positions": {
+            "offset": 3420,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.031",
+          "positions": {
+            "offset": 3534,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.032",
+          "positions": {
+            "offset": 3648,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.033",
+          "positions": {
+            "offset": 3762,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.034",
+          "positions": {
+            "offset": 3876,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.035",
+          "positions": {
+            "offset": 3990,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.036",
+          "positions": {
+            "offset": 4104,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.037",
+          "positions": {
+            "offset": 4218,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.038",
+          "positions": {
+            "offset": 4332,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.039",
+          "positions": {
+            "offset": 4446,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.040",
+          "positions": {
+            "offset": 4560,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.041",
+          "positions": {
+            "offset": 4674,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.042",
+          "positions": {
+            "offset": 4788,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.043",
+          "positions": {
+            "offset": 4902,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.044",
+          "positions": {
+            "offset": 5016,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.045",
+          "positions": {
+            "offset": 5130,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.046",
+          "positions": {
+            "offset": 5244,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.047",
+          "positions": {
+            "offset": 5358,
+            "count": 114
+          }
+        },
+        {
+          "id": "flower_stalk",
+          "positions": {
+            "offset": 5472,
+            "count": 1947
+          }
+        },
+        {
+          "id": "leafy_base",
+          "positions": {
+            "offset": 7419,
+            "count": 23763
+          }
+        }
+      ]
+    },
+    {
+      "id": "floret-1.37",
+      "params": {
+        "floret": 1.37
+      },
+      "parts": [
+        {
+          "id": "floret",
+          "positions": {
+            "offset": 31182,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.001",
+          "positions": {
+            "offset": 31296,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.002",
+          "positions": {
+            "offset": 31410,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.003",
+          "positions": {
+            "offset": 31524,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.004",
+          "positions": {
+            "offset": 31638,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.005",
+          "positions": {
+            "offset": 31752,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.006",
+          "positions": {
+            "offset": 31866,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.007",
+          "positions": {
+            "offset": 31980,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.008",
+          "positions": {
+            "offset": 32094,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.009",
+          "positions": {
+            "offset": 32208,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.010",
+          "positions": {
+            "offset": 32322,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.011",
+          "positions": {
+            "offset": 32436,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.012",
+          "positions": {
+            "offset": 32550,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.013",
+          "positions": {
+            "offset": 32664,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.014",
+          "positions": {
+            "offset": 32778,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.015",
+          "positions": {
+            "offset": 32892,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.016",
+          "positions": {
+            "offset": 33006,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.017",
+          "positions": {
+            "offset": 33120,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.018",
+          "positions": {
+            "offset": 33234,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.019",
+          "positions": {
+            "offset": 33348,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.020",
+          "positions": {
+            "offset": 33462,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.021",
+          "positions": {
+            "offset": 33576,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.022",
+          "positions": {
+            "offset": 33690,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.023",
+          "positions": {
+            "offset": 33804,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.024",
+          "positions": {
+            "offset": 33918,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.025",
+          "positions": {
+            "offset": 34032,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.026",
+          "positions": {
+            "offset": 34146,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.027",
+          "positions": {
+            "offset": 34260,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.028",
+          "positions": {
+            "offset": 34374,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.029",
+          "positions": {
+            "offset": 34488,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.030",
+          "positions": {
+            "offset": 34602,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.031",
+          "positions": {
+            "offset": 34716,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.032",
+          "positions": {
+            "offset": 34830,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.033",
+          "positions": {
+            "offset": 34944,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.034",
+          "positions": {
+            "offset": 35058,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.035",
+          "positions": {
+            "offset": 35172,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.036",
+          "positions": {
+            "offset": 35286,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.037",
+          "positions": {
+            "offset": 35400,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.038",
+          "positions": {
+            "offset": 35514,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.039",
+          "positions": {
+            "offset": 35628,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.040",
+          "positions": {
+            "offset": 35742,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.041",
+          "positions": {
+            "offset": 35856,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.042",
+          "positions": {
+            "offset": 35970,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.043",
+          "positions": {
+            "offset": 36084,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.044",
+          "positions": {
+            "offset": 36198,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.045",
+          "positions": {
+            "offset": 36312,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.046",
+          "positions": {
+            "offset": 36426,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.047",
+          "positions": {
+            "offset": 36540,
+            "count": 114
+          }
+        },
+        {
+          "id": "flower_stalk",
+          "positions": {
+            "offset": 36654,
+            "count": 1947
+          }
+        },
+        {
+          "id": "leafy_base",
+          "positions": {
+            "offset": 38601,
+            "count": 23763
+          }
+        }
+      ]
+    },
+    {
+      "id": "flower_stalk-0.63",
+      "params": {
+        "flower_stalk": 0.63
+      },
+      "parts": [
+        {
+          "id": "floret",
+          "positions": {
+            "offset": 62364,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.001",
+          "positions": {
+            "offset": 62478,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.002",
+          "positions": {
+            "offset": 62592,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.003",
+          "positions": {
+            "offset": 62706,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.004",
+          "positions": {
+            "offset": 62820,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.005",
+          "positions": {
+            "offset": 62934,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.006",
+          "positions": {
+            "offset": 63048,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.007",
+          "positions": {
+            "offset": 63162,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.008",
+          "positions": {
+            "offset": 63276,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.009",
+          "positions": {
+            "offset": 63390,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.010",
+          "positions": {
+            "offset": 63504,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.011",
+          "positions": {
+            "offset": 63618,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.012",
+          "positions": {
+            "offset": 63732,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.013",
+          "positions": {
+            "offset": 63846,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.014",
+          "positions": {
+            "offset": 63960,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.015",
+          "positions": {
+            "offset": 64074,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.016",
+          "positions": {
+            "offset": 64188,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.017",
+          "positions": {
+            "offset": 64302,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.018",
+          "positions": {
+            "offset": 64416,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.019",
+          "positions": {
+            "offset": 64530,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.020",
+          "positions": {
+            "offset": 64644,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.021",
+          "positions": {
+            "offset": 64758,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.022",
+          "positions": {
+            "offset": 64872,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.023",
+          "positions": {
+            "offset": 64986,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.024",
+          "positions": {
+            "offset": 65100,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.025",
+          "positions": {
+            "offset": 65214,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.026",
+          "positions": {
+            "offset": 65328,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.027",
+          "positions": {
+            "offset": 65442,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.028",
+          "positions": {
+            "offset": 65556,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.029",
+          "positions": {
+            "offset": 65670,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.030",
+          "positions": {
+            "offset": 65784,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.031",
+          "positions": {
+            "offset": 65898,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.032",
+          "positions": {
+            "offset": 66012,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.033",
+          "positions": {
+            "offset": 66126,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.034",
+          "positions": {
+            "offset": 66240,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.035",
+          "positions": {
+            "offset": 66354,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.036",
+          "positions": {
+            "offset": 66468,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.037",
+          "positions": {
+            "offset": 66582,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.038",
+          "positions": {
+            "offset": 66696,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.039",
+          "positions": {
+            "offset": 66810,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.040",
+          "positions": {
+            "offset": 66924,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.041",
+          "positions": {
+            "offset": 67038,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.042",
+          "positions": {
+            "offset": 67152,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.043",
+          "positions": {
+            "offset": 67266,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.044",
+          "positions": {
+            "offset": 67380,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.045",
+          "positions": {
+            "offset": 67494,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.046",
+          "positions": {
+            "offset": 67608,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.047",
+          "positions": {
+            "offset": 67722,
+            "count": 114
+          }
+        },
+        {
+          "id": "flower_stalk",
+          "positions": {
+            "offset": 67836,
+            "count": 1947
+          }
+        },
+        {
+          "id": "leafy_base",
+          "positions": {
+            "offset": 69783,
+            "count": 23763
+          }
+        }
+      ]
+    },
+    {
+      "id": "flower_stalk-1.37",
+      "params": {
+        "flower_stalk": 1.37
+      },
+      "parts": [
+        {
+          "id": "floret",
+          "positions": {
+            "offset": 93546,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.001",
+          "positions": {
+            "offset": 93660,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.002",
+          "positions": {
+            "offset": 93774,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.003",
+          "positions": {
+            "offset": 93888,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.004",
+          "positions": {
+            "offset": 94002,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.005",
+          "positions": {
+            "offset": 94116,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.006",
+          "positions": {
+            "offset": 94230,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.007",
+          "positions": {
+            "offset": 94344,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.008",
+          "positions": {
+            "offset": 94458,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.009",
+          "positions": {
+            "offset": 94572,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.010",
+          "positions": {
+            "offset": 94686,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.011",
+          "positions": {
+            "offset": 94800,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.012",
+          "positions": {
+            "offset": 94914,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.013",
+          "positions": {
+            "offset": 95028,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.014",
+          "positions": {
+            "offset": 95142,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.015",
+          "positions": {
+            "offset": 95256,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.016",
+          "positions": {
+            "offset": 95370,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.017",
+          "positions": {
+            "offset": 95484,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.018",
+          "positions": {
+            "offset": 95598,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.019",
+          "positions": {
+            "offset": 95712,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.020",
+          "positions": {
+            "offset": 95826,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.021",
+          "positions": {
+            "offset": 95940,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.022",
+          "positions": {
+            "offset": 96054,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.023",
+          "positions": {
+            "offset": 96168,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.024",
+          "positions": {
+            "offset": 96282,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.025",
+          "positions": {
+            "offset": 96396,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.026",
+          "positions": {
+            "offset": 96510,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.027",
+          "positions": {
+            "offset": 96624,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.028",
+          "positions": {
+            "offset": 96738,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.029",
+          "positions": {
+            "offset": 96852,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.030",
+          "positions": {
+            "offset": 96966,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.031",
+          "positions": {
+            "offset": 97080,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.032",
+          "positions": {
+            "offset": 97194,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.033",
+          "positions": {
+            "offset": 97308,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.034",
+          "positions": {
+            "offset": 97422,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.035",
+          "positions": {
+            "offset": 97536,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.036",
+          "positions": {
+            "offset": 97650,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.037",
+          "positions": {
+            "offset": 97764,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.038",
+          "positions": {
+            "offset": 97878,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.039",
+          "positions": {
+            "offset": 97992,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.040",
+          "positions": {
+            "offset": 98106,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.041",
+          "positions": {
+            "offset": 98220,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.042",
+          "positions": {
+            "offset": 98334,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.043",
+          "positions": {
+            "offset": 98448,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.044",
+          "positions": {
+            "offset": 98562,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.045",
+          "positions": {
+            "offset": 98676,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.046",
+          "positions": {
+            "offset": 98790,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.047",
+          "positions": {
+            "offset": 98904,
+            "count": 114
+          }
+        },
+        {
+          "id": "flower_stalk",
+          "positions": {
+            "offset": 99018,
+            "count": 1947
+          }
+        },
+        {
+          "id": "leafy_base",
+          "positions": {
+            "offset": 100965,
+            "count": 23763
+          }
+        }
+      ]
+    },
+    {
+      "id": "leafy_base-0.63",
+      "params": {
+        "leafy_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "floret",
+          "positions": {
+            "offset": 124728,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.001",
+          "positions": {
+            "offset": 124842,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.002",
+          "positions": {
+            "offset": 124956,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.003",
+          "positions": {
+            "offset": 125070,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.004",
+          "positions": {
+            "offset": 125184,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.005",
+          "positions": {
+            "offset": 125298,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.006",
+          "positions": {
+            "offset": 125412,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.007",
+          "positions": {
+            "offset": 125526,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.008",
+          "positions": {
+            "offset": 125640,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.009",
+          "positions": {
+            "offset": 125754,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.010",
+          "positions": {
+            "offset": 125868,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.011",
+          "positions": {
+            "offset": 125982,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.012",
+          "positions": {
+            "offset": 126096,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.013",
+          "positions": {
+            "offset": 126210,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.014",
+          "positions": {
+            "offset": 126324,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.015",
+          "positions": {
+            "offset": 126438,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.016",
+          "positions": {
+            "offset": 126552,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.017",
+          "positions": {
+            "offset": 126666,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.018",
+          "positions": {
+            "offset": 126780,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.019",
+          "positions": {
+            "offset": 126894,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.020",
+          "positions": {
+            "offset": 127008,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.021",
+          "positions": {
+            "offset": 127122,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.022",
+          "positions": {
+            "offset": 127236,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.023",
+          "positions": {
+            "offset": 127350,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.024",
+          "positions": {
+            "offset": 127464,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.025",
+          "positions": {
+            "offset": 127578,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.026",
+          "positions": {
+            "offset": 127692,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.027",
+          "positions": {
+            "offset": 127806,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.028",
+          "positions": {
+            "offset": 127920,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.029",
+          "positions": {
+            "offset": 128034,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.030",
+          "positions": {
+            "offset": 128148,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.031",
+          "positions": {
+            "offset": 128262,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.032",
+          "positions": {
+            "offset": 128376,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.033",
+          "positions": {
+            "offset": 128490,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.034",
+          "positions": {
+            "offset": 128604,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.035",
+          "positions": {
+            "offset": 128718,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.036",
+          "positions": {
+            "offset": 128832,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.037",
+          "positions": {
+            "offset": 128946,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.038",
+          "positions": {
+            "offset": 129060,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.039",
+          "positions": {
+            "offset": 129174,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.040",
+          "positions": {
+            "offset": 129288,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.041",
+          "positions": {
+            "offset": 129402,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.042",
+          "positions": {
+            "offset": 129516,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.043",
+          "positions": {
+            "offset": 129630,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.044",
+          "positions": {
+            "offset": 129744,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.045",
+          "positions": {
+            "offset": 129858,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.046",
+          "positions": {
+            "offset": 129972,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.047",
+          "positions": {
+            "offset": 130086,
+            "count": 114
+          }
+        },
+        {
+          "id": "flower_stalk",
+          "positions": {
+            "offset": 130200,
+            "count": 1947
+          }
+        },
+        {
+          "id": "leafy_base",
+          "positions": {
+            "offset": 132147,
+            "count": 23763
+          }
+        }
+      ]
+    },
+    {
+      "id": "leafy_base-1.37",
+      "params": {
+        "leafy_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "floret",
+          "positions": {
+            "offset": 155910,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.001",
+          "positions": {
+            "offset": 156024,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.002",
+          "positions": {
+            "offset": 156138,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.003",
+          "positions": {
+            "offset": 156252,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.004",
+          "positions": {
+            "offset": 156366,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.005",
+          "positions": {
+            "offset": 156480,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.006",
+          "positions": {
+            "offset": 156594,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.007",
+          "positions": {
+            "offset": 156708,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.008",
+          "positions": {
+            "offset": 156822,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.009",
+          "positions": {
+            "offset": 156936,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.010",
+          "positions": {
+            "offset": 157050,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.011",
+          "positions": {
+            "offset": 157164,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.012",
+          "positions": {
+            "offset": 157278,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.013",
+          "positions": {
+            "offset": 157392,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.014",
+          "positions": {
+            "offset": 157506,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.015",
+          "positions": {
+            "offset": 157620,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.016",
+          "positions": {
+            "offset": 157734,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.017",
+          "positions": {
+            "offset": 157848,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.018",
+          "positions": {
+            "offset": 157962,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.019",
+          "positions": {
+            "offset": 158076,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.020",
+          "positions": {
+            "offset": 158190,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.021",
+          "positions": {
+            "offset": 158304,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.022",
+          "positions": {
+            "offset": 158418,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.023",
+          "positions": {
+            "offset": 158532,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.024",
+          "positions": {
+            "offset": 158646,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.025",
+          "positions": {
+            "offset": 158760,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.026",
+          "positions": {
+            "offset": 158874,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.027",
+          "positions": {
+            "offset": 158988,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.028",
+          "positions": {
+            "offset": 159102,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.029",
+          "positions": {
+            "offset": 159216,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.030",
+          "positions": {
+            "offset": 159330,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.031",
+          "positions": {
+            "offset": 159444,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.032",
+          "positions": {
+            "offset": 159558,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.033",
+          "positions": {
+            "offset": 159672,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.034",
+          "positions": {
+            "offset": 159786,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.035",
+          "positions": {
+            "offset": 159900,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.036",
+          "positions": {
+            "offset": 160014,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.037",
+          "positions": {
+            "offset": 160128,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.038",
+          "positions": {
+            "offset": 160242,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.039",
+          "positions": {
+            "offset": 160356,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.040",
+          "positions": {
+            "offset": 160470,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.041",
+          "positions": {
+            "offset": 160584,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.042",
+          "positions": {
+            "offset": 160698,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.043",
+          "positions": {
+            "offset": 160812,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.044",
+          "positions": {
+            "offset": 160926,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.045",
+          "positions": {
+            "offset": 161040,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.046",
+          "positions": {
+            "offset": 161154,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.047",
+          "positions": {
+            "offset": 161268,
+            "count": 114
+          }
+        },
+        {
+          "id": "flower_stalk",
+          "positions": {
+            "offset": 161382,
+            "count": 1947
+          }
+        },
+        {
+          "id": "leafy_base",
+          "positions": {
+            "offset": 163329,
+            "count": 23763
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "floret": 0.63,
+        "flower_stalk": 1.37,
+        "leafy_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "floret",
+          "positions": {
+            "offset": 187092,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.001",
+          "positions": {
+            "offset": 187206,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.002",
+          "positions": {
+            "offset": 187320,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.003",
+          "positions": {
+            "offset": 187434,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.004",
+          "positions": {
+            "offset": 187548,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.005",
+          "positions": {
+            "offset": 187662,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.006",
+          "positions": {
+            "offset": 187776,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.007",
+          "positions": {
+            "offset": 187890,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.008",
+          "positions": {
+            "offset": 188004,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.009",
+          "positions": {
+            "offset": 188118,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.010",
+          "positions": {
+            "offset": 188232,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.011",
+          "positions": {
+            "offset": 188346,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.012",
+          "positions": {
+            "offset": 188460,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.013",
+          "positions": {
+            "offset": 188574,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.014",
+          "positions": {
+            "offset": 188688,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.015",
+          "positions": {
+            "offset": 188802,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.016",
+          "positions": {
+            "offset": 188916,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.017",
+          "positions": {
+            "offset": 189030,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.018",
+          "positions": {
+            "offset": 189144,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.019",
+          "positions": {
+            "offset": 189258,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.020",
+          "positions": {
+            "offset": 189372,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.021",
+          "positions": {
+            "offset": 189486,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.022",
+          "positions": {
+            "offset": 189600,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.023",
+          "positions": {
+            "offset": 189714,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.024",
+          "positions": {
+            "offset": 189828,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.025",
+          "positions": {
+            "offset": 189942,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.026",
+          "positions": {
+            "offset": 190056,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.027",
+          "positions": {
+            "offset": 190170,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.028",
+          "positions": {
+            "offset": 190284,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.029",
+          "positions": {
+            "offset": 190398,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.030",
+          "positions": {
+            "offset": 190512,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.031",
+          "positions": {
+            "offset": 190626,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.032",
+          "positions": {
+            "offset": 190740,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.033",
+          "positions": {
+            "offset": 190854,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.034",
+          "positions": {
+            "offset": 190968,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.035",
+          "positions": {
+            "offset": 191082,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.036",
+          "positions": {
+            "offset": 191196,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.037",
+          "positions": {
+            "offset": 191310,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.038",
+          "positions": {
+            "offset": 191424,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.039",
+          "positions": {
+            "offset": 191538,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.040",
+          "positions": {
+            "offset": 191652,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.041",
+          "positions": {
+            "offset": 191766,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.042",
+          "positions": {
+            "offset": 191880,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.043",
+          "positions": {
+            "offset": 191994,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.044",
+          "positions": {
+            "offset": 192108,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.045",
+          "positions": {
+            "offset": 192222,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.046",
+          "positions": {
+            "offset": 192336,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.047",
+          "positions": {
+            "offset": 192450,
+            "count": 114
+          }
+        },
+        {
+          "id": "flower_stalk",
+          "positions": {
+            "offset": 192564,
+            "count": 1947
+          }
+        },
+        {
+          "id": "leafy_base",
+          "positions": {
+            "offset": 194511,
+            "count": 23763
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "floret": 1.37,
+        "flower_stalk": 0.63,
+        "leafy_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "floret",
+          "positions": {
+            "offset": 218274,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.001",
+          "positions": {
+            "offset": 218388,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.002",
+          "positions": {
+            "offset": 218502,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.003",
+          "positions": {
+            "offset": 218616,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.004",
+          "positions": {
+            "offset": 218730,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.005",
+          "positions": {
+            "offset": 218844,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.006",
+          "positions": {
+            "offset": 218958,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.007",
+          "positions": {
+            "offset": 219072,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.008",
+          "positions": {
+            "offset": 219186,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.009",
+          "positions": {
+            "offset": 219300,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.010",
+          "positions": {
+            "offset": 219414,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.011",
+          "positions": {
+            "offset": 219528,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.012",
+          "positions": {
+            "offset": 219642,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.013",
+          "positions": {
+            "offset": 219756,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.014",
+          "positions": {
+            "offset": 219870,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.015",
+          "positions": {
+            "offset": 219984,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.016",
+          "positions": {
+            "offset": 220098,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.017",
+          "positions": {
+            "offset": 220212,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.018",
+          "positions": {
+            "offset": 220326,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.019",
+          "positions": {
+            "offset": 220440,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.020",
+          "positions": {
+            "offset": 220554,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.021",
+          "positions": {
+            "offset": 220668,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.022",
+          "positions": {
+            "offset": 220782,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.023",
+          "positions": {
+            "offset": 220896,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.024",
+          "positions": {
+            "offset": 221010,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.025",
+          "positions": {
+            "offset": 221124,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.026",
+          "positions": {
+            "offset": 221238,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.027",
+          "positions": {
+            "offset": 221352,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.028",
+          "positions": {
+            "offset": 221466,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.029",
+          "positions": {
+            "offset": 221580,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.030",
+          "positions": {
+            "offset": 221694,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.031",
+          "positions": {
+            "offset": 221808,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.032",
+          "positions": {
+            "offset": 221922,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.033",
+          "positions": {
+            "offset": 222036,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.034",
+          "positions": {
+            "offset": 222150,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.035",
+          "positions": {
+            "offset": 222264,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.036",
+          "positions": {
+            "offset": 222378,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.037",
+          "positions": {
+            "offset": 222492,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.038",
+          "positions": {
+            "offset": 222606,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.039",
+          "positions": {
+            "offset": 222720,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.040",
+          "positions": {
+            "offset": 222834,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.041",
+          "positions": {
+            "offset": 222948,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.042",
+          "positions": {
+            "offset": 223062,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.043",
+          "positions": {
+            "offset": 223176,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.044",
+          "positions": {
+            "offset": 223290,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.045",
+          "positions": {
+            "offset": 223404,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.046",
+          "positions": {
+            "offset": 223518,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.047",
+          "positions": {
+            "offset": 223632,
+            "count": 114
+          }
+        },
+        {
+          "id": "flower_stalk",
+          "positions": {
+            "offset": 223746,
+            "count": 1947
+          }
+        },
+        {
+          "id": "leafy_base",
+          "positions": {
+            "offset": 225693,
+            "count": 23763
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "floret": 0.63,
+        "flower_stalk": 0.63,
+        "leafy_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "floret",
+          "positions": {
+            "offset": 249456,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.001",
+          "positions": {
+            "offset": 249570,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.002",
+          "positions": {
+            "offset": 249684,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.003",
+          "positions": {
+            "offset": 249798,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.004",
+          "positions": {
+            "offset": 249912,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.005",
+          "positions": {
+            "offset": 250026,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.006",
+          "positions": {
+            "offset": 250140,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.007",
+          "positions": {
+            "offset": 250254,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.008",
+          "positions": {
+            "offset": 250368,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.009",
+          "positions": {
+            "offset": 250482,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.010",
+          "positions": {
+            "offset": 250596,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.011",
+          "positions": {
+            "offset": 250710,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.012",
+          "positions": {
+            "offset": 250824,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.013",
+          "positions": {
+            "offset": 250938,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.014",
+          "positions": {
+            "offset": 251052,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.015",
+          "positions": {
+            "offset": 251166,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.016",
+          "positions": {
+            "offset": 251280,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.017",
+          "positions": {
+            "offset": 251394,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.018",
+          "positions": {
+            "offset": 251508,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.019",
+          "positions": {
+            "offset": 251622,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.020",
+          "positions": {
+            "offset": 251736,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.021",
+          "positions": {
+            "offset": 251850,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.022",
+          "positions": {
+            "offset": 251964,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.023",
+          "positions": {
+            "offset": 252078,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.024",
+          "positions": {
+            "offset": 252192,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.025",
+          "positions": {
+            "offset": 252306,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.026",
+          "positions": {
+            "offset": 252420,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.027",
+          "positions": {
+            "offset": 252534,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.028",
+          "positions": {
+            "offset": 252648,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.029",
+          "positions": {
+            "offset": 252762,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.030",
+          "positions": {
+            "offset": 252876,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.031",
+          "positions": {
+            "offset": 252990,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.032",
+          "positions": {
+            "offset": 253104,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.033",
+          "positions": {
+            "offset": 253218,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.034",
+          "positions": {
+            "offset": 253332,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.035",
+          "positions": {
+            "offset": 253446,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.036",
+          "positions": {
+            "offset": 253560,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.037",
+          "positions": {
+            "offset": 253674,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.038",
+          "positions": {
+            "offset": 253788,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.039",
+          "positions": {
+            "offset": 253902,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.040",
+          "positions": {
+            "offset": 254016,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.041",
+          "positions": {
+            "offset": 254130,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.042",
+          "positions": {
+            "offset": 254244,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.043",
+          "positions": {
+            "offset": 254358,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.044",
+          "positions": {
+            "offset": 254472,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.045",
+          "positions": {
+            "offset": 254586,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.046",
+          "positions": {
+            "offset": 254700,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.047",
+          "positions": {
+            "offset": 254814,
+            "count": 114
+          }
+        },
+        {
+          "id": "flower_stalk",
+          "positions": {
+            "offset": 254928,
+            "count": 1947
+          }
+        },
+        {
+          "id": "leafy_base",
+          "positions": {
+            "offset": 256875,
+            "count": 23763
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "floret": 1.37,
+        "flower_stalk": 1.37,
+        "leafy_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "floret",
+          "positions": {
+            "offset": 280638,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.001",
+          "positions": {
+            "offset": 280752,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.002",
+          "positions": {
+            "offset": 280866,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.003",
+          "positions": {
+            "offset": 280980,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.004",
+          "positions": {
+            "offset": 281094,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.005",
+          "positions": {
+            "offset": 281208,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.006",
+          "positions": {
+            "offset": 281322,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.007",
+          "positions": {
+            "offset": 281436,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.008",
+          "positions": {
+            "offset": 281550,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.009",
+          "positions": {
+            "offset": 281664,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.010",
+          "positions": {
+            "offset": 281778,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.011",
+          "positions": {
+            "offset": 281892,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.012",
+          "positions": {
+            "offset": 282006,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.013",
+          "positions": {
+            "offset": 282120,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.014",
+          "positions": {
+            "offset": 282234,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.015",
+          "positions": {
+            "offset": 282348,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.016",
+          "positions": {
+            "offset": 282462,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.017",
+          "positions": {
+            "offset": 282576,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.018",
+          "positions": {
+            "offset": 282690,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.019",
+          "positions": {
+            "offset": 282804,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.020",
+          "positions": {
+            "offset": 282918,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.021",
+          "positions": {
+            "offset": 283032,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.022",
+          "positions": {
+            "offset": 283146,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.023",
+          "positions": {
+            "offset": 283260,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.024",
+          "positions": {
+            "offset": 283374,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.025",
+          "positions": {
+            "offset": 283488,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.026",
+          "positions": {
+            "offset": 283602,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.027",
+          "positions": {
+            "offset": 283716,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.028",
+          "positions": {
+            "offset": 283830,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.029",
+          "positions": {
+            "offset": 283944,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.030",
+          "positions": {
+            "offset": 284058,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.031",
+          "positions": {
+            "offset": 284172,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.032",
+          "positions": {
+            "offset": 284286,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.033",
+          "positions": {
+            "offset": 284400,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.034",
+          "positions": {
+            "offset": 284514,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.035",
+          "positions": {
+            "offset": 284628,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.036",
+          "positions": {
+            "offset": 284742,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.037",
+          "positions": {
+            "offset": 284856,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.038",
+          "positions": {
+            "offset": 284970,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.039",
+          "positions": {
+            "offset": 285084,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.040",
+          "positions": {
+            "offset": 285198,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.041",
+          "positions": {
+            "offset": 285312,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.042",
+          "positions": {
+            "offset": 285426,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.043",
+          "positions": {
+            "offset": 285540,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.044",
+          "positions": {
+            "offset": 285654,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.045",
+          "positions": {
+            "offset": 285768,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.046",
+          "positions": {
+            "offset": 285882,
+            "count": 114
+          }
+        },
+        {
+          "id": "floret.047",
+          "positions": {
+            "offset": 285996,
+            "count": 114
+          }
+        },
+        {
+          "id": "flower_stalk",
+          "positions": {
+            "offset": 286110,
+            "count": 1947
+          }
+        },
+        {
+          "id": "leafy_base",
+          "positions": {
+            "offset": 288057,
+            "count": 23763
+          }
+        }
+      ]
+    }
+  ]
+}

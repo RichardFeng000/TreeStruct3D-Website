@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "base",
+      "part_id": "base",
+      "positions": {
+        "offset": 0,
+        "count": 75
+      }
+    },
+    {
+      "id": "capital",
+      "part_id": "capital",
+      "positions": {
+        "offset": 75,
+        "count": 678
+      }
+    },
+    {
+      "id": "shaft",
+      "part_id": "shaft",
+      "positions": {
+        "offset": 753,
+        "count": 582
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "base",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "base",
+              "delta": {
+                "offset": 1335,
+                "count": 75
+              }
+            },
+            {
+              "id": "capital",
+              "delta": {
+                "offset": 1410,
+                "count": 678
+              }
+            },
+            {
+              "id": "shaft",
+              "delta": {
+                "offset": 2088,
+                "count": 582
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 2670,
+            "count": 12
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "base",
+              "delta": {
+                "offset": 2682,
+                "count": 75
+              }
+            },
+            {
+              "id": "capital",
+              "delta": {
+                "offset": 2757,
+                "count": 678
+              }
+            },
+            {
+              "id": "shaft",
+              "delta": {
+                "offset": 3435,
+                "count": 582
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 4017,
+            "count": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "capital",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "capital",
+              "delta": {
+                "offset": 4029,
+                "count": 678
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "capital",
+              "delta": {
+                "offset": 4707,
+                "count": 678
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shaft",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "capital",
+              "delta": {
+                "offset": 5385,
+                "count": 678
+              }
+            },
+            {
+              "id": "shaft",
+              "delta": {
+                "offset": 6063,
+                "count": 582
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 6645,
+            "count": 12
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "capital",
+              "delta": {
+                "offset": 6657,
+                "count": 678
+              }
+            },
+            {
+              "id": "shaft",
+              "delta": {
+                "offset": 7335,
+                "count": 582
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 7917,
+            "count": 12
+          }
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "base",
+      "child": "shaft",
+      "parent_world": [
+        0.0,
+        0.0,
+        0.800000011920929
+      ],
+      "child_world": [
+        0.0,
+        0.0,
+        0.800000011920929
+      ]
+    },
+    {
+      "parent": "shaft",
+      "child": "capital",
+      "parent_world": [
+        0.0,
+        0.0,
+        6.800000190734863
+      ],
+      "child_world": [
+        0.0,
+        0.0,
+        6.800000190734863
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 7.800000190734863,
+    "linear_tolerance": 7.800000190734864e-05,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "base": 4.76837158203125e-07,
+      "capital": 4.805480102731963e-07,
+      "shaft": 4.76837158203125e-07
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "base": 0.63,
+          "capital": 0.63,
+          "shaft": 1.37
+        },
+        "max_position_error": 1.430511474609375e-06,
+        "relative_error": 1.8339890251651416e-07
+      },
+      {
+        "params": {
+          "base": 1.37,
+          "capital": 1.37,
+          "shaft": 0.63
+        },
+        "max_position_error": 4.76837158203125e-07,
+        "relative_error": 6.113296750550472e-08
+      },
+      {
+        "params": {
+          "base": 0.63,
+          "capital": 0.63,
+          "shaft": 0.63
+        },
+        "max_position_error": 0.0,
+        "relative_error": 0.0
+      },
+      {
+        "params": {
+          "base": 1.37,
+          "capital": 1.37,
+          "shaft": 1.37
+        },
+        "max_position_error": 4.76837158203125e-07,
+        "relative_error": 6.113296750550472e-08
+      }
+    ]
+  },
+  "binary_sha256": "b95f011743d97ad8f5946ef1a1f4a715d99d665243ad62047c8aa1466534c98f",
+  "source_sha256": "3b41b4b0e363a4f728f587a95808507eb14b25313cace8efab16ca22d0310c9a"
+}

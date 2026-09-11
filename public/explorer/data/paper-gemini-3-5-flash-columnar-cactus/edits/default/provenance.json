@@ -1,0 +1,91 @@
+{
+  "method": "TreeStruct3D · Gemini 3.5 Flash",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemini_3.5_flash/ColumnarCactus_seed0/ColumnarCactus_seed0.py",
+  "source_sha256": "54af46266070c28e9f9a5872e413cea2c2a918a684d8d3ae4e5190bc69a77666",
+  "source_size": 15149,
+  "glb_sha256": "ed58acd46cf7f0228e90055410aeac73f86842ca80b185935e764c5ef799067b",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {},
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "default",
+    "side": "default",
+    "part_ids": [],
+    "parameter": "scale",
+    "scale": 1.0,
+    "params": {},
+    "paper_parent_ids": [
+      "main_stem"
+    ],
+    "paper_child_ids": [
+      "side_arm"
+    ],
+    "geometry_changed": false,
+    "attachment_observed": true,
+    "dimensions": [],
+    "selected_attachment_checks": [
+      {
+        "parent": "main_stem",
+        "child": "side_arm",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "main_stem",
+        "runtime_child_part_id": "side_arm"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.2162919871043414,
+    -9.313225746154785e-09,
+    -5.294382572174072e-05
+  ],
+  "mesh_bbox_max_error_before_translation": 0.21629200875759125,
+  "mesh_bbox_max_error_after_translation": 5.029141902923584e-08,
+  "material_export": {
+    "strategy": "cycles_emission_base_color_bake",
+    "resolution": 512,
+    "lighting_baked": false,
+    "procedural_normal_baked": false,
+    "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+    "objects": [
+      {
+        "name": "main_stem",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "side_arm",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "stem_spine_clusters",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "arm_spine_clusters",
+        "mode": "native_gltf_material"
+      }
+    ],
+    "fallbacks": [],
+    "preserved_geometry_objects": [],
+    "source_sha256": "54af46266070c28e9f9a5872e413cea2c2a918a684d8d3ae4e5190bc69a77666",
+    "helper_sha256": "b877cf74388900d9c1ea8cb83f84010a4bc520057da01e6021aee226094f0cee",
+    "blender_version": "5.0.0",
+    "material_count": 2,
+    "image_count": 0,
+    "geometry_unchanged": true,
+    "geometry_comparison_tolerance": 4.9999999999999996e-06,
+    "original_glb_sha256": "ed58acd46cf7f0228e90055410aeac73f86842ca80b185935e764c5ef799067b"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "method": "TreeStruct3D · GPT-5.6 Sol",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.6_sol/SpinyLobster_seed0/SpinyLobster_seed0.py",
+  "source_sha256": "6f7797aba646d2a5bf1cd58e467c22718ada80322d2145e88d58f247da865b0d",
+  "source_size": 23079,
+  "glb_sha256": "ad997dfb2d299c7457ce4c5b61b4d0fefc4ba934dc3f713d3c19ca6d070071a6",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {},
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "default",
+    "side": "default",
+    "part_ids": [],
+    "parameter": "scale",
+    "scale": 1.0,
+    "params": {},
+    "paper_parent_ids": [
+      "cephalothorax_shell"
+    ],
+    "paper_child_ids": [
+      "long_antenna"
+    ],
+    "geometry_changed": false,
+    "attachment_observed": true,
+    "dimensions": [],
+    "selected_attachment_checks": [
+      {
+        "parent": "cephalothorax_shell",
+        "child": "long_antenna",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "cephalothorax_shell",
+        "runtime_child_part_id": "long_antenna"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    1.7472135977819563,
+    -1.4109616436064243
+  ],
+  "mesh_bbox_max_error_before_translation": 1.74721360206604,
+  "mesh_bbox_max_error_after_translation": 2.540647983106936e-07,
+  "material_export": {
+    "strategy": "cycles_emission_base_color_bake",
+    "resolution": 512,
+    "lighting_baked": false,
+    "procedural_normal_baked": false,
+    "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+    "objects": [
+      {
+        "name": "cephalothorax_shell",
+        "mode": "baked_base_color",
+        "materials": [
+          "Warm Orange Red Exoskeleton"
+        ],
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "abdomen_chain",
+        "mode": "baked_base_color",
+        "materials": [
+          "Warm Orange Red Exoskeleton",
+          "Deep Red Segment Grooves"
+        ],
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "tail_fan",
+        "mode": "baked_base_color",
+        "materials": [
+          "Warm Orange Red Exoskeleton",
+          "Deep Red Segment Grooves"
+        ],
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "long_antenna",
+        "mode": "baked_base_color",
+        "materials": [
+          "Burnt Orange Antennae"
+        ],
+        "width": 512,
+        "height": 512
+      },
+      {
+        "name": "walking_leg_bank",
+        "mode": "baked_base_color",
+        "materials": [
+          "Orange Red Walking Legs"
+        ],
+        "width": 512,
+        "height": 512
+      }
+    ],
+    "fallbacks": [],
+    "source_sha256": "6f7797aba646d2a5bf1cd58e467c22718ada80322d2145e88d58f247da865b0d",
+    "helper_sha256": "3c2b87e3641e99a7975abfbc75326626e6ee4e9d8b7408e5979f93517c748137",
+    "blender_version": "5.0.0",
+    "material_count": 7,
+    "image_count": 5,
+    "geometry_unchanged": true,
+    "original_glb_sha256": "44e5898473099ef1605baca7a66bac9f1560252446d3eaa6fa5cbffdb1810712"
+  }
+}

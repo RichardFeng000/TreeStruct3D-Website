@@ -1,0 +1,91 @@
+{
+  "method": "TreeStruct3D · Gemini 3.1 Pro",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemeni_3.1_pro/Dragonfly_seed0/Dragonfly_seed0.py",
+  "source_sha256": "54f6d11f624fd0a6d3b5e12f0d0fbe4408e7d1e0d0b595dd11420cfa88a6ea50",
+  "source_size": 16857,
+  "glb_sha256": "32c95aa8634dad16da9c908c9203d7be564c56a7fbeec73c74ec4bc75fea44d8",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|thorax|scale": 1.6
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-1.6",
+    "side": "parent",
+    "part_ids": [
+      "thorax"
+    ],
+    "parameter": "scale",
+    "scale": 1.6,
+    "params": {
+      "part_param|thorax|scale": 1.6
+    },
+    "paper_parent_ids": [
+      "thorax"
+    ],
+    "paper_child_ids": [
+      "abdomen"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "attachment_paths": [
+      [
+        "thorax",
+        "abdomen"
+      ]
+    ],
+    "dimensions": [
+      {
+        "id": "thorax",
+        "part_id": "thorax",
+        "before": [
+          1.3751401901245117,
+          2.5521934032440186,
+          1.3244245648384094
+        ],
+        "after": [
+          2.200224280357361,
+          4.083509206771851,
+          2.1190792322158813
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "thorax",
+        "child": "abdomen",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "thorax",
+        "runtime_child_part_id": "abdomen"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    -2.483526865641276e-08,
+    1.059539684197969,
+    -2.6849998628927603
+  ],
+  "mesh_bbox_max_error_before_translation": 2.6850000619888306,
+  "mesh_bbox_max_error_after_translation": 2.1358331044514975e-07,
+  "same_execution_export": true,
+  "final_scene_adapter_sha256": "5ef143984231a0dd21797536aa9e727625b993f52c2a512f08c4f151f8730683",
+  "final_scene_adapter": {
+    "same_execution_export": true,
+    "geometry_observation": "final_evaluated_polygon_vertices",
+    "anchor_observation": "final_evaluated_surface_after_all_source_modifiers",
+    "probe_rules_and_tolerances_changed": false
+  }
+}

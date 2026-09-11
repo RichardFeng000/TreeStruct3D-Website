@@ -1,0 +1,2418 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "Chameleon_seed0/Chameleon_seed0",
+    "label": "Chameleon_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|torso_body|scale",
+        "label": "torso_body · scale",
+        "group": "Native Part Parameters · torso_body",
+        "value": 0.4,
+        "node_id": "torso_body",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|torso_body|torso_body",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|torso_body|length",
+        "label": "torso_body · length",
+        "group": "Native Part Parameters · torso_body",
+        "value": 3.2,
+        "node_id": "torso_body",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -1.6000000000000005,
+        "max": 8.0,
+        "step": 0.032
+      },
+      {
+        "id": "part_param|torso_body|width",
+        "label": "torso_body · width",
+        "group": "Native Part Parameters · torso_body",
+        "value": 1.3,
+        "node_id": "torso_body",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.6500000000000001,
+        "max": 3.25,
+        "step": 0.013000000000000001
+      },
+      {
+        "id": "part_param|torso_body|height",
+        "label": "torso_body · height",
+        "group": "Native Part Parameters · torso_body",
+        "value": 0.9,
+        "node_id": "torso_body",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.45000000000000007,
+        "max": 2.25,
+        "step": 0.009000000000000001
+      },
+      {
+        "id": "part_param|head|scale",
+        "label": "head · scale",
+        "group": "Native Part Parameters · head",
+        "value": 1.0,
+        "node_id": "head",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|head|head",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|head|length",
+        "label": "head · length",
+        "group": "Native Part Parameters · head",
+        "value": 1.3,
+        "node_id": "head",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.6500000000000001,
+        "max": 3.25,
+        "step": 0.013000000000000001
+      },
+      {
+        "id": "part_param|head|width",
+        "label": "head · width",
+        "group": "Native Part Parameters · head",
+        "value": 1.1,
+        "node_id": "head",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.55,
+        "max": 2.75,
+        "step": 0.011000000000000001
+      },
+      {
+        "id": "part_param|head|height",
+        "label": "head · height",
+        "group": "Native Part Parameters · head",
+        "value": 1.1,
+        "node_id": "head",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.55,
+        "max": 2.75,
+        "step": 0.011000000000000001
+      },
+      {
+        "id": "part_param|eye_left|scale",
+        "label": "eye_left · scale",
+        "group": "Native Part Parameters · eye_left",
+        "value": 1.0,
+        "node_id": "eye_left",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|eye_left|eye_left",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|eye_left|radius",
+        "label": "eye_left · radius",
+        "group": "Native Part Parameters · eye_left",
+        "value": 0.36,
+        "node_id": "eye_left",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.18000000000000005,
+        "max": 0.9,
+        "step": 0.0036
+      },
+      {
+        "id": "part_param|eye_right|scale",
+        "label": "eye_right · scale",
+        "group": "Native Part Parameters · eye_right",
+        "value": 1.0,
+        "node_id": "eye_right",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|eye_right|eye_right",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|eye_right|radius",
+        "label": "eye_right · radius",
+        "group": "Native Part Parameters · eye_right",
+        "value": 0.36,
+        "node_id": "eye_right",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.18000000000000005,
+        "max": 0.9,
+        "step": 0.0036
+      },
+      {
+        "id": "part_param|forelimb_left|scale",
+        "label": "forelimb_left · scale",
+        "group": "Native Part Parameters · forelimb_left",
+        "value": 1.0,
+        "node_id": "forelimb_left",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|forelimb_left|forelimb_left",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|forelimb_right|scale",
+        "label": "forelimb_right · scale",
+        "group": "Native Part Parameters · forelimb_right",
+        "value": 1.0,
+        "node_id": "forelimb_right",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|forelimb_right|forelimb_right",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|hindlimb_left|scale",
+        "label": "hindlimb_left · scale",
+        "group": "Native Part Parameters · hindlimb_left",
+        "value": 1.0,
+        "node_id": "hindlimb_left",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|hindlimb_left|hindlimb_left",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|hindlimb_right|scale",
+        "label": "hindlimb_right · scale",
+        "group": "Native Part Parameters · hindlimb_right",
+        "value": 1.0,
+        "node_id": "hindlimb_right",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|hindlimb_right|hindlimb_right",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|tail|scale",
+        "label": "tail · scale",
+        "group": "Native Part Parameters · tail",
+        "value": 1.0,
+        "node_id": "tail",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|tail|tail",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|tail|length",
+        "label": "tail · length",
+        "group": "Native Part Parameters · tail",
+        "value": 5.5,
+        "node_id": "tail",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -2.75,
+        "max": 13.75,
+        "step": 0.055
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gemini_3.5_flash/Chameleon_seed0/Chameleon_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:Chameleon_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Chameleon_seed0.py",
+            "label": "Chameleon_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 566,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 7,
+            "end_line": 11,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 29,
+            "end_line": 30,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "snap_and_get_anchor",
+            "label": "snap_and_get_anchor",
+            "kind": "function",
+            "line": 32,
+            "end_line": 38,
+            "parameters": [
+              "obj",
+              "local_pos"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 40,
+            "end_line": 53,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "set_smooth_shading",
+            "label": "set_smooth_shading",
+            "kind": "function",
+            "line": 55,
+            "end_line": 58,
+            "parameters": [
+              "obj"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_skin_material",
+            "label": "create_skin_material",
+            "kind": "function",
+            "line": 61,
+            "end_line": 103,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_eye_material",
+            "label": "create_eye_material",
+            "kind": "function",
+            "line": 105,
+            "end_line": 196,
+            "parameters": [
+              "radius"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_torso",
+            "label": "create_torso",
+            "kind": "function",
+            "line": 199,
+            "end_line": 230,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_head",
+            "label": "create_head",
+            "kind": "function",
+            "line": 232,
+            "end_line": 268,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_eye",
+            "label": "create_eye",
+            "kind": "function",
+            "line": 270,
+            "end_line": 296,
+            "parameters": [
+              "name",
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_limb",
+            "label": "create_limb",
+            "kind": "function",
+            "line": 298,
+            "end_line": 395,
+            "parameters": [
+              "name",
+              "params",
+              "side",
+              "is_hind",
+              "drop_height"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_tail",
+            "label": "create_tail",
+            "kind": "function",
+            "line": 397,
+            "end_line": 476,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_chameleon",
+            "label": "build_chameleon",
+            "kind": "function",
+            "line": 479,
+            "end_line": 564,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:Chameleon_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "clear_scene",
+            "relation": "SECTION_MEMBER",
+            "line": 7,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 29,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "snap_and_get_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 32,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 40,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "set_smooth_shading",
+            "relation": "SECTION_MEMBER",
+            "line": 55,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_skin_material",
+            "relation": "SECTION_MEMBER",
+            "line": 61,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_eye_material",
+            "relation": "SECTION_MEMBER",
+            "line": 105,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_torso",
+            "relation": "SECTION_MEMBER",
+            "line": 199,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_head",
+            "relation": "SECTION_MEMBER",
+            "line": 232,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_eye",
+            "relation": "SECTION_MEMBER",
+            "line": 270,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_limb",
+            "relation": "SECTION_MEMBER",
+            "line": 298,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_tail",
+            "relation": "SECTION_MEMBER",
+            "line": 397,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_chameleon",
+            "relation": "SECTION_MEMBER",
+            "line": 479,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:Chameleon_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Chameleon_seed0.py",
+            "label": "Chameleon_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 566,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 40,
+            "end_line": 53,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_chameleon",
+            "label": "build_chameleon",
+            "kind": "function",
+            "line": 479,
+            "end_line": 564,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 7,
+            "end_line": 11,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_eye",
+            "label": "create_eye",
+            "kind": "function",
+            "line": 270,
+            "end_line": 296,
+            "parameters": [
+              "name",
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_eye_material",
+            "label": "create_eye_material",
+            "kind": "function",
+            "line": 105,
+            "end_line": 196,
+            "parameters": [
+              "radius"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_head",
+            "label": "create_head",
+            "kind": "function",
+            "line": 232,
+            "end_line": 268,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_limb",
+            "label": "create_limb",
+            "kind": "function",
+            "line": 298,
+            "end_line": 395,
+            "parameters": [
+              "name",
+              "params",
+              "side",
+              "is_hind",
+              "drop_height"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_skin_material",
+            "label": "create_skin_material",
+            "kind": "function",
+            "line": 61,
+            "end_line": 103,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_tail",
+            "label": "create_tail",
+            "kind": "function",
+            "line": 397,
+            "end_line": 476,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_torso",
+            "label": "create_torso",
+            "kind": "function",
+            "line": 199,
+            "end_line": 230,
+            "parameters": [
+              "params"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 29,
+            "end_line": 30,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "set_smooth_shading",
+            "label": "set_smooth_shading",
+            "kind": "function",
+            "line": 55,
+            "end_line": 58,
+            "parameters": [
+              "obj"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "snap_and_get_anchor",
+            "label": "snap_and_get_anchor",
+            "kind": "function",
+            "line": 32,
+            "end_line": 38,
+            "parameters": [
+              "obj",
+              "local_pos"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 44,
+            "evidence": "AST call at L44"
+          },
+          {
+            "parent": "build_chameleon",
+            "child": "create_torso",
+            "relation": "CALL",
+            "line": 481,
+            "evidence": "AST call at L481"
+          },
+          {
+            "parent": "build_chameleon",
+            "child": "create_head",
+            "relation": "CALL",
+            "line": 490,
+            "evidence": "AST call at L490"
+          },
+          {
+            "parent": "build_chameleon",
+            "child": "snap_and_get_anchor",
+            "relation": "CALL",
+            "line": 496,
+            "evidence": "AST call at L496"
+          },
+          {
+            "parent": "build_chameleon",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "CALL",
+            "line": 498,
+            "evidence": "AST call at L498"
+          },
+          {
+            "parent": "build_chameleon",
+            "child": "create_eye",
+            "relation": "CALL",
+            "line": 502,
+            "evidence": "AST call at L502"
+          },
+          {
+            "parent": "build_chameleon",
+            "child": "create_tail",
+            "relation": "CALL",
+            "line": 516,
+            "evidence": "AST call at L516"
+          },
+          {
+            "parent": "build_chameleon",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 534,
+            "evidence": "AST call at L534"
+          },
+          {
+            "parent": "build_chameleon",
+            "child": "create_limb",
+            "relation": "CALL",
+            "line": 537,
+            "evidence": "AST call at L537"
+          },
+          {
+            "parent": "build_chameleon",
+            "child": "create_skin_material",
+            "relation": "CALL",
+            "line": 543,
+            "evidence": "AST call at L543"
+          },
+          {
+            "parent": "build_chameleon",
+            "child": "create_eye_material",
+            "relation": "CALL",
+            "line": 544,
+            "evidence": "AST call at L544"
+          },
+          {
+            "parent": "create_eye",
+            "child": "set_smooth_shading",
+            "relation": "CALL",
+            "line": 294,
+            "evidence": "AST call at L294"
+          },
+          {
+            "parent": "create_head",
+            "child": "set_smooth_shading",
+            "relation": "CALL",
+            "line": 266,
+            "evidence": "AST call at L266"
+          },
+          {
+            "parent": "create_limb",
+            "child": "set_smooth_shading",
+            "relation": "CALL",
+            "line": 393,
+            "evidence": "AST call at L393"
+          },
+          {
+            "parent": "create_tail",
+            "child": "set_smooth_shading",
+            "relation": "CALL",
+            "line": 474,
+            "evidence": "AST call at L474"
+          },
+          {
+            "parent": "create_torso",
+            "child": "set_smooth_shading",
+            "relation": "CALL",
+            "line": 228,
+            "evidence": "AST call at L228"
+          },
+          {
+            "parent": "module:Chameleon_seed0.py",
+            "child": "clear_scene",
+            "relation": "ENTRYPOINT",
+            "line": 13,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Chameleon_seed0.py",
+            "child": "build_chameleon",
+            "relation": "ENTRYPOINT",
+            "line": 566,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "torso"
+        ],
+        "nodes": [
+          {
+            "id": "eye_left",
+            "label": "eye_left",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L506: head -> eye_left [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_eye",
+            "runtime_variable": "eye_left",
+            "group": "Blender parts"
+          },
+          {
+            "id": "eye_right",
+            "label": "eye_right",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L513: head -> eye_right [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_eye",
+            "runtime_variable": "eye_right",
+            "group": "Blender parts"
+          },
+          {
+            "id": "head",
+            "label": "head",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L506: head -> eye_left [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L513: head -> eye_right [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L498: torso -> head [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_head",
+            "runtime_variable": "obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "limb_obj",
+            "label": "limb_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L539: torso -> limb_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_limb",
+            "runtime_variable": "limb_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "tail",
+            "label": "tail",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L519: torso -> tail [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_tail",
+            "runtime_variable": "obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "torso",
+            "label": "torso",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L498: torso -> head [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L539: torso -> limb_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L519: torso -> tail [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_torso",
+            "runtime_variable": "torso",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "head",
+            "child": "eye_left",
+            "relation": "DIRECTED_CODE",
+            "line": 506,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "head",
+            "child": "eye_right",
+            "relation": "DIRECTED_CODE",
+            "line": 513,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "torso",
+            "child": "head",
+            "relation": "DIRECTED_CODE",
+            "line": 498,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "torso",
+            "child": "limb_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 539,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "torso",
+            "child": "tail",
+            "relation": "DIRECTED_CODE",
+            "line": 519,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "torso_body"
+    ],
+    "nodes": [
+      {
+        "id": "tail",
+        "label": "tail",
+        "part_id": "tail",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          -0.5631999969482422,
+          0.36000001430511475
+        ],
+        "center": [
+          0.0,
+          -1.4074875116348267,
+          -0.05326414108276367
+        ],
+        "dimensions": [
+          0.7853299975395203,
+          1.6768920421600342,
+          1.4790525436401367
+        ],
+        "bbox_min": [
+          -0.39266499876976013,
+          -2.2459335327148438,
+          -0.792790412902832
+        ],
+        "bbox_max": [
+          0.39266499876976013,
+          -0.5690414905548096,
+          0.6862621307373047
+        ]
+      },
+      {
+        "id": "head",
+        "label": "head",
+        "part_id": "head",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          1.1482000350952148,
+          0.3800000250339508
+        ],
+        "center": [
+          2.9802322387695312e-08,
+          1.1482000946998596,
+          0.470483735203743
+        ],
+        "dimensions": [
+          0.9083054661750793,
+          1.2706366777420044,
+          1.0734733045101166
+        ],
+        "bbox_min": [
+          -0.4541527032852173,
+          0.5128817558288574,
+          -0.06625291705131531
+        ],
+        "bbox_max": [
+          0.45415276288986206,
+          1.7835184335708618,
+          1.0072203874588013
+        ]
+      },
+      {
+        "id": "torso_body",
+        "label": "torso_body",
+        "part_id": "torso_body",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.36000001430511475
+        ],
+        "center": [
+          7.450580596923828e-08,
+          -0.008443742990493774,
+          0.4268096014857292
+        ],
+        "dimensions": [
+          0.5133599936962128,
+          1.2391958832740784,
+          0.4927464872598648
+        ],
+        "bbox_min": [
+          -0.2566799223423004,
+          -0.628041684627533,
+          0.18043635785579681
+        ],
+        "bbox_max": [
+          0.25668007135391235,
+          0.6111541986465454,
+          0.6731828451156616
+        ]
+      },
+      {
+        "id": "forelimb_left",
+        "label": "forelimb_left",
+        "part_id": "forelimb_left",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.20800000429153442,
+          0.29440000653266907,
+          0.3240000009536743
+        ],
+        "center": [
+          -0.6418103203177452,
+          0.2431338131427765,
+          0.2101898491382599
+        ],
+        "dimensions": [
+          0.8449232131242752,
+          0.5883855223655701,
+          0.7149675488471985
+        ],
+        "bbox_min": [
+          -1.0642719268798828,
+          -0.051058948040008545,
+          -0.14729392528533936
+        ],
+        "bbox_max": [
+          -0.2193487137556076,
+          0.5373265743255615,
+          0.5676736235618591
+        ]
+      },
+      {
+        "id": "forelimb_right",
+        "label": "forelimb_right",
+        "part_id": "forelimb_right",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.20800000429153442,
+          0.29440000653266907,
+          0.3240000009536743
+        ],
+        "center": [
+          0.6418103203177452,
+          0.2431338131427765,
+          0.2101898491382599
+        ],
+        "dimensions": [
+          0.8449232131242752,
+          0.5883855223655701,
+          0.7149675488471985
+        ],
+        "bbox_min": [
+          0.2193487137556076,
+          -0.051058948040008545,
+          -0.14729392528533936
+        ],
+        "bbox_max": [
+          1.0642719268798828,
+          0.5373265743255615,
+          0.5676736235618591
+        ]
+      },
+      {
+        "id": "hindlimb_left",
+        "label": "hindlimb_left",
+        "part_id": "hindlimb_left",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.19760000705718994,
+          -0.29440000653266907,
+          0.3240000009536743
+        ],
+        "center": [
+          -0.6314102932810783,
+          -0.2431338131427765,
+          0.2101898491382599
+        ],
+        "dimensions": [
+          0.8449231535196304,
+          0.5883855223655701,
+          0.7149675488471985
+        ],
+        "bbox_min": [
+          -1.0538718700408936,
+          -0.5373265743255615,
+          -0.14729392528533936
+        ],
+        "bbox_max": [
+          -0.20894871652126312,
+          0.051058948040008545,
+          0.5676736235618591
+        ]
+      },
+      {
+        "id": "hindlimb_right",
+        "label": "hindlimb_right",
+        "part_id": "hindlimb_right",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.19760000705718994,
+          -0.29440000653266907,
+          0.3240000009536743
+        ],
+        "center": [
+          0.6314102932810783,
+          -0.2431338131427765,
+          0.2101898491382599
+        ],
+        "dimensions": [
+          0.8449231535196304,
+          0.5883855223655701,
+          0.7149675488471985
+        ],
+        "bbox_min": [
+          0.20894871652126312,
+          -0.5373265743255615,
+          -0.14729392528533936
+        ],
+        "bbox_max": [
+          1.0538718700408936,
+          0.051058948040008545,
+          0.5676736235618591
+        ]
+      },
+      {
+        "id": "eye_left",
+        "label": "eye_left",
+        "part_id": "eye_left",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.6460000276565552,
+          1.3431999683380127,
+          0.5450000166893005
+        ],
+        "center": [
+          -0.6587145701050758,
+          1.3431999683380127,
+          0.5450000539422035
+        ],
+        "dimensions": [
+          0.8723892420530319,
+          0.6188483238220215,
+          0.6188483685255051
+        ],
+        "bbox_min": [
+          -1.0949091911315918,
+          1.033775806427002,
+          0.235575869679451
+        ],
+        "bbox_max": [
+          -0.22251994907855988,
+          1.6526241302490234,
+          0.854424238204956
+        ]
+      },
+      {
+        "id": "eye_right",
+        "label": "eye_right",
+        "part_id": "eye_right",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.6460000276565552,
+          1.3431999683380127,
+          0.5450000166893005
+        ],
+        "center": [
+          0.6587145701050758,
+          1.3431999683380127,
+          0.5449999496340752
+        ],
+        "dimensions": [
+          0.8723892420530319,
+          0.6188483238220215,
+          0.6188483387231827
+        ],
+        "bbox_min": [
+          0.22251994907855988,
+          1.033775806427002,
+          0.23557578027248383
+        ],
+        "bbox_max": [
+          1.0949091911315918,
+          1.6526241302490234,
+          0.8544241189956665
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "torso_body",
+        "child": "hindlimb_left",
+        "relation": "DIRECTED",
+        "line": 49,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.19760000705718994,
+          -0.29440000653266907,
+          0.3240000009536743
+        ],
+        "anchor_b": [
+          -0.19760000705718994,
+          -0.29440000653266907,
+          0.3240000009536743
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.018968395313265263,
+        "parent_anchor_vertex_gap": 0.01494583739214505,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "torso_body",
+            "child": "hindlimb_left",
+            "source": "parent_assignment",
+            "line": 49
+          },
+          {
+            "parent": "torso_body",
+            "child": "hindlimb_left",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 539,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              -0.19760000705718994,
+              -0.29440000653266907,
+              -0.035999998450279236
+            ],
+            "child_anchor_world": [
+              -0.19760000705718994,
+              -0.29440000653266907,
+              0.3240000009536743
+            ],
+            "parent_anchor_world": [
+              -0.19760000705718994,
+              -0.29440000653266907,
+              0.3240000009536743
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.018968395313265263,
+            "parent_anchor_vertex_gap": 0.01494583739214505,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "torso_body",
+            "child": "hindlimb_left",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "head",
+        "child": "eye_right",
+        "relation": "DIRECTED",
+        "line": 49,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.484000027179718,
+          1.3431999683380127,
+          0.5450000166893005
+        ],
+        "anchor_b": [
+          0.48399999737739563,
+          1.3431999683380127,
+          0.5450000166893005
+        ],
+        "anchor_gap": 2.9802322387695312e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.035233497193708586,
+        "parent_anchor_vertex_gap": 0.08050398612114458,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "head",
+            "child": "eye_right",
+            "source": "parent_assignment",
+            "line": 49
+          },
+          {
+            "parent": "head",
+            "child": "eye_right",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 513,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              -0.16200000047683716
+            ],
+            "parent_anchor_local": [
+              0.48399999737739563,
+              0.19499999284744263,
+              0.16500000655651093
+            ],
+            "child_anchor_world": [
+              0.484000027179718,
+              1.3431999683380127,
+              0.5450000166893005
+            ],
+            "parent_anchor_world": [
+              0.48399999737739563,
+              1.3431999683380127,
+              0.5450000166893005
+            ],
+            "authored_anchor_gap": 2.9802322387695312e-08,
+            "child_anchor_vertex_gap": 0.035233497193708586,
+            "parent_anchor_vertex_gap": 0.08050398612114458,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "head",
+            "child": "eye_right",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "torso_body",
+        "child": "forelimb_right",
+        "relation": "DIRECTED",
+        "line": 49,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.20800000429153442,
+          0.29440000653266907,
+          0.3240000009536743
+        ],
+        "anchor_b": [
+          0.20800000429153442,
+          0.29440000653266907,
+          0.3240000009536743
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.018968393287466426,
+        "parent_anchor_vertex_gap": 0.010337699382567272,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "torso_body",
+            "child": "forelimb_right",
+            "source": "parent_assignment",
+            "line": 49
+          },
+          {
+            "parent": "torso_body",
+            "child": "forelimb_right",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 539,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.20800000429153442,
+              0.29440000653266907,
+              -0.035999998450279236
+            ],
+            "child_anchor_world": [
+              0.20800000429153442,
+              0.29440000653266907,
+              0.3240000009536743
+            ],
+            "parent_anchor_world": [
+              0.20800000429153442,
+              0.29440000653266907,
+              0.3240000009536743
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.018968393287466426,
+            "parent_anchor_vertex_gap": 0.010337699382567272,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "torso_body",
+            "child": "forelimb_right",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "torso_body",
+        "child": "forelimb_left",
+        "relation": "DIRECTED",
+        "line": 49,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.20800000429153442,
+          0.29440000653266907,
+          0.3240000009536743
+        ],
+        "anchor_b": [
+          -0.20800000429153442,
+          0.29440000653266907,
+          0.3240000009536743
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.01896840226570934,
+        "parent_anchor_vertex_gap": 0.010337673868787152,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "torso_body",
+            "child": "forelimb_left",
+            "source": "parent_assignment",
+            "line": 49
+          },
+          {
+            "parent": "torso_body",
+            "child": "forelimb_left",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 539,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              -0.20800000429153442,
+              0.29440000653266907,
+              -0.035999998450279236
+            ],
+            "child_anchor_world": [
+              -0.20800000429153442,
+              0.29440000653266907,
+              0.3240000009536743
+            ],
+            "parent_anchor_world": [
+              -0.20800000429153442,
+              0.29440000653266907,
+              0.3240000009536743
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.01896840226570934,
+            "parent_anchor_vertex_gap": 0.010337673868787152,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "torso_body",
+            "child": "forelimb_left",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "torso_body",
+        "child": "hindlimb_right",
+        "relation": "DIRECTED",
+        "line": 49,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.19760000705718994,
+          -0.29440000653266907,
+          0.3240000009536743
+        ],
+        "anchor_b": [
+          0.19760000705718994,
+          -0.29440000653266907,
+          0.3240000009536743
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.01896840009606758,
+        "parent_anchor_vertex_gap": 0.01494585593319349,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "torso_body",
+            "child": "hindlimb_right",
+            "source": "parent_assignment",
+            "line": 49
+          },
+          {
+            "parent": "torso_body",
+            "child": "hindlimb_right",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 539,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.19760000705718994,
+              -0.29440000653266907,
+              -0.035999998450279236
+            ],
+            "child_anchor_world": [
+              0.19760000705718994,
+              -0.29440000653266907,
+              0.3240000009536743
+            ],
+            "parent_anchor_world": [
+              0.19760000705718994,
+              -0.29440000653266907,
+              0.3240000009536743
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.01896840009606758,
+            "parent_anchor_vertex_gap": 0.01494585593319349,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "torso_body",
+            "child": "hindlimb_right",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "torso_body",
+        "child": "head",
+        "relation": "DIRECTED",
+        "line": 49,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.563200056552887,
+          0.3800000250339508
+        ],
+        "anchor_b": [
+          0.0,
+          0.5631999969482422,
+          0.3800000250339508
+        ],
+        "anchor_gap": 5.960464477539063e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.03988337559470655,
+        "parent_anchor_vertex_gap": 0.03528115786415773,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "torso_body",
+            "child": "head",
+            "source": "parent_assignment",
+            "line": 49
+          },
+          {
+            "parent": "torso_body",
+            "child": "head",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 498,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              -0.5849999785423279,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.0,
+              0.5631999969482422,
+              0.019999999552965164
+            ],
+            "child_anchor_world": [
+              0.0,
+              0.563200056552887,
+              0.3800000250339508
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.5631999969482422,
+              0.3800000250339508
+            ],
+            "authored_anchor_gap": 5.960464477539063e-08,
+            "child_anchor_vertex_gap": 0.03988337559470655,
+            "parent_anchor_vertex_gap": 0.03528115786415773,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "torso_body",
+            "child": "head",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "head",
+        "child": "eye_left",
+        "relation": "DIRECTED",
+        "line": 49,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.484000027179718,
+          1.3431999683380127,
+          0.5450000166893005
+        ],
+        "anchor_b": [
+          -0.48399999737739563,
+          1.3431999683380127,
+          0.5450000166893005
+        ],
+        "anchor_gap": 2.9802322387695312e-08,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.03523352693067873,
+        "parent_anchor_vertex_gap": 0.08050403818006033,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "head",
+            "child": "eye_left",
+            "source": "parent_assignment",
+            "line": 49
+          },
+          {
+            "parent": "head",
+            "child": "eye_left",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 506,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              -0.16200000047683716
+            ],
+            "parent_anchor_local": [
+              -0.48399999737739563,
+              0.19499999284744263,
+              0.16500000655651093
+            ],
+            "child_anchor_world": [
+              -0.484000027179718,
+              1.3431999683380127,
+              0.5450000166893005
+            ],
+            "parent_anchor_world": [
+              -0.48399999737739563,
+              1.3431999683380127,
+              0.5450000166893005
+            ],
+            "authored_anchor_gap": 2.9802322387695312e-08,
+            "child_anchor_vertex_gap": 0.03523352693067873,
+            "parent_anchor_vertex_gap": 0.08050403818006033,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "head",
+            "child": "eye_left",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "torso_body",
+        "child": "tail",
+        "relation": "DIRECTED",
+        "line": 49,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          -0.5631999969482422,
+          0.36000001430511475
+        ],
+        "anchor_b": [
+          0.0,
+          -0.5631999969482422,
+          0.36000001430511475
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.029078906055827334,
+        "parent_anchor_vertex_gap": 0.033849859288424454,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "torso_body",
+            "child": "tail",
+            "source": "parent_assignment",
+            "line": 49
+          },
+          {
+            "parent": "torso_body",
+            "child": "tail",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 519,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.0,
+              -0.5631999969482422,
+              0.0
+            ],
+            "child_anchor_world": [
+              0.0,
+              -0.5631999969482422,
+              0.36000001430511475
+            ],
+            "parent_anchor_world": [
+              0.0,
+              -0.5631999969482422,
+              0.36000001430511475
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.029078906055827334,
+            "parent_anchor_vertex_gap": 0.033849859288424454,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "torso_body",
+            "child": "tail",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "forelimb_right",
+        "child": "hindlimb_right",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.3347693681716919,
+          0.004199236631393433,
+          0.17550206184387207
+        ],
+        "anchor_b": [
+          0.3243693709373474,
+          -0.00419926643371582,
+          0.17550206184387207
+        ],
+        "anchor_gap": 0.01336767729297137,
+        "anchor_tolerance": 0.10073629915714265,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "forelimb_left",
+        "child": "hindlimb_left",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.5005683898925781,
+          -0.008975982666015625,
+          0.3846575915813446
+        ],
+        "anchor_b": [
+          -0.4901684522628784,
+          0.008975982666015625,
+          0.3846575915813446
+        ],
+        "anchor_gap": 0.02074684944718344,
+        "anchor_tolerance": 0.10073629915714265,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "forelimb_left",
+        "child": "head",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.36495786905288696,
+          0.5338906645774841,
+          0.35342854261398315
+        ],
+        "anchor_b": [
+          -0.2831988036632538,
+          0.6744354367256165,
+          0.42858147621154785
+        ],
+        "anchor_gap": 0.1791238152225346,
+        "anchor_tolerance": 0.10073629915714265,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "forelimb_right",
+        "child": "head",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.3431248068809509,
+          0.48917147517204285,
+          0.43142110109329224
+        ],
+        "anchor_b": [
+          0.2831988036632538,
+          0.6744354367256165,
+          0.42858147621154785
+        ],
+        "anchor_gap": 0.1947355252172558,
+        "anchor_tolerance": 0.10073629915714265,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "hindlimb_right",
+        "child": "tail",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.2731495201587677,
+          -0.5041511654853821,
+          0.263535737991333
+        ],
+        "anchor_b": [
+          0.2848021686077118,
+          -0.5975750088691711,
+          0.21527567505836487
+        ],
+        "anchor_gap": 0.10579618330907534,
+        "anchor_tolerance": 0.10073629915714265,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.03171491622924805,
+        "declared_directions": []
+      },
+      {
+        "parent": "hindlimb_left",
+        "child": "tail",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.23896627128124237,
+          -0.45537057518959045,
+          0.2608896493911743
+        ],
+        "anchor_b": [
+          -0.13643525540828705,
+          -0.5775803923606873,
+          0.22926215827465057
+        ],
+        "anchor_gap": 0.16262886220858494,
+        "anchor_tolerance": 0.10073629915714265,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.03171491622924805,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 9,
+      "edges": 14,
+      "relations": {
+        "DIRECTED": 8,
+        "UNDIRECTED_CONTACT": 6
+      },
+      "directed_edges": 8,
+      "runtime_directed_edges": 8,
+      "shared_anchor_edges": 0,
+      "estimated_anchor_edges": 6,
+      "geometric_anchor_candidates": 10,
+      "unverified_anchor_candidates": 10,
+      "misaligned_anchor_edges": 4
+    },
+    "source_bounds": {
+      "min": [
+        -1.0949091911315918,
+        -2.2459335327148438,
+        -0.792790412902832
+      ],
+      "max": [
+        1.0949091911315918,
+        1.7835184335708618,
+        1.0072203874588013
+      ]
+    },
+    "scene_extent": 4.029451966285706,
+    "contact_threshold": 0.10073629915714265,
+    "shared_anchor_tolerance": 0.10073629915714265,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "eye_left",
+        "eye_right",
+        "forelimb_left",
+        "forelimb_right",
+        "head",
+        "hindlimb_left",
+        "hindlimb_right",
+        "tail",
+        "torso_body"
+      ],
+      "scale_overrides": {
+        "torso_body": 0.4
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · Gemini 3.5 Flash",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gemini_3.5_flash/Chameleon_seed0/Chameleon_seed0.py",
+    "source_sha256": "580a1457eb7f5a3436a1ffc0a5ad3120cc61b09c814b55ca00df073a54339d59",
+    "source_size": 20225,
+    "glb_sha256": "5dd85127f036837c044ea42b20f26b1f16f158755b3262a1db25bddb151db22f",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|torso_body|scale": 0.4
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "parent-0.4",
+      "side": "parent",
+      "part_ids": [
+        "torso_body"
+      ],
+      "parameter": "scale",
+      "scale": 0.4,
+      "params": {
+        "part_param|torso_body|scale": 0.4
+      },
+      "paper_parent_ids": [
+        "torso_body"
+      ],
+      "paper_child_ids": [
+        "forelimb_left",
+        "forelimb_right",
+        "hindlimb_left",
+        "hindlimb_right"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "attachment_paths": [
+        [
+          "torso_body",
+          "forelimb_left"
+        ],
+        [
+          "torso_body",
+          "forelimb_right"
+        ],
+        [
+          "torso_body",
+          "hindlimb_left"
+        ],
+        [
+          "torso_body",
+          "hindlimb_right"
+        ]
+      ],
+      "dimensions": [
+        {
+          "id": "torso_body",
+          "part_id": "torso_body",
+          "before": [
+            1.283400058746338,
+            3.097990036010742,
+            1.231866329908371
+          ],
+          "after": [
+            0.5133599936962128,
+            1.2391958832740784,
+            0.4927464872598648
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "torso_body",
+          "child": "hindlimb_left",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "torso_body",
+          "runtime_child_part_id": "hindlimb_left"
+        },
+        {
+          "parent": "torso_body",
+          "child": "forelimb_right",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "torso_body",
+          "runtime_child_part_id": "forelimb_right"
+        },
+        {
+          "parent": "torso_body",
+          "child": "forelimb_left",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "torso_body",
+          "runtime_child_part_id": "forelimb_left"
+        },
+        {
+          "parent": "torso_body",
+          "child": "hindlimb_right",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "torso_body",
+          "runtime_child_part_id": "hindlimb_right"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      1.034801195349328e-10,
+      0.8051826855963927,
+      -0.2336240585686432
+    ],
+    "mesh_bbox_max_error_before_translation": 0.8051827301497638,
+    "mesh_bbox_max_error_after_translation": 1.0172112119288812e-07,
+    "same_execution_export": true,
+    "final_scene_adapter_sha256": "5ef143984231a0dd21797536aa9e727625b993f52c2a512f08c4f151f8730683",
+    "final_scene_adapter": {
+      "same_execution_export": true,
+      "geometry_observation": "final_evaluated_polygon_vertices",
+      "anchor_observation": "final_evaluated_surface_after_all_source_modifiers",
+      "probe_rules_and_tolerances_changed": false
+    }
+  }
+}

@@ -1,0 +1,449 @@
+{
+  "source_sha256": "e8f83ae4e0ae9b72f5428644feddf13e43a23cf4947fe4c9e8a23842d56bcac9",
+  "samples": [
+    {
+      "id": "base_stand-0.63",
+      "params": {
+        "base_stand": 0.63
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 0,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 666,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 972,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 5682,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "base_stand-1.37",
+      "params": {
+        "base_stand": 1.37
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 7056,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 7722,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 8028,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 12738,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "display_surface-0.63",
+      "params": {
+        "display_surface": 0.63
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 14112,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 14778,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 15084,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 19794,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "display_surface-1.37",
+      "params": {
+        "display_surface": 1.37
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 21168,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 21834,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 22140,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 26850,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "monitor_body_bezel-0.63",
+      "params": {
+        "monitor_body_bezel": 0.63
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 28224,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 28890,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 29196,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 33906,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "monitor_body_bezel-1.37",
+      "params": {
+        "monitor_body_bezel": 1.37
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 35280,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 35946,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 36252,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 40962,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "base_stand": 0.63,
+        "display_surface": 1.37,
+        "monitor_body_bezel": 0.63,
+        "pedestal_arm": 1.37
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 42336,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 43002,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 43308,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 48018,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "base_stand": 1.37,
+        "display_surface": 0.63,
+        "monitor_body_bezel": 1.37,
+        "pedestal_arm": 0.63
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 49392,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 50058,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 50364,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 55074,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "base_stand": 0.63,
+        "display_surface": 0.63,
+        "monitor_body_bezel": 0.63,
+        "pedestal_arm": 0.63
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 56448,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 57114,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 57420,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 62130,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "base_stand": 1.37,
+        "display_surface": 1.37,
+        "monitor_body_bezel": 1.37,
+        "pedestal_arm": 1.37
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 63504,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 64170,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 64476,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 69186,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "pedestal_arm-0.63",
+      "params": {
+        "pedestal_arm": 0.63
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 70560,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 71226,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 71532,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 76242,
+            "count": 1374
+          }
+        }
+      ]
+    },
+    {
+      "id": "pedestal_arm-1.37",
+      "params": {
+        "pedestal_arm": 1.37
+      },
+      "parts": [
+        {
+          "id": "base_stand",
+          "positions": {
+            "offset": 77616,
+            "count": 666
+          }
+        },
+        {
+          "id": "display_surface",
+          "positions": {
+            "offset": 78282,
+            "count": 306
+          }
+        },
+        {
+          "id": "monitor_body_bezel",
+          "positions": {
+            "offset": 78588,
+            "count": 4710
+          }
+        },
+        {
+          "id": "pedestal_arm",
+          "positions": {
+            "offset": 83298,
+            "count": 1374
+          }
+        }
+      ]
+    }
+  ]
+}

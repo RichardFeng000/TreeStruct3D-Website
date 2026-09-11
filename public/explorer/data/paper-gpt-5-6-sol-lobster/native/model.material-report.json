@@ -1,0 +1,87 @@
+{
+  "strategy": "cycles_emission_base_color_bake",
+  "resolution": 512,
+  "lighting_baked": false,
+  "procedural_normal_baked": false,
+  "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+  "objects": [
+    {
+      "name": "cephalothorax",
+      "mode": "baked_base_color",
+      "materials": [
+        "Warm_Reddish_Brown_Exoskeleton",
+        "Warm_Shell_Highlights",
+        "Dark_Segment_Rims"
+      ],
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "abdomen_chain",
+      "mode": "baked_base_color",
+      "materials": [
+        "Warm_Reddish_Brown_Exoskeleton",
+        "Dark_Segment_Rims",
+        "Warm_Shell_Highlights"
+      ],
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "tail_fan",
+      "mode": "baked_base_color",
+      "materials": [
+        "Dark_Segment_Rims",
+        "Warm_Reddish_Brown_Exoskeleton",
+        "Warm_Shell_Highlights"
+      ],
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "crusher_chela",
+      "mode": "baked_base_color",
+      "materials": [
+        "Warm_Reddish_Brown_Exoskeleton",
+        "Dark_Segment_Rims",
+        "Warm_Shell_Highlights",
+        "Ivory_White_Pincer_Tips"
+      ],
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "cutter_chela",
+      "mode": "baked_base_color",
+      "materials": [
+        "Warm_Reddish_Brown_Exoskeleton",
+        "Dark_Segment_Rims",
+        "Warm_Shell_Highlights"
+      ],
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "long_antenna",
+      "mode": "baked_base_color",
+      "materials": [
+        "Reddish_Antennae",
+        "Dark_Segment_Rims"
+      ],
+      "width": 256,
+      "height": 256
+    },
+    {
+      "name": "walking_leg_array",
+      "mode": "baked_base_color",
+      "materials": [
+        "Warm_Reddish_Brown_Exoskeleton",
+        "Dark_Segment_Rims",
+        "Warm_Shell_Highlights"
+      ],
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "fallbacks": []
+}

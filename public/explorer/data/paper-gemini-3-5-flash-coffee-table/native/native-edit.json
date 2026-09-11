@@ -1,0 +1,287 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "bottom_shelf",
+      "part_id": "bottom_shelf",
+      "positions": {
+        "offset": 0,
+        "count": 2043
+      }
+    },
+    {
+      "id": "pedestal_legs",
+      "part_id": "pedestal_legs",
+      "positions": {
+        "offset": 2043,
+        "count": 3651
+      }
+    },
+    {
+      "id": "table_top",
+      "part_id": "table_top",
+      "positions": {
+        "offset": 5694,
+        "count": 2043
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "bottom_shelf",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "bottom_shelf",
+              "delta": {
+                "offset": 7737,
+                "count": 2043
+              }
+            },
+            {
+              "id": "pedestal_legs",
+              "delta": {
+                "offset": 9780,
+                "count": 3651
+              }
+            },
+            {
+              "id": "table_top",
+              "delta": {
+                "offset": 13431,
+                "count": 2043
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 15474,
+            "count": 12
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "bottom_shelf",
+              "delta": {
+                "offset": 15486,
+                "count": 2043
+              }
+            },
+            {
+              "id": "pedestal_legs",
+              "delta": {
+                "offset": 17529,
+                "count": 3651
+              }
+            },
+            {
+              "id": "table_top",
+              "delta": {
+                "offset": 21180,
+                "count": 2043
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 23223,
+            "count": 12
+          }
+        }
+      ]
+    },
+    {
+      "id": "pedestal_legs",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "pedestal_legs",
+              "delta": {
+                "offset": 23235,
+                "count": 3651
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "pedestal_legs",
+              "delta": {
+                "offset": 26886,
+                "count": 3651
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "table_top",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "bottom_shelf",
+              "delta": {
+                "offset": 30537,
+                "count": 2043
+              }
+            },
+            {
+              "id": "pedestal_legs",
+              "delta": {
+                "offset": 32580,
+                "count": 3651
+              }
+            },
+            {
+              "id": "table_top",
+              "delta": {
+                "offset": 36231,
+                "count": 2043
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 38274,
+            "count": 12
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "bottom_shelf",
+              "delta": {
+                "offset": 38286,
+                "count": 2043
+              }
+            },
+            {
+              "id": "pedestal_legs",
+              "delta": {
+                "offset": 40329,
+                "count": 3651
+              }
+            },
+            {
+              "id": "table_top",
+              "delta": {
+                "offset": 43980,
+                "count": 2043
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 46023,
+            "count": 12
+          }
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "table_top",
+      "child": "bottom_shelf",
+      "parent_world": [
+        0.0,
+        0.0,
+        -0.3199999928474426
+      ],
+      "child_world": [
+        0.0,
+        0.0,
+        -0.3199999928474426
+      ]
+    },
+    {
+      "parent": "bottom_shelf",
+      "child": "pedestal_legs",
+      "parent_world": [
+        0.0,
+        0.0,
+        -0.3199999928474426
+      ],
+      "child_world": [
+        0.0,
+        0.0,
+        -0.3199999928474426
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 1.600000023841858,
+    "linear_tolerance": 1.600000023841858e-05,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "bottom_shelf": 9.103133606913616e-07,
+      "pedestal_legs": 6.705522537231445e-08,
+      "table_top": 1.0430879910927615e-06
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "bottom_shelf": 1.37,
+          "pedestal_legs": 0.63,
+          "table_top": 0.63
+        },
+        "max_position_error": 5.960464477539063e-08,
+        "relative_error": 3.7252902429507635e-08
+      },
+      {
+        "params": {
+          "bottom_shelf": 0.63,
+          "pedestal_legs": 1.37,
+          "table_top": 1.37
+        },
+        "max_position_error": 2.9802322387695312e-08,
+        "relative_error": 1.8626451214753817e-08
+      },
+      {
+        "params": {
+          "bottom_shelf": 0.63,
+          "pedestal_legs": 0.63,
+          "table_top": 0.63
+        },
+        "max_position_error": 4.470348358154297e-08,
+        "relative_error": 2.7939676822130728e-08
+      },
+      {
+        "params": {
+          "bottom_shelf": 1.37,
+          "pedestal_legs": 1.37,
+          "table_top": 1.37
+        },
+        "max_position_error": 2.9802322387695312e-08,
+        "relative_error": 1.8626451214753817e-08
+      }
+    ]
+  },
+  "binary_sha256": "8430e98d676f35398a718365cf5a565d5070b93cf3e4bc8bb970b2c46abd3473",
+  "source_sha256": "6f171efb975e13e01b2937e5fb0b403b770464f451a47168d7b404aafcb292a6"
+}

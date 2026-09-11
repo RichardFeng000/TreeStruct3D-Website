@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "arm_spine_clusters",
+      "part_id": "arm_spine_clusters",
+      "positions": {
+        "offset": 0,
+        "count": 38643
+      }
+    },
+    {
+      "id": "main_stem",
+      "part_id": "main_stem",
+      "positions": {
+        "offset": 38643,
+        "count": 8406
+      }
+    },
+    {
+      "id": "side_arm",
+      "part_id": "side_arm",
+      "positions": {
+        "offset": 47049,
+        "count": 4809
+      }
+    },
+    {
+      "id": "stem_spine_clusters",
+      "part_id": "stem_spine_clusters",
+      "positions": {
+        "offset": 51858,
+        "count": 67203
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "arm_spine_clusters",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "arm_spine_clusters",
+              "delta": {
+                "offset": 119061,
+                "count": 38643
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "arm_spine_clusters",
+              "delta": {
+                "offset": 157704,
+                "count": 38643
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "main_stem",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "arm_spine_clusters",
+              "delta": {
+                "offset": 196347,
+                "count": 38643
+              }
+            },
+            {
+              "id": "main_stem",
+              "delta": {
+                "offset": 234990,
+                "count": 8406
+              }
+            },
+            {
+              "id": "side_arm",
+              "delta": {
+                "offset": 243396,
+                "count": 4809
+              }
+            },
+            {
+              "id": "stem_spine_clusters",
+              "delta": {
+                "offset": 248205,
+                "count": 67203
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 315408,
+            "count": 18
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "arm_spine_clusters",
+              "delta": {
+                "offset": 315426,
+                "count": 38643
+              }
+            },
+            {
+              "id": "main_stem",
+              "delta": {
+                "offset": 354069,
+                "count": 8406
+              }
+            },
+            {
+              "id": "side_arm",
+              "delta": {
+                "offset": 362475,
+                "count": 4809
+              }
+            },
+            {
+              "id": "stem_spine_clusters",
+              "delta": {
+                "offset": 367284,
+                "count": 67203
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 434487,
+            "count": 18
+          }
+        }
+      ]
+    },
+    {
+      "id": "side_arm",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "arm_spine_clusters",
+              "delta": {
+                "offset": 434505,
+                "count": 38643
+              }
+            },
+            {
+              "id": "side_arm",
+              "delta": {
+                "offset": 473148,
+                "count": 4809
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 477957,
+            "count": 18
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "arm_spine_clusters",
+              "delta": {
+                "offset": 477975,
+                "count": 38643
+              }
+            },
+            {
+              "id": "side_arm",
+              "delta": {
+                "offset": 516618,
+                "count": 4809
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 521427,
+            "count": 18
+          }
+        }
+      ]
+    },
+    {
+      "id": "stem_spine_clusters",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "stem_spine_clusters",
+              "delta": {
+                "offset": 521445,
+                "count": 67203
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "stem_spine_clusters",
+              "delta": {
+                "offset": 588648,
+                "count": 67203
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "main_stem",
+      "child": "side_arm",
+      "parent_world": [
+        -0.23980000615119934,
+        2.936702932800062e-17,
+        0.6521739363670349
+      ],
+      "child_world": [
+        -0.23980000615119934,
+        2.936702932800062e-17,
+        0.6521739363670349
+      ]
+    },
+    {
+      "parent": "main_stem",
+      "child": "stem_spine_clusters",
+      "parent_world": [
+        0.23980000615119934,
+        0.0,
+        0.14492753148078918
+      ],
+      "child_world": [
+        0.23980000615119934,
+        0.0,
+        0.14492753148078918
+      ]
+    },
+    {
+      "parent": "side_arm",
+      "child": "arm_spine_clusters",
+      "parent_world": [
+        -0.19708658754825592,
+        2.936702932800062e-17,
+        0.7993848323822021
+      ],
+      "child_world": [
+        -0.19708658754825592,
+        2.936702932800062e-17,
+        0.7993848323822021
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 2.5,
+    "linear_tolerance": 2.5e-05,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "arm_spine_clusters": 1.687519528559278e-07,
+      "main_stem": 2.4575624024691933e-07,
+      "side_arm": 2.666641876203357e-07,
+      "stem_spine_clusters": 4.7706993200336e-07
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "arm_spine_clusters": 1.37,
+          "main_stem": 0.63,
+          "side_arm": 1.37,
+          "stem_spine_clusters": 0.63
+        },
+        "max_position_error": 4.777675730550706e-07,
+        "relative_error": 1.9110702922202824e-07
+      },
+      {
+        "params": {
+          "arm_spine_clusters": 0.63,
+          "main_stem": 1.37,
+          "side_arm": 0.63,
+          "stem_spine_clusters": 1.37
+        },
+        "max_position_error": 4.805480091749757e-07,
+        "relative_error": 1.9221920366999028e-07
+      },
+      {
+        "params": {
+          "arm_spine_clusters": 0.63,
+          "main_stem": 0.63,
+          "side_arm": 0.63,
+          "stem_spine_clusters": 0.63
+        },
+        "max_position_error": 4.777675730550706e-07,
+        "relative_error": 1.9110702922202824e-07
+      },
+      {
+        "params": {
+          "arm_spine_clusters": 1.37,
+          "main_stem": 1.37,
+          "side_arm": 1.37,
+          "stem_spine_clusters": 1.37
+        },
+        "max_position_error": 4.805480091749757e-07,
+        "relative_error": 1.9221920366999028e-07
+      }
+    ]
+  },
+  "binary_sha256": "5da57ab4b5e5efc1097bd518f5330bd34d36672f91e8aea27f510f830dd9a0a6",
+  "source_sha256": "54af46266070c28e9f9a5872e413cea2c2a918a684d8d3ae4e5190bc69a77666"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "paper-gpt-5-6-sol-standing-sink",
+  "title": "Standing Sink",
+  "provider": "GPT-5.6 Sol",
+  "group": "appendix-6b",
+  "label": "StandingSink_seed0",
+  "model": "StandingSink_seed0/StandingSink_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · GPT-5.6 Sol",
+  "parent": {
+    "ids": [
+      "basin_body"
+    ],
+    "label": "basin"
+  },
+  "child": {
+    "ids": [
+      "faucet_handle"
+    ],
+    "label": "faucet"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gpt-5-6-sol-standing-sink/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/default/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-standing-sink/edits/default/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/default/mesh-map.json",
+      "bytes": 946984
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-6-sol-standing-sink/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-standing-sink/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/parent-0.4/mesh-map.json",
+      "bytes": 154556
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-6-sol-standing-sink/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-standing-sink/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/parent-1.6/mesh-map.json",
+      "bytes": 154596
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-6-sol-standing-sink/edits/child-0.4/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-standing-sink/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/child-0.4/mesh-map.json",
+      "bytes": 154596
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-6-sol-standing-sink/edits/child-1.6/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-standing-sink/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/child-1.6/mesh-map.json",
+      "bytes": 154592
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gpt-5-6-sol-standing-sink/edits/default/model.glb",
+    "snapshot": "paper-gpt-5-6-sol-standing-sink/edits/default/snapshot.json",
+    "provenance": "paper-gpt-5-6-sol-standing-sink/edits/default/provenance.json",
+    "mesh_map": "paper-gpt-5-6-sol-standing-sink/edits/default/mesh-map.json",
+    "bytes": 946984,
+    "parts": 4,
+    "shared_anchors": 3
+  }
+}

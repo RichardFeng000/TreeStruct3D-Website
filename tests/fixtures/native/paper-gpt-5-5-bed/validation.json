@@ -1,0 +1,3326 @@
+{
+  "source_sha256": "29e159e1ddc8d8d4bffc4b813eeb99399f6d6696a204d827918352842f7a251d",
+  "samples": [
+    {
+      "id": "decorative_footboard-0.63",
+      "params": {
+        "decorative_footboard": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 0,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 1413,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 3510,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 5205,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 8556,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 12006,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 14562,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 15066,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "decorative_footboard-1.37",
+      "params": {
+        "decorative_footboard": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 16611,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 18024,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 20121,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 21816,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 25167,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 28617,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 31173,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 31677,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "decorative_headboard-0.63",
+      "params": {
+        "decorative_headboard": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 33222,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 34635,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 36732,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 38427,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 41778,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 45228,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 47784,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 48288,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "decorative_headboard-1.37",
+      "params": {
+        "decorative_headboard": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 49833,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 51246,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 53343,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 55038,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 58389,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 61839,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 64395,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 64899,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "folded_comforter-0.63",
+      "params": {
+        "folded_comforter": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 66444,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 67857,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 69954,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 71649,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 75000,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 78450,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 81006,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 81510,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "folded_comforter-1.37",
+      "params": {
+        "folded_comforter": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 83055,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 84468,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 86565,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 88260,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 91611,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 95061,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 97617,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 98121,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "green_mattress-0.63",
+      "params": {
+        "green_mattress": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 99666,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 101079,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 103176,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 104871,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 108222,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 111672,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 114228,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 114732,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "green_mattress-1.37",
+      "params": {
+        "green_mattress": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 116277,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 117690,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 119787,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 121482,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 124833,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 128283,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 130839,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 131343,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-blanket-0",
+      "params": {
+        "light_pink_blanket": 1.37,
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 132888,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 134301,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 136398,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 138093,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 141444,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 144894,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 147450,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 147954,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-blanket-1",
+      "params": {
+        "light_pink_blanket": 0.63,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 149499,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 150912,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 153009,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 154704,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 158055,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 161505,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 164061,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 164565,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-comforter-0",
+      "params": {
+        "folded_comforter": 1.37,
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 166110,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 167523,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 169620,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 171315,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 174666,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 178116,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 180672,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 181176,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-comforter-1",
+      "params": {
+        "folded_comforter": 0.63,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 182721,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 184134,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 186231,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 187926,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 191277,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 194727,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 197283,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 197787,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-footboard-0",
+      "params": {
+        "decorative_footboard": 1.37,
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 199332,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 200745,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 202842,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 204537,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 207888,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 211338,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 213894,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 214398,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-footboard-1",
+      "params": {
+        "decorative_footboard": 0.63,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 215943,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 217356,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 219453,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 221148,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 224499,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 227949,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 230505,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 231009,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-headboard-0",
+      "params": {
+        "decorative_headboard": 1.37,
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 232554,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 233967,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 236064,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 237759,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 241110,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 244560,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 247116,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 247620,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-headboard-1",
+      "params": {
+        "decorative_headboard": 0.63,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 249165,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 250578,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 252675,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 254370,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 257721,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 261171,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 263727,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 264231,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-mattress-0",
+      "params": {
+        "green_mattress": 1.37,
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 265776,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 267189,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 269286,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 270981,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 274332,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 277782,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 280338,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 280842,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-mattress-1",
+      "params": {
+        "green_mattress": 0.63,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 282387,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 283800,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 285897,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 287592,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 290943,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 294393,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 296949,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 297453,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-mattress-blanket-0",
+      "params": {
+        "green_mattress": 1.37,
+        "light_pink_blanket": 0.63,
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 298998,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 300411,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 302508,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 304203,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 307554,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 311004,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 313560,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 314064,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-mattress-blanket-1",
+      "params": {
+        "green_mattress": 0.63,
+        "light_pink_blanket": 1.37,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 315609,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 317022,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 319119,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 320814,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 324165,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 327615,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 330171,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 330675,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-mattress-pillow-0",
+      "params": {
+        "green_mattress": 1.37,
+        "pillow": 0.63,
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 332220,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 333633,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 335730,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 337425,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 340776,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 344226,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 346782,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 347286,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-mattress-pillow-1",
+      "params": {
+        "green_mattress": 0.63,
+        "pillow": 1.37,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 348831,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 350244,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 352341,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 354036,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 357387,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 360837,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 363393,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 363897,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-pillow-0",
+      "params": {
+        "pillow": 1.37,
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 365442,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 366855,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 368952,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 370647,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 373998,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 377448,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 380004,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 380508,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-frame-pillow-1",
+      "params": {
+        "pillow": 0.63,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 382053,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 383466,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 385563,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 387258,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 390609,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 394059,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 396615,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 397119,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-mattress-blanket-0",
+      "params": {
+        "green_mattress": 0.63,
+        "light_pink_blanket": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 398664,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 400077,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 402174,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 403869,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 407220,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 410670,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 413226,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 413730,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-mattress-blanket-1",
+      "params": {
+        "green_mattress": 1.37,
+        "light_pink_blanket": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 415275,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 416688,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 418785,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 420480,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 423831,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 427281,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 429837,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 430341,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-mattress-pillow-0",
+      "params": {
+        "green_mattress": 0.63,
+        "pillow": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 431886,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 433299,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 435396,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 437091,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 440442,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 443892,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 446448,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 446952,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-mattress-pillow-1",
+      "params": {
+        "green_mattress": 1.37,
+        "pillow": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 448497,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 449910,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 452007,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 453702,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 457053,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 460503,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 463059,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 463563,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-opposite-extremes-0",
+      "params": {
+        "decorative_footboard": 0.4,
+        "decorative_headboard": 1.6,
+        "folded_comforter": 0.4,
+        "green_mattress": 0.4,
+        "light_pink_blanket": 1.6,
+        "pillow": 1.6,
+        "tapered_leg": 1.6,
+        "wooden_bed_frame_base": 0.4
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 465108,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 466521,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 468618,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 470313,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 473664,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 477114,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 479670,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 480174,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-opposite-extremes-1",
+      "params": {
+        "decorative_footboard": 1.6,
+        "decorative_headboard": 0.4,
+        "folded_comforter": 1.6,
+        "green_mattress": 1.6,
+        "light_pink_blanket": 0.4,
+        "pillow": 0.4,
+        "tapered_leg": 0.4,
+        "wooden_bed_frame_base": 1.6
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 481719,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 483132,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 485229,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 486924,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 490275,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 493725,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 496281,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 496785,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-0",
+      "params": {
+        "decorative_footboard": 0.94,
+        "decorative_headboard": 0.83,
+        "folded_comforter": 0.89,
+        "green_mattress": 1.51,
+        "light_pink_blanket": 1.01,
+        "pillow": 0.99,
+        "tapered_leg": 0.51,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 498330,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 499743,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 501840,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 503535,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 506886,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 510336,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 512892,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 513396,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-1",
+      "params": {
+        "decorative_footboard": 1.3,
+        "decorative_headboard": 1.31,
+        "folded_comforter": 1.18,
+        "green_mattress": 0.85,
+        "light_pink_blanket": 1.11,
+        "pillow": 1.54,
+        "tapered_leg": 0.5,
+        "wooden_bed_frame_base": 0.56
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 514941,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 516354,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 518451,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 520146,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 523497,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 526947,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 529503,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 530007,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-2",
+      "params": {
+        "decorative_footboard": 1.28,
+        "decorative_headboard": 1.14,
+        "folded_comforter": 1.3,
+        "green_mattress": 0.95,
+        "light_pink_blanket": 1.56,
+        "pillow": 1.36,
+        "tapered_leg": 1.13,
+        "wooden_bed_frame_base": 0.98
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 531552,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 532965,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 535062,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 536757,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 540108,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 543558,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 546114,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 546618,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-3",
+      "params": {
+        "decorative_footboard": 0.57,
+        "decorative_headboard": 1.51,
+        "folded_comforter": 1.46,
+        "green_mattress": 0.43,
+        "light_pink_blanket": 1.2,
+        "pillow": 0.47,
+        "tapered_leg": 1.1,
+        "wooden_bed_frame_base": 0.59
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 548163,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 549576,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 551673,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 553368,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 556719,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 560169,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 562725,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 563229,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-4",
+      "params": {
+        "decorative_footboard": 0.62,
+        "decorative_headboard": 1.08,
+        "folded_comforter": 1.19,
+        "green_mattress": 0.82,
+        "light_pink_blanket": 1.07,
+        "pillow": 0.98,
+        "tapered_leg": 1.32,
+        "wooden_bed_frame_base": 0.68
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 564774,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 566187,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 568284,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 569979,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 573330,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 576780,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 579336,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 579840,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-5",
+      "params": {
+        "decorative_footboard": 1.22,
+        "decorative_headboard": 1.05,
+        "folded_comforter": 1.22,
+        "green_mattress": 0.62,
+        "light_pink_blanket": 1.31,
+        "pillow": 0.83,
+        "tapered_leg": 1.19,
+        "wooden_bed_frame_base": 1.07
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 581385,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 582798,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 584895,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 586590,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 589941,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 593391,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 595947,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 596451,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-6",
+      "params": {
+        "decorative_footboard": 0.67,
+        "decorative_headboard": 1.23,
+        "folded_comforter": 1.49,
+        "green_mattress": 1.36,
+        "light_pink_blanket": 1.23,
+        "pillow": 0.79,
+        "tapered_leg": 1.44,
+        "wooden_bed_frame_base": 1.09
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 597996,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 599409,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 601506,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 603201,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 606552,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 610002,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 612558,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 613062,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-7",
+      "params": {
+        "decorative_footboard": 1.05,
+        "folded_comforter": 0.61,
+        "green_mattress": 0.79,
+        "light_pink_blanket": 1.32,
+        "pillow": 0.43,
+        "tapered_leg": 0.9,
+        "wooden_bed_frame_base": 0.7
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 614607,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 616020,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 618117,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 619812,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 623163,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 626613,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 629169,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 629673,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "light_pink_blanket-0.63",
+      "params": {
+        "light_pink_blanket": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 631218,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 632631,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 634728,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 636423,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 639774,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 643224,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 645780,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 646284,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "light_pink_blanket-1.37",
+      "params": {
+        "light_pink_blanket": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 647829,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 649242,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 651339,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 653034,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 656385,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 659835,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 662391,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 662895,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "decorative_footboard": 0.63,
+        "decorative_headboard": 1.37,
+        "folded_comforter": 0.63,
+        "green_mattress": 0.63,
+        "light_pink_blanket": 1.37,
+        "pillow": 1.37,
+        "tapered_leg": 1.37,
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 664440,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 665853,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 667950,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 669645,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 672996,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 676446,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 679002,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 679506,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "decorative_footboard": 1.37,
+        "decorative_headboard": 0.63,
+        "folded_comforter": 1.37,
+        "green_mattress": 1.37,
+        "light_pink_blanket": 0.63,
+        "pillow": 0.63,
+        "tapered_leg": 0.63,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 681051,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 682464,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 684561,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 686256,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 689607,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 693057,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 695613,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 696117,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "decorative_footboard": 0.63,
+        "decorative_headboard": 0.63,
+        "folded_comforter": 0.63,
+        "green_mattress": 0.63,
+        "light_pink_blanket": 0.63,
+        "pillow": 0.63,
+        "tapered_leg": 0.63,
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 697662,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 699075,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 701172,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 702867,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 706218,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 709668,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 712224,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 712728,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "decorative_footboard": 1.37,
+        "decorative_headboard": 1.37,
+        "folded_comforter": 1.37,
+        "green_mattress": 1.37,
+        "light_pink_blanket": 1.37,
+        "pillow": 1.37,
+        "tapered_leg": 1.37,
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 714273,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 715686,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 717783,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 719478,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 722829,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 726279,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 728835,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 729339,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "pillow-0.63",
+      "params": {
+        "pillow": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 730884,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 732297,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 734394,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 736089,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 739440,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 742890,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 745446,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 745950,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "pillow-1.37",
+      "params": {
+        "pillow": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 747495,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 748908,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 751005,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 752700,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 756051,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 759501,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 762057,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 762561,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "tapered_leg-0.63",
+      "params": {
+        "tapered_leg": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 764106,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 765519,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 767616,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 769311,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 772662,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 776112,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 778668,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 779172,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "tapered_leg-1.37",
+      "params": {
+        "tapered_leg": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 780717,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 782130,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 784227,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 785922,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 789273,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 792723,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 795279,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 795783,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "wooden_bed_frame_base-0.63",
+      "params": {
+        "wooden_bed_frame_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 797328,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 798741,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 800838,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 802533,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 805884,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 809334,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 811890,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 812394,
+            "count": 1545
+          }
+        }
+      ]
+    },
+    {
+      "id": "wooden_bed_frame_base-1.37",
+      "params": {
+        "wooden_bed_frame_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "decorative_footboard",
+          "positions": {
+            "offset": 813939,
+            "count": 1413
+          }
+        },
+        {
+          "id": "decorative_headboard",
+          "positions": {
+            "offset": 815352,
+            "count": 2097
+          }
+        },
+        {
+          "id": "folded_comforter",
+          "positions": {
+            "offset": 817449,
+            "count": 1695
+          }
+        },
+        {
+          "id": "green_mattress",
+          "positions": {
+            "offset": 819144,
+            "count": 3351
+          }
+        },
+        {
+          "id": "light_pink_blanket",
+          "positions": {
+            "offset": 822495,
+            "count": 3450
+          }
+        },
+        {
+          "id": "pillow",
+          "positions": {
+            "offset": 825945,
+            "count": 2556
+          }
+        },
+        {
+          "id": "tapered_leg",
+          "positions": {
+            "offset": 828501,
+            "count": 504
+          }
+        },
+        {
+          "id": "wooden_bed_frame_base",
+          "positions": {
+            "offset": 829005,
+            "count": 1545
+          }
+        }
+      ]
+    }
+  ]
+}

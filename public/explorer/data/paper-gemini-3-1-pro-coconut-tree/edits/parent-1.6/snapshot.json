@@ -1,0 +1,901 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "CoconutTree_seed0/CoconutTree_seed0",
+    "label": "CoconutTree_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|trunk|scale",
+        "label": "trunk · scale",
+        "group": "Native Part Parameters · trunk",
+        "value": 1.6,
+        "node_id": "trunk",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|trunk|trunk",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|crown_base|scale",
+        "label": "crown_base · scale",
+        "group": "Native Part Parameters · crown_base",
+        "value": 1.0,
+        "node_id": "crown_base",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|crown_base|crown_base",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|fronds|scale",
+        "label": "fronds · scale",
+        "group": "Native Part Parameters · fronds",
+        "value": 1.0,
+        "node_id": "fronds",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|fronds|fronds",
+        "visibility_value": true,
+        "is_leaf": false
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gemeni_3.1_pro/CoconutTree_seed0/CoconutTree_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:CoconutTree_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:CoconutTree_seed0.py",
+            "label": "CoconutTree_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 340,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 13,
+            "end_line": 14,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 16,
+            "end_line": 27,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_materials",
+            "label": "create_materials",
+            "kind": "function",
+            "line": 29,
+            "end_line": 51,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_trunk",
+            "label": "create_trunk",
+            "kind": "function",
+            "line": 53,
+            "end_line": 128,
+            "parameters": [
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_crown_base",
+            "label": "create_crown_base",
+            "kind": "function",
+            "line": 130,
+            "end_line": 192,
+            "parameters": [
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_fronds",
+            "label": "create_fronds",
+            "kind": "function",
+            "line": 194,
+            "end_line": 310,
+            "parameters": [
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "main",
+            "label": "main",
+            "kind": "function",
+            "line": 312,
+            "end_line": 337,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:CoconutTree_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 13,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 16,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_materials",
+            "relation": "SECTION_MEMBER",
+            "line": 29,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_trunk",
+            "relation": "SECTION_MEMBER",
+            "line": 53,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_crown_base",
+            "relation": "SECTION_MEMBER",
+            "line": 130,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_fronds",
+            "relation": "SECTION_MEMBER",
+            "line": 194,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "main",
+            "relation": "SECTION_MEMBER",
+            "line": 312,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:CoconutTree_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:CoconutTree_seed0.py",
+            "label": "CoconutTree_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 340,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 16,
+            "end_line": 27,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_crown_base",
+            "label": "create_crown_base",
+            "kind": "function",
+            "line": 130,
+            "end_line": 192,
+            "parameters": [
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_fronds",
+            "label": "create_fronds",
+            "kind": "function",
+            "line": 194,
+            "end_line": 310,
+            "parameters": [
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_materials",
+            "label": "create_materials",
+            "kind": "function",
+            "line": 29,
+            "end_line": 51,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_trunk",
+            "label": "create_trunk",
+            "kind": "function",
+            "line": 53,
+            "end_line": 128,
+            "parameters": [
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 13,
+            "end_line": 14,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "main",
+            "label": "main",
+            "kind": "function",
+            "line": 312,
+            "end_line": 337,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 19,
+            "evidence": "AST call at L19"
+          },
+          {
+            "parent": "main",
+            "child": "create_materials",
+            "relation": "CALL",
+            "line": 322,
+            "evidence": "AST call at L322"
+          },
+          {
+            "parent": "main",
+            "child": "create_trunk",
+            "relation": "CALL",
+            "line": 324,
+            "evidence": "AST call at L324"
+          },
+          {
+            "parent": "main",
+            "child": "create_crown_base",
+            "relation": "CALL",
+            "line": 325,
+            "evidence": "AST call at L325"
+          },
+          {
+            "parent": "main",
+            "child": "create_fronds",
+            "relation": "CALL",
+            "line": 326,
+            "evidence": "AST call at L326"
+          },
+          {
+            "parent": "main",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "CALL",
+            "line": 331,
+            "evidence": "AST call at L331"
+          },
+          {
+            "parent": "module:CoconutTree_seed0.py",
+            "child": "main",
+            "relation": "ENTRYPOINT",
+            "line": 340,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "trunk_obj"
+        ],
+        "nodes": [
+          {
+            "id": "crown_base_obj",
+            "label": "crown_base_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L335: crown_base_obj -> fronds_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L331: trunk_obj -> crown_base_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_crown_base",
+            "runtime_variable": "crown_base_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "fronds_obj",
+            "label": "fronds_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L335: crown_base_obj -> fronds_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_fronds",
+            "runtime_variable": "fronds_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "trunk_obj",
+            "label": "trunk_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L331: trunk_obj -> crown_base_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "create_trunk",
+            "runtime_variable": "trunk_obj",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "crown_base_obj",
+            "child": "fronds_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 335,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "trunk_obj",
+            "child": "crown_base_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 331,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "trunk"
+    ],
+    "nodes": [
+      {
+        "id": "crown_base",
+        "label": "crown_base",
+        "part_id": "crown_base",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          11.519999504089355,
+          19.200000762939453
+        ],
+        "center": [
+          -0.004098296165466309,
+          12.12243127822876,
+          19.71487522125244
+        ],
+        "dimensions": [
+          1.4936883449554443,
+          1.5937070846557617,
+          1.4945392608642578
+        ],
+        "bbox_min": [
+          -0.7509424686431885,
+          11.325577735900879,
+          18.967605590820312
+        ],
+        "bbox_max": [
+          0.7427458763122559,
+          12.91928482055664,
+          20.46214485168457
+        ]
+      },
+      {
+        "id": "fronds",
+        "label": "fronds",
+        "part_id": "fronds",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          12.503323554992676,
+          20.01943588256836
+        ],
+        "center": [
+          0.4302198886871338,
+          12.461469650268555,
+          21.478833198547363
+        ],
+        "dimensions": [
+          14.824655055999756,
+          15.202140808105469,
+          2.980031967163086
+        ],
+        "bbox_min": [
+          -6.982107639312744,
+          4.86039924621582,
+          19.98881721496582
+        ],
+        "bbox_max": [
+          7.842547416687012,
+          20.06254005432129,
+          22.968849182128906
+        ]
+      },
+      {
+        "id": "trunk",
+        "label": "trunk",
+        "part_id": "trunk",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.00463336706161499,
+          5.4248718321323395,
+          9.794572830200195
+        ],
+        "dimensions": [
+          1.9642211198806763,
+          12.82992285490036,
+          19.58914566040039
+        ],
+        "bbox_min": [
+          -0.9774771928787231,
+          -0.9900895953178406,
+          0.0
+        ],
+        "bbox_max": [
+          0.9867439270019531,
+          11.83983325958252,
+          19.58914566040039
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "trunk",
+        "child": "crown_base",
+        "relation": "DIRECTED",
+        "line": 24,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          11.519999504089355,
+          19.200000762939453
+        ],
+        "anchor_b": [
+          0.0,
+          11.519999504089355,
+          19.200000762939453
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "trunk",
+            "child": "crown_base",
+            "source": "parent_assignment",
+            "line": 24
+          },
+          {
+            "parent": "trunk",
+            "child": "crown_base",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 331,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              11.519999504089355,
+              19.200000762939453
+            ],
+            "parent_anchor_world": [
+              0.0,
+              11.519999504089355,
+              19.200000762939453
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "trunk",
+            "child": "crown_base",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "crown_base",
+        "child": "fronds",
+        "relation": "DIRECTED",
+        "line": 24,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          12.50332260131836,
+          20.01943588256836
+        ],
+        "anchor_b": [
+          0.0,
+          12.503323554992676,
+          20.01943588256836
+        ],
+        "anchor_gap": 9.5367431640625e-07,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.15059448295558073,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "crown_base",
+            "child": "fronds",
+            "source": "parent_assignment",
+            "line": 24
+          },
+          {
+            "parent": "crown_base",
+            "child": "fronds",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 335,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              12.503323554992676,
+              20.01943588256836
+            ],
+            "parent_anchor_world": [
+              0.0,
+              12.50332260131836,
+              20.01943588256836
+            ],
+            "authored_anchor_gap": 9.5367431640625e-07,
+            "child_anchor_vertex_gap": 0.15059448295558073,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "crown_base",
+            "child": "fronds",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "fronds",
+        "child": "trunk",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.08588230609893799,
+          11.146827697753906,
+          20.723255157470703
+        ],
+        "anchor_b": [
+          -9.305230658061356e-17,
+          11.195712089538574,
+          19.58914566040039
+        ],
+        "anchor_gap": 1.1384066960476409,
+        "anchor_tolerance": 0.5742212295532226,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.3996715545654297,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 3,
+      "edges": 3,
+      "relations": {
+        "DIRECTED": 2,
+        "UNDIRECTED_CONTACT": 1
+      },
+      "directed_edges": 2,
+      "runtime_directed_edges": 2,
+      "shared_anchor_edges": 1,
+      "estimated_anchor_edges": 1,
+      "geometric_anchor_candidates": 2,
+      "unverified_anchor_candidates": 1,
+      "misaligned_anchor_edges": 1
+    },
+    "source_bounds": {
+      "min": [
+        -6.982107639312744,
+        -0.9900895953178406,
+        0.0
+      ],
+      "max": [
+        7.842547416687012,
+        20.06254005432129,
+        22.968849182128906
+      ]
+    },
+    "scene_extent": 22.968849182128906,
+    "contact_threshold": 0.5742212295532226,
+    "shared_anchor_tolerance": 0.5742212295532226,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "crown_base",
+        "fronds",
+        "trunk"
+      ],
+      "scale_overrides": {
+        "trunk": 1.6
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · Gemini 3.1 Pro",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gemeni_3.1_pro/CoconutTree_seed0/CoconutTree_seed0.py",
+    "source_sha256": "f8dd22386a62bc6ffbf1b2d98ada97d2443218317b2d07e407279a2113254349",
+    "source_size": 11490,
+    "glb_sha256": "60cdf2b72687f9868deae9f45822f8ef3c5b0833cd8e5ccc1db1c4e35ec77658",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|trunk|scale": 1.6
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "parent-1.6",
+      "side": "parent",
+      "part_ids": [
+        "trunk"
+      ],
+      "parameter": "scale",
+      "scale": 1.6,
+      "params": {
+        "part_param|trunk|scale": 1.6
+      },
+      "paper_parent_ids": [
+        "trunk"
+      ],
+      "paper_child_ids": [
+        "crown_base"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "dimensions": [
+        {
+          "id": "trunk",
+          "part_id": "trunk",
+          "before": [
+            1.2276381850242615,
+            8.018701672554016,
+            12.243215560913086
+          ],
+          "after": [
+            1.9642211198806763,
+            12.82992285490036,
+            19.58914566040039
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "trunk",
+          "child": "crown_base",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": true,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": true,
+          "runtime_parent_part_id": "trunk",
+          "runtime_child_part_id": "crown_base"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      -0.4302198886871338,
+      6.071069572991898e-09,
+      9.536225337895592
+    ],
+    "mesh_bbox_max_error_before_translation": 9.536227037567237,
+    "mesh_bbox_max_error_after_translation": 1.699671644317391e-06
+  }
+}

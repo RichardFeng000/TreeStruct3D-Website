@@ -1,0 +1,1430 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "ColumnarCactus_seed0/ColumnarCactus_seed0",
+    "label": "ColumnarCactus_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|main_stem|scale",
+        "label": "main_stem · scale",
+        "group": "Native Part Parameters · main_stem",
+        "value": 1.0,
+        "node_id": "main_stem",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|main_stem|main_stem",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|main_stem|height",
+        "label": "main_stem · height",
+        "group": "Native Part Parameters · main_stem",
+        "value": 2.5,
+        "node_id": "main_stem",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -1.25,
+        "max": 6.25,
+        "step": 0.025
+      },
+      {
+        "id": "part_param|main_stem|radius",
+        "label": "main_stem · radius",
+        "group": "Native Part Parameters · main_stem",
+        "value": 0.22,
+        "node_id": "main_stem",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.11000000000000001,
+        "max": 0.55,
+        "step": 0.0022
+      },
+      {
+        "id": "part_param|main_stem|ribs",
+        "label": "main_stem · ribs",
+        "group": "Native Part Parameters · main_stem",
+        "value": 10,
+        "node_id": "main_stem",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 20.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|side_arm|scale",
+        "label": "side_arm · scale",
+        "group": "Native Part Parameters · side_arm",
+        "value": 1.0,
+        "node_id": "side_arm",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|side_arm|side_arm",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|side_arm|radius",
+        "label": "side_arm · radius",
+        "group": "Native Part Parameters · side_arm",
+        "value": 0.14,
+        "node_id": "side_arm",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.07,
+        "max": 0.35000000000000003,
+        "step": 0.0014000000000000002
+      },
+      {
+        "id": "part_param|side_arm|ribs",
+        "label": "side_arm · ribs",
+        "group": "Native Part Parameters · side_arm",
+        "value": 8,
+        "node_id": "side_arm",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 16.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|stem_spine_clusters|scale",
+        "label": "stem_spine_clusters · scale",
+        "group": "Native Part Parameters · stem_spine_clusters",
+        "value": 1.0,
+        "node_id": "stem_spine_clusters",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|stem_spine_clusters|stem_spine_clusters",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|stem_spine_clusters|spine_length",
+        "label": "stem_spine_clusters · spine_length",
+        "group": "Native Part Parameters · stem_spine_clusters",
+        "value": 0.07,
+        "node_id": "stem_spine_clusters",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.035,
+        "max": 0.17500000000000002,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|arm_spine_clusters|scale",
+        "label": "arm_spine_clusters · scale",
+        "group": "Native Part Parameters · arm_spine_clusters",
+        "value": 1.0,
+        "node_id": "arm_spine_clusters",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|arm_spine_clusters|arm_spine_clusters",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|arm_spine_clusters|spine_length",
+        "label": "arm_spine_clusters · spine_length",
+        "group": "Native Part Parameters · arm_spine_clusters",
+        "value": 0.05,
+        "node_id": "arm_spine_clusters",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.05,
+        "max": 0.15000000000000002,
+        "step": 0.001
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gemini_3.5_flash/ColumnarCactus_seed0/ColumnarCactus_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:ColumnarCactus_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:ColumnarCactus_seed0.py",
+            "label": "ColumnarCactus_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 408,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 18,
+            "end_line": 23,
+            "parameters": [],
+            "docstring": "Clear all mesh objects, cameras, and lights from the scene.",
+            "group": "Module setup"
+          },
+          {
+            "id": "create_materials",
+            "label": "create_materials",
+            "kind": "function",
+            "line": 25,
+            "end_line": 43,
+            "parameters": [],
+            "docstring": "Create green and white materials using simple Principled BSDF nodes.",
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 45,
+            "end_line": 46,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 48,
+            "end_line": 59,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_main_stem",
+            "label": "build_main_stem",
+            "kind": "function",
+            "line": 61,
+            "end_line": 147,
+            "parameters": [
+              "scale",
+              "height",
+              "radius",
+              "ribs_count"
+            ],
+            "docstring": "Generate the vertical ribbed cylindrical main stem with a dome top.",
+            "group": "Module setup"
+          },
+          {
+            "id": "get_arm_path",
+            "label": "get_arm_path",
+            "kind": "function",
+            "line": 149,
+            "end_line": 162,
+            "parameters": [
+              "t",
+              "scale"
+            ],
+            "docstring": "Calculates path coordinate and tangent for a classic saguaro curved branch.",
+            "group": "Module setup"
+          },
+          {
+            "id": "build_side_arm",
+            "label": "build_side_arm",
+            "kind": "function",
+            "line": 164,
+            "end_line": 259,
+            "parameters": [
+              "scale",
+              "radius",
+              "ribs_count"
+            ],
+            "docstring": "Generate the curved side arm with a vertical straight end and dome top.",
+            "group": "Module setup"
+          },
+          {
+            "id": "add_spine_cone",
+            "label": "add_spine_cone",
+            "kind": "function",
+            "line": 261,
+            "end_line": 279,
+            "parameters": [
+              "bm",
+              "pos",
+              "direction",
+              "length",
+              "radius"
+            ],
+            "docstring": "Procedurally construct a thin 4-sided pyramid representing a single needle spine.",
+            "group": "Module setup"
+          },
+          {
+            "id": "build_spine_clusters_object",
+            "label": "build_spine_clusters_object",
+            "kind": "function",
+            "line": 281,
+            "end_line": 337,
+            "parameters": [
+              "part_id",
+              "spine_locations",
+              "scale",
+              "spine_length",
+              "anchor_local"
+            ],
+            "docstring": "Create a unified dense spine mesh with multiple radial layers for a fuzzy look.",
+            "group": "Module setup"
+          },
+          {
+            "id": "main",
+            "label": "main",
+            "kind": "function",
+            "line": 339,
+            "end_line": 405,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:ColumnarCactus_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "clear_scene",
+            "relation": "SECTION_MEMBER",
+            "line": 18,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_materials",
+            "relation": "SECTION_MEMBER",
+            "line": 25,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 45,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 48,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_main_stem",
+            "relation": "SECTION_MEMBER",
+            "line": 61,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "get_arm_path",
+            "relation": "SECTION_MEMBER",
+            "line": 149,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_side_arm",
+            "relation": "SECTION_MEMBER",
+            "line": 164,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_spine_cone",
+            "relation": "SECTION_MEMBER",
+            "line": 261,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_spine_clusters_object",
+            "relation": "SECTION_MEMBER",
+            "line": 281,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "main",
+            "relation": "SECTION_MEMBER",
+            "line": 339,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:ColumnarCactus_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:ColumnarCactus_seed0.py",
+            "label": "ColumnarCactus_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 408,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "add_spine_cone",
+            "label": "add_spine_cone",
+            "kind": "function",
+            "line": 261,
+            "end_line": 279,
+            "parameters": [
+              "bm",
+              "pos",
+              "direction",
+              "length",
+              "radius"
+            ],
+            "docstring": "Procedurally construct a thin 4-sided pyramid representing a single needle spine.",
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 48,
+            "end_line": 59,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_main_stem",
+            "label": "build_main_stem",
+            "kind": "function",
+            "line": 61,
+            "end_line": 147,
+            "parameters": [
+              "scale",
+              "height",
+              "radius",
+              "ribs_count"
+            ],
+            "docstring": "Generate the vertical ribbed cylindrical main stem with a dome top.",
+            "group": "Module setup"
+          },
+          {
+            "id": "build_side_arm",
+            "label": "build_side_arm",
+            "kind": "function",
+            "line": 164,
+            "end_line": 259,
+            "parameters": [
+              "scale",
+              "radius",
+              "ribs_count"
+            ],
+            "docstring": "Generate the curved side arm with a vertical straight end and dome top.",
+            "group": "Module setup"
+          },
+          {
+            "id": "build_spine_clusters_object",
+            "label": "build_spine_clusters_object",
+            "kind": "function",
+            "line": 281,
+            "end_line": 337,
+            "parameters": [
+              "part_id",
+              "spine_locations",
+              "scale",
+              "spine_length",
+              "anchor_local"
+            ],
+            "docstring": "Create a unified dense spine mesh with multiple radial layers for a fuzzy look.",
+            "group": "Module setup"
+          },
+          {
+            "id": "clear_scene",
+            "label": "clear_scene",
+            "kind": "function",
+            "line": 18,
+            "end_line": 23,
+            "parameters": [],
+            "docstring": "Clear all mesh objects, cameras, and lights from the scene.",
+            "group": "Module setup"
+          },
+          {
+            "id": "create_materials",
+            "label": "create_materials",
+            "kind": "function",
+            "line": 25,
+            "end_line": 43,
+            "parameters": [],
+            "docstring": "Create green and white materials using simple Principled BSDF nodes.",
+            "group": "Module setup"
+          },
+          {
+            "id": "get_arm_path",
+            "label": "get_arm_path",
+            "kind": "function",
+            "line": 149,
+            "end_line": 162,
+            "parameters": [
+              "t",
+              "scale"
+            ],
+            "docstring": "Calculates path coordinate and tangent for a classic saguaro curved branch.",
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 45,
+            "end_line": 46,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "main",
+            "label": "main",
+            "kind": "function",
+            "line": 339,
+            "end_line": 405,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 51,
+            "evidence": "AST call at L51"
+          },
+          {
+            "parent": "build_side_arm",
+            "child": "get_arm_path",
+            "relation": "CALL",
+            "line": 180,
+            "evidence": "AST call at L180"
+          },
+          {
+            "parent": "build_spine_clusters_object",
+            "child": "add_spine_cone",
+            "relation": "CALL",
+            "line": 309,
+            "evidence": "AST call at L309"
+          },
+          {
+            "parent": "main",
+            "child": "clear_scene",
+            "relation": "CALL",
+            "line": 340,
+            "evidence": "AST call at L340"
+          },
+          {
+            "parent": "main",
+            "child": "create_materials",
+            "relation": "CALL",
+            "line": 342,
+            "evidence": "AST call at L342"
+          },
+          {
+            "parent": "main",
+            "child": "build_main_stem",
+            "relation": "CALL",
+            "line": 347,
+            "evidence": "AST call at L347"
+          },
+          {
+            "parent": "main",
+            "child": "build_side_arm",
+            "relation": "CALL",
+            "line": 355,
+            "evidence": "AST call at L355"
+          },
+          {
+            "parent": "main",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "CALL",
+            "line": 365,
+            "evidence": "AST call at L365"
+          },
+          {
+            "parent": "main",
+            "child": "build_spine_clusters_object",
+            "relation": "CALL",
+            "line": 376,
+            "evidence": "AST call at L376"
+          },
+          {
+            "parent": "module:ColumnarCactus_seed0.py",
+            "child": "main",
+            "relation": "ENTRYPOINT",
+            "line": 408,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "arm_spines_anchor_local",
+          "stem_obj",
+          "stem_spines_anchor_local"
+        ],
+        "nodes": [
+          {
+            "id": "arm_obj",
+            "label": "arm_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L401: arm_obj -> arm_spines_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L365: stem_obj -> arm_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_side_arm",
+            "runtime_variable": "arm_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "arm_spine_clusters",
+            "label": "arm_spine_clusters",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L393: arm_spines_anchor_local -> arm_spine_clusters [ATTACHMENT_CALL] build_spine_clusters_object call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          },
+          {
+            "id": "arm_spines_anchor_local",
+            "label": "arm_spines_anchor_local",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L393: arm_spines_anchor_local -> arm_spine_clusters [ATTACHMENT_CALL] build_spine_clusters_object call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          },
+          {
+            "id": "arm_spines_obj",
+            "label": "arm_spines_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L401: arm_obj -> arm_spines_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_spine_clusters_object",
+            "runtime_variable": "arm_spines_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "stem_obj",
+            "label": "stem_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L365: stem_obj -> arm_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L384: stem_obj -> stem_spines_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_main_stem",
+            "runtime_variable": "stem_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "stem_spine_clusters",
+            "label": "stem_spine_clusters",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L376: stem_spines_anchor_local -> stem_spine_clusters [ATTACHMENT_CALL] build_spine_clusters_object call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          },
+          {
+            "id": "stem_spines_anchor_local",
+            "label": "stem_spines_anchor_local",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L376: stem_spines_anchor_local -> stem_spine_clusters [ATTACHMENT_CALL] build_spine_clusters_object call"
+            ],
+            "creator_function": null,
+            "runtime_variable": null,
+            "group": "Blender parts"
+          },
+          {
+            "id": "stem_spines_obj",
+            "label": "stem_spines_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L384: stem_obj -> stem_spines_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_spine_clusters_object",
+            "runtime_variable": "stem_spines_obj",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "arm_obj",
+            "child": "arm_spines_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 401,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "arm_spines_anchor_local",
+            "child": "arm_spine_clusters",
+            "relation": "ATTACHMENT_CALL",
+            "line": 393,
+            "evidence": "build_spine_clusters_object call"
+          },
+          {
+            "parent": "stem_obj",
+            "child": "arm_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 365,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "stem_obj",
+            "child": "stem_spines_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 384,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "stem_spines_anchor_local",
+            "child": "stem_spine_clusters",
+            "relation": "ATTACHMENT_CALL",
+            "line": 376,
+            "evidence": "build_spine_clusters_object call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "main_stem"
+    ],
+    "nodes": [
+      {
+        "id": "stem_spine_clusters",
+        "label": "stem_spine_clusters",
+        "part_id": "stem_spine_clusters",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          -4.3645501136779785e-05,
+          -5.294382572174072e-05,
+          1.2685667052865028
+        ],
+        "dimensions": [
+          0.6163265407085419,
+          0.5869748890399933,
+          2.3246863335371017
+        ],
+        "bbox_min": [
+          -0.3082069158554077,
+          -0.2935403883457184,
+          0.10622353851795197
+        ],
+        "bbox_max": [
+          0.30811962485313416,
+          0.2934345006942749,
+          2.4309098720550537
+        ]
+      },
+      {
+        "id": "main_stem",
+        "label": "main_stem",
+        "part_id": "main_stem",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          1.25
+        ],
+        "dimensions": [
+          0.4796000123023987,
+          0.45612671971321106,
+          2.5
+        ],
+        "bbox_min": [
+          -0.23980000615119934,
+          -0.22806335985660553,
+          0.0
+        ],
+        "bbox_max": [
+          0.23980000615119934,
+          0.22806335985660553,
+          2.5
+        ]
+      },
+      {
+        "id": "arm_spine_clusters",
+        "label": "arm_spine_clusters",
+        "part_id": "arm_spine_clusters",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.16079357266426086,
+          2.936702932800062e-17,
+          0.6438699960708618
+        ],
+        "center": [
+          -0.45434001088142395,
+          7.297098636627197e-05,
+          1.0444843024015427
+        ],
+        "dimensions": [
+          0.5727271437644958,
+          0.39996692538261414,
+          1.1807400286197662
+        ],
+        "bbox_min": [
+          -0.7407035827636719,
+          -0.1999104917049408,
+          0.45411428809165955
+        ],
+        "bbox_max": [
+          -0.16797643899917603,
+          0.20005643367767334,
+          1.6348543167114258
+        ]
+      },
+      {
+        "id": "side_arm",
+        "label": "side_arm",
+        "part_id": "side_arm",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.16079357266426086,
+          2.936702932800062e-17,
+          0.6438699960708618
+        ],
+        "center": [
+          -0.42709358036518097,
+          0.0,
+          1.0825699865818024
+        ],
+        "dimensions": [
+          0.5326000154018402,
+          0.3052000105381012,
+          1.18259996175766
+        ],
+        "bbox_min": [
+          -0.6933935880661011,
+          -0.1526000052690506,
+          0.4912700057029724
+        ],
+        "bbox_max": [
+          -0.16079357266426086,
+          0.1526000052690506,
+          1.6738699674606323
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "side_arm",
+        "child": "arm_spine_clusters",
+        "relation": "DIRECTED",
+        "line": 56,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.19708658754825592,
+          2.936702932800062e-17,
+          0.7993848323822021
+        ],
+        "anchor_b": [
+          -0.19708658754825592,
+          2.936702932800062e-17,
+          0.7993848323822021
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.003421584755194611,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "side_arm",
+            "child": "arm_spine_clusters",
+            "source": "parent_assignment",
+            "line": 56
+          },
+          {
+            "parent": "side_arm",
+            "child": "arm_spine_clusters",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 401,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.19708658754825592,
+              2.936702932800062e-17,
+              0.7993848323822021
+            ],
+            "parent_anchor_world": [
+              -0.19708658754825592,
+              2.936702932800062e-17,
+              0.7993848323822021
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.003421584755194611,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "side_arm",
+            "child": "arm_spine_clusters",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "main_stem",
+        "child": "side_arm",
+        "relation": "DIRECTED",
+        "line": 56,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.23980000615119934,
+          2.936702932800062e-17,
+          0.6521739363670349
+        ],
+        "anchor_b": [
+          -0.23980000615119934,
+          2.936702932800062e-17,
+          0.6521739363670349
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.07944162480778046,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "main_stem",
+            "child": "side_arm",
+            "source": "parent_assignment",
+            "line": 56
+          },
+          {
+            "parent": "main_stem",
+            "child": "side_arm",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 365,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.23980000615119934,
+              2.936702932800062e-17,
+              0.6521739363670349
+            ],
+            "parent_anchor_world": [
+              -0.23980000615119934,
+              2.936702932800062e-17,
+              0.6521739363670349
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.07944162480778046,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "main_stem",
+            "child": "side_arm",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "main_stem",
+        "child": "stem_spine_clusters",
+        "relation": "DIRECTED",
+        "line": 56,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.23980000615119934,
+          0.0,
+          0.14492753148078918
+        ],
+        "anchor_b": [
+          0.23980000615119934,
+          0.0,
+          0.14492753148078918
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.003318614848759881,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "main_stem",
+            "child": "stem_spine_clusters",
+            "source": "parent_assignment",
+            "line": 56
+          },
+          {
+            "parent": "main_stem",
+            "child": "stem_spine_clusters",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 384,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.23980000615119934,
+              0.0,
+              0.14492753148078918
+            ],
+            "parent_anchor_world": [
+              0.23980000615119934,
+              0.0,
+              0.14492753148078918
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.003318614848759881,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "main_stem",
+            "child": "stem_spine_clusters",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "arm_spine_clusters",
+        "child": "stem_spine_clusters",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.2237076759338379,
+          -0.14104607701301575,
+          0.7934309840202332
+        ],
+        "anchor_b": [
+          -0.24863392114639282,
+          -0.14407190680503845,
+          0.7959292531013489
+        ],
+        "anchor_gap": 0.02523320619200756,
+        "anchor_tolerance": 0.0625,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "main_stem",
+        "child": "arm_spine_clusters",
+        "relation": "DIRECTED",
+        "line": 0,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.20081710815429688,
+          0.15462420880794525,
+          0.6361764073371887
+        ],
+        "anchor_b": [
+          -0.15556348860263824,
+          0.15556348860263824,
+          0.6159420013427734
+        ],
+        "anchor_gap": 0.04958027344625893,
+        "anchor_tolerance": 0.0625,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "side_arm",
+        "child": "stem_spine_clusters",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.286648154258728,
+          -0.10790449380874634,
+          0.7826303243637085
+        ],
+        "anchor_b": [
+          -0.24863392114639282,
+          -0.14407190680503845,
+          0.7959292531013489
+        ],
+        "anchor_gap": 0.054129707070444774,
+        "anchor_tolerance": 0.0625,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 4,
+      "edges": 6,
+      "relations": {
+        "DIRECTED": 4,
+        "UNDIRECTED_CONTACT": 2
+      },
+      "directed_edges": 4,
+      "runtime_directed_edges": 4,
+      "shared_anchor_edges": 0,
+      "estimated_anchor_edges": 3,
+      "geometric_anchor_candidates": 6,
+      "unverified_anchor_candidates": 6,
+      "misaligned_anchor_edges": 0
+    },
+    "source_bounds": {
+      "min": [
+        -0.7407035827636719,
+        -0.2935403883457184,
+        0.0
+      ],
+      "max": [
+        0.30811962485313416,
+        0.2934345006942749,
+        2.5
+      ]
+    },
+    "scene_extent": 2.5,
+    "contact_threshold": 0.0625,
+    "shared_anchor_tolerance": 0.0625,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "arm_spine_clusters",
+        "main_stem",
+        "side_arm",
+        "stem_spine_clusters"
+      ],
+      "scale_overrides": {}
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · Gemini 3.5 Flash",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gemini_3.5_flash/ColumnarCactus_seed0/ColumnarCactus_seed0.py",
+    "source_sha256": "54af46266070c28e9f9a5872e413cea2c2a918a684d8d3ae4e5190bc69a77666",
+    "source_size": 15149,
+    "glb_sha256": "ed58acd46cf7f0228e90055410aeac73f86842ca80b185935e764c5ef799067b",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {},
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "default",
+      "side": "default",
+      "part_ids": [],
+      "parameter": "scale",
+      "scale": 1.0,
+      "params": {},
+      "paper_parent_ids": [
+        "main_stem"
+      ],
+      "paper_child_ids": [
+        "side_arm"
+      ],
+      "geometry_changed": false,
+      "attachment_observed": true,
+      "dimensions": [],
+      "selected_attachment_checks": [
+        {
+          "parent": "main_stem",
+          "child": "side_arm",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "main_stem",
+          "runtime_child_part_id": "side_arm"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.2162919871043414,
+      -9.313225746154785e-09,
+      -5.294382572174072e-05
+    ],
+    "mesh_bbox_max_error_before_translation": 0.21629200875759125,
+    "mesh_bbox_max_error_after_translation": 5.029141902923584e-08,
+    "material_export": {
+      "strategy": "cycles_emission_base_color_bake",
+      "resolution": 512,
+      "lighting_baked": false,
+      "procedural_normal_baked": false,
+      "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+      "objects": [
+        {
+          "name": "main_stem",
+          "mode": "native_gltf_material"
+        },
+        {
+          "name": "side_arm",
+          "mode": "native_gltf_material"
+        },
+        {
+          "name": "stem_spine_clusters",
+          "mode": "native_gltf_material"
+        },
+        {
+          "name": "arm_spine_clusters",
+          "mode": "native_gltf_material"
+        }
+      ],
+      "fallbacks": [],
+      "preserved_geometry_objects": [],
+      "source_sha256": "54af46266070c28e9f9a5872e413cea2c2a918a684d8d3ae4e5190bc69a77666",
+      "helper_sha256": "b877cf74388900d9c1ea8cb83f84010a4bc520057da01e6021aee226094f0cee",
+      "blender_version": "5.0.0",
+      "material_count": 2,
+      "image_count": 0,
+      "geometry_unchanged": true,
+      "geometry_comparison_tolerance": 4.9999999999999996e-06,
+      "original_glb_sha256": "ed58acd46cf7f0228e90055410aeac73f86842ca80b185935e764c5ef799067b"
+    }
+  }
+}

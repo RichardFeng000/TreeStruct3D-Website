@@ -1,0 +1,1161 @@
+{
+  "source_sha256": "54f6d11f624fd0a6d3b5e12f0d0fbe4408e7d1e0d0b595dd11420cfa88a6ea50",
+  "samples": [
+    {
+      "id": "abdomen-0.63",
+      "params": {
+        "abdomen": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 0,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 6918,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 7548,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 8178,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 13056,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 17934,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 22413,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 27291,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 32169,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "abdomen-1.37",
+      "params": {
+        "abdomen": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 38259,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 45177,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 45807,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 46437,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 51315,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 56193,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 60672,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 65550,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 70428,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "compound_eye-0.63",
+      "params": {
+        "compound_eye": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 76518,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 83436,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 84066,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 84696,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 89574,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 94452,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 98931,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 103809,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 108687,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "compound_eye-1.37",
+      "params": {
+        "compound_eye": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 114777,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 121695,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 122325,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 122955,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 127833,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 132711,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 137190,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 142068,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 146946,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "forewing-0.63",
+      "params": {
+        "forewing": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 153036,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 159954,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 160584,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 161214,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 166092,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 170970,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 175449,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 180327,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 185205,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "forewing-1.37",
+      "params": {
+        "forewing": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 191295,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 198213,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 198843,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 199473,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 204351,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 209229,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 213708,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 218586,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 223464,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "head-0.63",
+      "params": {
+        "head": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 229554,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 236472,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 237102,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 237732,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 242610,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 247488,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 251967,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 256845,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 261723,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "head-1.37",
+      "params": {
+        "head": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 267813,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 274731,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 275361,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 275991,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 280869,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 285747,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 290226,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 295104,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 299982,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "hindwing-0.63",
+      "params": {
+        "hindwing": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 306072,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 312990,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 313620,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 314250,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 319128,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 324006,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 328485,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 333363,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 338241,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "hindwing-1.37",
+      "params": {
+        "hindwing": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 344331,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 351249,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 351879,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 352509,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 357387,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 362265,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 366744,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 371622,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 376500,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "abdomen": 1.37,
+        "compound_eye": 1.37,
+        "forewing": 0.63,
+        "head": 0.63,
+        "hindwing": 1.37,
+        "thorax": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 382590,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 389508,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 390138,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 390768,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 395646,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 400524,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 405003,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 409881,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 414759,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "abdomen": 0.63,
+        "compound_eye": 0.63,
+        "forewing": 1.37,
+        "head": 1.37,
+        "hindwing": 0.63,
+        "thorax": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 420849,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 427767,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 428397,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 429027,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 433905,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 438783,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 443262,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 448140,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 453018,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "abdomen": 0.63,
+        "compound_eye": 0.63,
+        "forewing": 0.63,
+        "head": 0.63,
+        "hindwing": 0.63,
+        "thorax": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 459108,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 466026,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 466656,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 467286,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 472164,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 477042,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 481521,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 486399,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 491277,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "abdomen": 1.37,
+        "compound_eye": 1.37,
+        "forewing": 1.37,
+        "head": 1.37,
+        "hindwing": 1.37,
+        "thorax": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 497367,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 504285,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 504915,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 505545,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 510423,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 515301,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 519780,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 524658,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 529536,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "thorax-0.63",
+      "params": {
+        "thorax": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 535626,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 542544,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 543174,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 543804,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 548682,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 553560,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 558039,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 562917,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 567795,
+            "count": 6090
+          }
+        }
+      ]
+    },
+    {
+      "id": "thorax-1.37",
+      "params": {
+        "thorax": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen",
+          "positions": {
+            "offset": 573885,
+            "count": 6918
+          }
+        },
+        {
+          "id": "compound_eye",
+          "positions": {
+            "offset": 580803,
+            "count": 630
+          }
+        },
+        {
+          "id": "compound_eye.001",
+          "positions": {
+            "offset": 581433,
+            "count": 630
+          }
+        },
+        {
+          "id": "forewing",
+          "positions": {
+            "offset": 582063,
+            "count": 4878
+          }
+        },
+        {
+          "id": "forewing.001",
+          "positions": {
+            "offset": 586941,
+            "count": 4878
+          }
+        },
+        {
+          "id": "head",
+          "positions": {
+            "offset": 591819,
+            "count": 4479
+          }
+        },
+        {
+          "id": "hindwing",
+          "positions": {
+            "offset": 596298,
+            "count": 4878
+          }
+        },
+        {
+          "id": "hindwing.001",
+          "positions": {
+            "offset": 601176,
+            "count": 4878
+          }
+        },
+        {
+          "id": "thorax",
+          "positions": {
+            "offset": 606054,
+            "count": 6090
+          }
+        }
+      ]
+    }
+  ]
+}

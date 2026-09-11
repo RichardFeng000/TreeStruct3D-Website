@@ -1,0 +1,1061 @@
+{
+  "source_sha256": "b3acc968e12930ceec8c9c7949758a683e0145a4d91d06810e25705afc3f950b",
+  "replay_adapter": {
+    "stable_primitives": false,
+    "canonical_meshes": [],
+    "stable_nearest": true,
+    "nearest_tie_tolerance": "max(1e-12, minimum_squared_distance * 1e-5); lowest original vertex index"
+  },
+  "samples": [
+    {
+      "id": "abdomen_chain-0.63",
+      "params": {
+        "abdomen_chain": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 0,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 15582,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 22872,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 30762,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 38184,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 40656,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 45912,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "abdomen_chain-1.37",
+      "params": {
+        "abdomen_chain": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 58536,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 74118,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 81408,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 89298,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 96720,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 99192,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 104448,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "cephalothorax-0.63",
+      "params": {
+        "cephalothorax": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 117072,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 132654,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 139944,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 147834,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 155256,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 157728,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 162984,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "cephalothorax-1.37",
+      "params": {
+        "cephalothorax": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 175608,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 191190,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 198480,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 206370,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 213792,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 216264,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 221520,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "crusher_chela-0.63",
+      "params": {
+        "crusher_chela": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 234144,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 249726,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 257016,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 264906,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 272328,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 274800,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 280056,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "crusher_chela-1.37",
+      "params": {
+        "crusher_chela": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 292680,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 308262,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 315552,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 323442,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 330864,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 333336,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 338592,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "cutter_chela-0.63",
+      "params": {
+        "cutter_chela": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 351216,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 366798,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 374088,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 381978,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 389400,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 391872,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 397128,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "cutter_chela-1.37",
+      "params": {
+        "cutter_chela": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 409752,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 425334,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 432624,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 440514,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 447936,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 450408,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 455664,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "long_antenna-0.63",
+      "params": {
+        "long_antenna": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 468288,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 483870,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 491160,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 499050,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 506472,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 508944,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 514200,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "long_antenna-1.37",
+      "params": {
+        "long_antenna": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 526824,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 542406,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 549696,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 557586,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 565008,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 567480,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 572736,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "abdomen_chain": 1.37,
+        "cephalothorax": 0.63,
+        "crusher_chela": 1.37,
+        "cutter_chela": 0.63,
+        "long_antenna": 1.37,
+        "tail_fan": 0.63,
+        "walking_leg_array": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 585360,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 600942,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 608232,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 616122,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 623544,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 626016,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 631272,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "abdomen_chain": 0.63,
+        "cephalothorax": 1.37,
+        "crusher_chela": 0.63,
+        "cutter_chela": 1.37,
+        "long_antenna": 0.63,
+        "tail_fan": 1.37,
+        "walking_leg_array": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 643896,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 659478,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 666768,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 674658,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 682080,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 684552,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 689808,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "abdomen_chain": 0.63,
+        "cephalothorax": 0.63,
+        "crusher_chela": 0.63,
+        "cutter_chela": 0.63,
+        "long_antenna": 0.63,
+        "tail_fan": 0.63,
+        "walking_leg_array": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 702432,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 718014,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 725304,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 733194,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 740616,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 743088,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 748344,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "abdomen_chain": 1.37,
+        "cephalothorax": 1.37,
+        "crusher_chela": 1.37,
+        "cutter_chela": 1.37,
+        "long_antenna": 1.37,
+        "tail_fan": 1.37,
+        "walking_leg_array": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 760968,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 776550,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 783840,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 791730,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 799152,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 801624,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 806880,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "tail_fan-0.63",
+      "params": {
+        "tail_fan": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 819504,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 835086,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 842376,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 850266,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 857688,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 860160,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 865416,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "tail_fan-1.37",
+      "params": {
+        "tail_fan": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 878040,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 893622,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 900912,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 908802,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 916224,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 918696,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 923952,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "walking_leg_array-0.63",
+      "params": {
+        "walking_leg_array": 0.63
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 936576,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 952158,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 959448,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 967338,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 974760,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 977232,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 982488,
+            "count": 12624
+          }
+        }
+      ]
+    },
+    {
+      "id": "walking_leg_array-1.37",
+      "params": {
+        "walking_leg_array": 1.37
+      },
+      "parts": [
+        {
+          "id": "abdomen_chain",
+          "positions": {
+            "offset": 995112,
+            "count": 15582
+          }
+        },
+        {
+          "id": "cephalothorax",
+          "positions": {
+            "offset": 1010694,
+            "count": 7290
+          }
+        },
+        {
+          "id": "crusher_chela",
+          "positions": {
+            "offset": 1017984,
+            "count": 7890
+          }
+        },
+        {
+          "id": "cutter_chela",
+          "positions": {
+            "offset": 1025874,
+            "count": 7422
+          }
+        },
+        {
+          "id": "long_antenna",
+          "positions": {
+            "offset": 1033296,
+            "count": 2472
+          }
+        },
+        {
+          "id": "tail_fan",
+          "positions": {
+            "offset": 1035768,
+            "count": 5256
+          }
+        },
+        {
+          "id": "walking_leg_array",
+          "positions": {
+            "offset": 1041024,
+            "count": 12624
+          }
+        }
+      ]
+    }
+  ]
+}

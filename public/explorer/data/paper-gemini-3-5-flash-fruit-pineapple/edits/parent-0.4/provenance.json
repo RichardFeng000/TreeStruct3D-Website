@@ -1,0 +1,843 @@
+{
+  "method": "TreeStruct3D · Gemini 3.5 Flash",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemini_3.5_flash/FruitPineapple_seed0/FruitPineapple_seed0.py",
+  "source_sha256": "a10388812756d491243be9c139226ee9119b7d81989a159dded47978977c86ff",
+  "source_size": 14429,
+  "glb_sha256": "a07da67118a6e228e090fd987cb5aafd7cea35ef48ce18519b5f227d0d1a6dd1",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|fruit_body|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-0.4",
+    "side": "parent",
+    "part_ids": [
+      "fruit_body"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|fruit_body|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "fruit_body"
+    ],
+    "paper_child_ids": [
+      "crown_leaf"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "attachment_paths": [
+      [
+        "fruit_body",
+        "crown_leaf"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.001"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.002"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.003"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.004"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.005"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.006"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.007"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.008"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.009"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.010"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.011"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.012"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.013"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.014"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.015"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.016"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.017"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.018"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.019"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.020"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.021"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.022"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.023"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.024"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.025"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.026"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.027"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.028"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.029"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.030"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.031"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.032"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.033"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.034"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.035"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.036"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.037"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.038"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.039"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.040"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.041"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.042"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.043"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.044"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.045"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.046"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.047"
+      ]
+    ],
+    "dimensions": [
+      {
+        "id": "fruit_body",
+        "part_id": "fruit_body",
+        "before": [
+          1.999529242515564,
+          1.999529242515564,
+          2.200000047683716
+        ],
+        "after": [
+          0.7998116612434387,
+          0.7998116612434387,
+          0.8799999952316284
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.001",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.002",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.004",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.005",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.015",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.006",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.013",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.011",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.007",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.010",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.008",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.009",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.012",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.014",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.023",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.019",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.024",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.016",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.018",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.020",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.017",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.028",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.026",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.003",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.022",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.021",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.029",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.025",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.027",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.031",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.040",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.044",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.035",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.047",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.041",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.033",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.036",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.039",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.038",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.037",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.032",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.042",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.034",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.030",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.045",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.043",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.046",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0015675458655221655,
+    0.04781950221168927,
+    0.07463515381968652
+  ],
+  "mesh_bbox_max_error_before_translation": 0.07463544079718798,
+  "mesh_bbox_max_error_after_translation": 4.097112937331577e-07,
+  "same_execution_export": true,
+  "final_scene_adapter_sha256": "5ef143984231a0dd21797536aa9e727625b993f52c2a512f08c4f151f8730683",
+  "final_scene_adapter": {
+    "same_execution_export": true,
+    "geometry_observation": "final_evaluated_polygon_vertices",
+    "anchor_observation": "final_evaluated_surface_after_all_source_modifiers",
+    "probe_rules_and_tolerances_changed": false
+  }
+}

@@ -74,9 +74,9 @@ body {
   --ring: #1a73e8;
   --radius: .5rem;
 }
-html, body { margin: 0; min-width: 320px; height: 100%; overflow: hidden; }
-.explorer-shell { height: 100dvh; background: #f8f9fa; }
-.explorer-frame { display: block; width: 100%; height: 100%; border: 0; }
+html, body { margin: 0; min-width: 320px; min-height: 100%; }
+html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+body { background: #ffffff; }
 ::selection { background: #d2e3fc; color: #174ea6; }
 
 @layer base {

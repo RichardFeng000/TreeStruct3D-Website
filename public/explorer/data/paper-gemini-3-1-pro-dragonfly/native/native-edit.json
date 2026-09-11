@@ -1,0 +1,679 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "abdomen",
+      "part_id": "abdomen",
+      "positions": {
+        "offset": 0,
+        "count": 6918
+      }
+    },
+    {
+      "id": "compound_eye",
+      "part_id": "compound_eye",
+      "positions": {
+        "offset": 6918,
+        "count": 630
+      }
+    },
+    {
+      "id": "compound_eye.001",
+      "part_id": "compound_eye",
+      "positions": {
+        "offset": 7548,
+        "count": 630
+      }
+    },
+    {
+      "id": "forewing",
+      "part_id": "forewing",
+      "positions": {
+        "offset": 8178,
+        "count": 4878
+      }
+    },
+    {
+      "id": "forewing.001",
+      "part_id": "forewing",
+      "positions": {
+        "offset": 13056,
+        "count": 4878
+      }
+    },
+    {
+      "id": "head",
+      "part_id": "head",
+      "positions": {
+        "offset": 17934,
+        "count": 4479
+      }
+    },
+    {
+      "id": "hindwing",
+      "part_id": "hindwing",
+      "positions": {
+        "offset": 22413,
+        "count": 4878
+      }
+    },
+    {
+      "id": "hindwing.001",
+      "part_id": "hindwing",
+      "positions": {
+        "offset": 27291,
+        "count": 4878
+      }
+    },
+    {
+      "id": "thorax",
+      "part_id": "thorax",
+      "positions": {
+        "offset": 32169,
+        "count": 6090
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "abdomen",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "abdomen",
+              "delta": {
+                "offset": 38259,
+                "count": 6918
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "abdomen",
+              "delta": {
+                "offset": 45177,
+                "count": 6918
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compound_eye",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "compound_eye",
+              "delta": {
+                "offset": 52095,
+                "count": 630
+              }
+            },
+            {
+              "id": "compound_eye.001",
+              "delta": {
+                "offset": 52725,
+                "count": 630
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "compound_eye",
+              "delta": {
+                "offset": 53355,
+                "count": 630
+              }
+            },
+            {
+              "id": "compound_eye.001",
+              "delta": {
+                "offset": 53985,
+                "count": 630
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forewing",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "forewing",
+              "delta": {
+                "offset": 54615,
+                "count": 4878
+              }
+            },
+            {
+              "id": "forewing.001",
+              "delta": {
+                "offset": 59493,
+                "count": 4878
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "forewing",
+              "delta": {
+                "offset": 64371,
+                "count": 4878
+              }
+            },
+            {
+              "id": "forewing.001",
+              "delta": {
+                "offset": 69249,
+                "count": 4878
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "head",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "compound_eye",
+              "delta": {
+                "offset": 74127,
+                "count": 630
+              }
+            },
+            {
+              "id": "compound_eye.001",
+              "delta": {
+                "offset": 74757,
+                "count": 630
+              }
+            },
+            {
+              "id": "head",
+              "delta": {
+                "offset": 75387,
+                "count": 4479
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 79866,
+            "count": 48
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "compound_eye",
+              "delta": {
+                "offset": 79914,
+                "count": 630
+              }
+            },
+            {
+              "id": "compound_eye.001",
+              "delta": {
+                "offset": 80544,
+                "count": 630
+              }
+            },
+            {
+              "id": "head",
+              "delta": {
+                "offset": 81174,
+                "count": 4479
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 85653,
+            "count": 48
+          }
+        }
+      ]
+    },
+    {
+      "id": "hindwing",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "hindwing",
+              "delta": {
+                "offset": 85701,
+                "count": 4878
+              }
+            },
+            {
+              "id": "hindwing.001",
+              "delta": {
+                "offset": 90579,
+                "count": 4878
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "hindwing",
+              "delta": {
+                "offset": 95457,
+                "count": 4878
+              }
+            },
+            {
+              "id": "hindwing.001",
+              "delta": {
+                "offset": 100335,
+                "count": 4878
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thorax",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "abdomen",
+              "delta": {
+                "offset": 105213,
+                "count": 6918
+              }
+            },
+            {
+              "id": "compound_eye",
+              "delta": {
+                "offset": 112131,
+                "count": 630
+              }
+            },
+            {
+              "id": "compound_eye.001",
+              "delta": {
+                "offset": 112761,
+                "count": 630
+              }
+            },
+            {
+              "id": "forewing",
+              "delta": {
+                "offset": 113391,
+                "count": 4878
+              }
+            },
+            {
+              "id": "forewing.001",
+              "delta": {
+                "offset": 118269,
+                "count": 4878
+              }
+            },
+            {
+              "id": "head",
+              "delta": {
+                "offset": 123147,
+                "count": 4479
+              }
+            },
+            {
+              "id": "hindwing",
+              "delta": {
+                "offset": 127626,
+                "count": 4878
+              }
+            },
+            {
+              "id": "hindwing.001",
+              "delta": {
+                "offset": 132504,
+                "count": 4878
+              }
+            },
+            {
+              "id": "thorax",
+              "delta": {
+                "offset": 137382,
+                "count": 6090
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 143472,
+            "count": 48
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "abdomen",
+              "delta": {
+                "offset": 143520,
+                "count": 6918
+              }
+            },
+            {
+              "id": "compound_eye",
+              "delta": {
+                "offset": 150438,
+                "count": 630
+              }
+            },
+            {
+              "id": "compound_eye.001",
+              "delta": {
+                "offset": 151068,
+                "count": 630
+              }
+            },
+            {
+              "id": "forewing",
+              "delta": {
+                "offset": 151698,
+                "count": 4878
+              }
+            },
+            {
+              "id": "forewing.001",
+              "delta": {
+                "offset": 156576,
+                "count": 4878
+              }
+            },
+            {
+              "id": "head",
+              "delta": {
+                "offset": 161454,
+                "count": 4479
+              }
+            },
+            {
+              "id": "hindwing",
+              "delta": {
+                "offset": 165933,
+                "count": 4878
+              }
+            },
+            {
+              "id": "hindwing.001",
+              "delta": {
+                "offset": 170811,
+                "count": 4878
+              }
+            },
+            {
+              "id": "thorax",
+              "delta": {
+                "offset": 175689,
+                "count": 6090
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 181779,
+            "count": 48
+          }
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "thorax",
+      "child": "abdomen",
+      "parent_world": [
+        0.0,
+        -1.0800000429153442,
+        0.0
+      ],
+      "child_world": [
+        0.0,
+        -1.0800000429153442,
+        0.0
+      ]
+    },
+    {
+      "parent": "thorax",
+      "child": "head",
+      "parent_world": [
+        0.0,
+        1.0800000429153442,
+        0.0
+      ],
+      "child_world": [
+        0.0,
+        1.0800000429153442,
+        0.0
+      ]
+    },
+    {
+      "parent": "head",
+      "child": "compound_eye",
+      "parent_world": [
+        0.4399999976158142,
+        1.3600000143051147,
+        0.11999999731779099
+      ],
+      "child_world": [
+        0.4399999976158142,
+        1.3600000143051147,
+        0.11999999731779099
+      ]
+    },
+    {
+      "parent": "head",
+      "child": "compound_eye.001",
+      "parent_world": [
+        -0.4399999976158142,
+        1.3600000143051147,
+        0.11999999731779099
+      ],
+      "child_world": [
+        -0.4399999976158142,
+        1.3600000143051147,
+        0.11999999731779099
+      ]
+    },
+    {
+      "parent": "thorax",
+      "child": "forewing",
+      "parent_world": [
+        0.36000001430511475,
+        0.36000001430511475,
+        0.34200000762939453
+      ],
+      "child_world": [
+        0.36000001430511475,
+        0.36000001430511475,
+        0.34200000762939453
+      ]
+    },
+    {
+      "parent": "thorax",
+      "child": "forewing.001",
+      "parent_world": [
+        -0.36000001430511475,
+        0.36000001430511475,
+        0.34200000762939453
+      ],
+      "child_world": [
+        -0.36000001430511475,
+        0.36000001430511475,
+        0.34200000762939453
+      ]
+    },
+    {
+      "parent": "thorax",
+      "child": "hindwing",
+      "parent_world": [
+        0.30000001192092896,
+        -0.23999999463558197,
+        0.2849999964237213
+      ],
+      "child_world": [
+        0.30000001192092896,
+        -0.23999999463558197,
+        0.2849999964237213
+      ]
+    },
+    {
+      "parent": "thorax",
+      "child": "hindwing.001",
+      "parent_world": [
+        -0.30000001192092896,
+        -0.23999999463558197,
+        0.2849999964237213
+      ],
+      "child_world": [
+        -0.30000001192092896,
+        -0.23999999463558197,
+        0.2849999964237213
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 10.236871719360352,
+    "linear_tolerance": 0.00010236871719360353,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "abdomen": 5.722047262679553e-06,
+      "compound_eye": 3.5762786865234375e-07,
+      "forewing": 1.455134793104662e-06,
+      "head": 5.066398216513335e-07,
+      "hindwing": 1.451467937840789e-06,
+      "thorax": 4.951133405484143e-07
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "abdomen": 1.37,
+          "compound_eye": 1.37,
+          "forewing": 0.63,
+          "head": 0.63,
+          "hindwing": 1.37,
+          "thorax": 0.63
+        },
+        "max_position_error": 5.057621821307283e-07,
+        "relative_error": 4.940593142084726e-08
+      },
+      {
+        "params": {
+          "abdomen": 0.63,
+          "compound_eye": 0.63,
+          "forewing": 1.37,
+          "head": 1.37,
+          "hindwing": 0.63,
+          "thorax": 1.37
+        },
+        "max_position_error": 5.462855929083633e-07,
+        "relative_error": 5.336450508363876e-08
+      },
+      {
+        "params": {
+          "abdomen": 0.63,
+          "compound_eye": 0.63,
+          "forewing": 0.63,
+          "head": 0.63,
+          "hindwing": 0.63,
+          "thorax": 0.63
+        },
+        "max_position_error": 5.057621821307283e-07,
+        "relative_error": 4.940593142084726e-08
+      },
+      {
+        "params": {
+          "abdomen": 1.37,
+          "compound_eye": 1.37,
+          "forewing": 1.37,
+          "head": 1.37,
+          "hindwing": 1.37,
+          "thorax": 1.37
+        },
+        "max_position_error": 9.5367431640625e-07,
+        "relative_error": 9.316071770271632e-08
+      }
+    ]
+  },
+  "binary_sha256": "75cea3cf921a279e9165abdae9c0bcb4a350cd241def1a7266723ed4ca96bfa7",
+  "baseline": {
+    "glb": "model.glb",
+    "snapshot": "snapshot.json",
+    "mesh_map": "mesh-map.json",
+    "provenance": "provenance.json"
+  },
+  "source_sha256": "54f6d11f624fd0a6d3b5e12f0d0fbe4408e7d1e0d0b595dd11420cfa88a6ea50",
+  "replay_adapter": {
+    "stable_primitives": true,
+    "canonical_meshes": [
+      "thorax",
+      "head",
+      "compound_eye",
+      "compound_eye.001"
+    ],
+    "stable_nearest": false,
+    "nearest_tie_tolerance": null
+  }
+}

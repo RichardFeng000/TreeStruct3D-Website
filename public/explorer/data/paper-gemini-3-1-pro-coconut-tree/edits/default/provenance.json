@@ -1,0 +1,90 @@
+{
+  "method": "TreeStruct3D · Gemini 3.1 Pro",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemeni_3.1_pro/CoconutTree_seed0/CoconutTree_seed0.py",
+  "source_sha256": "f8dd22386a62bc6ffbf1b2d98ada97d2443218317b2d07e407279a2113254349",
+  "source_size": 11490,
+  "glb_sha256": "4b4beb7955b7caa64bb1fd7b874c6c81365caf2e35b8da76bffe78e3824a9ebd",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {},
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "default",
+    "side": "default",
+    "part_ids": [],
+    "parameter": "scale",
+    "scale": 1.0,
+    "params": {},
+    "paper_parent_ids": [
+      "trunk"
+    ],
+    "paper_child_ids": [
+      "crown_base"
+    ],
+    "geometry_changed": false,
+    "attachment_observed": true,
+    "dimensions": [],
+    "selected_attachment_checks": [
+      {
+        "parent": "trunk",
+        "child": "crown_base",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "trunk",
+        "runtime_child_part_id": "crown_base"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    -0.4302198886871338,
+    -1.5918854649280925e-07,
+    7.561865483462491
+  ],
+  "mesh_bbox_max_error_before_translation": 7.561866321600359,
+  "mesh_bbox_max_error_after_translation": 3.109531616196648e-06,
+  "material_export": {
+    "strategy": "cycles_emission_base_color_bake",
+    "resolution": 512,
+    "lighting_baked": false,
+    "procedural_normal_baked": false,
+    "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+    "objects": [
+      {
+        "name": "trunk",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "crown_base",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "fronds",
+        "mode": "native_gltf_material"
+      }
+    ],
+    "fallbacks": [],
+    "preserved_geometry_objects": [
+      "crown_base",
+      "fronds",
+      "trunk"
+    ],
+    "source_sha256": "f8dd22386a62bc6ffbf1b2d98ada97d2443218317b2d07e407279a2113254349",
+    "helper_sha256": "a40d5f0f21485ec0c8727a0e749f5d5daeda99e05300804d1970132094e69707",
+    "blender_version": "5.0.0",
+    "material_count": 3,
+    "image_count": 0,
+    "geometry_unchanged": true,
+    "original_glb_sha256": "0b1de4f6518f0947de9bd52a621fd7a260d13592c322508b01b7e7c1cc287c33"
+  }
+}

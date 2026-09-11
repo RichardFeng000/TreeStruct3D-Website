@@ -1,0 +1,92 @@
+{
+  "id": "paper-gemini-3-1-pro-pillar",
+  "title": "Pillar",
+  "provider": "Gemini 3.1 Pro",
+  "group": "appendix-6c",
+  "label": "Pillar_seed0",
+  "model": "Pillar_seed0/Pillar_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · Gemini 3.1 Pro",
+  "parent": {
+    "ids": [
+      "shaft"
+    ],
+    "label": "shaft"
+  },
+  "child": {
+    "ids": [
+      "capital"
+    ],
+    "label": "capital"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gemini-3-1-pro-pillar/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-pillar/edits/default/snapshot.json",
+      "provenance": "paper-gemini-3-1-pro-pillar/edits/default/provenance.json",
+      "mesh_map": "paper-gemini-3-1-pro-pillar/edits/default/mesh-map.json",
+      "bytes": 261116
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gemini-3-1-pro-pillar/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-pillar/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gemini-3-1-pro-pillar/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gemini-3-1-pro-pillar/edits/parent-0.4/mesh-map.json",
+      "bytes": 26524
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gemini-3-1-pro-pillar/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-pillar/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gemini-3-1-pro-pillar/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gemini-3-1-pro-pillar/edits/parent-1.6/mesh-map.json",
+      "bytes": 26516
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gemini-3-1-pro-pillar/edits/child-0.4/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-pillar/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gemini-3-1-pro-pillar/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gemini-3-1-pro-pillar/edits/child-0.4/mesh-map.json",
+      "bytes": 26572
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gemini-3-1-pro-pillar/edits/child-1.6/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-pillar/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gemini-3-1-pro-pillar/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gemini-3-1-pro-pillar/edits/child-1.6/mesh-map.json",
+      "bytes": 26564
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gemini-3-1-pro-pillar/edits/default/model.glb",
+    "snapshot": "paper-gemini-3-1-pro-pillar/edits/default/snapshot.json",
+    "provenance": "paper-gemini-3-1-pro-pillar/edits/default/provenance.json",
+    "mesh_map": "paper-gemini-3-1-pro-pillar/edits/default/mesh-map.json",
+    "bytes": 261116,
+    "parts": 3,
+    "shared_anchors": 1
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "source_sha256": "373dc95c0438c8ba538bb71f1ef7a8d7075521d5b1b123d5b62dbeece20c13d4",
+  "samples": [
+    {
+      "id": "flat_handle_core-0.63",
+      "params": {
+        "flat_handle_core": 0.63
+      },
+      "parts": [
+        {
+          "id": "flat_handle_core",
+          "positions": {
+            "offset": 0,
+            "count": 1686
+          }
+        },
+        {
+          "id": "pan_body",
+          "positions": {
+            "offset": 1686,
+            "count": 6534
+          }
+        },
+        {
+          "id": "wooden_grip_section",
+          "positions": {
+            "offset": 8220,
+            "count": 3870
+          }
+        }
+      ]
+    },
+    {
+      "id": "flat_handle_core-1.37",
+      "params": {
+        "flat_handle_core": 1.37
+      },
+      "parts": [
+        {
+          "id": "flat_handle_core",
+          "positions": {
+            "offset": 12090,
+            "count": 1686
+          }
+        },
+        {
+          "id": "pan_body",
+          "positions": {
+            "offset": 13776,
+            "count": 6534
+          }
+        },
+        {
+          "id": "wooden_grip_section",
+          "positions": {
+            "offset": 20310,
+            "count": 3870
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "flat_handle_core": 1.37,
+        "pan_body": 0.63,
+        "wooden_grip_section": 0.63
+      },
+      "parts": [
+        {
+          "id": "flat_handle_core",
+          "positions": {
+            "offset": 24180,
+            "count": 1686
+          }
+        },
+        {
+          "id": "pan_body",
+          "positions": {
+            "offset": 25866,
+            "count": 6534
+          }
+        },
+        {
+          "id": "wooden_grip_section",
+          "positions": {
+            "offset": 32400,
+            "count": 3870
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "flat_handle_core": 0.63,
+        "pan_body": 1.37,
+        "wooden_grip_section": 1.37
+      },
+      "parts": [
+        {
+          "id": "flat_handle_core",
+          "positions": {
+            "offset": 36270,
+            "count": 1686
+          }
+        },
+        {
+          "id": "pan_body",
+          "positions": {
+            "offset": 37956,
+            "count": 6534
+          }
+        },
+        {
+          "id": "wooden_grip_section",
+          "positions": {
+            "offset": 44490,
+            "count": 3870
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "flat_handle_core": 0.63,
+        "pan_body": 0.63,
+        "wooden_grip_section": 0.63
+      },
+      "parts": [
+        {
+          "id": "flat_handle_core",
+          "positions": {
+            "offset": 48360,
+            "count": 1686
+          }
+        },
+        {
+          "id": "pan_body",
+          "positions": {
+            "offset": 50046,
+            "count": 6534
+          }
+        },
+        {
+          "id": "wooden_grip_section",
+          "positions": {
+            "offset": 56580,
+            "count": 3870
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "flat_handle_core": 1.37,
+        "pan_body": 1.37,
+        "wooden_grip_section": 1.37
+      },
+      "parts": [
+        {
+          "id": "flat_handle_core",
+          "positions": {
+            "offset": 60450,
+            "count": 1686
+          }
+        },
+        {
+          "id": "pan_body",
+          "positions": {
+            "offset": 62136,
+            "count": 6534
+          }
+        },
+        {
+          "id": "wooden_grip_section",
+          "positions": {
+            "offset": 68670,
+            "count": 3870
+          }
+        }
+      ]
+    },
+    {
+      "id": "ratio-0.63",
+      "params": {
+        "pan_body": 0.63
+      },
+      "parts": [
+        {
+          "id": "flat_handle_core",
+          "positions": {
+            "offset": 72540,
+            "count": 1686
+          }
+        },
+        {
+          "id": "pan_body",
+          "positions": {
+            "offset": 74226,
+            "count": 6534
+          }
+        },
+        {
+          "id": "wooden_grip_section",
+          "positions": {
+            "offset": 80760,
+            "count": 3870
+          }
+        }
+      ]
+    },
+    {
+      "id": "ratio-1.37",
+      "params": {
+        "pan_body": 1.37
+      },
+      "parts": [
+        {
+          "id": "flat_handle_core",
+          "positions": {
+            "offset": 84630,
+            "count": 1686
+          }
+        },
+        {
+          "id": "pan_body",
+          "positions": {
+            "offset": 86316,
+            "count": 6534
+          }
+        },
+        {
+          "id": "wooden_grip_section",
+          "positions": {
+            "offset": 92850,
+            "count": 3870
+          }
+        }
+      ]
+    },
+    {
+      "id": "wooden_grip_section-0.63",
+      "params": {
+        "wooden_grip_section": 0.63
+      },
+      "parts": [
+        {
+          "id": "flat_handle_core",
+          "positions": {
+            "offset": 96720,
+            "count": 1686
+          }
+        },
+        {
+          "id": "pan_body",
+          "positions": {
+            "offset": 98406,
+            "count": 6534
+          }
+        },
+        {
+          "id": "wooden_grip_section",
+          "positions": {
+            "offset": 104940,
+            "count": 3870
+          }
+        }
+      ]
+    },
+    {
+      "id": "wooden_grip_section-1.37",
+      "params": {
+        "wooden_grip_section": 1.37
+      },
+      "parts": [
+        {
+          "id": "flat_handle_core",
+          "positions": {
+            "offset": 108810,
+            "count": 1686
+          }
+        },
+        {
+          "id": "pan_body",
+          "positions": {
+            "offset": 110496,
+            "count": 6534
+          }
+        },
+        {
+          "id": "wooden_grip_section",
+          "positions": {
+            "offset": 117030,
+            "count": 3870
+          }
+        }
+      ]
+    }
+  ]
+}

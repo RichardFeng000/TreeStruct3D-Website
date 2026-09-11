@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · Gemini 3.1 Pro",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemeni_3.1_pro/BedFrame_seed0/BedFrame_seed0.py",
+  "source_sha256": "1f4148bb79d6d553780b33cea0c6fc6f67daefa6346bc88b554f30806086420b",
+  "source_size": 9811,
+  "glb_sha256": "a67f4b3380978c0c2d81066acecc7775ca88c82b3fad240b18af7a468a831deb",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|headboard|scale": 1.6
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "child-1.6",
+    "side": "child",
+    "part_ids": [
+      "headboard"
+    ],
+    "parameter": "scale",
+    "scale": 1.6,
+    "params": {
+      "part_param|headboard|scale": 1.6
+    },
+    "paper_parent_ids": [
+      "bed_frame_base"
+    ],
+    "paper_child_ids": [
+      "headboard"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "headboard",
+        "part_id": "headboard",
+        "before": [
+          1.6399999856948853,
+          0.10000002384185791,
+          1.2499999403953552
+        ],
+        "after": [
+          1.6639999151229858,
+          0.15999996662139893,
+          1.9999999403953552
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "bed_frame_base",
+        "child": "headboard",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "bed_frame_base",
+        "runtime_child_part_id": "headboard"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    -2.306132089524042e-09,
+    -0.01599997148982116
+  ],
+  "mesh_bbox_max_error_before_translation": 0.016000010073184967,
+  "mesh_bbox_max_error_after_translation": 6.191077686491467e-08
+}

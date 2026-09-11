@@ -1,0 +1,4363 @@
+{
+  "source_sha256": "a10388812756d491243be9c139226ee9119b7d81989a159dded47978977c86ff",
+  "samples": [
+    {
+      "id": "bottom_spine-0.63",
+      "params": {
+        "bottom_spine": 0.63
+      },
+      "parts": [
+        {
+          "id": "bottom_spine",
+          "positions": {
+            "offset": 0,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.001",
+          "positions": {
+            "offset": 30,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.002",
+          "positions": {
+            "offset": 60,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.003",
+          "positions": {
+            "offset": 90,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.004",
+          "positions": {
+            "offset": 120,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.005",
+          "positions": {
+            "offset": 150,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.006",
+          "positions": {
+            "offset": 180,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.007",
+          "positions": {
+            "offset": 210,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.008",
+          "positions": {
+            "offset": 240,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.009",
+          "positions": {
+            "offset": 270,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.010",
+          "positions": {
+            "offset": 300,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.011",
+          "positions": {
+            "offset": 330,
+            "count": 30
+          }
+        },
+        {
+          "id": "crown_leaf",
+          "positions": {
+            "offset": 360,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.001",
+          "positions": {
+            "offset": 735,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.002",
+          "positions": {
+            "offset": 1110,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.003",
+          "positions": {
+            "offset": 1485,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.004",
+          "positions": {
+            "offset": 1860,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.005",
+          "positions": {
+            "offset": 2235,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.006",
+          "positions": {
+            "offset": 2610,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.007",
+          "positions": {
+            "offset": 2985,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.008",
+          "positions": {
+            "offset": 3360,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.009",
+          "positions": {
+            "offset": 3735,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.010",
+          "positions": {
+            "offset": 4110,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.011",
+          "positions": {
+            "offset": 4485,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.012",
+          "positions": {
+            "offset": 4860,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.013",
+          "positions": {
+            "offset": 5235,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.014",
+          "positions": {
+            "offset": 5610,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.015",
+          "positions": {
+            "offset": 5985,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.016",
+          "positions": {
+            "offset": 6360,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.017",
+          "positions": {
+            "offset": 6735,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.018",
+          "positions": {
+            "offset": 7110,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.019",
+          "positions": {
+            "offset": 7485,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.020",
+          "positions": {
+            "offset": 7860,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.021",
+          "positions": {
+            "offset": 8235,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.022",
+          "positions": {
+            "offset": 8610,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.023",
+          "positions": {
+            "offset": 8985,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.024",
+          "positions": {
+            "offset": 9360,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.025",
+          "positions": {
+            "offset": 9735,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.026",
+          "positions": {
+            "offset": 10110,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.027",
+          "positions": {
+            "offset": 10485,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.028",
+          "positions": {
+            "offset": 10860,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.029",
+          "positions": {
+            "offset": 11235,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.030",
+          "positions": {
+            "offset": 11610,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.031",
+          "positions": {
+            "offset": 11985,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.032",
+          "positions": {
+            "offset": 12360,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.033",
+          "positions": {
+            "offset": 12735,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.034",
+          "positions": {
+            "offset": 13110,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.035",
+          "positions": {
+            "offset": 13485,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.036",
+          "positions": {
+            "offset": 13860,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.037",
+          "positions": {
+            "offset": 14235,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.038",
+          "positions": {
+            "offset": 14610,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.039",
+          "positions": {
+            "offset": 14985,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.040",
+          "positions": {
+            "offset": 15360,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.041",
+          "positions": {
+            "offset": 15735,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.042",
+          "positions": {
+            "offset": 16110,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.043",
+          "positions": {
+            "offset": 16485,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.044",
+          "positions": {
+            "offset": 16860,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.045",
+          "positions": {
+            "offset": 17235,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.046",
+          "positions": {
+            "offset": 17610,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.047",
+          "positions": {
+            "offset": 17985,
+            "count": 375
+          }
+        },
+        {
+          "id": "fruit_body",
+          "positions": {
+            "offset": 18360,
+            "count": 6534
+          }
+        }
+      ]
+    },
+    {
+      "id": "bottom_spine-1.37",
+      "params": {
+        "bottom_spine": 1.37
+      },
+      "parts": [
+        {
+          "id": "bottom_spine",
+          "positions": {
+            "offset": 24894,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.001",
+          "positions": {
+            "offset": 24924,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.002",
+          "positions": {
+            "offset": 24954,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.003",
+          "positions": {
+            "offset": 24984,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.004",
+          "positions": {
+            "offset": 25014,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.005",
+          "positions": {
+            "offset": 25044,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.006",
+          "positions": {
+            "offset": 25074,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.007",
+          "positions": {
+            "offset": 25104,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.008",
+          "positions": {
+            "offset": 25134,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.009",
+          "positions": {
+            "offset": 25164,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.010",
+          "positions": {
+            "offset": 25194,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.011",
+          "positions": {
+            "offset": 25224,
+            "count": 30
+          }
+        },
+        {
+          "id": "crown_leaf",
+          "positions": {
+            "offset": 25254,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.001",
+          "positions": {
+            "offset": 25629,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.002",
+          "positions": {
+            "offset": 26004,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.003",
+          "positions": {
+            "offset": 26379,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.004",
+          "positions": {
+            "offset": 26754,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.005",
+          "positions": {
+            "offset": 27129,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.006",
+          "positions": {
+            "offset": 27504,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.007",
+          "positions": {
+            "offset": 27879,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.008",
+          "positions": {
+            "offset": 28254,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.009",
+          "positions": {
+            "offset": 28629,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.010",
+          "positions": {
+            "offset": 29004,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.011",
+          "positions": {
+            "offset": 29379,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.012",
+          "positions": {
+            "offset": 29754,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.013",
+          "positions": {
+            "offset": 30129,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.014",
+          "positions": {
+            "offset": 30504,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.015",
+          "positions": {
+            "offset": 30879,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.016",
+          "positions": {
+            "offset": 31254,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.017",
+          "positions": {
+            "offset": 31629,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.018",
+          "positions": {
+            "offset": 32004,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.019",
+          "positions": {
+            "offset": 32379,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.020",
+          "positions": {
+            "offset": 32754,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.021",
+          "positions": {
+            "offset": 33129,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.022",
+          "positions": {
+            "offset": 33504,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.023",
+          "positions": {
+            "offset": 33879,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.024",
+          "positions": {
+            "offset": 34254,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.025",
+          "positions": {
+            "offset": 34629,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.026",
+          "positions": {
+            "offset": 35004,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.027",
+          "positions": {
+            "offset": 35379,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.028",
+          "positions": {
+            "offset": 35754,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.029",
+          "positions": {
+            "offset": 36129,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.030",
+          "positions": {
+            "offset": 36504,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.031",
+          "positions": {
+            "offset": 36879,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.032",
+          "positions": {
+            "offset": 37254,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.033",
+          "positions": {
+            "offset": 37629,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.034",
+          "positions": {
+            "offset": 38004,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.035",
+          "positions": {
+            "offset": 38379,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.036",
+          "positions": {
+            "offset": 38754,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.037",
+          "positions": {
+            "offset": 39129,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.038",
+          "positions": {
+            "offset": 39504,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.039",
+          "positions": {
+            "offset": 39879,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.040",
+          "positions": {
+            "offset": 40254,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.041",
+          "positions": {
+            "offset": 40629,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.042",
+          "positions": {
+            "offset": 41004,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.043",
+          "positions": {
+            "offset": 41379,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.044",
+          "positions": {
+            "offset": 41754,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.045",
+          "positions": {
+            "offset": 42129,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.046",
+          "positions": {
+            "offset": 42504,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.047",
+          "positions": {
+            "offset": 42879,
+            "count": 375
+          }
+        },
+        {
+          "id": "fruit_body",
+          "positions": {
+            "offset": 43254,
+            "count": 6534
+          }
+        }
+      ]
+    },
+    {
+      "id": "crown_leaf-0.63",
+      "params": {
+        "crown_leaf": 0.63
+      },
+      "parts": [
+        {
+          "id": "bottom_spine",
+          "positions": {
+            "offset": 49788,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.001",
+          "positions": {
+            "offset": 49818,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.002",
+          "positions": {
+            "offset": 49848,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.003",
+          "positions": {
+            "offset": 49878,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.004",
+          "positions": {
+            "offset": 49908,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.005",
+          "positions": {
+            "offset": 49938,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.006",
+          "positions": {
+            "offset": 49968,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.007",
+          "positions": {
+            "offset": 49998,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.008",
+          "positions": {
+            "offset": 50028,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.009",
+          "positions": {
+            "offset": 50058,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.010",
+          "positions": {
+            "offset": 50088,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.011",
+          "positions": {
+            "offset": 50118,
+            "count": 30
+          }
+        },
+        {
+          "id": "crown_leaf",
+          "positions": {
+            "offset": 50148,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.001",
+          "positions": {
+            "offset": 50523,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.002",
+          "positions": {
+            "offset": 50898,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.003",
+          "positions": {
+            "offset": 51273,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.004",
+          "positions": {
+            "offset": 51648,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.005",
+          "positions": {
+            "offset": 52023,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.006",
+          "positions": {
+            "offset": 52398,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.007",
+          "positions": {
+            "offset": 52773,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.008",
+          "positions": {
+            "offset": 53148,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.009",
+          "positions": {
+            "offset": 53523,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.010",
+          "positions": {
+            "offset": 53898,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.011",
+          "positions": {
+            "offset": 54273,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.012",
+          "positions": {
+            "offset": 54648,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.013",
+          "positions": {
+            "offset": 55023,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.014",
+          "positions": {
+            "offset": 55398,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.015",
+          "positions": {
+            "offset": 55773,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.016",
+          "positions": {
+            "offset": 56148,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.017",
+          "positions": {
+            "offset": 56523,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.018",
+          "positions": {
+            "offset": 56898,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.019",
+          "positions": {
+            "offset": 57273,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.020",
+          "positions": {
+            "offset": 57648,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.021",
+          "positions": {
+            "offset": 58023,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.022",
+          "positions": {
+            "offset": 58398,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.023",
+          "positions": {
+            "offset": 58773,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.024",
+          "positions": {
+            "offset": 59148,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.025",
+          "positions": {
+            "offset": 59523,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.026",
+          "positions": {
+            "offset": 59898,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.027",
+          "positions": {
+            "offset": 60273,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.028",
+          "positions": {
+            "offset": 60648,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.029",
+          "positions": {
+            "offset": 61023,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.030",
+          "positions": {
+            "offset": 61398,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.031",
+          "positions": {
+            "offset": 61773,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.032",
+          "positions": {
+            "offset": 62148,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.033",
+          "positions": {
+            "offset": 62523,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.034",
+          "positions": {
+            "offset": 62898,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.035",
+          "positions": {
+            "offset": 63273,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.036",
+          "positions": {
+            "offset": 63648,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.037",
+          "positions": {
+            "offset": 64023,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.038",
+          "positions": {
+            "offset": 64398,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.039",
+          "positions": {
+            "offset": 64773,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.040",
+          "positions": {
+            "offset": 65148,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.041",
+          "positions": {
+            "offset": 65523,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.042",
+          "positions": {
+            "offset": 65898,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.043",
+          "positions": {
+            "offset": 66273,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.044",
+          "positions": {
+            "offset": 66648,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.045",
+          "positions": {
+            "offset": 67023,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.046",
+          "positions": {
+            "offset": 67398,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.047",
+          "positions": {
+            "offset": 67773,
+            "count": 375
+          }
+        },
+        {
+          "id": "fruit_body",
+          "positions": {
+            "offset": 68148,
+            "count": 6534
+          }
+        }
+      ]
+    },
+    {
+      "id": "crown_leaf-1.37",
+      "params": {
+        "crown_leaf": 1.37
+      },
+      "parts": [
+        {
+          "id": "bottom_spine",
+          "positions": {
+            "offset": 74682,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.001",
+          "positions": {
+            "offset": 74712,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.002",
+          "positions": {
+            "offset": 74742,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.003",
+          "positions": {
+            "offset": 74772,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.004",
+          "positions": {
+            "offset": 74802,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.005",
+          "positions": {
+            "offset": 74832,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.006",
+          "positions": {
+            "offset": 74862,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.007",
+          "positions": {
+            "offset": 74892,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.008",
+          "positions": {
+            "offset": 74922,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.009",
+          "positions": {
+            "offset": 74952,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.010",
+          "positions": {
+            "offset": 74982,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.011",
+          "positions": {
+            "offset": 75012,
+            "count": 30
+          }
+        },
+        {
+          "id": "crown_leaf",
+          "positions": {
+            "offset": 75042,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.001",
+          "positions": {
+            "offset": 75417,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.002",
+          "positions": {
+            "offset": 75792,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.003",
+          "positions": {
+            "offset": 76167,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.004",
+          "positions": {
+            "offset": 76542,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.005",
+          "positions": {
+            "offset": 76917,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.006",
+          "positions": {
+            "offset": 77292,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.007",
+          "positions": {
+            "offset": 77667,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.008",
+          "positions": {
+            "offset": 78042,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.009",
+          "positions": {
+            "offset": 78417,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.010",
+          "positions": {
+            "offset": 78792,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.011",
+          "positions": {
+            "offset": 79167,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.012",
+          "positions": {
+            "offset": 79542,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.013",
+          "positions": {
+            "offset": 79917,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.014",
+          "positions": {
+            "offset": 80292,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.015",
+          "positions": {
+            "offset": 80667,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.016",
+          "positions": {
+            "offset": 81042,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.017",
+          "positions": {
+            "offset": 81417,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.018",
+          "positions": {
+            "offset": 81792,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.019",
+          "positions": {
+            "offset": 82167,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.020",
+          "positions": {
+            "offset": 82542,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.021",
+          "positions": {
+            "offset": 82917,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.022",
+          "positions": {
+            "offset": 83292,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.023",
+          "positions": {
+            "offset": 83667,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.024",
+          "positions": {
+            "offset": 84042,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.025",
+          "positions": {
+            "offset": 84417,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.026",
+          "positions": {
+            "offset": 84792,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.027",
+          "positions": {
+            "offset": 85167,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.028",
+          "positions": {
+            "offset": 85542,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.029",
+          "positions": {
+            "offset": 85917,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.030",
+          "positions": {
+            "offset": 86292,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.031",
+          "positions": {
+            "offset": 86667,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.032",
+          "positions": {
+            "offset": 87042,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.033",
+          "positions": {
+            "offset": 87417,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.034",
+          "positions": {
+            "offset": 87792,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.035",
+          "positions": {
+            "offset": 88167,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.036",
+          "positions": {
+            "offset": 88542,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.037",
+          "positions": {
+            "offset": 88917,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.038",
+          "positions": {
+            "offset": 89292,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.039",
+          "positions": {
+            "offset": 89667,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.040",
+          "positions": {
+            "offset": 90042,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.041",
+          "positions": {
+            "offset": 90417,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.042",
+          "positions": {
+            "offset": 90792,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.043",
+          "positions": {
+            "offset": 91167,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.044",
+          "positions": {
+            "offset": 91542,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.045",
+          "positions": {
+            "offset": 91917,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.046",
+          "positions": {
+            "offset": 92292,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.047",
+          "positions": {
+            "offset": 92667,
+            "count": 375
+          }
+        },
+        {
+          "id": "fruit_body",
+          "positions": {
+            "offset": 93042,
+            "count": 6534
+          }
+        }
+      ]
+    },
+    {
+      "id": "fruit_body-0.63",
+      "params": {
+        "fruit_body": 0.63
+      },
+      "parts": [
+        {
+          "id": "bottom_spine",
+          "positions": {
+            "offset": 99576,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.001",
+          "positions": {
+            "offset": 99606,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.002",
+          "positions": {
+            "offset": 99636,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.003",
+          "positions": {
+            "offset": 99666,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.004",
+          "positions": {
+            "offset": 99696,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.005",
+          "positions": {
+            "offset": 99726,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.006",
+          "positions": {
+            "offset": 99756,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.007",
+          "positions": {
+            "offset": 99786,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.008",
+          "positions": {
+            "offset": 99816,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.009",
+          "positions": {
+            "offset": 99846,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.010",
+          "positions": {
+            "offset": 99876,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.011",
+          "positions": {
+            "offset": 99906,
+            "count": 30
+          }
+        },
+        {
+          "id": "crown_leaf",
+          "positions": {
+            "offset": 99936,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.001",
+          "positions": {
+            "offset": 100311,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.002",
+          "positions": {
+            "offset": 100686,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.003",
+          "positions": {
+            "offset": 101061,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.004",
+          "positions": {
+            "offset": 101436,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.005",
+          "positions": {
+            "offset": 101811,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.006",
+          "positions": {
+            "offset": 102186,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.007",
+          "positions": {
+            "offset": 102561,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.008",
+          "positions": {
+            "offset": 102936,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.009",
+          "positions": {
+            "offset": 103311,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.010",
+          "positions": {
+            "offset": 103686,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.011",
+          "positions": {
+            "offset": 104061,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.012",
+          "positions": {
+            "offset": 104436,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.013",
+          "positions": {
+            "offset": 104811,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.014",
+          "positions": {
+            "offset": 105186,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.015",
+          "positions": {
+            "offset": 105561,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.016",
+          "positions": {
+            "offset": 105936,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.017",
+          "positions": {
+            "offset": 106311,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.018",
+          "positions": {
+            "offset": 106686,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.019",
+          "positions": {
+            "offset": 107061,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.020",
+          "positions": {
+            "offset": 107436,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.021",
+          "positions": {
+            "offset": 107811,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.022",
+          "positions": {
+            "offset": 108186,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.023",
+          "positions": {
+            "offset": 108561,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.024",
+          "positions": {
+            "offset": 108936,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.025",
+          "positions": {
+            "offset": 109311,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.026",
+          "positions": {
+            "offset": 109686,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.027",
+          "positions": {
+            "offset": 110061,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.028",
+          "positions": {
+            "offset": 110436,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.029",
+          "positions": {
+            "offset": 110811,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.030",
+          "positions": {
+            "offset": 111186,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.031",
+          "positions": {
+            "offset": 111561,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.032",
+          "positions": {
+            "offset": 111936,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.033",
+          "positions": {
+            "offset": 112311,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.034",
+          "positions": {
+            "offset": 112686,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.035",
+          "positions": {
+            "offset": 113061,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.036",
+          "positions": {
+            "offset": 113436,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.037",
+          "positions": {
+            "offset": 113811,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.038",
+          "positions": {
+            "offset": 114186,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.039",
+          "positions": {
+            "offset": 114561,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.040",
+          "positions": {
+            "offset": 114936,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.041",
+          "positions": {
+            "offset": 115311,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.042",
+          "positions": {
+            "offset": 115686,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.043",
+          "positions": {
+            "offset": 116061,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.044",
+          "positions": {
+            "offset": 116436,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.045",
+          "positions": {
+            "offset": 116811,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.046",
+          "positions": {
+            "offset": 117186,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.047",
+          "positions": {
+            "offset": 117561,
+            "count": 375
+          }
+        },
+        {
+          "id": "fruit_body",
+          "positions": {
+            "offset": 117936,
+            "count": 6534
+          }
+        }
+      ]
+    },
+    {
+      "id": "fruit_body-1.37",
+      "params": {
+        "fruit_body": 1.37
+      },
+      "parts": [
+        {
+          "id": "bottom_spine",
+          "positions": {
+            "offset": 124470,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.001",
+          "positions": {
+            "offset": 124500,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.002",
+          "positions": {
+            "offset": 124530,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.003",
+          "positions": {
+            "offset": 124560,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.004",
+          "positions": {
+            "offset": 124590,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.005",
+          "positions": {
+            "offset": 124620,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.006",
+          "positions": {
+            "offset": 124650,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.007",
+          "positions": {
+            "offset": 124680,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.008",
+          "positions": {
+            "offset": 124710,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.009",
+          "positions": {
+            "offset": 124740,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.010",
+          "positions": {
+            "offset": 124770,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.011",
+          "positions": {
+            "offset": 124800,
+            "count": 30
+          }
+        },
+        {
+          "id": "crown_leaf",
+          "positions": {
+            "offset": 124830,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.001",
+          "positions": {
+            "offset": 125205,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.002",
+          "positions": {
+            "offset": 125580,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.003",
+          "positions": {
+            "offset": 125955,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.004",
+          "positions": {
+            "offset": 126330,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.005",
+          "positions": {
+            "offset": 126705,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.006",
+          "positions": {
+            "offset": 127080,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.007",
+          "positions": {
+            "offset": 127455,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.008",
+          "positions": {
+            "offset": 127830,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.009",
+          "positions": {
+            "offset": 128205,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.010",
+          "positions": {
+            "offset": 128580,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.011",
+          "positions": {
+            "offset": 128955,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.012",
+          "positions": {
+            "offset": 129330,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.013",
+          "positions": {
+            "offset": 129705,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.014",
+          "positions": {
+            "offset": 130080,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.015",
+          "positions": {
+            "offset": 130455,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.016",
+          "positions": {
+            "offset": 130830,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.017",
+          "positions": {
+            "offset": 131205,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.018",
+          "positions": {
+            "offset": 131580,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.019",
+          "positions": {
+            "offset": 131955,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.020",
+          "positions": {
+            "offset": 132330,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.021",
+          "positions": {
+            "offset": 132705,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.022",
+          "positions": {
+            "offset": 133080,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.023",
+          "positions": {
+            "offset": 133455,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.024",
+          "positions": {
+            "offset": 133830,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.025",
+          "positions": {
+            "offset": 134205,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.026",
+          "positions": {
+            "offset": 134580,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.027",
+          "positions": {
+            "offset": 134955,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.028",
+          "positions": {
+            "offset": 135330,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.029",
+          "positions": {
+            "offset": 135705,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.030",
+          "positions": {
+            "offset": 136080,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.031",
+          "positions": {
+            "offset": 136455,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.032",
+          "positions": {
+            "offset": 136830,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.033",
+          "positions": {
+            "offset": 137205,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.034",
+          "positions": {
+            "offset": 137580,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.035",
+          "positions": {
+            "offset": 137955,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.036",
+          "positions": {
+            "offset": 138330,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.037",
+          "positions": {
+            "offset": 138705,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.038",
+          "positions": {
+            "offset": 139080,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.039",
+          "positions": {
+            "offset": 139455,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.040",
+          "positions": {
+            "offset": 139830,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.041",
+          "positions": {
+            "offset": 140205,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.042",
+          "positions": {
+            "offset": 140580,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.043",
+          "positions": {
+            "offset": 140955,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.044",
+          "positions": {
+            "offset": 141330,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.045",
+          "positions": {
+            "offset": 141705,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.046",
+          "positions": {
+            "offset": 142080,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.047",
+          "positions": {
+            "offset": 142455,
+            "count": 375
+          }
+        },
+        {
+          "id": "fruit_body",
+          "positions": {
+            "offset": 142830,
+            "count": 6534
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "bottom_spine": 0.63,
+        "crown_leaf": 1.37,
+        "fruit_body": 0.63
+      },
+      "parts": [
+        {
+          "id": "bottom_spine",
+          "positions": {
+            "offset": 149364,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.001",
+          "positions": {
+            "offset": 149394,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.002",
+          "positions": {
+            "offset": 149424,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.003",
+          "positions": {
+            "offset": 149454,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.004",
+          "positions": {
+            "offset": 149484,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.005",
+          "positions": {
+            "offset": 149514,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.006",
+          "positions": {
+            "offset": 149544,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.007",
+          "positions": {
+            "offset": 149574,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.008",
+          "positions": {
+            "offset": 149604,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.009",
+          "positions": {
+            "offset": 149634,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.010",
+          "positions": {
+            "offset": 149664,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.011",
+          "positions": {
+            "offset": 149694,
+            "count": 30
+          }
+        },
+        {
+          "id": "crown_leaf",
+          "positions": {
+            "offset": 149724,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.001",
+          "positions": {
+            "offset": 150099,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.002",
+          "positions": {
+            "offset": 150474,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.003",
+          "positions": {
+            "offset": 150849,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.004",
+          "positions": {
+            "offset": 151224,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.005",
+          "positions": {
+            "offset": 151599,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.006",
+          "positions": {
+            "offset": 151974,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.007",
+          "positions": {
+            "offset": 152349,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.008",
+          "positions": {
+            "offset": 152724,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.009",
+          "positions": {
+            "offset": 153099,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.010",
+          "positions": {
+            "offset": 153474,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.011",
+          "positions": {
+            "offset": 153849,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.012",
+          "positions": {
+            "offset": 154224,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.013",
+          "positions": {
+            "offset": 154599,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.014",
+          "positions": {
+            "offset": 154974,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.015",
+          "positions": {
+            "offset": 155349,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.016",
+          "positions": {
+            "offset": 155724,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.017",
+          "positions": {
+            "offset": 156099,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.018",
+          "positions": {
+            "offset": 156474,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.019",
+          "positions": {
+            "offset": 156849,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.020",
+          "positions": {
+            "offset": 157224,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.021",
+          "positions": {
+            "offset": 157599,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.022",
+          "positions": {
+            "offset": 157974,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.023",
+          "positions": {
+            "offset": 158349,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.024",
+          "positions": {
+            "offset": 158724,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.025",
+          "positions": {
+            "offset": 159099,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.026",
+          "positions": {
+            "offset": 159474,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.027",
+          "positions": {
+            "offset": 159849,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.028",
+          "positions": {
+            "offset": 160224,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.029",
+          "positions": {
+            "offset": 160599,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.030",
+          "positions": {
+            "offset": 160974,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.031",
+          "positions": {
+            "offset": 161349,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.032",
+          "positions": {
+            "offset": 161724,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.033",
+          "positions": {
+            "offset": 162099,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.034",
+          "positions": {
+            "offset": 162474,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.035",
+          "positions": {
+            "offset": 162849,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.036",
+          "positions": {
+            "offset": 163224,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.037",
+          "positions": {
+            "offset": 163599,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.038",
+          "positions": {
+            "offset": 163974,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.039",
+          "positions": {
+            "offset": 164349,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.040",
+          "positions": {
+            "offset": 164724,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.041",
+          "positions": {
+            "offset": 165099,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.042",
+          "positions": {
+            "offset": 165474,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.043",
+          "positions": {
+            "offset": 165849,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.044",
+          "positions": {
+            "offset": 166224,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.045",
+          "positions": {
+            "offset": 166599,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.046",
+          "positions": {
+            "offset": 166974,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.047",
+          "positions": {
+            "offset": 167349,
+            "count": 375
+          }
+        },
+        {
+          "id": "fruit_body",
+          "positions": {
+            "offset": 167724,
+            "count": 6534
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "bottom_spine": 1.37,
+        "crown_leaf": 0.63,
+        "fruit_body": 1.37
+      },
+      "parts": [
+        {
+          "id": "bottom_spine",
+          "positions": {
+            "offset": 174258,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.001",
+          "positions": {
+            "offset": 174288,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.002",
+          "positions": {
+            "offset": 174318,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.003",
+          "positions": {
+            "offset": 174348,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.004",
+          "positions": {
+            "offset": 174378,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.005",
+          "positions": {
+            "offset": 174408,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.006",
+          "positions": {
+            "offset": 174438,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.007",
+          "positions": {
+            "offset": 174468,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.008",
+          "positions": {
+            "offset": 174498,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.009",
+          "positions": {
+            "offset": 174528,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.010",
+          "positions": {
+            "offset": 174558,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.011",
+          "positions": {
+            "offset": 174588,
+            "count": 30
+          }
+        },
+        {
+          "id": "crown_leaf",
+          "positions": {
+            "offset": 174618,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.001",
+          "positions": {
+            "offset": 174993,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.002",
+          "positions": {
+            "offset": 175368,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.003",
+          "positions": {
+            "offset": 175743,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.004",
+          "positions": {
+            "offset": 176118,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.005",
+          "positions": {
+            "offset": 176493,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.006",
+          "positions": {
+            "offset": 176868,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.007",
+          "positions": {
+            "offset": 177243,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.008",
+          "positions": {
+            "offset": 177618,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.009",
+          "positions": {
+            "offset": 177993,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.010",
+          "positions": {
+            "offset": 178368,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.011",
+          "positions": {
+            "offset": 178743,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.012",
+          "positions": {
+            "offset": 179118,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.013",
+          "positions": {
+            "offset": 179493,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.014",
+          "positions": {
+            "offset": 179868,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.015",
+          "positions": {
+            "offset": 180243,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.016",
+          "positions": {
+            "offset": 180618,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.017",
+          "positions": {
+            "offset": 180993,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.018",
+          "positions": {
+            "offset": 181368,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.019",
+          "positions": {
+            "offset": 181743,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.020",
+          "positions": {
+            "offset": 182118,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.021",
+          "positions": {
+            "offset": 182493,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.022",
+          "positions": {
+            "offset": 182868,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.023",
+          "positions": {
+            "offset": 183243,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.024",
+          "positions": {
+            "offset": 183618,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.025",
+          "positions": {
+            "offset": 183993,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.026",
+          "positions": {
+            "offset": 184368,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.027",
+          "positions": {
+            "offset": 184743,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.028",
+          "positions": {
+            "offset": 185118,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.029",
+          "positions": {
+            "offset": 185493,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.030",
+          "positions": {
+            "offset": 185868,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.031",
+          "positions": {
+            "offset": 186243,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.032",
+          "positions": {
+            "offset": 186618,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.033",
+          "positions": {
+            "offset": 186993,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.034",
+          "positions": {
+            "offset": 187368,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.035",
+          "positions": {
+            "offset": 187743,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.036",
+          "positions": {
+            "offset": 188118,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.037",
+          "positions": {
+            "offset": 188493,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.038",
+          "positions": {
+            "offset": 188868,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.039",
+          "positions": {
+            "offset": 189243,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.040",
+          "positions": {
+            "offset": 189618,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.041",
+          "positions": {
+            "offset": 189993,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.042",
+          "positions": {
+            "offset": 190368,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.043",
+          "positions": {
+            "offset": 190743,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.044",
+          "positions": {
+            "offset": 191118,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.045",
+          "positions": {
+            "offset": 191493,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.046",
+          "positions": {
+            "offset": 191868,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.047",
+          "positions": {
+            "offset": 192243,
+            "count": 375
+          }
+        },
+        {
+          "id": "fruit_body",
+          "positions": {
+            "offset": 192618,
+            "count": 6534
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "bottom_spine": 0.63,
+        "crown_leaf": 0.63,
+        "fruit_body": 0.63
+      },
+      "parts": [
+        {
+          "id": "bottom_spine",
+          "positions": {
+            "offset": 199152,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.001",
+          "positions": {
+            "offset": 199182,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.002",
+          "positions": {
+            "offset": 199212,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.003",
+          "positions": {
+            "offset": 199242,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.004",
+          "positions": {
+            "offset": 199272,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.005",
+          "positions": {
+            "offset": 199302,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.006",
+          "positions": {
+            "offset": 199332,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.007",
+          "positions": {
+            "offset": 199362,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.008",
+          "positions": {
+            "offset": 199392,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.009",
+          "positions": {
+            "offset": 199422,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.010",
+          "positions": {
+            "offset": 199452,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.011",
+          "positions": {
+            "offset": 199482,
+            "count": 30
+          }
+        },
+        {
+          "id": "crown_leaf",
+          "positions": {
+            "offset": 199512,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.001",
+          "positions": {
+            "offset": 199887,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.002",
+          "positions": {
+            "offset": 200262,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.003",
+          "positions": {
+            "offset": 200637,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.004",
+          "positions": {
+            "offset": 201012,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.005",
+          "positions": {
+            "offset": 201387,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.006",
+          "positions": {
+            "offset": 201762,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.007",
+          "positions": {
+            "offset": 202137,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.008",
+          "positions": {
+            "offset": 202512,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.009",
+          "positions": {
+            "offset": 202887,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.010",
+          "positions": {
+            "offset": 203262,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.011",
+          "positions": {
+            "offset": 203637,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.012",
+          "positions": {
+            "offset": 204012,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.013",
+          "positions": {
+            "offset": 204387,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.014",
+          "positions": {
+            "offset": 204762,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.015",
+          "positions": {
+            "offset": 205137,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.016",
+          "positions": {
+            "offset": 205512,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.017",
+          "positions": {
+            "offset": 205887,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.018",
+          "positions": {
+            "offset": 206262,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.019",
+          "positions": {
+            "offset": 206637,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.020",
+          "positions": {
+            "offset": 207012,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.021",
+          "positions": {
+            "offset": 207387,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.022",
+          "positions": {
+            "offset": 207762,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.023",
+          "positions": {
+            "offset": 208137,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.024",
+          "positions": {
+            "offset": 208512,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.025",
+          "positions": {
+            "offset": 208887,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.026",
+          "positions": {
+            "offset": 209262,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.027",
+          "positions": {
+            "offset": 209637,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.028",
+          "positions": {
+            "offset": 210012,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.029",
+          "positions": {
+            "offset": 210387,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.030",
+          "positions": {
+            "offset": 210762,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.031",
+          "positions": {
+            "offset": 211137,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.032",
+          "positions": {
+            "offset": 211512,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.033",
+          "positions": {
+            "offset": 211887,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.034",
+          "positions": {
+            "offset": 212262,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.035",
+          "positions": {
+            "offset": 212637,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.036",
+          "positions": {
+            "offset": 213012,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.037",
+          "positions": {
+            "offset": 213387,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.038",
+          "positions": {
+            "offset": 213762,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.039",
+          "positions": {
+            "offset": 214137,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.040",
+          "positions": {
+            "offset": 214512,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.041",
+          "positions": {
+            "offset": 214887,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.042",
+          "positions": {
+            "offset": 215262,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.043",
+          "positions": {
+            "offset": 215637,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.044",
+          "positions": {
+            "offset": 216012,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.045",
+          "positions": {
+            "offset": 216387,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.046",
+          "positions": {
+            "offset": 216762,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.047",
+          "positions": {
+            "offset": 217137,
+            "count": 375
+          }
+        },
+        {
+          "id": "fruit_body",
+          "positions": {
+            "offset": 217512,
+            "count": 6534
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "bottom_spine": 1.37,
+        "crown_leaf": 1.37,
+        "fruit_body": 1.37
+      },
+      "parts": [
+        {
+          "id": "bottom_spine",
+          "positions": {
+            "offset": 224046,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.001",
+          "positions": {
+            "offset": 224076,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.002",
+          "positions": {
+            "offset": 224106,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.003",
+          "positions": {
+            "offset": 224136,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.004",
+          "positions": {
+            "offset": 224166,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.005",
+          "positions": {
+            "offset": 224196,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.006",
+          "positions": {
+            "offset": 224226,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.007",
+          "positions": {
+            "offset": 224256,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.008",
+          "positions": {
+            "offset": 224286,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.009",
+          "positions": {
+            "offset": 224316,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.010",
+          "positions": {
+            "offset": 224346,
+            "count": 30
+          }
+        },
+        {
+          "id": "bottom_spine.011",
+          "positions": {
+            "offset": 224376,
+            "count": 30
+          }
+        },
+        {
+          "id": "crown_leaf",
+          "positions": {
+            "offset": 224406,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.001",
+          "positions": {
+            "offset": 224781,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.002",
+          "positions": {
+            "offset": 225156,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.003",
+          "positions": {
+            "offset": 225531,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.004",
+          "positions": {
+            "offset": 225906,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.005",
+          "positions": {
+            "offset": 226281,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.006",
+          "positions": {
+            "offset": 226656,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.007",
+          "positions": {
+            "offset": 227031,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.008",
+          "positions": {
+            "offset": 227406,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.009",
+          "positions": {
+            "offset": 227781,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.010",
+          "positions": {
+            "offset": 228156,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.011",
+          "positions": {
+            "offset": 228531,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.012",
+          "positions": {
+            "offset": 228906,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.013",
+          "positions": {
+            "offset": 229281,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.014",
+          "positions": {
+            "offset": 229656,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.015",
+          "positions": {
+            "offset": 230031,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.016",
+          "positions": {
+            "offset": 230406,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.017",
+          "positions": {
+            "offset": 230781,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.018",
+          "positions": {
+            "offset": 231156,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.019",
+          "positions": {
+            "offset": 231531,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.020",
+          "positions": {
+            "offset": 231906,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.021",
+          "positions": {
+            "offset": 232281,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.022",
+          "positions": {
+            "offset": 232656,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.023",
+          "positions": {
+            "offset": 233031,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.024",
+          "positions": {
+            "offset": 233406,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.025",
+          "positions": {
+            "offset": 233781,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.026",
+          "positions": {
+            "offset": 234156,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.027",
+          "positions": {
+            "offset": 234531,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.028",
+          "positions": {
+            "offset": 234906,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.029",
+          "positions": {
+            "offset": 235281,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.030",
+          "positions": {
+            "offset": 235656,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.031",
+          "positions": {
+            "offset": 236031,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.032",
+          "positions": {
+            "offset": 236406,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.033",
+          "positions": {
+            "offset": 236781,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.034",
+          "positions": {
+            "offset": 237156,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.035",
+          "positions": {
+            "offset": 237531,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.036",
+          "positions": {
+            "offset": 237906,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.037",
+          "positions": {
+            "offset": 238281,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.038",
+          "positions": {
+            "offset": 238656,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.039",
+          "positions": {
+            "offset": 239031,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.040",
+          "positions": {
+            "offset": 239406,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.041",
+          "positions": {
+            "offset": 239781,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.042",
+          "positions": {
+            "offset": 240156,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.043",
+          "positions": {
+            "offset": 240531,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.044",
+          "positions": {
+            "offset": 240906,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.045",
+          "positions": {
+            "offset": 241281,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.046",
+          "positions": {
+            "offset": 241656,
+            "count": 375
+          }
+        },
+        {
+          "id": "crown_leaf.047",
+          "positions": {
+            "offset": 242031,
+            "count": 375
+          }
+        },
+        {
+          "id": "fruit_body",
+          "positions": {
+            "offset": 242406,
+            "count": 6534
+          }
+        }
+      ]
+    }
+  ]
+}

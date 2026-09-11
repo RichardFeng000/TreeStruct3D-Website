@@ -1,0 +1,92 @@
+{
+  "id": "paper-gemini-3-5-flash-fruit-pineapple",
+  "title": "Fruit Pineapple",
+  "provider": "Gemini 3.5 Flash",
+  "group": "appendix-6d",
+  "label": "FruitPineapple_seed0",
+  "model": "FruitPineapple_seed0/FruitPineapple_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · Gemini 3.5 Flash",
+  "parent": {
+    "ids": [
+      "fruit_body"
+    ],
+    "label": "pineapple body"
+  },
+  "child": {
+    "ids": [
+      "crown_leaf"
+    ],
+    "label": "leaf crown"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/mesh-map.json",
+      "bytes": 1101904
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-0.4/mesh-map.json",
+      "bytes": 361408
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/parent-1.6/mesh-map.json",
+      "bytes": 361284
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-0.4/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-0.4/mesh-map.json",
+      "bytes": 361292
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-1.6/model.glb",
+      "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/child-1.6/mesh-map.json",
+      "bytes": 361272
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/model.glb",
+    "snapshot": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/snapshot.json",
+    "provenance": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/provenance.json",
+    "mesh_map": "paper-gemini-3-5-flash-fruit-pineapple/edits/default/mesh-map.json",
+    "bytes": 1101904,
+    "parts": 61,
+    "shared_anchors": 60
+  }
+}

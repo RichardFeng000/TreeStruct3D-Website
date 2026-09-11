@@ -4,6 +4,13 @@
     import { escapeHtml, assetUrl, validateSnapshot, displayName, snapshotCounts } from './data-utils.js';
     import { OrbitControls } from './vendor/OrbitControls.js';
     import { GLTFLoader } from './vendor/GLTFLoader.js';
+    import { captureTransparentPng } from './export-utils.js';
+    import { providerKey, providerLabel, savedVariant, stateLabel, hasPaperComparison, paperComparisonPair, paperPreset, invalidatePreviewChecks } from './edit-state.js';
+    import { createContinuousEditor } from './continuous-edit.js';
+    import { createNativeEditor } from './native-edit.js';
+    import { validateNativeResponse } from './native-response-validation.js';
+    import { displayAnchorPairs, isAnchorDisplayEdge, anchorDisplayVerified } from './anchor-display.js';
+    import { createAnchorLayer } from './anchor-layer.js';
 
     const sourceSelect = document.getElementById('source-select');
     const modelSelect = document.getElementById('model-select');
@@ -42,13 +49,22 @@
     const tree3dControls = document.getElementById('tree3d-controls');
     const tree3dShowRealParts = document.getElementById('tree3d-show-real-parts');
     const tree3dShowShared = document.getElementById('tree3d-show-shared');
-    const tree3dShowIssues = document.getElementById('tree3d-show-issues');
     const tree3dControlNote = document.getElementById('tree3d-control-note');
     const tree3dExportTransparentButton = document.getElementById('tree3d-export-transparent');
     const tree3dFullscreenButton = document.getElementById('tree3d-fullscreen');
     const tree3dStage = document.getElementById('tree3d-stage');
     const tree3dCanvas = document.getElementById('tree3d-canvas');
     const tree3dTooltip = document.getElementById('tree3d-tooltip');
+    const editPanel = document.getElementById('edit-panel');
+    const editParts = document.getElementById('edit-parts');
+    const editState = document.getElementById('edit-state');
+    const editResetAll = document.getElementById('edit-reset-all');
+    const viewerPanel = canvas.parentElement;
+    const comparisonToggle = document.getElementById('comparison-toggle');
+    const comparisonPanel = document.getElementById('paper-comparison');
+    const comparisonStatus = document.getElementById('comparison-status');
+    const comparisonImages = document.getElementById('comparison-images');
+    const comparisonPreset = document.getElementById('comparison-preset');
 
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
@@ -98,6 +114,7 @@
     const previewAnchorOverlay = new THREE.Group();
     previewAnchorOverlay.name = 'shared-anchor-overlay';
     scene.add(previewAnchorOverlay);
+    const modelAnchors = createAnchorLayer(scene, runtimePointToPreview);
 
     const tree3dRenderer = new THREE.WebGLRenderer({
       canvas: tree3dCanvas,
@@ -147,7 +164,6 @@
       anchorMode: 'confirmed',
       anchorFocusNode: null,
       tree3dShowShared: true,
-      tree3dShowIssues: false,
       tree3dShowRealParts: false,
       query: '',
       scale: 1,
@@ -232,7 +248,7 @@
         copySelectionButton.textContent = 'Copied';
         copySelectionButton.classList.add('copied');
         copySelectionTimer = setTimeout(() => {
-          copySelectionButton.textContent = 'Copy Selection';
+          copySelectionButton.textContent = 'Copy model info';
           copySelectionButton.classList.remove('copied');
         }, 1600);
       } catch (error) {
@@ -510,6 +526,7 @@
     }
 
     function formatGraphNumber(value) {
+      if (value === null || value === undefined || value === '') return 'Unknown';
       const number = Number(value);
       if (!Number.isFinite(number)) return 'Unknown';
       if (Math.abs(number) >= 0.01) return number.toFixed(4);
@@ -530,6 +547,7 @@
     }
 
     function runtimeRelationLabel(edge) {
+      if (edge.preview_only) return 'Browser preview · checks not rerun';
       if (edge.runtime_pending) return 'Code parent → child · Waiting for Blender 5.0 to compute anchors';
       if (edge.shared_anchor) {
         if (edge.parent_child_known) return 'Shared anchor · Confirmed parent → child';
@@ -549,7 +567,7 @@
 
     function isStrictAnchorEdge(edge) {
       return Boolean(
-        edge.directed_verified
+        !edge.preview_only && edge.directed_verified
         && edge.contact
         && edge.shared_anchor
         && (edge.relation === 'DIRECTED' || edge.relation === 'DIRECTED_CODE')
@@ -572,13 +590,13 @@
     function anchorModeLabel(mode) {
       return {
         confirmed: 'Parent–Child',
-        shared: 'Shared Anchors',
-        issues: 'Issue Relations',
+        shared: 'Anchors',
         all: 'All Relations',
       }[mode] || mode;
     }
 
     function authoredAnchorStats(edge) {
+      if (edge.preview_only) return null;
       const count = Number(edge.authored_anchor_count);
       if (!Number.isInteger(count) || count <= 0) return null;
       const validValue = Number(edge.authored_anchor_valid_count);
@@ -598,11 +616,7 @@
 
     function anchorEdgeMatches(edge, mode = graphState.anchorMode) {
       if (mode === 'confirmed') return isDirectedAnchorEdge(edge);
-      if (mode === 'shared') return Boolean(edge.shared_anchor);
-      if (mode === 'issues') {
-        return !edge.runtime_pending
-          && (edge.relation === 'BROKEN_ATTACHMENT' || !edge.shared_anchor);
-      }
+      if (mode === 'shared') return isAnchorDisplayEdge(edge);
       return true;
     }
 
@@ -703,6 +717,11 @@
     }
 
     function edgeVisual(edge) {
+      if (edge.preview_only) return {
+        className: isDirectedAnchorEdge(edge) ? 'edge-directed-code' : 'edge-unknown',
+        markerEnd: isDirectedAnchorEdge(edge) ? 'url(#graph-arrow-code)' : '',
+        label: 'Browser preview · checks not rerun',
+      };
       if (graphState.view === 'anchors') {
         const strictDirected = isStrictAnchorEdge(edge);
         if (strictDirected) {
@@ -759,6 +778,9 @@
     function updateGraphLegend() {
       const anchorView = graphState.view === 'anchors';
       const tree3dView = graphState.view === 'tree3d';
+      const preview = Boolean(structureData?.views?.anchors?.preview_only);
+      graphPanel.classList.toggle('browser-preview', preview);
+      tree3dShowShared.disabled = false;
       anchorControls.hidden = !anchorView;
       tree3dControls.hidden = !tree3dView;
       anchorRelations.hidden = !anchorView || tree3dView;
@@ -767,20 +789,25 @@
       graphSearch.hidden = tree3dView;
       graphExpandButton.hidden = tree3dView;
       for (const button of anchorControls.querySelectorAll('[data-anchor-mode]')) {
+        button.disabled = false;
         const active = button.dataset.anchorMode === graphState.anchorMode;
         const anchorViewData = structureData?.views?.anchors;
         const count = anchorViewData?.edges?.filter(
           (edge) => anchorEdgeMatches(edge, button.dataset.anchorMode)
         ).length || 0;
-        button.textContent = `${anchorModeLabel(button.dataset.anchorMode)} ${count}`;
-        button.title = ({
-          confirmed: 'All parent → child directions; only relations that pass shared-evidence, contact, and anchor-alignment checks also appear under Shared Anchors',
-          shared: 'A strict subset of parent-child directions: explicit shared evidence, geometric contact, and A/B anchors within tolerance are all required',
-          issues: 'Relations that failed shared-anchor validation, including broken, misaligned, contact-only, and insufficient-evidence cases',
+        button.textContent = `${anchorModeLabel(button.dataset.anchorMode)} ${button.disabled ? '—' : count}`;
+        button.title = preview ? 'Browser preview: contact and shared-anchor checks have not been rerun.' : ({
+          confirmed: 'Show parent → child directions. Use Anchors to inspect saved attachment coordinates.',
+          shared: 'Display parent and child attachment coordinates. Showing an anchor does not mean its attachment has passed validation.',
           all: 'Show every relation found by runtime analysis',
         })[button.dataset.anchorMode] || '';
         button.classList.toggle('active', active);
         button.setAttribute('aria-pressed', String(active));
+      }
+      if (preview && ['anchors', 'tree3d', 'parts'].includes(graphState.view)) {
+        graphLegend.hidden = false;
+        graphLegend.textContent = 'Browser preview · checks not rerun. Anchor points stay visible and follow the edited geometry.';
+        return;
       }
       if (tree3dView) {
         graphLegend.hidden = false;
@@ -788,8 +815,8 @@
           <span class="graph-legend-item"><i class="graph-legend-line" style="border-color:#f1c75b"></i>Gold: top-level root parents</span>
           <span class="graph-legend-item"><i class="graph-legend-line code"></i>Blue: intermediate parent/child nodes and parent-child directions</span>
           <span class="graph-legend-item"><i class="graph-legend-line unknown"></i>Gray-purple: bottom-level leaf-only children</span>
-          <span class="graph-legend-item"><i class="graph-legend-line confirmed"></i>Green lines and highlighted points: shared anchors</span>
-          <span class="graph-legend-item"><i class="graph-legend-line broken"></i>Red/orange dashed lines: issue relations</span>`;
+          <span class="graph-legend-item"><i class="graph-legend-line confirmed"></i>Green: verified shared anchors</span>
+          <span class="graph-legend-item"><i class="graph-legend-line code"></i>Blue / gold: attachment coordinates</span>`;
         return;
       }
       if (graphState.view === 'anchors') {
@@ -811,8 +838,8 @@
       if (graphState.view === 'parts') {
         graphLegend.hidden = false;
         graphLegend.innerHTML = `
-          <span class="graph-legend-item"><i class="graph-legend-line static-code"></i>Static parent-child candidate: not yet validated as a shared anchor</span>
-          <span class="graph-legend-item"><i class="graph-legend-line static-construction"></i>Function-construction relation: not a solid geometric edge</span>`;
+          <span class="graph-legend-item"><i class="graph-legend-line static-code"></i>Observed parent–child relation</span>
+          <span class="graph-legend-item"><i class="graph-legend-line static-construction"></i>Only green relations have verified shared anchors</span>`;
         return;
       }
       graphLegend.hidden = true;
@@ -820,6 +847,10 @@
     }
 
     function showAnchorEdgeDetail(edge) {
+      if (edge.preview_only) {
+        graphDetail.textContent = `${edge.parent} → ${edge.child}\nBrowser preview · checks not rerun\nEndpoint A: ${anchorPointCoordinate(edge.anchor_a)}\nEndpoint B: ${anchorPointCoordinate(edge.anchor_b)}\nCurrent endpoint gap: ${formatGraphNumber(edge.anchor_gap)}\nContact and shared-anchor validity: not evaluated`;
+        return;
+      }
       const connector = isDirectedAnchorEdge(edge) ? ' → ' : ' — ';
       const contactLabel = edge.contact === null || edge.contact === undefined
         ? 'Waiting for Blender 5.0'
@@ -859,15 +890,15 @@
     }
 
     function sharedAnchorCoordinate(edge) {
-      if (edge.anchor_a?.length !== 3 || edge.anchor_b?.length !== 3) return 'Coordinates unavailable';
-      const midpoint = edge.anchor_a.map((value, index) => (value + edge.anchor_b[index]) / 2);
-      return `(${midpoint.map((value) => formatGraphNumber(value)).join(', ')})`;
+      const pair = displayAnchorPairs(edge)[0];
+      if (!pair) return 'Coordinates unavailable';
+      return `Parent ${anchorPointCoordinate(pair.parent)}\nChild ${anchorPointCoordinate(pair.child)}`;
     }
 
     function compactSharedAnchorCoordinate(edge) {
-      if (edge.anchor_a?.length !== 3 || edge.anchor_b?.length !== 3) return 'Coordinates unavailable';
-      const midpoint = edge.anchor_a.map((value, index) => (value + edge.anchor_b[index]) / 2);
-      return midpoint.map((value) => {
+      const pair = displayAnchorPairs(edge)[0];
+      if (!pair) return 'Coordinates unavailable';
+      return pair.parent.map((value) => {
         const normalized = Math.abs(value) < 0.005 ? 0 : value;
         return normalized.toFixed(2);
       }).join(', ');
@@ -878,26 +909,8 @@
       return `(${values.map((value) => formatGraphNumber(value)).join(', ')})`;
     }
 
-    function anchorIssueLabel(edge) {
-      if (edge.runtime_pending) return 'Code parent-child relation found; waiting for Blender to compute A/B anchors';
-      if (edge.parameter_invariance_failed) return 'Default anchor passes, but fails after changing the parent or child size';
-      if (edge.relation === 'BROKEN_ATTACHMENT') return 'Broken attachment: connection anchors are misaligned';
-      const authored = authoredAnchorStats(edge);
-      if (authored && authored.valid < authored.count) {
-        return `Authored anchors: ${authored.valid}/${authored.count} valid`;
-      }
-      if (isDirectedAnchorEdge(edge) && edge.contact && !edge.shared_anchor) {
-        return 'Parent-child relation confirmed; A/B are estimated anchors and are not shared';
-      }
-      if (edge.geometric_anchor_aligned && !edge.shared_anchor) {
-        return 'Geometrically close; A/B are estimated anchors and are not shared';
-      }
-      if (edge.contact && !edge.shared_anchor) return 'Objects are in contact, but the A/B anchors are not shared';
-      if (!edge.contact && !edge.shared_anchor) return 'Objects are not in contact, and the A/B anchors are not shared';
-      return runtimeRelationLabel(edge);
-    }
-
     function anchorMethodLabel(edge) {
+      if (edge.preview_only) return 'Current browser geometry transforms';
       if (edge.shared_anchor && edge.parameter_invariance?.passed) {
         return 'Explicit shared anchor in source; Blender 5.0 revalidated it after independently enlarging the parent and child';
       }
@@ -918,6 +931,7 @@
     }
 
     function sharedAnchorEvidenceLabel(edge) {
+      if (edge.preview_only) return 'Not evaluated for this browser preview';
       return ({
         runtime_direction: 'One-way runtime coupling',
         code_direction: 'One-way code data flow',
@@ -934,10 +948,10 @@
       if (!view.edges.length) {
         const message = makeSvg('text', { class: 'graph-empty', x: 410, y: 120 });
         message.textContent = graphState.anchorFocusNode
-          ? `${String(graphState.anchorFocusNode)} has no shared-anchor relations`
-          : 'The current model has no shared-anchor relations';
+          ? `${String(graphState.anchorFocusNode)} has no saved anchor coordinates`
+          : 'The current model has no saved anchor coordinates';
         graphNodes.append(message);
-        graphStatus.textContent = `Shared Anchors · 0/${rawView.edges.length} relations`;
+        graphStatus.textContent = `Anchors · 0/${rawView.edges.length} relations`;
         graphState.positions = new Map();
         graphState.content = { minX: 0, minY: 0, width: 820, height: 240 };
         updateGraphTransform();
@@ -1004,7 +1018,7 @@
           highlightPreviewGraphNodes([node], view, `${role}: ${node.label}`);
         });
         group.addEventListener('pointerleave', () => {
-          clearPreviewPartHighlight();
+          restorePinnedPreviewSelection();
         });
         return group;
       }
@@ -1013,6 +1027,8 @@
         const key = anchorEdgeKey(edge);
         const selected = graphState.selectedEdge === key;
         const confirmed = isStrictAnchorEdge(edge);
+        const verified = anchorDisplayVerified(edge);
+        const directed = isDirectedAnchorEdge(edge);
         const rowY = index * (laneHeight + laneGap) + 8;
         const endpointY = rowY + 19;
         const lineY = endpointY + endpointHeight / 2;
@@ -1045,7 +1061,7 @@
             d: `M ${x1} ${lineY} L ${x2} ${lineY}`,
           }));
           const connector = makeSvg('path', {
-            class: `anchor-lane-connector${confirmed ? ' confirmed' : ''}`,
+            class: `anchor-lane-connector${confirmed ? ' confirmed' : ''}${verified ? '' : ' unverified'}`,
             d: `M ${x1} ${lineY} L ${x2} ${lineY}`,
           });
           if (confirmed && x2 === rightX) connector.setAttribute('marker-end', 'url(#graph-arrow-confirmed)');
@@ -1053,12 +1069,12 @@
         }
 
         const center = makeSvg('g', {
-          class: `anchor-lane-center${confirmed ? ' confirmed' : ''}${selected ? ' selected' : ''}`,
+          class: `anchor-lane-center${confirmed ? ' confirmed' : ''}${verified ? '' : ' unverified'}${selected ? ' selected' : ''}`,
           transform: `translate(${centerX} ${endpointY})`,
           'data-anchor-edge': key,
           role: 'button',
           tabindex: '0',
-          'aria-label': `View the shared anchor between ${edge.parent} and ${edge.child}`,
+          'aria-label': `View attachment anchors between ${edge.parent} and ${edge.child}`,
         });
         center.append(makeSvg('rect', {
           x: 0,
@@ -1072,14 +1088,16 @@
           x: centerWidth / 2,
           y: 16,
         });
-        centerTitle.textContent = confirmed ? 'Shared Anchor · Confirmed Parent → Child' : 'Shared Anchor Proven · Direction Unknown';
+        centerTitle.textContent = verified ? 'Verified shared anchor'
+          : edge.preview_only ? 'Anchor pair · Preview' : 'Attachment anchor pair';
         center.append(centerTitle);
         const coordinate = makeSvg('text', {
           class: 'anchor-lane-center-coordinate',
           x: centerWidth / 2,
           y: 36,
         });
-        coordinate.textContent = sharedAnchorCoordinate(edge);
+        const pair = displayAnchorPairs(edge)[0];
+        coordinate.textContent = pair ? `Parent ${pair.parent.map((value) => value.toFixed(2)).join(', ')}` : 'Coordinates unavailable';
         center.append(coordinate);
         const centerMeta = makeSvg('text', {
           class: 'anchor-lane-center-meta',
@@ -1087,10 +1105,12 @@
           y: 53,
         });
         const authored = authoredAnchorSummary(edge, true);
-        centerMeta.textContent = `${authored ? `${authored} · ` : ''}Gap ${formatGraphNumber(edge.anchor_gap)} · Tolerance ${formatGraphNumber(edge.anchor_tolerance)}`;
+        centerMeta.textContent = edge.preview_only ? 'Checks not rerun' : verified
+          ? `${authored ? `${authored} · ` : ''}Gap ${formatGraphNumber(edge.anchor_gap)}`
+          : 'Coordinates shown · not verified as shared';
         center.append(centerMeta);
         const centerTooltip = makeSvg('title');
-        centerTooltip.textContent = `${edge.parent} — ${edge.child}\n${runtimeRelationLabel(edge)}\nHover: highlight both objects and show the shared anchor; move away: clear all highlights`;
+        centerTooltip.textContent = `${edge.parent} — ${edge.child}\n${runtimeRelationLabel(edge)}\nHover to highlight both parts and their attachment coordinates.`;
         center.append(centerTooltip);
         center.addEventListener('pointerenter', () => {
           const pairLabel = confirmed
@@ -1104,13 +1124,13 @@
           );
         });
         center.addEventListener('pointerleave', () => {
-          clearPreviewPartHighlight();
+          restorePinnedPreviewSelection();
         });
 
         graphNodes.append(
-          endpointGroup(parentNode, leftX, endpointY, confirmed ? 'Parent' : 'Endpoint A', 'a'),
+          endpointGroup(parentNode, leftX, endpointY, directed ? 'Parent' : 'Endpoint A', 'a'),
           center,
-          endpointGroup(childNode, rightX, endpointY, confirmed ? 'Child' : 'Endpoint B', 'b')
+          endpointGroup(childNode, rightX, endpointY, directed ? 'Child' : 'Endpoint B', 'b')
         );
         if (!positions.has(parentNode.id)) positions.set(parentNode.id, { x: leftX, y: endpointY });
         if (!positions.has(childNode.id)) positions.set(childNode.id, { x: rightX, y: endpointY });
@@ -1124,198 +1144,14 @@
         height: view.edges.length * (laneHeight + laneGap) + 6,
       };
       const focus = graphState.anchorFocusNode ? ` · Showing only ${String(graphState.anchorFocusNode)}` : '';
-      graphStatus.textContent = `Shared Anchors · ${view.edges.length} relations${focus} · Hover a parent/child box to highlight that object; hover the center box to highlight both objects and the anchor; move away to clear`;
-      updateGraphTransform();
-    }
-
-    function renderIssueAnchorLanes(rawView, view) {
-      anchorRelations.hidden = true;
-      if (!view.edges.length) {
-        const message = makeSvg('text', { class: 'graph-empty', x: 470, y: 120 });
-        message.textContent = graphState.anchorFocusNode
-          ? `${String(graphState.anchorFocusNode)} has no issue relations`
-          : 'The current model has no issue relations';
-        graphNodes.append(message);
-        graphStatus.textContent = `Issue Relations · 0/${rawView.edges.length} relations`;
-        graphState.positions = new Map();
-        graphState.content = { minX: 0, minY: 0, width: 960, height: 240 };
-        updateGraphTransform();
-        return;
-      }
-
-      if (
-        graphState.selectedEdge
-        && !view.edges.some((edge) => anchorEdgeKey(edge) === graphState.selectedEdge)
-      ) graphState.selectedEdge = null;
-
-      const nodeById = new Map(rawView.nodes.map((node) => [node.id, node]));
-      const positions = new Map();
-      const laneWidth = 980;
-      const laneHeight = 114;
-      const laneGap = 10;
-      const endpointWidth = 204;
-      const endpointHeight = 68;
-      const leftX = 42;
-      const centerX = 286;
-      const centerWidth = 450;
-      const rightX = 776;
-      const query = graphState.query.trim().toLowerCase();
-
-      function issueEndpointGroup(node, x, y, role, side) {
-        const group = makeSvg('g', {
-          class: `issue-lane-node endpoint-${side}`,
-          transform: `translate(${x} ${y})`,
-          'data-graph-node': node.id,
-          role: 'button',
-          tabindex: '0',
-          'aria-label': `${role} ${node.label}`,
-        });
-        if (graphState.selected === node.id) group.classList.add('selected');
-        if (
-          query
-          && (
-            String(node.label).toLowerCase().includes(query)
-            || String(node.id).toLowerCase().includes(query)
-            || String(node.part_name || '').toLowerCase().includes(query)
-          )
-        ) group.classList.add('selected');
-        group.append(makeSvg('rect', {
-          x: 0,
-          y: 0,
-          width: endpointWidth,
-          height: endpointHeight,
-          rx: 9,
-        }));
-        const roleText = makeSvg('text', { class: 'anchor-lane-role', x: 12, y: 17 });
-        roleText.textContent = role;
-        group.append(roleText);
-        const label = makeSvg('text', { class: 'anchor-lane-label', x: 12, y: 39 });
-        label.textContent = truncateNodeLabel(node.label, 27);
-        group.append(label);
-        const meta = makeSvg('text', { class: 'anchor-lane-meta', x: 12, y: 57 });
-        meta.textContent = truncateNodeLabel(node.part_name || node.group || node.id, 30);
-        group.append(meta);
-        const title = makeSvg('title');
-        title.textContent = `${role}: ${node.label}`;
-        group.append(title);
-        return group;
-      }
-
-      view.edges.forEach((edge, index) => {
-        const key = anchorEdgeKey(edge);
-        const selected = graphState.selectedEdge === key;
-        const contactOnly = edge.relation !== 'BROKEN_ATTACHMENT' && edge.contact && !edge.shared_anchor;
-        const rowY = index * (laneHeight + laneGap) + 8;
-        const endpointY = rowY + 23;
-        const lineY = endpointY + endpointHeight / 2;
-        const leftNode = nodeById.get(edge.parent) || { id: edge.parent, label: edge.parent };
-        const rightNode = nodeById.get(edge.child) || { id: edge.child, label: edge.child };
-
-        graphEdges.append(makeSvg('rect', {
-          class: `anchor-lane-bg${selected ? ' selected' : ''}`,
-          x: 8,
-          y: rowY,
-          width: laneWidth,
-          height: laneHeight,
-          rx: 10,
-        }));
-        const number = makeSvg('text', {
-          class: 'anchor-lane-number',
-          x: 25,
-          y: rowY + laneHeight / 2,
-        });
-        number.textContent = String(index + 1);
-        graphEdges.append(number);
-
-        for (const [x1, x2] of [
-          [leftX + endpointWidth, centerX],
-          [centerX + centerWidth, rightX],
-        ]) {
-          graphEdges.append(makeSvg('path', {
-            class: 'anchor-lane-connector-halo',
-            d: `M ${x1} ${lineY} L ${x2} ${lineY}`,
-          }));
-          graphEdges.append(makeSvg('path', {
-            class: `issue-lane-connector${contactOnly ? ' contact-only' : ''}`,
-            d: `M ${x1} ${lineY} L ${x2} ${lineY}`,
-          }));
-        }
-
-        const center = makeSvg('g', {
-          class: `issue-lane-center${contactOnly ? ' contact-only' : ''}${selected ? ' selected' : ''}`,
-          transform: `translate(${centerX} ${endpointY - 5})`,
-          'data-anchor-edge': key,
-          role: 'button',
-          tabindex: '0',
-          'aria-label': `View the anchor issue between ${edge.parent} and ${edge.child}`,
-        });
-        center.append(makeSvg('rect', {
-          x: 0,
-          y: 0,
-          width: centerWidth,
-          height: endpointHeight + 10,
-          rx: 9,
-        }));
-        const title = makeSvg('text', {
-          class: 'issue-lane-center-title',
-          x: centerWidth / 2,
-          y: 16,
-        });
-        title.textContent = anchorIssueLabel(edge);
-        center.append(title);
-        const coordinateA = makeSvg('text', {
-          class: 'issue-lane-coordinate',
-          x: centerWidth / 2,
-          y: 34,
-        });
-        const authored = authoredAnchorStats(edge);
-        const pointKind = authored ? 'authored-anchor representative' : 'estimated anchor';
-        coordinateA.textContent = `A ${pointKind} ${anchorPointCoordinate(edge.anchor_a)}`;
-        center.append(coordinateA);
-        const coordinateB = makeSvg('text', {
-          class: 'issue-lane-coordinate',
-          x: centerWidth / 2,
-          y: 49,
-        });
-        coordinateB.textContent = `B ${pointKind} ${anchorPointCoordinate(edge.anchor_b)}`;
-        center.append(coordinateB);
-        const meta = makeSvg('text', {
-          class: 'issue-lane-meta',
-          x: centerWidth / 2,
-          y: 66,
-        });
-        const authoredMeta = authoredAnchorSummary(edge, true);
-        meta.textContent = `${authoredMeta ? `${authoredMeta} · ` : ''}Gap ${formatGraphNumber(edge.anchor_gap)} · Contact ${edge.contact ? 'Yes' : 'No'}`;
-        center.append(meta);
-        const tooltip = makeSvg('title');
-        tooltip.textContent = `${edge.parent} — ${edge.child}\n${anchorIssueLabel(edge)}`;
-        center.append(tooltip);
-
-        graphNodes.append(
-          issueEndpointGroup(leftNode, leftX, endpointY, 'Object A', 'a'),
-          center,
-          issueEndpointGroup(rightNode, rightX, endpointY, 'Object B', 'b')
-        );
-        if (!positions.has(leftNode.id)) positions.set(leftNode.id, { x: leftX, y: endpointY });
-        if (!positions.has(rightNode.id)) positions.set(rightNode.id, { x: rightX, y: endpointY });
-      });
-
-      graphState.positions = positions;
-      graphState.content = {
-        minX: 0,
-        minY: 0,
-        width: laneWidth + 16,
-        height: view.edges.length * (laneHeight + laneGap) + 6,
-      };
-      const focus = graphState.anchorFocusNode ? ` · Showing only ${String(graphState.anchorFocusNode)}` : '';
-      graphStatus.textContent = `Issue Relations · ${view.edges.length}${focus} · Click the center issue card to highlight objects A/B together; geometric proximity without connection evidence also appears here`;
+      graphStatus.textContent = `Anchors · ${view.edges.length} relations${focus} · Hover or click an anchor pair to inspect its attachment coordinates`;
       updateGraphTransform();
     }
 
     function renderAnchorRelations(view) {
       anchorRelations.replaceChildren();
       if (graphState.view !== 'anchors') return;
-      if (graphState.anchorMode === 'shared' || graphState.anchorMode === 'issues') {
+      if (graphState.anchorMode === 'shared') {
         anchorRelations.hidden = true;
         return;
       }
@@ -1359,26 +1195,18 @@
       if (!edge) return;
       graphState.selectedEdge = key;
       graphState.selected = null;
-      const issuePair = graphState.view === 'anchors' && graphState.anchorMode === 'issues';
-      if (edge.shared_anchor || issuePair || isDirectedAnchorEdge(edge)) {
-        const nodeById = new Map(view.nodes.map((node) => [node.id, node]));
-        const endpoints = [nodeById.get(edge.parent), nodeById.get(edge.child)].filter(Boolean);
-        const pairLabel = issuePair
-          ? `Issue object A: ${edge.parent} + Issue object B: ${edge.child}`
-          : (isStrictAnchorEdge(edge)
-            ? `Parent: ${edge.parent} + Child: ${edge.child}`
-            : `Endpoint A: ${edge.parent} + Endpoint B: ${edge.child}`);
-        highlightPreviewGraphNodes(
-          endpoints,
-          view,
-          pairLabel,
-          edge
-        );
-      } else {
-        clearPreviewPartHighlight();
-      }
+      highlightAnchorEdge(edge, view);
       showAnchorEdgeDetail(edge);
       renderGraph();
+    }
+
+    function highlightAnchorEdge(edge, view) {
+      const nodeById = new Map(view.nodes.map((node) => [node.id, node]));
+      const endpoints = [nodeById.get(edge.parent), nodeById.get(edge.child)].filter(Boolean);
+      const pairLabel = isStrictAnchorEdge(edge)
+        ? `Parent: ${edge.parent} + Child: ${edge.child}`
+        : `Endpoint A: ${edge.parent} + Endpoint B: ${edge.child}`;
+      highlightPreviewGraphNodes(endpoints, view, pairLabel, edge);
     }
 
     function clearTree3DScene() {
@@ -1772,23 +1600,9 @@
     }
 
     function tree3dAuthoredAnchorPairs(edge) {
-      const pairs = [];
-      const seen = new Set();
-      for (const declaration of edge?.declared_directions || []) {
-        if (!String(declaration.source || '').includes(':authored_anchor')) continue;
-        const parent = declaration.parent_anchor_world;
-        const child = declaration.child_anchor_world;
-        if (![parent, child].every(
-          (point) => Array.isArray(point)
-            && point.length === 3
-            && point.every(Number.isFinite)
-        )) continue;
-        const key = `${parent.join(',')}|${child.join(',')}`;
-        if (seen.has(key)) continue;
-        seen.add(key);
-        pairs.push({ parent, child });
-      }
-      return pairs;
+      return displayAnchorPairs(edge).map((pair) => pair.parentId === edge.parent
+        ? { parent: pair.parent, child: pair.child }
+        : { parent: pair.child, child: pair.parent });
     }
 
     function buildTree3DLineageSelection(hit, hitKey) {
@@ -2117,13 +1931,15 @@
 
       const sharedEdges = [...new Map(
         (view.edges || [])
-          .filter((edge) => edge.shared_anchor)
+          .filter(isAnchorDisplayEdge)
           .map((edge) => [[edge.parent, edge.child].sort((a, b) => String(a).localeCompare(String(b))).join('|'), edge])
       ).values()];
       const displayedSharedPairs = new Set();
       let sharedCount = 0;
       const addSharedTreeNode = (edge, parent, child, directed) => {
-        if (edge.shared_anchor !== true) return;
+        if (!isAnchorDisplayEdge(edge)) return;
+        const verified = anchorDisplayVerified(edge);
+        const anchorColor = verified ? 0x188038 : 0x607d9b;
         const pairKey = [edge.parent, edge.child].sort((a, b) => String(a).localeCompare(String(b))).join('|');
         if (displayedSharedPairs.has(pairKey)) return;
         displayedSharedPairs.add(pairKey);
@@ -2157,17 +1973,17 @@
             );
           }
         } else {
-          addTree3DLine([parent, anchorPosition], 0x188038, { opacity: 0.82, focusPair });
-          addTree3DLine([anchorPosition, child], 0x188038, { opacity: 0.82, focusPair });
-          if (directed) addTree3DArrow(anchorPosition, child, 0x188038, 0.78, focusPair);
+          addTree3DLine([parent, anchorPosition], anchorColor, { opacity: 0.82, focusPair });
+          addTree3DLine([anchorPosition, child], anchorColor, { opacity: 0.82, focusPair });
+          if (directed) addTree3DArrow(anchorPosition, child, anchorColor, 0.78, focusPair);
         }
         const anchorNode = new THREE.Mesh(
           new THREE.SphereGeometry(0.135, 20, 14),
           new THREE.MeshStandardMaterial({
-            color: 0x39d98a,
+            color: verified ? 0x39d98a : 0xffc107,
             roughness: 0.38,
             metalness: 0.02,
-            emissive: 0x1fa568,
+            emissive: verified ? 0x1fa568 : 0x5c4400,
             emissiveIntensity: 0.45,
           })
         );
@@ -2249,9 +2065,9 @@
               minWidth: 72,
               paddingX: 9,
               paddingY: 5,
-              color: '#137333',
-              background: 'rgba(230, 244, 234, 0.96)',
-              border: 'rgba(57, 217, 138, 0.52)',
+              color: verified ? '#137333' : '#455a70',
+              background: verified ? 'rgba(230, 244, 234, 0.96)' : 'rgba(237, 241, 245, 0.96)',
+              border: verified ? 'rgba(57, 217, 138, 0.52)' : 'rgba(96, 125, 155, 0.52)',
               focusPair,
             }
           );
@@ -2265,7 +2081,7 @@
         const child = layout.positions.get(edge.child);
         if (!parent || !child) continue;
         const focusPair = tree3dPairKey(edge.parent, edge.child);
-        const showAnchor = graphState.tree3dShowShared && Boolean(edge.shared_anchor);
+        const showAnchor = graphState.tree3dShowShared && isAnchorDisplayEdge(edge);
         if (showAnchor) {
           addSharedTreeNode(edge, parent, child, true);
         } else {
@@ -2286,68 +2102,6 @@
           if (!endpointA || !endpointB) continue;
           addSharedTreeNode(edge, endpointA, endpointB, isDirectedAnchorEdge(edge));
         }
-      }
-
-      const issueEdges = (view.edges || []).filter((edge) => anchorEdgeMatches(edge, 'issues'));
-      let shownIssues = 0;
-      if (graphState.tree3dShowIssues) {
-        issueEdges.forEach((edge, index) => {
-          const parent = layout.positions.get(edge.parent);
-          const child = layout.positions.get(edge.child);
-          if (!parent || !child) return;
-          shownIssues += 1;
-          const midpoint = parent.clone().lerp(child, 0.5);
-          const direction = child.clone().sub(parent);
-          const side = new THREE.Vector3(-direction.z, 0, direction.x);
-          if (side.lengthSq() > 1e-8) side.normalize();
-          midpoint.addScaledVector(side, 0.32 + (index % 3) * 0.08);
-          const broken = edge.relation === 'BROKEN_ATTACHMENT' || edge.geometric_anchor_aligned === false;
-          const color = broken ? 0xff646d : 0xe7a84f;
-          const focusPair = tree3dPairKey(edge.parent, edge.child);
-          addTree3DLine([parent, midpoint, child], color, {
-            dashed: true,
-            opacity: 0.94,
-            focusPair,
-          });
-          const issueNode = new THREE.Mesh(
-            new THREE.OctahedronGeometry(0.18, 0),
-            new THREE.MeshBasicMaterial({ color, toneMapped: false })
-          );
-          issueNode.position.copy(midpoint);
-          issueNode.userData.tree3dHit = {
-            kind: 'issue',
-            edge,
-            view,
-            parentNode: layout.nodeById.get(edge.parent),
-            childNode: layout.nodeById.get(edge.child),
-          };
-          issueNode.userData.tree3dHitKey = `issue:${focusPair}:${edge.relation}`;
-          issueNode.userData.tree3dFocusType = 'edge';
-          issueNode.userData.tree3dFocusPair = focusPair;
-          tree3dInteractiveObjects.push(issueNode);
-          tree3dRoot.add(issueNode);
-          const authored = authoredAnchorStats(edge);
-          if (authored) {
-            const issueLabel = addTree3DLabel(
-              `Anchors ${authored.valid}/${authored.count}`,
-              midpoint.clone().add(new THREE.Vector3(0, -0.32, 0)),
-              {
-                fontSize: 15,
-                scale: 0.004,
-                minWidth: 58,
-                paddingX: 8,
-                paddingY: 4,
-                color: '#8a5200',
-                background: 'rgba(254, 247, 224, 0.96)',
-                border: 'rgba(231, 168, 79, 0.58)',
-                focusPair,
-              }
-            );
-            issueLabel.userData.tree3dHit = issueNode.userData.tree3dHit;
-            issueLabel.userData.tree3dHitKey = issueNode.userData.tree3dHitKey;
-            tree3dInteractiveObjects.push(issueLabel);
-          }
-        });
       }
 
       if (isCoffeeTablePublicationTree() && displayedPartGroups.size) {
@@ -2382,7 +2136,9 @@
       const authoredNote = authoredTotals.count
         ? ` · Authored anchors ${authoredTotals.valid}/${authoredTotals.count}`
         : '';
-      tree3dControlNote.textContent = `Shared relations ${sharedCount}/${sharedEdges.length} · Issue relations ${shownIssues}/${issueEdges.length}${authoredNote}`;
+      tree3dControlNote.textContent = view.preview_only
+        ? `Anchors ${sharedCount}/${sharedEdges.length} · Preview · checks not rerun`
+        : `Anchors ${sharedCount}/${sharedEdges.length}${authoredNote}`;
       applyTree3DSelectionAppearance();
       resizeTree3D();
       fitTree3D();
@@ -2478,7 +2234,7 @@
       const endpoints = [hit.parentNode, hit.childNode].filter(Boolean);
       if (hit.kind === 'anchor') {
         const authored = authoredAnchorSummary(hit.edge, true);
-        tree3dTooltip.textContent = `Shared-anchor world coordinates\n${sharedAnchorCoordinate(hit.edge)}\n${hit.edge.parent} → ${hit.edge.child}${authored ? `\n${authored}` : ''}`;
+        tree3dTooltip.textContent = `${anchorDisplayVerified(hit.edge) ? 'Verified shared anchor' : 'Attachment coordinates'}\n${sharedAnchorCoordinate(hit.edge)}\n${hit.edge.parent} → ${hit.edge.child}${authored ? `\n${authored}` : ''}`;
         highlightPreviewGraphNodes(
           endpoints,
           hit.view,
@@ -2487,14 +2243,7 @@
         );
         return;
       }
-      const authored = authoredAnchorSummary(hit.edge, true);
-      tree3dTooltip.textContent = `Issue Relation\n${anchorIssueLabel(hit.edge)}\n${hit.edge.parent} — ${hit.edge.child}${authored ? `\n${authored}` : ''}\nGap ${formatGraphNumber(hit.edge.anchor_gap)}`;
-      highlightPreviewGraphNodes(
-        endpoints,
-        hit.view,
-        `Issue objects: ${hit.edge.parent} + ${hit.edge.child}`,
-        hit.edge
-      );
+      tree3dTooltip.hidden = true;
     }
 
     function pickTree3DObject(event) {
@@ -2510,6 +2259,7 @@
     }
 
     function updateTree3DPointer(event) {
+      if (event.buttons) return;
       applyTree3DHover(pickTree3DObject(event), event);
     }
 
@@ -2519,30 +2269,14 @@
       applyTree3DSelectionAppearance();
       updateTree3DSelectionStatus();
       tree3dTooltip.hidden = true;
-      clearPreviewPartHighlight();
-      restorePinnedTreeSelection(true);
-    }
-
-    function showTree3DHitDetail(hit) {
-      if (!hit) return;
-      if (hit.edge) {
-        showAnchorEdgeDetail(hit.edge);
-        return;
-      }
-      const edges = tree3dDirectedEdges(hit.view);
-      const parents = edges.filter((edge) => edge.child === hit.node.id).map((edge) => edge.parent);
-      const children = edges.filter((edge) => edge.parent === hit.node.id).map((edge) => edge.child);
-      graphDetail.textContent = [
-        `${hit.node.label || hit.node.id} · ${hit.role}`,
-        `Parents: ${parents.length ? parents.join(', ') : 'None (root node)'}`,
-        `Direct children (${children.length}): ${children.length ? children.join(', ') : 'None (leaf child)'}`,
-        'Hover this node to highlight only the corresponding part in the 3D model on the right.',
-      ].join('\n');
+      restorePinnedTreeSelection();
+      restorePinnedPreviewSelection();
     }
 
     function renderGraph() {
       const tree3dView = graphState.view === 'tree3d';
-      graphSvg.hidden = tree3dView;
+      // SVGElement does not reflect a `.hidden` property to the HTML attribute.
+      graphSvg.toggleAttribute('hidden', tree3dView);
       tree3dStage.hidden = !tree3dView;
       if (tree3dView) {
         updateGraphLegend();
@@ -2573,10 +2307,6 @@
       if (relationView) renderAnchorRelations(relationView);
       if (rawView && relationView && graphState.view === 'anchors' && graphState.anchorMode === 'shared') {
         renderSharedAnchorLanes(rawView, relationView);
-        return;
-      }
-      if (rawView && relationView && graphState.view === 'anchors' && graphState.anchorMode === 'issues') {
-        renderIssueAnchorLanes(rawView, relationView);
         return;
       }
       if (!view || !view.nodes.length) {
@@ -2703,6 +2433,7 @@
           transform: `translate(${position.x} ${position.y})`,
           'data-graph-node': node.id,
           role: 'button',
+          tabindex: '0',
           'aria-label': node.label,
         });
         if (graphState.view === 'parts' && !partNodeIsVisible(node)) {
@@ -2784,6 +2515,7 @@
       } else {
         graphStatus.textContent = `${view.label} · ${layout.positions.size}/${view.nodes.length} nodes · ${layout.visibleEdges.length} relations · ${navigationHint}`;
       }
+      if (rawView.preview_only) graphStatus.textContent = `Browser preview · checks not rerun · ${layout.positions.size}/${view.nodes.length} nodes · ${layout.visibleEdges.length} topology relations`;
       updateGraphTransform();
     }
 
@@ -2794,7 +2526,7 @@
       const scaleX = (rect.width - 36) / Math.max(content.width, 1);
       const scaleY = (rect.height - 36) / Math.max(content.height, 1);
       const laneView = graphState.view === 'anchors'
-        && (graphState.anchorMode === 'shared' || graphState.anchorMode === 'issues');
+        && (graphState.anchorMode === 'shared');
       if (laneView) {
         graphState.scale = Math.max(0.58, Math.min(1.0, scaleX));
         graphState.tx = (rect.width - content.width * graphState.scale) / 2 - content.minX * graphState.scale;
@@ -2847,9 +2579,10 @@
           : relatedNode.label;
       };
       graphState.selected = id;
+      if (typeof setEditTarget === 'function') setEditTarget(id);
+      graphState.selectedEdge = null;
       if (graphState.view === 'anchors') {
         graphState.anchorFocusNode = id;
-        graphState.selectedEdge = null;
       }
       const parents = view.edges.filter((edge) => edge.child === id);
       const children = view.edges.filter((edge) => edge.parent === id);
@@ -2862,7 +2595,7 @@
           : []),
       ];
       const relationLaneView = graphState.view === 'anchors'
-        && (graphState.anchorMode === 'shared' || graphState.anchorMode === 'issues');
+        && (graphState.anchorMode === 'shared');
       if (relationLaneView) {
         const relatedEdges = view.edges.filter(
           (edge) => (edge.parent === id || edge.child === id) && anchorEdgeMatches(edge)
@@ -2870,7 +2603,7 @@
         const partners = relatedEdges.map((edge) => relationLabel(
           edge.parent === id ? edge.child : edge.parent
         ));
-        const partnerTitle = graphState.anchorMode === 'issues' ? 'Issue-relation objects' : 'Shared-anchor objects';
+        const partnerTitle = 'Shared-anchor objects';
         lines.push(`${partnerTitle} (${partners.length}): ${partners.length ? partners.join(', ') : 'None'}`);
       } else {
         lines.push(
@@ -2888,7 +2621,7 @@
         lines.push(
           `${anchorModeLabel(graphState.anchorMode)}: ${relatedEdges.length} one-hop relations`,
           relationLaneView
-            ? `Only relation rows involving this object are shown; click “Back to Overview” to restore all ${graphState.anchorMode === 'issues' ? 'issue relations' : 'shared anchors'}.`
+            ? `Only relation rows involving this object are shown; click “Back to Overview” to restore all shared anchors.`
             : 'Unrelated nodes are hidden; click any relation card below to inspect both endpoints and exact world coordinates.'
         );
       }
@@ -2948,22 +2681,22 @@
         tree3dFullscreenButton.setAttribute('aria-pressed', 'false');
       }
       graphDetail.textContent = viewName === 'tree3d'
-        ? '3D Hierarchy: root parents are at the top; parts that are both children and parents are in the middle; leaf-only children are at the bottom. Shared-anchor world-space nodes and issue relations can be displayed independently.'
+        ? '3D Hierarchy: root parents are at the top; parts that are both children and parents are in the middle; leaf-only children are at the bottom. Enable Anchors to display attachment coordinates, including unverified pairs.'
         : (viewName === 'anchors'
         ? (!view.edges?.length
           ? `Blender 5.0 runtime analysis complete: ${view.nodes.length} meshes, 0 physical parent-child relations, and 0 shared anchors. Click the only node to highlight its entire mesh on the right.`
           : (graphState.anchorMode === 'shared'
-          ? 'Each row represents one shared-anchor relation. Hover a parent/child box to highlight that object; hover the center shared-anchor box to highlight both and show the green anchor sphere; move away to clear all highlights.'
-          : (graphState.anchorMode === 'issues'
-            ? 'Each row compares the estimated A/B anchor coordinates, gap, and tolerance for one issue relation. Click the center issue card to highlight objects A and B together on the right. Red indicates a broken or misaligned attachment; orange indicates contact without a shared anchor.'
-            : 'By default, only parent-child directions are shown. Blue means the parent → child direction is known but A/B are only estimated anchors; only green denotes a shared anchor. Click a relation card to inspect its estimation method and coordinates.')))
+          ? 'Each row displays a pair of attachment coordinates. Hover a part or anchor pair to inspect it in the model.'
+          : 'By default, only parent-child directions are shown. Blue means the parent → child direction is known but A/B are only estimated anchors; only green denotes a shared anchor. Click a relation card to inspect its estimation method and coordinates.'))
         : 'Click a node to view its parents, all direct children, and source line numbers.');
+      if (view.preview_only) graphDetail.textContent = 'Browser preview · checks not rerun. Select a part to resize it or a relation to inspect its current endpoint coordinates.';
       updateGraphTabs();
       renderGraph();
       requestAnimationFrame(resetGraphPosition);
     }
 
     function initializeGraph(data) {
+      const preferredView = graphState.view;
       clearPreviewPartHighlight();
       tree3dSelection = null;
       tree3dLastLayout = null;
@@ -2979,13 +2712,14 @@
       graphState.selectedEdge = null;
       graphState.anchorFocusNode = null;
       graphState.anchorMode = fallback.edges.length ? 'confirmed' : 'all';
-      if (tree3dSourceView()?.nodes?.length) {
-        setGraphView('tree3d');
+      const nextView = [preferredView, 'parts', 'tree3d', 'anchors', 'definitions', 'calls'].find((name) => {
+        const view = name === 'tree3d' ? tree3dSourceView() : data.views[name];
+        return view?.nodes?.length;
+      });
+      if (nextView) {
+        setGraphView(nextView);
         return;
       }
-      graphState.view = data.views.parts.nodes.length
-        ? 'parts'
-        : (data.views.definitions.nodes.length ? 'definitions' : 'calls');
       updateGraphTabs();
       renderGraph();
       requestAnimationFrame(resetGraphPosition);
@@ -3035,6 +2769,7 @@
         mesh.userData?.stage7_part_id,
         mesh.userData?.codex_semantic_node_id,
         mesh.userData?.codex_attachment_helper,
+        ...(mesh.userData?.explorerPartAliases || []),
       ].filter(Boolean).map(String))];
     }
 
@@ -3150,6 +2885,7 @@
 
     function runtimePointToPreview(values) {
       if (!currentModel || values?.length !== 3) return null;
+      if (typeof continuousEditor !== 'undefined' && continuousEditor) return continuousEditor.runtimePointToWorld(values);
       const bounds = structureData?.views?.anchors?.source_bounds;
       if (bounds?.min?.length !== 3 || bounds?.max?.length !== 3) return null;
       const box = new THREE.Box3().setFromObject(currentModel);
@@ -3204,36 +2940,36 @@
       previewAnchorOverlay.add(line);
     }
 
-    function showPreviewAnchorOverlay(edge, view) {
+    function showPreviewAnchorOverlay(edge) {
       clearPreviewAnchorOverlay();
-      const pointA = runtimePointToPreview(edge?.anchor_a);
-      const pointB = runtimePointToPreview(edge?.anchor_b);
-      if (!pointA || !pointB || !currentModel) return false;
+      if (!currentModel || !displayOptions.anchors) return false;
+      const pairs = displayAnchorPairs(edge);
+      if (!pairs.length) return false;
       const modelBox = new THREE.Box3().setFromObject(currentModel);
-      const size = modelBox.getSize(new THREE.Vector3());
-      const radius = Math.max(size.length() * 0.01, 0.008);
-      const midpoint = pointA.clone().add(pointB).multiplyScalar(0.5);
-      const nodeById = new Map((view?.nodes || []).map((node) => [node.id, node]));
-      const parentCenter = runtimePointToPreview(nodeById.get(edge.parent)?.center);
-      const childCenter = runtimePointToPreview(nodeById.get(edge.child)?.center);
-
-      if (edge.shared_anchor) {
-        // A confirmed shared anchor is one world-space position. Display exactly
-        // one sphere there; do not overlay endpoint markers, halos, or guide lines.
-        addPreviewAnchorSphere(midpoint, radius, 0x00ff66, {
-          renderOrder: 22,
-        });
-      } else {
-        addPreviewAnchorLine(parentCenter, midpoint, 0x48d8ff);
-        addPreviewAnchorLine(midpoint, childCenter, 0xd77cff);
-        addPreviewAnchorLine(pointA, pointB, 0xff746f);
-        if (parentCenter) addPreviewAnchorSphere(parentCenter, radius * 0.36, 0x48d8ff, { opacity: 0.9 });
-        if (childCenter) addPreviewAnchorSphere(childCenter, radius * 0.36, 0xd77cff, { opacity: 0.9 });
-        addPreviewAnchorSphere(pointA, radius * 0.7, 0x48d8ff);
-        addPreviewAnchorSphere(pointB, radius * 0.7, 0xd77cff);
-        addPreviewAnchorSphere(midpoint, radius * 0.82, 0xff746f, { pulse: true });
+      const radius = Math.max(modelBox.getSize(new THREE.Vector3()).length() * 0.01, 0.008);
+      for (const pair of pairs) {
+        const parent = runtimePointToPreview(pair.parent);
+        const child = runtimePointToPreview(pair.child);
+        if (!parent || !child) continue;
+        addPreviewAnchorSphere(parent, radius, 0xffc107, { renderOrder: 22 });
+        if (parent.distanceTo(child) > radius * 0.05) {
+          addPreviewAnchorSphere(child, radius * 0.85, 0x48d8ff, { renderOrder: 23 });
+          addPreviewAnchorLine(parent, child, 0x607d9b);
+        }
       }
       return true;
+    }
+
+    function updateModelAnchors() {
+      const runtime = currentModel && structureData?.views?.anchors;
+      const partIds = new Set((previewHighlightRequest?.nodes || [])
+        .filter((node) => matchingPreviewMeshes(node, previewHighlightRequest.view)
+          .some((mesh) => mesh.userData.playgroundHighlighted === true))
+        .map((node) => node.id));
+      previewAnchorOverlay.visible = Boolean(displayOptions.anchors && partIds.size && previewHighlightRequest?.edge);
+      if (!runtime) { modelAnchors.setVisible(false); return; }
+      const visible = displayOptions.anchors && partIds.size > 0 && !previewHighlightRequest?.edge;
+      modelAnchors.update(runtime, { visible, partIds });
     }
 
     function clearPreviewPartHighlight(resetRequest = true) {
@@ -3247,6 +2983,7 @@
           child.renderOrder = child.userData.playgroundOriginalRenderOrder || 0;
           delete child.userData.playgroundOriginalMaterial;
           delete child.userData.playgroundOriginalRenderOrder;
+          delete child.userData.playgroundHighlighted;
         });
       }
       if (resetRequest) previewHighlightRequest = null;
@@ -3261,19 +2998,21 @@
       clearPreviewPartHighlight(false);
       if (!previewHighlightRequest || !currentModel) return;
       const { nodes, view, label, edge } = previewHighlightRequest;
-      const anchorVisible = edge ? showPreviewAnchorOverlay(edge, view) : false;
-      previewSelection.classList.toggle('anchor-visible', anchorVisible);
       const matched = new Set();
       for (const node of nodes) {
         for (const mesh of matchingPreviewMeshes(node, view)) matched.add(mesh);
       }
+      const anchorVisible = matched.size && edge ? showPreviewAnchorOverlay(edge, view) : false;
+      previewSelection.classList.toggle('anchor-visible', anchorVisible);
       if (!matched.size) {
         previewSelection.hidden = false;
         previewSelection.classList.toggle('missing', !anchorVisible);
         previewSelectionLabel.textContent = anchorVisible
-          ? (edge.shared_anchor
-            ? `Shared anchor: ${label} · Yellow = parent/child parts; green sphere = shared world coordinate`
-            : `Anchor pair: ${label} · Cyan sphere = A, purple sphere = B, red sphere = midpoint`)
+          ? (edge.preview_only
+            ? `Browser preview: ${label} · Yellow = parent, cyan = child · checks not rerun`
+            : edge.shared_anchor
+            ? `Shared anchor: ${label} · Yellow = parent, cyan = child`
+            : `Anchor pair: ${label} · Yellow = parent, cyan = child`)
           : `No separate mesh found for “${label}”`;
         return;
       }
@@ -3289,6 +3028,7 @@
         const original = child.material;
         child.userData.playgroundOriginalMaterial = original;
         child.userData.playgroundOriginalRenderOrder = child.renderOrder;
+        child.userData.playgroundHighlighted = highlighted;
         child.material = Array.isArray(original)
           ? original.map((material) => previewMaterialClone(material, highlighted))
           : previewMaterialClone(original, highlighted);
@@ -3299,9 +3039,11 @@
       previewSelection.hidden = false;
       previewSelection.classList.remove('missing');
       previewSelectionLabel.textContent = anchorVisible
-        ? (edge.shared_anchor
-          ? `Highlighted: ${label} · ${meshCount} meshes · Yellow = parent/child parts; green sphere = shared-anchor world coordinate`
-          : `Highlighted: ${label} · ${meshCount} meshes · Cyan sphere = A, purple sphere = B`)
+        ? (edge.preview_only
+          ? `Highlighted: ${label} · ${meshCount} meshes · Browser preview · checks not rerun`
+          : edge.shared_anchor
+          ? `Highlighted: ${label} · ${meshCount} meshes · Yellow = parent anchor, cyan = child anchor`
+          : `Highlighted: ${label} · ${meshCount} meshes · Yellow = parent anchor, cyan = child anchor`)
         : `Highlighted: ${label} · ${meshCount} meshes`;
     }
 
@@ -3365,43 +3107,52 @@
       orbit.update();
     }
 
-    async function loadGLB(url, version) {
-      const gltf = await loader.loadAsync(url);
-      if (version !== generationVersion) {
-        disposeObject(gltf.scene);
-        return;
-      }
-      if (currentModel) {
-        clearPreviewPartHighlight(false);
-        scene.remove(currentModel);
-        disposeObject(currentModel);
-      }
+    function installGLB(gltf, meshMap = []) {
       currentModel = gltf.scene;
       currentModel.traverse((child) => {
         if (child.isMesh) {
           child.castShadow = true;
           child.receiveShadow = true;
+          const meshIndex = gltf.parser?.associations.get(child)?.meshes;
+          const rows = meshMap.filter((row) => row.mesh_index === meshIndex);
+          const row = meshMap.find((item) => item.id === child.name)
+            || (rows.length === 1 ? rows[0] : null);
+          if (row) child.userData.explorerPartAliases = [row.id, row.part_id].filter(Boolean);
         }
       });
       scene.add(currentModel);
-      fitCamera(false);
-      applyPreviewPartHighlight();
-      if (graphState.view === 'tree3d' && graphState.tree3dShowRealParts) renderTree3D();
     }
 
 
+    function restorePinnedPreviewSelection() {
+      const view = graphView();
+      const edge = view?.edges.find((candidate) => anchorEdgeKey(candidate) === graphState.selectedEdge);
+      if (edge) {
+        highlightAnchorEdge(edge, view);
+        return;
+      }
+      const node = view?.nodes.find((candidate) => candidate.id === graphState.selected);
+      if (node && ['tree3d', 'parts', 'anchors'].includes(graphState.view)) {
+        highlightPreviewGraphNode(node, view);
+      } else {
+        clearPreviewPartHighlight();
+      }
+    }
+
     function restorePinnedTreeSelection(highlight = false) {
-      if (graphState.view !== 'tree3d' || !graphState.selected) return;
+      if (graphState.view !== 'tree3d') return;
       const object = tree3dInteractiveObjects.find((candidate) => {
         const hit = candidate.userData.tree3dHit;
-        return hit?.kind === 'part' && hit.node.id === graphState.selected;
+        return hit?.kind === 'part'
+          ? hit.node.id === graphState.selected
+          : hit?.edge && anchorEdgeKey(hit.edge) === graphState.selectedEdge;
       });
-      if (!object) return;
-      const hit = object.userData.tree3dHit;
-      tree3dSelection = buildTree3DLineageSelection(hit, object.userData.tree3dHitKey);
+      tree3dSelection = object
+        ? buildTree3DLineageSelection(object.userData.tree3dHit, object.userData.tree3dHitKey)
+        : null;
       applyTree3DSelectionAppearance();
       updateTree3DSelectionStatus();
-      if (highlight) highlightPreviewGraphNode(hit.node, hit.view);
+      if (highlight) restorePinnedPreviewSelection();
     }
 
     function clearSelection() {
@@ -3415,20 +3166,38 @@
       graphDetail.textContent = 'Select a part or relation to inspect its saved structure.';
     }
 
-    let hierarchyPointerDown = null;
-    tree3dCanvas.addEventListener('pointerdown', (event) => { hierarchyPointerDown = [event.clientX, event.clientY]; });
-    tree3dCanvas.addEventListener('pointerup', (event) => {
-      if (!hierarchyPointerDown || event.button !== 0) return;
-      const moved = Math.hypot(event.clientX - hierarchyPointerDown[0], event.clientY - hierarchyPointerDown[1]);
-      hierarchyPointerDown = null;
-      if (moved > 5) return;
+    function bindSelectionClick(element, onClick) {
+      let gesture = null;
+      element.addEventListener('pointerdown', (event) => {
+        if (gesture) {
+          gesture.cancelled = true;
+          return;
+        }
+        if (event.button !== 0 || event.isPrimary === false) return;
+        gesture = { id: event.pointerId, x: event.clientX, y: event.clientY, cancelled: false };
+      });
+      element.addEventListener('pointermove', (event) => {
+        if (!gesture || gesture.id !== event.pointerId) return;
+        if (Math.hypot(event.clientX - gesture.x, event.clientY - gesture.y) > 5) gesture.cancelled = true;
+      });
+      element.addEventListener('pointerup', (event) => {
+        if (!gesture || gesture.id !== event.pointerId) return;
+        const completed = gesture;
+        gesture = null;
+        if (completed.cancelled || event.button !== 0 || event.isPrimary === false) return;
+        if (Math.hypot(event.clientX - completed.x, event.clientY - completed.y) <= 5) onClick(event);
+      });
+      element.addEventListener('pointercancel', () => { gesture = null; });
+    }
+
+    tree3dCanvas.addEventListener('pointerdown', clearTree3DHover);
+    bindSelectionClick(tree3dCanvas, (event) => {
       const object = pickTree3DObject(event);
       const hit = object?.userData.tree3dHit;
       if (hit?.kind === 'part') selectObservedPart(hit.node.id);
-      else if (hit) { applyTree3DHover(object, event); showTree3DHitDetail(hit); }
+      else if (hit?.edge) selectAnchorEdge(anchorEdgeKey(hit.edge));
       else clearSelection();
     });
-    tree3dCanvas.addEventListener('pointercancel', () => { hierarchyPointerDown = null; });
     graphSvg.addEventListener('keydown', (event) => {
       if (event.key !== 'Enter' && event.key !== ' ') return;
       const element = event.target.closest('[data-graph-node], [data-anchor-edge], [data-graph-collapse]');
@@ -3438,11 +3207,22 @@
     });
 
     const dataRoot = new URL('./data/', import.meta.url);
-    const displayOptions = { wireframe: false, isolate: false, grid: true };
+    const explorerRoot = new URL('./', import.meta.url);
+    const displayOptions = { wireframe: false, isolate: false, grid: true, anchors: true };
     let catalog = null;
     let activeExample = null;
     let activeSnapshot = null;
+    let pendingExample = null;
+    let pendingViewState = null;
+    let continuousEditor = null;
+    let editTargetId = null;
+    const editRows = new Map();
+    let previewFrame = null;
+    const queuedScales = new Map();
+    let comparisonVisible = false;
+    let comparisonVersion = 0;
     const snapshotCache = new Map();
+    const nativeResponseCache = new Map();
 
     async function readExampleJson(relative) {
       const response = await fetch(assetUrl(relative, dataRoot));
@@ -3450,8 +3230,317 @@
       return response.json();
     }
 
+    async function readNativeResponse(example) {
+      if (!example.native_edit) return null;
+      const paths = example.native_edit;
+      const key = paths.response;
+      if (nativeResponseCache.has(key)) return nativeResponseCache.get(key);
+      const request = (async () => {
+        const results = await Promise.all([
+          readExampleJson(paths.response),
+          fetch(assetUrl(paths.buffer, dataRoot)).then((response) => {
+            if (!response.ok) throw new Error('Native edit geometry could not be loaded. Please retry.');
+            return response.arrayBuffer();
+          }),
+        ]);
+        let buffer = results[1];
+        // Vite and some static hosts send .gz files with Content-Encoding;
+        // fetch has already decompressed those responses. Other hosts serve
+        // the gzip file as raw bytes. Decode only the latter.
+        const signature = new Uint8Array(buffer, 0, Math.min(2, buffer.byteLength));
+        if (results[0].compression === 'gzip' && signature[0] === 0x1f && signature[1] === 0x8b) {
+          const stream = new Blob([buffer]).stream().pipeThrough(new DecompressionStream('gzip'));
+          buffer = await new Response(stream).arrayBuffer();
+        }
+        validateNativeResponse(results[0], new Float32Array(buffer));
+        return { response: results[0], buffer };
+      })();
+      nativeResponseCache.set(key, request);
+      // Response fields are larger than snapshots; retain only recent models.
+      while (nativeResponseCache.size > 2) nativeResponseCache.delete(nativeResponseCache.keys().next().value);
+      try { return await request; }
+      catch (error) {
+        if (nativeResponseCache.get(key) === request) nativeResponseCache.delete(key);
+        throw error;
+      }
+    }
+
+    function updateEditControls(example = pendingExample || activeExample, status = 'ready') {
+      editPanel.hidden = !example;
+      if (editPanel.hidden) return;
+      const ready = Boolean(continuousEditor && activeExample && !pendingExample);
+      const parts = ready ? continuousEditor.parts : [];
+      editResetAll.disabled = !ready;
+      editParts.setAttribute('aria-busy', String(!ready));
+      const targetIds = [...editRows.keys()].join('|');
+      if (targetIds !== parts.map((part) => part.id).join('|')) {
+        editRows.clear();
+        editParts.replaceChildren(...parts.map((part) => {
+          const label = displayName(part.label || part.id);
+          const row = document.createElement('li');
+          row.className = 'edit-part';
+          row.dataset.partId = part.id;
+          const heading = document.createElement('div');
+          heading.className = 'edit-part-heading';
+          const select = document.createElement('button');
+          select.type = 'button'; select.className = 'edit-part-name';
+          select.dataset.editSelect = '';
+          select.textContent = label;
+          select.setAttribute('aria-label', `Select ${label}`);
+          if (part.parameter_id) {
+            const linked = parts.filter((item) => item.parameter_id === part.parameter_id).length;
+            if (linked > 1) select.title = `This parameter changes ${linked} parts together.`;
+          }
+          const numberWrap = document.createElement('span');
+          numberWrap.className = 'edit-number-wrap';
+          const number = document.createElement('input');
+          number.type = 'number'; number.min = '0.4'; number.max = '1.6'; number.step = '0.01';
+          number.className = 'edit-part-number'; number.dataset.editNumber = '';
+          number.setAttribute('aria-label', `${label} exact scale`);
+          const unit = document.createElement('span'); unit.textContent = '×';
+          numberWrap.append(number, unit);
+          heading.append(select, numberWrap);
+          const track = document.createElement('div'); track.className = 'edit-part-track';
+          const range = document.createElement('input');
+          range.type = 'range'; range.min = '0.4'; range.max = '1.6'; range.step = '0.01';
+          range.className = 'edit-part-range'; range.dataset.editScale = '';
+          range.setAttribute('aria-label', `${label} scale`);
+          const reset = document.createElement('button');
+          reset.type = 'button'; reset.className = 'edit-part-reset'; reset.dataset.editReset = '';
+          reset.textContent = 'Reset'; reset.setAttribute('aria-label', `Reset ${label}`);
+          track.append(range, reset);
+          row.append(heading, track);
+          editRows.set(part.id, { row, select, number, range, reset });
+          return row;
+        }));
+      }
+      for (const [id, controls] of editRows) {
+        const scale = queuedScales.get(id) ?? continuousEditor.getScale(id);
+        controls.select.disabled = controls.range.disabled = controls.number.disabled = !ready;
+        controls.reset.disabled = !ready || Math.abs(scale - 1) < 1e-9;
+        controls.select.setAttribute('aria-pressed', String(id === editTargetId));
+        controls.row.classList.toggle('selected', id === editTargetId);
+        controls.row.classList.toggle('edited', Math.abs(scale - 1) > 1e-9);
+        controls.range.value = String(scale);
+        controls.range.setAttribute('aria-valuetext', `${scale.toFixed(2)} times`);
+        if (document.activeElement !== controls.number) controls.number.value = scale.toFixed(2);
+      }
+      editState.dataset.state = status;
+      const preview = ready && continuousEditor.hasEdits();
+      editState.textContent = status === 'loading' ? 'Loading model…'
+        : status === 'error' ? 'Model unavailable · retry below'
+        : preview ? continuousEditor.native ? 'Native geometry preview · checks not rerun' : 'Browser preview · checks not rerun'
+        : ready && activeSnapshot?.runtime?.validation_status === 'not_run' ? 'Original geometry · checks not rerun'
+        : 'Original geometry · saved checks';
+    }
+
+
+    function setComparisonMode(visible) {
+      const example = pendingExample || activeExample;
+      comparisonVisible = Boolean(visible && hasPaperComparison(example));
+      viewerPanel.classList.toggle('comparison-mode', comparisonVisible);
+      comparisonPanel.hidden = !comparisonVisible;
+      comparisonToggle.setAttribute('aria-pressed', String(comparisonVisible));
+      comparisonToggle.textContent = comparisonVisible ? 'Back to 3D' : 'Paper comparison';
+      if (comparisonVisible && activeExample && !pendingExample) void updatePaperComparison();
+    }
+
+    function resetPaperComparison(example, _variant, loading = false) {
+      comparisonVersion += 1;
+      comparisonImages.replaceChildren();
+      comparisonStatus.className = '';
+      comparisonStatus.textContent = loading ? 'Loading the matching saved edit…' : '';
+      const variant = paperPreset(comparisonPreset.value) || paperPreset('default');
+      document.getElementById('comparison-state').textContent = example
+        ? `${example.title} · ${stateLabel(variant)}` : '';
+      document.getElementById('comparison-note').textContent = example?.comparison?.note
+        || example?.metadata?.comparison?.note || 'Published renders at the same edit state.';
+      comparisonToggle.hidden = !hasPaperComparison(example);
+      if (comparisonToggle.hidden) setComparisonMode(false);
+    }
+
+    async function updatePaperComparison() {
+      const example = activeExample;
+      const variant = paperPreset(comparisonPreset.value);
+      if (!comparisonVisible || !example || !variant || pendingExample) return;
+      const version = ++comparisonVersion;
+      comparisonImages.replaceChildren();
+      comparisonStatus.className = '';
+      const pair = paperComparisonPair(example, variant.id);
+      if (!pair) {
+        comparisonStatus.textContent = 'No paper comparison was saved for this exact edit state.';
+        return;
+      }
+      comparisonStatus.textContent = 'Loading both paper renders…';
+      try {
+        const prepareImage = (relative, label) => new Promise((resolve, reject) => {
+          const image = new Image();
+          image.alt = `${example.title} — ${label} — ${stateLabel(variant)}`;
+          image.decoding = 'async';
+          image.onload = () => resolve(image);
+          image.onerror = () => reject(new Error('The paper images for this edit could not be loaded.'));
+          image.src = assetUrl(relative, explorerRoot);
+        });
+        const images = await Promise.all([
+          prepareImage(pair.baseline, pair.baselineLabel),
+          prepareImage(pair.method, 'TreeStruct3D'),
+        ]);
+        if (version !== comparisonVersion || example !== activeExample || variant.id !== comparisonPreset.value) return;
+        const figures = images.map((image, index) => {
+          const figure = document.createElement('figure');
+          const caption = document.createElement('figcaption');
+          caption.textContent = index === 0 ? pair.baselineLabel : 'TreeStruct3D';
+          figure.append(caption, image);
+          return figure;
+        });
+        comparisonImages.replaceChildren(...figures);
+        comparisonStatus.textContent = '';
+      } catch (error) {
+        if (version !== comparisonVersion) return;
+        comparisonStatus.className = 'error';
+        comparisonStatus.textContent = String(error.message || error);
+        const retry = document.createElement('button');
+        retry.type = 'button';
+        retry.textContent = 'Retry images';
+        retry.addEventListener('click', () => { void updatePaperComparison(); });
+        comparisonStatus.append(' ', retry);
+      }
+    }
+
+    function captureEditView() {
+      const captureCamera = (viewCamera, controls) => ({
+        position: viewCamera.position.clone(), target: controls.target.clone(),
+        near: viewCamera.near, far: viewCamera.far, fov: viewCamera.fov, zoom: viewCamera.zoom,
+      });
+      const edge = graphView()?.edges.find((item) => anchorEdgeKey(item) === graphState.selectedEdge);
+      return {
+        view: graphState.view, selected: graphState.selected, edge,
+        focus: graphState.anchorFocusNode, anchorMode: graphState.anchorMode,
+        query: graphState.query, collapsed: new Set(graphState.collapsed),
+        graphScale: graphState.scale, tx: graphState.tx, ty: graphState.ty,
+        modelCamera: captureCamera(camera, orbit), treeCamera: captureCamera(tree3dCamera, tree3dOrbit),
+      };
+    }
+
+    function restoreEditView(saved) {
+      const view = graphView();
+      const ids = new Set(view?.nodes.map((node) => node.id));
+      graphState.selected = ids.has(saved.selected) ? saved.selected : null;
+      graphState.anchorFocusNode = ids.has(saved.focus) ? saved.focus : null;
+      const matchingEdges = saved.edge ? view?.edges.filter((item) => item.parent === saved.edge.parent
+        && item.child === saved.edge.child) || [] : [];
+      const edge = matchingEdges.find((item) => item.relation === saved.edge.relation) || matchingEdges[0];
+      graphState.selectedEdge = edge ? anchorEdgeKey(edge) : null;
+      graphState.anchorMode = saved.anchorMode;
+      graphState.query = saved.query;
+      graphSearch.value = saved.query;
+      graphState.collapsed = new Set([...saved.collapsed].filter((id) => ids.has(id)));
+      renderGraph();
+      graphState.scale = saved.graphScale; graphState.tx = saved.tx; graphState.ty = saved.ty;
+      updateGraphTransform();
+      const restoreCamera = (viewCamera, controls, previous) => {
+        viewCamera.position.copy(previous.position);
+        controls.target.copy(previous.target);
+        viewCamera.near = previous.near; viewCamera.far = previous.far;
+        viewCamera.fov = previous.fov; viewCamera.zoom = previous.zoom;
+        viewCamera.updateProjectionMatrix();
+        controls.update();
+      };
+      restoreCamera(camera, orbit, saved.modelCamera);
+      restoreCamera(tree3dCamera, tree3dOrbit, saved.treeCamera);
+      restorePinnedTreeSelection();
+      restorePinnedPreviewSelection();
+    }
+
+    function setEditTarget(id) {
+      if (!continuousEditor?.parts.some((part) => part.id === id)) return;
+      editTargetId = id;
+      updateEditControls();
+    }
+
+    function queueContinuousScale(raw, id = editTargetId) {
+      const scale = Number(raw);
+      const part = continuousEditor?.parts.find((item) => item.id === id);
+      if (!part || !Number.isFinite(scale) || scale < 0.4 || scale > 1.6) return;
+      // Several observed instances can expose the same native PART_PARAMS
+      // control. The last input/reset wins for that parameter in this frame.
+      for (const queuedId of queuedScales.keys()) {
+        const queued = continuousEditor.parts.find((item) => item.id === queuedId);
+        if (queuedId === id || (part.parameter_id && queued?.parameter_id === part.parameter_id)) queuedScales.delete(queuedId);
+      }
+      queuedScales.set(id, Math.round(scale * 100) / 100);
+      if (previewFrame === null) previewFrame = requestAnimationFrame(() => {
+        previewFrame = null;
+        applyContinuousPreview(false);
+      });
+    }
+
+    function applyContinuousPreview(commit = false) {
+      if (!continuousEditor || !structureData || !activeExample) return;
+      if (previewFrame !== null) { cancelAnimationFrame(previewFrame); previewFrame = null; }
+      try {
+        const previous = structureData.views.anchors;
+        const selectedEdge = previous.edges.find((edge) => anchorEdgeKey(edge) === graphState.selectedEdge);
+        if (continuousEditor.setScales) continuousEditor.setScales(Object.fromEntries(queuedScales));
+        else for (const [id, scale] of queuedScales) continuousEditor.setScale(id, scale);
+        queuedScales.clear();
+        const edited = continuousEditor.hasEdits();
+        const refreshGraph = commit || Boolean(previous.preview_only) !== edited;
+        const saved = refreshGraph ? captureEditView() : null;
+        const runtime = continuousEditor.getRuntime();
+        if (edited) invalidatePreviewChecks(runtime);
+        for (const node of runtime.nodes) node.group = 'Observed part';
+        structureData.views.anchors = runtime;
+        structureData.views.parts = { ...runtime, label: edited ? 'Browser preview part hierarchy' : 'Observed part hierarchy', edges: runtime.edges.filter(isDirectedAnchorEdge) };
+        const currentEdge = selectedEdge && runtime.edges.find((edge) => edge.parent === selectedEdge.parent && edge.child === selectedEdge.child);
+        graphState.selectedEdge = currentEdge ? anchorEdgeKey(currentEdge) : null;
+        if (previewHighlightRequest) {
+          const request = previewHighlightRequest;
+          request.nodes = request.nodes.map((node) => runtime.nodes.find((item) => item.id === node.id)).filter(Boolean);
+          request.view = runtime;
+          if (request.edge) request.edge = runtime.edges.find((edge) => edge.parent === request.edge.parent && edge.child === request.edge.child) || null;
+          if (request.edge) showPreviewAnchorOverlay(request.edge, runtime);
+        }
+        if (saved) {
+          saved.anchorMode = graphState.anchorMode;
+          restoreEditView(saved);
+          buildControls();
+        } else {
+          updateGraphLegend();
+        }
+        updateModelAnchors();
+        updateEditControls();
+        const editedCount = continuousEditor.parts.filter((part) => Math.abs(continuousEditor.getScale(part.id) - 1) > 1e-9).length;
+        const savedChecks = runtime.validation_status !== 'not_run';
+        setStatus(edited
+          ? `${activeExample.title} · ${editedCount} edited ${editedCount === 1 ? 'part' : 'parts'} · Browser preview · checks not rerun`
+          : `${activeExample.title} · Original geometry · ${savedChecks ? 'saved checks' : 'checks not rerun'}`, edited || !savedChecks ? '' : 'success');
+        if (edited) {
+          graphStatus.textContent = 'Browser preview · checks not rerun';
+          graphDetail.textContent = 'Part sizes and attachment coordinates follow the browser preview. Contact and shared-anchor validity have not been evaluated.';
+        } else {
+          graphDetail.textContent = savedChecks
+            ? 'Original geometry and saved checks restored. Select a part or relation to inspect it.'
+            : 'Original geometry restored. Select a part or relation to inspect it. Attachment checks have not been rerun.';
+        }
+      } catch (error) {
+        queuedScales.clear();
+        setStatus(String(error.message || error), 'error');
+        editState.dataset.state = 'error';
+        editState.textContent = 'Preview edit could not be applied';
+      }
+    }
+
+    function resetAllEdits() {
+      if (!continuousEditor) return;
+      queuedScales.clear();
+      continuousEditor.resetAll();
+      applyContinuousPreview(true);
+    }
+
     function applyDisplayOptions() {
       grid.visible = displayOptions.grid;
+      updateModelAnchors();
       if (!currentModel) return;
       const selected = new Set();
       if (previewHighlightRequest) {
@@ -3466,50 +3555,24 @@
           material.visible = !displayOptions.isolate || !selected.size || selected.has(mesh);
         }
       });
-      for (const button of controlsHost.querySelectorAll('[data-part-id]')) {
-        const picked = previewHighlightRequest?.nodes.some((node) => node.id === button.dataset.partId) || false;
-        button.setAttribute('aria-pressed', String(picked));
-      }
     }
 
     function buildControls() {
       if (!activeExample || !activeSnapshot) return;
       const example = activeExample;
-      const runtime = activeSnapshot.runtime;
+      const runtime = structureData?.views?.anchors || activeSnapshot.runtime;
       const counts = snapshotCounts(runtime);
-      const baseline = example.source !== 'treestruct3d';
+      const preview = Boolean(runtime.preview_only);
+      const baseline = example.source === 'stage1';
       panelTitle.textContent = example.title;
       controlsHost.innerHTML = `
         <section class="control-group">
-          <span class="source-tag ${baseline ? 'baseline' : ''}">${escapeHtml(example.source_label)}</span>
-          <dl class="model-stats">
-            <div><dt>Observed parts</dt><dd>${counts.parts}</dd></div>
-            <div><dt>Shared anchors</dt><dd>${counts.shared}</dd></div>
-            <div><dt>Relations</dt><dd>${counts.relations}</dd></div>
-            <div><dt>Broken relations</dt><dd>${counts.broken}</dd></div>
-          </dl>
-          <p class="inspector-note">Saved Blender checks for this example.</p>
-        </section>
-        <section class="control-group">
-          <h2>Display</h2>
+          <span class="source-tag ${baseline ? 'baseline' : ''}">${escapeHtml(providerLabel(example))}</span>
+          <dl class="model-stats"><div><dt>Parts</dt><dd>${counts.parts}</dd></div>${preview ? '<div><dt>Validation</dt><dd class="preview-check-label">Not rerun</dd></div>' : `<div><dt>Shared anchors</dt><dd>${counts.shared}</dd></div><div><dt>Broken</dt><dd>${counts.broken}</dd></div>`}</dl>
+          <label class="display-toggle"><input type="checkbox" data-display="anchors" ${displayOptions.anchors ? 'checked' : ''}>Anchors on highlight</label>
           <label class="display-toggle"><input type="checkbox" data-display="wireframe" ${displayOptions.wireframe ? 'checked' : ''}>Wireframe</label>
           <label class="display-toggle"><input type="checkbox" data-display="isolate" ${displayOptions.isolate ? 'checked' : ''}>Isolate selected part</label>
           <label class="display-toggle"><input type="checkbox" data-display="grid" ${displayOptions.grid ? 'checked' : ''}>Ground grid</label>
-          <p class="inspector-note">View controls change the display. Geometry and saved checks stay fixed.</p>
-        </section>
-        <section class="control-group">
-          <h2>Select a part</h2>
-          <div class="part-list" role="group" aria-label="Select a model part">
-            ${runtime.nodes.map((node) => `<button class="part-row" type="button" data-part-id="${escapeHtml(node.id)}" aria-pressed="false"><span>${escapeHtml(displayName(node.label))}</span></button>`).join('')}
-          </div>
-        </section>
-        <section class="control-group">
-          <h2>About this example</h2>
-          <p>${baseline ? 'A baseline example from the local validation toolkit, included to inspect its observed attachments.' : 'A TreeStruct3D-generated Blender asset with explicit semantic parts and attachment checks.'}</p>
-          ${counts.shared === 0 ? '<p class="inspector-note">This snapshot has no strictly verified shared anchors. Known parent–child directions remain visible.</p>' : ''}
-          <details class="runtime-note"><summary>How to read the checks</summary><p>Green denotes a verified shared anchor in the saved runtime result. Blue denotes a known direction. Orange and red identify unverified or broken relations. These are example observations, not aggregate benchmark scores.</p><p>To edit native parameters and rerun Blender, use the <a href="https://github.com/RichardFeng000/TreeStruct3D/tree/main/visual_validation" target="_blank" rel="noopener noreferrer">local toolkit</a>.</p></details>
-          <a class="download-link" href="${escapeHtml(assetUrl(example.glb, dataRoot))}" download="${escapeHtml(example.label)}.glb">Download model · ${(example.bytes / 1024).toFixed(0)} KB ↓</a>
-          <a class="download-link" href="${escapeHtml(assetUrl(example.provenance, dataRoot))}" target="_blank" rel="noopener">Snapshot provenance ↗</a>
         </section>`;
       applyDisplayOptions();
     }
@@ -3522,7 +3585,7 @@
       document.getElementById('model-position').textContent = index < 0 ? '' : `${index + 1} / ${options.length}`;
     }
 
-    function showExampleError(error) {
+    function showExampleError(error, retryAction = null) {
       setLoading(false);
       setStatus(String(error.message || error), 'error');
       graphStatus.textContent = 'This example could not be loaded. Select another model or reload to retry.';
@@ -3530,39 +3593,70 @@
       const retry = document.createElement('button');
       retry.type = 'button';
       retry.textContent = 'Retry loading';
-      retry.addEventListener('click', () => catalog ? selectModel(modelSelect.value, sourceSelect.value) : initialize());
+      retry.addEventListener('click', retryAction || (() => catalog ? selectModel(modelSelect.value, sourceSelect.value) : initialize()));
       controlsHost.append(retry);
     }
 
-    async function selectModel(modelId, sourceId = sourceSelect.value) {
-      const example = catalog.models.find((model) => model.id === modelId && model.source === sourceId);
-      if (!example) return;
+    async function loadSavedState(example, variant, preserve = false) {
+      if (variant?.id === 'default' && example.native_edit?.baseline) variant = { ...variant, ...example.native_edit.baseline };
+      const savedView = preserve ? pendingViewState || captureEditView() : null;
       const version = ++generationVersion;
+      pendingExample = example;
+      pendingViewState = savedView;
       sourceSelect.disabled = modelSelect.disabled = true;
       updateModelNavigationButtons();
+      if (previewFrame !== null) { cancelAnimationFrame(previewFrame); previewFrame = null; }
+      queuedScales.clear();
       clearPreviewPartHighlight();
+      continuousEditor?.dispose(); continuousEditor = null; editTargetId = null;
       if (currentModel) { scene.remove(currentModel); disposeObject(currentModel); currentModel = null; }
       clearTree3DScene();
       graphEdges.replaceChildren(); graphNodes.replaceChildren();
-      anchorRelations.replaceChildren(); graphDetail.textContent = "";
+      anchorRelations.replaceChildren(); graphDetail.textContent = '';
       structureData = null;
       schema = null;
       activeExample = null;
+      activeSnapshot = null;
       controlsHost.replaceChildren();
+      panelTitle.textContent = example.title;
+      updateEditControls(example, 'loading');
+      resetPaperComparison(example, variant, true);
       setLoading(true);
-      setStatus(`Loading ${example.title}…`);
-      graphStatus.textContent = 'Loading saved structure and shared-anchor observations…';
+      modelAnchors.setVisible(false);
+      setStatus(`Loading ${example.title} · ${stateLabel(variant)}…`);
+      graphStatus.textContent = 'Loading matching geometry and saved attachment checks…';
       try {
-        let snapshot = snapshotCache.get(modelId);
-        if (!snapshot) {
-          snapshot = validateSnapshot(await readExampleJson(example.snapshot));
-          snapshotCache.set(modelId, snapshot);
+        if (!variant?.glb || !variant.snapshot) throw new Error('This edit state has not been saved. Choose another scale.');
+        const snapshotRequest = async () => {
+          let snapshot = snapshotCache.get(variant.snapshot);
+          if (!snapshot) {
+            snapshot = validateSnapshot(await readExampleJson(variant.snapshot));
+            snapshotCache.set(variant.snapshot, snapshot);
+          }
+          return snapshot;
+        };
+        const results = await Promise.allSettled([
+          snapshotRequest(),
+          loader.loadAsync(assetUrl(variant.glb, dataRoot)),
+          variant.mesh_map ? readExampleJson(variant.mesh_map) : Promise.resolve([]),
+          readNativeResponse(example),
+        ]);
+        const failure = results.find((result) => result.status === 'rejected');
+        if (version !== generationVersion || failure) {
+          if (results[1].status === 'fulfilled') disposeObject(results[1].value.scene);
+          if (version !== generationVersion) return;
+          throw failure.reason;
         }
-        if (version !== generationVersion) return;
+        const snapshot = results[0].value;
+        const gltf = results[1].value;
+        const meshMap = results[2].value;
+        if (!Array.isArray(meshMap)) { disposeObject(gltf.scene); throw new Error('This edit has an invalid saved mesh map.'); }
         activeExample = example;
         activeSnapshot = snapshot;
-        schema = { ...snapshot.schema, source: sourceId, model: modelId };
-        displayOptions.isolate = false;
+        pendingExample = null;
+        pendingViewState = null;
+        schema = { ...snapshot.schema };
+        if (!preserve) displayOptions.isolate = false;
         const runtime = structuredClone(snapshot.runtime);
         for (const node of runtime.nodes) node.group = 'Observed part';
         const structure = structuredClone(snapshot.structure);
@@ -3570,17 +3664,47 @@
         // The public part tree uses the same observed mesh identities as the model.
         // Definition and call views still show the original static source analysis.
         structure.views.parts = { ...runtime, label: 'Observed part hierarchy', edges: runtime.edges.filter((edge) => edge.parent_child_known || edge.directed_verified) };
-        initializeGraph(structure);
-        await loadGLB(assetUrl(example.glb, dataRoot), version);
-        if (version !== generationVersion) return;
+        installGLB(gltf, meshMap);
+        continuousEditor = results[3].value
+          ? createNativeEditor({ model: currentModel, runtime: snapshot.runtime, provenance: snapshot.provenance, ...results[3].value })
+          : createContinuousEditor({ model: currentModel, runtime: snapshot.runtime, provenance: snapshot.provenance });
+        editTargetId = continuousEditor.parts.find((part) => runtime.roots?.includes(part.id))?.id
+          || continuousEditor.parts[0]?.id || null;
+        if (savedView) {
+          structureData = structure;
+          const preferred = savedView.view === 'tree3d' ? runtime : structure.views[savedView.view];
+          graphState.view = preferred?.nodes?.length ? savedView.view : 'parts';
+          updateGraphTabs();
+          restoreEditView(savedView);
+        } else {
+          initializeGraph(structure);
+          fitCamera(false);
+        }
         buildControls();
+        updateEditControls(example);
         applyDisplayOptions();
-        rememberSelection(sourceId, modelId);
+        rememberSelection(providerKey(example), example.id);
         const counts = snapshotCounts(runtime);
-        setStatus(`${example.title} · ${counts.parts} parts · ${counts.shared} saved shared anchors`, 'success');
-        graphDetail.textContent = 'Select a part or hover a 3D hierarchy node to highlight its geometry. Choose Anchor Relations to inspect saved endpoint coordinates.';
+        setStatus(`${example.title} · ${stateLabel(variant)} · ${counts.parts} parts · ${counts.shared} shared anchors`, 'success');
+        graphDetail.textContent = runtime.validation_status === 'not_run'
+          ? 'Select a part or relation to inspect it. Attachment checks have not been rerun for this geometry.'
+          : `Saved checks for ${stateLabel(variant).toLowerCase()}. Select a part or relation to inspect it.`;
+        resetPaperComparison(example, variant);
+        if (comparisonVisible) void updatePaperComparison();
       } catch (error) {
-        if (version === generationVersion) showExampleError(error);
+        if (version === generationVersion) {
+          clearPreviewPartHighlight();
+          continuousEditor?.dispose(); continuousEditor = null; editTargetId = null;
+          if (currentModel) { scene.remove(currentModel); disposeObject(currentModel); currentModel = null; }
+          clearTree3DScene();
+          graphEdges.replaceChildren(); graphNodes.replaceChildren(); anchorRelations.replaceChildren();
+          structureData = null; schema = null; activeExample = null; activeSnapshot = null;
+          pendingExample = example; pendingViewState = savedView;
+          showExampleError(error, () => loadSavedState(example, variant, preserve));
+          updateEditControls(example, 'error');
+          comparisonStatus.textContent = 'This saved edit could not be loaded. Retry using the controls on the left.';
+          comparisonStatus.className = 'error';
+        }
       } finally {
         if (version === generationVersion) {
           sourceSelect.disabled = modelSelect.disabled = false;
@@ -3590,8 +3714,17 @@
       }
     }
 
+    async function selectModel(modelId, sourceId = sourceSelect.value) {
+      const example = catalog.models.find((model) => model.id === modelId && providerKey(model) === sourceId);
+      if (!example) return;
+      comparisonPreset.value = 'default';
+      pendingViewState = null;
+      const variant = savedVariant(example) || { id: 'default', side: 'default', scale: 1 };
+      await loadSavedState(example, variant);
+    }
+
     async function loadModelsForSource(sourceId, preferredLabel = '', preferredModelId = '') {
-      const models = catalog.models.filter((model) => model.source === sourceId);
+      const models = catalog.models.filter((model) => providerKey(model) === sourceId);
       modelSelect.replaceChildren();
       for (const model of models) {
         const option = document.createElement('option');
@@ -3623,8 +3756,10 @@
       graphState.query = ''; graphSearch.value = ''; graphState.collapsed.clear();
       graphState.tree3dShowRealParts = false; tree3dShowRealParts.checked = false;
       graphState.tree3dShowShared = true; tree3dShowShared.checked = true;
-      graphState.tree3dShowIssues = false; tree3dShowIssues.checked = false;
-      if (structureData) setGraphView('tree3d');
+      pendingViewState = null;
+      resetAllEdits();
+      updateEditControls(pendingExample || activeExample, pendingExample ? 'loading' : 'ready');
+      if (structureData) setGraphView(tree3dSourceView()?.nodes?.length ? 'tree3d' : 'parts');
       fitCamera(false); buildControls(); applyDisplayOptions();
     }
 
@@ -3640,22 +3775,55 @@
       if (Object.hasOwn(displayOptions, key)) {
         displayOptions[key] = event.target.checked;
         applyDisplayOptions();
+        if (key === 'anchors' && previewHighlightRequest?.edge) applyPreviewPartHighlight();
       }
     });
-    controlsHost.addEventListener('click', (event) => {
-      const button = event.target.closest('[data-part-id]');
-      if (button) selectObservedPart(button.dataset.partId);
+    editParts.addEventListener('focusin', (event) => {
+      const id = event.target.closest('[data-part-id]')?.dataset.partId;
+      if (id && id !== editTargetId) selectObservedPart(id);
+    });
+    editParts.addEventListener('input', (event) => {
+      const control = event.target;
+      if (!('editScale' in control.dataset || 'editNumber' in control.dataset)) return;
+      const id = control.closest('[data-part-id]')?.dataset.partId;
+      if (!id) return;
+      const value = control.valueAsNumber;
+      if (id !== editTargetId) selectObservedPart(id);
+      queueContinuousScale(value, id);
+    });
+    editParts.addEventListener('change', (event) => {
+      const control = event.target;
+      if (!('editScale' in control.dataset || 'editNumber' in control.dataset)) return;
+      const id = control.closest('[data-part-id]')?.dataset.partId;
+      if (!id || !continuousEditor) return;
+      const value = control.valueAsNumber;
+      if (Number.isFinite(value)) queueContinuousScale(Math.max(0.4, Math.min(1.6, value)), id);
+      applyContinuousPreview(true);
+      const number = editRows.get(id)?.number;
+      if (number) number.value = continuousEditor.getScale(id).toFixed(2);
+    });
+    editParts.addEventListener('click', (event) => {
+      const control = event.target.closest('[data-edit-select], [data-edit-reset]');
+      const id = control?.closest('[data-part-id]')?.dataset.partId;
+      if (!id || control.disabled) return;
+      selectObservedPart(id);
+      if ('editReset' in control.dataset) {
+        queueContinuousScale(1, id);
+        applyContinuousPreview(true);
+      }
+    });
+    editResetAll.addEventListener('click', resetAllEdits);
+    comparisonToggle.addEventListener('click', () => setComparisonMode(!comparisonVisible));
+    comparisonPreset.addEventListener('change', () => {
+      resetPaperComparison(activeExample, null);
+      void updatePaperComparison();
     });
 
     const previewRaycaster = new THREE.Raycaster();
-    let previewPointerDown = null;
-    canvas.addEventListener('pointerdown', (event) => { previewPointerDown = [event.clientX, event.clientY]; });
-    canvas.addEventListener('pointerup', (event) => {
-      if (!currentModel || event.button !== 0 || !previewPointerDown) return;
-      const moved = Math.hypot(event.clientX - previewPointerDown[0], event.clientY - previewPointerDown[1]);
-      previewPointerDown = null;
-      if (moved > 5) return;
+    bindSelectionClick(canvas, (event) => {
+      if (!currentModel || !structureData) return;
       const rect = canvas.getBoundingClientRect();
+      if (rect.width <= 0 || rect.height <= 0) return;
       const pointer = new THREE.Vector2((event.clientX - rect.left) / rect.width * 2 - 1, -(event.clientY - rect.top) / rect.height * 2 + 1);
       previewRaycaster.setFromCamera(pointer, camera);
       const hit = previewRaycaster.intersectObject(currentModel, true).find(({object}) => object.isMesh && (Array.isArray(object.material) ? object.material : [object.material]).some((m) => m.visible));
@@ -3664,19 +3832,25 @@
       const scored = nodes.map((node) => ({node,score:previewMeshMatchScore(hit.object,node)})).sort((a,b) => b.score-a.score);
       if (scored[0]?.score > 0) selectObservedPart(scored[0].node.id);
     });
-    canvas.addEventListener('pointercancel', () => { previewPointerDown = null; });
 
     async function initialize() {
       setLoading(true);
+      catalog = null;
       try {
-        catalog = await readExampleJson('manifest.json');
-        if (!Array.isArray(catalog.models) || !catalog.models.length) throw new Error('No saved examples are available.');
+        const manifest = await readExampleJson('manifest.json');
+        if (!Array.isArray(manifest?.models) || !manifest.models.length) throw new Error('No saved examples are available.');
+        if (manifest.models.some((model) => !model || typeof model.id !== 'string' || !model.id || typeof model.source !== 'string' || !model.source)) {
+          throw new Error('The saved example catalog is incomplete. Please reload to try again.');
+        }
+        catalog = manifest;
         sourceSelect.replaceChildren();
-        const sourceIds = [...new Set(catalog.models.map((model) => model.source))];
+        const sourceIds = [...new Set(catalog.models.map((model) => model.provider_id || model.source || model.provider))];
         for (const source of sourceIds) {
           const option = document.createElement('option');
           option.value = source;
-          option.textContent = source === 'treestruct3d' ? 'TreeStruct3D examples' : 'Stage 1 baseline';
+          const examples = catalog.models.filter((model) => (model.provider_id || model.source || model.provider) === source);
+          const first = examples[0];
+          option.textContent = `${first.provider_label || first.provider || first.source_label || source} (${examples.length})`;
           sourceSelect.append(option);
         }
         const remembered = readRememberedSelection();
@@ -3692,17 +3866,12 @@
     tree3dShowRealParts.addEventListener('change', () => {
       graphState.tree3dShowRealParts = tree3dShowRealParts.checked;
       clearTree3DHover();
-      if (graphState.view === 'tree3d') renderTree3D();
+      if (graphState.view === 'tree3d') renderGraph();
     });
     tree3dShowShared.addEventListener('change', () => {
       graphState.tree3dShowShared = tree3dShowShared.checked;
       clearTree3DHover();
-      if (graphState.view === 'tree3d') renderTree3D();
-    });
-    tree3dShowIssues.addEventListener('change', () => {
-      graphState.tree3dShowIssues = tree3dShowIssues.checked;
-      clearTree3DHover();
-      if (graphState.view === 'tree3d') renderTree3D();
+      if (graphState.view === 'tree3d') renderGraph();
     });
     anchorControls.addEventListener('click', (event) => {
       const modeButton = event.target.closest('[data-anchor-mode]');
@@ -3739,13 +3908,11 @@
       }
 
       if (!selectedRemainsVisible && selectedEdge && nextMode === 'shared') {
-        graphDetail.textContent = `${selectedEdge.parent} → ${selectedEdge.child}\nThis parent-child direction did not pass shared-anchor validation, so it does not appear under “Shared Anchors.” Open “Issue Relations” to inspect contact, gap, and tolerance.`;
+        graphDetail.textContent = `${selectedEdge.parent} → ${selectedEdge.child}\nNo saved attachment coordinates are available for this relation.`;
       } else if (!selectedRemainsVisible && !focusRemainsVisible) {
         graphDetail.textContent = graphState.anchorMode === 'shared'
-          ? 'Shared anchors are a strict subset of parent-child directions: explicit shared evidence, geometric contact, and A/B anchor alignment must all pass.'
-          : (graphState.anchorMode === 'issues'
-            ? 'Relations that did not pass shared-anchor validation appear here. Click the center issue card to highlight A/B together.'
-            : `${anchorModeLabel(graphState.anchorMode)} mode: click a node to focus its one-hop relations, or click a relation card to inspect endpoints and anchor coordinates.`);
+          ? 'Attachment coordinates remain visible during edits. A visible anchor is not a validation result.'
+          : `${anchorModeLabel(graphState.anchorMode)} mode: click a node to focus its one-hop relations, or click a relation card to inspect endpoints and anchor coordinates.`;
       }
       renderGraph();
       requestAnimationFrame(resetGraphPosition);
@@ -3756,10 +3923,8 @@
       graphState.selected = null;
       graphState.selectedEdge = null;
       graphDetail.textContent = graphState.anchorMode === 'shared'
-        ? 'Shared-anchor overview: every shared relation is displayed in a separate row, so lines do not cross.'
-        : (graphState.anchorMode === 'issues'
-          ? 'Issue-relation overview: every issue is displayed in a separate row for direct comparison of estimated A/B anchor coordinates.'
-          : `${anchorModeLabel(graphState.anchorMode)} overview: click any node to show only its directly connected relations.`);
+        ? 'Anchor overview: each attachment pair is displayed in a separate row.'
+        : `${anchorModeLabel(graphState.anchorMode)} overview: click any node to show only its directly connected relations.`;
       renderGraph();
       requestAnimationFrame(resetGraphPosition);
     });
@@ -3778,76 +3943,25 @@
       setGraphFullscreen(!graphPanel.classList.contains('graph-expanded'));
     });
 
-    tree3dExportTransparentButton.addEventListener('click', () => {
-      const previousPixelRatio = tree3dRenderer.getPixelRatio();
-      const previousSize = tree3dRenderer.getSize(new THREE.Vector2());
-      const previousAspect = tree3dCamera.aspect;
-      const previousCameraPosition = tree3dCamera.position.clone();
-      const previousOrbitTarget = tree3dOrbit.target.clone();
-      const previousNear = tree3dCamera.near;
-      const previousFar = tree3dCamera.far;
-      const exportRestores = [];
-      tree3dRoot.traverse((object) => {
-        if (object.userData.tree3dExportHide || object.userData.tree3dExportOnly) {
-          const previousVisible = object.visible;
-          exportRestores.push(() => { object.visible = previousVisible; });
-          object.visible = Boolean(object.userData.tree3dExportOnly);
-        }
-        if (object.userData.tree3dPublicationSurface) {
-          const materials = Array.isArray(object.material) ? object.material : [object.material];
-          for (const material of materials) {
-            const previousOpacity = material.opacity;
-            const previousTransparent = material.transparent;
-            const previousDepthWrite = material.depthWrite;
-            const previousColor = material.color?.clone();
-            exportRestores.push(() => {
-              material.opacity = previousOpacity;
-              material.transparent = previousTransparent;
-              material.depthWrite = previousDepthWrite;
-              if (previousColor && material.color) material.color.copy(previousColor);
-              material.needsUpdate = true;
-            });
-            const name = String(material.name || '').toLowerCase();
-            let color = 0xb85732;
-            if (name.includes('highlight') || name.includes('light')) color = 0xcf6a42;
-            if (name.includes('dark') || name.includes('rim')) color = 0x89351d;
-            if (name.includes('antenna')) color = 0xd13c1d;
-            if (name.includes('cream') || name.includes('ivory') || name.includes('pincer')) color = 0xffe9c0;
-            if (material.color) material.color.setHex(color);
-            material.opacity = 0.4;
-            material.transparent = true;
-            material.depthWrite = true;
-            material.needsUpdate = true;
-          }
-        }
-      });
-      tree3dRenderer.setPixelRatio(1);
-      tree3dRenderer.setSize(3840, 2160, false);
-      tree3dCamera.aspect = 3840 / 2160;
-      tree3dCamera.updateProjectionMatrix();
-      if (isCoffeeTablePublicationTree()) fitTree3D();
-      tree3dRenderer.setClearColor(0x000000, 0);
-      tree3dRenderer.render(tree3dScene, tree3dCamera);
-      tree3dCanvas.toBlob((blob) => {
-        if (blob) {
-          const link = document.createElement('a');
-          link.href = URL.createObjectURL(blob);
-          link.download = `${modelSelect.value || 'model'}_breakdown_4k_transparent.png`;
-          link.click();
-          window.setTimeout(() => URL.revokeObjectURL(link.href), 1000);
-        }
-        tree3dRenderer.setPixelRatio(previousPixelRatio);
-        tree3dRenderer.setSize(previousSize.x, previousSize.y, false);
-        tree3dCamera.aspect = previousAspect;
-        tree3dCamera.position.copy(previousCameraPosition);
-        tree3dCamera.near = previousNear;
-        tree3dCamera.far = previousFar;
-        tree3dCamera.updateProjectionMatrix();
-        tree3dOrbit.target.copy(previousOrbitTarget);
-        tree3dOrbit.update();
-        exportRestores.reverse().forEach((restore) => restore());
-        tree3dRenderer.render(tree3dScene, tree3dCamera);
-      }, 'image/png');
+    tree3dExportTransparentButton.addEventListener('click', async () => {
+      if (!currentModel || tree3dExportTransparentButton.disabled) return;
+      const filename = `${modelSelect.value || 'model'}_structure.png`;
+      tree3dExportTransparentButton.disabled = true;
+      tree3dExportTransparentButton.textContent = 'Saving…';
+      try {
+        const blob = await captureTransparentPng(tree3dRenderer, tree3dScene, tree3dCamera, tree3dCanvas);
+        const link = document.createElement('a');
+        const url = URL.createObjectURL(blob);
+        link.href = url;
+        link.download = filename;
+        link.click();
+        window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+      } catch (error) {
+        setStatus(`Image export failed: ${String(error.message || error)}`, 'error');
+      } finally {
+        tree3dExportTransparentButton.disabled = false;
+        tree3dExportTransparentButton.textContent = 'Save PNG';
+      }
     });
     anchorRelations.addEventListener('click', (event) => {
       const card = event.target.closest('[data-anchor-edge]');
@@ -3922,7 +4036,7 @@
         || graphState.view === 'calls'
         || (
           graphState.view === 'anchors'
-          && (graphState.anchorMode === 'shared' || graphState.anchorMode === 'issues')
+          && (graphState.anchorMode === 'shared')
         );
       if (readableView && !event.ctrlKey && !event.metaKey) {
         graphState.tx -= event.deltaX * 0.7;
@@ -4015,8 +4129,10 @@
       for (const marker of previewAnchorOverlay.children) {
         if (marker.userData.anchorPulse) marker.scale.setScalar(pulse);
       }
-      orbit.update();
-      renderer.render(scene, camera);
+      if (!comparisonVisible) {
+        orbit.update();
+        renderer.render(scene, camera);
+      }
       if (!tree3dStage.hidden) {
         tree3dOrbit.update();
         tree3dRenderer.render(tree3dScene, tree3dCamera);
@@ -4024,4 +4140,3 @@
       requestAnimationFrame(animate);
     }
     void initialize().then(() => animate());
-  

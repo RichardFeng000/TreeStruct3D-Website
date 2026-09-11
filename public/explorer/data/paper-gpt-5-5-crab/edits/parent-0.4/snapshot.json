@@ -1,0 +1,2198 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "Crab_seed0/Crab_seed0",
+    "label": "Crab_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|carapace|scale",
+        "label": "carapace · scale",
+        "group": "Native Part Parameters · carapace",
+        "value": 0.4,
+        "node_id": "carapace",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|carapace|carapace",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|carapace|segments",
+        "label": "carapace · segments",
+        "group": "Native Part Parameters · carapace",
+        "value": 104,
+        "node_id": "carapace",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 208.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|carapace|rings",
+        "label": "carapace · rings",
+        "group": "Native Part Parameters · carapace",
+        "value": 20,
+        "node_id": "carapace",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 40.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|dominant_cheliped|scale",
+        "label": "dominant_cheliped · scale",
+        "group": "Native Part Parameters · dominant_cheliped",
+        "value": 1.0,
+        "node_id": "dominant_cheliped",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|dominant_cheliped|dominant_cheliped",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|smaller_cheliped|scale",
+        "label": "smaller_cheliped · scale",
+        "group": "Native Part Parameters · smaller_cheliped",
+        "value": 1.0,
+        "node_id": "smaller_cheliped",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|smaller_cheliped|smaller_cheliped",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|walking_leg|scale",
+        "label": "walking_leg · scale",
+        "group": "Native Part Parameters · walking_leg",
+        "value": 1.0,
+        "node_id": "walking_leg",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|walking_leg|walking_leg",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|eye_stalk|scale",
+        "label": "eye_stalk · scale",
+        "group": "Native Part Parameters · eye_stalk",
+        "value": 1.0,
+        "node_id": "eye_stalk",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|eye_stalk|eye_stalk",
+        "visibility_value": true,
+        "is_leaf": false
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gpt5.5/Crab_seed0/Crab_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:Crab_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Crab_seed0.py",
+            "label": "Crab_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 366,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mat",
+            "label": "mat",
+            "kind": "function",
+            "line": 17,
+            "end_line": 35,
+            "parameters": [
+              "name",
+              "color",
+              "rough"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_obj",
+            "label": "make_obj",
+            "kind": "function",
+            "line": 47,
+            "end_line": 64,
+            "parameters": [
+              "name",
+              "verts",
+              "faces",
+              "f_mats",
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "carapace_dims",
+            "label": "carapace_dims",
+            "kind": "function",
+            "line": 66,
+            "end_line": 68,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "dome_z",
+            "label": "dome_z",
+            "kind": "function",
+            "line": 70,
+            "end_line": 75,
+            "parameters": [
+              "x",
+              "y"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "rim_x_for_y",
+            "label": "rim_x_for_y",
+            "kind": "function",
+            "line": 77,
+            "end_line": 80,
+            "parameters": [
+              "sign",
+              "y"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "dominant_anchor",
+            "label": "dominant_anchor",
+            "kind": "function",
+            "line": 82,
+            "end_line": 85,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "smaller_anchor",
+            "label": "smaller_anchor",
+            "kind": "function",
+            "line": 87,
+            "end_line": 90,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "leg_anchor",
+            "label": "leg_anchor",
+            "kind": "function",
+            "line": 92,
+            "end_line": 96,
+            "parameters": [
+              "side",
+              "idx"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "eye_anchor",
+            "label": "eye_anchor",
+            "kind": "function",
+            "line": 98,
+            "end_line": 102,
+            "parameters": [
+              "side"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "frame_from_dir",
+            "label": "frame_from_dir",
+            "kind": "function",
+            "line": 104,
+            "end_line": 111,
+            "parameters": [
+              "d"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_socket",
+            "label": "add_socket",
+            "kind": "function",
+            "line": 113,
+            "end_line": 137,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "center",
+              "direction",
+              "radius",
+              "depth",
+              "material_index",
+              "sides"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_tube",
+            "label": "add_tube",
+            "kind": "function",
+            "line": 139,
+            "end_line": 173,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "pts",
+              "radii",
+              "sides",
+              "mat_sections",
+              "start_mat",
+              "end_mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_ellipsoid",
+            "label": "add_ellipsoid",
+            "kind": "function",
+            "line": 175,
+            "end_line": 191,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "center",
+              "axes",
+              "material_index",
+              "seg",
+              "rings"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_carapace",
+            "label": "build_carapace",
+            "kind": "function",
+            "line": 193,
+            "end_line": 248,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_teeth",
+            "label": "add_teeth",
+            "kind": "function",
+            "line": 250,
+            "end_line": 260,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "base_pts",
+              "side_sign",
+              "material_index",
+              "size"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_dominant",
+            "label": "build_dominant",
+            "kind": "function",
+            "line": 262,
+            "end_line": 276,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_smaller",
+            "label": "build_smaller",
+            "kind": "function",
+            "line": 278,
+            "end_line": 289,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_walking_legs",
+            "label": "build_walking_legs",
+            "kind": "function",
+            "line": 291,
+            "end_line": 312,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_eye_stalks",
+            "label": "build_eye_stalks",
+            "kind": "function",
+            "line": 314,
+            "end_line": 328,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 330,
+            "end_line": 331,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 333,
+            "end_line": 342,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:Crab_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "mat",
+            "relation": "SECTION_MEMBER",
+            "line": 17,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_obj",
+            "relation": "SECTION_MEMBER",
+            "line": 47,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "carapace_dims",
+            "relation": "SECTION_MEMBER",
+            "line": 66,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "dome_z",
+            "relation": "SECTION_MEMBER",
+            "line": 70,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "rim_x_for_y",
+            "relation": "SECTION_MEMBER",
+            "line": 77,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "dominant_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 82,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "smaller_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 87,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "leg_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 92,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "eye_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 98,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "frame_from_dir",
+            "relation": "SECTION_MEMBER",
+            "line": 104,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_socket",
+            "relation": "SECTION_MEMBER",
+            "line": 113,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_tube",
+            "relation": "SECTION_MEMBER",
+            "line": 139,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_ellipsoid",
+            "relation": "SECTION_MEMBER",
+            "line": 175,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_carapace",
+            "relation": "SECTION_MEMBER",
+            "line": 193,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_teeth",
+            "relation": "SECTION_MEMBER",
+            "line": 250,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_dominant",
+            "relation": "SECTION_MEMBER",
+            "line": 262,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_smaller",
+            "relation": "SECTION_MEMBER",
+            "line": 278,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_walking_legs",
+            "relation": "SECTION_MEMBER",
+            "line": 291,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_eye_stalks",
+            "relation": "SECTION_MEMBER",
+            "line": 314,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 330,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 333,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:Crab_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Crab_seed0.py",
+            "label": "Crab_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 366,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "add_ellipsoid",
+            "label": "add_ellipsoid",
+            "kind": "function",
+            "line": 175,
+            "end_line": 191,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "center",
+              "axes",
+              "material_index",
+              "seg",
+              "rings"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_socket",
+            "label": "add_socket",
+            "kind": "function",
+            "line": 113,
+            "end_line": 137,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "center",
+              "direction",
+              "radius",
+              "depth",
+              "material_index",
+              "sides"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_teeth",
+            "label": "add_teeth",
+            "kind": "function",
+            "line": 250,
+            "end_line": 260,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "base_pts",
+              "side_sign",
+              "material_index",
+              "size"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_tube",
+            "label": "add_tube",
+            "kind": "function",
+            "line": 139,
+            "end_line": 173,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "pts",
+              "radii",
+              "sides",
+              "mat_sections",
+              "start_mat",
+              "end_mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 333,
+            "end_line": 342,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_carapace",
+            "label": "build_carapace",
+            "kind": "function",
+            "line": 193,
+            "end_line": 248,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_dominant",
+            "label": "build_dominant",
+            "kind": "function",
+            "line": 262,
+            "end_line": 276,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_eye_stalks",
+            "label": "build_eye_stalks",
+            "kind": "function",
+            "line": 314,
+            "end_line": 328,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_smaller",
+            "label": "build_smaller",
+            "kind": "function",
+            "line": 278,
+            "end_line": 289,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_walking_legs",
+            "label": "build_walking_legs",
+            "kind": "function",
+            "line": 291,
+            "end_line": 312,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "carapace_dims",
+            "label": "carapace_dims",
+            "kind": "function",
+            "line": 66,
+            "end_line": 68,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "dome_z",
+            "label": "dome_z",
+            "kind": "function",
+            "line": 70,
+            "end_line": 75,
+            "parameters": [
+              "x",
+              "y"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "dominant_anchor",
+            "label": "dominant_anchor",
+            "kind": "function",
+            "line": 82,
+            "end_line": 85,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "eye_anchor",
+            "label": "eye_anchor",
+            "kind": "function",
+            "line": 98,
+            "end_line": 102,
+            "parameters": [
+              "side"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "frame_from_dir",
+            "label": "frame_from_dir",
+            "kind": "function",
+            "line": 104,
+            "end_line": 111,
+            "parameters": [
+              "d"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "leg_anchor",
+            "label": "leg_anchor",
+            "kind": "function",
+            "line": 92,
+            "end_line": 96,
+            "parameters": [
+              "side",
+              "idx"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 330,
+            "end_line": 331,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_obj",
+            "label": "make_obj",
+            "kind": "function",
+            "line": 47,
+            "end_line": 64,
+            "parameters": [
+              "name",
+              "verts",
+              "faces",
+              "f_mats",
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mat",
+            "label": "mat",
+            "kind": "function",
+            "line": 17,
+            "end_line": 35,
+            "parameters": [
+              "name",
+              "color",
+              "rough"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "rim_x_for_y",
+            "label": "rim_x_for_y",
+            "kind": "function",
+            "line": 77,
+            "end_line": 80,
+            "parameters": [
+              "sign",
+              "y"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "smaller_anchor",
+            "label": "smaller_anchor",
+            "kind": "function",
+            "line": 87,
+            "end_line": 90,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "add_socket",
+            "child": "frame_from_dir",
+            "relation": "CALL",
+            "line": 115,
+            "evidence": "AST call at L115"
+          },
+          {
+            "parent": "add_tube",
+            "child": "frame_from_dir",
+            "relation": "CALL",
+            "line": 148,
+            "evidence": "AST call at L148"
+          },
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 334,
+            "evidence": "AST call at L334"
+          },
+          {
+            "parent": "build_carapace",
+            "child": "carapace_dims",
+            "relation": "CALL",
+            "line": 197,
+            "evidence": "AST call at L197"
+          },
+          {
+            "parent": "build_carapace",
+            "child": "dome_z",
+            "relation": "CALL",
+            "line": 199,
+            "evidence": "AST call at L199"
+          },
+          {
+            "parent": "build_carapace",
+            "child": "add_socket",
+            "relation": "CALL",
+            "line": 237,
+            "evidence": "AST call at L237"
+          },
+          {
+            "parent": "build_carapace",
+            "child": "dominant_anchor",
+            "relation": "CALL",
+            "line": 237,
+            "evidence": "AST call at L237"
+          },
+          {
+            "parent": "build_carapace",
+            "child": "smaller_anchor",
+            "relation": "CALL",
+            "line": 238,
+            "evidence": "AST call at L238"
+          },
+          {
+            "parent": "build_carapace",
+            "child": "leg_anchor",
+            "relation": "CALL",
+            "line": 243,
+            "evidence": "AST call at L243"
+          },
+          {
+            "parent": "build_carapace",
+            "child": "eye_anchor",
+            "relation": "CALL",
+            "line": 246,
+            "evidence": "AST call at L246"
+          },
+          {
+            "parent": "build_carapace",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 247,
+            "evidence": "AST call at L247"
+          },
+          {
+            "parent": "build_dominant",
+            "child": "add_tube",
+            "relation": "CALL",
+            "line": 267,
+            "evidence": "AST call at L267"
+          },
+          {
+            "parent": "build_dominant",
+            "child": "add_ellipsoid",
+            "relation": "CALL",
+            "line": 268,
+            "evidence": "AST call at L268"
+          },
+          {
+            "parent": "build_dominant",
+            "child": "add_teeth",
+            "relation": "CALL",
+            "line": 273,
+            "evidence": "AST call at L273"
+          },
+          {
+            "parent": "build_dominant",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 275,
+            "evidence": "AST call at L275"
+          },
+          {
+            "parent": "build_eye_stalks",
+            "child": "eye_anchor",
+            "relation": "CALL",
+            "line": 320,
+            "evidence": "AST call at L320"
+          },
+          {
+            "parent": "build_eye_stalks",
+            "child": "add_tube",
+            "relation": "CALL",
+            "line": 325,
+            "evidence": "AST call at L325"
+          },
+          {
+            "parent": "build_eye_stalks",
+            "child": "add_ellipsoid",
+            "relation": "CALL",
+            "line": 326,
+            "evidence": "AST call at L326"
+          },
+          {
+            "parent": "build_eye_stalks",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 327,
+            "evidence": "AST call at L327"
+          },
+          {
+            "parent": "build_smaller",
+            "child": "add_tube",
+            "relation": "CALL",
+            "line": 282,
+            "evidence": "AST call at L282"
+          },
+          {
+            "parent": "build_smaller",
+            "child": "add_ellipsoid",
+            "relation": "CALL",
+            "line": 283,
+            "evidence": "AST call at L283"
+          },
+          {
+            "parent": "build_smaller",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 288,
+            "evidence": "AST call at L288"
+          },
+          {
+            "parent": "build_walking_legs",
+            "child": "leg_anchor",
+            "relation": "CALL",
+            "line": 299,
+            "evidence": "AST call at L299"
+          },
+          {
+            "parent": "build_walking_legs",
+            "child": "add_tube",
+            "relation": "CALL",
+            "line": 310,
+            "evidence": "AST call at L310"
+          },
+          {
+            "parent": "build_walking_legs",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 311,
+            "evidence": "AST call at L311"
+          },
+          {
+            "parent": "dome_z",
+            "child": "carapace_dims",
+            "relation": "CALL",
+            "line": 71,
+            "evidence": "AST call at L71"
+          },
+          {
+            "parent": "dominant_anchor",
+            "child": "carapace_dims",
+            "relation": "CALL",
+            "line": 83,
+            "evidence": "AST call at L83"
+          },
+          {
+            "parent": "dominant_anchor",
+            "child": "rim_x_for_y",
+            "relation": "CALL",
+            "line": 85,
+            "evidence": "AST call at L85"
+          },
+          {
+            "parent": "eye_anchor",
+            "child": "carapace_dims",
+            "relation": "CALL",
+            "line": 99,
+            "evidence": "AST call at L99"
+          },
+          {
+            "parent": "eye_anchor",
+            "child": "dome_z",
+            "relation": "CALL",
+            "line": 102,
+            "evidence": "AST call at L102"
+          },
+          {
+            "parent": "leg_anchor",
+            "child": "carapace_dims",
+            "relation": "CALL",
+            "line": 93,
+            "evidence": "AST call at L93"
+          },
+          {
+            "parent": "leg_anchor",
+            "child": "rim_x_for_y",
+            "relation": "CALL",
+            "line": 96,
+            "evidence": "AST call at L96"
+          },
+          {
+            "parent": "rim_x_for_y",
+            "child": "carapace_dims",
+            "relation": "CALL",
+            "line": 78,
+            "evidence": "AST call at L78"
+          },
+          {
+            "parent": "smaller_anchor",
+            "child": "carapace_dims",
+            "relation": "CALL",
+            "line": 88,
+            "evidence": "AST call at L88"
+          },
+          {
+            "parent": "smaller_anchor",
+            "child": "rim_x_for_y",
+            "relation": "CALL",
+            "line": 90,
+            "evidence": "AST call at L90"
+          },
+          {
+            "parent": "module:Crab_seed0.py",
+            "child": "mat",
+            "relation": "ENTRYPOINT",
+            "line": 37,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Crab_seed0.py",
+            "child": "build_carapace",
+            "relation": "ENTRYPOINT",
+            "line": 344,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Crab_seed0.py",
+            "child": "build_dominant",
+            "relation": "ENTRYPOINT",
+            "line": 345,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Crab_seed0.py",
+            "child": "build_smaller",
+            "relation": "ENTRYPOINT",
+            "line": 346,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Crab_seed0.py",
+            "child": "build_walking_legs",
+            "relation": "ENTRYPOINT",
+            "line": 347,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Crab_seed0.py",
+            "child": "build_eye_stalks",
+            "relation": "ENTRYPOINT",
+            "line": 348,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Crab_seed0.py",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "ENTRYPOINT",
+            "line": 350,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "carapace_obj"
+        ],
+        "nodes": [
+          {
+            "id": "carapace_obj",
+            "label": "carapace_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L350: carapace_obj -> dominant_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L360: carapace_obj -> eye_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L351: carapace_obj -> smaller_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L356: carapace_obj -> walking_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_carapace",
+            "runtime_variable": "carapace_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "dominant_obj",
+            "label": "dominant_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L350: carapace_obj -> dominant_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_dominant",
+            "runtime_variable": "dominant_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "eye_obj",
+            "label": "eye_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L360: carapace_obj -> eye_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_eye_stalks",
+            "runtime_variable": "eye_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "smaller_obj",
+            "label": "smaller_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L351: carapace_obj -> smaller_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_smaller",
+            "runtime_variable": "smaller_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "walking_obj",
+            "label": "walking_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L356: carapace_obj -> walking_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_walking_legs",
+            "runtime_variable": "walking_obj",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "carapace_obj",
+            "child": "dominant_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 350,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "carapace_obj",
+            "child": "eye_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 360,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "carapace_obj",
+            "child": "smaller_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 351,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "carapace_obj",
+            "child": "walking_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 356,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "carapace"
+    ],
+    "nodes": [
+      {
+        "id": "walking_leg",
+        "label": "walking_leg",
+        "part_id": "walking_leg",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          -0.07165567576885223,
+          -0.02219679206609726
+        ],
+        "dimensions": [
+          3.95884108543396,
+          1.0468253195285797,
+          0.13990961015224457
+        ],
+        "bbox_min": [
+          -1.97942054271698,
+          -0.5950683355331421,
+          -0.09215159714221954
+        ],
+        "bbox_max": [
+          1.97942054271698,
+          0.4517569839954376,
+          0.047758013010025024
+        ]
+      },
+      {
+        "id": "dominant_cheliped",
+        "label": "dominant_cheliped",
+        "part_id": "dominant_cheliped",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.49801599979400635,
+          0.24480000138282776,
+          -0.004000000189989805
+        ],
+        "center": [
+          0.8115475177764893,
+          1.575004830956459,
+          0.036118410527706146
+        ],
+        "dimensions": [
+          0.9021811485290527,
+          2.752115696668625,
+          0.3897631913423538
+        ],
+        "bbox_min": [
+          0.3604569435119629,
+          0.1989469826221466,
+          -0.15876318514347076
+        ],
+        "bbox_max": [
+          1.2626380920410156,
+          2.9510626792907715,
+          0.23100000619888306
+        ]
+      },
+      {
+        "id": "smaller_cheliped",
+        "label": "smaller_cheliped",
+        "part_id": "smaller_cheliped",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.4932857155799866,
+          0.24887999892234802,
+          -0.004800000227987766
+        ],
+        "center": [
+          -0.7230753153562546,
+          1.0772644206881523,
+          0.022790096700191498
+        ],
+        "dimensions": [
+          0.660292774438858,
+          1.7185268551111221,
+          0.26481978595256805
+        ],
+        "bbox_min": [
+          -1.0532217025756836,
+          0.21800099313259125,
+          -0.10961979627609253
+        ],
+        "bbox_max": [
+          -0.39292892813682556,
+          1.9365278482437134,
+          0.15519998967647552
+        ]
+      },
+      {
+        "id": "carapace",
+        "label": "carapace",
+        "part_id": "carapace",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.039854906499385834
+        ],
+        "dimensions": [
+          1.2553482055664062,
+          0.8273188471794128,
+          0.21458743512630463
+        ],
+        "bbox_min": [
+          -0.6276741027832031,
+          -0.4136594235897064,
+          -0.06743881106376648
+        ],
+        "bbox_max": [
+          0.6276741027832031,
+          0.4136594235897064,
+          0.14714862406253815
+        ]
+      },
+      {
+        "id": "eye_stalk",
+        "label": "eye_stalk",
+        "part_id": "eye_stalk",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.45446161925792694,
+          0.144831333309412
+        ],
+        "dimensions": [
+          0.2978437840938568,
+          0.2325212061405182,
+          0.19984226673841476
+        ],
+        "bbox_min": [
+          -0.1489218920469284,
+          0.33820101618766785,
+          0.04491019994020462
+        ],
+        "bbox_max": [
+          0.1489218920469284,
+          0.570722222328186,
+          0.24475246667861938
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "carapace",
+        "child": "eye_stalk",
+        "relation": "DIRECTED",
+        "line": 339,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.06599999964237213,
+          0.3569999933242798,
+          0.06575246900320053
+        ],
+        "anchor_b": [
+          0.06599999964237213,
+          0.3569999933242798,
+          0.06575246900320053
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 2,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.012855599005727516,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "carapace",
+            "child": "eye_stalk",
+            "source": "parent_assignment",
+            "line": 339
+          },
+          {
+            "parent": "carapace",
+            "child": "eye_stalk",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 360,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.06599999964237213,
+              0.3569999933242798,
+              0.06575246900320053
+            ],
+            "parent_anchor_world": [
+              0.06599999964237213,
+              0.3569999933242798,
+              0.06575246900320053
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.012855599005727516,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "eye_stalk",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 360,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.06599999964237213,
+              0.3569999933242798,
+              0.06556551158428192
+            ],
+            "parent_anchor_world": [
+              -0.06599999964237213,
+              0.3569999933242798,
+              0.06556551158428192
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.007814329444145415,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "eye_stalk",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "carapace",
+        "child": "walking_leg",
+        "relation": "DIRECTED",
+        "line": 339,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.5758225917816162,
+          0.15503999590873718,
+          -0.007199999876320362
+        ],
+        "anchor_b": [
+          0.5758225917816162,
+          0.15503999590873718,
+          -0.007199999876320362
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 8,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.029858590573526446,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "carapace",
+            "child": "walking_leg",
+            "source": "parent_assignment",
+            "line": 339
+          },
+          {
+            "parent": "carapace",
+            "child": "walking_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 356,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.5758225917816162,
+              0.15503999590873718,
+              -0.007199999876320362
+            ],
+            "parent_anchor_world": [
+              0.5758225917816162,
+              0.15503999590873718,
+              -0.007199999876320362
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.028821648629072532,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "walking_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 356,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.6180216073989868,
+              0.04896000027656555,
+              -0.007199999876320362
+            ],
+            "parent_anchor_world": [
+              0.6180216073989868,
+              0.04896000027656555,
+              -0.007199999876320362
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.02406360484030822,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "walking_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 356,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.614500105381012,
+              -0.0652799978852272,
+              -0.007199999876320362
+            ],
+            "parent_anchor_world": [
+              0.614500105381012,
+              -0.0652799978852272,
+              -0.007199999876320362
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.029858590573526446,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "walking_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 356,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.5620290637016296,
+              -0.1754399985074997,
+              -0.007199999876320362
+            ],
+            "parent_anchor_world": [
+              0.5620290637016296,
+              -0.1754399985074997,
+              -0.007199999876320362
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.027124493997603378,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "walking_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 356,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.5758225917816162,
+              0.15503999590873718,
+              -0.007199999876320362
+            ],
+            "parent_anchor_world": [
+              -0.5758225917816162,
+              0.15503999590873718,
+              -0.007199999876320362
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.025477904294072467,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "walking_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 356,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.6180216073989868,
+              0.04896000027656555,
+              -0.007199999876320362
+            ],
+            "parent_anchor_world": [
+              -0.6180216073989868,
+              0.04896000027656555,
+              -0.007199999876320362
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.02837794631847197,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "walking_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 356,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.614500105381012,
+              -0.0652799978852272,
+              -0.007199999876320362
+            ],
+            "parent_anchor_world": [
+              -0.614500105381012,
+              -0.0652799978852272,
+              -0.007199999876320362
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.026306788072847965,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "walking_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 356,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.5620290637016296,
+              -0.1754399985074997,
+              -0.007199999876320362
+            ],
+            "parent_anchor_world": [
+              -0.5620290637016296,
+              -0.1754399985074997,
+              -0.007199999876320362
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.028373970398342923,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "walking_leg",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "carapace",
+        "child": "smaller_cheliped",
+        "relation": "DIRECTED",
+        "line": 339,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.4932857155799866,
+          0.24887999892234802,
+          -0.004800000227987766
+        ],
+        "anchor_b": [
+          -0.4932857155799866,
+          0.24887999892234802,
+          -0.004800000227987766
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.024737492932346613,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "carapace",
+            "child": "smaller_cheliped",
+            "source": "parent_assignment",
+            "line": 339
+          },
+          {
+            "parent": "carapace",
+            "child": "smaller_cheliped",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 351,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -0.4932857155799866,
+              0.24887999892234802,
+              -0.004800000227987766
+            ],
+            "parent_anchor_world": [
+              -0.4932857155799866,
+              0.24887999892234802,
+              -0.004800000227987766
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.024737492932346613,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "smaller_cheliped",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "carapace",
+        "child": "dominant_cheliped",
+        "relation": "DIRECTED",
+        "line": 339,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.49801599979400635,
+          0.24480000138282776,
+          -0.004000000189989805
+        ],
+        "anchor_b": [
+          0.49801599979400635,
+          0.24480000138282776,
+          -0.004000000189989805
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 1.1060510620665374,
+        "parent_anchor_vertex_gap": 0.024039817208596253,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "carapace",
+            "child": "dominant_cheliped",
+            "source": "parent_assignment",
+            "line": 339
+          },
+          {
+            "parent": "carapace",
+            "child": "dominant_cheliped",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 350,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.49801599979400635,
+              0.24480000138282776,
+              -0.004000000189989805
+            ],
+            "parent_anchor_world": [
+              0.49801599979400635,
+              0.24480000138282776,
+              -0.004000000189989805
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 1.1060510620665374,
+            "parent_anchor_vertex_gap": 0.024039817208596253,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "carapace",
+            "child": "dominant_cheliped",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "smaller_cheliped",
+        "child": "walking_leg",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.556921124458313,
+          0.23308508098125458,
+          -0.08681255578994751
+        ],
+        "anchor_b": [
+          -0.5698813796043396,
+          0.1819564700126648,
+          -0.05479416996240616
+        ],
+        "anchor_gap": 0.061703161215847034,
+        "anchor_tolerance": 0.098971027135849,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "dominant_cheliped",
+        "child": "walking_leg",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.6355750560760498,
+          0.1989469826221466,
+          -0.004000000189989805
+        ],
+        "anchor_b": [
+          0.567663848400116,
+          0.2094314992427826,
+          -0.007199999876320362
+        ],
+        "anchor_gap": 0.06879024069419093,
+        "anchor_tolerance": 0.098971027135849,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "eye_stalk",
+        "child": "walking_leg",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.09345626085996628,
+          0.3515087366104126,
+          0.06575246900320053
+        ],
+        "anchor_b": [
+          0.567663848400116,
+          0.2094314992427826,
+          -0.007199999876320362
+        ],
+        "anchor_gap": 0.5003806952454142,
+        "anchor_tolerance": 0.098971027135849,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 5,
+      "edges": 7,
+      "relations": {
+        "DIRECTED": 4,
+        "UNDIRECTED_CONTACT": 3
+      },
+      "directed_edges": 4,
+      "runtime_directed_edges": 4,
+      "shared_anchor_edges": 0,
+      "estimated_anchor_edges": 3,
+      "geometric_anchor_candidates": 6,
+      "unverified_anchor_candidates": 6,
+      "misaligned_anchor_edges": 1
+    },
+    "source_bounds": {
+      "min": [
+        -1.97942054271698,
+        -0.5950683355331421,
+        -0.15876318514347076
+      ],
+      "max": [
+        1.97942054271698,
+        2.9510626792907715,
+        0.24475246667861938
+      ]
+    },
+    "scene_extent": 3.95884108543396,
+    "contact_threshold": 0.098971027135849,
+    "shared_anchor_tolerance": 0.098971027135849,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "carapace",
+        "dominant_cheliped",
+        "eye_stalk",
+        "smaller_cheliped",
+        "walking_leg"
+      ],
+      "scale_overrides": {
+        "carapace": 0.4
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · GPT-5.5",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gpt5.5/Crab_seed0/Crab_seed0.py",
+    "source_sha256": "6689f96b03f258464a9a1265d1fe75a29ee63633893e1fbb750e4240351cbf43",
+    "source_size": 16203,
+    "glb_sha256": "621e9a928a7b9b40cf7bd4379e659e57be6030172a3d642758c00fb1c7f15bc9",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|carapace|scale": 0.4
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "parent-0.4",
+      "side": "parent",
+      "part_ids": [
+        "carapace"
+      ],
+      "parameter": "scale",
+      "scale": 0.4,
+      "params": {
+        "part_param|carapace|scale": 0.4
+      },
+      "paper_parent_ids": [
+        "carapace"
+      ],
+      "paper_child_ids": [
+        "walking_leg"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "dimensions": [
+        {
+          "id": "carapace",
+          "part_id": "carapace",
+          "before": [
+            3.1383705139160156,
+            2.0682971477508545,
+            0.536468580365181
+          ],
+          "after": [
+            1.2553482055664062,
+            0.8273188471794128,
+            0.21458743512630463
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "carapace",
+          "child": "walking_leg",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "carapace",
+          "runtime_child_part_id": "walking_leg"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      -1.4901161193847657e-09,
+      0.1587631843984127,
+      1.1779971247538925
+    ],
+    "mesh_bbox_max_error_before_translation": 1.1779972314834595,
+    "mesh_bbox_max_error_after_translation": 1.06729566962116e-07
+  }
+}

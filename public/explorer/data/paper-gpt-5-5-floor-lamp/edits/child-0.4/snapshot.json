@@ -1,0 +1,1986 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "FloorLamp_seed0/FloorLamp_seed0",
+    "label": "FloorLamp_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|round_base|scale",
+        "label": "round_base · scale",
+        "group": "Native Part Parameters · round_base",
+        "value": 1.0,
+        "node_id": "round_base",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|round_base|round_base",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|round_base|radius",
+        "label": "round_base · radius",
+        "group": "Native Part Parameters · round_base",
+        "value": 0.86,
+        "node_id": "round_base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.43000000000000005,
+        "max": 2.15,
+        "step": 0.0086
+      },
+      {
+        "id": "part_param|round_base|thickness",
+        "label": "round_base · thickness",
+        "group": "Native Part Parameters · round_base",
+        "value": 0.16,
+        "node_id": "round_base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.07999999999999999,
+        "max": 0.4,
+        "step": 0.0016
+      },
+      {
+        "id": "part_param|round_base|segments",
+        "label": "round_base · segments",
+        "group": "Native Part Parameters · round_base",
+        "value": 96,
+        "node_id": "round_base",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 192.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|central_pole|scale",
+        "label": "central_pole · scale",
+        "group": "Native Part Parameters · central_pole",
+        "value": 0.4,
+        "node_id": "central_pole",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|central_pole|central_pole",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|central_pole|radius",
+        "label": "central_pole · radius",
+        "group": "Native Part Parameters · central_pole",
+        "value": 0.04,
+        "node_id": "central_pole",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.060000000000000005,
+        "max": 0.14,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|central_pole|height",
+        "label": "central_pole · height",
+        "group": "Native Part Parameters · central_pole",
+        "value": 3.55,
+        "node_id": "central_pole",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -1.7749999999999995,
+        "max": 8.875,
+        "step": 0.0355
+      },
+      {
+        "id": "part_param|central_pole|tray_height",
+        "label": "central_pole · tray_height",
+        "group": "Native Part Parameters · central_pole",
+        "value": 1.35,
+        "node_id": "central_pole",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.6750000000000003,
+        "max": 3.3750000000000004,
+        "step": 0.013500000000000002
+      },
+      {
+        "id": "part_param|central_pole|segments",
+        "label": "central_pole · segments",
+        "group": "Native Part Parameters · central_pole",
+        "value": 64,
+        "node_id": "central_pole",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 128.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|circular_tray|scale",
+        "label": "circular_tray · scale",
+        "group": "Native Part Parameters · circular_tray",
+        "value": 1.0,
+        "node_id": "circular_tray",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|circular_tray|circular_tray",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|circular_tray|radius",
+        "label": "circular_tray · radius",
+        "group": "Native Part Parameters · circular_tray",
+        "value": 0.32,
+        "node_id": "circular_tray",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.15999999999999998,
+        "max": 0.8,
+        "step": 0.0032
+      },
+      {
+        "id": "part_param|circular_tray|thickness",
+        "label": "circular_tray · thickness",
+        "group": "Native Part Parameters · circular_tray",
+        "value": 0.055,
+        "node_id": "circular_tray",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.045000000000000005,
+        "max": 0.155,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|circular_tray|collar_radius",
+        "label": "circular_tray · collar_radius",
+        "group": "Native Part Parameters · circular_tray",
+        "value": 0.085,
+        "node_id": "circular_tray",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.042499999999999996,
+        "max": 0.21250000000000002,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|circular_tray|collar_height",
+        "label": "circular_tray · collar_height",
+        "group": "Native Part Parameters · circular_tray",
+        "value": 0.18,
+        "node_id": "circular_tray",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.09000000000000002,
+        "max": 0.45,
+        "step": 0.0018
+      },
+      {
+        "id": "part_param|circular_tray|segments",
+        "label": "circular_tray · segments",
+        "group": "Native Part Parameters · circular_tray",
+        "value": 96,
+        "node_id": "circular_tray",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 192.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|tapered_shade|scale",
+        "label": "tapered_shade · scale",
+        "group": "Native Part Parameters · tapered_shade",
+        "value": 1.0,
+        "node_id": "tapered_shade",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|tapered_shade|tapered_shade",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|tapered_shade|height",
+        "label": "tapered_shade · height",
+        "group": "Native Part Parameters · tapered_shade",
+        "value": 1.18,
+        "node_id": "tapered_shade",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.5900000000000001,
+        "max": 2.95,
+        "step": 0.0118
+      },
+      {
+        "id": "part_param|tapered_shade|bottom_radius",
+        "label": "tapered_shade · bottom_radius",
+        "group": "Native Part Parameters · tapered_shade",
+        "value": 0.68,
+        "node_id": "tapered_shade",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.33999999999999997,
+        "max": 1.7000000000000002,
+        "step": 0.0068000000000000005
+      },
+      {
+        "id": "part_param|tapered_shade|top_radius",
+        "label": "tapered_shade · top_radius",
+        "group": "Native Part Parameters · tapered_shade",
+        "value": 0.45,
+        "node_id": "tapered_shade",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.22500000000000003,
+        "max": 1.125,
+        "step": 0.0045000000000000005
+      },
+      {
+        "id": "part_param|tapered_shade|thickness",
+        "label": "tapered_shade · thickness",
+        "group": "Native Part Parameters · tapered_shade",
+        "value": 0.028,
+        "node_id": "tapered_shade",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.07200000000000001,
+        "max": 0.128,
+        "step": 0.001
+      },
+      {
+        "id": "part_param|tapered_shade|segments",
+        "label": "tapered_shade · segments",
+        "group": "Native Part Parameters · tapered_shade",
+        "value": 128,
+        "node_id": "tapered_shade",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 256.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|tapered_shade|pleats",
+        "label": "tapered_shade · pleats",
+        "group": "Native Part Parameters · tapered_shade",
+        "value": 16,
+        "node_id": "tapered_shade",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 32.0,
+        "step": 1.0
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gpt5.5/FloorLamp_seed0/FloorLamp_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:FloorLamp_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:FloorLamp_seed0.py",
+            "label": "FloorLamp_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 335,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_material",
+            "label": "make_material",
+            "kind": "function",
+            "line": 15,
+            "end_line": 29,
+            "parameters": [
+              "name",
+              "color",
+              "metallic",
+              "roughness"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "seg_count",
+            "label": "seg_count",
+            "kind": "function",
+            "line": 36,
+            "end_line": 39,
+            "parameters": [
+              "value",
+              "minimum"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_face",
+            "label": "add_face",
+            "kind": "function",
+            "line": 41,
+            "end_line": 44,
+            "parameters": [
+              "faces",
+              "mats",
+              "smooths",
+              "indices",
+              "mat",
+              "smooth"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_ring",
+            "label": "add_ring",
+            "kind": "function",
+            "line": 46,
+            "end_line": 52,
+            "parameters": [
+              "verts",
+              "radius",
+              "z",
+              "seg"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_side",
+            "label": "add_side",
+            "kind": "function",
+            "line": 54,
+            "end_line": 61,
+            "parameters": [
+              "faces",
+              "mats",
+              "smooths",
+              "lower",
+              "upper",
+              "mat",
+              "smooth",
+              "inward"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_cap_fan",
+            "label": "add_cap_fan",
+            "kind": "function",
+            "line": 63,
+            "end_line": 70,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "smooths",
+              "ring",
+              "center",
+              "top",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_annulus",
+            "label": "add_annulus",
+            "kind": "function",
+            "line": 72,
+            "end_line": 79,
+            "parameters": [
+              "faces",
+              "mats",
+              "smooths",
+              "outer",
+              "inner",
+              "top",
+              "mat",
+              "smooth"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "append_solid_cylinder",
+            "label": "append_solid_cylinder",
+            "kind": "function",
+            "line": 81,
+            "end_line": 91,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "smooths",
+              "radius",
+              "zmin",
+              "zmax",
+              "seg",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "append_annular_cylinder",
+            "label": "append_annular_cylinder",
+            "kind": "function",
+            "line": 93,
+            "end_line": 108,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "smooths",
+              "inner_r",
+              "outer_r",
+              "zmin",
+              "zmax",
+              "seg",
+              "mat",
+              "mid_z",
+              "cap_top",
+              "cap_bottom"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "append_torus",
+            "label": "append_torus",
+            "kind": "function",
+            "line": 110,
+            "end_line": 126,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "smooths",
+              "major",
+              "minor",
+              "zcenter",
+              "seg_major",
+              "seg_minor",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "append_radial_bar",
+            "label": "append_radial_bar",
+            "kind": "function",
+            "line": 128,
+            "end_line": 142,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "smooths",
+              "angle",
+              "r1",
+              "r2",
+              "z",
+              "width",
+              "height",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_mesh_object",
+            "label": "create_mesh_object",
+            "kind": "function",
+            "line": 144,
+            "end_line": 159,
+            "parameters": [
+              "name",
+              "verts",
+              "faces",
+              "mat_indices",
+              "smooths",
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "effective_pole_radius",
+            "label": "effective_pole_radius",
+            "kind": "function",
+            "line": 161,
+            "end_line": 163,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_round_base",
+            "label": "build_round_base",
+            "kind": "function",
+            "line": 165,
+            "end_line": 193,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_central_pole",
+            "label": "build_central_pole",
+            "kind": "function",
+            "line": 195,
+            "end_line": 219,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_circular_tray",
+            "label": "build_circular_tray",
+            "kind": "function",
+            "line": 221,
+            "end_line": 243,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_tapered_shade",
+            "label": "build_tapered_shade",
+            "kind": "function",
+            "line": 245,
+            "end_line": 309,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 311,
+            "end_line": 312,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 314,
+            "end_line": 323,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:FloorLamp_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_material",
+            "relation": "SECTION_MEMBER",
+            "line": 15,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "seg_count",
+            "relation": "SECTION_MEMBER",
+            "line": 36,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_face",
+            "relation": "SECTION_MEMBER",
+            "line": 41,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_ring",
+            "relation": "SECTION_MEMBER",
+            "line": 46,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_side",
+            "relation": "SECTION_MEMBER",
+            "line": 54,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_cap_fan",
+            "relation": "SECTION_MEMBER",
+            "line": 63,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_annulus",
+            "relation": "SECTION_MEMBER",
+            "line": 72,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "append_solid_cylinder",
+            "relation": "SECTION_MEMBER",
+            "line": 81,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "append_annular_cylinder",
+            "relation": "SECTION_MEMBER",
+            "line": 93,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "append_torus",
+            "relation": "SECTION_MEMBER",
+            "line": 110,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "append_radial_bar",
+            "relation": "SECTION_MEMBER",
+            "line": 128,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "create_mesh_object",
+            "relation": "SECTION_MEMBER",
+            "line": 144,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "effective_pole_radius",
+            "relation": "SECTION_MEMBER",
+            "line": 161,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_round_base",
+            "relation": "SECTION_MEMBER",
+            "line": 165,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_central_pole",
+            "relation": "SECTION_MEMBER",
+            "line": 195,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_circular_tray",
+            "relation": "SECTION_MEMBER",
+            "line": 221,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_tapered_shade",
+            "relation": "SECTION_MEMBER",
+            "line": 245,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 311,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 314,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:FloorLamp_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:FloorLamp_seed0.py",
+            "label": "FloorLamp_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 335,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "add_annulus",
+            "label": "add_annulus",
+            "kind": "function",
+            "line": 72,
+            "end_line": 79,
+            "parameters": [
+              "faces",
+              "mats",
+              "smooths",
+              "outer",
+              "inner",
+              "top",
+              "mat",
+              "smooth"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_cap_fan",
+            "label": "add_cap_fan",
+            "kind": "function",
+            "line": 63,
+            "end_line": 70,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "smooths",
+              "ring",
+              "center",
+              "top",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_face",
+            "label": "add_face",
+            "kind": "function",
+            "line": 41,
+            "end_line": 44,
+            "parameters": [
+              "faces",
+              "mats",
+              "smooths",
+              "indices",
+              "mat",
+              "smooth"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_ring",
+            "label": "add_ring",
+            "kind": "function",
+            "line": 46,
+            "end_line": 52,
+            "parameters": [
+              "verts",
+              "radius",
+              "z",
+              "seg"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_side",
+            "label": "add_side",
+            "kind": "function",
+            "line": 54,
+            "end_line": 61,
+            "parameters": [
+              "faces",
+              "mats",
+              "smooths",
+              "lower",
+              "upper",
+              "mat",
+              "smooth",
+              "inward"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "append_annular_cylinder",
+            "label": "append_annular_cylinder",
+            "kind": "function",
+            "line": 93,
+            "end_line": 108,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "smooths",
+              "inner_r",
+              "outer_r",
+              "zmin",
+              "zmax",
+              "seg",
+              "mat",
+              "mid_z",
+              "cap_top",
+              "cap_bottom"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "append_radial_bar",
+            "label": "append_radial_bar",
+            "kind": "function",
+            "line": 128,
+            "end_line": 142,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "smooths",
+              "angle",
+              "r1",
+              "r2",
+              "z",
+              "width",
+              "height",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "append_solid_cylinder",
+            "label": "append_solid_cylinder",
+            "kind": "function",
+            "line": 81,
+            "end_line": 91,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "smooths",
+              "radius",
+              "zmin",
+              "zmax",
+              "seg",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "append_torus",
+            "label": "append_torus",
+            "kind": "function",
+            "line": 110,
+            "end_line": 126,
+            "parameters": [
+              "verts",
+              "faces",
+              "mats",
+              "smooths",
+              "major",
+              "minor",
+              "zcenter",
+              "seg_major",
+              "seg_minor",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 314,
+            "end_line": 323,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_central_pole",
+            "label": "build_central_pole",
+            "kind": "function",
+            "line": 195,
+            "end_line": 219,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_circular_tray",
+            "label": "build_circular_tray",
+            "kind": "function",
+            "line": 221,
+            "end_line": 243,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_round_base",
+            "label": "build_round_base",
+            "kind": "function",
+            "line": 165,
+            "end_line": 193,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_tapered_shade",
+            "label": "build_tapered_shade",
+            "kind": "function",
+            "line": 245,
+            "end_line": 309,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "create_mesh_object",
+            "label": "create_mesh_object",
+            "kind": "function",
+            "line": 144,
+            "end_line": 159,
+            "parameters": [
+              "name",
+              "verts",
+              "faces",
+              "mat_indices",
+              "smooths",
+              "materials"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "effective_pole_radius",
+            "label": "effective_pole_radius",
+            "kind": "function",
+            "line": 161,
+            "end_line": 163,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 311,
+            "end_line": 312,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_material",
+            "label": "make_material",
+            "kind": "function",
+            "line": 15,
+            "end_line": 29,
+            "parameters": [
+              "name",
+              "color",
+              "metallic",
+              "roughness"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "seg_count",
+            "label": "seg_count",
+            "kind": "function",
+            "line": 36,
+            "end_line": 39,
+            "parameters": [
+              "value",
+              "minimum"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "add_annulus",
+            "child": "add_face",
+            "relation": "CALL",
+            "line": 77,
+            "evidence": "AST call at L77"
+          },
+          {
+            "parent": "add_cap_fan",
+            "child": "add_face",
+            "relation": "CALL",
+            "line": 68,
+            "evidence": "AST call at L68"
+          },
+          {
+            "parent": "add_side",
+            "child": "add_face",
+            "relation": "CALL",
+            "line": 59,
+            "evidence": "AST call at L59"
+          },
+          {
+            "parent": "append_annular_cylinder",
+            "child": "add_ring",
+            "relation": "CALL",
+            "line": 100,
+            "evidence": "AST call at L100"
+          },
+          {
+            "parent": "append_annular_cylinder",
+            "child": "add_side",
+            "relation": "CALL",
+            "line": 102,
+            "evidence": "AST call at L102"
+          },
+          {
+            "parent": "append_annular_cylinder",
+            "child": "add_annulus",
+            "relation": "CALL",
+            "line": 105,
+            "evidence": "AST call at L105"
+          },
+          {
+            "parent": "append_radial_bar",
+            "child": "add_face",
+            "relation": "CALL",
+            "line": 137,
+            "evidence": "AST call at L137"
+          },
+          {
+            "parent": "append_solid_cylinder",
+            "child": "add_ring",
+            "relation": "CALL",
+            "line": 82,
+            "evidence": "AST call at L82"
+          },
+          {
+            "parent": "append_solid_cylinder",
+            "child": "add_side",
+            "relation": "CALL",
+            "line": 84,
+            "evidence": "AST call at L84"
+          },
+          {
+            "parent": "append_solid_cylinder",
+            "child": "add_cap_fan",
+            "relation": "CALL",
+            "line": 89,
+            "evidence": "AST call at L89"
+          },
+          {
+            "parent": "append_torus",
+            "child": "add_face",
+            "relation": "CALL",
+            "line": 126,
+            "evidence": "AST call at L126"
+          },
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 315,
+            "evidence": "AST call at L315"
+          },
+          {
+            "parent": "build_central_pole",
+            "child": "seg_count",
+            "relation": "CALL",
+            "line": 202,
+            "evidence": "AST call at L202"
+          },
+          {
+            "parent": "build_central_pole",
+            "child": "add_ring",
+            "relation": "CALL",
+            "line": 205,
+            "evidence": "AST call at L205"
+          },
+          {
+            "parent": "build_central_pole",
+            "child": "add_side",
+            "relation": "CALL",
+            "line": 207,
+            "evidence": "AST call at L207"
+          },
+          {
+            "parent": "build_central_pole",
+            "child": "add_cap_fan",
+            "relation": "CALL",
+            "line": 212,
+            "evidence": "AST call at L212"
+          },
+          {
+            "parent": "build_central_pole",
+            "child": "create_mesh_object",
+            "relation": "CALL",
+            "line": 214,
+            "evidence": "AST call at L214"
+          },
+          {
+            "parent": "build_circular_tray",
+            "child": "effective_pole_radius",
+            "relation": "CALL",
+            "line": 224,
+            "evidence": "AST call at L224"
+          },
+          {
+            "parent": "build_circular_tray",
+            "child": "seg_count",
+            "relation": "CALL",
+            "line": 229,
+            "evidence": "AST call at L229"
+          },
+          {
+            "parent": "build_circular_tray",
+            "child": "append_annular_cylinder",
+            "relation": "CALL",
+            "line": 231,
+            "evidence": "AST call at L231"
+          },
+          {
+            "parent": "build_circular_tray",
+            "child": "create_mesh_object",
+            "relation": "CALL",
+            "line": 242,
+            "evidence": "AST call at L242"
+          },
+          {
+            "parent": "build_round_base",
+            "child": "seg_count",
+            "relation": "CALL",
+            "line": 170,
+            "evidence": "AST call at L170"
+          },
+          {
+            "parent": "build_round_base",
+            "child": "add_ring",
+            "relation": "CALL",
+            "line": 180,
+            "evidence": "AST call at L180"
+          },
+          {
+            "parent": "build_round_base",
+            "child": "add_side",
+            "relation": "CALL",
+            "line": 182,
+            "evidence": "AST call at L182"
+          },
+          {
+            "parent": "build_round_base",
+            "child": "add_cap_fan",
+            "relation": "CALL",
+            "line": 185,
+            "evidence": "AST call at L185"
+          },
+          {
+            "parent": "build_round_base",
+            "child": "add_annulus",
+            "relation": "CALL",
+            "line": 191,
+            "evidence": "AST call at L191"
+          },
+          {
+            "parent": "build_round_base",
+            "child": "create_mesh_object",
+            "relation": "CALL",
+            "line": 192,
+            "evidence": "AST call at L192"
+          },
+          {
+            "parent": "build_tapered_shade",
+            "child": "effective_pole_radius",
+            "relation": "CALL",
+            "line": 248,
+            "evidence": "AST call at L248"
+          },
+          {
+            "parent": "build_tapered_shade",
+            "child": "seg_count",
+            "relation": "CALL",
+            "line": 255,
+            "evidence": "AST call at L255"
+          },
+          {
+            "parent": "build_tapered_shade",
+            "child": "add_side",
+            "relation": "CALL",
+            "line": 279,
+            "evidence": "AST call at L279"
+          },
+          {
+            "parent": "build_tapered_shade",
+            "child": "add_annulus",
+            "relation": "CALL",
+            "line": 281,
+            "evidence": "AST call at L281"
+          },
+          {
+            "parent": "build_tapered_shade",
+            "child": "append_torus",
+            "relation": "CALL",
+            "line": 283,
+            "evidence": "AST call at L283"
+          },
+          {
+            "parent": "build_tapered_shade",
+            "child": "add_face",
+            "relation": "CALL",
+            "line": 299,
+            "evidence": "AST call at L299"
+          },
+          {
+            "parent": "build_tapered_shade",
+            "child": "append_solid_cylinder",
+            "relation": "CALL",
+            "line": 302,
+            "evidence": "AST call at L302"
+          },
+          {
+            "parent": "build_tapered_shade",
+            "child": "append_radial_bar",
+            "relation": "CALL",
+            "line": 307,
+            "evidence": "AST call at L307"
+          },
+          {
+            "parent": "build_tapered_shade",
+            "child": "create_mesh_object",
+            "relation": "CALL",
+            "line": 308,
+            "evidence": "AST call at L308"
+          },
+          {
+            "parent": "module:FloorLamp_seed0.py",
+            "child": "make_material",
+            "relation": "ENTRYPOINT",
+            "line": 31,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:FloorLamp_seed0.py",
+            "child": "build_round_base",
+            "relation": "ENTRYPOINT",
+            "line": 325,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:FloorLamp_seed0.py",
+            "child": "build_central_pole",
+            "relation": "ENTRYPOINT",
+            "line": 326,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:FloorLamp_seed0.py",
+            "child": "build_circular_tray",
+            "relation": "ENTRYPOINT",
+            "line": 327,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:FloorLamp_seed0.py",
+            "child": "build_tapered_shade",
+            "relation": "ENTRYPOINT",
+            "line": 328,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:FloorLamp_seed0.py",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "ENTRYPOINT",
+            "line": 330,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "round_base"
+        ],
+        "nodes": [
+          {
+            "id": "central_pole",
+            "label": "central_pole",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L331: central_pole -> circular_tray [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L332: central_pole -> tapered_shade [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L330: round_base -> central_pole [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_central_pole",
+            "runtime_variable": "central_pole",
+            "group": "Blender parts"
+          },
+          {
+            "id": "circular_tray",
+            "label": "circular_tray",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L331: central_pole -> circular_tray [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_circular_tray",
+            "runtime_variable": "circular_tray",
+            "group": "Blender parts"
+          },
+          {
+            "id": "round_base",
+            "label": "round_base",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L330: round_base -> central_pole [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_round_base",
+            "runtime_variable": "round_base",
+            "group": "Blender parts"
+          },
+          {
+            "id": "tapered_shade",
+            "label": "tapered_shade",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L332: central_pole -> tapered_shade [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_tapered_shade",
+            "runtime_variable": "tapered_shade",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "central_pole",
+            "child": "circular_tray",
+            "relation": "DIRECTED_CODE",
+            "line": 331,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "central_pole",
+            "child": "tapered_shade",
+            "relation": "DIRECTED_CODE",
+            "line": 332,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "round_base",
+            "child": "central_pole",
+            "relation": "DIRECTED_CODE",
+            "line": 330,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "round_base"
+    ],
+    "nodes": [
+      {
+        "id": "round_base",
+        "label": "round_base",
+        "part_id": "round_base",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.07999999821186066
+        ],
+        "dimensions": [
+          1.7200000286102295,
+          1.7200000286102295,
+          0.1599999964237213
+        ],
+        "bbox_min": [
+          -0.8600000143051147,
+          -0.8600000143051147,
+          0.0
+        ],
+        "bbox_max": [
+          0.8600000143051147,
+          0.8600000143051147,
+          0.1599999964237213
+        ]
+      },
+      {
+        "id": "tapered_shade",
+        "label": "tapered_shade",
+        "part_id": "tapered_shade",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          1.5799999237060547
+        ],
+        "center": [
+          0.0,
+          0.0,
+          2.1700000166893005
+        ],
+        "dimensions": [
+          1.363360047340393,
+          1.363360047340393,
+          1.2113600969314575
+        ],
+        "bbox_min": [
+          -0.6816800236701965,
+          -0.6816800236701965,
+          1.5643199682235718
+        ],
+        "bbox_max": [
+          0.6816800236701965,
+          0.6816800236701965,
+          2.7756800651550293
+        ]
+      },
+      {
+        "id": "circular_tray",
+        "label": "circular_tray",
+        "part_id": "circular_tray",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.7000000476837158
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.7090000510215759
+        ],
+        "dimensions": [
+          0.6399999856948853,
+          0.6399999856948853,
+          0.1799999475479126
+        ],
+        "bbox_min": [
+          -0.3199999928474426,
+          -0.3199999928474426,
+          0.6190000772476196
+        ],
+        "bbox_max": [
+          0.3199999928474426,
+          0.3199999928474426,
+          0.7990000247955322
+        ]
+      },
+      {
+        "id": "central_pole",
+        "label": "central_pole",
+        "part_id": "central_pole",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.1599999964237213
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.869999960064888
+        ],
+        "dimensions": [
+          0.03200000151991844,
+          0.03200000151991844,
+          1.4199999272823334
+        ],
+        "bbox_min": [
+          -0.01600000075995922,
+          -0.01600000075995922,
+          0.1599999964237213
+        ],
+        "bbox_max": [
+          0.01600000075995922,
+          0.01600000075995922,
+          1.5799999237060547
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "central_pole",
+        "child": "tapered_shade",
+        "relation": "DIRECTED",
+        "line": 320,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.0,
+          1.5799999237060547
+        ],
+        "anchor_b": [
+          0.0,
+          0.0,
+          1.5799999237060547
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.6399787494050625,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "central_pole",
+            "child": "tapered_shade",
+            "source": "parent_assignment",
+            "line": 320
+          },
+          {
+            "parent": "central_pole",
+            "child": "tapered_shade",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 332,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.0,
+              1.5799999237060547
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.0,
+              1.5799999237060547
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.6399787494050625,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "central_pole",
+            "child": "tapered_shade",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "central_pole",
+        "child": "circular_tray",
+        "relation": "DIRECTED",
+        "line": 320,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          9.797174737963282e-19,
+          0.01600000075995922,
+          0.7000000476837158
+        ],
+        "anchor_b": [
+          9.797174737963282e-19,
+          0.01600000075995922,
+          0.7000000476837158
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "central_pole",
+            "child": "circular_tray",
+            "source": "parent_assignment",
+            "line": 320
+          },
+          {
+            "parent": "central_pole",
+            "child": "circular_tray",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 331,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              9.797174737963282e-19,
+              0.01600000075995922,
+              0.7000000476837158
+            ],
+            "parent_anchor_world": [
+              9.797174737963282e-19,
+              0.01600000075995922,
+              0.7000000476837158
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "central_pole",
+            "child": "circular_tray",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "round_base",
+        "child": "central_pole",
+        "relation": "DIRECTED",
+        "line": 320,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.0,
+          0.1599999964237213
+        ],
+        "anchor_b": [
+          0.0,
+          0.0,
+          0.1599999964237213
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "round_base",
+            "child": "central_pole",
+            "source": "parent_assignment",
+            "line": 320
+          },
+          {
+            "parent": "round_base",
+            "child": "central_pole",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 330,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.0,
+              0.1599999964237213
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.0,
+              0.1599999964237213
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "round_base",
+            "child": "central_pole",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      }
+    ],
+    "summary": {
+      "nodes": 4,
+      "edges": 3,
+      "relations": {
+        "DIRECTED": 3
+      },
+      "directed_edges": 3,
+      "runtime_directed_edges": 3,
+      "shared_anchor_edges": 2,
+      "estimated_anchor_edges": 0,
+      "geometric_anchor_candidates": 3,
+      "unverified_anchor_candidates": 1,
+      "misaligned_anchor_edges": 0
+    },
+    "source_bounds": {
+      "min": [
+        -0.8600000143051147,
+        -0.8600000143051147,
+        0.0
+      ],
+      "max": [
+        0.8600000143051147,
+        0.8600000143051147,
+        2.7756800651550293
+      ]
+    },
+    "scene_extent": 2.7756800651550293,
+    "contact_threshold": 0.06939200162887574,
+    "shared_anchor_tolerance": 0.06939200162887574,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "central_pole",
+        "circular_tray",
+        "round_base",
+        "tapered_shade"
+      ],
+      "scale_overrides": {
+        "central_pole": 0.4
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · GPT-5.5",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gpt5.5/FloorLamp_seed0/FloorLamp_seed0.py",
+    "source_sha256": "befa8ca188817011d6d35ab25d3d9d8a7b571160ec3fad62692cbf90013f5a44",
+    "source_size": 15606,
+    "glb_sha256": "b8adbc23da93171cdcf04a484d6d16d217fc6b1065d75f239f5a12c6078b097a",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|central_pole|scale": 0.4
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "child-0.4",
+      "side": "child",
+      "part_ids": [
+        "central_pole"
+      ],
+      "parameter": "scale",
+      "scale": 0.4,
+      "params": {
+        "part_param|central_pole|scale": 0.4
+      },
+      "paper_parent_ids": [
+        "round_base"
+      ],
+      "paper_child_ids": [
+        "central_pole"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "dimensions": [
+        {
+          "id": "central_pole",
+          "part_id": "central_pole",
+          "before": [
+            0.07999999821186066,
+            0.07999999821186066,
+            3.5500000417232513
+          ],
+          "after": [
+            0.03200000151991844,
+            0.03200000151991844,
+            1.4199999272823334
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "round_base",
+          "child": "central_pole",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": true,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": true,
+          "runtime_parent_part_id": "round_base",
+          "runtime_child_part_id": "central_pole"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.0,
+      -2.7939677238464355e-09,
+      0.0
+    ],
+    "mesh_bbox_max_error_before_translation": 8.940696716308594e-08,
+    "mesh_bbox_max_error_after_translation": 8.66129994392395e-08
+  }
+}

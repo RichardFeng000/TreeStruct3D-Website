@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · GPT-5.5",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.5/Bed_seed0/Bed_seed0.py",
+  "source_sha256": "29e159e1ddc8d8d4bffc4b813eeb99399f6d6696a204d827918352842f7a251d",
+  "source_size": 22609,
+  "glb_sha256": "b6f572421302da58fcae121d6cd1db587b93480d0d8ed6d5cb306e159808760d",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|wooden_bed_frame_base|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "parent-0.4",
+    "side": "parent",
+    "part_ids": [
+      "wooden_bed_frame_base"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|wooden_bed_frame_base|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "wooden_bed_frame_base"
+    ],
+    "paper_child_ids": [
+      "decorative_headboard"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "wooden_bed_frame_base",
+        "part_id": "wooden_bed_frame_base",
+        "before": [
+          5.900000095367432,
+          8.899999618530273,
+          0.8400000184774399
+        ],
+        "after": [
+          2.359999895095825,
+          3.559999942779541,
+          0.335999995470047
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "wooden_bed_frame_base",
+        "child": "decorative_headboard",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "wooden_bed_frame_base",
+        "runtime_child_part_id": "decorative_headboard"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    1.1000000042840838,
+    0.003000028431415558
+  ],
+  "mesh_bbox_max_error_before_translation": 1.100000023841858,
+  "mesh_bbox_max_error_after_translation": 5.21540641784668e-08
+}

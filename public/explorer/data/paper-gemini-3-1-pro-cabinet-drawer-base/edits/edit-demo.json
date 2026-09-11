@@ -1,0 +1,92 @@
+{
+  "id": "paper-gemini-3-1-pro-cabinet-drawer-base",
+  "title": "Cabinet Drawer Base",
+  "provider": "Gemini 3.1 Pro",
+  "group": "appendix-6c",
+  "label": "CabinetDrawerBase_seed0",
+  "model": "CabinetDrawerBase_seed0/CabinetDrawerBase_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · Gemini 3.1 Pro",
+  "parent": {
+    "ids": [
+      "bottom_panel"
+    ],
+    "label": "bottom panel"
+  },
+  "child": {
+    "ids": [
+      "front_panel"
+    ],
+    "label": "front panel"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/snapshot.json",
+      "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/provenance.json",
+      "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/mesh-map.json",
+      "bytes": 182320
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-0.4/mesh-map.json",
+      "bytes": 18096
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/parent-1.6/mesh-map.json",
+      "bytes": 18096
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-0.4/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-0.4/mesh-map.json",
+      "bytes": 18116
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-1.6/model.glb",
+      "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/child-1.6/mesh-map.json",
+      "bytes": 18112
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/model.glb",
+    "snapshot": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/snapshot.json",
+    "provenance": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/provenance.json",
+    "mesh_map": "paper-gemini-3-1-pro-cabinet-drawer-base/edits/default/mesh-map.json",
+    "bytes": 182320,
+    "parts": 4,
+    "shared_anchors": 0
+  }
+}

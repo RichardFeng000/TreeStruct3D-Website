@@ -1,0 +1,987 @@
+{
+  "source_sha256": "befa8ca188817011d6d35ab25d3d9d8a7b571160ec3fad62692cbf90013f5a44",
+  "samples": [
+    {
+      "id": "ratio-0.63",
+      "params": {
+        "central_pole": 0.63
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 0,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 582,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 5190,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 7788,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "ratio-1.37",
+      "params": {
+        "central_pole": 1.37
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 32124,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 32706,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 37314,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 39912,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "circular_tray-0.63",
+      "params": {
+        "circular_tray": 0.63
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 64248,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 64830,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 69438,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 72036,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "circular_tray-1.37",
+      "params": {
+        "circular_tray": 1.37
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 96372,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 96954,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 101562,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 104160,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-opposite-extremes-0",
+      "params": {
+        "central_pole": 1.6,
+        "circular_tray": 0.4,
+        "round_base": 0.4,
+        "tapered_shade": 1.6
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 128496,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 129078,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 133686,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 136284,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-opposite-extremes-1",
+      "params": {
+        "central_pole": 0.4,
+        "circular_tray": 1.6,
+        "round_base": 1.6,
+        "tapered_shade": 0.4
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 160620,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 161202,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 165810,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 168408,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-pole-shade-0",
+      "params": {
+        "central_pole": 0.63,
+        "tapered_shade": 1.37
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 192744,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 193326,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 197934,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 200532,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-pole-shade-1",
+      "params": {
+        "central_pole": 1.37,
+        "tapered_shade": 0.63
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 224868,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 225450,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 230058,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 232656,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-pole-tray-0",
+      "params": {
+        "central_pole": 0.63,
+        "circular_tray": 1.37
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 256992,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 257574,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 262182,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 264780,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-pole-tray-1",
+      "params": {
+        "central_pole": 1.37,
+        "circular_tray": 0.63
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 289116,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 289698,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 294306,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 296904,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-0",
+      "params": {
+        "central_pole": 0.83,
+        "circular_tray": 0.94,
+        "round_base": 1.37,
+        "tapered_shade": 0.51
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 321240,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 321822,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 326430,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 329028,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-1",
+      "params": {
+        "central_pole": 1.01,
+        "circular_tray": 0.89,
+        "round_base": 1.51,
+        "tapered_shade": 0.99
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 353364,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 353946,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 358554,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 361152,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-2",
+      "params": {
+        "central_pole": 1.31,
+        "circular_tray": 1.3,
+        "round_base": 0.56,
+        "tapered_shade": 0.5
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 385488,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 386070,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 390678,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 393276,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-3",
+      "params": {
+        "central_pole": 1.11,
+        "circular_tray": 1.18,
+        "round_base": 0.85,
+        "tapered_shade": 1.54
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 417612,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 418194,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 422802,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 425400,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-4",
+      "params": {
+        "central_pole": 1.14,
+        "circular_tray": 1.28,
+        "round_base": 0.98,
+        "tapered_shade": 1.13
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 449736,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 450318,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 454926,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 457524,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-5",
+      "params": {
+        "central_pole": 1.56,
+        "circular_tray": 1.3,
+        "round_base": 0.95,
+        "tapered_shade": 1.36
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 481860,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 482442,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 487050,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 489648,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-6",
+      "params": {
+        "central_pole": 1.51,
+        "circular_tray": 0.57,
+        "round_base": 0.59,
+        "tapered_shade": 1.1
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 513984,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 514566,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 519174,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 521772,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "holdout-random-7",
+      "params": {
+        "central_pole": 1.2,
+        "circular_tray": 1.46,
+        "round_base": 0.43,
+        "tapered_shade": 0.47
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 546108,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 546690,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 551298,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 553896,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "central_pole": 1.37,
+        "circular_tray": 0.63,
+        "round_base": 0.63,
+        "tapered_shade": 1.37
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 578232,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 578814,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 583422,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 586020,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "central_pole": 0.63,
+        "circular_tray": 1.37,
+        "round_base": 1.37,
+        "tapered_shade": 0.63
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 610356,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 610938,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 615546,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 618144,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "central_pole": 0.63,
+        "circular_tray": 0.63,
+        "round_base": 0.63,
+        "tapered_shade": 0.63
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 642480,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 643062,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 647670,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 650268,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "central_pole": 1.37,
+        "circular_tray": 1.37,
+        "round_base": 1.37,
+        "tapered_shade": 1.37
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 674604,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 675186,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 679794,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 682392,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "round_base-0.63",
+      "params": {
+        "round_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 706728,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 707310,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 711918,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 714516,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "round_base-1.37",
+      "params": {
+        "round_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 738852,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 739434,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 744042,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 746640,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "tapered_shade-0.63",
+      "params": {
+        "tapered_shade": 0.63
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 770976,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 771558,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 776166,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 778764,
+            "count": 24336
+          }
+        }
+      ]
+    },
+    {
+      "id": "tapered_shade-1.37",
+      "params": {
+        "tapered_shade": 1.37
+      },
+      "parts": [
+        {
+          "id": "central_pole",
+          "positions": {
+            "offset": 803100,
+            "count": 582
+          }
+        },
+        {
+          "id": "circular_tray",
+          "positions": {
+            "offset": 803682,
+            "count": 4608
+          }
+        },
+        {
+          "id": "round_base",
+          "positions": {
+            "offset": 808290,
+            "count": 2598
+          }
+        },
+        {
+          "id": "tapered_shade",
+          "positions": {
+            "offset": 810888,
+            "count": 24336
+          }
+        }
+      ]
+    }
+  ]
+}

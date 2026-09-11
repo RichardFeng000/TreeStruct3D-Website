@@ -1,0 +1,105 @@
+{
+  "method": "TreeStruct3D · GPT-5.5",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.5/Bed_seed0/Bed_seed0.py",
+  "source_sha256": "29e159e1ddc8d8d4bffc4b813eeb99399f6d6696a204d827918352842f7a251d",
+  "source_size": 22609,
+  "glb_sha256": "97953254adaf10ed0f4a43ef06ade24b842763291aafe1451d0ee5c400d6f4b0",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {},
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "default",
+    "side": "default",
+    "part_ids": [],
+    "parameter": "scale",
+    "scale": 1.0,
+    "params": {},
+    "paper_parent_ids": [
+      "wooden_bed_frame_base"
+    ],
+    "paper_child_ids": [
+      "decorative_headboard"
+    ],
+    "geometry_changed": false,
+    "attachment_observed": true,
+    "dimensions": [],
+    "selected_attachment_checks": [
+      {
+        "parent": "wooden_bed_frame_base",
+        "child": "decorative_headboard",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "wooden_bed_frame_base",
+        "runtime_child_part_id": "decorative_headboard"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    0.0,
+    1.4600000558421016,
+    0.015000000596046448
+  ],
+  "mesh_bbox_max_error_before_translation": 1.4600001275539398,
+  "mesh_bbox_max_error_after_translation": 5.066394805908203e-07,
+  "material_export": {
+    "strategy": "cycles_emission_base_color_bake",
+    "resolution": 512,
+    "lighting_baked": false,
+    "procedural_normal_baked": false,
+    "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+    "objects": [
+      {
+        "name": "wooden_bed_frame_base",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "decorative_headboard",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "decorative_footboard",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "tapered_leg",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "green_mattress",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "light_pink_blanket",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "folded_comforter",
+        "mode": "native_gltf_material"
+      },
+      {
+        "name": "pillow",
+        "mode": "native_gltf_material"
+      }
+    ],
+    "fallbacks": [],
+    "source_sha256": "29e159e1ddc8d8d4bffc4b813eeb99399f6d6696a204d827918352842f7a251d",
+    "helper_sha256": "3c2b87e3641e99a7975abfbc75326626e6ee4e9d8b7408e5979f93517c748137",
+    "blender_version": "5.0.0",
+    "material_count": 7,
+    "image_count": 0,
+    "geometry_unchanged": true,
+    "original_glb_sha256": "97953254adaf10ed0f4a43ef06ade24b842763291aafe1451d0ee5c400d6f4b0"
+  }
+}

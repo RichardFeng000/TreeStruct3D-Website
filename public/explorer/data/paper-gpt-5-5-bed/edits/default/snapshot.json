@@ -1,0 +1,2973 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "Bed_seed0/Bed_seed0",
+    "label": "Bed_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|wooden_bed_frame_base|scale",
+        "label": "wooden_bed_frame_base · scale",
+        "group": "Native Part Parameters · wooden_bed_frame_base",
+        "value": 1.0,
+        "node_id": "wooden_bed_frame_base",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|wooden_bed_frame_base|wooden_bed_frame_base",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|decorative_headboard|scale",
+        "label": "decorative_headboard · scale",
+        "group": "Native Part Parameters · decorative_headboard",
+        "value": 1.0,
+        "node_id": "decorative_headboard",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|decorative_headboard|decorative_headboard",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|decorative_footboard|scale",
+        "label": "decorative_footboard · scale",
+        "group": "Native Part Parameters · decorative_footboard",
+        "value": 1.0,
+        "node_id": "decorative_footboard",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|decorative_footboard|decorative_footboard",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|tapered_leg|scale",
+        "label": "tapered_leg · scale",
+        "group": "Native Part Parameters · tapered_leg",
+        "value": 1.0,
+        "node_id": "tapered_leg",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|tapered_leg|tapered_leg",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|green_mattress|scale",
+        "label": "green_mattress · scale",
+        "group": "Native Part Parameters · green_mattress",
+        "value": 1.0,
+        "node_id": "green_mattress",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|green_mattress|green_mattress",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|light_pink_blanket|scale",
+        "label": "light_pink_blanket · scale",
+        "group": "Native Part Parameters · light_pink_blanket",
+        "value": 1.0,
+        "node_id": "light_pink_blanket",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|light_pink_blanket|light_pink_blanket",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|folded_comforter|scale",
+        "label": "folded_comforter · scale",
+        "group": "Native Part Parameters · folded_comforter",
+        "value": 1.0,
+        "node_id": "folded_comforter",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|folded_comforter|folded_comforter",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|pillow|scale",
+        "label": "pillow · scale",
+        "group": "Native Part Parameters · pillow",
+        "value": 1.0,
+        "node_id": "pillow",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|pillow|pillow",
+        "visibility_value": true,
+        "is_leaf": false
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gpt5.5/Bed_seed0/Bed_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:Bed_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Bed_seed0.py",
+            "label": "Bed_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 561,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_mat",
+            "label": "make_mat",
+            "kind": "function",
+            "line": 19,
+            "end_line": 31,
+            "parameters": [
+              "name",
+              "color",
+              "roughness"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_box",
+            "label": "add_box",
+            "kind": "function",
+            "line": 41,
+            "end_line": 65,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "x0",
+              "x1",
+              "y0",
+              "y1",
+              "z0",
+              "z1",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_anchor_patch_y",
+            "label": "add_anchor_patch_y",
+            "kind": "function",
+            "line": 67,
+            "end_line": 77,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "y",
+              "cz",
+              "hx",
+              "hz",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_anchor_patch_z",
+            "label": "add_anchor_patch_z",
+            "kind": "function",
+            "line": 79,
+            "end_line": 89,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "cy",
+              "z",
+              "hx",
+              "hy",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_extruded_profile_y",
+            "label": "add_extruded_profile_y",
+            "kind": "function",
+            "line": 91,
+            "end_line": 105,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "profile",
+              "y0",
+              "y1",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_disk_y",
+            "label": "add_disk_y",
+            "kind": "function",
+            "line": 107,
+            "end_line": 122,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "y0",
+              "y1",
+              "cz",
+              "r",
+              "seg",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_cylinder_x",
+            "label": "add_cylinder_x",
+            "kind": "function",
+            "line": 124,
+            "end_line": 139,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "x0",
+              "x1",
+              "cy",
+              "cz",
+              "r",
+              "seg",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_obj",
+            "label": "make_obj",
+            "kind": "function",
+            "line": 141,
+            "end_line": 154,
+            "parameters": [
+              "name",
+              "vs",
+              "fs",
+              "mi",
+              "mats",
+              "smooth"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "frame_dims",
+            "label": "frame_dims",
+            "kind": "function",
+            "line": 156,
+            "end_line": 166,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_frame",
+            "label": "build_frame",
+            "kind": "function",
+            "line": 168,
+            "end_line": 204,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "arched_profile",
+            "label": "arched_profile",
+            "kind": "function",
+            "line": 206,
+            "end_line": 215,
+            "parameters": [
+              "width",
+              "bottom",
+              "shoulder",
+              "peak"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_headboard",
+            "label": "build_headboard",
+            "kind": "function",
+            "line": 217,
+            "end_line": 248,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_footboard",
+            "label": "build_footboard",
+            "kind": "function",
+            "line": 250,
+            "end_line": 279,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_tapered_post",
+            "label": "add_tapered_post",
+            "kind": "function",
+            "line": 281,
+            "end_line": 301,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "cy",
+              "ztop",
+              "h",
+              "rt",
+              "rb",
+              "mat",
+              "sides"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_legs",
+            "label": "build_legs",
+            "kind": "function",
+            "line": 303,
+            "end_line": 317,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_soft_slab",
+            "label": "add_soft_slab",
+            "kind": "function",
+            "line": 319,
+            "end_line": 345,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "cy",
+              "w",
+              "l",
+              "h",
+              "z0",
+              "mat",
+              "nx",
+              "ny",
+              "bulge",
+              "edge_drop"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mattress_dimensions",
+            "label": "mattress_dimensions",
+            "kind": "function",
+            "line": 347,
+            "end_line": 350,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "blanket_center_y_for_mattress",
+            "label": "blanket_center_y_for_mattress",
+            "kind": "function",
+            "line": 352,
+            "end_line": 354,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mattress_top_z",
+            "label": "mattress_top_z",
+            "kind": "function",
+            "line": 356,
+            "end_line": 363,
+            "parameters": [
+              "x",
+              "y"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_mattress",
+            "label": "build_mattress",
+            "kind": "function",
+            "line": 365,
+            "end_line": 388,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "blanket_dims",
+            "label": "blanket_dims",
+            "kind": "function",
+            "line": 390,
+            "end_line": 393,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "blanket_wave_z",
+            "label": "blanket_wave_z",
+            "kind": "function",
+            "line": 395,
+            "end_line": 403,
+            "parameters": [
+              "x",
+              "y",
+              "w",
+              "l",
+              "top"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_blanket",
+            "label": "build_blanket",
+            "kind": "function",
+            "line": 405,
+            "end_line": 448,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_comforter",
+            "label": "build_comforter",
+            "kind": "function",
+            "line": 450,
+            "end_line": 465,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_pillow_super",
+            "label": "add_pillow_super",
+            "kind": "function",
+            "line": 467,
+            "end_line": 504,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "cy",
+              "w",
+              "l",
+              "h",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_pillows",
+            "label": "build_pillows",
+            "kind": "function",
+            "line": 506,
+            "end_line": 520,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 522,
+            "end_line": 523,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 525,
+            "end_line": 534,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_mat",
+            "relation": "SECTION_MEMBER",
+            "line": 19,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_box",
+            "relation": "SECTION_MEMBER",
+            "line": 41,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_anchor_patch_y",
+            "relation": "SECTION_MEMBER",
+            "line": 67,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_anchor_patch_z",
+            "relation": "SECTION_MEMBER",
+            "line": 79,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_extruded_profile_y",
+            "relation": "SECTION_MEMBER",
+            "line": 91,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_disk_y",
+            "relation": "SECTION_MEMBER",
+            "line": 107,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_cylinder_x",
+            "relation": "SECTION_MEMBER",
+            "line": 124,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "make_obj",
+            "relation": "SECTION_MEMBER",
+            "line": 141,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "frame_dims",
+            "relation": "SECTION_MEMBER",
+            "line": 156,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_frame",
+            "relation": "SECTION_MEMBER",
+            "line": 168,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "arched_profile",
+            "relation": "SECTION_MEMBER",
+            "line": 206,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_headboard",
+            "relation": "SECTION_MEMBER",
+            "line": 217,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_footboard",
+            "relation": "SECTION_MEMBER",
+            "line": 250,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_tapered_post",
+            "relation": "SECTION_MEMBER",
+            "line": 281,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_legs",
+            "relation": "SECTION_MEMBER",
+            "line": 303,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_soft_slab",
+            "relation": "SECTION_MEMBER",
+            "line": 319,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "mattress_dimensions",
+            "relation": "SECTION_MEMBER",
+            "line": 347,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "blanket_center_y_for_mattress",
+            "relation": "SECTION_MEMBER",
+            "line": 352,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "mattress_top_z",
+            "relation": "SECTION_MEMBER",
+            "line": 356,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_mattress",
+            "relation": "SECTION_MEMBER",
+            "line": 365,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "blanket_dims",
+            "relation": "SECTION_MEMBER",
+            "line": 390,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "blanket_wave_z",
+            "relation": "SECTION_MEMBER",
+            "line": 395,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_blanket",
+            "relation": "SECTION_MEMBER",
+            "line": 405,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_comforter",
+            "relation": "SECTION_MEMBER",
+            "line": 450,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "add_pillow_super",
+            "relation": "SECTION_MEMBER",
+            "line": 467,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_pillows",
+            "relation": "SECTION_MEMBER",
+            "line": 506,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 522,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 525,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:Bed_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Bed_seed0.py",
+            "label": "Bed_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 561,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "add_anchor_patch_y",
+            "label": "add_anchor_patch_y",
+            "kind": "function",
+            "line": 67,
+            "end_line": 77,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "y",
+              "cz",
+              "hx",
+              "hz",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_anchor_patch_z",
+            "label": "add_anchor_patch_z",
+            "kind": "function",
+            "line": 79,
+            "end_line": 89,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "cy",
+              "z",
+              "hx",
+              "hy",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_box",
+            "label": "add_box",
+            "kind": "function",
+            "line": 41,
+            "end_line": 65,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "x0",
+              "x1",
+              "y0",
+              "y1",
+              "z0",
+              "z1",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_cylinder_x",
+            "label": "add_cylinder_x",
+            "kind": "function",
+            "line": 124,
+            "end_line": 139,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "x0",
+              "x1",
+              "cy",
+              "cz",
+              "r",
+              "seg",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_disk_y",
+            "label": "add_disk_y",
+            "kind": "function",
+            "line": 107,
+            "end_line": 122,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "y0",
+              "y1",
+              "cz",
+              "r",
+              "seg",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_extruded_profile_y",
+            "label": "add_extruded_profile_y",
+            "kind": "function",
+            "line": 91,
+            "end_line": 105,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "profile",
+              "y0",
+              "y1",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_pillow_super",
+            "label": "add_pillow_super",
+            "kind": "function",
+            "line": 467,
+            "end_line": 504,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "cy",
+              "w",
+              "l",
+              "h",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_soft_slab",
+            "label": "add_soft_slab",
+            "kind": "function",
+            "line": 319,
+            "end_line": 345,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "cy",
+              "w",
+              "l",
+              "h",
+              "z0",
+              "mat",
+              "nx",
+              "ny",
+              "bulge",
+              "edge_drop"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "add_tapered_post",
+            "label": "add_tapered_post",
+            "kind": "function",
+            "line": 281,
+            "end_line": 301,
+            "parameters": [
+              "vs",
+              "fs",
+              "mi",
+              "cx",
+              "cy",
+              "ztop",
+              "h",
+              "rt",
+              "rb",
+              "mat",
+              "sides"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "arched_profile",
+            "label": "arched_profile",
+            "kind": "function",
+            "line": 206,
+            "end_line": 215,
+            "parameters": [
+              "width",
+              "bottom",
+              "shoulder",
+              "peak"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 525,
+            "end_line": 534,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "blanket_center_y_for_mattress",
+            "label": "blanket_center_y_for_mattress",
+            "kind": "function",
+            "line": 352,
+            "end_line": 354,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "blanket_dims",
+            "label": "blanket_dims",
+            "kind": "function",
+            "line": 390,
+            "end_line": 393,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "blanket_wave_z",
+            "label": "blanket_wave_z",
+            "kind": "function",
+            "line": 395,
+            "end_line": 403,
+            "parameters": [
+              "x",
+              "y",
+              "w",
+              "l",
+              "top"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_blanket",
+            "label": "build_blanket",
+            "kind": "function",
+            "line": 405,
+            "end_line": 448,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_comforter",
+            "label": "build_comforter",
+            "kind": "function",
+            "line": 450,
+            "end_line": 465,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_footboard",
+            "label": "build_footboard",
+            "kind": "function",
+            "line": 250,
+            "end_line": 279,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_frame",
+            "label": "build_frame",
+            "kind": "function",
+            "line": 168,
+            "end_line": 204,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_headboard",
+            "label": "build_headboard",
+            "kind": "function",
+            "line": 217,
+            "end_line": 248,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_legs",
+            "label": "build_legs",
+            "kind": "function",
+            "line": 303,
+            "end_line": 317,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_mattress",
+            "label": "build_mattress",
+            "kind": "function",
+            "line": 365,
+            "end_line": 388,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_pillows",
+            "label": "build_pillows",
+            "kind": "function",
+            "line": 506,
+            "end_line": 520,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "frame_dims",
+            "label": "frame_dims",
+            "kind": "function",
+            "line": 156,
+            "end_line": 166,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 522,
+            "end_line": 523,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_mat",
+            "label": "make_mat",
+            "kind": "function",
+            "line": 19,
+            "end_line": 31,
+            "parameters": [
+              "name",
+              "color",
+              "roughness"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "make_obj",
+            "label": "make_obj",
+            "kind": "function",
+            "line": 141,
+            "end_line": 154,
+            "parameters": [
+              "name",
+              "vs",
+              "fs",
+              "mi",
+              "mats",
+              "smooth"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mattress_dimensions",
+            "label": "mattress_dimensions",
+            "kind": "function",
+            "line": 347,
+            "end_line": 350,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mattress_top_z",
+            "label": "mattress_top_z",
+            "kind": "function",
+            "line": 356,
+            "end_line": 363,
+            "parameters": [
+              "x",
+              "y"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "add_pillow_super",
+            "child": "add_box",
+            "relation": "CALL",
+            "line": 503,
+            "evidence": "AST call at L503"
+          },
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 526,
+            "evidence": "AST call at L526"
+          },
+          {
+            "parent": "blanket_center_y_for_mattress",
+            "child": "mattress_dimensions",
+            "relation": "CALL",
+            "line": 353,
+            "evidence": "AST call at L353"
+          },
+          {
+            "parent": "blanket_dims",
+            "child": "mattress_dimensions",
+            "relation": "CALL",
+            "line": 391,
+            "evidence": "AST call at L391"
+          },
+          {
+            "parent": "build_blanket",
+            "child": "blanket_dims",
+            "relation": "CALL",
+            "line": 407,
+            "evidence": "AST call at L407"
+          },
+          {
+            "parent": "build_blanket",
+            "child": "blanket_wave_z",
+            "relation": "CALL",
+            "line": 417,
+            "evidence": "AST call at L417"
+          },
+          {
+            "parent": "build_blanket",
+            "child": "add_box",
+            "relation": "CALL",
+            "line": 435,
+            "evidence": "AST call at L435"
+          },
+          {
+            "parent": "build_blanket",
+            "child": "add_anchor_patch_z",
+            "relation": "CALL",
+            "line": 444,
+            "evidence": "AST call at L444"
+          },
+          {
+            "parent": "build_blanket",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 447,
+            "evidence": "AST call at L447"
+          },
+          {
+            "parent": "build_comforter",
+            "child": "frame_dims",
+            "relation": "CALL",
+            "line": 452,
+            "evidence": "AST call at L452"
+          },
+          {
+            "parent": "build_comforter",
+            "child": "add_soft_slab",
+            "relation": "CALL",
+            "line": 458,
+            "evidence": "AST call at L458"
+          },
+          {
+            "parent": "build_comforter",
+            "child": "add_cylinder_x",
+            "relation": "CALL",
+            "line": 459,
+            "evidence": "AST call at L459"
+          },
+          {
+            "parent": "build_comforter",
+            "child": "add_box",
+            "relation": "CALL",
+            "line": 460,
+            "evidence": "AST call at L460"
+          },
+          {
+            "parent": "build_comforter",
+            "child": "add_anchor_patch_z",
+            "relation": "CALL",
+            "line": 462,
+            "evidence": "AST call at L462"
+          },
+          {
+            "parent": "build_comforter",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 464,
+            "evidence": "AST call at L464"
+          },
+          {
+            "parent": "build_footboard",
+            "child": "frame_dims",
+            "relation": "CALL",
+            "line": 251,
+            "evidence": "AST call at L251"
+          },
+          {
+            "parent": "build_footboard",
+            "child": "add_extruded_profile_y",
+            "relation": "CALL",
+            "line": 259,
+            "evidence": "AST call at L259"
+          },
+          {
+            "parent": "build_footboard",
+            "child": "arched_profile",
+            "relation": "CALL",
+            "line": 259,
+            "evidence": "AST call at L259"
+          },
+          {
+            "parent": "build_footboard",
+            "child": "add_box",
+            "relation": "CALL",
+            "line": 260,
+            "evidence": "AST call at L260"
+          },
+          {
+            "parent": "build_footboard",
+            "child": "add_anchor_patch_y",
+            "relation": "CALL",
+            "line": 277,
+            "evidence": "AST call at L277"
+          },
+          {
+            "parent": "build_footboard",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 278,
+            "evidence": "AST call at L278"
+          },
+          {
+            "parent": "build_frame",
+            "child": "frame_dims",
+            "relation": "CALL",
+            "line": 169,
+            "evidence": "AST call at L169"
+          },
+          {
+            "parent": "build_frame",
+            "child": "add_box",
+            "relation": "CALL",
+            "line": 173,
+            "evidence": "AST call at L173"
+          },
+          {
+            "parent": "build_frame",
+            "child": "add_anchor_patch_y",
+            "relation": "CALL",
+            "line": 192,
+            "evidence": "AST call at L192"
+          },
+          {
+            "parent": "build_frame",
+            "child": "add_anchor_patch_z",
+            "relation": "CALL",
+            "line": 194,
+            "evidence": "AST call at L194"
+          },
+          {
+            "parent": "build_frame",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 203,
+            "evidence": "AST call at L203"
+          },
+          {
+            "parent": "build_headboard",
+            "child": "frame_dims",
+            "relation": "CALL",
+            "line": 218,
+            "evidence": "AST call at L218"
+          },
+          {
+            "parent": "build_headboard",
+            "child": "add_extruded_profile_y",
+            "relation": "CALL",
+            "line": 226,
+            "evidence": "AST call at L226"
+          },
+          {
+            "parent": "build_headboard",
+            "child": "arched_profile",
+            "relation": "CALL",
+            "line": 226,
+            "evidence": "AST call at L226"
+          },
+          {
+            "parent": "build_headboard",
+            "child": "add_box",
+            "relation": "CALL",
+            "line": 227,
+            "evidence": "AST call at L227"
+          },
+          {
+            "parent": "build_headboard",
+            "child": "add_disk_y",
+            "relation": "CALL",
+            "line": 244,
+            "evidence": "AST call at L244"
+          },
+          {
+            "parent": "build_headboard",
+            "child": "add_anchor_patch_y",
+            "relation": "CALL",
+            "line": 245,
+            "evidence": "AST call at L245"
+          },
+          {
+            "parent": "build_headboard",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 247,
+            "evidence": "AST call at L247"
+          },
+          {
+            "parent": "build_legs",
+            "child": "frame_dims",
+            "relation": "CALL",
+            "line": 304,
+            "evidence": "AST call at L304"
+          },
+          {
+            "parent": "build_legs",
+            "child": "add_tapered_post",
+            "relation": "CALL",
+            "line": 314,
+            "evidence": "AST call at L314"
+          },
+          {
+            "parent": "build_legs",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 316,
+            "evidence": "AST call at L316"
+          },
+          {
+            "parent": "build_mattress",
+            "child": "mattress_dimensions",
+            "relation": "CALL",
+            "line": 366,
+            "evidence": "AST call at L366"
+          },
+          {
+            "parent": "build_mattress",
+            "child": "add_soft_slab",
+            "relation": "CALL",
+            "line": 371,
+            "evidence": "AST call at L371"
+          },
+          {
+            "parent": "build_mattress",
+            "child": "blanket_center_y_for_mattress",
+            "relation": "CALL",
+            "line": 373,
+            "evidence": "AST call at L373"
+          },
+          {
+            "parent": "build_mattress",
+            "child": "add_anchor_patch_z",
+            "relation": "CALL",
+            "line": 374,
+            "evidence": "AST call at L374"
+          },
+          {
+            "parent": "build_mattress",
+            "child": "mattress_top_z",
+            "relation": "CALL",
+            "line": 374,
+            "evidence": "AST call at L374"
+          },
+          {
+            "parent": "build_mattress",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 383,
+            "evidence": "AST call at L383"
+          },
+          {
+            "parent": "build_pillows",
+            "child": "mattress_dimensions",
+            "relation": "CALL",
+            "line": 507,
+            "evidence": "AST call at L507"
+          },
+          {
+            "parent": "build_pillows",
+            "child": "add_pillow_super",
+            "relation": "CALL",
+            "line": 516,
+            "evidence": "AST call at L516"
+          },
+          {
+            "parent": "build_pillows",
+            "child": "make_obj",
+            "relation": "CALL",
+            "line": 519,
+            "evidence": "AST call at L519"
+          },
+          {
+            "parent": "mattress_dimensions",
+            "child": "frame_dims",
+            "relation": "CALL",
+            "line": 348,
+            "evidence": "AST call at L348"
+          },
+          {
+            "parent": "mattress_top_z",
+            "child": "mattress_dimensions",
+            "relation": "CALL",
+            "line": 357,
+            "evidence": "AST call at L357"
+          },
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "make_mat",
+            "relation": "ENTRYPOINT",
+            "line": 33,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "build_frame",
+            "relation": "ENTRYPOINT",
+            "line": 536,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "build_headboard",
+            "relation": "ENTRYPOINT",
+            "line": 537,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "build_footboard",
+            "relation": "ENTRYPOINT",
+            "line": 538,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "build_legs",
+            "relation": "ENTRYPOINT",
+            "line": 539,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "build_mattress",
+            "relation": "ENTRYPOINT",
+            "line": 540,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "build_blanket",
+            "relation": "ENTRYPOINT",
+            "line": 541,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "build_comforter",
+            "relation": "ENTRYPOINT",
+            "line": 542,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "build_pillows",
+            "relation": "ENTRYPOINT",
+            "line": 543,
+            "evidence": "module-level invocation or inferred call root"
+          },
+          {
+            "parent": "module:Bed_seed0.py",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "ENTRYPOINT",
+            "line": 545,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "frame_obj"
+        ],
+        "nodes": [
+          {
+            "id": "blanket_obj",
+            "label": "blanket_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L553: blanket_obj -> comfort_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L552: matt_obj -> blanket_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_blanket",
+            "runtime_variable": "blanket_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "comfort_obj",
+            "label": "comfort_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L553: blanket_obj -> comfort_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_comforter",
+            "runtime_variable": "comfort_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "foot_obj",
+            "label": "foot_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L546: frame_obj -> foot_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_footboard",
+            "runtime_variable": "foot_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "frame_obj",
+            "label": "frame_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L546: frame_obj -> foot_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L545: frame_obj -> head_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L549: frame_obj -> leg_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L551: frame_obj -> matt_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_frame",
+            "runtime_variable": "frame_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "head_obj",
+            "label": "head_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L545: frame_obj -> head_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_headboard",
+            "runtime_variable": "head_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "leg_obj",
+            "label": "leg_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L549: frame_obj -> leg_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_legs",
+            "runtime_variable": "leg_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "matt_obj",
+            "label": "matt_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L551: frame_obj -> matt_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L552: matt_obj -> blanket_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L556: matt_obj -> pillow_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_mattress",
+            "runtime_variable": "matt_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "pillow_obj",
+            "label": "pillow_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L556: matt_obj -> pillow_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_pillows",
+            "runtime_variable": "pillow_obj",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "blanket_obj",
+            "child": "comfort_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 553,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "frame_obj",
+            "child": "foot_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 546,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "frame_obj",
+            "child": "head_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 545,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "frame_obj",
+            "child": "leg_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 549,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "frame_obj",
+            "child": "matt_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 551,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "matt_obj",
+            "child": "blanket_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 552,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "matt_obj",
+            "child": "pillow_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 556,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "wooden_bed_frame_base"
+    ],
+    "nodes": [
+      {
+        "id": "wooden_bed_frame_base",
+        "label": "wooden_bed_frame_base",
+        "part_id": "wooden_bed_frame_base",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          -0.18000001460313797
+        ],
+        "dimensions": [
+          5.900000095367432,
+          8.899999618530273,
+          0.8400000184774399
+        ],
+        "bbox_min": [
+          -2.950000047683716,
+          -4.449999809265137,
+          -0.6000000238418579
+        ],
+        "bbox_max": [
+          2.950000047683716,
+          4.449999809265137,
+          0.23999999463558197
+        ]
+      },
+      {
+        "id": "tapered_leg",
+        "label": "tapered_leg",
+        "part_id": "tapered_leg",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          -1.0300000309944153
+        ],
+        "dimensions": [
+          5.806507110595703,
+          8.829999923706055,
+          0.8600000143051147
+        ],
+        "bbox_min": [
+          -2.9032535552978516,
+          -4.414999961853027,
+          -1.4600000381469727
+        ],
+        "bbox_max": [
+          2.9032535552978516,
+          4.414999961853027,
+          -0.6000000238418579
+        ]
+      },
+      {
+        "id": "decorative_headboard",
+        "label": "decorative_headboard",
+        "part_id": "decorative_headboard",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          4.349999904632568,
+          0.025000005960464478
+        ],
+        "center": [
+          0.0,
+          4.454999923706055,
+          0.9300000071525574
+        ],
+        "dimensions": [
+          6.355999946594238,
+          0.5500001907348633,
+          3.290000081062317
+        ],
+        "bbox_min": [
+          -3.177999973297119,
+          4.179999828338623,
+          -0.7150000333786011
+        ],
+        "bbox_max": [
+          3.177999973297119,
+          4.730000019073486,
+          2.575000047683716
+        ]
+      },
+      {
+        "id": "decorative_footboard",
+        "label": "decorative_footboard",
+        "part_id": "decorative_footboard",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          -4.349999904632568,
+          0.025000005960464478
+        ],
+        "center": [
+          0.0,
+          -4.454999923706055,
+          0.3649999499320984
+        ],
+        "dimensions": [
+          6.0879998207092285,
+          0.48999977111816406,
+          1.9199999570846558
+        ],
+        "bbox_min": [
+          -3.0439999103546143,
+          -4.699999809265137,
+          -0.5950000286102295
+        ],
+        "bbox_max": [
+          3.0439999103546143,
+          -4.210000038146973,
+          1.3249999284744263
+        ]
+      },
+      {
+        "id": "green_mattress",
+        "label": "green_mattress",
+        "part_id": "green_mattress",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          0.0,
+          0.0,
+          0.3375000059604645
+        ],
+        "dimensions": [
+          4.679999828338623,
+          7.539999961853027,
+          0.675000011920929
+        ],
+        "bbox_min": [
+          -2.3399999141693115,
+          -3.7699999809265137,
+          0.0
+        ],
+        "bbox_max": [
+          2.3399999141693115,
+          3.7699999809265137,
+          0.675000011920929
+        ]
+      },
+      {
+        "id": "light_pink_blanket",
+        "label": "light_pink_blanket",
+        "part_id": "light_pink_blanket",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          -0.7540000081062317,
+          0.6727280020713806
+        ],
+        "center": [
+          0.0,
+          -0.7539999485015869,
+          0.6872279942035675
+        ],
+        "dimensions": [
+          4.586400032043457,
+          5.579599857330322,
+          0.14099997282028198
+        ],
+        "bbox_min": [
+          -2.2932000160217285,
+          -3.543799877166748,
+          0.6167280077934265
+        ],
+        "bbox_max": [
+          2.2932000160217285,
+          2.035799980163574,
+          0.7577279806137085
+        ]
+      },
+      {
+        "id": "folded_comforter",
+        "label": "folded_comforter",
+        "part_id": "folded_comforter",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          -1.9815120697021484,
+          0.7270683646202087
+        ],
+        "center": [
+          0.0,
+          -1.9815120697021484,
+          0.9420683681964874
+        ],
+        "dimensions": [
+          4.25,
+          1.3400001525878906,
+          0.4300000071525574
+        ],
+        "bbox_min": [
+          -2.125,
+          -2.6515121459960938,
+          0.7270683646202087
+        ],
+        "bbox_max": [
+          2.125,
+          -1.3115119934082031,
+          1.1570683717727661
+        ]
+      },
+      {
+        "id": "pillow",
+        "label": "pillow",
+        "part_id": "pillow",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.6086480021476746
+        ],
+        "center": [
+          0.0,
+          3.1899999380111694,
+          0.7786479890346527
+        ],
+        "dimensions": [
+          4.190000057220459,
+          0.8900001049041748,
+          0.3399999737739563
+        ],
+        "bbox_min": [
+          -2.0950000286102295,
+          2.744999885559082,
+          0.6086480021476746
+        ],
+        "bbox_max": [
+          2.0950000286102295,
+          3.634999990463257,
+          0.9486479759216309
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "wooden_bed_frame_base",
+        "child": "tapered_leg",
+        "relation": "DIRECTED",
+        "line": 531,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -2.674999952316284,
+          -4.175000190734863,
+          -0.6000000238418579
+        ],
+        "anchor_b": [
+          -2.674999952316284,
+          -4.175000190734863,
+          -0.6000000238418579
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 4,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.2524873956333709,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "tapered_leg",
+            "source": "parent_assignment",
+            "line": 531
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "tapered_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 549,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -2.674999952316284,
+              -4.175000190734863,
+              -0.6000000238418579
+            ],
+            "parent_anchor_world": [
+              -2.674999952316284,
+              -4.175000190734863,
+              -0.6000000238418579
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.2524873956333709,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "tapered_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 549,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -2.674999952316284,
+              4.175000190734863,
+              -0.6000000238418579
+            ],
+            "parent_anchor_world": [
+              -2.674999952316284,
+              4.175000190734863,
+              -0.6000000238418579
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.2524873956333709,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "tapered_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 549,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              2.674999952316284,
+              -4.175000190734863,
+              -0.6000000238418579
+            ],
+            "parent_anchor_world": [
+              2.674999952316284,
+              -4.175000190734863,
+              -0.6000000238418579
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.2524873956333709,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "tapered_leg",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 549,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              2.674999952316284,
+              4.175000190734863,
+              -0.6000000238418579
+            ],
+            "parent_anchor_world": [
+              2.674999952316284,
+              4.175000190734863,
+              -0.6000000238418579
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.2524873956333709,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "tapered_leg",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "wooden_bed_frame_base",
+        "child": "decorative_headboard",
+        "relation": "DIRECTED",
+        "line": 531,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          4.349999904632568,
+          -0.1550000011920929
+        ],
+        "anchor_b": [
+          0.0,
+          4.349999904632568,
+          -0.1550000011920929
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 2.72999998770354,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "decorative_headboard",
+            "source": "parent_assignment",
+            "line": 531
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "decorative_headboard",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 545,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              4.349999904632568,
+              -0.1550000011920929
+            ],
+            "parent_anchor_world": [
+              0.0,
+              4.349999904632568,
+              -0.1550000011920929
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 2.72999998770354,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "decorative_headboard",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "green_mattress",
+        "child": "pillow",
+        "relation": "DIRECTED",
+        "line": 531,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -1.1699999570846558,
+          3.190000057220459,
+          0.6086480021476746
+        ],
+        "anchor_b": [
+          -1.1699999570846558,
+          3.190000057220459,
+          0.6086480021476746
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 2,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.13644718496758473,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "green_mattress",
+            "child": "pillow",
+            "source": "parent_assignment",
+            "line": 531
+          },
+          {
+            "parent": "green_mattress",
+            "child": "pillow",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 556,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              -1.1699999570846558,
+              3.190000057220459,
+              0.6086480021476746
+            ],
+            "parent_anchor_world": [
+              -1.1699999570846558,
+              3.190000057220459,
+              0.6086480021476746
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.13644718496758473,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "green_mattress",
+            "child": "pillow",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 556,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              1.1699999570846558,
+              3.190000057220459,
+              0.6086480021476746
+            ],
+            "parent_anchor_world": [
+              1.1699999570846558,
+              3.190000057220459,
+              0.6086480021476746
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.13644718496758473,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "green_mattress",
+            "child": "pillow",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "light_pink_blanket",
+        "child": "folded_comforter",
+        "relation": "DIRECTED",
+        "line": 531,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          -1.9815120697021484,
+          0.7270683646202087
+        ],
+        "anchor_b": [
+          0.0,
+          -1.9815120697021484,
+          0.7270683646202087
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.06509561490556123,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "light_pink_blanket",
+            "child": "folded_comforter",
+            "source": "parent_assignment",
+            "line": 531
+          },
+          {
+            "parent": "light_pink_blanket",
+            "child": "folded_comforter",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 553,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              -1.9815120697021484,
+              0.7270683646202087
+            ],
+            "parent_anchor_world": [
+              0.0,
+              -1.9815120697021484,
+              0.7270683646202087
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.06509561490556123,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "light_pink_blanket",
+            "child": "folded_comforter",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "wooden_bed_frame_base",
+        "child": "decorative_footboard",
+        "relation": "DIRECTED",
+        "line": 531,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          -4.349999904632568,
+          -0.1550000011920929
+        ],
+        "anchor_b": [
+          0.0,
+          -4.349999904632568,
+          -0.1550000011920929
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 1.4799998806618306,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "decorative_footboard",
+            "source": "parent_assignment",
+            "line": 531
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "decorative_footboard",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 546,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              -4.349999904632568,
+              -0.1550000011920929
+            ],
+            "parent_anchor_world": [
+              0.0,
+              -4.349999904632568,
+              -0.1550000011920929
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 1.4799998806618306,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "decorative_footboard",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "wooden_bed_frame_base",
+        "child": "green_mattress",
+        "relation": "DIRECTED",
+        "line": 531,
+        "evidence": "Shared anchor: parent-child direction, geometric contact, and explicit shared-anchor evidence all passed",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": true,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": "authored_anchor_pair",
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "anchor_b": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": true,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 1,
+        "authored_anchor_all_valid": true,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.0,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "green_mattress",
+            "source": "parent_assignment",
+            "line": 531
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "green_mattress",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 551,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.0,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": true
+          },
+          {
+            "parent": "wooden_bed_frame_base",
+            "child": "green_mattress",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "green_mattress",
+        "child": "light_pink_blanket",
+        "relation": "DIRECTED",
+        "line": 531,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          -0.7540000081062317,
+          0.6727280020713806
+        ],
+        "anchor_b": [
+          0.0,
+          -0.7540000081062317,
+          0.6727280020713806
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.0,
+        "parent_anchor_vertex_gap": 0.05385827382373547,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "green_mattress",
+            "child": "light_pink_blanket",
+            "source": "parent_assignment",
+            "line": 531
+          },
+          {
+            "parent": "green_mattress",
+            "child": "light_pink_blanket",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 552,
+            "native_parameter_protocol": true,
+            "child_anchor_world": [
+              0.0,
+              -0.7540000081062317,
+              0.6727280020713806
+            ],
+            "parent_anchor_world": [
+              0.0,
+              -0.7540000081062317,
+              0.6727280020713806
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.0,
+            "parent_anchor_vertex_gap": 0.05385827382373547,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "green_mattress",
+            "child": "light_pink_blanket",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "decorative_headboard",
+        "child": "tapered_leg",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -2.8480000495910645,
+          4.289999961853027,
+          -0.7150000333786011
+        ],
+        "anchor_b": [
+          -2.799140214920044,
+          4.345864295959473,
+          -0.7720000147819519
+        ],
+        "anchor_gap": 0.09357940558273678,
+        "anchor_tolerance": 0.23574999570846558,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "decorative_footboard",
+        "child": "tapered_leg",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -2.7639999389648438,
+          -4.289999961853027,
+          -0.5950000286102295
+        ],
+        "anchor_b": [
+          -2.816068410873413,
+          -4.369163990020752,
+          -0.6000000238418579
+        ],
+        "anchor_gap": 0.09488450387154941,
+        "anchor_tolerance": 0.23574999570846558,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.004999995231628418,
+        "declared_directions": []
+      },
+      {
+        "parent": "green_mattress",
+        "child": "folded_comforter",
+        "relation": "DIRECTED",
+        "line": 0,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.53125,
+          -1.8698453903198242,
+          0.7270683646202087
+        ],
+        "anchor_b": [
+          0.5199999809265137,
+          -1.8849999904632568,
+          0.6564004421234131
+        ],
+        "anchor_gap": 0.07314492535148458,
+        "anchor_tolerance": 0.23574999570846558,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.052068352699279785,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 8,
+      "edges": 10,
+      "relations": {
+        "DIRECTED": 8,
+        "UNDIRECTED_CONTACT": 2
+      },
+      "directed_edges": 8,
+      "runtime_directed_edges": 8,
+      "shared_anchor_edges": 1,
+      "estimated_anchor_edges": 3,
+      "geometric_anchor_candidates": 10,
+      "unverified_anchor_candidates": 9,
+      "misaligned_anchor_edges": 0
+    },
+    "source_bounds": {
+      "min": [
+        -3.177999973297119,
+        -4.699999809265137,
+        -1.4600000381469727
+      ],
+      "max": [
+        3.177999973297119,
+        4.730000019073486,
+        2.575000047683716
+      ]
+    },
+    "scene_extent": 9.429999828338623,
+    "contact_threshold": 0.23574999570846558,
+    "shared_anchor_tolerance": 0.23574999570846558,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "decorative_footboard",
+        "decorative_headboard",
+        "folded_comforter",
+        "green_mattress",
+        "light_pink_blanket",
+        "pillow",
+        "tapered_leg",
+        "wooden_bed_frame_base"
+      ],
+      "scale_overrides": {}
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · GPT-5.5",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gpt5.5/Bed_seed0/Bed_seed0.py",
+    "source_sha256": "29e159e1ddc8d8d4bffc4b813eeb99399f6d6696a204d827918352842f7a251d",
+    "source_size": 22609,
+    "glb_sha256": "97953254adaf10ed0f4a43ef06ade24b842763291aafe1451d0ee5c400d6f4b0",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {},
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "default",
+      "side": "default",
+      "part_ids": [],
+      "parameter": "scale",
+      "scale": 1.0,
+      "params": {},
+      "paper_parent_ids": [
+        "wooden_bed_frame_base"
+      ],
+      "paper_child_ids": [
+        "decorative_headboard"
+      ],
+      "geometry_changed": false,
+      "attachment_observed": true,
+      "dimensions": [],
+      "selected_attachment_checks": [
+        {
+          "parent": "wooden_bed_frame_base",
+          "child": "decorative_headboard",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "wooden_bed_frame_base",
+          "runtime_child_part_id": "decorative_headboard"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      0.0,
+      1.4600000558421016,
+      0.015000000596046448
+    ],
+    "mesh_bbox_max_error_before_translation": 1.4600001275539398,
+    "mesh_bbox_max_error_after_translation": 5.066394805908203e-07,
+    "material_export": {
+      "strategy": "cycles_emission_base_color_bake",
+      "resolution": 512,
+      "lighting_baked": false,
+      "procedural_normal_baked": false,
+      "limitations": "Base color only; procedural bump and view-dependent effects remain approximations.",
+      "objects": [
+        {
+          "name": "wooden_bed_frame_base",
+          "mode": "native_gltf_material"
+        },
+        {
+          "name": "decorative_headboard",
+          "mode": "native_gltf_material"
+        },
+        {
+          "name": "decorative_footboard",
+          "mode": "native_gltf_material"
+        },
+        {
+          "name": "tapered_leg",
+          "mode": "native_gltf_material"
+        },
+        {
+          "name": "green_mattress",
+          "mode": "native_gltf_material"
+        },
+        {
+          "name": "light_pink_blanket",
+          "mode": "native_gltf_material"
+        },
+        {
+          "name": "folded_comforter",
+          "mode": "native_gltf_material"
+        },
+        {
+          "name": "pillow",
+          "mode": "native_gltf_material"
+        }
+      ],
+      "fallbacks": [],
+      "source_sha256": "29e159e1ddc8d8d4bffc4b813eeb99399f6d6696a204d827918352842f7a251d",
+      "helper_sha256": "3c2b87e3641e99a7975abfbc75326626e6ee4e9d8b7408e5979f93517c748137",
+      "blender_version": "5.0.0",
+      "material_count": 7,
+      "image_count": 0,
+      "geometry_unchanged": true,
+      "original_glb_sha256": "97953254adaf10ed0f4a43ef06ade24b842763291aafe1451d0ee5c400d6f4b0"
+    }
+  }
+}

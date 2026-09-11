@@ -1,0 +1,449 @@
+{
+  "source_sha256": "aecd66603d8bf18245e1f1a26ed95935f4e7167b542c69c0ed8cf3c61fede1de",
+  "samples": [
+    {
+      "id": "back_panel-0.63",
+      "params": {
+        "back_panel": 0.63
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 0,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 291,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 588,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 879,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "back_panel-1.37",
+      "params": {
+        "back_panel": 1.37
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 1458,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 1749,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 2046,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 2337,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "bottom_panel-0.63",
+      "params": {
+        "bottom_panel": 0.63
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 2916,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 3207,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 3504,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 3795,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "bottom_panel-1.37",
+      "params": {
+        "bottom_panel": 1.37
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 4374,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 4665,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 4962,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 5253,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "front_panel-0.63",
+      "params": {
+        "front_panel": 0.63
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 5832,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 6123,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 6420,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 6711,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "front_panel-1.37",
+      "params": {
+        "front_panel": 1.37
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 7290,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 7581,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 7878,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 8169,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "back_panel": 1.37,
+        "bottom_panel": 0.63,
+        "front_panel": 1.37,
+        "side_walls": 0.63
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 8748,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 9039,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 9336,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 9627,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "back_panel": 0.63,
+        "bottom_panel": 1.37,
+        "front_panel": 0.63,
+        "side_walls": 1.37
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 10206,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 10497,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 10794,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 11085,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "back_panel": 0.63,
+        "bottom_panel": 0.63,
+        "front_panel": 0.63,
+        "side_walls": 0.63
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 11664,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 11955,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 12252,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 12543,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "back_panel": 1.37,
+        "bottom_panel": 1.37,
+        "front_panel": 1.37,
+        "side_walls": 1.37
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 13122,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 13413,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 13710,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 14001,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "side_walls-0.63",
+      "params": {
+        "side_walls": 0.63
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 14580,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 14871,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 15168,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 15459,
+            "count": 579
+          }
+        }
+      ]
+    },
+    {
+      "id": "side_walls-1.37",
+      "params": {
+        "side_walls": 1.37
+      },
+      "parts": [
+        {
+          "id": "back_panel",
+          "positions": {
+            "offset": 16038,
+            "count": 291
+          }
+        },
+        {
+          "id": "bottom_panel",
+          "positions": {
+            "offset": 16329,
+            "count": 297
+          }
+        },
+        {
+          "id": "front_panel",
+          "positions": {
+            "offset": 16626,
+            "count": 291
+          }
+        },
+        {
+          "id": "side_walls",
+          "positions": {
+            "offset": 16917,
+            "count": 579
+          }
+        }
+      ]
+    }
+  ]
+}

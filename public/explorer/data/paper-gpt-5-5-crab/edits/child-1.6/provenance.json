@@ -1,0 +1,77 @@
+{
+  "method": "TreeStruct3D · GPT-5.5",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gpt5.5/Crab_seed0/Crab_seed0.py",
+  "source_sha256": "6689f96b03f258464a9a1265d1fe75a29ee63633893e1fbb750e4240351cbf43",
+  "source_size": 16203,
+  "glb_sha256": "36e5211584275d1c86c3dd7468cdd095cb1c4bbc332df7cb46e7b008649d8d1f",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|walking_leg|scale": 1.6
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "child-1.6",
+    "side": "child",
+    "part_ids": [
+      "walking_leg"
+    ],
+    "parameter": "scale",
+    "scale": 1.6,
+    "params": {
+      "part_param|walking_leg|scale": 1.6
+    },
+    "paper_parent_ids": [
+      "carapace"
+    ],
+    "paper_child_ids": [
+      "walking_leg"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "dimensions": [
+      {
+        "id": "walking_leg",
+        "part_id": "walking_leg",
+        "before": [
+          5.816630840301514,
+          1.5425453782081604,
+          0.24144317582249641
+        ],
+        "after": [
+          7.448705196380615,
+          1.9723526239395142,
+          0.28484829515218735
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "carapace",
+        "child": "walking_leg",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": false,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": false,
+        "runtime_parent_part_id": "carapace",
+        "runtime_child_part_id": "walking_leg"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    1.4901161193847657e-09,
+    0.2150120444595814,
+    1.1041285982355475
+  ],
+  "mesh_bbox_max_error_before_translation": 1.1041285991668701,
+  "mesh_bbox_max_error_after_translation": 5.811452865600586e-08
+}

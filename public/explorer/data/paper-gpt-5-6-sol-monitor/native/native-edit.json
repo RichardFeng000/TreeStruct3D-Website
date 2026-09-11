@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "base_stand",
+      "part_id": "base_stand",
+      "positions": {
+        "offset": 0,
+        "count": 666
+      }
+    },
+    {
+      "id": "display_surface",
+      "part_id": "display_surface",
+      "positions": {
+        "offset": 666,
+        "count": 306
+      }
+    },
+    {
+      "id": "monitor_body_bezel",
+      "part_id": "monitor_body_bezel",
+      "positions": {
+        "offset": 972,
+        "count": 4710
+      }
+    },
+    {
+      "id": "pedestal_arm",
+      "part_id": "pedestal_arm",
+      "positions": {
+        "offset": 5682,
+        "count": 1374
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "base_stand",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "base_stand",
+              "delta": {
+                "offset": 7056,
+                "count": 666
+              }
+            },
+            {
+              "id": "display_surface",
+              "delta": {
+                "offset": 7722,
+                "count": 306
+              }
+            },
+            {
+              "id": "monitor_body_bezel",
+              "delta": {
+                "offset": 8028,
+                "count": 4710
+              }
+            },
+            {
+              "id": "pedestal_arm",
+              "delta": {
+                "offset": 12738,
+                "count": 1374
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 14112,
+            "count": 18
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "base_stand",
+              "delta": {
+                "offset": 14130,
+                "count": 666
+              }
+            },
+            {
+              "id": "display_surface",
+              "delta": {
+                "offset": 14796,
+                "count": 306
+              }
+            },
+            {
+              "id": "monitor_body_bezel",
+              "delta": {
+                "offset": 15102,
+                "count": 4710
+              }
+            },
+            {
+              "id": "pedestal_arm",
+              "delta": {
+                "offset": 19812,
+                "count": 1374
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 21186,
+            "count": 18
+          }
+        }
+      ]
+    },
+    {
+      "id": "display_surface",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "display_surface",
+              "delta": {
+                "offset": 21204,
+                "count": 306
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "display_surface",
+              "delta": {
+                "offset": 21510,
+                "count": 306
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "monitor_body_bezel",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "display_surface",
+              "delta": {
+                "offset": 21816,
+                "count": 306
+              }
+            },
+            {
+              "id": "monitor_body_bezel",
+              "delta": {
+                "offset": 22122,
+                "count": 4710
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 26832,
+            "count": 18
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "display_surface",
+              "delta": {
+                "offset": 26850,
+                "count": 306
+              }
+            },
+            {
+              "id": "monitor_body_bezel",
+              "delta": {
+                "offset": 27156,
+                "count": 4710
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 31866,
+            "count": 18
+          }
+        }
+      ]
+    },
+    {
+      "id": "pedestal_arm",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "display_surface",
+              "delta": {
+                "offset": 31884,
+                "count": 306
+              }
+            },
+            {
+              "id": "monitor_body_bezel",
+              "delta": {
+                "offset": 32190,
+                "count": 4710
+              }
+            },
+            {
+              "id": "pedestal_arm",
+              "delta": {
+                "offset": 36900,
+                "count": 1374
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 38274,
+            "count": 18
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "display_surface",
+              "delta": {
+                "offset": 38292,
+                "count": 306
+              }
+            },
+            {
+              "id": "monitor_body_bezel",
+              "delta": {
+                "offset": 38598,
+                "count": 4710
+              }
+            },
+            {
+              "id": "pedestal_arm",
+              "delta": {
+                "offset": 43308,
+                "count": 1374
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 44682,
+            "count": 18
+          }
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "base_stand",
+      "child": "pedestal_arm",
+      "parent_world": [
+        0.0,
+        0.0,
+        0.25
+      ],
+      "child_world": [
+        0.0,
+        0.0,
+        0.25
+      ]
+    },
+    {
+      "parent": "pedestal_arm",
+      "child": "monitor_body_bezel",
+      "parent_world": [
+        0.0,
+        0.15000000596046448,
+        3.180000066757202
+      ],
+      "child_world": [
+        0.0,
+        0.15000000596046448,
+        3.180000066757202
+      ]
+    },
+    {
+      "parent": "monitor_body_bezel",
+      "child": "display_surface",
+      "parent_world": [
+        0.0,
+        0.5199999809265137,
+        3.700000047683716
+      ],
+      "child_world": [
+        0.0,
+        0.5199999809265137,
+        3.700000047683716
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 6.400000095367432,
+    "linear_tolerance": 6.400000095367432e-05,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "base_stand": 1.2215317610753118e-06,
+      "display_surface": 4.586072918755235e-06,
+      "monitor_body_bezel": 1.751078525558114e-05,
+      "pedestal_arm": 9.546051842335146e-07
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "base_stand": 0.63,
+          "display_surface": 1.37,
+          "monitor_body_bezel": 0.63,
+          "pedestal_arm": 1.37
+        },
+        "max_position_error": 2.7236404226084606e-05,
+        "relative_error": 4.255688096911025e-06
+      },
+      {
+        "params": {
+          "base_stand": 1.37,
+          "display_surface": 0.63,
+          "monitor_body_bezel": 1.37,
+          "pedestal_arm": 0.63
+        },
+        "max_position_error": 9.681856764854106e-06,
+        "relative_error": 1.512790096966125e-06
+      },
+      {
+        "params": {
+          "base_stand": 0.63,
+          "display_surface": 0.63,
+          "monitor_body_bezel": 0.63,
+          "pedestal_arm": 0.63
+        },
+        "max_position_error": 1.8352520816462284e-05,
+        "relative_error": 2.8675813348419403e-06
+      },
+      {
+        "params": {
+          "base_stand": 1.37,
+          "display_surface": 1.37,
+          "monitor_body_bezel": 1.37,
+          "pedestal_arm": 1.37
+        },
+        "max_position_error": 1.2072699725943263e-05,
+        "relative_error": 1.8863593040696907e-06
+      }
+    ]
+  },
+  "binary_sha256": "dc9a0b130fa4c80c95e4b07a8088bee95d90ecd1114de40e06bfdce329c57533",
+  "source_sha256": "e8f83ae4e0ae9b72f5428644feddf13e43a23cf4947fe4c9e8a23842d56bcac9"
+}

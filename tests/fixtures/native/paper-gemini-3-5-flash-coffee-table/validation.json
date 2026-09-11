@@ -1,0 +1,303 @@
+{
+  "source_sha256": "6f171efb975e13e01b2937e5fb0b403b770464f451a47168d7b404aafcb292a6",
+  "samples": [
+    {
+      "id": "bottom_shelf-0.63",
+      "params": {
+        "bottom_shelf": 0.63
+      },
+      "parts": [
+        {
+          "id": "bottom_shelf",
+          "positions": {
+            "offset": 0,
+            "count": 2043
+          }
+        },
+        {
+          "id": "pedestal_legs",
+          "positions": {
+            "offset": 2043,
+            "count": 3651
+          }
+        },
+        {
+          "id": "table_top",
+          "positions": {
+            "offset": 5694,
+            "count": 2043
+          }
+        }
+      ]
+    },
+    {
+      "id": "bottom_shelf-1.37",
+      "params": {
+        "bottom_shelf": 1.37
+      },
+      "parts": [
+        {
+          "id": "bottom_shelf",
+          "positions": {
+            "offset": 7737,
+            "count": 2043
+          }
+        },
+        {
+          "id": "pedestal_legs",
+          "positions": {
+            "offset": 9780,
+            "count": 3651
+          }
+        },
+        {
+          "id": "table_top",
+          "positions": {
+            "offset": 13431,
+            "count": 2043
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "bottom_shelf": 1.37,
+        "pedestal_legs": 0.63,
+        "table_top": 0.63
+      },
+      "parts": [
+        {
+          "id": "bottom_shelf",
+          "positions": {
+            "offset": 15474,
+            "count": 2043
+          }
+        },
+        {
+          "id": "pedestal_legs",
+          "positions": {
+            "offset": 17517,
+            "count": 3651
+          }
+        },
+        {
+          "id": "table_top",
+          "positions": {
+            "offset": 21168,
+            "count": 2043
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "bottom_shelf": 0.63,
+        "pedestal_legs": 1.37,
+        "table_top": 1.37
+      },
+      "parts": [
+        {
+          "id": "bottom_shelf",
+          "positions": {
+            "offset": 23211,
+            "count": 2043
+          }
+        },
+        {
+          "id": "pedestal_legs",
+          "positions": {
+            "offset": 25254,
+            "count": 3651
+          }
+        },
+        {
+          "id": "table_top",
+          "positions": {
+            "offset": 28905,
+            "count": 2043
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "bottom_shelf": 0.63,
+        "pedestal_legs": 0.63,
+        "table_top": 0.63
+      },
+      "parts": [
+        {
+          "id": "bottom_shelf",
+          "positions": {
+            "offset": 30948,
+            "count": 2043
+          }
+        },
+        {
+          "id": "pedestal_legs",
+          "positions": {
+            "offset": 32991,
+            "count": 3651
+          }
+        },
+        {
+          "id": "table_top",
+          "positions": {
+            "offset": 36642,
+            "count": 2043
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "bottom_shelf": 1.37,
+        "pedestal_legs": 1.37,
+        "table_top": 1.37
+      },
+      "parts": [
+        {
+          "id": "bottom_shelf",
+          "positions": {
+            "offset": 38685,
+            "count": 2043
+          }
+        },
+        {
+          "id": "pedestal_legs",
+          "positions": {
+            "offset": 40728,
+            "count": 3651
+          }
+        },
+        {
+          "id": "table_top",
+          "positions": {
+            "offset": 44379,
+            "count": 2043
+          }
+        }
+      ]
+    },
+    {
+      "id": "pedestal_legs-0.63",
+      "params": {
+        "pedestal_legs": 0.63
+      },
+      "parts": [
+        {
+          "id": "bottom_shelf",
+          "positions": {
+            "offset": 46422,
+            "count": 2043
+          }
+        },
+        {
+          "id": "pedestal_legs",
+          "positions": {
+            "offset": 48465,
+            "count": 3651
+          }
+        },
+        {
+          "id": "table_top",
+          "positions": {
+            "offset": 52116,
+            "count": 2043
+          }
+        }
+      ]
+    },
+    {
+      "id": "pedestal_legs-1.37",
+      "params": {
+        "pedestal_legs": 1.37
+      },
+      "parts": [
+        {
+          "id": "bottom_shelf",
+          "positions": {
+            "offset": 54159,
+            "count": 2043
+          }
+        },
+        {
+          "id": "pedestal_legs",
+          "positions": {
+            "offset": 56202,
+            "count": 3651
+          }
+        },
+        {
+          "id": "table_top",
+          "positions": {
+            "offset": 59853,
+            "count": 2043
+          }
+        }
+      ]
+    },
+    {
+      "id": "table_top-0.63",
+      "params": {
+        "table_top": 0.63
+      },
+      "parts": [
+        {
+          "id": "bottom_shelf",
+          "positions": {
+            "offset": 61896,
+            "count": 2043
+          }
+        },
+        {
+          "id": "pedestal_legs",
+          "positions": {
+            "offset": 63939,
+            "count": 3651
+          }
+        },
+        {
+          "id": "table_top",
+          "positions": {
+            "offset": 67590,
+            "count": 2043
+          }
+        }
+      ]
+    },
+    {
+      "id": "table_top-1.37",
+      "params": {
+        "table_top": 1.37
+      },
+      "parts": [
+        {
+          "id": "bottom_shelf",
+          "positions": {
+            "offset": 69633,
+            "count": 2043
+          }
+        },
+        {
+          "id": "pedestal_legs",
+          "positions": {
+            "offset": 71676,
+            "count": 3651
+          }
+        },
+        {
+          "id": "table_top",
+          "positions": {
+            "offset": 75327,
+            "count": 2043
+          }
+        }
+      ]
+    }
+  ]
+}

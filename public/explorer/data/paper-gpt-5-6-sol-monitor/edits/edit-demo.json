@@ -1,0 +1,92 @@
+{
+  "id": "paper-gpt-5-6-sol-monitor",
+  "title": "Monitor",
+  "provider": "GPT-5.6 Sol",
+  "group": "appendix-6b",
+  "label": "Monitor_seed0",
+  "model": "Monitor_seed0/Monitor_seed0",
+  "source": "treestruct3d",
+  "source_label": "TreeStruct3D · GPT-5.6 Sol",
+  "parent": {
+    "ids": [
+      "pedestal_arm"
+    ],
+    "label": "pedestal arm"
+  },
+  "child": {
+    "ids": [
+      "base_stand"
+    ],
+    "label": "base stand"
+  },
+  "scales": [
+    0.4,
+    1,
+    1.6
+  ],
+  "mode": "precomputed_native_rebuild",
+  "variants": [
+    {
+      "id": "default",
+      "side": "default",
+      "scale": 1.0,
+      "glb": "paper-gpt-5-6-sol-monitor/edits/default/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-monitor/edits/default/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-monitor/edits/default/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-monitor/edits/default/mesh-map.json",
+      "bytes": 238244
+    },
+    {
+      "id": "parent-0.4",
+      "side": "parent",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-6-sol-monitor/edits/parent-0.4/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-monitor/edits/parent-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-monitor/edits/parent-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-monitor/edits/parent-0.4/mesh-map.json",
+      "bytes": 167540
+    },
+    {
+      "id": "parent-1.6",
+      "side": "parent",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-6-sol-monitor/edits/parent-1.6/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-monitor/edits/parent-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-monitor/edits/parent-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-monitor/edits/parent-1.6/mesh-map.json",
+      "bytes": 167800
+    },
+    {
+      "id": "child-0.4",
+      "side": "child",
+      "scale": 0.4,
+      "glb": "paper-gpt-5-6-sol-monitor/edits/child-0.4/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-monitor/edits/child-0.4/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-monitor/edits/child-0.4/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-monitor/edits/child-0.4/mesh-map.json",
+      "bytes": 166336
+    },
+    {
+      "id": "child-1.6",
+      "side": "child",
+      "scale": 1.6,
+      "glb": "paper-gpt-5-6-sol-monitor/edits/child-1.6/model.glb",
+      "snapshot": "paper-gpt-5-6-sol-monitor/edits/child-1.6/snapshot.json",
+      "provenance": "paper-gpt-5-6-sol-monitor/edits/child-1.6/provenance.json",
+      "mesh_map": "paper-gpt-5-6-sol-monitor/edits/child-1.6/mesh-map.json",
+      "bytes": 166292
+    }
+  ],
+  "baseline": {
+    "id": "default",
+    "side": "default",
+    "scale": 1.0,
+    "glb": "paper-gpt-5-6-sol-monitor/edits/default/model.glb",
+    "snapshot": "paper-gpt-5-6-sol-monitor/edits/default/snapshot.json",
+    "provenance": "paper-gpt-5-6-sol-monitor/edits/default/provenance.json",
+    "mesh_map": "paper-gpt-5-6-sol-monitor/edits/default/mesh-map.json",
+    "bytes": 238244,
+    "parts": 4,
+    "shared_anchors": 3
+  }
+}

@@ -1,0 +1,1501 @@
+{
+  "method": "TreeStruct3D · Gemini 3.5 Flash",
+  "role": "precomputed_edit_demo",
+  "source_file": "treestruct3d_results/gemini_3.5_flash/FruitPineapple_seed0/FruitPineapple_seed0.py",
+  "source_sha256": "a10388812756d491243be9c139226ee9119b7d81989a159dded47978977c86ff",
+  "source_size": 14429,
+  "glb_sha256": "39cdb35d0260c6914bba1093933300e5b98195d49497eddebc99916554f95718",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "execution": "full_source_from_empty_scene",
+  "parameter_mode": "native_rebuild",
+  "params": {
+    "part_param|crown_leaf|scale": 0.4
+  },
+  "random_seed_before_source_execution": 0,
+  "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+  "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+  "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+  "edit": {
+    "id": "child-0.4",
+    "side": "child",
+    "part_ids": [
+      "crown_leaf"
+    ],
+    "parameter": "scale",
+    "scale": 0.4,
+    "params": {
+      "part_param|crown_leaf|scale": 0.4
+    },
+    "paper_parent_ids": [
+      "fruit_body"
+    ],
+    "paper_child_ids": [
+      "crown_leaf"
+    ],
+    "geometry_changed": true,
+    "attachment_observed": true,
+    "attachment_paths": [
+      [
+        "fruit_body",
+        "crown_leaf"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.001"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.002"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.003"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.004"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.005"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.006"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.007"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.008"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.009"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.010"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.011"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.012"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.013"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.014"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.015"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.016"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.017"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.018"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.019"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.020"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.021"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.022"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.023"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.024"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.025"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.026"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.027"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.028"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.029"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.030"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.031"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.032"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.033"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.034"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.035"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.036"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.037"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.038"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.039"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.040"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.041"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.042"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.043"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.044"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.045"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.046"
+      ],
+      [
+        "fruit_body",
+        "crown_leaf.047"
+      ]
+    ],
+    "dimensions": [
+      {
+        "id": "crown_leaf.032",
+        "part_id": "crown_leaf",
+        "before": [
+          1.5624997913837433,
+          1.193028263747692,
+          1.4562780857086182
+        ],
+        "after": [
+          0.6249998658895493,
+          0.4772113040089607,
+          0.5825111865997314
+        ]
+      },
+      {
+        "id": "crown_leaf.045",
+        "part_id": "crown_leaf",
+        "before": [
+          1.4386496096849442,
+          1.3532598167657852,
+          1.3257420063018799
+        ],
+        "after": [
+          0.5754598453640938,
+          0.5413039475679398,
+          0.530296802520752
+        ]
+      },
+      {
+        "id": "crown_leaf.041",
+        "part_id": "crown_leaf",
+        "before": [
+          1.561673365533352,
+          1.0809128805994987,
+          1.506117820739746
+        ],
+        "after": [
+          0.6246693059802055,
+          0.43236516416072845,
+          0.6024470329284668
+        ]
+      },
+      {
+        "id": "crown_leaf.036",
+        "part_id": "crown_leaf",
+        "before": [
+          1.2590219378471375,
+          1.3036840856075287,
+          1.3146429061889648
+        ],
+        "after": [
+          0.5036087408661842,
+          0.5214735940098763,
+          0.5258572101593018
+        ]
+      },
+      {
+        "id": "crown_leaf.035",
+        "part_id": "crown_leaf",
+        "before": [
+          1.6166477128863335,
+          0.8419153392314911,
+          1.3451132774353027
+        ],
+        "after": [
+          0.6466591060161591,
+          0.3367660939693451,
+          0.5380454063415527
+        ]
+      },
+      {
+        "id": "crown_leaf.046",
+        "part_id": "crown_leaf",
+        "before": [
+          0.8343755230307579,
+          1.6403033584356308,
+          1.2593111991882324
+        ],
+        "after": [
+          0.3337501883506775,
+          0.6561213135719299,
+          0.5037245750427246
+        ]
+      },
+      {
+        "id": "crown_leaf.040",
+        "part_id": "crown_leaf",
+        "before": [
+          1.037300169467926,
+          1.3615610003471375,
+          1.2097830772399902
+        ],
+        "after": [
+          0.4149200916290283,
+          0.5446244478225708,
+          0.4839131832122803
+        ]
+      },
+      {
+        "id": "crown_leaf.031",
+        "part_id": "crown_leaf",
+        "before": [
+          1.0041102170944214,
+          1.3121371790766716,
+          1.229055643081665
+        ],
+        "after": [
+          0.40164414048194885,
+          0.5248549059033394,
+          0.4916222095489502
+        ]
+      },
+      {
+        "id": "crown_leaf.024",
+        "part_id": "crown_leaf",
+        "before": [
+          0.8945585563778877,
+          1.0453634895384312,
+          1.639920949935913
+        ],
+        "after": [
+          0.3578234389424324,
+          0.41814541444182396,
+          0.655968427658081
+        ]
+      },
+      {
+        "id": "crown_leaf.033",
+        "part_id": "crown_leaf",
+        "before": [
+          1.8637660816311836,
+          0.5441825315356255,
+          1.4789199829101562
+        ],
+        "after": [
+          0.7455063536763191,
+          0.21767300367355347,
+          0.5915679931640625
+        ]
+      },
+      {
+        "id": "crown_leaf.037",
+        "part_id": "crown_leaf",
+        "before": [
+          0.7617732509970665,
+          1.61711747944355,
+          1.1801197528839111
+        ],
+        "after": [
+          0.3047093003988266,
+          0.6468469798564911,
+          0.4720478057861328
+        ]
+      },
+      {
+        "id": "crown_leaf.030",
+        "part_id": "crown_leaf",
+        "before": [
+          0.5476417392492294,
+          1.869330182671547,
+          1.3729681968688965
+        ],
+        "after": [
+          0.21905669569969177,
+          0.7477320432662964,
+          0.549187183380127
+        ]
+      },
+      {
+        "id": "crown_leaf.044",
+        "part_id": "crown_leaf",
+        "before": [
+          1.5464490689337254,
+          0.7472453266382217,
+          1.2078135013580322
+        ],
+        "after": [
+          0.6185796111822128,
+          0.2988981604576111,
+          0.4831254482269287
+        ]
+      },
+      {
+        "id": "crown_leaf.028",
+        "part_id": "crown_leaf",
+        "before": [
+          0.763714112341404,
+          0.9959014877676964,
+          1.4935340881347656
+        ],
+        "after": [
+          0.30548568814992905,
+          0.39836058765649796,
+          0.5974135398864746
+        ]
+      },
+      {
+        "id": "crown_leaf.018",
+        "part_id": "crown_leaf",
+        "before": [
+          1.1516760289669037,
+          0.5993412733078003,
+          1.6362617015838623
+        ],
+        "after": [
+          0.4606704153120518,
+          0.23973647505044937,
+          0.6545045375823975
+        ]
+      },
+      {
+        "id": "crown_leaf.021",
+        "part_id": "crown_leaf",
+        "before": [
+          0.7856162711977959,
+          0.969507172703743,
+          1.4514966011047363
+        ],
+        "after": [
+          0.3142464905977249,
+          0.387802891433239,
+          0.5805985927581787
+        ]
+      },
+      {
+        "id": "crown_leaf.039",
+        "part_id": "crown_leaf",
+        "before": [
+          0.46432702243328094,
+          1.712688822299242,
+          1.301368236541748
+        ],
+        "after": [
+          0.18573080003261566,
+          0.6850754879415035,
+          0.5205473899841309
+        ]
+      },
+      {
+        "id": "crown_leaf.042",
+        "part_id": "crown_leaf",
+        "before": [
+          1.6992722377181053,
+          0.4893561154603958,
+          1.2032756805419922
+        ],
+        "after": [
+          0.6797089129686356,
+          0.19574247300624847,
+          0.4813103675842285
+        ]
+      },
+      {
+        "id": "crown_leaf.020",
+        "part_id": "crown_leaf",
+        "before": [
+          1.0783753618597984,
+          0.5942190587520599,
+          1.53873872756958
+        ],
+        "after": [
+          0.43135013431310654,
+          0.2376876175403595,
+          0.6154954433441162
+        ]
+      },
+      {
+        "id": "crown_leaf.017",
+        "part_id": "crown_leaf",
+        "before": [
+          0.7585261538624763,
+          0.8737211413681507,
+          1.4859740734100342
+        ],
+        "after": [
+          0.30341047048568726,
+          0.34948844835162163,
+          0.5943896770477295
+        ]
+      },
+      {
+        "id": "crown_leaf.027",
+        "part_id": "crown_leaf",
+        "before": [
+          1.1518311239778996,
+          0.5642877966165543,
+          1.454664945602417
+        ],
+        "after": [
+          0.46073250100016594,
+          0.22571510821580887,
+          0.5818660259246826
+        ]
+      },
+      {
+        "id": "crown_leaf.025",
+        "part_id": "crown_leaf",
+        "before": [
+          1.0401998795568943,
+          0.5339081846177578,
+          1.3317584991455078
+        ],
+        "after": [
+          0.41607994213700294,
+          0.21356328576803207,
+          0.5327033996582031
+        ]
+      },
+      {
+        "id": "crown_leaf.038",
+        "part_id": "crown_leaf",
+        "before": [
+          0.27556274831295013,
+          1.7625966146588326,
+          1.3526227474212646
+        ],
+        "after": [
+          0.11022509634494781,
+          0.7050386555492878,
+          0.5410492420196533
+        ]
+      },
+      {
+        "id": "crown_leaf.023",
+        "part_id": "crown_leaf",
+        "before": [
+          0.32509711384773254,
+          1.1728587076067924,
+          1.655379295349121
+        ],
+        "after": [
+          0.13003884826321155,
+          0.469143521040678,
+          0.6621518135070801
+        ]
+      },
+      {
+        "id": "crown_leaf.016",
+        "part_id": "crown_leaf",
+        "before": [
+          0.3068362921476364,
+          1.2275904901325703,
+          1.6475584506988525
+        ],
+        "after": [
+          0.12273452617228031,
+          0.49103616178035736,
+          0.6590235233306885
+        ]
+      },
+      {
+        "id": "crown_leaf.029",
+        "part_id": "crown_leaf",
+        "before": [
+          0.35689524933695793,
+          1.1498891357332468,
+          1.4362730979919434
+        ],
+        "after": [
+          0.1427581086754799,
+          0.4599556513130665,
+          0.5745091438293457
+        ]
+      },
+      {
+        "id": "crown_leaf.043",
+        "part_id": "crown_leaf",
+        "before": [
+          1.860861643217504,
+          0.24939026590436697,
+          1.260080337524414
+        ],
+        "after": [
+          0.7443446954712272,
+          0.09975610673427582,
+          0.5040321350097656
+        ]
+      },
+      {
+        "id": "crown_leaf.047",
+        "part_id": "crown_leaf",
+        "before": [
+          0.26642900705337524,
+          1.7140538431704044,
+          1.237668514251709
+        ],
+        "after": [
+          0.10657159984111786,
+          0.685621558688581,
+          0.4950673580169678
+        ]
+      },
+      {
+        "id": "crown_leaf.019",
+        "part_id": "crown_leaf",
+        "before": [
+          1.2429606914499123,
+          0.24646788276731968,
+          1.6787421703338623
+        ],
+        "after": [
+          0.49718430638260186,
+          0.09858717024326324,
+          0.6714968681335449
+        ]
+      },
+      {
+        "id": "crown_leaf.034",
+        "part_id": "crown_leaf",
+        "before": [
+          1.734695895574987,
+          0.24877362232655287,
+          1.136913776397705
+        ],
+        "after": [
+          0.6938783964142203,
+          0.09950945526361465,
+          0.45476555824279785
+        ]
+      },
+      {
+        "id": "crown_leaf.022",
+        "part_id": "crown_leaf",
+        "before": [
+          0.30116366036236286,
+          1.0395787488669157,
+          1.424175500869751
+        ],
+        "after": [
+          0.1204654648900032,
+          0.41583152115345,
+          0.5696702003479004
+        ]
+      },
+      {
+        "id": "crown_leaf.026",
+        "part_id": "crown_leaf",
+        "before": [
+          1.126693487166814,
+          0.2465151585638523,
+          1.4656274318695068
+        ],
+        "after": [
+          0.45067739486680664,
+          0.09860607609152794,
+          0.5862510204315186
+        ]
+      },
+      {
+        "id": "crown_leaf.007",
+        "part_id": "crown_leaf",
+        "before": [
+          0.5159735828638077,
+          0.5006381440907717,
+          1.4095330238342285
+        ],
+        "after": [
+          0.206389419734478,
+          0.2002552505582571,
+          0.5638132095336914
+        ]
+      },
+      {
+        "id": "crown_leaf.009",
+        "part_id": "crown_leaf",
+        "before": [
+          0.6204525250941515,
+          0.36482418328523636,
+          1.4017550945281982
+        ],
+        "after": [
+          0.24818100780248642,
+          0.14592966437339783,
+          0.5607020854949951
+        ]
+      },
+      {
+        "id": "crown_leaf.015",
+        "part_id": "crown_leaf",
+        "before": [
+          0.3499075211584568,
+          0.611692950129509,
+          1.4601166248321533
+        ],
+        "after": [
+          0.13996302336454391,
+          0.24467718973755836,
+          0.5840466022491455
+        ]
+      },
+      {
+        "id": "crown_leaf.012",
+        "part_id": "crown_leaf",
+        "before": [
+          0.45219726115465164,
+          0.4693815456703305,
+          1.3733305931091309
+        ],
+        "after": [
+          0.1808789074420929,
+          0.1877526268362999,
+          0.5493321418762207
+        ]
+      },
+      {
+        "id": "crown_leaf.010",
+        "part_id": "crown_leaf",
+        "before": [
+          0.33257979340851307,
+          0.5330422222614288,
+          1.4022233486175537
+        ],
+        "after": [
+          0.1330319158732891,
+          0.2132168971002102,
+          0.560889482498169
+        ]
+      },
+      {
+        "id": "crown_leaf.006",
+        "part_id": "crown_leaf",
+        "before": [
+          0.24607447534799576,
+          0.5992543310858309,
+          1.4752147197723389
+        ],
+        "after": [
+          0.09842979465611279,
+          0.2397017301991582,
+          0.5900859832763672
+        ]
+      },
+      {
+        "id": "crown_leaf.014",
+        "part_id": "crown_leaf",
+        "before": [
+          0.5254391226917505,
+          0.31940606981515884,
+          1.247817039489746
+        ],
+        "after": [
+          0.21017564833164215,
+          0.12776244059205055,
+          0.4991269111633301
+        ]
+      },
+      {
+        "id": "crown_leaf.008",
+        "part_id": "crown_leaf",
+        "before": [
+          0.6216179700568318,
+          0.2458297573029995,
+          1.3379566669464111
+        ],
+        "after": [
+          0.24864716921001673,
+          0.09833191428333521,
+          0.5351827144622803
+        ]
+      },
+      {
+        "id": "crown_leaf.013",
+        "part_id": "crown_leaf",
+        "before": [
+          0.6231659334152937,
+          0.24591021612286568,
+          1.2517831325531006
+        ],
+        "after": [
+          0.2492663636803627,
+          0.09836409147828817,
+          0.5007131099700928
+        ]
+      },
+      {
+        "id": "crown_leaf.011",
+        "part_id": "crown_leaf",
+        "before": [
+          0.24553389847278595,
+          0.5324435862712562,
+          1.230234146118164
+        ],
+        "after": [
+          0.09821355971507728,
+          0.2129774410277605,
+          0.4920938014984131
+        ]
+      },
+      {
+        "id": "crown_leaf.001",
+        "part_id": "crown_leaf",
+        "before": [
+          0.2359992377460003,
+          0.21272234618663788,
+          1.013373851776123
+        ],
+        "after": [
+          0.09439969807863235,
+          0.0850889440625906,
+          0.4053494930267334
+        ]
+      },
+      {
+        "id": "crown_leaf.005",
+        "part_id": "crown_leaf",
+        "before": [
+          0.21035883389413357,
+          0.21893824636936188,
+          1.0355136394500732
+        ],
+        "after": [
+          0.08414353197440505,
+          0.08757530152797699,
+          0.41420555114746094
+        ]
+      },
+      {
+        "id": "crown_leaf",
+        "part_id": "crown_leaf",
+        "before": [
+          0.24645809829235077,
+          0.19033290818333626,
+          1.004852056503296
+        ],
+        "after": [
+          0.09858324378728867,
+          0.0761331650428474,
+          0.40194082260131836
+        ]
+      },
+      {
+        "id": "crown_leaf.003",
+        "part_id": "crown_leaf",
+        "before": [
+          0.24651696532964706,
+          0.20501557271927595,
+          0.8788621425628662
+        ],
+        "after": [
+          0.0986067894846201,
+          0.0820062339771539,
+          0.3515448570251465
+        ]
+      },
+      {
+        "id": "crown_leaf.004",
+        "part_id": "crown_leaf",
+        "before": [
+          0.22198231518268585,
+          0.21146007627248764,
+          0.9136688709259033
+        ],
+        "after": [
+          0.08879292756319046,
+          0.08458403684198856,
+          0.36546754837036133
+        ]
+      },
+      {
+        "id": "crown_leaf.002",
+        "part_id": "crown_leaf",
+        "before": [
+          0.18956160359084606,
+          0.21525264531373978,
+          0.962665319442749
+        ],
+        "after": [
+          0.07582464348524809,
+          0.08610106259584427,
+          0.38506627082824707
+        ]
+      }
+    ],
+    "selected_attachment_checks": [
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.005",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.001",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.002",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.004",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.003",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.011",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.014",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.013",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.008",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.010",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.012",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.015",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.006",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.007",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.009",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.017",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.022",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.026",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.020",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.023",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.025",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.028",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.019",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.024",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.029",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.016",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.018",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.021",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.027",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.031",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.040",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.035",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.041",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.033",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.036",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.038",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.044",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.039",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.047",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.032",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.030",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.042",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.037",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.046",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.043",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.034",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      },
+      {
+        "parent": "fruit_body",
+        "child": "crown_leaf.045",
+        "relation": "DIRECTED",
+        "contact": true,
+        "shared_anchor": true,
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_all_valid": true,
+        "runtime_parent_part_id": "fruit_body",
+        "runtime_child_part_id": "crown_leaf"
+      }
+    ]
+  },
+  "mesh_name_match": true,
+  "runtime_to_glb_translation": [
+    1.2905240436537653e-09,
+    -3.2671081204714683e-09,
+    2.0897036688862244e-09
+  ],
+  "mesh_bbox_max_error_before_translation": 1.6295863503046348e-07,
+  "mesh_bbox_max_error_after_translation": 1.6344827911439418e-07,
+  "same_execution_export": true,
+  "final_scene_adapter_sha256": "5ef143984231a0dd21797536aa9e727625b993f52c2a512f08c4f151f8730683",
+  "final_scene_adapter": {
+    "same_execution_export": true,
+    "geometry_observation": "final_evaluated_polygon_vertices",
+    "anchor_observation": "final_evaluated_surface_after_all_source_modifiers",
+    "probe_rules_and_tolerances_changed": false
+  }
+}

@@ -1,0 +1,3283 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "abdomen_chain",
+      "part_id": "abdomen_chain",
+      "positions": {
+        "offset": 0,
+        "count": 3486
+      }
+    },
+    {
+      "id": "cephalothorax_shell",
+      "part_id": "cephalothorax_shell",
+      "positions": {
+        "offset": 3486,
+        "count": 3006
+      }
+    },
+    {
+      "id": "long_antenna",
+      "part_id": "long_antenna",
+      "positions": {
+        "offset": 6492,
+        "count": 4044
+      }
+    },
+    {
+      "id": "tail_fan",
+      "part_id": "tail_fan",
+      "positions": {
+        "offset": 10536,
+        "count": 3924
+      }
+    },
+    {
+      "id": "walking_leg_bank",
+      "part_id": "walking_leg_bank",
+      "positions": {
+        "offset": 14460,
+        "count": 4848
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "abdomen_chain",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "abdomen_chain",
+              "delta": {
+                "offset": 19308,
+                "count": 3486
+              }
+            },
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 22794,
+                "count": 3924
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 26718,
+            "count": 36
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "abdomen_chain",
+              "delta": {
+                "offset": 26754,
+                "count": 3486
+              }
+            },
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 30240,
+                "count": 3924
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 34164,
+            "count": 36
+          }
+        }
+      ]
+    },
+    {
+      "id": "cephalothorax_shell",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "abdomen_chain",
+              "delta": {
+                "offset": 34200,
+                "count": 3486
+              }
+            },
+            {
+              "id": "cephalothorax_shell",
+              "delta": {
+                "offset": 37686,
+                "count": 3006
+              }
+            },
+            {
+              "id": "long_antenna",
+              "delta": {
+                "offset": 40692,
+                "count": 4044
+              }
+            },
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 44736,
+                "count": 3924
+              }
+            },
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 48660,
+                "count": 4848
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 53508,
+            "count": 36
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "abdomen_chain",
+              "delta": {
+                "offset": 53544,
+                "count": 3486
+              }
+            },
+            {
+              "id": "cephalothorax_shell",
+              "delta": {
+                "offset": 57030,
+                "count": 3006
+              }
+            },
+            {
+              "id": "long_antenna",
+              "delta": {
+                "offset": 60036,
+                "count": 4044
+              }
+            },
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 64080,
+                "count": 3924
+              }
+            },
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 68004,
+                "count": 4848
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 72852,
+            "count": 36
+          }
+        }
+      ]
+    },
+    {
+      "id": "long_antenna",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "long_antenna",
+              "delta": {
+                "offset": 72888,
+                "count": 4044
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "long_antenna",
+              "delta": {
+                "offset": 76932,
+                "count": 4044
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tail_fan",
+      "interpolation": "sampled_native",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 80976,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.41,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 84900,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.42,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 88824,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.43,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 92748,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.44,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 96672,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.45,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 100596,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.46,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 104520,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.47,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 108444,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.48,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 112368,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.49,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 116292,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.5,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 120216,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.51,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 124140,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.52,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 128064,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.53,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 131988,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.54,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 135912,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.55,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 139836,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.56,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 143760,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.57,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 147684,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.58,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 151608,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.59,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 155532,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.6,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 159456,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.61,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 163380,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.62,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 167304,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.63,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 171228,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.64,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 175152,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.65,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 179076,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.66,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 183000,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.67,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 186924,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.68,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 190848,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.69,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 194772,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.7,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 198696,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.71,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 202620,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.72,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 206544,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.73,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 210468,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.74,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 214392,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.75,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 218316,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.76,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 222240,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.77,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 226164,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.78,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 230088,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.79,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 234012,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.8,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 237936,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.81,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 241860,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.82,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 245784,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.83,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 249708,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.84,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 253632,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.85,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 257556,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.86,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 261480,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.87,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 265404,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.88,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 269328,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.89,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 273252,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.9,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 277176,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.91,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 281100,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.92,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 285024,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.93,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 288948,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.94,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 292872,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.95,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 296796,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.96,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 300720,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.97,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 304644,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.98,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 308568,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.99,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 312492,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.01,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 316416,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.02,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 320340,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.03,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 324264,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.04,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 328188,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.05,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 332112,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.06,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 336036,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.07,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 339960,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.08,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 343884,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.09,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 347808,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.1,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 351732,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.11,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 355656,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.12,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 359580,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.13,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 363504,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.14,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 367428,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.15,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 371352,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.16,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 375276,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.17,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 379200,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.18,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 383124,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.19,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 387048,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.2,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 390972,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.21,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 394896,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.22,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 398820,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.23,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 402744,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.24,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 406668,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.25,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 410592,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.26,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 414516,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.27,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 418440,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.28,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 422364,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.29,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 426288,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.3,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 430212,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.31,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 434136,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.32,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 438060,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.33,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 441984,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.34,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 445908,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.35,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 449832,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.36,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 453756,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.37,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 457680,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.38,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 461604,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.39,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 465528,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.4,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 469452,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.41,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 473376,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.42,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 477300,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.43,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 481224,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.44,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 485148,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.45,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 489072,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.46,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 492996,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.47,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 496920,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.48,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 500844,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.49,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 504768,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.5,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 508692,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.51,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 512616,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.52,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 516540,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.53,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 520464,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.54,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 524388,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.55,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 528312,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.56,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 532236,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.57,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 536160,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.58,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 540084,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.59,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 544008,
+                "count": 3924
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "tail_fan",
+              "delta": {
+                "offset": 547932,
+                "count": 3924
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "walking_leg_bank",
+      "interpolation": "sampled_native",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 551856,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.41,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 556704,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.42,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 561552,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.43,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 566400,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.44,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 571248,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.45,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 576096,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.46,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 580944,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.47,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 585792,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.48,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 590640,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.49,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 595488,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.5,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 600336,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.51,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 605184,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.52,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 610032,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.53,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 614880,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.54,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 619728,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.55,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 624576,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.56,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 629424,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.57,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 634272,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.58,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 639120,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.59,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 643968,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.6,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 648816,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.61,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 653664,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.62,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 658512,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.63,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 663360,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.64,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 668208,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.65,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 673056,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.66,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 677904,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.67,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 682752,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.68,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 687600,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.69,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 692448,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.7,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 697296,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.71,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 702144,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.72,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 706992,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.73,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 711840,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.74,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 716688,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.75,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 721536,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.76,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 726384,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.77,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 731232,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.78,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 736080,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.79,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 740928,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.8,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 745776,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.81,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 750624,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.82,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 755472,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.83,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 760320,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.84,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 765168,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.85,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 770016,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.86,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 774864,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.87,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 779712,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.88,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 784560,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.89,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 789408,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.9,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 794256,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.91,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 799104,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.92,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 803952,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.93,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 808800,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.94,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 813648,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.95,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 818496,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.96,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 823344,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.97,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 828192,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.98,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 833040,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 0.99,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 837888,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.01,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 842736,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.02,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 847584,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.03,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 852432,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.04,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 857280,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.05,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 862128,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.06,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 866976,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.07,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 871824,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.08,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 876672,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.09,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 881520,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.1,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 886368,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.11,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 891216,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.12,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 896064,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.13,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 900912,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.14,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 905760,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.15,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 910608,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.16,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 915456,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.17,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 920304,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.18,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 925152,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.19,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 930000,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.2,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 934848,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.21,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 939696,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.22,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 944544,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.23,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 949392,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.24,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 954240,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.25,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 959088,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.26,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 963936,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.27,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 968784,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.28,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 973632,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.29,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 978480,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.3,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 983328,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.31,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 988176,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.32,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 993024,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.33,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 997872,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.34,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1002720,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.35,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1007568,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.36,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1012416,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.37,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1017264,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.38,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1022112,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.39,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1026960,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.4,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1031808,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.41,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1036656,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.42,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1041504,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.43,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1046352,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.44,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1051200,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.45,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1056048,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.46,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1060896,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.47,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1065744,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.48,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1070592,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.49,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1075440,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.5,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1080288,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.51,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1085136,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.52,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1089984,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.53,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1094832,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.54,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1099680,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.55,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1104528,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.56,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1109376,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.57,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1114224,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.58,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1119072,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.59,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1123920,
+                "count": 4848
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "walking_leg_bank",
+              "delta": {
+                "offset": 1128768,
+                "count": 4848
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "cephalothorax_shell",
+      "child": "abdomen_chain",
+      "parent_world": [
+        0.0,
+        -1.0199999809265137,
+        0.0
+      ],
+      "child_world": [
+        0.0,
+        -1.0199999809265137,
+        0.0
+      ]
+    },
+    {
+      "parent": "abdomen_chain",
+      "child": "tail_fan",
+      "parent_world": [
+        0.0,
+        -4.715000152587891,
+        -0.10999999940395355
+      ],
+      "child_world": [
+        0.0,
+        -4.715000152587891,
+        -0.10999999940395355
+      ]
+    },
+    {
+      "parent": "cephalothorax_shell",
+      "child": "long_antenna",
+      "parent_world": [
+        0.6935865879058838,
+        0.7799999713897705,
+        0.5177708864212036
+      ],
+      "child_world": [
+        0.6935865879058838,
+        0.7799999713897705,
+        0.5177708864212036
+      ]
+    },
+    {
+      "parent": "cephalothorax_shell",
+      "child": "long_antenna",
+      "parent_world": [
+        -0.6935865879058838,
+        0.7799999713897705,
+        0.5177708864212036
+      ],
+      "child_world": [
+        -0.6935865879058838,
+        0.7799999713897705,
+        0.5177708864212036
+      ]
+    },
+    {
+      "parent": "cephalothorax_shell",
+      "child": "walking_leg_bank",
+      "parent_world": [
+        0.8640443086624146,
+        0.47999998927116394,
+        -0.5986725687980652
+      ],
+      "child_world": [
+        0.8640443086624146,
+        0.47999998927116394,
+        -0.5986725687980652
+      ]
+    },
+    {
+      "parent": "cephalothorax_shell",
+      "child": "walking_leg_bank",
+      "parent_world": [
+        -0.8640443086624146,
+        0.47999998927116394,
+        -0.5986725687980652
+      ],
+      "child_world": [
+        -0.8640443086624146,
+        0.47999998927116394,
+        -0.5986725687980652
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 10.008076667785645,
+    "linear_tolerance": 0.00010008076667785646,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "abdomen_chain": 9.5413986400672e-07,
+      "cephalothorax_shell": 1.430511474609375e-06,
+      "long_antenna": 1.7841613271230017e-06,
+      "tail_fan": 0.00013722279982175678,
+      "walking_leg_bank": 0.013078240677714348
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "abdomen_chain": 1.37,
+          "cephalothorax_shell": 0.63,
+          "long_antenna": 1.37,
+          "tail_fan": 0.63,
+          "walking_leg_bank": 0.63
+        },
+        "max_position_error": 1.6858739404357613e-06,
+        "relative_error": 1.6845134149124904e-07
+      },
+      {
+        "params": {
+          "abdomen_chain": 0.63,
+          "cephalothorax_shell": 1.37,
+          "long_antenna": 0.63,
+          "tail_fan": 1.37,
+          "walking_leg_bank": 1.37
+        },
+        "max_position_error": 1.6148349266223986e-06,
+        "relative_error": 1.6135317306473952e-07
+      },
+      {
+        "params": {
+          "abdomen_chain": 0.63,
+          "cephalothorax_shell": 0.63,
+          "long_antenna": 0.63,
+          "tail_fan": 0.63,
+          "walking_leg_bank": 0.63
+        },
+        "max_position_error": 2.1050230725300673e-06,
+        "relative_error": 2.1033242873786038e-07
+      },
+      {
+        "params": {
+          "abdomen_chain": 1.37,
+          "cephalothorax_shell": 1.37,
+          "long_antenna": 1.37,
+          "tail_fan": 1.37,
+          "walking_leg_bank": 1.37
+        },
+        "max_position_error": 1.9258850123171223e-06,
+        "relative_error": 1.924330794263627e-07
+      }
+    ]
+  },
+  "binary_sha256": "87d44f200e49e2f71249ac214dbffbd9a4f8076f63007502fe76144abb830a0d",
+  "source_sha256": "6f7797aba646d2a5bf1cd58e467c22718ada80322d2145e88d58f247da865b0d"
+}

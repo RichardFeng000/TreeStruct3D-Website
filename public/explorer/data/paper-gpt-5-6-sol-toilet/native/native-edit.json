@@ -1,0 +1,584 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "bowl_body",
+      "part_id": "bowl_body",
+      "positions": {
+        "offset": 0,
+        "count": 7746
+      }
+    },
+    {
+      "id": "floor_base",
+      "part_id": "floor_base",
+      "positions": {
+        "offset": 7746,
+        "count": 2022
+      }
+    },
+    {
+      "id": "flush_handle",
+      "part_id": "flush_handle",
+      "positions": {
+        "offset": 9768,
+        "count": 510
+      }
+    },
+    {
+      "id": "seat_ring",
+      "part_id": "seat_ring",
+      "positions": {
+        "offset": 10278,
+        "count": 4422
+      }
+    },
+    {
+      "id": "upright_seat_lid",
+      "part_id": "upright_seat_lid",
+      "positions": {
+        "offset": 14700,
+        "count": 2172
+      }
+    },
+    {
+      "id": "water_tank",
+      "part_id": "water_tank",
+      "positions": {
+        "offset": 16872,
+        "count": 2694
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "bowl_body",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "bowl_body",
+              "delta": {
+                "offset": 19566,
+                "count": 7746
+              }
+            },
+            {
+              "id": "flush_handle",
+              "delta": {
+                "offset": 27312,
+                "count": 510
+              }
+            },
+            {
+              "id": "seat_ring",
+              "delta": {
+                "offset": 27822,
+                "count": 4422
+              }
+            },
+            {
+              "id": "upright_seat_lid",
+              "delta": {
+                "offset": 32244,
+                "count": 2172
+              }
+            },
+            {
+              "id": "water_tank",
+              "delta": {
+                "offset": 34416,
+                "count": 2694
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 37110,
+            "count": 30
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "bowl_body",
+              "delta": {
+                "offset": 37140,
+                "count": 7746
+              }
+            },
+            {
+              "id": "flush_handle",
+              "delta": {
+                "offset": 44886,
+                "count": 510
+              }
+            },
+            {
+              "id": "seat_ring",
+              "delta": {
+                "offset": 45396,
+                "count": 4422
+              }
+            },
+            {
+              "id": "upright_seat_lid",
+              "delta": {
+                "offset": 49818,
+                "count": 2172
+              }
+            },
+            {
+              "id": "water_tank",
+              "delta": {
+                "offset": 51990,
+                "count": 2694
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 54684,
+            "count": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "floor_base",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "bowl_body",
+              "delta": {
+                "offset": 54714,
+                "count": 7746
+              }
+            },
+            {
+              "id": "floor_base",
+              "delta": {
+                "offset": 62460,
+                "count": 2022
+              }
+            },
+            {
+              "id": "flush_handle",
+              "delta": {
+                "offset": 64482,
+                "count": 510
+              }
+            },
+            {
+              "id": "seat_ring",
+              "delta": {
+                "offset": 64992,
+                "count": 4422
+              }
+            },
+            {
+              "id": "upright_seat_lid",
+              "delta": {
+                "offset": 69414,
+                "count": 2172
+              }
+            },
+            {
+              "id": "water_tank",
+              "delta": {
+                "offset": 71586,
+                "count": 2694
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 74280,
+            "count": 30
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "bowl_body",
+              "delta": {
+                "offset": 74310,
+                "count": 7746
+              }
+            },
+            {
+              "id": "floor_base",
+              "delta": {
+                "offset": 82056,
+                "count": 2022
+              }
+            },
+            {
+              "id": "flush_handle",
+              "delta": {
+                "offset": 84078,
+                "count": 510
+              }
+            },
+            {
+              "id": "seat_ring",
+              "delta": {
+                "offset": 84588,
+                "count": 4422
+              }
+            },
+            {
+              "id": "upright_seat_lid",
+              "delta": {
+                "offset": 89010,
+                "count": 2172
+              }
+            },
+            {
+              "id": "water_tank",
+              "delta": {
+                "offset": 91182,
+                "count": 2694
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 93876,
+            "count": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "flush_handle",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "flush_handle",
+              "delta": {
+                "offset": 93906,
+                "count": 510
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "flush_handle",
+              "delta": {
+                "offset": 94416,
+                "count": 510
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seat_ring",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "seat_ring",
+              "delta": {
+                "offset": 94926,
+                "count": 4422
+              }
+            },
+            {
+              "id": "upright_seat_lid",
+              "delta": {
+                "offset": 99348,
+                "count": 2172
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 101520,
+            "count": 30
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "seat_ring",
+              "delta": {
+                "offset": 101550,
+                "count": 4422
+              }
+            },
+            {
+              "id": "upright_seat_lid",
+              "delta": {
+                "offset": 105972,
+                "count": 2172
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 108144,
+            "count": 30
+          }
+        }
+      ]
+    },
+    {
+      "id": "upright_seat_lid",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "upright_seat_lid",
+              "delta": {
+                "offset": 108174,
+                "count": 2172
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "upright_seat_lid",
+              "delta": {
+                "offset": 110346,
+                "count": 2172
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "water_tank",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "flush_handle",
+              "delta": {
+                "offset": 112518,
+                "count": 510
+              }
+            },
+            {
+              "id": "water_tank",
+              "delta": {
+                "offset": 113028,
+                "count": 2694
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 115722,
+            "count": 30
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "flush_handle",
+              "delta": {
+                "offset": 115752,
+                "count": 510
+              }
+            },
+            {
+              "id": "water_tank",
+              "delta": {
+                "offset": 116262,
+                "count": 2694
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 118956,
+            "count": 30
+          }
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "floor_base",
+      "child": "bowl_body",
+      "parent_world": [
+        0.0,
+        0.07999999821186066,
+        0.7200000286102295
+      ],
+      "child_world": [
+        0.0,
+        0.07999999821186066,
+        0.7200000286102295
+      ]
+    },
+    {
+      "parent": "bowl_body",
+      "child": "seat_ring",
+      "parent_world": [
+        0.0,
+        0.46000000834465027,
+        1.3600000143051147
+      ],
+      "child_world": [
+        0.0,
+        0.46000000834465027,
+        1.3600000143051147
+      ]
+    },
+    {
+      "parent": "seat_ring",
+      "child": "upright_seat_lid",
+      "parent_world": [
+        0.0,
+        0.46000000834465027,
+        1.4350000619888306
+      ],
+      "child_world": [
+        0.0,
+        0.46000000834465027,
+        1.4350000619888306
+      ]
+    },
+    {
+      "parent": "bowl_body",
+      "child": "water_tank",
+      "parent_world": [
+        0.0,
+        0.9200000166893005,
+        1.3600000143051147
+      ],
+      "child_world": [
+        0.0,
+        0.9200000166893005,
+        1.3600000143051147
+      ]
+    },
+    {
+      "parent": "water_tank",
+      "child": "flush_handle",
+      "parent_world": [
+        -0.6399999856948853,
+        0.9200009703636169,
+        1.6600000858306885
+      ],
+      "child_world": [
+        -0.6399999856948853,
+        0.9200009703636169,
+        1.6600000858306885
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 2.3350000381469727,
+    "linear_tolerance": 2.335000038146973e-05,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "bowl_body": 2.6656007889869215e-07,
+      "floor_base": 2.6656007889869215e-07,
+      "flush_handle": 1.4600097131278744e-07,
+      "seat_ring": 2.4575624024691933e-07,
+      "upright_seat_lid": 2.528810796320613e-07,
+      "water_tank": 2.731428025981586e-07
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "bowl_body": 1.37,
+          "floor_base": 0.63,
+          "flush_handle": 1.37,
+          "seat_ring": 0.63,
+          "upright_seat_lid": 1.37,
+          "water_tank": 0.63
+        },
+        "max_position_error": 4.915124923727108e-07,
+        "relative_error": 2.1049785196696146e-07
+      },
+      {
+        "params": {
+          "bowl_body": 0.63,
+          "floor_base": 1.37,
+          "flush_handle": 0.63,
+          "seat_ring": 1.37,
+          "upright_seat_lid": 0.63,
+          "water_tank": 1.37
+        },
+        "max_position_error": 7.208220137624636e-07,
+        "relative_error": 3.087032128421287e-07
+      },
+      {
+        "params": {
+          "bowl_body": 0.63,
+          "floor_base": 0.63,
+          "flush_handle": 0.63,
+          "seat_ring": 0.63,
+          "upright_seat_lid": 0.63,
+          "water_tank": 0.63
+        },
+        "max_position_error": 2.980232238769531e-07,
+        "relative_error": 1.2763307023903122e-07
+      },
+      {
+        "params": {
+          "bowl_body": 1.37,
+          "floor_base": 1.37,
+          "flush_handle": 1.37,
+          "seat_ring": 1.37,
+          "upright_seat_lid": 1.37,
+          "water_tank": 1.37
+        },
+        "max_position_error": 4.915124923727108e-07,
+        "relative_error": 2.1049785196696146e-07
+      }
+    ]
+  },
+  "binary_sha256": "fe3374da9462fc93fcfd76bf740080ad45fba184417cfd03edf967321058446e",
+  "source_sha256": "2f1a42f4a4241943b8e9d9228c0e296dc2ef5b56db938939f820254f9c68489e"
+}

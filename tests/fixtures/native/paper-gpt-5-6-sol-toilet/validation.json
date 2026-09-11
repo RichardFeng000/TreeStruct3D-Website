@@ -1,0 +1,825 @@
+{
+  "source_sha256": "2f1a42f4a4241943b8e9d9228c0e296dc2ef5b56db938939f820254f9c68489e",
+  "samples": [
+    {
+      "id": "bowl_body-0.63",
+      "params": {
+        "bowl_body": 0.63
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 0,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 7746,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 9768,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 10278,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 14700,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 16872,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "bowl_body-1.37",
+      "params": {
+        "bowl_body": 1.37
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 19566,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 27312,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 29334,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 29844,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 34266,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 36438,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "floor_base-0.63",
+      "params": {
+        "floor_base": 0.63
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 39132,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 46878,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 48900,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 49410,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 53832,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 56004,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "floor_base-1.37",
+      "params": {
+        "floor_base": 1.37
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 58698,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 66444,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 68466,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 68976,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 73398,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 75570,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "flush_handle-0.63",
+      "params": {
+        "flush_handle": 0.63
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 78264,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 86010,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 88032,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 88542,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 92964,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 95136,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "flush_handle-1.37",
+      "params": {
+        "flush_handle": 1.37
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 97830,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 105576,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 107598,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 108108,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 112530,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 114702,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-0",
+      "params": {
+        "bowl_body": 1.37,
+        "floor_base": 0.63,
+        "flush_handle": 1.37,
+        "seat_ring": 0.63,
+        "upright_seat_lid": 1.37,
+        "water_tank": 0.63
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 117396,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 125142,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 127164,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 127674,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 132096,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 134268,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-1",
+      "params": {
+        "bowl_body": 0.63,
+        "floor_base": 1.37,
+        "flush_handle": 0.63,
+        "seat_ring": 1.37,
+        "upright_seat_lid": 0.63,
+        "water_tank": 1.37
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 136962,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 144708,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 146730,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 147240,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 151662,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 153834,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-2",
+      "params": {
+        "bowl_body": 0.63,
+        "floor_base": 0.63,
+        "flush_handle": 0.63,
+        "seat_ring": 0.63,
+        "upright_seat_lid": 0.63,
+        "water_tank": 0.63
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 156528,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 164274,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 166296,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 166806,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 171228,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 173400,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "multi-3",
+      "params": {
+        "bowl_body": 1.37,
+        "floor_base": 1.37,
+        "flush_handle": 1.37,
+        "seat_ring": 1.37,
+        "upright_seat_lid": 1.37,
+        "water_tank": 1.37
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 176094,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 183840,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 185862,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 186372,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 190794,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 192966,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "seat_ring-0.63",
+      "params": {
+        "seat_ring": 0.63
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 195660,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 203406,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 205428,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 205938,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 210360,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 212532,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "seat_ring-1.37",
+      "params": {
+        "seat_ring": 1.37
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 215226,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 222972,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 224994,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 225504,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 229926,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 232098,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "upright_seat_lid-0.63",
+      "params": {
+        "upright_seat_lid": 0.63
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 234792,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 242538,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 244560,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 245070,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 249492,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 251664,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "upright_seat_lid-1.37",
+      "params": {
+        "upright_seat_lid": 1.37
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 254358,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 262104,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 264126,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 264636,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 269058,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 271230,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "water_tank-0.63",
+      "params": {
+        "water_tank": 0.63
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 273924,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 281670,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 283692,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 284202,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 288624,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 290796,
+            "count": 2694
+          }
+        }
+      ]
+    },
+    {
+      "id": "water_tank-1.37",
+      "params": {
+        "water_tank": 1.37
+      },
+      "parts": [
+        {
+          "id": "bowl_body",
+          "positions": {
+            "offset": 293490,
+            "count": 7746
+          }
+        },
+        {
+          "id": "floor_base",
+          "positions": {
+            "offset": 301236,
+            "count": 2022
+          }
+        },
+        {
+          "id": "flush_handle",
+          "positions": {
+            "offset": 303258,
+            "count": 510
+          }
+        },
+        {
+          "id": "seat_ring",
+          "positions": {
+            "offset": 303768,
+            "count": 4422
+          }
+        },
+        {
+          "id": "upright_seat_lid",
+          "positions": {
+            "offset": 308190,
+            "count": 2172
+          }
+        },
+        {
+          "id": "water_tank",
+          "positions": {
+            "offset": 310362,
+            "count": 2694
+          }
+        }
+      ]
+    }
+  ]
+}

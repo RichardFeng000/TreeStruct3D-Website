@@ -1,0 +1,2747 @@
+{
+  "schema": {
+    "source": "treestruct3d",
+    "model": "Dragonfly_seed0/Dragonfly_seed0",
+    "label": "Dragonfly_seed0",
+    "adapter": "generic",
+    "parameter_mode": "native_rebuild",
+    "controls": [
+      {
+        "id": "scale_x",
+        "label": "Overall Length X",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_y",
+        "label": "Overall Width Y",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "scale_z",
+        "label": "Overall Height Z",
+        "group": "Overall Model",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "value": 1.0
+      },
+      {
+        "id": "part_param|thorax|scale",
+        "label": "thorax · scale",
+        "group": "Native Part Parameters · thorax",
+        "value": 0.4,
+        "node_id": "thorax",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|thorax|thorax",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|thorax|radius",
+        "label": "thorax · radius",
+        "group": "Native Part Parameters · thorax",
+        "value": 0.6,
+        "node_id": "thorax",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.29999999999999993,
+        "max": 1.5,
+        "step": 0.006
+      },
+      {
+        "id": "part_param|thorax|length",
+        "label": "thorax · length",
+        "group": "Native Part Parameters · thorax",
+        "value": 1.2,
+        "node_id": "thorax",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.5999999999999999,
+        "max": 3.0,
+        "step": 0.012
+      },
+      {
+        "id": "part_param|abdomen|scale",
+        "label": "abdomen · scale",
+        "group": "Native Part Parameters · abdomen",
+        "value": 1.0,
+        "node_id": "abdomen",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|abdomen|abdomen",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|abdomen|length",
+        "label": "abdomen · length",
+        "group": "Native Part Parameters · abdomen",
+        "value": 6.0,
+        "node_id": "abdomen",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -3.0,
+        "max": 15.0,
+        "step": 0.06
+      },
+      {
+        "id": "part_param|abdomen|radius",
+        "label": "abdomen · radius",
+        "group": "Native Part Parameters · abdomen",
+        "value": 0.25,
+        "node_id": "abdomen",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.125,
+        "max": 0.625,
+        "step": 0.0025
+      },
+      {
+        "id": "part_param|abdomen|segments",
+        "label": "abdomen · segments",
+        "group": "Native Part Parameters · abdomen",
+        "value": 12,
+        "node_id": "abdomen",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": 0.0,
+        "max": 24.0,
+        "step": 1.0
+      },
+      {
+        "id": "part_param|head|scale",
+        "label": "head · scale",
+        "group": "Native Part Parameters · head",
+        "value": 1.0,
+        "node_id": "head",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|head|head",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|head|radius",
+        "label": "head · radius",
+        "group": "Native Part Parameters · head",
+        "value": 0.4,
+        "node_id": "head",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.20000000000000007,
+        "max": 1.0,
+        "step": 0.004
+      },
+      {
+        "id": "part_param|compound_eye|scale",
+        "label": "compound_eye · scale",
+        "group": "Native Part Parameters · compound_eye",
+        "value": 1.0,
+        "node_id": "compound_eye",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|compound_eye|compound_eye",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|compound_eye|radius",
+        "label": "compound_eye · radius",
+        "group": "Native Part Parameters · compound_eye",
+        "value": 0.35,
+        "node_id": "compound_eye",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.17499999999999993,
+        "max": 0.8749999999999999,
+        "step": 0.0034999999999999996
+      },
+      {
+        "id": "part_param|forewing|scale",
+        "label": "forewing · scale",
+        "group": "Native Part Parameters · forewing",
+        "value": 1.0,
+        "node_id": "forewing",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|forewing|forewing",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|forewing|length",
+        "label": "forewing · length",
+        "group": "Native Part Parameters · forewing",
+        "value": 5.0,
+        "node_id": "forewing",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -2.5,
+        "max": 12.5,
+        "step": 0.05
+      },
+      {
+        "id": "part_param|forewing|width",
+        "label": "forewing · width",
+        "group": "Native Part Parameters · forewing",
+        "value": 1.2,
+        "node_id": "forewing",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.5999999999999999,
+        "max": 3.0,
+        "step": 0.012
+      },
+      {
+        "id": "part_param|hindwing|scale",
+        "label": "hindwing · scale",
+        "group": "Native Part Parameters · hindwing",
+        "value": 1.0,
+        "node_id": "hindwing",
+        "parameter_mode": "native_rebuild",
+        "type": "range",
+        "min": 0.25,
+        "max": 3.0,
+        "step": 0.05,
+        "visibility_id": "part_object_visible|hindwing|hindwing",
+        "visibility_value": true,
+        "is_leaf": false
+      },
+      {
+        "id": "part_param|hindwing|length",
+        "label": "hindwing · length",
+        "group": "Native Part Parameters · hindwing",
+        "value": 4.5,
+        "node_id": "hindwing",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -2.25,
+        "max": 11.25,
+        "step": 0.045
+      },
+      {
+        "id": "part_param|hindwing|width",
+        "label": "hindwing · width",
+        "group": "Native Part Parameters · hindwing",
+        "value": 1.6,
+        "node_id": "hindwing",
+        "parameter_mode": "native_rebuild",
+        "type": "number",
+        "min": -0.8000000000000003,
+        "max": 4.0,
+        "step": 0.016
+      }
+    ]
+  },
+  "structure": {
+    "source": "treestruct3d_results/gemeni_3.1_pro/Dragonfly_seed0/Dragonfly_seed0.py",
+    "views": {
+      "definitions": {
+        "label": "Definition tree",
+        "roots": [
+          "module:Dragonfly_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Dragonfly_seed0.py",
+            "label": "Dragonfly_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 464,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "section_2881c81c21",
+            "label": "Module setup",
+            "kind": "section",
+            "line": 1,
+            "end_line": 1,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 16,
+            "end_line": 17,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 19,
+            "end_line": 30,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mat_thorax_setup",
+            "label": "mat_thorax_setup",
+            "kind": "function",
+            "line": 32,
+            "end_line": 40,
+            "parameters": [
+              "tree"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mat_abdomen_setup",
+            "label": "mat_abdomen_setup",
+            "kind": "function",
+            "line": 42,
+            "end_line": 50,
+            "parameters": [
+              "tree"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mat_eye_setup",
+            "label": "mat_eye_setup",
+            "kind": "function",
+            "line": 52,
+            "end_line": 68,
+            "parameters": [
+              "tree"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mat_wing_setup",
+            "label": "mat_wing_setup",
+            "kind": "function",
+            "line": 70,
+            "end_line": 153,
+            "parameters": [
+              "tree"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_thorax",
+            "label": "build_thorax",
+            "kind": "function",
+            "line": 155,
+            "end_line": 218,
+            "parameters": [
+              "params",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_abdomen",
+            "label": "build_abdomen",
+            "kind": "function",
+            "line": 220,
+            "end_line": 275,
+            "parameters": [
+              "params",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_head",
+            "label": "build_head",
+            "kind": "function",
+            "line": 277,
+            "end_line": 314,
+            "parameters": [
+              "params",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_eye",
+            "label": "build_eye",
+            "kind": "function",
+            "line": 316,
+            "end_line": 347,
+            "parameters": [
+              "params",
+              "mat",
+              "is_left"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_wing",
+            "label": "build_wing",
+            "kind": "function",
+            "line": 349,
+            "end_line": 419,
+            "parameters": [
+              "params",
+              "mat",
+              "is_left",
+              "is_forewing"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "main",
+            "label": "main",
+            "kind": "function",
+            "line": 421,
+            "end_line": 462,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "module:Dragonfly_seed0.py",
+            "child": "section_2881c81c21",
+            "relation": "SECTION",
+            "line": 1,
+            "evidence": "source banner comment"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "local_anchor_world",
+            "relation": "SECTION_MEMBER",
+            "line": 16,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "SECTION_MEMBER",
+            "line": 19,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "mat_thorax_setup",
+            "relation": "SECTION_MEMBER",
+            "line": 32,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "mat_abdomen_setup",
+            "relation": "SECTION_MEMBER",
+            "line": 42,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "mat_eye_setup",
+            "relation": "SECTION_MEMBER",
+            "line": 52,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "mat_wing_setup",
+            "relation": "SECTION_MEMBER",
+            "line": 70,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_thorax",
+            "relation": "SECTION_MEMBER",
+            "line": 155,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_abdomen",
+            "relation": "SECTION_MEMBER",
+            "line": 220,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_head",
+            "relation": "SECTION_MEMBER",
+            "line": 277,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_eye",
+            "relation": "SECTION_MEMBER",
+            "line": 316,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "build_wing",
+            "relation": "SECTION_MEMBER",
+            "line": 349,
+            "evidence": "source section: Module setup"
+          },
+          {
+            "parent": "section_2881c81c21",
+            "child": "main",
+            "relation": "SECTION_MEMBER",
+            "line": 421,
+            "evidence": "source section: Module setup"
+          }
+        ]
+      },
+      "calls": {
+        "label": "Execution call tree",
+        "roots": [
+          "module:Dragonfly_seed0.py"
+        ],
+        "nodes": [
+          {
+            "id": "module:Dragonfly_seed0.py",
+            "label": "Dragonfly_seed0.py",
+            "kind": "module",
+            "line": 1,
+            "end_line": 464,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module"
+          },
+          {
+            "id": "attach_child_to_parent_at_shared_anchor",
+            "label": "attach_child_to_parent_at_shared_anchor",
+            "kind": "function",
+            "line": 19,
+            "end_line": 30,
+            "parameters": [
+              "parent_obj",
+              "child_obj",
+              "parent_anchor_local",
+              "child_anchor_local"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_abdomen",
+            "label": "build_abdomen",
+            "kind": "function",
+            "line": 220,
+            "end_line": 275,
+            "parameters": [
+              "params",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_eye",
+            "label": "build_eye",
+            "kind": "function",
+            "line": 316,
+            "end_line": 347,
+            "parameters": [
+              "params",
+              "mat",
+              "is_left"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_head",
+            "label": "build_head",
+            "kind": "function",
+            "line": 277,
+            "end_line": 314,
+            "parameters": [
+              "params",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_thorax",
+            "label": "build_thorax",
+            "kind": "function",
+            "line": 155,
+            "end_line": 218,
+            "parameters": [
+              "params",
+              "mat"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "build_wing",
+            "label": "build_wing",
+            "kind": "function",
+            "line": 349,
+            "end_line": 419,
+            "parameters": [
+              "params",
+              "mat",
+              "is_left",
+              "is_forewing"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "local_anchor_world",
+            "label": "local_anchor_world",
+            "kind": "function",
+            "line": 16,
+            "end_line": 17,
+            "parameters": [
+              "obj",
+              "local_anchor"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "main",
+            "label": "main",
+            "kind": "function",
+            "line": 421,
+            "end_line": 462,
+            "parameters": [],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mat_abdomen_setup",
+            "label": "mat_abdomen_setup",
+            "kind": "function",
+            "line": 42,
+            "end_line": 50,
+            "parameters": [
+              "tree"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mat_eye_setup",
+            "label": "mat_eye_setup",
+            "kind": "function",
+            "line": 52,
+            "end_line": 68,
+            "parameters": [
+              "tree"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mat_thorax_setup",
+            "label": "mat_thorax_setup",
+            "kind": "function",
+            "line": 32,
+            "end_line": 40,
+            "parameters": [
+              "tree"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          },
+          {
+            "id": "mat_wing_setup",
+            "label": "mat_wing_setup",
+            "kind": "function",
+            "line": 70,
+            "end_line": 153,
+            "parameters": [
+              "tree"
+            ],
+            "docstring": null,
+            "group": "Module setup"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "attach_child_to_parent_at_shared_anchor",
+            "child": "local_anchor_world",
+            "relation": "CALL",
+            "line": 22,
+            "evidence": "AST call at L22"
+          },
+          {
+            "parent": "main",
+            "child": "mat_thorax_setup",
+            "relation": "CALL",
+            "line": 431,
+            "evidence": "AST call at L431"
+          },
+          {
+            "parent": "main",
+            "child": "mat_abdomen_setup",
+            "relation": "CALL",
+            "line": 435,
+            "evidence": "AST call at L435"
+          },
+          {
+            "parent": "main",
+            "child": "mat_eye_setup",
+            "relation": "CALL",
+            "line": 439,
+            "evidence": "AST call at L439"
+          },
+          {
+            "parent": "main",
+            "child": "mat_wing_setup",
+            "relation": "CALL",
+            "line": 443,
+            "evidence": "AST call at L443"
+          },
+          {
+            "parent": "main",
+            "child": "build_thorax",
+            "relation": "CALL",
+            "line": 445,
+            "evidence": "AST call at L445"
+          },
+          {
+            "parent": "main",
+            "child": "build_abdomen",
+            "relation": "CALL",
+            "line": 446,
+            "evidence": "AST call at L446"
+          },
+          {
+            "parent": "main",
+            "child": "build_head",
+            "relation": "CALL",
+            "line": 447,
+            "evidence": "AST call at L447"
+          },
+          {
+            "parent": "main",
+            "child": "build_eye",
+            "relation": "CALL",
+            "line": 448,
+            "evidence": "AST call at L448"
+          },
+          {
+            "parent": "main",
+            "child": "build_wing",
+            "relation": "CALL",
+            "line": 450,
+            "evidence": "AST call at L450"
+          },
+          {
+            "parent": "main",
+            "child": "attach_child_to_parent_at_shared_anchor",
+            "relation": "CALL",
+            "line": 455,
+            "evidence": "AST call at L455"
+          },
+          {
+            "parent": "module:Dragonfly_seed0.py",
+            "child": "main",
+            "relation": "ENTRYPOINT",
+            "line": 464,
+            "evidence": "module-level invocation or inferred call root"
+          }
+        ]
+      },
+      "parts": {
+        "label": "Blender part tree",
+        "roots": [
+          "thorax_obj"
+        ],
+        "nodes": [
+          {
+            "id": "abdomen_obj",
+            "label": "abdomen_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L455: thorax_obj -> abdomen_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_abdomen",
+            "runtime_variable": "abdomen_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "eye_L_obj",
+            "label": "eye_L_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L457: head_obj -> eye_L_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_eye",
+            "runtime_variable": "eye_L_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "eye_R_obj",
+            "label": "eye_R_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L458: head_obj -> eye_R_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_eye",
+            "runtime_variable": "eye_R_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "fw_L_obj",
+            "label": "fw_L_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L459: thorax_obj -> fw_L_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_wing",
+            "runtime_variable": "fw_L_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "fw_R_obj",
+            "label": "fw_R_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L460: thorax_obj -> fw_R_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_wing",
+            "runtime_variable": "fw_R_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "head_obj",
+            "label": "head_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L457: head_obj -> eye_L_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L458: head_obj -> eye_R_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L456: thorax_obj -> head_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_head",
+            "runtime_variable": "head_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "hw_L_obj",
+            "label": "hw_L_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L461: thorax_obj -> hw_L_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_wing",
+            "runtime_variable": "hw_L_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "hw_R_obj",
+            "label": "hw_R_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L462: thorax_obj -> hw_R_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_wing",
+            "runtime_variable": "hw_R_obj",
+            "group": "Blender parts"
+          },
+          {
+            "id": "thorax_obj",
+            "label": "thorax_obj",
+            "kind": "blender_part",
+            "line": 0,
+            "end_line": 0,
+            "parameters": [],
+            "docstring": null,
+            "evidence": [
+              "L455: thorax_obj -> abdomen_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L459: thorax_obj -> fw_L_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L460: thorax_obj -> fw_R_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L456: thorax_obj -> head_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L461: thorax_obj -> hw_L_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call",
+              "L462: thorax_obj -> hw_R_obj [DIRECTED_CODE] attach_child_to_parent_at_shared_anchor call"
+            ],
+            "creator_function": "build_thorax",
+            "runtime_variable": "thorax_obj",
+            "group": "Blender parts"
+          }
+        ],
+        "edges": [
+          {
+            "parent": "head_obj",
+            "child": "eye_L_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 457,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "head_obj",
+            "child": "eye_R_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 458,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "thorax_obj",
+            "child": "abdomen_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 455,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "thorax_obj",
+            "child": "fw_L_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 459,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "thorax_obj",
+            "child": "fw_R_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 460,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "thorax_obj",
+            "child": "head_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 456,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "thorax_obj",
+            "child": "hw_L_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 461,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          },
+          {
+            "parent": "thorax_obj",
+            "child": "hw_R_obj",
+            "relation": "DIRECTED_CODE",
+            "line": 462,
+            "evidence": "attach_child_to_parent_at_shared_anchor call"
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "label": "Runtime Anchor Relation Graph",
+    "roots": [
+      "thorax"
+    ],
+    "nodes": [
+      {
+        "id": "forewing.001",
+        "label": "forewing.001",
+        "part_id": "forewing",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.14399999380111694,
+          0.14399999380111694,
+          0.13680000603199005
+        ],
+        "center": [
+          -2.5145620480179787,
+          0.8175340443849564,
+          0.6239181086421013
+        ],
+        "dimensions": [
+          4.775747463107109,
+          1.4007252156734467,
+          0.9569698721170425
+        ],
+        "bbox_min": [
+          -4.902435779571533,
+          0.11717143654823303,
+          0.14543317258358002
+        ],
+        "bbox_max": [
+          -0.12668831646442413,
+          1.5178966522216797,
+          1.1024030447006226
+        ]
+      },
+      {
+        "id": "forewing",
+        "label": "forewing",
+        "part_id": "forewing",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.14399999380111694,
+          0.14399999380111694,
+          0.13680000603199005
+        ],
+        "center": [
+          2.5145618095993996,
+          0.8175340443849564,
+          0.6239181086421013
+        ],
+        "dimensions": [
+          4.775746986269951,
+          1.4007252156734467,
+          0.9569698721170425
+        ],
+        "bbox_min": [
+          0.12668831646442413,
+          0.11717143654823303,
+          0.14543317258358002
+        ],
+        "bbox_max": [
+          4.902435302734375,
+          1.5178966522216797,
+          1.1024030447006226
+        ]
+      },
+      {
+        "id": "hindwing.001",
+        "label": "hindwing.001",
+        "part_id": "hindwing",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.11999999731779099,
+          -0.09600000083446503,
+          0.11400000005960464
+        ],
+        "center": [
+          -2.2827467396855354,
+          -0.6353739127516747,
+          0.36246485635638237
+        ],
+        "dimensions": [
+          4.347704991698265,
+          1.6218601018190384,
+          0.4844479337334633
+        ],
+        "bbox_min": [
+          -4.456599235534668,
+          -1.4463039636611938,
+          0.12024088948965073
+        ],
+        "bbox_max": [
+          -0.1088942438364029,
+          0.17555613815784454,
+          0.604688823223114
+        ]
+      },
+      {
+        "id": "hindwing",
+        "label": "hindwing",
+        "part_id": "hindwing",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.11999999731779099,
+          -0.09600000083446503,
+          0.11400000005960464
+        ],
+        "center": [
+          2.2827467396855354,
+          -0.6353739276528358,
+          0.36246485635638237
+        ],
+        "dimensions": [
+          4.347704991698265,
+          1.621860072016716,
+          0.4844479337334633
+        ],
+        "bbox_min": [
+          0.1088942438364029,
+          -1.4463039636611938,
+          0.12024088948965073
+        ],
+        "bbox_max": [
+          4.456599235534668,
+          0.17555610835552216,
+          0.604688823223114
+        ]
+      },
+      {
+        "id": "head",
+        "label": "head",
+        "part_id": "head",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.7120000123977661,
+          0.0
+        ],
+        "center": [
+          5.960464477539063e-08,
+          0.7119999974966049,
+          0.0
+        ],
+        "dimensions": [
+          1.0216020345687866,
+          0.6286781132221222,
+          0.7975268363952637
+        ],
+        "bbox_min": [
+          -0.5108009576797485,
+          0.3976609408855438,
+          -0.39876341819763184
+        ],
+        "bbox_max": [
+          0.5108010768890381,
+          1.026339054107666,
+          0.39876341819763184
+        ]
+      },
+      {
+        "id": "abdomen",
+        "label": "abdomen",
+        "part_id": "abdomen",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          -0.4320000112056732,
+          0.0
+        ],
+        "center": [
+          0.0,
+          -3.413479968905449,
+          0.0
+        ],
+        "dimensions": [
+          0.4530862271785736,
+          5.962959915399551,
+          0.4530862271785736
+        ],
+        "bbox_min": [
+          -0.2265431135892868,
+          -6.394959926605225,
+          -0.2265431135892868
+        ],
+        "bbox_max": [
+          0.2265431135892868,
+          -0.4320000112056732,
+          0.2265431135892868
+        ]
+      },
+      {
+        "id": "thorax",
+        "label": "thorax",
+        "part_id": "thorax",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "center": [
+          5.960464477539063e-08,
+          2.9802322387695312e-08,
+          -1.4901161193847656e-08
+        ],
+        "dimensions": [
+          0.5500560998916626,
+          1.0208770632743835,
+          0.5297698080539703
+        ],
+        "bbox_min": [
+          -0.2750279903411865,
+          -0.5104385018348694,
+          -0.26488491892814636
+        ],
+        "bbox_max": [
+          0.2750281095504761,
+          0.5104385614395142,
+          0.264884889125824
+        ]
+      },
+      {
+        "id": "compound_eye",
+        "label": "compound_eye",
+        "part_id": "compound_eye",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          0.4399999976158142,
+          0.7120000123977661,
+          0.11999999731779099
+        ],
+        "center": [
+          0.5976669788360596,
+          0.7120000571012497,
+          0.12000000476837158
+        ],
+        "dimensions": [
+          0.38466596603393555,
+          0.6999999582767487,
+          0.699999988079071
+        ],
+        "bbox_min": [
+          0.4053339958190918,
+          0.36200007796287537,
+          -0.22999998927116394
+        ],
+        "bbox_max": [
+          0.7899999618530273,
+          1.062000036239624,
+          0.4699999988079071
+        ]
+      },
+      {
+        "id": "compound_eye.001",
+        "label": "compound_eye.001",
+        "part_id": "compound_eye",
+        "kind": "runtime_part",
+        "line": 0,
+        "end_line": 0,
+        "parameters": [],
+        "docstring": null,
+        "evidence": [],
+        "group": "Blender Runtime Parts",
+        "origin": [
+          -0.4399999976158142,
+          0.7120000123977661,
+          0.11999999731779099
+        ],
+        "center": [
+          -0.5976669788360596,
+          0.7120000571012497,
+          0.12000000476837158
+        ],
+        "dimensions": [
+          0.38466596603393555,
+          0.6999999582767487,
+          0.699999988079071
+        ],
+        "bbox_min": [
+          -0.7899999618530273,
+          0.36200007796287537,
+          -0.22999998927116394
+        ],
+        "bbox_max": [
+          -0.4053339958190918,
+          1.062000036239624,
+          0.4699999988079071
+        ]
+      }
+    ],
+    "edges": [
+      {
+        "parent": "thorax",
+        "child": "head",
+        "relation": "DIRECTED",
+        "line": 27,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          0.4320000112056732,
+          0.0
+        ],
+        "anchor_b": [
+          0.0,
+          0.4320000112056732,
+          0.0
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.034339069965676164,
+        "parent_anchor_vertex_gap": 0.0479999790210231,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "thorax",
+            "child": "head",
+            "source": "parent_assignment",
+            "line": 27
+          },
+          {
+            "parent": "thorax",
+            "child": "head",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 456,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              -0.2800000011920929,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.0,
+              0.4320000112056732,
+              0.0
+            ],
+            "child_anchor_world": [
+              0.0,
+              0.4320000112056732,
+              0.0
+            ],
+            "parent_anchor_world": [
+              0.0,
+              0.4320000112056732,
+              0.0
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.034339069965676164,
+            "parent_anchor_vertex_gap": 0.0479999790210231,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "thorax",
+            "child": "head",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "thorax",
+        "child": "hindwing",
+        "relation": "DIRECTED",
+        "line": 27,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.11999999731779099,
+          -0.09600000083446503,
+          0.11400000005960464
+        ],
+        "anchor_b": [
+          0.11999999731779099,
+          -0.09600000083446503,
+          0.11400000005960464
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.04055627632488435,
+        "parent_anchor_vertex_gap": 0.06878528069016916,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "thorax",
+            "child": "hindwing",
+            "source": "parent_assignment",
+            "line": 27
+          },
+          {
+            "parent": "thorax",
+            "child": "hindwing",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 461,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.11999999731779099,
+              -0.09600000083446503,
+              0.11400000005960464
+            ],
+            "child_anchor_world": [
+              0.11999999731779099,
+              -0.09600000083446503,
+              0.11400000005960464
+            ],
+            "parent_anchor_world": [
+              0.11999999731779099,
+              -0.09600000083446503,
+              0.11400000005960464
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.04055627632488435,
+            "parent_anchor_vertex_gap": 0.06878528069016916,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "thorax",
+            "child": "hindwing",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "thorax",
+        "child": "forewing.001",
+        "relation": "DIRECTED",
+        "line": 27,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.14399999380111694,
+          0.14399999380111694,
+          0.13680000603199005
+        ],
+        "anchor_b": [
+          -0.14399999380111694,
+          0.14399999380111694,
+          0.13680000603199005
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.031237708082676313,
+        "parent_anchor_vertex_gap": 0.0309685072382169,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "thorax",
+            "child": "forewing.001",
+            "source": "parent_assignment",
+            "line": 27
+          },
+          {
+            "parent": "thorax",
+            "child": "forewing.001",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 460,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              -0.14399999380111694,
+              0.14399999380111694,
+              0.13680000603199005
+            ],
+            "child_anchor_world": [
+              -0.14399999380111694,
+              0.14399999380111694,
+              0.13680000603199005
+            ],
+            "parent_anchor_world": [
+              -0.14399999380111694,
+              0.14399999380111694,
+              0.13680000603199005
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.031237708082676313,
+            "parent_anchor_vertex_gap": 0.0309685072382169,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "thorax",
+            "child": "forewing.001",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "head",
+        "child": "compound_eye",
+        "relation": "DIRECTED",
+        "line": 27,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.4399999976158142,
+          0.7120000123977661,
+          0.11999999731779099
+        ],
+        "anchor_b": [
+          0.4399999976158142,
+          0.7120000123977661,
+          0.11999999731779099
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.3499999342220108,
+        "parent_anchor_vertex_gap": 0.045263211598777185,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "head",
+            "child": "compound_eye",
+            "source": "parent_assignment",
+            "line": 27
+          },
+          {
+            "parent": "head",
+            "child": "compound_eye",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 457,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.4399999976158142,
+              0.0,
+              0.11999999731779099
+            ],
+            "child_anchor_world": [
+              0.4399999976158142,
+              0.7120000123977661,
+              0.11999999731779099
+            ],
+            "parent_anchor_world": [
+              0.4399999976158142,
+              0.7120000123977661,
+              0.11999999731779099
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.3499999342220108,
+            "parent_anchor_vertex_gap": 0.045263211598777185,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "head",
+            "child": "compound_eye",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "thorax",
+        "child": "hindwing.001",
+        "relation": "DIRECTED",
+        "line": 27,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.11999999731779099,
+          -0.09600000083446503,
+          0.11400000005960464
+        ],
+        "anchor_b": [
+          -0.11999999731779099,
+          -0.09600000083446503,
+          0.11400000005960464
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.040556280630579776,
+        "parent_anchor_vertex_gap": 0.068785266304383,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "thorax",
+            "child": "hindwing.001",
+            "source": "parent_assignment",
+            "line": 27
+          },
+          {
+            "parent": "thorax",
+            "child": "hindwing.001",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 462,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              -0.11999999731779099,
+              -0.09600000083446503,
+              0.11400000005960464
+            ],
+            "child_anchor_world": [
+              -0.11999999731779099,
+              -0.09600000083446503,
+              0.11400000005960464
+            ],
+            "parent_anchor_world": [
+              -0.11999999731779099,
+              -0.09600000083446503,
+              0.11400000005960464
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.040556280630579776,
+            "parent_anchor_vertex_gap": 0.068785266304383,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "thorax",
+            "child": "hindwing.001",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "head",
+        "child": "compound_eye.001",
+        "relation": "DIRECTED",
+        "line": 27,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          -0.4399999976158142,
+          0.7120000123977661,
+          0.11999999731779099
+        ],
+        "anchor_b": [
+          -0.4399999976158142,
+          0.7120000123977661,
+          0.11999999731779099
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.3499999142650942,
+        "parent_anchor_vertex_gap": 0.04526314858567023,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "head",
+            "child": "compound_eye.001",
+            "source": "parent_assignment",
+            "line": 27
+          },
+          {
+            "parent": "head",
+            "child": "compound_eye.001",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 458,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              -0.4399999976158142,
+              0.0,
+              0.11999999731779099
+            ],
+            "child_anchor_world": [
+              -0.4399999976158142,
+              0.7120000123977661,
+              0.11999999731779099
+            ],
+            "parent_anchor_world": [
+              -0.4399999976158142,
+              0.7120000123977661,
+              0.11999999731779099
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.3499999142650942,
+            "parent_anchor_vertex_gap": 0.04526314858567023,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "head",
+            "child": "compound_eye.001",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "thorax",
+        "child": "abdomen",
+        "relation": "DIRECTED",
+        "line": 27,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.0,
+          -0.4320000112056732,
+          0.0
+        ],
+        "anchor_b": [
+          0.0,
+          -0.4320000112056732,
+          0.0
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.19491277053025555,
+        "parent_anchor_vertex_gap": 0.047999680705768016,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "thorax",
+            "child": "abdomen",
+            "source": "parent_assignment",
+            "line": 27
+          },
+          {
+            "parent": "thorax",
+            "child": "abdomen",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 455,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.0,
+              -0.4320000112056732,
+              0.0
+            ],
+            "child_anchor_world": [
+              0.0,
+              -0.4320000112056732,
+              0.0
+            ],
+            "parent_anchor_world": [
+              0.0,
+              -0.4320000112056732,
+              0.0
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.19491277053025555,
+            "parent_anchor_vertex_gap": 0.047999680705768016,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "thorax",
+            "child": "abdomen",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "thorax",
+        "child": "forewing",
+        "relation": "DIRECTED",
+        "line": 27,
+        "evidence": "Parent-child direction known; A/B coordinates come from nearest-mesh-vertex samples and are non-shared anchor candidates",
+        "directed_verified": true,
+        "parent_child_known": true,
+        "direction_source": "runtime",
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": false,
+        "anchor_method": "authored_local_mesh_vertices",
+        "anchor_a": [
+          0.14399999380111694,
+          0.14399999380111694,
+          0.13680000603199005
+        ],
+        "anchor_b": [
+          0.14399999380111694,
+          0.14399999380111694,
+          0.13680000603199005
+        ],
+        "anchor_gap": 0.0,
+        "anchor_tolerance": 1e-05,
+        "authored_anchor_valid": false,
+        "authored_anchor_count": 1,
+        "authored_anchor_valid_count": 0,
+        "authored_anchor_all_valid": false,
+        "child_anchor_vertex_gap": 0.031237708082676313,
+        "parent_anchor_vertex_gap": 0.03096851898556426,
+        "aabb_gap": 0.0,
+        "declared_directions": [
+          {
+            "parent": "thorax",
+            "child": "forewing",
+            "source": "parent_assignment",
+            "line": 27
+          },
+          {
+            "parent": "thorax",
+            "child": "forewing",
+            "source": "attachment_call:attach_child_to_parent_at_shared_anchor:code_directed:authored_anchor",
+            "line": 459,
+            "native_parameter_protocol": true,
+            "child_anchor_local": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "parent_anchor_local": [
+              0.14399999380111694,
+              0.14399999380111694,
+              0.13680000603199005
+            ],
+            "child_anchor_world": [
+              0.14399999380111694,
+              0.14399999380111694,
+              0.13680000603199005
+            ],
+            "parent_anchor_world": [
+              0.14399999380111694,
+              0.14399999380111694,
+              0.13680000603199005
+            ],
+            "authored_anchor_gap": 0.0,
+            "child_anchor_vertex_gap": 0.031237708082676313,
+            "parent_anchor_vertex_gap": 0.03096851898556426,
+            "authored_anchor_tolerance": 1e-05,
+            "authored_anchor_valid": false
+          },
+          {
+            "parent": "thorax",
+            "child": "forewing",
+            "source": "final_parent",
+            "line": 0
+          }
+        ]
+      },
+      {
+        "parent": "compound_eye.001",
+        "child": "forewing.001",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.6116374731063843,
+          0.4147152900695801,
+          0.1882816106081009
+        ],
+        "anchor_b": [
+          -0.6227954626083374,
+          0.43797335028648376,
+          0.2317638397216797
+        ],
+        "anchor_gap": 0.050558306374566916,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "compound_eye",
+        "child": "forewing",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.6116373538970947,
+          0.4147152602672577,
+          0.1882816106081009
+        ],
+        "anchor_b": [
+          0.6227954626083374,
+          0.43797338008880615,
+          0.2317638397216797
+        ],
+        "anchor_gap": 0.05055836010326259,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "forewing.001",
+        "child": "hindwing.001",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.8654693365097046,
+          0.12683402001857758,
+          0.2588963806629181
+        ],
+        "anchor_b": [
+          -0.9010816812515259,
+          0.11270761489868164,
+          0.1752813756465912
+        ],
+        "anchor_gap": 0.09197425446015924,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "forewing",
+        "child": "hindwing",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          1.1052474975585938,
+          0.12376786768436432,
+          0.2995951771736145
+        ],
+        "anchor_b": [
+          1.0523829460144043,
+          0.1361057609319687,
+          0.18753764033317566
+        ],
+        "anchor_gap": 0.12451415976708775,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "forewing.001",
+        "child": "head",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.4159530997276306,
+          0.3181213140487671,
+          0.19106505811214447
+        ],
+        "anchor_b": [
+          -0.297561377286911,
+          0.4733603000640869,
+          0.11536973714828491
+        ],
+        "anchor_gap": 0.20939322896733498,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "forewing",
+        "child": "head",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.4159530997276306,
+          0.3181213438510895,
+          0.19106505811214447
+        ],
+        "anchor_b": [
+          0.3049772381782532,
+          0.46741288900375366,
+          0.07753632217645645
+        ],
+        "anchor_gap": 0.2179274677131172,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "abdomen",
+        "child": "hindwing.001",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.18008750677108765,
+          -0.4320000112056732,
+          0.07459469139575958
+        ],
+        "anchor_b": [
+          -0.359687477350235,
+          -0.26046472787857056,
+          0.2081540822982788
+        ],
+        "anchor_gap": 0.28199044976096604,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "abdomen",
+        "child": "hindwing",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.19492532312870026,
+          -0.4320000112056732,
+          -3.155697925194545e-11
+        ],
+        "anchor_b": [
+          0.359687477350235,
+          -0.26046472787857056,
+          0.2081540822982788
+        ],
+        "anchor_gap": 0.3160680984857634,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.0,
+        "declared_directions": []
+      },
+      {
+        "parent": "compound_eye",
+        "child": "thorax",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.4399999976158142,
+          0.3886421322822571,
+          -0.013939209282398224
+        ],
+        "anchor_b": [
+          0.24372676014900208,
+          0.24178332090377808,
+          -0.02614225633442402
+        ],
+        "anchor_gap": 0.24543758592065162,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.13030588626861572,
+        "declared_directions": []
+      },
+      {
+        "parent": "compound_eye.001",
+        "child": "thorax",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.440000057220459,
+          0.3687251806259155,
+          0.05171838402748108
+        ],
+        "anchor_b": [
+          -0.23437252640724182,
+          0.23249825835227966,
+          0.07742634415626526
+        ],
+        "anchor_gap": 0.24799466727022773,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.13030600547790527,
+        "declared_directions": []
+      },
+      {
+        "parent": "compound_eye.001",
+        "child": "hindwing.001",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.440000057220459,
+          0.3687251806259155,
+          0.1882816106081009
+        ],
+        "anchor_b": [
+          -0.5059089660644531,
+          -0.0003158748149871826,
+          0.17013126611709595
+        ],
+        "anchor_gap": 0.3753194903959605,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.18644393980503082,
+        "declared_directions": []
+      },
+      {
+        "parent": "compound_eye",
+        "child": "hindwing",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.4399999976158142,
+          0.36200007796287537,
+          0.11999999731779099
+        ],
+        "anchor_b": [
+          0.5180175304412842,
+          0.036257266998291016,
+          0.14464068412780762
+        ],
+        "anchor_gap": 0.3358605034381857,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.1864439696073532,
+        "declared_directions": []
+      },
+      {
+        "parent": "hindwing",
+        "child": "hindwing.001",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": true,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.1088942438364029,
+          -0.11718066781759262,
+          0.17395494878292084
+        ],
+        "anchor_b": [
+          -0.11088559776544571,
+          -0.09700872749090195,
+          0.21164420247077942
+        ],
+        "anchor_gap": 0.22389856139471953,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.2177884876728058,
+        "declared_directions": []
+      },
+      {
+        "parent": "head",
+        "child": "hindwing.001",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.19547264277935028,
+          0.42159223556518555,
+          7.516190447809379e-11
+        ],
+        "anchor_b": [
+          -0.2857595980167389,
+          -0.018642477691173553,
+          0.12625627219676971
+        ],
+        "anchor_gap": 0.4667965116536245,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.22210480272769928,
+        "declared_directions": []
+      },
+      {
+        "parent": "head",
+        "child": "hindwing",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.19547265768051147,
+          0.42159220576286316,
+          7.516190447809379e-11
+        ],
+        "anchor_b": [
+          0.2857596278190613,
+          -0.018642477691173553,
+          0.12625627219676971
+        ],
+        "anchor_gap": 0.4667964864292798,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.22210483253002167,
+        "declared_directions": []
+      },
+      {
+        "parent": "forewing",
+        "child": "hindwing.001",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          0.12668831646442413,
+          0.14453773200511932,
+          0.23084470629692078
+        ],
+        "anchor_b": [
+          -0.11088559776544571,
+          -0.09700872749090195,
+          0.21164420247077942
+        ],
+        "anchor_gap": 0.3393445390230146,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.23558256030082703,
+        "declared_directions": []
+      },
+      {
+        "parent": "forewing.001",
+        "child": "hindwing",
+        "relation": "UNDIRECTED_CONTACT",
+        "line": 0,
+        "evidence": "Runtime geometric relation; A/B coordinates come from nearest-mesh-vertex samples",
+        "directed_verified": false,
+        "parent_child_known": false,
+        "direction_source": null,
+        "contact": true,
+        "shared_anchor": false,
+        "geometric_anchor_aligned": false,
+        "shared_anchor_evidence": null,
+        "anchor_estimated": true,
+        "anchor_method": "nearest_evaluated_mesh_vertex_samples",
+        "anchor_a": [
+          -0.12691240012645721,
+          0.14200958609580994,
+          0.23332810401916504
+        ],
+        "anchor_b": [
+          0.1088942438364029,
+          -0.11718066781759262,
+          0.17395494878292084
+        ],
+        "anchor_gap": 0.35540052423066054,
+        "anchor_tolerance": 0.2451217770576477,
+        "authored_anchor_valid": null,
+        "authored_anchor_count": null,
+        "authored_anchor_valid_count": null,
+        "authored_anchor_all_valid": null,
+        "child_anchor_vertex_gap": null,
+        "parent_anchor_vertex_gap": null,
+        "aabb_gap": 0.23558256030082703,
+        "declared_directions": []
+      }
+    ],
+    "summary": {
+      "nodes": 9,
+      "edges": 25,
+      "relations": {
+        "DIRECTED": 8,
+        "UNDIRECTED_CONTACT": 17
+      },
+      "directed_edges": 8,
+      "runtime_directed_edges": 8,
+      "shared_anchor_edges": 0,
+      "estimated_anchor_edges": 17,
+      "geometric_anchor_candidates": 15,
+      "unverified_anchor_candidates": 15,
+      "misaligned_anchor_edges": 10
+    },
+    "source_bounds": {
+      "min": [
+        -4.902435779571533,
+        -6.394959926605225,
+        -0.39876341819763184
+      ],
+      "max": [
+        4.902435302734375,
+        1.5178966522216797,
+        1.1024030447006226
+      ]
+    },
+    "scene_extent": 9.804871082305908,
+    "contact_threshold": 0.2451217770576477,
+    "shared_anchor_tolerance": 0.2451217770576477,
+    "native_part_params": {
+      "enabled": true,
+      "part_ids": [
+        "abdomen",
+        "compound_eye",
+        "forewing",
+        "head",
+        "hindwing",
+        "thorax"
+      ],
+      "scale_overrides": {
+        "thorax": 0.4
+      }
+    }
+  },
+  "provenance": {
+    "method": "TreeStruct3D · Gemini 3.1 Pro",
+    "role": "precomputed_edit_demo",
+    "source_file": "treestruct3d_results/gemeni_3.1_pro/Dragonfly_seed0/Dragonfly_seed0.py",
+    "source_sha256": "54f6d11f624fd0a6d3b5e12f0d0fbe4408e7d1e0d0b595dd11420cfa88a6ea50",
+    "source_size": 16857,
+    "glb_sha256": "eff10033f9218b673d5dfeb0e27fc2bae06960b4fccc46d7defbeac5123cc499",
+    "native_part_params": true,
+    "runtime_snapshot": true,
+    "execution": "full_source_from_empty_scene",
+    "parameter_mode": "native_rebuild",
+    "params": {
+      "part_param|thorax|scale": 0.4
+    },
+    "random_seed_before_source_execution": 0,
+    "exporter_sha256": "f89a664675b22cdeee4f4a9269c5df09426ca351cfedd5d96e2728b22e93012d",
+    "probe_sha256": "a9f2a440670959d552ecd795cea3f8f01ff0d712a6ce66e81f20ef11e8fb93f5",
+    "validation_note": "Fresh checks for this exact saved parameter state. No claim about unbaked values or benchmark aggregates. Paper edit roles and runtime parent-child direction are recorded separately.",
+    "edit": {
+      "id": "parent-0.4",
+      "side": "parent",
+      "part_ids": [
+        "thorax"
+      ],
+      "parameter": "scale",
+      "scale": 0.4,
+      "params": {
+        "part_param|thorax|scale": 0.4
+      },
+      "paper_parent_ids": [
+        "thorax"
+      ],
+      "paper_child_ids": [
+        "abdomen"
+      ],
+      "geometry_changed": true,
+      "attachment_observed": true,
+      "attachment_paths": [
+        [
+          "thorax",
+          "abdomen"
+        ]
+      ],
+      "dimensions": [
+        {
+          "id": "thorax",
+          "part_id": "thorax",
+          "before": [
+            1.3751401901245117,
+            2.5521934032440186,
+            1.3244245648384094
+          ],
+          "after": [
+            0.5500560998916626,
+            1.0208770632743835,
+            0.5297698080539703
+          ]
+        }
+      ],
+      "selected_attachment_checks": [
+        {
+          "parent": "thorax",
+          "child": "abdomen",
+          "relation": "DIRECTED",
+          "contact": true,
+          "shared_anchor": false,
+          "anchor_gap": 0.0,
+          "anchor_tolerance": 1e-05,
+          "authored_anchor_all_valid": false,
+          "runtime_parent_part_id": "thorax",
+          "runtime_child_part_id": "abdomen"
+        }
+      ]
+    },
+    "mesh_name_match": true,
+    "runtime_to_glb_translation": [
+      1.655684577094184e-09,
+      0.40000000037252903,
+      -2.4567079390916557
+    ],
+    "mesh_bbox_max_error_before_translation": 2.4567081928253174,
+    "mesh_bbox_max_error_after_translation": 2.537336616370567e-07,
+    "same_execution_export": true,
+    "final_scene_adapter_sha256": "5ef143984231a0dd21797536aa9e727625b993f52c2a512f08c4f151f8730683",
+    "final_scene_adapter": {
+      "same_execution_export": true,
+      "geometry_observation": "final_evaluated_polygon_vertices",
+      "anchor_observation": "final_evaluated_surface_after_all_source_modifiers",
+      "probe_rules_and_tolerances_changed": false
+    }
+  }
+}

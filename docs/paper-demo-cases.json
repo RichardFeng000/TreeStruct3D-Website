@@ -1,0 +1,1982 @@
+{
+  "schema_version": 1,
+  "verified_on": "2026-09-11",
+  "path_base": "All paths are relative to the research repository root (/Users/fengruiding/Downloads/3d_code), not to the website repository or this file.",
+  "scope": "Read-only mapping of existing paper figures to local archived sources and renders. No Blender execution, source-program changes, or remote operations were performed.",
+  "case_count": 20,
+  "tree_render_count": 100,
+  "baseline_render_count": 20,
+  "notes": [
+    "The five published PNGs and listed generated figures have identical decoded RGB pixels. File SHA-256 hashes differ because PNG encoding or metadata differs.",
+    "Source existence is verified at mapping time; the figure manifests do not provide historical source hashes, so existence is not proof that a source program is byte-identical to its original render-time version.",
+    "TreeStruct3D renders change selected PART_PARAMS scale entries in an in-memory AST and then execute the original Blender program to rebuild geometry. The worker may apply recorded compatibility transforms; it never edits the source file on disk.",
+    "All displayed edits independently vary one side at 0.4 or 1.6 while keeping the other side at 1.0. These are not new validation results.",
+    "The appendix selection manifest retains an old review_only_not_integrated label; its output images were independently matched to the repository figures by exact RGB comparison.",
+    "Actual gemeni/gemini directory spellings are preserved.",
+    "parent_ids and child_ids are the paper edit roles, not a guarantee of Blender runtime object-parent direction. Shared semantic part IDs can identify multiple repeated instances and must be expanded using part_id when exporting runtime geometry."
+  ],
+  "tree_render_worker": "Experiments/qualitative_comparison/render_archived_variant.py",
+  "appendix_selection_config": "Experiments/qualitative_comparison/appendix_good_case_selection.json",
+  "figures": [
+    {
+      "group": "main",
+      "published_image": "figures/figure-1-controlled-editing.png",
+      "generated_image": "Experiments/qualitative_comparison/candidate_selection/paired_method_comparison_v3_compact/paired_baseline_treestruct3d_comparison.png",
+      "rgb_pixels_identical": true,
+      "dimensions": [
+        4200,
+        2384
+      ],
+      "assembly_script": "Experiments/qualitative_comparison/build_paired_method_comparison.py"
+    },
+    {
+      "group": "appendix-6a",
+      "published_image": "figures/appendix-figure-6a-gpt-5-5.png",
+      "generated_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/appendix_good_cases_gpt-5_5.png",
+      "rgb_pixels_identical": true,
+      "dimensions": [
+        4560,
+        2728
+      ],
+      "assembly_script": "Experiments/qualitative_comparison/generate_appendix_good_case_review.py"
+    },
+    {
+      "group": "appendix-6b",
+      "published_image": "figures/appendix-figure-6b-gpt-5-6-sol.png",
+      "generated_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/appendix_good_cases_gpt-5_6_sol.png",
+      "rgb_pixels_identical": true,
+      "dimensions": [
+        4560,
+        2728
+      ],
+      "assembly_script": "Experiments/qualitative_comparison/generate_appendix_good_case_review.py"
+    },
+    {
+      "group": "appendix-6c",
+      "published_image": "figures/appendix-figure-6c-gemini-3-1-pro.png",
+      "generated_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/appendix_good_cases_gemini_3_1_pro.png",
+      "rgb_pixels_identical": true,
+      "dimensions": [
+        4560,
+        2728
+      ],
+      "assembly_script": "Experiments/qualitative_comparison/generate_appendix_good_case_review.py"
+    },
+    {
+      "group": "appendix-6d",
+      "published_image": "figures/appendix-figure-6d-gemini-3-5-flash.png",
+      "generated_image": "Experiments/qualitative_comparison/appendix_good_case_review/v10/appendix_good_cases_gemini_3_5_flash.png",
+      "rgb_pixels_identical": true,
+      "dimensions": [
+        4560,
+        2728
+      ],
+      "assembly_script": "Experiments/qualitative_comparison/generate_appendix_good_case_review.py"
+    }
+  ],
+  "cases": [
+    {
+      "group": "main",
+      "source_figure": "figures/figure-1-controlled-editing.png",
+      "provider": "GPT-5.5",
+      "case": "Crab_seed0",
+      "semantic": {
+        "parent": "carapace",
+        "child": "walking_leg",
+        "parent_label": "carapace",
+        "child_label": "walking leg"
+      },
+      "parent_ids": [
+        "carapace"
+      ],
+      "child_ids": [
+        "walking_leg"
+      ],
+      "source_script": "treestruct3d_results/gpt5.5/Crab_seed0/Crab_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/manifest.json",
+      "default_geometry_source": "Experiments/direct_edit_comparison/gpt5_5_all172/Crab_seed0/tree_default.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_5/Crab_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_5/Crab_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_5/Crab_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_5/Crab_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_5/Crab_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gpt5_5_all172/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "matching_edge_found",
+        "checked_parent_id": "carapace",
+        "checked_child_id": "walking_leg",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "scope": "The matching semantic attachment at default and independent parent/child edits of 0.8 and 1.2; not the displayed 0.4/1.6 stress edits."
+      },
+      "baseline": {
+        "source_script": "3dcodebench_results/gpt5.5/Crab_seed0/Crab_seed0.py",
+        "source_script_exists": true,
+        "mapping_source": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/manifest.json",
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "worker_script": "Experiments/qualitative_comparison/render_baseline_object_group_variant.py",
+        "note": "These Figure 1 baseline renders use named object-group edits after program execution, with the recorded compatibility changes. They are not PART_PARAMS-based regeneration or the quantitative baseline literal-edit protocol.",
+        "edit_details": {
+          "parent_patterns": [
+            "^wide_low_rounded_dark_reddish_brown_carapace$",
+            "^subtle_raised_shell_mottle_",
+            "^subtle_scalloped_shell_edge_point_"
+          ],
+          "child_patterns": [
+            "^walking_leg_",
+            "^rounded_leg_joint_",
+            "^sharp_orange_leg_tip_"
+          ],
+          "child_grouping": "crab-legs"
+        },
+        "states": [
+          {
+            "state": "default",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_5/Crab_seed0/default.png",
+            "render_exists": true
+          },
+          {
+            "state": "parent_0p4",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_5/Crab_seed0/parent_0p4.png",
+            "render_exists": true
+          },
+          {
+            "state": "parent_1p6",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_5/Crab_seed0/parent_1p6.png",
+            "render_exists": true
+          },
+          {
+            "state": "child_0p4",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_5/Crab_seed0/child_0p4.png",
+            "render_exists": true
+          },
+          {
+            "state": "child_1p6",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_5/Crab_seed0/child_1p6.png",
+            "render_exists": true
+          }
+        ]
+      }
+    },
+    {
+      "group": "main",
+      "source_figure": "figures/figure-1-controlled-editing.png",
+      "provider": "GPT-5.6 Sol",
+      "case": "Lobster_seed0",
+      "semantic": {
+        "parent": "cephalothorax",
+        "child": "crusher_claw",
+        "parent_label": "cephalothorax",
+        "child_label": "crusher claw"
+      },
+      "parent_ids": [
+        "cephalothorax"
+      ],
+      "child_ids": [
+        "crusher_chela"
+      ],
+      "source_script": "treestruct3d_results/gpt5.6_sol/Lobster_seed0/Lobster_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/manifest.json",
+      "default_geometry_source": "Experiments/direct_edit_comparison/gpt5_6_sol_all172_v2/Lobster_seed0/tree_default.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_6_sol/Lobster_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_6_sol/Lobster_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_6_sol/Lobster_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_6_sol/Lobster_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gpt-5_6_sol/Lobster_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gpt5_6_sol_all172_v2/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "matching_edge_found",
+        "checked_parent_id": "cephalothorax",
+        "checked_child_id": "crusher_chela",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "scope": "The matching semantic attachment at default and independent parent/child edits of 0.8 and 1.2; not the displayed 0.4/1.6 stress edits."
+      },
+      "baseline": {
+        "source_script": "3dcodebench_results/gpt5.6_sol/Lobster_seed0/Lobster_seed0.py",
+        "source_script_exists": true,
+        "mapping_source": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/manifest.json",
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "worker_script": "Experiments/qualitative_comparison/render_baseline_object_group_variant.py",
+        "note": "These Figure 1 baseline renders use named object-group edits after program execution, with the recorded compatibility changes. They are not PART_PARAMS-based regeneration or the quantitative baseline literal-edit protocol.",
+        "edit_details": {
+          "parent_patterns": [
+            "^Cephalothorax$",
+            "^LowerThorax$",
+            "^HeadDome$",
+            "^CarapaceRidge$",
+            "^CheekPlate",
+            "^Rostrum$",
+            "^RostralSpine",
+            "^EyeStalk",
+            "^Eye(?:\\.\\d+)?$"
+          ],
+          "child_patterns": [
+            "^Crusher"
+          ],
+          "child_grouping": "single-group",
+          "skip_if_lines": [
+            467
+          ]
+        },
+        "states": [
+          {
+            "state": "default",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_6_sol/Lobster_seed0/default.png",
+            "render_exists": true
+          },
+          {
+            "state": "parent_0p4",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_6_sol/Lobster_seed0/parent_0p4.png",
+            "render_exists": true
+          },
+          {
+            "state": "parent_1p6",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_6_sol/Lobster_seed0/parent_1p6.png",
+            "render_exists": true
+          },
+          {
+            "state": "child_0p4",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_6_sol/Lobster_seed0/child_0p4.png",
+            "render_exists": true
+          },
+          {
+            "state": "child_1p6",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gpt-5_6_sol/Lobster_seed0/child_1p6.png",
+            "render_exists": true
+          }
+        ]
+      }
+    },
+    {
+      "group": "main",
+      "source_figure": "figures/figure-1-controlled-editing.png",
+      "provider": "Gemini 3.1 Pro",
+      "case": "Dragonfly_seed0",
+      "semantic": {
+        "parent": "thorax",
+        "child": "abdomen",
+        "parent_label": "thorax",
+        "child_label": "abdomen"
+      },
+      "parent_ids": [
+        "thorax"
+      ],
+      "child_ids": [
+        "abdomen"
+      ],
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/Dragonfly_seed0/Dragonfly_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/manifest.json",
+      "default_geometry_source": "Experiments/direct_edit_comparison/gemini3_1_pro_all172_v2/Dragonfly_seed0/tree_default.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_1_pro/Dragonfly_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_1_pro/Dragonfly_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_1_pro/Dragonfly_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_1_pro/Dragonfly_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_1_pro/Dragonfly_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gemini3_1_pro_all172_v2/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "matching_edge_found",
+        "checked_parent_id": "thorax",
+        "checked_child_id": "abdomen",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "scope": "The matching semantic attachment at default and independent parent/child edits of 0.8 and 1.2; not the displayed 0.4/1.6 stress edits."
+      },
+      "baseline": {
+        "source_script": "3dcodebench_results/gemeni_3.1_pro/Dragonfly_seed0/Dragonfly_seed0.py",
+        "source_script_exists": true,
+        "mapping_source": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/manifest.json",
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "worker_script": "Experiments/qualitative_comparison/render_baseline_object_group_variant.py",
+        "note": "These Figure 1 baseline renders use named object-group edits after program execution, with the recorded compatibility changes. They are not PART_PARAMS-based regeneration or the quantitative baseline literal-edit protocol.",
+        "edit_details": {
+          "parent_patterns": [
+            "^Thorax$",
+            "^Thorax_Hairs$"
+          ],
+          "child_patterns": [
+            "^Abdomen$"
+          ],
+          "child_grouping": "single-group",
+          "color_scheme": "dragonfly"
+        },
+        "states": [
+          {
+            "state": "default",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_1_pro/Dragonfly_seed0/default.png",
+            "render_exists": true
+          },
+          {
+            "state": "parent_0p4",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_1_pro/Dragonfly_seed0/parent_0p4.png",
+            "render_exists": true
+          },
+          {
+            "state": "parent_1p6",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_1_pro/Dragonfly_seed0/parent_1p6.png",
+            "render_exists": true
+          },
+          {
+            "state": "child_0p4",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_1_pro/Dragonfly_seed0/child_0p4.png",
+            "render_exists": true
+          },
+          {
+            "state": "child_1p6",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_1_pro/Dragonfly_seed0/child_1p6.png",
+            "render_exists": true
+          }
+        ]
+      }
+    },
+    {
+      "group": "main",
+      "source_figure": "figures/figure-1-controlled-editing.png",
+      "provider": "Gemini 3.5 Flash",
+      "case": "Chameleon_seed0",
+      "semantic": {
+        "parent": "body",
+        "child": "legs",
+        "parent_label": "body",
+        "child_label": "legs"
+      },
+      "parent_ids": [
+        "torso_body"
+      ],
+      "child_ids": [
+        "forelimb_left",
+        "forelimb_right",
+        "hindlimb_left",
+        "hindlimb_right"
+      ],
+      "source_script": "treestruct3d_results/gemini_3.5_flash/Chameleon_seed0/Chameleon_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/manifest.json",
+      "default_geometry_source": "Experiments/direct_edit_comparison/gemini3_5_flash_all172_v2/Chameleon_seed0/tree_default.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_5_flash/Chameleon_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_5_flash/Chameleon_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_5_flash/Chameleon_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_5_flash/Chameleon_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_scale_0p4_1p6_anchor_inset_v7/gemini_3_5_flash/Chameleon_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/direct_edit_comparison/gemini3_5_flash_all172_v2/per_edge.csv",
+        "rerun_during_mapping": false,
+        "status": "not_mapped_for_displayed_group",
+        "checks": null,
+        "scope": "The main-figure Chameleon uses a grouped four-limb edit override. No exact body-to-legs row was found in this per_edge.csv; do not infer validation for that grouped display edit."
+      },
+      "baseline": {
+        "source_script": "3dcodebench_results/gemeni_3.5_flash/Chameleon_seed0/Chameleon_seed0.py",
+        "source_script_exists": true,
+        "mapping_source": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/manifest.json",
+        "edit_mode": "diagnostic_post_execution_object_group_scaling",
+        "worker_script": "Experiments/qualitative_comparison/render_baseline_object_group_variant.py",
+        "note": "These Figure 1 baseline renders use named object-group edits after program execution, with the recorded compatibility changes. They are not PART_PARAMS-based regeneration or the quantitative baseline literal-edit protocol.",
+        "edit_details": {
+          "parent_patterns": [
+            "^Chameleon$"
+          ],
+          "child_patterns": [
+            "^Leg(?:\\.\\d+)?$"
+          ],
+          "child_grouping": "individual-object",
+          "skip_join_lines": [
+            365
+          ]
+        },
+        "states": [
+          {
+            "state": "default",
+            "edited_side": "none",
+            "parent_scale": 1.0,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_5_flash/Chameleon_seed0/default.png",
+            "render_exists": true
+          },
+          {
+            "state": "parent_0p4",
+            "edited_side": "parent",
+            "parent_scale": 0.4,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_5_flash/Chameleon_seed0/parent_0p4.png",
+            "render_exists": true
+          },
+          {
+            "state": "parent_1p6",
+            "edited_side": "parent",
+            "parent_scale": 1.6,
+            "child_scale": 1.0,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_5_flash/Chameleon_seed0/parent_1p6.png",
+            "render_exists": true
+          },
+          {
+            "state": "child_0p4",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 0.4,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_5_flash/Chameleon_seed0/child_0p4.png",
+            "render_exists": true
+          },
+          {
+            "state": "child_1p6",
+            "edited_side": "child",
+            "parent_scale": 1.0,
+            "child_scale": 1.6,
+            "render_path": "Experiments/qualitative_comparison/candidate_selection/selected_baseline_scale_0p4_1p6_large_v4/gemini_3_5_flash/Chameleon_seed0/child_1p6.png",
+            "render_exists": true
+          }
+        ]
+      }
+    },
+    {
+      "group": "appendix-6a",
+      "source_figure": "figures/appendix-figure-6a-gpt-5-5.png",
+      "provider": "GPT-5.5",
+      "case": "HollowTree_seed0",
+      "semantic": {
+        "parent": "trunk",
+        "child": "primary_branch",
+        "parent_label": "trunk",
+        "child_label": "primary branch"
+      },
+      "parent_ids": [
+        "main_trunk"
+      ],
+      "child_ids": [
+        "branch_and_twig_network"
+      ],
+      "source_script": "treestruct3d_results/gpt5.5/HollowTree_seed0/HollowTree_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/HollowTree_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/HollowTree_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/HollowTree_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/HollowTree_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/HollowTree_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6a",
+      "source_figure": "figures/appendix-figure-6a-gpt-5-5.png",
+      "provider": "GPT-5.5",
+      "case": "Pan_seed0",
+      "semantic": {
+        "parent": "pan_body",
+        "child": "handle",
+        "parent_label": "pan body",
+        "child_label": "handle"
+      },
+      "parent_ids": [
+        "pan_body"
+      ],
+      "child_ids": [
+        "flat_handle_core"
+      ],
+      "source_script": "treestruct3d_results/gpt5.5/Pan_seed0/Pan_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Pan_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Pan_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Pan_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Pan_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Pan_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6a",
+      "source_figure": "figures/appendix-figure-6a-gpt-5-5.png",
+      "provider": "GPT-5.5",
+      "case": "Bed_seed0",
+      "semantic": {
+        "parent": "bed_frame",
+        "child": "headboard",
+        "parent_label": "bed frame",
+        "child_label": "headboard"
+      },
+      "parent_ids": [
+        "wooden_bed_frame_base"
+      ],
+      "child_ids": [
+        "decorative_headboard"
+      ],
+      "source_script": "treestruct3d_results/gpt5.5/Bed_seed0/Bed_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Bed_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Bed_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Bed_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Bed_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/Bed_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6a",
+      "source_figure": "figures/appendix-figure-6a-gpt-5-5.png",
+      "provider": "GPT-5.5",
+      "case": "FloorLamp_seed0",
+      "semantic": {
+        "parent": "base",
+        "child": "pole",
+        "parent_label": "base",
+        "child_label": "pole"
+      },
+      "parent_ids": [
+        "round_base"
+      ],
+      "child_ids": [
+        "central_pole"
+      ],
+      "source_script": "treestruct3d_results/gpt5.5/FloorLamp_seed0/FloorLamp_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/FloorLamp_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/FloorLamp_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/FloorLamp_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/FloorLamp_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_5/FloorLamp_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6b",
+      "source_figure": "figures/appendix-figure-6b-gpt-5-6-sol.png",
+      "provider": "GPT-5.6 Sol",
+      "case": "Toilet_seed0",
+      "semantic": {
+        "parent": "toilet_bowl",
+        "child": "water_tank",
+        "parent_label": "toilet bowl",
+        "child_label": "water tank"
+      },
+      "parent_ids": [
+        "bowl_body"
+      ],
+      "child_ids": [
+        "water_tank"
+      ],
+      "source_script": "treestruct3d_results/gpt5.6_sol/Toilet_seed0/Toilet_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Toilet_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Toilet_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Toilet_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Toilet_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Toilet_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6b",
+      "source_figure": "figures/appendix-figure-6b-gpt-5-6-sol.png",
+      "provider": "GPT-5.6 Sol",
+      "case": "SpinyLobster_seed0",
+      "semantic": {
+        "parent": "cephalothorax",
+        "child": "antenna",
+        "parent_label": "cephalothorax",
+        "child_label": "antenna"
+      },
+      "parent_ids": [
+        "cephalothorax_shell"
+      ],
+      "child_ids": [
+        "long_antenna"
+      ],
+      "source_script": "treestruct3d_results/gpt5.6_sol/SpinyLobster_seed0/SpinyLobster_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/SpinyLobster_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/SpinyLobster_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/SpinyLobster_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/SpinyLobster_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/SpinyLobster_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6b",
+      "source_figure": "figures/appendix-figure-6b-gpt-5-6-sol.png",
+      "provider": "GPT-5.6 Sol",
+      "case": "Monitor_seed0",
+      "semantic": {
+        "parent": "pedestal_arm",
+        "child": "base_stand",
+        "parent_label": "pedestal arm",
+        "child_label": "base stand"
+      },
+      "parent_ids": [
+        "pedestal_arm"
+      ],
+      "child_ids": [
+        "base_stand"
+      ],
+      "source_script": "treestruct3d_results/gpt5.6_sol/Monitor_seed0/Monitor_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Monitor_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Monitor_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Monitor_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Monitor_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/Monitor_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      },
+      "runtime_mapping_note": "The paper edits pedestal_arm as parent and base_stand as child; a separate native export audit found Blender object parenting runs in the opposite direction. Preserve these as paper edit roles and read runtime parent links from the actual scene."
+    },
+    {
+      "group": "appendix-6b",
+      "source_figure": "figures/appendix-figure-6b-gpt-5-6-sol.png",
+      "provider": "GPT-5.6 Sol",
+      "case": "StandingSink_seed0",
+      "semantic": {
+        "parent": "basin",
+        "child": "faucet",
+        "parent_label": "basin",
+        "child_label": "faucet"
+      },
+      "parent_ids": [
+        "basin_body"
+      ],
+      "child_ids": [
+        "faucet_handle"
+      ],
+      "source_script": "treestruct3d_results/gpt5.6_sol/StandingSink_seed0/StandingSink_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/StandingSink_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/StandingSink_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/StandingSink_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/StandingSink_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gpt-5_6_sol/StandingSink_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6c",
+      "source_figure": "figures/appendix-figure-6c-gemini-3-1-pro.png",
+      "provider": "Gemini 3.1 Pro",
+      "case": "BedFrame_seed0",
+      "semantic": {
+        "parent": "bed_frame",
+        "child": "headboard_posts",
+        "parent_label": "bed frame",
+        "child_label": "headboard posts"
+      },
+      "parent_ids": [
+        "bed_frame_base"
+      ],
+      "child_ids": [
+        "headboard"
+      ],
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/BedFrame_seed0/BedFrame_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/BedFrame_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/BedFrame_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/BedFrame_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/BedFrame_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/BedFrame_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6c",
+      "source_figure": "figures/appendix-figure-6c-gemini-3-1-pro.png",
+      "provider": "Gemini 3.1 Pro",
+      "case": "CabinetDrawerBase_seed0",
+      "semantic": {
+        "parent": "bottom_panel",
+        "child": "front_panel",
+        "parent_label": "bottom panel",
+        "child_label": "front panel"
+      },
+      "parent_ids": [
+        "bottom_panel"
+      ],
+      "child_ids": [
+        "front_panel"
+      ],
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/CabinetDrawerBase_seed0/CabinetDrawerBase_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CabinetDrawerBase_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CabinetDrawerBase_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CabinetDrawerBase_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CabinetDrawerBase_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CabinetDrawerBase_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6c",
+      "source_figure": "figures/appendix-figure-6c-gemini-3-1-pro.png",
+      "provider": "Gemini 3.1 Pro",
+      "case": "CoconutTree_seed0",
+      "semantic": {
+        "parent": "trunk",
+        "child": "crown_base",
+        "parent_label": "trunk",
+        "child_label": "crown base"
+      },
+      "parent_ids": [
+        "trunk"
+      ],
+      "child_ids": [
+        "crown_base"
+      ],
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/CoconutTree_seed0/CoconutTree_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CoconutTree_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CoconutTree_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CoconutTree_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CoconutTree_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/CoconutTree_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6c",
+      "source_figure": "figures/appendix-figure-6c-gemini-3-1-pro.png",
+      "provider": "Gemini 3.1 Pro",
+      "case": "Pillar_seed0",
+      "semantic": {
+        "parent": "shaft",
+        "child": "capital",
+        "parent_label": "shaft",
+        "child_label": "capital"
+      },
+      "parent_ids": [
+        "shaft"
+      ],
+      "child_ids": [
+        "capital"
+      ],
+      "source_script": "treestruct3d_results/gemeni_3.1_pro/Pillar_seed0/Pillar_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/Pillar_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/Pillar_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/Pillar_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/Pillar_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_1_pro/Pillar_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6d",
+      "source_figure": "figures/appendix-figure-6d-gemini-3-5-flash.png",
+      "provider": "Gemini 3.5 Flash",
+      "case": "FruitPineapple_seed0",
+      "semantic": {
+        "parent": "pineapple_body",
+        "child": "leaf_crown",
+        "parent_label": "pineapple body",
+        "child_label": "leaf crown"
+      },
+      "parent_ids": [
+        "fruit_body"
+      ],
+      "child_ids": [
+        "crown_leaf"
+      ],
+      "source_script": "treestruct3d_results/gemini_3.5_flash/FruitPineapple_seed0/FruitPineapple_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/FruitPineapple_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/FruitPineapple_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/FruitPineapple_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/FruitPineapple_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/FruitPineapple_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6d",
+      "source_figure": "figures/appendix-figure-6d-gemini-3-5-flash.png",
+      "provider": "Gemini 3.5 Flash",
+      "case": "ColumnarCactus_seed0",
+      "semantic": {
+        "parent": "main_stem",
+        "child": "side_arm",
+        "parent_label": "main stem",
+        "child_label": "side arm"
+      },
+      "parent_ids": [
+        "main_stem"
+      ],
+      "child_ids": [
+        "side_arm"
+      ],
+      "source_script": "treestruct3d_results/gemini_3.5_flash/ColumnarCactus_seed0/ColumnarCactus_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/ColumnarCactus_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/ColumnarCactus_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/ColumnarCactus_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/ColumnarCactus_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/ColumnarCactus_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6d",
+      "source_figure": "figures/appendix-figure-6d-gemini-3-5-flash.png",
+      "provider": "Gemini 3.5 Flash",
+      "case": "VeratrumMonocot_seed0",
+      "semantic": {
+        "parent": "main_flower_stalk",
+        "child": "clustered_florets",
+        "parent_label": "flower stalk",
+        "child_label": "clustered florets"
+      },
+      "parent_ids": [
+        "flower_stalk"
+      ],
+      "child_ids": [
+        "floret"
+      ],
+      "source_script": "treestruct3d_results/gemini_3.5_flash/VeratrumMonocot_seed0/VeratrumMonocot_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/VeratrumMonocot_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/VeratrumMonocot_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/VeratrumMonocot_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/VeratrumMonocot_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/VeratrumMonocot_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    },
+    {
+      "group": "appendix-6d",
+      "source_figure": "figures/appendix-figure-6d-gemini-3-5-flash.png",
+      "provider": "Gemini 3.5 Flash",
+      "case": "CoffeeTable_seed0",
+      "semantic": {
+        "parent": "coffee_table",
+        "child": "leg",
+        "parent_label": "table top",
+        "child_label": "pedestal legs"
+      },
+      "parent_ids": [
+        "table_top"
+      ],
+      "child_ids": [
+        "pedestal_legs"
+      ],
+      "source_script": "treestruct3d_results/gemini_3.5_flash/CoffeeTable_seed0/CoffeeTable_seed0.py",
+      "source_script_exists": true,
+      "mapping_source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+      "states": [
+        {
+          "state": "default",
+          "edited_side": "none",
+          "parent_scale": 1.0,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/CoffeeTable_seed0/default.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_0p4",
+          "edited_side": "parent",
+          "parent_scale": 0.4,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/CoffeeTable_seed0/parent_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "parent_1p6",
+          "edited_side": "parent",
+          "parent_scale": 1.6,
+          "child_scale": 1.0,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/CoffeeTable_seed0/parent_1p6.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_0p4",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 0.4,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/CoffeeTable_seed0/child_0p4.png",
+          "render_exists": true
+        },
+        {
+          "state": "child_1p6",
+          "edited_side": "child",
+          "parent_scale": 1.0,
+          "child_scale": 1.6,
+          "render_path": "Experiments/qualitative_comparison/appendix_good_case_review/v10/renders/gemini_3_5_flash/CoffeeTable_seed0/child_1p6.png",
+          "render_exists": true
+        }
+      ],
+      "historical_validation": {
+        "kind": "historical_post_hoc_contact_checks",
+        "status": "matching_edge_recorded_in_figure_manifest",
+        "evaluation_scales": [
+          0.8,
+          1.2
+        ],
+        "source": "Experiments/qualitative_comparison/appendix_good_case_review/v10/manifest.json",
+        "checks": {
+          "tree_default": true,
+          "tree_parent_0.8": true,
+          "tree_parent_1.2": true,
+          "tree_child_0.8": true,
+          "tree_child_1.2": true,
+          "tree_all": true
+        },
+        "rerun_during_mapping": false,
+        "scope": "Only the selected attachment and recorded 0.8/1.2 checks. The displayed 0.4/1.6 renders are qualitative stress demonstrations, not certified pass results at those factors."
+      }
+    }
+  ]
+}

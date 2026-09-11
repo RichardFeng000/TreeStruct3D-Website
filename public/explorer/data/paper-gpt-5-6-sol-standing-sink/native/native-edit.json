@@ -1,0 +1,376 @@
+{
+  "version": 1,
+  "coordinate_system": "blender_z_up",
+  "binary": "native-edit.bin",
+  "parts": [
+    {
+      "id": "basin_body",
+      "part_id": "basin_body",
+      "positions": {
+        "offset": 0,
+        "count": 4038
+      }
+    },
+    {
+      "id": "faucet_handle",
+      "part_id": "faucet_handle",
+      "positions": {
+        "offset": 4038,
+        "count": 1740
+      }
+    },
+    {
+      "id": "gooseneck_spout",
+      "part_id": "gooseneck_spout",
+      "positions": {
+        "offset": 5778,
+        "count": 2946
+      }
+    },
+    {
+      "id": "pedestal_support",
+      "part_id": "pedestal_support",
+      "positions": {
+        "offset": 8724,
+        "count": 3738
+      }
+    }
+  ],
+  "controls": [
+    {
+      "id": "basin_body",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "basin_body",
+              "delta": {
+                "offset": 12462,
+                "count": 4038
+              }
+            },
+            {
+              "id": "faucet_handle",
+              "delta": {
+                "offset": 16500,
+                "count": 1740
+              }
+            },
+            {
+              "id": "gooseneck_spout",
+              "delta": {
+                "offset": 18240,
+                "count": 2946
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 21186,
+            "count": 24
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "basin_body",
+              "delta": {
+                "offset": 21210,
+                "count": 4038
+              }
+            },
+            {
+              "id": "faucet_handle",
+              "delta": {
+                "offset": 25248,
+                "count": 1740
+              }
+            },
+            {
+              "id": "gooseneck_spout",
+              "delta": {
+                "offset": 26988,
+                "count": 2946
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 29934,
+            "count": 24
+          }
+        }
+      ]
+    },
+    {
+      "id": "faucet_handle",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "faucet_handle",
+              "delta": {
+                "offset": 29958,
+                "count": 1740
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "faucet_handle",
+              "delta": {
+                "offset": 31698,
+                "count": 1740
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gooseneck_spout",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "gooseneck_spout",
+              "delta": {
+                "offset": 33438,
+                "count": 2946
+              }
+            }
+          ]
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "gooseneck_spout",
+              "delta": {
+                "offset": 36384,
+                "count": 2946
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pedestal_support",
+      "interpolation": "linear",
+      "samples": [
+        {
+          "scale": 0.4,
+          "parts": [
+            {
+              "id": "basin_body",
+              "delta": {
+                "offset": 39330,
+                "count": 4038
+              }
+            },
+            {
+              "id": "faucet_handle",
+              "delta": {
+                "offset": 43368,
+                "count": 1740
+              }
+            },
+            {
+              "id": "gooseneck_spout",
+              "delta": {
+                "offset": 45108,
+                "count": 2946
+              }
+            },
+            {
+              "id": "pedestal_support",
+              "delta": {
+                "offset": 48054,
+                "count": 3738
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 51792,
+            "count": 24
+          }
+        },
+        {
+          "scale": 1,
+          "parts": []
+        },
+        {
+          "scale": 1.6,
+          "parts": [
+            {
+              "id": "basin_body",
+              "delta": {
+                "offset": 51816,
+                "count": 4038
+              }
+            },
+            {
+              "id": "faucet_handle",
+              "delta": {
+                "offset": 55854,
+                "count": 1740
+              }
+            },
+            {
+              "id": "gooseneck_spout",
+              "delta": {
+                "offset": 57594,
+                "count": 2946
+              }
+            },
+            {
+              "id": "pedestal_support",
+              "delta": {
+                "offset": 60540,
+                "count": 3738
+              }
+            }
+          ],
+          "anchors": {
+            "offset": 64278,
+            "count": 24
+          }
+        }
+      ]
+    }
+  ],
+  "anchors": [
+    {
+      "parent": "pedestal_support",
+      "child": "basin_body",
+      "parent_world": [
+        0.0,
+        0.0,
+        2.9600000381469727
+      ],
+      "child_world": [
+        0.0,
+        0.0,
+        2.9600000381469727
+      ]
+    },
+    {
+      "parent": "basin_body",
+      "child": "gooseneck_spout",
+      "parent_world": [
+        0.0,
+        1.5800000429153442,
+        3.680000066757202
+      ],
+      "child_world": [
+        0.0,
+        1.5800000429153442,
+        3.680000066757202
+      ]
+    },
+    {
+      "parent": "basin_body",
+      "child": "faucet_handle",
+      "parent_world": [
+        1.3615368604660034,
+        1.5559653043746948,
+        3.680000066757202
+      ],
+      "child_world": [
+        1.3615368604660034,
+        1.5559653043746948,
+        3.680000066757202
+      ]
+    },
+    {
+      "parent": "basin_body",
+      "child": "faucet_handle",
+      "parent_world": [
+        -1.3615368604660034,
+        1.5559653043746948,
+        3.680000066757202
+      ],
+      "child_world": [
+        -1.3615368604660034,
+        1.5559653043746948,
+        3.680000066757202
+      ]
+    }
+  ],
+  "validation": {
+    "scene_extent": 5.421421051025391,
+    "linear_tolerance": 5.421421051025391e-05,
+    "source": "Independent native PART_PARAMS regeneration; evaluated world vertices before export normalization",
+    "linear_fit_max_error": {
+      "basin_body": 8.596304041930125e-07,
+      "faucet_handle": 4.915124804938387e-07,
+      "gooseneck_spout": 5.331201577973843e-07,
+      "pedestal_support": 9.610960205463925e-07
+    },
+    "native_multi_checks": [
+      {
+        "params": {
+          "basin_body": 1.37,
+          "faucet_handle": 1.37,
+          "gooseneck_spout": 0.63,
+          "pedestal_support": 0.63
+        },
+        "max_position_error": 7.539457464619588e-07,
+        "relative_error": 1.3906791952994683e-07
+      },
+      {
+        "params": {
+          "basin_body": 0.63,
+          "faucet_handle": 0.63,
+          "gooseneck_spout": 1.37,
+          "pedestal_support": 1.37
+        },
+        "max_position_error": 9.610960183499514e-07,
+        "relative_error": 1.7727750884948749e-07
+      },
+      {
+        "params": {
+          "basin_body": 0.63,
+          "faucet_handle": 0.63,
+          "gooseneck_spout": 0.63,
+          "pedestal_support": 0.63
+        },
+        "max_position_error": 7.251217997429632e-07,
+        "relative_error": 1.337512421408066e-07
+      },
+      {
+        "params": {
+          "basin_body": 1.37,
+          "faucet_handle": 1.37,
+          "gooseneck_spout": 1.37,
+          "pedestal_support": 1.37
+        },
+        "max_position_error": 9.902267292640298e-07,
+        "relative_error": 1.826507699631154e-07
+      }
+    ]
+  },
+  "binary_sha256": "f9ca2e469074e2b05a931aa2b73514f6eef0537554a116694f1da72a2cb1c8f5",
+  "source_sha256": "42e477957868378ddb734948bf03ab07238d7ef766a374ac63921a67286971fc"
+}
