@@ -13,17 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.ruiding-feng.com/TreeStruct3D-Website/'),
+  metadataBase: new URL('https://www.ruiding-feng.com/treeStruct3D/'),
   title: 'TreeStruct3D — Structural Editability for Agentic 3D Modeling',
   description:
     'TreeStruct3D generates editable Blender programs with explicit semantic parts, directed attachments, and geometry-derived shared anchors.',
   alternates: {
-    canonical: 'https://www.ruiding-feng.com/TreeStruct3D-Website/',
+    canonical: 'https://www.ruiding-feng.com/treeStruct3D/',
   },
   icons: {
     icon: [
       {
-        url: 'https://www.ruiding-feng.com/TreeStruct3D-Website/favicon.png',
+        url: 'https://www.ruiding-feng.com/treeStruct3D/favicon.png',
         type: 'image/png',
         sizes: '128x128',
       },
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    url: 'https://www.ruiding-feng.com/TreeStruct3D-Website/',
+    url: 'https://www.ruiding-feng.com/treeStruct3D/',
     siteName: 'TreeStruct3D',
     title: 'TreeStruct3D — Structural Editability for Agentic 3D Modeling',
     description:
       'Generate editable Blender programs with explicit semantic parts, directed attachments, and geometry-derived shared anchors.',
     images: [
       {
-        url: 'https://www.ruiding-feng.com/TreeStruct3D-Website/og.png',
+        url: 'https://www.ruiding-feng.com/treeStruct3D/og.png',
         width: 1200,
         height: 630,
         alt: 'TreeStruct3D — Structural Editability for Agentic 3D Modeling',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: 'TreeStruct3D — Structural Editability for Agentic 3D Modeling',
     description:
       'Generate editable Blender programs with explicit semantic parts, directed attachments, and geometry-derived shared anchors.',
-    images: ['https://www.ruiding-feng.com/TreeStruct3D-Website/og.png'],
+    images: ['https://www.ruiding-feng.com/treeStruct3D/og.png'],
   },
 };
 

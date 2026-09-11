@@ -3,7 +3,7 @@
 This repository contains the official project website for **TreeStruct3D:
 Enabling Structural Editability in Agentic Procedural 3D Modeling**.
 
-- Live site: <https://www.ruiding-feng.com/TreeStruct3D-Website/>
+- Live site: <https://www.ruiding-feng.com/treeStruct3D/>
 - Research code: <https://github.com/RichardFeng000/TreeStruct3D>
 
 The site introduces the structure-aware generation pipeline, documents the
@@ -28,7 +28,7 @@ npm run build
 Build the static snapshot used at the portfolio subpath:
 
 ```bash
-npm run build:pages
+npm run build:portfolio
 ```
 
 ## Deployment
@@ -36,11 +36,17 @@ npm run build:pages
 Pushes to `main` build and deploy the standalone GitHub Pages mirror at
 `richardfeng000.github.io/TreeStruct3D-Website/`. The custom-domain release is
 stored as a reviewed static snapshot in the `Richard_website` portfolio
-repository, so it is served at `www.ruiding-feng.com/TreeStruct3D-Website/`
+repository, so it is served at `www.ruiding-feng.com/treeStruct3D/`
 without changing the root portfolio page.
 
-To refresh the portfolio snapshot, run `npm run build:pages` and replace
-`Richard_website/public/TreeStruct3D-Website/` with `dist/client/`.
+To refresh the portfolio snapshot, run `npm run build:portfolio` and replace
+`Richard_website/public/treeStruct3D/` with `dist/client/`, then build and deploy
+the portfolio. GitHub Pages redirects `/treeStruct3D` to `/treeStruct3D/`.
+The previously published `/TreeStruct3D-Website/` snapshot remains available.
+
+`npm run build:pages` retains the `/TreeStruct3D-Website` asset prefix for the
+standalone repository mirror. `npm run build:portfolio` sets
+`PAGES_BASE_PATH=/treeStruct3D` for both the export and asset normalization.
 
 ## License
 

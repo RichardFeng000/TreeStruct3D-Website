@@ -9,6 +9,7 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "build:pages": "GITHUB_PAGES=true vinext build && node scripts/normalize-pages-build.mjs",
+    "build:portfolio": "PAGES_BASE_PATH=/treeStruct3D npm run build:pages",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt"
