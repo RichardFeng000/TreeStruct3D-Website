@@ -42,7 +42,8 @@ without changing the root portfolio page.
 To refresh the portfolio snapshot, run `npm run build:portfolio` and replace
 `Richard_website/public/treeStruct3D/` with `dist/client/`, then build and deploy
 the portfolio. GitHub Pages redirects `/treeStruct3D` to `/treeStruct3D/`.
-The previously published `/TreeStruct3D-Website/` snapshot remains available.
+The portfolio publishes only this snapshot; the legacy
+`public/TreeStruct3D-Website/` directory has been removed.
 
 `npm run build:pages` retains the `/TreeStruct3D-Website` asset prefix for the
 standalone repository mirror. `npm run build:portfolio` sets
