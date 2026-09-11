@@ -1,0 +1,22 @@
+{
+  "method": "TreeStruct3D · GPT-5.6-sol",
+  "role": "method_output",
+  "source_file": "treestruct3d_results/gpt5.6_sol/Monitor_seed0/Monitor_seed0.py",
+  "source_sha256": "e8f83ae4e0ae9b72f5428644feddf13e43a23cf4947fe4c9e8a23842d56bcac9",
+  "source_size": 23887,
+  "source_matched_cache_metadata": true,
+  "cache_glb": "Monitor_seed0-476ed40b18f288f99785.glb",
+  "cache_runtime": "Monitor_seed0-runtime-graph-4267609bd76e3c6bb61c.json",
+  "glb_sha256": "f6e3ebfc0969027fa7efeeb0a29a15a921b550d7f8e7477cf4e33b35fbee896c",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "validation_note": "Saved local runtime observations for this exact example; not a benchmark aggregate.",
+  "mesh_name_match": true,
+  "mesh_bbox_max_error_before_translation": 2.384185791015625e-07,
+  "runtime_to_glb_translation": [
+    0.0,
+    2.9802322387695312e-08,
+    -5.122274160385132e-09
+  ],
+  "mesh_bbox_max_error_after_translation": 2.086162567138672e-07
+}

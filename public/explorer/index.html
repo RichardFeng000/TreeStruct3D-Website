@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TreeStruct3D · Interactive structure explorer</title><link rel="icon" href="../favicon.png"><link rel="stylesheet" href="inspector.css"><link rel="stylesheet" href="theme.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.min.js"}}</script></head><body>
+  <main id="app">
+    <header class="topbar">
+      <a class="brand" href="https://www.ruiding-feng.com/" target="_top" aria-label="Ruiding Feng home"><span class="brand-mark">T</span>TreeStruct3D</a>
+      <span class="site-subtitle">Interactive structure explorer</span>
+      <nav class="site-links" aria-label="Project links"><a href="https://github.com/RichardFeng000/TreeStruct3D" target="_blank" rel="noopener noreferrer">Code ↗</a><a href="https://github.com/RichardFeng000/TreeStruct3D/tree/main/visual_validation" target="_blank" rel="noopener noreferrer">Local toolkit ↗</a></nav>
+      <div class="catalog-bar">
+        <div class="source-picker"><label for="source-select">Collection</label><select id="source-select" aria-label="Select model collection"></select></div>
+        <div class="model-picker"><label for="model-select">Model</label><select id="model-select" aria-label="Select model"></select><button id="previous-model-button" type="button" aria-label="Previous model" title="Previous model (←)">←</button><button id="next-model-button" type="button" aria-label="Next model" title="Next model (→)">→</button><span id="model-position" class="model-position"></span></div>
+        <button id="copy-selection-button" type="button">Copy Selection</button><button id="reset-button" type="button">Reset View</button>
+      </div>
+    </header>
+
+    <div class="workspace">
+      <aside class="sidebar">
+        <div class="sidebar-head">
+          <h1 id="panel-title">Model inspector</h1>
+          <p>Select a part in the hierarchy to highlight it in the model. Drag either view to explore.</p>
+        </div>
+        <div id="controls"></div>
+      </aside>
+
+      <section id="graph-panel" class="graph-panel" aria-label="Structure and shared anchors">
+        <div class="graph-toolbar">
+          <div id="graph-tabs" class="graph-tabs" role="group" aria-label="Node graph views">
+            <div class="graph-tab-group primary" aria-label="Primary views">
+              <button type="button" data-graph-view="tree3d" disabled aria-pressed="false">3D Hierarchy</button>
+              <button type="button" data-graph-view="anchors" disabled aria-pressed="false">Anchor Relations</button>
+              <button type="button" data-graph-view="parts">Part Hierarchy</button>
+            </div>
+            <div class="graph-tab-group secondary" aria-label="Code analysis views">
+              <button type="button" data-graph-view="definitions">Definition Tree</button>
+              <button type="button" data-graph-view="calls">Call Graph</button>
+            </div>
+          </div>
+          <div class="graph-actions">
+            <input id="graph-search" type="text" placeholder="Search nodes" aria-label="Search nodes">
+            <button id="graph-expand" type="button">Expand All</button>
+            <button id="graph-fit" type="button">Center</button>
+          </div>
+          <div id="anchor-controls" class="anchor-controls" hidden aria-label="Anchor relation filters">
+            <button class="anchor-mode active" type="button" data-anchor-mode="confirmed">Parent–Child</button>
+            <button class="anchor-mode" type="button" data-anchor-mode="shared">Shared Anchors</button>
+            <button class="anchor-mode" type="button" data-anchor-mode="issues">Issues</button>
+            <button class="anchor-mode" type="button" data-anchor-mode="all">All Relations</button>
+            <span class="anchor-controls-spacer"></span>
+            <button id="anchor-clear-focus" type="button" hidden>Back to Overview</button>
+            <button id="graph-fullscreen" type="button" aria-pressed="false">Enlarge Graph</button>
+          </div>
+          <div id="tree3d-controls" class="tree3d-controls" hidden aria-label="3D hierarchy relation display options">
+            <label class="tree3d-toggle">
+              <input id="tree3d-show-real-parts" type="checkbox">
+              <span>Real Parts</span>
+            </label>
+            <label class="tree3d-toggle shared">
+              <input id="tree3d-show-shared" type="checkbox" checked>
+              <span>Show Shared Anchors</span>
+            </label>
+            <label class="tree3d-toggle issues">
+              <input id="tree3d-show-issues" type="checkbox">
+              <span>Show Issue Relations</span>
+            </label>
+            <span id="tree3d-control-note" class="tree3d-control-note">Green spheres mark world-space anchors shared by parent and child</span>
+            <button id="tree3d-export-transparent" type="button">Save Transparent PNG</button>
+            <button id="tree3d-fullscreen" type="button" aria-pressed="false">Fullscreen</button>
+          </div>
+          <div id="graph-legend" class="graph-legend" hidden aria-label="Relation color and line-style legend"></div>
+        </div>
+        <div id="graph-stage">
+          <svg id="graph-svg" role="img" aria-label="Interactive tree from each parent to all child nodes">
+            <defs>
+              <marker id="graph-arrow-confirmed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#55d98b"></path>
+              </marker>
+              <marker id="graph-arrow-code" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#63a6ff"></path>
+              </marker>
+            </defs>
+            <g id="graph-viewport">
+              <g id="graph-edges"></g>
+              <g id="graph-nodes"></g>
+            </g>
+          </svg>
+          <div id="tree3d-stage" hidden>
+            <canvas id="tree3d-canvas" aria-label="Rotatable 3D parent-child hierarchy"></canvas>
+            <div id="tree3d-tooltip" class="tree3d-tooltip" hidden></div>
+            <div class="tree3d-hint">Drag to rotate · Scroll to zoom · Hover a node to focus its full ancestor/subtree path · Move away to reset</div>
+          </div>
+        </div>
+        <div class="graph-footer">
+          <div id="graph-status">Loading structure snapshot…</div>
+          <div id="graph-detail">Click a node to view its parents, all direct children, and source line numbers.</div>
+          <div id="anchor-relations" class="anchor-relations" hidden aria-label="Currently visible anchor relations"></div>
+        </div>
+      </section>
+
+      <section class="viewer" aria-label="Rotatable 3D model preview">
+        <canvas id="viewport" aria-label="3D model: drag to rotate, scroll to zoom" tabindex="0"></canvas>
+        <div id="viewer-status" class="viewer-status">Loading interactive examples…</div>
+        <div class="viewer-tools"><span class="viewport-title">3D model</span>
+          <button id="fit-button" type="button">Center</button>
+          <button id="rotate-button" type="button" aria-pressed="false">Auto Rotate</button>
+        </div>
+        <div id="preview-selection" class="preview-selection" hidden>
+          <span id="preview-selection-label"></span>
+          <button id="preview-selection-clear" type="button">Clear Highlight</button>
+        </div>
+        <div id="loading" class="loading-ring" aria-hidden="true"><div class="spinner"></div></div>
+        <div class="viewer-hint">Drag to rotate · Scroll to zoom · Click a part to select</div>
+      </section>
+    </div>
+  </main>
+
+<noscript><p>JavaScript is required for the interactive 3D explorer. <a href="https://github.com/RichardFeng000/TreeStruct3D" target="_top">Read the project documentation.</a></p></noscript><script type="module" src="boot.js"></script></body></html>

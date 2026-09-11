@@ -32,6 +32,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Lint website
+        run: npm run lint
+
+      - name: Validate interactive examples
+        run: npm run check:explorer
+
       - name: Build static site
         run: npm run build:pages
 

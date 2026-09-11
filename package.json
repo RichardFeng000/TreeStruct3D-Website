@@ -12,7 +12,8 @@
     "build:portfolio": "PAGES_BASE_PATH=/treeStruct3D npm run build:pages",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
-    "format": "oxfmt"
+    "format": "oxfmt",
+    "check:explorer": "node --test tests/explorer.test.mjs"
   },
   "dependencies": {
     "@base-ui/react": "1.7.0",

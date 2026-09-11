@@ -1,0 +1,22 @@
+{
+  "method": "Stage 1 baseline",
+  "role": "baseline",
+  "source_file": "visual_validation/datasets/stage1_output/Fish_seed0/Fish_seed0.py",
+  "source_sha256": "59041d6d2ff235cce6d8464ad9a7df4e962ee9b9edd97e0bbba76b0475deb8de",
+  "source_size": 6731,
+  "source_matched_cache_metadata": true,
+  "cache_glb": "Fish_seed0-9c88fb29d4962fa44bc7.glb",
+  "cache_runtime": "Fish_seed0-runtime-graph-be8ce5a912c5981e53c0.json",
+  "glb_sha256": "138300abb736cd5d1ac5f0a67b8d25c4e73e4ae3f0c7cf38baf1371005b636a0",
+  "native_part_params": false,
+  "runtime_snapshot": true,
+  "validation_note": "Saved local runtime observations for this exact example; not a benchmark aggregate.",
+  "mesh_name_match": true,
+  "mesh_bbox_max_error_before_translation": 1.3500000908970833,
+  "runtime_to_glb_translation": [
+    -3.97824440057093e-11,
+    1.350000036222721,
+    -0.6730578010501925
+  ],
+  "mesh_bbox_max_error_after_translation": 1.3928731812384854e-07
+}

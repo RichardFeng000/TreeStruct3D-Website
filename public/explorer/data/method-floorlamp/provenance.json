@@ -1,0 +1,22 @@
+{
+  "method": "TreeStruct3D · GPT-5.5",
+  "role": "method_output",
+  "source_file": "treestruct3d_results/gpt5.5_join/FloorLamp_seed0/FloorLamp_seed0.py",
+  "source_sha256": "691b184ec5e0db79c355a371c0af08dc9ba28a1e809c7c2774c727bbe2edab1e",
+  "source_size": 13297,
+  "source_matched_cache_metadata": true,
+  "cache_glb": "FloorLamp_seed0-911473adfdca2c385c3d.glb",
+  "cache_runtime": "FloorLamp_seed0-runtime-graph-06a8a0c60c21112a9ddc.json",
+  "glb_sha256": "d5b72088e82740336f3387925db1483cf14b88ba1f9581837c8e835f000e7a8b",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "validation_note": "Saved local runtime observations for this exact example; not a benchmark aggregate.",
+  "mesh_name_match": true,
+  "mesh_bbox_max_error_before_translation": 2.2351741790771484e-07,
+  "runtime_to_glb_translation": [
+    0.0,
+    -7.7858567237854e-08,
+    0.0
+  ],
+  "mesh_bbox_max_error_after_translation": 1.821666955947876e-07
+}

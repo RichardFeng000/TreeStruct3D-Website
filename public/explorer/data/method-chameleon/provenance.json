@@ -1,0 +1,22 @@
+{
+  "method": "TreeStruct3D · Gemini 3.1 Pro",
+  "role": "method_output",
+  "source_file": "treestruct3d_results/gemeni_3.1_pro/Chameleon_seed0/Chameleon_seed0.py",
+  "source_sha256": "5f02d5be56275f952f854170a901e3366b09795975d6e85c0fb56c7584d1014d",
+  "source_size": 13348,
+  "source_matched_cache_metadata": true,
+  "cache_glb": "Chameleon_seed0-36f96657f20b813316d2.glb",
+  "cache_runtime": "Chameleon_seed0-runtime-graph-c09cfe9d0c9554b3323c.json",
+  "glb_sha256": "81301fde7dbe06521db24320d92ea3b1673c8575e31aad6d311a5d24ca5c70ca",
+  "native_part_params": true,
+  "runtime_snapshot": true,
+  "validation_note": "Saved local runtime observations for this exact example; not a benchmark aggregate.",
+  "mesh_name_match": true,
+  "mesh_bbox_max_error_before_translation": 0.6681748330593109,
+  "runtime_to_glb_translation": [
+    -2.1659995498045905e-08,
+    0.6681747516760459,
+    0.07752715545630076
+  ],
+  "mesh_bbox_max_error_after_translation": 1.7284372785168009e-07
+}

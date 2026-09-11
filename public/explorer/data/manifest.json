@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "description": "Curated static snapshots from the TreeStruct3D Visual Validation Toolkit. Runtime results describe these saved examples only; browser controls do not rerun Blender.",
+  "coordinate_system": {
+    "glb": "right-handed Y-up",
+    "runtime": "Blender Z-up",
+    "blender_to_gltf": "[x, y, z] -> [x, z, -y]"
+  },
+  "models": [
+    {
+      "id": "method-monitor",
+      "title": "Monitor",
+      "source": "treestruct3d",
+      "source_label": "TreeStruct3D \u00b7 GPT-5.6-sol",
+      "model": "Monitor_seed0/Monitor_seed0",
+      "label": "Monitor_seed0",
+      "directory": "method-monitor",
+      "glb": "method-monitor/model.glb",
+      "provenance": "method-monitor/provenance.json",
+      "mesh_map": "method-monitor/mesh-map.json",
+      "bytes": 166508,
+      "parts": 4,
+      "shared_anchors": 3,
+      "snapshot": "method-monitor/snapshot.json"
+    },
+    {
+      "id": "method-floorlamp",
+      "title": "Floor lamp",
+      "source": "treestruct3d",
+      "source_label": "TreeStruct3D \u00b7 GPT-5.5",
+      "model": "FloorLamp_seed0/FloorLamp_seed0",
+      "label": "FloorLamp_seed0",
+      "directory": "method-floorlamp",
+      "glb": "method-floorlamp/model.glb",
+      "provenance": "method-floorlamp/provenance.json",
+      "mesh_map": "method-floorlamp/mesh-map.json",
+      "bytes": 655560,
+      "parts": 5,
+      "shared_anchors": 4,
+      "snapshot": "method-floorlamp/snapshot.json"
+    },
+    {
+      "id": "method-chameleon",
+      "title": "Chameleon",
+      "source": "treestruct3d",
+      "source_label": "TreeStruct3D \u00b7 Gemini 3.1 Pro",
+      "model": "Chameleon_seed0/Chameleon_seed0",
+      "label": "Chameleon_seed0",
+      "directory": "method-chameleon",
+      "glb": "method-chameleon/model.glb",
+      "provenance": "method-chameleon/provenance.json",
+      "mesh_map": "method-chameleon/mesh-map.json",
+      "bytes": 198800,
+      "parts": 13,
+      "shared_anchors": 0,
+      "snapshot": "method-chameleon/snapshot.json"
+    },
+    {
+      "id": "baseline-fish",
+      "title": "Fish",
+      "source": "stage1",
+      "source_label": "Stage 1 baseline",
+      "model": "Fish_seed0/Fish_seed0",
+      "label": "Fish_seed0",
+      "directory": "baseline-fish",
+      "glb": "baseline-fish/model.glb",
+      "provenance": "baseline-fish/provenance.json",
+      "mesh_map": "baseline-fish/mesh-map.json",
+      "bytes": 183016,
+      "parts": 10,
+      "shared_anchors": 0,
+      "snapshot": "baseline-fish/snapshot.json"
+    }
+  ]
+}

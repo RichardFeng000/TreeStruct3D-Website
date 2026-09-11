@@ -6,9 +6,24 @@ Enabling Structural Editability in Agentic Procedural 3D Modeling**.
 - Live site: <https://www.ruiding-feng.com/treeStruct3D/>
 - Research code: <https://github.com/RichardFeng000/TreeStruct3D>
 
-The site introduces the structure-aware generation pipeline, documents the
-benchmark input boundary, links to the open-source implementation, and presents
-the controlled-editing comparison and qualitative appendix gallery.
+The website opens directly into an interactive inspector adapted from the
+project's `visual_validation/frontend/model_playground.html`. Its three panels
+show model information, a selectable structure graph, and the actual GLB model.
+Select a part in either the tree or the model to highlight it in both views.
+The explorer includes orbit/pan/zoom, model switching, wireframe, part isolation,
+shared-anchor inspection, five graph views, and transparent graph PNG export.
+
+The white background, light-gray panels, and blue accents follow the palette of
+[3DCodeBench](https://www.3dcodebench.com/). The layout and inspection behavior
+come from the local TreeStruct3D toolkit.
+
+Four curated examples are included: Monitor, Floor lamp, Chameleon, and a
+Stage 1 Fish baseline. These are saved model and runtime snapshots, not aggregate
+benchmark results. Browser controls inspect those snapshots; they do not rerun
+Blender or regenerate geometry. Native parameter editing remains available in
+the [local toolkit](https://github.com/RichardFeng000/TreeStruct3D/tree/main/visual_validation).
+See [the snapshot documentation](docs/explorer-snapshots.md) for provenance and
+the data format.
 
 ## Development
 
@@ -18,6 +33,17 @@ The project requires Node.js 22.13 or newer.
 npm ci
 npm run dev
 ```
+
+Check the application and curated examples:
+
+```bash
+npm run lint
+npm run check:explorer
+```
+
+The explorer checks validate mesh identities, file hashes, graph references,
+selection/material restoration, and strict shared-anchor rendering. They run
+against the actual saved examples and renderer helpers without a browser.
 
 Build the deployable application:
 
@@ -51,5 +77,7 @@ standalone repository mirror. `npm run build:portfolio` sets
 
 ## License
 
-Website source code is released under the Apache License 2.0. Paper figures
+Website source code and the adapted TreeStruct3D inspector are released under
+the Apache License 2.0. Vendored Three.js r166 modules use the MIT license; see
+[third-party notices](public/explorer/THIRD_PARTY_NOTICES.md). Paper figures
 remain part of the TreeStruct3D research project.
