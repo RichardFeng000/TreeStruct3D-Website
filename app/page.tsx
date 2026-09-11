@@ -1,5 +1,6 @@
 import InteractiveExamples from './components/InteractiveExamples';
 import ZoomableImage from './components/ZoomableImage';
+import FigureCarousel from './components/FigureCarousel';
 import { ArrowDown, CodeXml, FileText } from 'lucide-react';
 
 export const dynamic = 'force-static';
@@ -64,14 +65,7 @@ export default function Home() {
               Default renders tell only part of the story. The paper compares what happens after the parent shrinks
               or the child grows, testing whether the intended connections remain intact.</p>
           </div>
-          <figure className="paper-figure">
-            <ZoomableImage src="paper-figures/fig_qualitative_paired.png" width={4200} height={2384}
-              label="Controlled editing comparison"
-              alt="Selected 3DCodeBench and TreeStruct3D outputs across four models, compared at default scale and after parent and child rescaling." />
-            <figcaption><strong>Controlled editing examples.</strong> Each pair compares 3DCodeBench and TreeStruct3D.
-              The 0.4× and 1.6× edits exaggerate changes for visibility; quantitative tests use 0.8× and 1.2×.
-              These selected examples illustrate the behavior and are not aggregate results.</figcaption>
-          </figure>
+          <FigureCarousel />
         </section>
 
         <section id="examples" className="paper-section examples-section" aria-label="Interactive visual validation">

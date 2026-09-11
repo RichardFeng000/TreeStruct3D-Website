@@ -31,6 +31,32 @@
 .paper-figure img { display: block; width: 100%; height: auto; }
 .paper-figure figcaption { margin-top: 16px; color: #5f6368; font-size: 13px; line-height: 1.65; }
 .paper-figure figcaption strong { color: #202124; font-weight: 550; }
+.figure-carousel { container-type: inline-size; position: relative; left: 50%; width: calc((100vw - 48px) * .8); transform: translateX(-50%); }
+.carousel-stage { --carousel-card-width: 84cqw; --carousel-radius: 57.808cqw; position: relative; height: 56cqw; }
+.carousel-perspective { position: absolute; inset: 0; perspective: 300cqw; overflow: hidden; }
+.carousel-ring { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d; transform: translateZ(calc(-1 * var(--carousel-radius))) rotateY(var(--carousel-turn)); transition: transform .8s cubic-bezier(.22,.65,.25,1); }
+.carousel-card { position: absolute; left: calc(var(--carousel-card-width) / -2); top: calc(var(--carousel-card-width) * 2728 / 4560 / -2); width: var(--carousel-card-width); height: calc(var(--carousel-card-width) * 2728 / 4560); transform: rotateY(var(--card-angle)) translateZ(var(--carousel-radius)); backface-visibility: hidden; background: white; border: 1px solid #e8eaed; border-radius: 8px; box-shadow: 0 12px 30px rgb(32 33 36 / 10%); opacity: .62; transition: opacity .8s; }
+.carousel-card.is-active { opacity: 1; }
+.carousel-card > .figure-zoom-trigger, .carousel-side-image { display: block; width: 100%; height: 100%; padding: 0; border: 0; border-radius: 8px; background: white; }
+.carousel-side-image { cursor: pointer; }
+.carousel-card > .figure-zoom-trigger img, .carousel-side-image img { width: 100%; height: 100%; object-fit: contain; border-radius: 8px; }
+.carousel-arrow { position: absolute; top: 50%; z-index: 2; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; transform: translateY(-50%); border: 1px solid #e0e3e7; border-radius: 50%; background: rgb(255 255 255 / 95%); color: #454a50; box-shadow: 0 3px 12px rgb(32 33 36 / 10%); cursor: pointer; }
+.carousel-arrow:hover { color: #1a73e8; border-color: #c3d8f6; background: white; }
+.carousel-arrow-prev { left: 8px; }
+.carousel-arrow-next { right: 8px; }
+.carousel-arrow svg { width: 23px; height: 23px; }
+.carousel-footer { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 8px; }
+.carousel-dots { display: flex; gap: 2px; min-width: 0; margin: 0; padding: 0; border: 0; }
+.carousel-dot { display: grid; place-items: center; width: 26px; height: 30px; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.carousel-dot span { width: 6px; height: 6px; border-radius: 50%; background: #dadce0; transition: background .2s, transform .2s; }
+.carousel-dot[aria-pressed="true"] span { background: #1a73e8; transform: scale(1.35); }
+.carousel-playback { display: flex; align-items: center; gap: 6px; }
+.carousel-position { min-width: 32px; color: #80868b; font-size: 12px; font-variant-numeric: tabular-nums; text-align: center; }
+.carousel-playback button { display: grid; place-items: center; width: 30px; height: 30px; padding: 0; border: 0; border-radius: 50%; color: #80868b; background: transparent; cursor: pointer; }
+.carousel-playback button:hover { color: #202124; background: #f8f9fa; }
+.carousel-playback svg { width: 14px; height: 14px; }
+.carousel-caption { display: block; }
+.figure-carousel figcaption { max-width: 1400px; margin: 12px auto 0; padding: 0 16px; }
 .figure-zoom-trigger { display: block; width: 100%; padding: 0; border: 0; background: white; cursor: zoom-in; }
 body:has(.figure-lightbox[open]) { overflow: hidden; }
 .figure-lightbox { position: fixed; inset: 0; width: 100%; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 24px; border: 0; background: transparent; overflow: hidden; color: #202124; }
@@ -86,6 +112,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid #1a73e8; outline-offs
   .method-section .section-intro h2 { font-size: 24px; }
   .section-intro p { font-size: 15px; }
   .section-intro { margin-bottom: 22px; }
+  .figure-carousel { width: calc((100vw - 16px) * .8); }
+  .carousel-stage { height: 57cqw; }
+  .carousel-arrow { width: 36px; height: 36px; }
+  .carousel-arrow-prev { left: 0; }
+  .carousel-arrow-next { right: 0; }
+  .carousel-arrow svg { width: 20px; height: 20px; }
   .figure-lightbox { padding: 10px; }
   .lightbox-toolbar { padding-left: 12px; }
   .lightbox-viewport, .lightbox-image-button img { max-height: calc(100dvh - 80px); }
@@ -94,4 +126,4 @@ a:focus-visible, button:focus-visible { outline: 2px solid #1a73e8; outline-offs
   .method-steps p { font-size: 13px; }
   .examples-section { padding: 24px 0; }
 }
-@media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } .button { transition: none; } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } .button, .carousel-ring, .carousel-card, .carousel-dot span { transition: none; } }

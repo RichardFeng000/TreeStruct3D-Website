@@ -1,8 +1,11 @@
 'use client';
 
 /* oxlint-disable nextjs/no-img-element -- Paper figures are original static assets shared by the thumbnail and full-resolution preview. */
-import { useId, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState, useSyncExternalStore } from 'react';
+import { createPortal } from 'react-dom';
 import { X, ZoomIn, ZoomOut } from 'lucide-react';
+
+const subscribeToHydration = () => () => {};
 
 type ZoomableImageProps = {
   src: string;
@@ -11,19 +14,31 @@ type ZoomableImageProps = {
   width: number;
   height: number;
   priority?: boolean;
+  onLoad?: () => void;
+  onOpenChange?: (open: boolean) => void;
+  onKeyboardFocus?: () => void;
 };
 
-export default function ZoomableImage({ src, alt, label, width, height, priority = false }: ZoomableImageProps) {
+export default function ZoomableImage({ src, alt, label, width, height, priority = false, onLoad, onOpenChange, onKeyboardFocus }: ZoomableImageProps) {
   const dialogId = useId();
   const dialogRef = useRef<HTMLDialogElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const viewportRef = useRef<HTMLDivElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
   const [zoomed, setZoomed] = useState(false);
+  const mounted = useSyncExternalStore(subscribeToHydration, () => true, () => false);
   const zoomLabel = zoomed ? 'Fit image to window' : 'Zoom to original size';
 
+  useEffect(() => {
+    // A cached or server-rendered image can finish before React attaches onLoad.
+    if (imageRef.current?.complete && imageRef.current.naturalWidth > 0) onLoad?.();
+  }, [src, onLoad]);
+
   function open() {
-    dialogRef.current?.showModal();
+    if (!dialogRef.current) return;
+    dialogRef.current.showModal();
+    onOpenChange?.(true);
     closeRef.current?.focus({ preventScroll: true });
     viewportRef.current?.scrollTo(0, 0);
   }
@@ -40,12 +55,15 @@ export default function ZoomableImage({ src, alt, label, width, height, priority
   return (
     <>
       <button ref={triggerRef} type="button" className="figure-zoom-trigger" aria-haspopup="dialog"
+        onFocus={(event) => { if (event.target.matches(':focus-visible')) onKeyboardFocus?.(); }}
         aria-controls={dialogId} aria-label={`Enlarge: ${label}`} onClick={open}>
-        <img src={src} alt={alt} width={width} height={height}
+        <img ref={imageRef} src={src} alt={alt} width={width} height={height}
+          onLoad={onLoad}
           loading={priority ? 'eager' : 'lazy'} fetchPriority={priority ? 'high' : 'auto'} />
       </button>
-      <dialog ref={dialogRef} id={dialogId} className="figure-lightbox" aria-label={label}
+      {mounted && createPortal(<dialog ref={dialogRef} id={dialogId} className="figure-lightbox" aria-label={label}
         onClose={() => {
+          onOpenChange?.(false);
           setZoomed(false);
           triggerRef.current?.focus({ preventScroll: true });
         }}>
@@ -69,7 +87,7 @@ export default function ZoomableImage({ src, alt, label, width, height, priority
             </button>
           </div>
         </div>
-      </dialog>
+      </dialog>, document.body)}
     </>
   );
 }

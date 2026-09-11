@@ -10,8 +10,8 @@ older, inactive drafts. Their description of the generation inputs must not be
 used. The active method predicts a part tree from text; reference programs and
 automatically derived comparison trees are reserved for evaluation.
 
-Figure assets come from `paper-overleaf/figures/` and are served from
-`public/paper-figures/`:
+Figure assets come from `paper-overleaf/figures/` and the research repository's
+`figures/` directory, and are served from `public/paper-figures/`:
 
 - `fig_3dcodebench_vs_treestruct3d_pipeline.pdf`: unchanged original used for
   Figure 2 in the supplied paper, with bird renders and the body 0.4× / feet
@@ -28,8 +28,23 @@ Figure assets come from `paper-overleaf/figures/` and are served from
   the homepage alongside the shared-anchor mechanism section.
 - `fig_qualitative_paired.png`: selected baseline/method editing comparisons,
   copied unchanged, with the same in-page enlarged preview.
+- `appendix-figure-6a-gpt-5-5.png`, `appendix-figure-6b-gpt-5-6-sol.png`,
+  `appendix-figure-6c-gemini-3-1-pro.png`, and
+  `appendix-figure-6d-gemini-3-5-flash.png`: the four original Figure 6 panels,
+  copied byte-for-byte from the research repository's `figures/` directory.
+  Each PNG is 4560 × 2728 pixels; the filenames and embedded paper labels
+  retain the original appendix order.
 
-Both visible figures use a native modal dialog. Readers can switch between a
+The "What happens when a part changes?" section keeps the comparison overview
+as the first slide, followed by Figure 6(a) GPT-5.5, 6(b) GPT-5.6 Sol,
+6(c) Gemini 3.1 Pro, and 6(d) Gemini 3.5 Flash. The five-slide carousel advances
+every five seconds around a three-dimensional ring, with the current figure
+facing forward and neighboring figures visible at an angle. Arrows at the left
+and right edges rotate the ring manually; the last-to-first transition continues
+in the same direction. Hovering, keyboard focus, and enlarged previews pause
+rotation. This presentation order does not renumber the paper's figures.
+
+The figure previews use a native modal dialog. Readers can switch between a
 window-fitting view and the original image dimensions, scroll the enlarged
 image, and dismiss it with Escape, the close button, or the surrounding backdrop.
 
@@ -45,7 +60,5 @@ Danrui Li, Bingjiang Xia, ZHIJIN ZHU, Mubbasir Kapadia. The homepage displays
 that exact order and spelling below the paper title. Affiliations were not
 provided, so the page does not add them or claim conference acceptance.
 
-For local review, the Paper button opens `public/papers/treestruct3d.pdf`, an
-unchanged copy of that supplied 18-page PDF. The PDF and website changes have
-not been pushed or deployed. They require owner review before any remote
-publication.
+The Paper button opens `public/papers/treestruct3d.pdf`, an unchanged copy of
+the supplied 18-page `3DV2027_Structural_3DCodebench .pdf`.
