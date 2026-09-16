@@ -33,9 +33,6 @@ export default function Home() {
             <a className="button" href={dataset} target="_blank" rel="noopener noreferrer"><Database aria-hidden="true" />Data</a>
             <a className="button" href="#examples">Examples<ArrowDown aria-hidden="true" /></a>
           </div>
-          <p className="hero-lead">TreeStruct3D turns text descriptions into Blender programs with explicit part hierarchies
-            and geometry-derived attachment anchors. It tests whether connections survive changes to individual parts,
-            then uses localized feedback to repair broken attachments.</p>
           <p className="research-proposal"><strong>Research question</strong> Can procedural 3D generation support parameter-level editing
             while preserving the intended relationships between parts, without a consistent loss in visual or geometric fidelity?</p>
         </section>
