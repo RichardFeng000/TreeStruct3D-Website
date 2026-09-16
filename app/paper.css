@@ -8,6 +8,8 @@
 .paper-authors li { position: relative; white-space: nowrap; }
 .paper-authors li + li::before { content: ''; position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #b6bbc2; left: -13.5px; top: calc(50% - 1.5px); }
 .hero-lead { font-size: 16px; line-height: 1.6; color: #5f6368; margin: 20px auto 0; text-wrap: balance; }
+.research-proposal { max-width: 850px; margin: 14px auto 0; color: #3c4043; font-size: 16px; line-height: 1.6; text-wrap: balance; }
+.research-proposal strong { color: #202124; font-weight: 600; }
 .hero-actions { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
 .button { display: inline-flex; gap: 14px; align-items: center; justify-content: center; min-height: 42px; padding: 10px 19px; border: 1px solid #dadce0; border-radius: 7px; background: white; font-size: 14px; font-weight: 550; cursor: pointer; transition: background .15s; }
 .button:hover { background: #f8f9fa; }
@@ -27,6 +29,8 @@
 .method-section .section-intro { max-width: none; margin-bottom: 22px; }
 .method-section .section-intro h2 { font-size: 28px; font-weight: 550; letter-spacing: -.65px; margin-bottom: 10px; }
 .method-section .section-intro p { font-size: 15px; line-height: 1.6; }
+.method-section .section-intro a { color: #1a73e8; text-decoration: underline; text-decoration-color: #a8c7fa; text-underline-offset: 3px; }
+.method-section .section-intro a:hover { color: #1557b0; text-decoration-color: currentColor; }
 .paper-figure { margin: 0; }
 .paper-figure img { display: block; width: 100%; height: auto; }
 .paper-figure figcaption { margin-top: 16px; color: #5f6368; font-size: 13px; line-height: 1.65; }
@@ -106,6 +110,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #1a73e8; outline-offs
   .hero h1 { font-size: clamp(29px,7.4vw,36px); line-height: 1.2; letter-spacing: -.75px; }
   .paper-authors { font-size: 15px; gap: 7px 18px; margin: 20px auto; }
   .hero-lead { font-size: 15px; line-height: 1.55; margin: 18px auto 0; }
+  .research-proposal { margin-top: 12px; font-size: 15px; line-height: 1.55; }
   .paper-section { padding: 40px 0; }
   .method-section { padding: 24px 0; }
   #editing { padding-top: 24px; }

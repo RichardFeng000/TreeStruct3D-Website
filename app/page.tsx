@@ -1,10 +1,12 @@
 import InteractiveExamples from './components/InteractiveExamples';
 import ZoomableImage from './components/ZoomableImage';
 import FigureCarousel from './components/FigureCarousel';
-import { ArrowDown, CodeXml, FileText } from 'lucide-react';
+import { ArrowDown, CodeXml, Database, FileText } from 'lucide-react';
 
 export const dynamic = 'force-static';
 const repository = 'https://github.com/RichardFeng000/TreeStruct3D';
+const dataset = 'https://huggingface.co/datasets/3dcodebench/3dcodebench';
+const benchmarkWebsite = 'https://www.3dcodebench.com/';
 const authors = ['Ruiding Feng', 'Sen Zhang', 'Danrui Li', 'Bingjiang Xia', 'ZHIJIN ZHU', 'Mubbasir Kapadia'];
 const stages = [
   { title: 'Plan the structure', text: 'A vision-language model predicts a Part–Attachment Tree: semantic parts, parent–child connections, and the regions where they attach.' },
@@ -28,17 +30,20 @@ export default function Home() {
           <div className="hero-actions">
             <a className="button button-primary" href="papers/treestruct3d.pdf" target="_blank" rel="noopener noreferrer"><FileText aria-hidden="true" />Paper</a>
             <a className="button" href={repository} target="_blank" rel="noopener noreferrer"><CodeXml aria-hidden="true" />Code</a>
+            <a className="button" href={dataset} target="_blank" rel="noopener noreferrer"><Database aria-hidden="true" />Data</a>
             <a className="button" href="#examples">Examples<ArrowDown aria-hidden="true" /></a>
           </div>
           <p className="hero-lead">TreeStruct3D turns text descriptions into Blender programs with explicit part hierarchies
             and geometry-derived attachment anchors. It tests whether connections survive changes to individual parts,
             then uses localized feedback to repair broken attachments.</p>
+          <p className="research-proposal"><strong>Research question.</strong> Can procedural 3D generation support parameter-level editing
+            while preserving the intended relationships between parts, without a consistent loss in visual or geometric fidelity?</p>
         </section>
 
         <section id="method" className="paper-section method-section" aria-labelledby="method-title">
           <div className="section-intro">
             <h2 id="method-title">From text to editable 3D</h2>
-            <p>TreeStruct3D extends the 3DCodeBench pipeline with a predicted part structure,
+            <p>TreeStruct3D extends the <a href={benchmarkWebsite} target="_blank" rel="noopener noreferrer">3DCodeBench</a> pipeline with a predicted part structure,
               geometry-derived attachment anchors, and a validation-and-repair loop.</p>
           </div>
           <figure className="paper-figure overview-figure">
