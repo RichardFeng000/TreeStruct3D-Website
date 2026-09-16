@@ -36,7 +36,7 @@ export default function Home() {
           <p className="hero-lead">TreeStruct3D turns text descriptions into Blender programs with explicit part hierarchies
             and geometry-derived attachment anchors. It tests whether connections survive changes to individual parts,
             then uses localized feedback to repair broken attachments.</p>
-          <p className="research-proposal"><strong>Research question.</strong> Can procedural 3D generation support parameter-level editing
+          <p className="research-proposal"><strong>Research question</strong> Can procedural 3D generation support parameter-level editing
             while preserving the intended relationships between parts, without a consistent loss in visual or geometric fidelity?</p>
         </section>
 
